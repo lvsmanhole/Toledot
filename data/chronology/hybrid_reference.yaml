@@ -170,6 +170,16 @@ records:
       - {id: exodus-artisan-death, operation: literal, year: {era: BCE, year: 1390}}
       - {id: exodus-artisan-parent-birth, operation: literal, year: {era: BCE, year: 1540}}
       - {id: exodus-artisan-parent-death, operation: literal, year: {era: BCE, year: 1440}}
+      - {id: leviticus-case-mother-birth, operation: literal, year: {era: BCE, year: 1520}}
+      - {id: leviticus-case-mother-death, operation: literal, year: {era: BCE, year: 1410}}
+      - {id: leviticus-case-grandfather-birth, operation: literal, year: {era: BCE, year: 1570}}
+      - {id: leviticus-case-grandfather-death, operation: literal, year: {era: BCE, year: 1450}}
+      - {id: leviticus-case-son-birth, operation: literal, year: {era: BCE, year: 1470}}
+      - {id: leviticus-case-son-death, operation: literal, year: {era: BCE, year: 1450}}
+      - {id: leviticus-case-father-birth, operation: literal, year: {era: BCE, year: 1500}}
+      - {id: leviticus-case-father-death, operation: literal, year: {era: BCE, year: 1450}}
+      - {id: leviticus-case-israelite-birth, operation: literal, year: {era: BCE, year: 1490}}
+      - {id: leviticus-case-israelite-death, operation: literal, year: {era: BCE, year: 1410}}
     resolutions:
       - &core {entity_id: adam, birth_derivation_id: adam-birth, death_derivation_id: adam-death, life_basis: synchronized, confidence_grade: D, evidence_claim_ids: [lxx-early-adam-anchor, adam-lifespan-lxx], alternative_claim_ids: [mt-early-adam-anchor, sp-early-adam-anchor], explanation: "Civil years use the declared LXX display anchor; lifespan is explicit in Genesis 5."}
       - <<: *core
@@ -1211,3 +1221,8 @@ records:
       - {<<: *exodus_low_confidence, entity_id: uri-bezalel, birth_derivation_id: exodus-artisan-parent-birth, death_derivation_id: exodus-artisan-parent-death, evidence_claim_ids: [uri-bezalel-attested-lxx], explanation: "Grade-E parent-generation display window; Exodus identifies Uri only as Bezalel's father, not by an age or date."}
       - {<<: *exodus_low_confidence, entity_id: ahisamach, birth_derivation_id: exodus-artisan-parent-birth, death_derivation_id: exodus-artisan-parent-death, evidence_claim_ids: [ahisamach-attested-lxx], explanation: "Grade-E parent-generation display window; Exodus identifies Ahisamach as Oholiab's father but supplies no lifespan."}
       - {<<: *exodus_low_confidence, entity_id: hur-ancestor-bezalel, birth_derivation_id: exodus-artisan-parent-birth, death_derivation_id: exodus-artisan-parent-death, evidence_claim_ids: [hur-ancestor-bezalel-attested-lxx], explanation: "Grade-E parent-generation window for the Hur named in Bezalel's lineage. Kept separate from Hur at Rephidim pending an explicit identity link; their possible match is recorded as unresolved."}
+      - {<<: *exodus_low_confidence, entity_id: shelomith-leviticus, birth_derivation_id: leviticus-case-mother-birth, death_derivation_id: leviticus-case-mother-death, evidence_claim_ids: [shelomith-attested-leviticus-lxx], explanation: "Grade-E illustrative window for Shelomith, named as the mother in Leviticus 24; no age, lifespan, or calendar year is given."}
+      - {<<: *exodus_low_confidence, entity_id: dibri-leviticus, birth_derivation_id: leviticus-case-grandfather-birth, death_derivation_id: leviticus-case-grandfather-death, evidence_claim_ids: [dibri-attested-leviticus-lxx], explanation: "Grade-E illustrative window for Dibri, named only as Shelomith's father; no lifespan or date is supplied."}
+      - {<<: *exodus_low_confidence, entity_id: blasphemer-leviticus, birth_derivation_id: leviticus-case-son-birth, death_derivation_id: leviticus-case-son-death, evidence_claim_ids: [blasphemer-attested-leviticus-lxx, blasphemer-death-leviticus-lxx], explanation: "The LXX explicitly narrates this unnamed man's execution in Leviticus 24:23, but gives no calendar year or age. His birth and approximate death-year placement are grade-E display estimates, not recovered actual lifespan."}
+      - {<<: *exodus_low_confidence, entity_id: egyptian-father-of-blasphemer, birth_derivation_id: leviticus-case-father-birth, death_derivation_id: leviticus-case-father-death, evidence_claim_ids: [blasphemer-father-attested-lxx], explanation: "Grade-E illustrative window for the unnamed Egyptian father mentioned in Leviticus 24:10; no name, age, or lifespan is provided."}
+      - {<<: *exodus_low_confidence, entity_id: israelite-who-fought-blasphemer, birth_derivation_id: leviticus-case-israelite-birth, death_derivation_id: leviticus-case-israelite-death, evidence_claim_ids: [israelite-fighter-attested-lxx], explanation: "Grade-E illustrative window for the unnamed Israelite man in the Leviticus 24 fight; no age, outcome, or lifespan is provided."}

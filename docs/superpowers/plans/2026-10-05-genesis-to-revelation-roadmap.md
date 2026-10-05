@@ -37,9 +37,10 @@
   - [x] Exodus 19–24: Sinai arrival, covenant proposal and ratification, Ten Words, and Moses' ascent.
   - [x] Exodus 25–31: sanctuary instructions, priestly garments and service, Bezalel, Oholiab/Eliab textual form, and the Sabbath sign.
   - [x] Exodus 32–40: calf episode, covenant renewal, tablets, and tabernacle construction narrative.
-- [ ] Leviticus 1–27: include narrative persons, otherwise record explicit chapter review with no individuals; track relevant foreign witnesses and events.
+- [x] Leviticus 1–27: reviewed the full book against Septuagint, Geʽez, and Masoretic witnesses; preserved the named and unnamed Leviticus 24 case participants as distinct people with transparent grade-E display windows.
   - [x] Leviticus 1–10: offerings, priestly service, Aaronide consecration, and deaths of Nadab and Abihu.
-  - [ ] Leviticus 11–27: purity, calendar, holiness, vows, and census-related references; complete chapter review.
+  - [x] Leviticus 11–16: purity rules and Day of Atonement instructions reviewed.
+  - [x] Leviticus 17–27: blood and holiness laws, festivals, land/Jubilee rules, blasphemy case, vows, and tithes reviewed.
 - [ ] Numbers 1–36: census lists, wilderness generation, named and unnamed persons, tribal/family relations, age/death claims.
 - [ ] Deuteronomy 1–34: speeches, named/unnamed people, Moses' age and death, variant witnesses.
 

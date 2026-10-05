@@ -1,0 +1,36 @@
+schema_version: 1
+record_type: passages
+records:
+  - &lxx {id: lev-17-lxx, work_id: leviticus, witness_id: lxx-leviticus-rahlfs-hanhart, locator: "Leviticus 17", citations: [{source_id: rahlfs-hanhart-2006, locator: "Leviticus 17", witness_id: lxx-leviticus-rahlfs-hanhart}]}
+  - &gee {id: lev-17-geez, work_id: leviticus, witness_id: geez-leviticus-dillmann, locator: "Leviticus 17", citations: [{source_id: dillmann-octateuch-1853, locator: "Leviticus 17", witness_id: geez-leviticus-dillmann}]}
+  - &mt {id: lev-17-mt, work_id: leviticus, witness_id: mt-leviticus-bhs, locator: "Leviticus 17", citations: [{source_id: bhs-leviticus, locator: "Leviticus 17", witness_id: mt-leviticus-bhs}]}
+  - {<<: *lxx, id: lev-18-lxx, locator: "Leviticus 18", citations: [{source_id: rahlfs-hanhart-2006, locator: "Leviticus 18", witness_id: lxx-leviticus-rahlfs-hanhart}]}
+  - {<<: *gee, id: lev-18-geez, locator: "Leviticus 18", citations: [{source_id: dillmann-octateuch-1853, locator: "Leviticus 18", witness_id: geez-leviticus-dillmann}]}
+  - {<<: *mt, id: lev-18-mt, locator: "Leviticus 18", citations: [{source_id: bhs-leviticus, locator: "Leviticus 18", witness_id: mt-leviticus-bhs}]}
+  - {<<: *lxx, id: lev-19-lxx, locator: "Leviticus 19", citations: [{source_id: rahlfs-hanhart-2006, locator: "Leviticus 19", witness_id: lxx-leviticus-rahlfs-hanhart}]}
+  - {<<: *gee, id: lev-19-geez, locator: "Leviticus 19", citations: [{source_id: dillmann-octateuch-1853, locator: "Leviticus 19", witness_id: geez-leviticus-dillmann}]}
+  - {<<: *mt, id: lev-19-mt, locator: "Leviticus 19", citations: [{source_id: bhs-leviticus, locator: "Leviticus 19", witness_id: mt-leviticus-bhs}]}
+  - {<<: *lxx, id: lev-20-lxx, locator: "Leviticus 20", citations: [{source_id: rahlfs-hanhart-2006, locator: "Leviticus 20", witness_id: lxx-leviticus-rahlfs-hanhart}]}
+  - {<<: *gee, id: lev-20-geez, locator: "Leviticus 20", citations: [{source_id: dillmann-octateuch-1853, locator: "Leviticus 20", witness_id: geez-leviticus-dillmann}]}
+  - {<<: *mt, id: lev-20-mt, locator: "Leviticus 20", citations: [{source_id: bhs-leviticus, locator: "Leviticus 20", witness_id: mt-leviticus-bhs}]}
+  - {<<: *lxx, id: lev-21-lxx, locator: "Leviticus 21", citations: [{source_id: rahlfs-hanhart-2006, locator: "Leviticus 21", witness_id: lxx-leviticus-rahlfs-hanhart}]}
+  - {<<: *gee, id: lev-21-geez, locator: "Leviticus 21", citations: [{source_id: dillmann-octateuch-1853, locator: "Leviticus 21", witness_id: geez-leviticus-dillmann}]}
+  - {<<: *mt, id: lev-21-mt, locator: "Leviticus 21", citations: [{source_id: bhs-leviticus, locator: "Leviticus 21", witness_id: mt-leviticus-bhs}]}
+  - {<<: *lxx, id: lev-22-lxx, locator: "Leviticus 22", citations: [{source_id: rahlfs-hanhart-2006, locator: "Leviticus 22", witness_id: lxx-leviticus-rahlfs-hanhart}]}
+  - {<<: *gee, id: lev-22-geez, locator: "Leviticus 22", citations: [{source_id: dillmann-octateuch-1853, locator: "Leviticus 22", witness_id: geez-leviticus-dillmann}]}
+  - {<<: *mt, id: lev-22-mt, locator: "Leviticus 22", citations: [{source_id: bhs-leviticus, locator: "Leviticus 22", witness_id: mt-leviticus-bhs}]}
+  - {<<: *lxx, id: lev-23-lxx, locator: "Leviticus 23", citations: [{source_id: rahlfs-hanhart-2006, locator: "Leviticus 23", witness_id: lxx-leviticus-rahlfs-hanhart}]}
+  - {<<: *gee, id: lev-23-geez, locator: "Leviticus 23", citations: [{source_id: dillmann-octateuch-1853, locator: "Leviticus 23", witness_id: geez-leviticus-dillmann}]}
+  - {<<: *mt, id: lev-23-mt, locator: "Leviticus 23", citations: [{source_id: bhs-leviticus, locator: "Leviticus 23", witness_id: mt-leviticus-bhs}]}
+  - {<<: *lxx, id: lev-24-lxx, locator: "Leviticus 24", citations: [{source_id: rahlfs-hanhart-2006, locator: "Leviticus 24", witness_id: lxx-leviticus-rahlfs-hanhart}]}
+  - {<<: *gee, id: lev-24-geez, locator: "Leviticus 24", citations: [{source_id: dillmann-octateuch-1853, locator: "Leviticus 24", witness_id: geez-leviticus-dillmann}]}
+  - {<<: *mt, id: lev-24-mt, locator: "Leviticus 24", citations: [{source_id: bhs-leviticus, locator: "Leviticus 24", witness_id: mt-leviticus-bhs}]}
+  - {<<: *lxx, id: lev-25-lxx, locator: "Leviticus 25", citations: [{source_id: rahlfs-hanhart-2006, locator: "Leviticus 25", witness_id: lxx-leviticus-rahlfs-hanhart}]}
+  - {<<: *gee, id: lev-25-geez, locator: "Leviticus 25", citations: [{source_id: dillmann-octateuch-1853, locator: "Leviticus 25", witness_id: geez-leviticus-dillmann}]}
+  - {<<: *mt, id: lev-25-mt, locator: "Leviticus 25", citations: [{source_id: bhs-leviticus, locator: "Leviticus 25", witness_id: mt-leviticus-bhs}]}
+  - {<<: *lxx, id: lev-26-lxx, locator: "Leviticus 26", citations: [{source_id: rahlfs-hanhart-2006, locator: "Leviticus 26", witness_id: lxx-leviticus-rahlfs-hanhart}]}
+  - {<<: *gee, id: lev-26-geez, locator: "Leviticus 26", citations: [{source_id: dillmann-octateuch-1853, locator: "Leviticus 26", witness_id: geez-leviticus-dillmann}]}
+  - {<<: *mt, id: lev-26-mt, locator: "Leviticus 26", citations: [{source_id: bhs-leviticus, locator: "Leviticus 26", witness_id: mt-leviticus-bhs}]}
+  - {<<: *lxx, id: lev-27-lxx, locator: "Leviticus 27", citations: [{source_id: rahlfs-hanhart-2006, locator: "Leviticus 27", witness_id: lxx-leviticus-rahlfs-hanhart}]}
+  - {<<: *gee, id: lev-27-geez, locator: "Leviticus 27", citations: [{source_id: dillmann-octateuch-1853, locator: "Leviticus 27", witness_id: geez-leviticus-dillmann}]}
+  - {<<: *mt, id: lev-27-mt, locator: "Leviticus 27", citations: [{source_id: bhs-leviticus, locator: "Leviticus 27", witness_id: mt-leviticus-bhs}]}

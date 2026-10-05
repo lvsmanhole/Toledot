@@ -1,0 +1,23 @@
+schema_version: 1
+record_type: claims
+records:
+  - &s-lxx {id: shelomith-attested-leviticus-lxx, subject_id: shelomith-leviticus, predicate: attested_in_passage, value: {kind: attestation, status: mentioned}, evidence_type: explicit_text, witness_id: lxx-leviticus-rahlfs-hanhart, confidence: A, citations: [{source_id: rahlfs-hanhart-2006, locator: "Leviticus 24:11", witness_id: lxx-leviticus-rahlfs-hanhart}]}
+  - &s-geez {id: shelomith-attested-leviticus-geez, subject_id: shelomith-leviticus, predicate: attested_in_passage, value: {kind: attestation, status: mentioned}, evidence_type: explicit_text, witness_id: geez-leviticus-dillmann, confidence: A, citations: [{source_id: dillmann-octateuch-1853, locator: "Leviticus 24:11", witness_id: geez-leviticus-dillmann}]}
+  - &s-mt {id: shelomith-attested-leviticus-mt, subject_id: shelomith-leviticus, predicate: attested_in_passage, value: {kind: attestation, status: mentioned}, evidence_type: explicit_text, witness_id: mt-leviticus-bhs, confidence: A, citations: [{source_id: bhs-leviticus, locator: "Leviticus 24:11", witness_id: mt-leviticus-bhs}]}
+  - {<<: *s-lxx, id: shelomith-name-leviticus-lxx, predicate: name_as, value: {kind: name_variant, form: Salomith}}
+  - {<<: *s-lxx, id: dibri-attested-leviticus-lxx, subject_id: dibri-leviticus, citations: [{source_id: rahlfs-hanhart-2006, locator: "Leviticus 24:11", witness_id: lxx-leviticus-rahlfs-hanhart}]}
+  - {<<: *s-geez, id: dibri-attested-leviticus-geez, subject_id: dibri-leviticus, citations: [{source_id: dillmann-octateuch-1853, locator: "Leviticus 24:11", witness_id: geez-leviticus-dillmann}]}
+  - {<<: *s-mt, id: dibri-attested-leviticus-mt, subject_id: dibri-leviticus, citations: [{source_id: bhs-leviticus, locator: "Leviticus 24:11", witness_id: mt-leviticus-bhs}]}
+  - {<<: *s-lxx, id: dibri-name-leviticus-lxx, subject_id: dibri-leviticus, predicate: name_as, value: {kind: name_variant, form: Davri}, citations: [{source_id: rahlfs-hanhart-2006, locator: "Leviticus 24:11", witness_id: lxx-leviticus-rahlfs-hanhart}]}
+  - {<<: *s-lxx, id: blasphemer-attested-leviticus-lxx, subject_id: blasphemer-leviticus, citations: [{source_id: rahlfs-hanhart-2006, locator: "Leviticus 24:10-23", witness_id: lxx-leviticus-rahlfs-hanhart}]}
+  - {<<: *s-geez, id: blasphemer-attested-leviticus-geez, subject_id: blasphemer-leviticus, citations: [{source_id: dillmann-octateuch-1853, locator: "Leviticus 24:10-23", witness_id: geez-leviticus-dillmann}]}
+  - {<<: *s-mt, id: blasphemer-attested-leviticus-mt, subject_id: blasphemer-leviticus, citations: [{source_id: bhs-leviticus, locator: "Leviticus 24:10-23", witness_id: mt-leviticus-bhs}]}
+  - {<<: *s-lxx, id: blasphemer-death-leviticus-lxx, predicate: death_event, value: {kind: event_reference, event_id: blasphemy-case-and-execution}, citations: [{source_id: rahlfs-hanhart-2006, locator: "Leviticus 24:23", witness_id: lxx-leviticus-rahlfs-hanhart}]}
+  - {<<: *s-geez, id: blasphemer-death-leviticus-geez, predicate: death_event, value: {kind: event_reference, event_id: blasphemy-case-and-execution}, citations: [{source_id: dillmann-octateuch-1853, locator: "Leviticus 24:23", witness_id: geez-leviticus-dillmann}]}
+  - {<<: *s-mt, id: blasphemer-death-leviticus-mt, predicate: death_event, value: {kind: event_reference, event_id: blasphemy-case-and-execution}, citations: [{source_id: bhs-leviticus, locator: "Leviticus 24:23", witness_id: mt-leviticus-bhs}]}
+  - {<<: *s-lxx, id: blasphemer-father-attested-lxx, subject_id: egyptian-father-of-blasphemer, citations: [{source_id: rahlfs-hanhart-2006, locator: "Leviticus 24:10", witness_id: lxx-leviticus-rahlfs-hanhart}]}
+  - {<<: *s-geez, id: blasphemer-father-attested-geez, subject_id: egyptian-father-of-blasphemer, citations: [{source_id: dillmann-octateuch-1853, locator: "Leviticus 24:10", witness_id: geez-leviticus-dillmann}]}
+  - {<<: *s-mt, id: blasphemer-father-attested-mt, subject_id: egyptian-father-of-blasphemer, citations: [{source_id: bhs-leviticus, locator: "Leviticus 24:10", witness_id: mt-leviticus-bhs}]}
+  - {<<: *s-lxx, id: israelite-fighter-attested-lxx, subject_id: israelite-who-fought-blasphemer, citations: [{source_id: rahlfs-hanhart-2006, locator: "Leviticus 24:10", witness_id: lxx-leviticus-rahlfs-hanhart}]}
+  - {<<: *s-geez, id: israelite-fighter-attested-geez, subject_id: israelite-who-fought-blasphemer, citations: [{source_id: dillmann-octateuch-1853, locator: "Leviticus 24:10", witness_id: geez-leviticus-dillmann}]}
+  - {<<: *s-mt, id: israelite-fighter-attested-mt, subject_id: israelite-who-fought-blasphemer, citations: [{source_id: bhs-leviticus, locator: "Leviticus 24:10", witness_id: mt-leviticus-bhs}]}
