@@ -112,6 +112,55 @@ records:
       - {id: migration-descendant-death, operation: literal, year: {era: BCE, year: 1550}}
       - {id: genesis36-display-birth, operation: literal, year: {era: BCE, year: 2100}}
       - {id: genesis36-display-death, operation: literal, year: {era: BCE, year: 1800}}
+      - {id: exodus-pharaoh-audience, operation: literal, year: {era: BCE, year: 1450}}
+      - {id: exodus-first-pharaoh-birth, operation: literal, year: {era: BCE, year: 1650}}
+      - {id: exodus-first-pharaoh-death, operation: literal, year: {era: BCE, year: 1460}}
+      - {id: exodus-second-pharaoh-birth, operation: literal, year: {era: BCE, year: 1500}}
+      - {id: exodus-second-pharaoh-death, operation: literal, year: {era: BCE, year: 1400}}
+      - {id: exodus-midwife-birth, operation: literal, year: {era: BCE, year: 1650}}
+      - {id: exodus-midwife-death, operation: literal, year: {era: BCE, year: 1540}}
+      - {id: exodus-princess-birth, operation: literal, year: {era: BCE, year: 1600}}
+      - {id: exodus-princess-death, operation: literal, year: {era: BCE, year: 1500}}
+      - {id: exodus-handmaid-birth, operation: literal, year: {era: BCE, year: 1610}}
+      - {id: exodus-handmaid-death, operation: literal, year: {era: BCE, year: 1520}}
+      - {id: exodus-levite-parent-birth, operation: literal, year: {era: BCE, year: 1620}}
+      - {id: exodus-levite-parent-death, operation: literal, year: {era: BCE, year: 1500}}
+      - {id: exodus-moses-birth, operation: offset_years, input_id: exodus-pharaoh-audience, offset_years: -80}
+      - {id: exodus-moses-death, operation: offset_years, input_id: exodus-moses-birth, offset_claim_id: moses-age-at-death-deut-lxx}
+      - {id: exodus-aaron-birth, operation: offset_years, input_id: exodus-pharaoh-audience, offset_years: -83}
+      - {id: exodus-aaron-death, operation: offset_years, input_id: exodus-aaron-birth, offset_claim_id: aaron-age-at-death-num-lxx}
+      - {id: exodus-miriam-birth, operation: literal, year: {era: BCE, year: 1535}}
+      - {id: exodus-miriam-death, operation: literal, year: {era: BCE, year: 1410}}
+      - {id: exodus-midian-priest-birth, operation: literal, year: {era: BCE, year: 1570}}
+      - {id: exodus-midian-priest-death, operation: literal, year: {era: BCE, year: 1430}}
+      - {id: exodus-zipporah-birth, operation: literal, year: {era: BCE, year: 1490}}
+      - {id: exodus-zipporah-death, operation: literal, year: {era: BCE, year: 1400}}
+      - {id: exodus-gershom-birth, operation: literal, year: {era: BCE, year: 1488}}
+      - {id: exodus-gershom-death, operation: literal, year: {era: BCE, year: 1400}}
+      - {id: exodus-eliezer-birth, operation: literal, year: {era: BCE, year: 1470}}
+      - {id: exodus-eliezer-death, operation: literal, year: {era: BCE, year: 1380}}
+      - {id: exodus-unnamed-son-birth, operation: literal, year: {era: BCE, year: 1480}}
+      - {id: exodus-unnamed-son-death, operation: literal, year: {era: BCE, year: 1380}}
+      - {id: exodus-egyptian-birth, operation: literal, year: {era: BCE, year: 1560}}
+      - {id: exodus-egyptian-death, operation: literal, year: {era: BCE, year: 1490}}
+      - {id: exodus-hebrew-man-birth, operation: literal, year: {era: BCE, year: 1530}}
+      - {id: exodus-hebrew-man-death, operation: literal, year: {era: BCE, year: 1450}}
+      - {id: exodus-levite-descendant-birth, operation: literal, year: {era: BCE, year: 1610}}
+      - {id: exodus-levite-descendant-death, operation: literal, year: {era: BCE, year: 1500}}
+      - {id: exodus-levite-grandchild-birth, operation: literal, year: {era: BCE, year: 1540}}
+      - {id: exodus-levite-grandchild-death, operation: literal, year: {era: BCE, year: 1450}}
+      - {id: exodus-aaron-son-birth, operation: literal, year: {era: BCE, year: 1480}}
+      - {id: exodus-aaron-son-death, operation: literal, year: {era: BCE, year: 1380}}
+      - {id: exodus-phinehas-birth, operation: literal, year: {era: BCE, year: 1450}}
+      - {id: exodus-phinehas-death, operation: literal, year: {era: BCE, year: 1360}}
+      - {id: exodus-amminadab-birth, operation: literal, year: {era: BCE, year: 1620}}
+      - {id: exodus-amminadab-death, operation: literal, year: {era: BCE, year: 1500}}
+      - {id: exodus-nahshon-birth, operation: literal, year: {era: BCE, year: 1540}}
+      - {id: exodus-nahshon-death, operation: literal, year: {era: BCE, year: 1450}}
+      - {id: exodus-putiel-birth, operation: literal, year: {era: BCE, year: 1570}}
+      - {id: exodus-putiel-death, operation: literal, year: {era: BCE, year: 1460}}
+      - {id: exodus-eleazar-wife-birth, operation: literal, year: {era: BCE, year: 1480}}
+      - {id: exodus-eleazar-wife-death, operation: literal, year: {era: BCE, year: 1400}}
     resolutions:
       - &core {entity_id: adam, birth_derivation_id: adam-birth, death_derivation_id: adam-death, life_basis: synchronized, confidence_grade: D, evidence_claim_ids: [lxx-early-adam-anchor, adam-lifespan-lxx], alternative_claim_ids: [mt-early-adam-anchor, sp-early-adam-anchor], explanation: "Civil years use the declared LXX display anchor; lifespan is explicit in Genesis 5."}
       - <<: *core
@@ -1059,6 +1108,44 @@ records:
       - <<: *migrant_est
         entity_id: ard
         evidence_claim_ids: [ard-attested]
+      - &exodus_low_confidence {entity_id: pharaoh-exodus, birth_derivation_id: exodus-first-pharaoh-birth, death_derivation_id: exodus-first-pharaoh-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [pharaoh-exodus-attested-lxx], alternative_claim_ids: [], explanation: "Illustrative reign window only. Exodus supplies sequence and a death notice, not Pharaoh's name, accession year, birth, or exact death year."}
+      - {<<: *exodus_low_confidence, entity_id: pharaoh-exodus-second, birth_derivation_id: exodus-second-pharaoh-birth, death_derivation_id: exodus-second-pharaoh-death, evidence_claim_ids: [pharaoh-exodus-second-attested-lxx], explanation: "Illustrative later-reign window only; this ruler is kept distinct because the earlier Pharaoh dies before Moses' return."}
+      - {<<: *exodus_low_confidence, entity_id: shiphrah-exodus, birth_derivation_id: exodus-midwife-birth, death_derivation_id: exodus-midwife-death, evidence_claim_ids: [shiphrah-exodus-attested-lxx], explanation: "Undated lifespan placed in a grade-E narrative-era window; no birth or death ages are supplied."}
+      - {<<: *exodus_low_confidence, entity_id: puah-exodus, birth_derivation_id: exodus-midwife-birth, death_derivation_id: exodus-midwife-death, evidence_claim_ids: [puah-exodus-attested-lxx], explanation: "Undated lifespan placed in a grade-E narrative-era window; no birth or death ages are supplied."}
+      - {<<: *exodus_low_confidence, entity_id: pharaoh-daughter-exodus, birth_derivation_id: exodus-princess-birth, death_derivation_id: exodus-princess-death, evidence_claim_ids: [pharaoh-daughter-exodus-attested-lxx], explanation: "Display-only window for an unnamed person; the text supplies an episode, not a lifespan."}
+      - {<<: *exodus_low_confidence, entity_id: pharaoh-daughter-handmaid-exodus, birth_derivation_id: exodus-handmaid-birth, death_derivation_id: exodus-handmaid-death, evidence_claim_ids: [pharaoh-daughter-handmaid-exodus-attested-lxx], explanation: "Display-only window for an unnamed attendant; the text supplies no lifespan data."}
+      - {<<: *exodus_low_confidence, entity_id: amram, birth_derivation_id: exodus-levite-parent-birth, death_derivation_id: exodus-levite-parent-death, evidence_claim_ids: [amram-attested-lxx], explanation: "Grade-E display window. Exodus names Amram and records his family but provides no calendar lifespan."}
+      - {<<: *exodus_low_confidence, entity_id: jochebed, birth_derivation_id: exodus-levite-parent-birth, death_derivation_id: exodus-levite-parent-death, evidence_claim_ids: [jochebed-attested-lxx], explanation: "Grade-E display window. Exodus names Jochebed and records her family but provides no calendar lifespan."}
+      - {<<: *exodus_low_confidence, entity_id: moses, birth_derivation_id: exodus-moses-birth, death_derivation_id: exodus-moses-death, evidence_claim_ids: [moses-attested-lxx, moses-age-at-pharaoh-exodus, moses-age-at-death-deut-lxx], explanation: "The text gives Moses' ages of 80 at the Pharaoh encounter and 120 at death. Birth/death years are derived using a provisional 1450 BCE encounter anchor; the absolute calendar years remain grade-E estimates."}
+      - {<<: *exodus_low_confidence, entity_id: aaron, birth_derivation_id: exodus-aaron-birth, death_derivation_id: exodus-aaron-death, evidence_claim_ids: [aaron-attested-lxx, aaron-age-at-pharaoh-exodus, aaron-age-at-death-num-lxx], explanation: "The text gives Aaron's ages of 83 at the Pharaoh encounter and 123 at death. Birth/death years are derived using a provisional 1450 BCE encounter anchor; the absolute calendar years remain grade-E estimates."}
+      - {<<: *exodus_low_confidence, entity_id: miriam, birth_derivation_id: exodus-miriam-birth, death_derivation_id: exodus-miriam-death, evidence_claim_ids: [miriam-attested-lxx], explanation: "Grade-E display window for Miriam; the text identifies her in the family but supplies no lifespan."}
+      - {<<: *exodus_low_confidence, entity_id: midian-priest-exodus, birth_derivation_id: exodus-midian-priest-birth, death_derivation_id: exodus-midian-priest-death, evidence_claim_ids: [midian-priest-exodus-attested-lxx], explanation: "Grade-E display window; the witnesses differ in the priest's name (Reuel/Raguel/Jethro forms), but no lifespan is given."}
+      - {<<: *exodus_low_confidence, entity_id: zipporah, birth_derivation_id: exodus-zipporah-birth, death_derivation_id: exodus-zipporah-death, evidence_claim_ids: [zipporah-attested-lxx], explanation: "Grade-E display window for Zipporah; the narrative establishes family and events but no ages or calendar dates."}
+      - {<<: *exodus_low_confidence, entity_id: gershom, birth_derivation_id: exodus-gershom-birth, death_derivation_id: exodus-gershom-death, evidence_claim_ids: [gershom-attested-lxx], explanation: "Grade-E display window; the name is attested, but no lifespan is supplied."}
+      - {<<: *exodus_low_confidence, entity_id: eliezer-moses, birth_derivation_id: exodus-eliezer-birth, death_derivation_id: exodus-eliezer-death, evidence_claim_ids: [eliezer-moses-attested-lxx], explanation: "Grade-E display window; a named son of Moses, but no lifespan is supplied."}
+      - {<<: *exodus_low_confidence, entity_id: moses-son-circumcised, birth_derivation_id: exodus-unnamed-son-birth, death_derivation_id: exodus-unnamed-son-death, evidence_claim_ids: [moses-son-circumcised-attested-lxx], explanation: "Grade-E display window for the unnamed son in Exodus 4. The text does not identify which named son this is, so no identity merge is made."}
+      - {<<: *exodus_low_confidence, entity_id: egyptian-taskmaster-exodus, birth_derivation_id: exodus-egyptian-birth, death_derivation_id: exodus-egyptian-death, evidence_claim_ids: [egyptian-taskmaster-exodus-attested-lxx], explanation: "Grade-E display window for an unnamed Egyptian who is killed; the text gives no age or calendar date."}
+      - {<<: *exodus_low_confidence, entity_id: hebrew-man-confronts-moses, birth_derivation_id: exodus-hebrew-man-birth, death_derivation_id: exodus-hebrew-man-death, evidence_claim_ids: [hebrew-man-confronts-moses-attested-lxx], explanation: "Grade-E display window for an unnamed Hebrew individual; no lifespan data is supplied."}
+      - {<<: *exodus_low_confidence, entity_id: hebrew-man-fellow-fighter, birth_derivation_id: exodus-hebrew-man-birth, death_derivation_id: exodus-hebrew-man-death, evidence_claim_ids: [hebrew-man-fellow-fighter-attested-lxx], explanation: "Grade-E display window for an unnamed Hebrew individual; no lifespan data is supplied."}
+      - {<<: *exodus_low_confidence, entity_id: izhar-levite, birth_derivation_id: exodus-levite-descendant-birth, death_derivation_id: exodus-levite-descendant-death, evidence_claim_ids: [izhar-levite-attested-lxx], explanation: "Grade-E window for a genealogically attested person whose text gives no lifespan."}
+      - {<<: *exodus_low_confidence, entity_id: hebron-levite, birth_derivation_id: exodus-levite-descendant-birth, death_derivation_id: exodus-levite-descendant-death, evidence_claim_ids: [hebron-levite-attested-lxx], explanation: "Grade-E window for a genealogically attested person whose text gives no lifespan."}
+      - {<<: *exodus_low_confidence, entity_id: uzziel, birth_derivation_id: exodus-levite-descendant-birth, death_derivation_id: exodus-levite-descendant-death, evidence_claim_ids: [uzziel-attested-lxx], explanation: "Grade-E window for a genealogically attested person whose text gives no lifespan."}
+      - {<<: *exodus_low_confidence, entity_id: korah-levite, birth_derivation_id: exodus-levite-grandchild-birth, death_derivation_id: exodus-levite-grandchild-death, evidence_claim_ids: [korah-levite-attested-lxx], explanation: "Grade-E window for the Korah descended from Levi; kept distinct from Esau's Korah and undated by the text."}
+      - {<<: *exodus_low_confidence, entity_id: nepheg, birth_derivation_id: exodus-levite-grandchild-birth, death_derivation_id: exodus-levite-grandchild-death, evidence_claim_ids: [nepheg-attested-lxx], explanation: "Grade-E window for a genealogically attested person whose text gives no lifespan."}
+      - {<<: *exodus_low_confidence, entity_id: zichri, birth_derivation_id: exodus-levite-grandchild-birth, death_derivation_id: exodus-levite-grandchild-death, evidence_claim_ids: [zichri-attested-lxx], explanation: "Grade-E window for a genealogically attested person whose text gives no lifespan."}
+      - {<<: *exodus_low_confidence, entity_id: mishael, birth_derivation_id: exodus-levite-grandchild-birth, death_derivation_id: exodus-levite-grandchild-death, evidence_claim_ids: [mishael-attested-lxx], explanation: "Grade-E window for a genealogically attested person whose text gives no lifespan."}
+      - {<<: *exodus_low_confidence, entity_id: elzaphan, birth_derivation_id: exodus-levite-grandchild-birth, death_derivation_id: exodus-levite-grandchild-death, evidence_claim_ids: [elzaphan-attested-lxx], explanation: "Grade-E window for a genealogically attested person whose text gives no lifespan."}
+      - {<<: *exodus_low_confidence, entity_id: sithri, birth_derivation_id: exodus-levite-grandchild-birth, death_derivation_id: exodus-levite-grandchild-death, evidence_claim_ids: [sithri-attested-lxx], explanation: "Grade-E window for a genealogically attested person whose text gives no lifespan."}
+      - {<<: *exodus_low_confidence, entity_id: nadab, birth_derivation_id: exodus-aaron-son-birth, death_derivation_id: exodus-aaron-son-death, evidence_claim_ids: [nadab-attested-lxx], explanation: "Grade-E window for a person named in the Aaronide genealogy; no lifespan is supplied here."}
+      - {<<: *exodus_low_confidence, entity_id: abihu, birth_derivation_id: exodus-aaron-son-birth, death_derivation_id: exodus-aaron-son-death, evidence_claim_ids: [abihu-attested-lxx], explanation: "Grade-E window for a person named in the Aaronide genealogy; no lifespan is supplied here."}
+      - {<<: *exodus_low_confidence, entity_id: eleazar-aaron, birth_derivation_id: exodus-aaron-son-birth, death_derivation_id: exodus-aaron-son-death, evidence_claim_ids: [eleazar-aaron-attested-lxx], explanation: "Grade-E window for a person named in the Aaronide genealogy; no lifespan is supplied here."}
+      - {<<: *exodus_low_confidence, entity_id: ithamar, birth_derivation_id: exodus-aaron-son-birth, death_derivation_id: exodus-aaron-son-death, evidence_claim_ids: [ithamar-attested-lxx], explanation: "Grade-E window for a person named in the Aaronide genealogy; no lifespan is supplied here."}
+      - {<<: *exodus_low_confidence, entity_id: amminadab, birth_derivation_id: exodus-amminadab-birth, death_derivation_id: exodus-amminadab-death, evidence_claim_ids: [amminadab-attested-lxx], explanation: "Grade-E window for a genealogically attested person whose text gives no lifespan."}
+      - {<<: *exodus_low_confidence, entity_id: elisheba, birth_derivation_id: exodus-miriam-birth, death_derivation_id: exodus-miriam-death, evidence_claim_ids: [elisheba-attested-lxx], explanation: "Grade-E window for Elisheba; family relationships are stated, but no lifespan is given."}
+      - {<<: *exodus_low_confidence, entity_id: nahshon, birth_derivation_id: exodus-nahshon-birth, death_derivation_id: exodus-nahshon-death, evidence_claim_ids: [nahshon-attested-lxx], explanation: "Grade-E window for Nahshon; family relationships are stated, but no lifespan is given."}
+      - {<<: *exodus_low_confidence, entity_id: putiel, birth_derivation_id: exodus-putiel-birth, death_derivation_id: exodus-putiel-death, evidence_claim_ids: [putiel-attested-lxx], explanation: "Grade-E window for Putiel; the text gives only a family reference."}
+      - {<<: *exodus_low_confidence, entity_id: eleazar-wife, birth_derivation_id: exodus-eleazar-wife-birth, death_derivation_id: exodus-eleazar-wife-death, evidence_claim_ids: [eleazar-wife-attested-lxx], explanation: "Grade-E display window for an unnamed woman; her father and son are named, but she is not."}
+      - {<<: *exodus_low_confidence, entity_id: phinehas, birth_derivation_id: exodus-phinehas-birth, death_derivation_id: exodus-phinehas-death, evidence_claim_ids: [phinehas-attested-lxx], explanation: "Grade-E window for Phinehas, named as the son of Eleazar and his unnamed wife."}
       - &g36est {entity_id: seir-horite, birth_derivation_id: genesis36-display-birth, death_derivation_id: genesis36-display-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [seir-horite-attested], alternative_claim_ids: [], explanation: "Provisional grade-E display window for an undated Genesis 36 person; the text supplies genealogy, not calendar years or lifespan."}
       - {<<: *g36est, entity_id: lotan-horite, evidence_claim_ids: [lotan-horite-attested]}
       - {<<: *g36est, entity_id: shobal-horite, evidence_claim_ids: [shobal-horite-attested]}

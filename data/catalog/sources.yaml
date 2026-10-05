@@ -50,6 +50,24 @@ records:
     bibliographic_locator: BHS text of Codex Leningradensis, German Bible Society 1967/77
     url: https://www.sbl-site.org/resources/digital-texts/biblica-hebraica-stuttgartensia/
     license_status: copyrighted_download_permitted
+  - id: bhs-exodus
+    source_type: critical_edition
+    title: Biblia Hebraica Stuttgartensia — Exodus
+    bibliographic_locator: BHS text of Codex Leningradensis, German Bible Society 1967/77
+    url: https://www.die-bibel.de/en/bible/BHS/EXO.1
+    license_status: copyrighted_download_permitted
+  - id: bhs-numbers
+    source_type: critical_edition
+    title: Biblia Hebraica Stuttgartensia — Numbers
+    bibliographic_locator: BHS text of Codex Leningradensis, German Bible Society 1967/77
+    url: https://www.die-bibel.de/en/bible/BHS/NUM.1
+    license_status: copyrighted_download_permitted
+  - id: bhs-deuteronomy
+    source_type: critical_edition
+    title: Biblia Hebraica Stuttgartensia — Deuteronomy
+    bibliographic_locator: BHS text of Codex Leningradensis, German Bible Society 1967/77
+    url: https://www.die-bibel.de/en/bible/BHS/DEU.1
+    license_status: copyrighted_download_permitted
   - id: schorch-samaritan-genesis-2021
     source_type: critical_edition
     title: The Samaritan Pentateuch — Volume I Genesis
@@ -73,4 +91,3 @@ records:
     url: https://www.die-bibel.de/en/bible/NA28
     license_status: copyrighted_reference_only
     publication_year: 2012
-

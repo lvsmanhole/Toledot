@@ -17,6 +17,67 @@ records:
     citations:
       - source_id: rahlfs-hanhart-2006
         locator: Genesis
+  - id: lxx-exodus-rahlfs-hanhart
+    work_id: exodus
+    tradition: septuagint
+    language: grc
+    edition: Rahlfs-Hanhart Septuaginta, editio altera (2006)
+    citations:
+      - source_id: rahlfs-hanhart-2006
+        locator: Exodus
+  - id: geez-exodus-dillmann
+    work_id: exodus
+    tradition: geez
+    language: gez
+    edition: Dillmann, Octateuchus Aethiopicus (1853–1855), digitized transcription
+    citations:
+      - source_id: dillmann-octateuch-1853
+        locator: Exodus
+    notes: Follows LXX verse numbering; the TAU transcription notes it is not the latest scholarly edition and explains its bracket conventions.
+  - id: mt-exodus-bhs
+    work_id: exodus
+    tradition: masoretic
+    language: hbo
+    edition: Biblia Hebraica Stuttgartensia, Exodus
+    citations:
+      - source_id: bhs-exodus
+        locator: Exodus
+  - id: lxx-numbers-rahlfs-hanhart
+    work_id: numbers
+    tradition: septuagint
+    language: grc
+    edition: Rahlfs-Hanhart Septuaginta, editio altera (2006)
+    citations: [{source_id: rahlfs-hanhart-2006, locator: Numbers}]
+  - id: geez-numbers-dillmann
+    work_id: numbers
+    tradition: geez
+    language: gez
+    edition: Dillmann, Octateuchus Aethiopicus (1853–1855), digitized transcription
+    citations: [{source_id: dillmann-octateuch-1853, locator: Numbers}]
+  - id: mt-numbers-bhs
+    work_id: numbers
+    tradition: masoretic
+    language: hbo
+    edition: Biblia Hebraica Stuttgartensia, Numbers
+    citations: [{source_id: bhs-numbers, locator: Numbers}]
+  - id: lxx-deuteronomy-rahlfs-hanhart
+    work_id: deuteronomy
+    tradition: septuagint
+    language: grc
+    edition: Rahlfs-Hanhart Septuaginta, editio altera (2006)
+    citations: [{source_id: rahlfs-hanhart-2006, locator: Deuteronomy}]
+  - id: geez-deuteronomy-dillmann
+    work_id: deuteronomy
+    tradition: geez
+    language: gez
+    edition: Dillmann, Octateuchus Aethiopicus (1853–1855), digitized transcription
+    citations: [{source_id: dillmann-octateuch-1853, locator: Deuteronomy}]
+  - id: mt-deuteronomy-bhs
+    work_id: deuteronomy
+    tradition: masoretic
+    language: hbo
+    edition: Biblia Hebraica Stuttgartensia, Deuteronomy
+    citations: [{source_id: bhs-deuteronomy, locator: Deuteronomy}]
   - id: mt-genesis-bhs
     work_id: genesis
     tradition: masoretic
@@ -50,4 +111,3 @@ records:
     citations:
       - source_id: na28
         locator: Matthew
-
