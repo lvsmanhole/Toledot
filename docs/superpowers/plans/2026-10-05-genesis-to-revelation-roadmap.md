@@ -34,7 +34,8 @@
 - [x] Exodus 1–7: reviewed chapter inventories, LXX/Geʽez/MT witnesses, person/group census, sourced relations and events, Moses/Aaron explicit ages, disclosed display lifespans.
 - [ ] Exodus 8–40: plagues, Passover, departure, wilderness events, Sinai/covenant, tabernacle; all named and uniquely identifiable unnamed people.
   - [x] Exodus 8–18: plague sequence, departure and sea crossing, wilderness provisions, Amalek battle, Jethro visit; Joshua, Hur, Pharaoh's firstborn, and group entities.
-  - [ ] Exodus 19–40: Sinai, covenant, tabernacle construction and additional wilderness events.
+  - [x] Exodus 19–24: Sinai arrival, covenant proposal and ratification, Ten Words, and Moses' ascent.
+  - [ ] Exodus 25–40: tabernacle construction and additional wilderness events.
 - [ ] Leviticus 1–27: include narrative persons, otherwise record explicit chapter review with no individuals; track relevant foreign witnesses and events.
 - [ ] Numbers 1–36: census lists, wilderness generation, named and unnamed persons, tribal/family relations, age/death claims.
 - [ ] Deuteronomy 1–34: speeches, named/unnamed people, Moses' age and death, variant witnesses.

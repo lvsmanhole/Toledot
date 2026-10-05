@@ -1,0 +1,5 @@
+schema_version: 1
+record_type: entities
+records:
+  - &group {id: seventy-elders-israel, entity_type: group, primary_name: Seventy elders of Israel, aliases: [], classification: collective, identity_status: collective, citations: [{source_id: rahlfs-hanhart-2006, locator: "Exodus 19:7; 24:1, 9", witness_id: lxx-exodus-rahlfs-hanhart}, {source_id: dillmann-octateuch-1853, locator: "Exodus 19:7; 24:1, 9", witness_id: geez-exodus-dillmann}, {source_id: bhs-exodus, locator: "Exodus 19:7; 24:1, 9", witness_id: mt-exodus-bhs}]}
+  - {<<: *group, id: israelite-young-men-exodus, primary_name: Young men of Israel offering sacrifices, aliases: [], citations: [{source_id: rahlfs-hanhart-2006, locator: "Exodus 24:5", witness_id: lxx-exodus-rahlfs-hanhart}, {source_id: dillmann-octateuch-1853, locator: "Exodus 24:5", witness_id: geez-exodus-dillmann}, {source_id: bhs-exodus, locator: "Exodus 24:5", witness_id: mt-exodus-bhs}]}
