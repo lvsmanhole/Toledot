@@ -4,7 +4,7 @@ from __future__ import annotations
 
 from dataclasses import dataclass, field
 from pathlib import Path
-from typing import Any, Mapping
+from typing import Any, Literal, Mapping
 
 from .dates import HistoricalYear
 
@@ -210,6 +210,12 @@ class ResolutionResult:
     model_id: str
     derivation_values: Mapping[str, HistoricalYear]
     lifespans: Mapping[str, ResolvedLifespan]
+
+
+@dataclass(frozen=True, slots=True)
+class OverlapResult:
+    reference_overlap: bool
+    evidenced_overlap: Literal["supported", "possible", "not_supported", "unknown"]
 
 
 @dataclass(slots=True)
