@@ -161,6 +161,10 @@ records:
       - {id: exodus-putiel-death, operation: literal, year: {era: BCE, year: 1460}}
       - {id: exodus-eleazar-wife-birth, operation: literal, year: {era: BCE, year: 1480}}
       - {id: exodus-eleazar-wife-death, operation: literal, year: {era: BCE, year: 1400}}
+      - {id: exodus-joshua-hur-birth, operation: literal, year: {era: BCE, year: 1500}}
+      - {id: exodus-joshua-hur-death, operation: literal, year: {era: BCE, year: 1400}}
+      - {id: exodus-pharaoh-son-birth, operation: literal, year: {era: BCE, year: 1470}}
+      - {id: exodus-pharaoh-son-death, operation: literal, year: {era: BCE, year: 1450}}
     resolutions:
       - &core {entity_id: adam, birth_derivation_id: adam-birth, death_derivation_id: adam-death, life_basis: synchronized, confidence_grade: D, evidence_claim_ids: [lxx-early-adam-anchor, adam-lifespan-lxx], alternative_claim_ids: [mt-early-adam-anchor, sp-early-adam-anchor], explanation: "Civil years use the declared LXX display anchor; lifespan is explicit in Genesis 5."}
       - <<: *core
@@ -1194,3 +1198,6 @@ records:
       - {<<: *g36est, entity_id: mibzar-chief-edom, evidence_claim_ids: [mibzar-chief-edom-attested]}
       - {<<: *g36est, entity_id: magdiel-chief-edom, evidence_claim_ids: [magdiel-chief-edom-attested]}
       - {<<: *g36est, entity_id: iram-chief-edom, evidence_claim_ids: [iram-chief-edom-attested]}
+      - {<<: *exodus_low_confidence, entity_id: joshua-exodus, birth_derivation_id: exodus-joshua-hur-birth, death_derivation_id: exodus-joshua-hur-death, evidence_claim_ids: [joshua-exodus-attested-lxx], explanation: "Display-only cohort window for Joshua at his first Exodus appearance; the text supplies military activity but no birth or death date here. Grade E, not a claimed lifespan."}
+      - {<<: *exodus_low_confidence, entity_id: hur-exodus, birth_derivation_id: exodus-joshua-hur-birth, death_derivation_id: exodus-joshua-hur-death, evidence_claim_ids: [hur-exodus-attested-lxx], explanation: "Display-only cohort window for Hur at his Exodus appearance; no lifespan is stated. Grade E, not a claimed lifespan."}
+      - {<<: *exodus_low_confidence, entity_id: pharaoh-firstborn-exodus, birth_derivation_id: exodus-pharaoh-son-birth, death_derivation_id: exodus-pharaoh-son-death, evidence_claim_ids: [pharaoh-firstborn-exodus-attested-lxx], explanation: "Illustrative window ending at the death narrated in Exodus 12. Birth year and age at death are unknown; this is an episode marker, not a recovered actual lifespan."}

@@ -13,6 +13,7 @@ def test_exodus_one_through_seven_has_a_triadic_people_census_and_timeline() -> 
     units = [
         unit for unit in dataset.inventory_units.values()
         if unit.id.startswith("inv-exod-")
+        and int(unit.locator.split()[1].split(":")[0]) in range(1, 8)
     ]
     assert {int(unit.locator.split()[1].split(":")[0]) for unit in units} == set(range(1, 8))
     assert all(unit.reviewed and unit.passage_ids for unit in units)

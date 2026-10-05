@@ -1,6 +1,6 @@
 # Bible Timeline data foundation
 
-This repository is the evidence-aware data pipeline for an immersive horizontal Bible chronology. The current milestone covers Genesis 1–50 and preserves textual variants instead of hiding them behind a single unexplained date.
+This repository is the evidence-aware data pipeline for an immersive horizontal Bible chronology. The authored corpus currently reviews Genesis 1–50 and Exodus 1–18 in the Septuagint, Geʽez, and Masoretic traditions; it preserves textual variants instead of hiding them behind a single unexplained date. The immersive website is planned after broader book coverage and is not implemented yet.
 
 ## Install and verify
 
@@ -25,7 +25,7 @@ The installed `bible-timeline` command accepts the same subcommands. `validate -
 
 Files below `data/` are authored evidence records and are authoritative. JSON, SQLite, manifests, and reports below a build output directory are generated and may be recreated at any time. JSON and SQLite are deliberately deterministic for review and deployment.
 
-The catalog records works, canon lists and memberships, witnesses, editions, and sources. It represents Protestant 66-book, Septuagint, and Ethiopian Orthodox narrower/broader lists separately. It does not claim that one flattened list is universal. Genesis evidence includes independent LXX, Masoretic, Samaritan, and Geʽez witness metadata; the chronology models keep numerical variants as distinct claims.
+The catalog records works, canon lists and memberships, witnesses, editions, and sources. It represents Protestant 66-book, Septuagint, and Ethiopian Orthodox narrower/broader lists separately. It does not claim that one flattened list is universal. Genesis evidence includes independent LXX, Masoretic, Samaritan, and Geʽez witness metadata; Exodus currently includes LXX, Masoretic, and Geʽez passage review. Chronology models keep numerical variants as distinct claims.
 
 ## Stable IDs and contributions
 

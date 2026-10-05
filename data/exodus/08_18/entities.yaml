@@ -1,0 +1,14 @@
+schema_version: 1
+record_type: entities
+records:
+  - &human {id: joshua-exodus, entity_type: human, primary_name: Joshua, aliases: [Jesus son of Naue in Greek], classification: named_person, identity_status: named, gender: male, citations: [{source_id: rahlfs-hanhart-2006, locator: "Exodus 17:9", witness_id: lxx-exodus-rahlfs-hanhart}, {source_id: dillmann-octateuch-1853, locator: "Exodus 17:9", witness_id: geez-exodus-dillmann}, {source_id: bhs-exodus, locator: "Exodus 17:9", witness_id: mt-exodus-bhs}]}
+  - {<<: *human, id: hur-exodus, primary_name: Hur, aliases: [], gender: male, citations: [{source_id: rahlfs-hanhart-2006, locator: "Exodus 17:10-12", witness_id: lxx-exodus-rahlfs-hanhart}, {source_id: dillmann-octateuch-1853, locator: "Exodus 17:10-12", witness_id: geez-exodus-dillmann}, {source_id: bhs-exodus, locator: "Exodus 17:10-12", witness_id: mt-exodus-bhs}]}
+  - {<<: *human, id: pharaoh-firstborn-exodus, primary_name: Pharaoh's firstborn son, aliases: [], classification: unnamed_person, identity_status: unnamed_unique, gender: male, citations: [{source_id: rahlfs-hanhart-2006, locator: "Exodus 11:5; 12:29", witness_id: lxx-exodus-rahlfs-hanhart}, {source_id: dillmann-octateuch-1853, locator: "Exodus 11:5; 12:29", witness_id: geez-exodus-dillmann}, {source_id: bhs-exodus, locator: "Exodus 11:5; 12:29", witness_id: mt-exodus-bhs}]}
+  - &group {id: egyptian-population-exodus, entity_type: group, primary_name: Egyptians affected by the plagues, aliases: [], classification: collective, identity_status: collective, citations: [{source_id: rahlfs-hanhart-2006, locator: "Exodus 8-18", witness_id: lxx-exodus-rahlfs-hanhart}, {source_id: dillmann-octateuch-1853, locator: "Exodus 8-18", witness_id: geez-exodus-dillmann}, {source_id: bhs-exodus, locator: "Exodus 8-18", witness_id: mt-exodus-bhs}]}
+  - {<<: *group, id: egyptian-servants-exodus, primary_name: Pharaoh's servants and officials, aliases: []}
+  - {<<: *group, id: egyptian-firstborn-exodus, primary_name: Firstborn throughout Egypt, aliases: []}
+  - {<<: *group, id: israelite-firstborn-exodus, primary_name: Israelite firstborn, aliases: []}
+  - {<<: *group, id: mixed-multitude-exodus, primary_name: Mixed multitude leaving Egypt, aliases: []}
+  - {<<: *group, id: egyptian-army-exodus, primary_name: Pharaoh's chariots and army, aliases: []}
+  - {<<: *group, id: amalekites-exodus, primary_name: Amalekites, aliases: []}
+  - {<<: *group, id: israelite-judges-exodus, primary_name: Israelite appointed judges and officers, aliases: []}
