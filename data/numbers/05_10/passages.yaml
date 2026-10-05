@@ -1,0 +1,21 @@
+schema_version: 1
+record_type: passages
+records:
+  - &lxx {id: num-5-lxx, work_id: numbers, witness_id: lxx-numbers-rahlfs-hanhart, locator: "Numbers 5", citations: [{source_id: rahlfs-hanhart-2006, locator: "Numbers 5", witness_id: lxx-numbers-rahlfs-hanhart}]}
+  - &gee {id: num-5-geez, work_id: numbers, witness_id: geez-numbers-dillmann, locator: "Numbers 5", citations: [{source_id: dillmann-octateuch-1853, locator: "Numeri 5", witness_id: geez-numbers-dillmann}]}
+  - &mt {id: num-5-mt, work_id: numbers, witness_id: mt-numbers-bhs, locator: "Numbers 5", citations: [{source_id: bhs-numbers, locator: "Numbers 5", witness_id: mt-numbers-bhs}]}
+  - {<<: *lxx, id: num-6-lxx, locator: "Numbers 6", citations: [{source_id: rahlfs-hanhart-2006, locator: "Numbers 6", witness_id: lxx-numbers-rahlfs-hanhart}]}
+  - {<<: *gee, id: num-6-geez, locator: "Numbers 6", citations: [{source_id: dillmann-octateuch-1853, locator: "Numeri 6", witness_id: geez-numbers-dillmann}]}
+  - {<<: *mt, id: num-6-mt, locator: "Numbers 6", citations: [{source_id: bhs-numbers, locator: "Numbers 6", witness_id: mt-numbers-bhs}]}
+  - {<<: *lxx, id: num-7-lxx, locator: "Numbers 7", citations: [{source_id: rahlfs-hanhart-2006, locator: "Numbers 7", witness_id: lxx-numbers-rahlfs-hanhart}]}
+  - {<<: *gee, id: num-7-geez, locator: "Numbers 7", citations: [{source_id: dillmann-octateuch-1853, locator: "Numeri 7", witness_id: geez-numbers-dillmann}]}
+  - {<<: *mt, id: num-7-mt, locator: "Numbers 7", citations: [{source_id: bhs-numbers, locator: "Numbers 7", witness_id: mt-numbers-bhs}]}
+  - {<<: *lxx, id: num-8-lxx, locator: "Numbers 8", citations: [{source_id: rahlfs-hanhart-2006, locator: "Numbers 8", witness_id: lxx-numbers-rahlfs-hanhart}]}
+  - {<<: *gee, id: num-8-geez, locator: "Numbers 8", citations: [{source_id: dillmann-octateuch-1853, locator: "Numeri 8", witness_id: geez-numbers-dillmann}]}
+  - {<<: *mt, id: num-8-mt, locator: "Numbers 8", citations: [{source_id: bhs-numbers, locator: "Numbers 8", witness_id: mt-numbers-bhs}]}
+  - {<<: *lxx, id: num-9-lxx, locator: "Numbers 9", citations: [{source_id: rahlfs-hanhart-2006, locator: "Numbers 9", witness_id: lxx-numbers-rahlfs-hanhart}]}
+  - {<<: *gee, id: num-9-geez, locator: "Numbers 9", citations: [{source_id: dillmann-octateuch-1853, locator: "Numeri 9", witness_id: geez-numbers-dillmann}]}
+  - {<<: *mt, id: num-9-mt, locator: "Numbers 9", citations: [{source_id: bhs-numbers, locator: "Numbers 9", witness_id: mt-numbers-bhs}]}
+  - {<<: *lxx, id: num-10-lxx, locator: "Numbers 10", citations: [{source_id: rahlfs-hanhart-2006, locator: "Numbers 10", witness_id: lxx-numbers-rahlfs-hanhart}]}
+  - {<<: *gee, id: num-10-geez, locator: "Numbers 10", citations: [{source_id: dillmann-octateuch-1853, locator: "Numeri 10", witness_id: geez-numbers-dillmann}]}
+  - {<<: *mt, id: num-10-mt, locator: "Numbers 10", citations: [{source_id: bhs-numbers, locator: "Numbers 10", witness_id: mt-numbers-bhs}]}

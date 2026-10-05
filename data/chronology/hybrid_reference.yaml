@@ -133,6 +133,8 @@ records:
       - {id: exodus-miriam-death, operation: literal, year: {era: BCE, year: 1410}}
       - {id: exodus-midian-priest-birth, operation: literal, year: {era: BCE, year: 1570}}
       - {id: exodus-midian-priest-death, operation: literal, year: {era: BCE, year: 1430}}
+      - {id: numbers-hobab-birth, operation: literal, year: {era: BCE, year: 1500}}
+      - {id: numbers-hobab-death, operation: literal, year: {era: BCE, year: 1400}}
       - {id: exodus-zipporah-birth, operation: literal, year: {era: BCE, year: 1490}}
       - {id: exodus-zipporah-death, operation: literal, year: {era: BCE, year: 1400}}
       - {id: exodus-gershom-birth, operation: literal, year: {era: BCE, year: 1488}}
@@ -1149,6 +1151,7 @@ records:
       - {<<: *exodus_low_confidence, entity_id: aaron, birth_derivation_id: exodus-aaron-birth, death_derivation_id: exodus-aaron-death, evidence_claim_ids: [aaron-attested-lxx, aaron-age-at-pharaoh-exodus, aaron-age-at-death-num-lxx], explanation: "The text gives Aaron's ages of 83 at the Pharaoh encounter and 123 at death. Birth/death years are derived using a provisional 1450 BCE encounter anchor; the absolute calendar years remain grade-E estimates."}
       - {<<: *exodus_low_confidence, entity_id: miriam, birth_derivation_id: exodus-miriam-birth, death_derivation_id: exodus-miriam-death, evidence_claim_ids: [miriam-attested-lxx], explanation: "Grade-E display window for Miriam; the text identifies her in the family but supplies no lifespan."}
       - {<<: *exodus_low_confidence, entity_id: midian-priest-exodus, birth_derivation_id: exodus-midian-priest-birth, death_derivation_id: exodus-midian-priest-death, evidence_claim_ids: [midian-priest-exodus-attested-lxx], explanation: "Grade-E display window; the witnesses differ in the priest's name (Reuel/Raguel/Jethro forms), but no lifespan is given."}
+      - {<<: *exodus_low_confidence, entity_id: hobab-numbers, birth_derivation_id: numbers-hobab-birth, death_derivation_id: numbers-hobab-death, evidence_claim_ids: [hobab-attested-numbers-lxx, hobab-attested-numbers-geez, hobab-attested-numbers-mt], explanation: "Grade-E display window only. Numbers identifies Hobab as alive at the Sinai departure and gives kinship, but no lifespan or absolute birth/death years; the selected years merely make the narrative-era overlap visible."}
       - {<<: *exodus_low_confidence, entity_id: zipporah, birth_derivation_id: exodus-zipporah-birth, death_derivation_id: exodus-zipporah-death, evidence_claim_ids: [zipporah-attested-lxx], explanation: "Grade-E display window for Zipporah; the narrative establishes family and events but no ages or calendar dates."}
       - {<<: *exodus_low_confidence, entity_id: gershom, birth_derivation_id: exodus-gershom-birth, death_derivation_id: exodus-gershom-death, evidence_claim_ids: [gershom-attested-lxx], explanation: "Grade-E display window; the name is attested, but no lifespan is supplied."}
       - {<<: *exodus_low_confidence, entity_id: eliezer-moses, birth_derivation_id: exodus-eliezer-birth, death_derivation_id: exodus-eliezer-death, evidence_claim_ids: [eliezer-moses-attested-lxx], explanation: "Grade-E display window; a named son of Moses, but no lifespan is supplied."}

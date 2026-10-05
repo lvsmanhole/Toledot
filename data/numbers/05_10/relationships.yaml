@@ -1,0 +1,5 @@
+schema_version: 1
+record_type: relationships
+records:
+  - {id: reuel-parent-hobab, relationship_type: parent, subject_id: midian-priest-exodus, object_id: hobab-numbers, claim_ids: [hobab-reuel-son-claim-lxx, hobab-reuel-son-claim-geez, hobab-reuel-son-claim-mt], citations: [{source_id: rahlfs-hanhart-2006, locator: "Numbers 10:29", witness_id: lxx-numbers-rahlfs-hanhart}, {source_id: dillmann-octateuch-1853, locator: "Numeri 10:29", witness_id: geez-numbers-dillmann}, {source_id: bhs-numbers, locator: "Numbers 10:29", witness_id: mt-numbers-bhs}]}
+  - {id: hobab-affinal-relative-moses, relationship_type: affinal, subject_id: hobab-numbers, object_id: moses, claim_ids: [hobab-moses-affinal-claim-lxx, hobab-moses-affinal-claim-geez, hobab-moses-affinal-claim-mt], citations: [{source_id: rahlfs-hanhart-2006, locator: "Numbers 10:29", witness_id: lxx-numbers-rahlfs-hanhart}, {source_id: dillmann-octateuch-1853, locator: "Numeri 10:29", witness_id: geez-numbers-dillmann}, {source_id: bhs-numbers, locator: "Numbers 10:29", witness_id: mt-numbers-bhs}]}
