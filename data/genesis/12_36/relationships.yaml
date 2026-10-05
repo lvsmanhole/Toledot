@@ -1,0 +1,358 @@
+schema_version: 1
+record_type: relationships
+records:
+  - &rel {id: abram-spouse-sarai, relationship_type: spouse, subject_id: abram, object_id: sarai, claim_ids: [], citations: &cite [{source_id: goettingen-genesis-1974, locator: "Genesis 12-36", witness_id: lxx-genesis-goettingen}]}
+  - <<: *rel
+    id: abram-spouse-hagar
+    subject_id: abram
+    object_id: hagar
+  - <<: *rel
+    id: abram-spouse-keturah
+    subject_id: abram
+    object_id: keturah
+  - <<: *rel
+    id: isaac-spouse-rebekah
+    subject_id: isaac
+    object_id: rebekah
+  - <<: *rel
+    id: jacob-spouse-leah
+    subject_id: jacob
+    object_id: leah
+  - <<: *rel
+    id: jacob-spouse-rachel
+    subject_id: jacob
+    object_id: rachel
+  - <<: *rel
+    id: jacob-spouse-bilhah
+    subject_id: jacob
+    object_id: bilhah
+  - <<: *rel
+    id: jacob-spouse-zilpah
+    subject_id: jacob
+    object_id: zilpah
+  - &parent
+    <<: *rel
+    id: abram-parent-ishmael
+    relationship_type: parent
+    subject_id: abram
+    object_id: ishmael
+  - <<: *parent
+    id: hagar-parent-ishmael
+    subject_id: hagar
+    object_id: ishmael
+  - <<: *parent
+    id: abram-parent-isaac
+    subject_id: abram
+    object_id: isaac
+  - <<: *parent
+    id: sarai-parent-isaac
+    subject_id: sarai
+    object_id: isaac
+  - <<: *parent
+    id: isaac-parent-esau
+    subject_id: isaac
+    object_id: esau
+  - <<: *parent
+    id: isaac-parent-jacob
+    subject_id: isaac
+    object_id: jacob
+  - <<: *parent
+    id: rebekah-parent-esau
+    subject_id: rebekah
+    object_id: esau
+  - <<: *parent
+    id: rebekah-parent-jacob
+    subject_id: rebekah
+    object_id: jacob
+  - <<: *parent
+    id: lot-parent-older-daughter
+    subject_id: lot
+    object_id: lot-daughter-older
+  - <<: *parent
+    id: lot-parent-younger-daughter
+    subject_id: lot
+    object_id: lot-daughter-younger
+  - <<: *parent
+    id: older-daughter-parent-moab
+    subject_id: lot-daughter-older
+    object_id: moab
+  - <<: *parent
+    id: younger-daughter-parent-ben-ammi
+    subject_id: lot-daughter-younger
+    object_id: ben-ammi
+  - <<: *parent
+    id: nahor-parent-bethuel
+    subject_id: nahor-brother-abram
+    object_id: bethuel
+  - <<: *parent
+    id: bethuel-parent-rebekah
+    subject_id: bethuel
+    object_id: rebekah
+  - <<: *parent
+    id: bethuel-parent-laban
+    subject_id: bethuel
+    object_id: laban
+  - <<: *parent
+    id: ishmael-parent-nebaioth
+    subject_id: ishmael
+    object_id: nebaioth
+  - <<: *parent
+    id: ishmael-parent-kedar
+    subject_id: ishmael
+    object_id: kedar
+  - <<: *parent
+    id: ishmael-parent-adbeel
+    subject_id: ishmael
+    object_id: adbeel
+  - <<: *parent
+    id: ishmael-parent-mibsam
+    subject_id: ishmael
+    object_id: mibsam
+  - <<: *parent
+    id: ishmael-parent-mishma
+    subject_id: ishmael
+    object_id: mishma
+  - <<: *parent
+    id: ishmael-parent-dumah
+    subject_id: ishmael
+    object_id: dumah
+  - <<: *parent
+    id: ishmael-parent-massa
+    subject_id: ishmael
+    object_id: massa
+  - <<: *parent
+    id: ishmael-parent-hadad
+    subject_id: ishmael
+    object_id: hadad-ishmael
+  - <<: *parent
+    id: ishmael-parent-tema
+    subject_id: ishmael
+    object_id: tema
+  - <<: *parent
+    id: ishmael-parent-jetur
+    subject_id: ishmael
+    object_id: jetur
+  - <<: *parent
+    id: ishmael-parent-naphish
+    subject_id: ishmael
+    object_id: naphish
+  - <<: *parent
+    id: ishmael-parent-kedemah
+    subject_id: ishmael
+    object_id: kedemah
+  - <<: *parent
+    id: abram-parent-zimran
+    subject_id: abram
+    object_id: zimran
+  - <<: *parent
+    id: abram-parent-jokshan
+    subject_id: abram
+    object_id: jokshan
+  - <<: *parent
+    id: abram-parent-medan
+    subject_id: abram
+    object_id: medan
+  - <<: *parent
+    id: abram-parent-midian
+    subject_id: abram
+    object_id: midian
+  - <<: *parent
+    id: abram-parent-ishbak
+    subject_id: abram
+    object_id: ishbak
+  - <<: *parent
+    id: abram-parent-shuah
+    subject_id: abram
+    object_id: shuah
+  - <<: *parent
+    id: jokshan-parent-sheba
+    subject_id: jokshan
+    object_id: sheba-jokshan
+  - <<: *parent
+    id: jokshan-parent-dedan
+    subject_id: jokshan
+    object_id: dedan-jokshan
+  - <<: *parent
+    id: midian-parent-ephah
+    subject_id: midian
+    object_id: ephah
+  - <<: *parent
+    id: midian-parent-epher
+    subject_id: midian
+    object_id: epher
+  - <<: *parent
+    id: midian-parent-hanoch
+    subject_id: midian
+    object_id: hanoch-midian
+  - <<: *parent
+    id: midian-parent-abida
+    subject_id: midian
+    object_id: abida
+  - <<: *parent
+    id: midian-parent-eldaah
+    subject_id: midian
+    object_id: eldaah
+  - <<: *parent
+    id: jacob-parent-reuben
+    subject_id: jacob
+    object_id: reuben
+  - <<: *parent
+    id: jacob-parent-simeon
+    subject_id: jacob
+    object_id: simeon
+  - <<: *parent
+    id: jacob-parent-levi
+    subject_id: jacob
+    object_id: levi
+  - <<: *parent
+    id: jacob-parent-judah
+    subject_id: jacob
+    object_id: judah
+  - <<: *parent
+    id: jacob-parent-dan
+    subject_id: jacob
+    object_id: dan
+  - <<: *parent
+    id: jacob-parent-naphtali
+    subject_id: jacob
+    object_id: naphtali
+  - <<: *parent
+    id: jacob-parent-gad
+    subject_id: jacob
+    object_id: gad
+  - <<: *parent
+    id: jacob-parent-asher
+    subject_id: jacob
+    object_id: asher
+  - <<: *parent
+    id: jacob-parent-issachar
+    subject_id: jacob
+    object_id: issachar
+  - <<: *parent
+    id: jacob-parent-zebulun
+    subject_id: jacob
+    object_id: zebulun
+  - <<: *parent
+    id: jacob-parent-dinah
+    subject_id: jacob
+    object_id: dinah
+  - <<: *parent
+    id: jacob-parent-joseph
+    subject_id: jacob
+    object_id: joseph
+  - <<: *parent
+    id: jacob-parent-benjamin
+    subject_id: jacob
+    object_id: benjamin
+  - <<: *parent
+    id: leah-parent-reuben
+    subject_id: leah
+    object_id: reuben
+  - <<: *parent
+    id: leah-parent-simeon
+    subject_id: leah
+    object_id: simeon
+  - <<: *parent
+    id: leah-parent-levi
+    subject_id: leah
+    object_id: levi
+  - <<: *parent
+    id: leah-parent-judah
+    subject_id: leah
+    object_id: judah
+  - <<: *parent
+    id: bilhah-parent-dan
+    subject_id: bilhah
+    object_id: dan
+  - <<: *parent
+    id: bilhah-parent-naphtali
+    subject_id: bilhah
+    object_id: naphtali
+  - <<: *parent
+    id: zilpah-parent-gad
+    subject_id: zilpah
+    object_id: gad
+  - <<: *parent
+    id: zilpah-parent-asher
+    subject_id: zilpah
+    object_id: asher
+  - <<: *parent
+    id: leah-parent-issachar
+    subject_id: leah
+    object_id: issachar
+  - <<: *parent
+    id: leah-parent-zebulun
+    subject_id: leah
+    object_id: zebulun
+  - <<: *parent
+    id: leah-parent-dinah
+    subject_id: leah
+    object_id: dinah
+  - <<: *parent
+    id: rachel-parent-joseph
+    subject_id: rachel
+    object_id: joseph
+  - <<: *parent
+    id: rachel-parent-benjamin
+    subject_id: rachel
+    object_id: benjamin
+  - <<: *parent
+    id: esau-parent-eliphaz
+    subject_id: esau
+    object_id: eliphaz
+  - <<: *parent
+    id: esau-parent-reuel
+    subject_id: esau
+    object_id: reuel-esau
+  - <<: *parent
+    id: esau-parent-jeush
+    subject_id: esau
+    object_id: jeush
+  - <<: *parent
+    id: esau-parent-jalam
+    subject_id: esau
+    object_id: jalam
+  - <<: *parent
+    id: esau-parent-korah
+    subject_id: esau
+    object_id: korah-esau
+  - <<: *parent
+    id: eliphaz-parent-amalek
+    subject_id: eliphaz
+    object_id: amalek
+  - <<: *parent
+    id: eliphaz-parent-teman
+    subject_id: eliphaz
+    object_id: teman
+  - <<: *parent
+    id: eliphaz-parent-omar
+    subject_id: eliphaz
+    object_id: omar
+  - <<: *parent
+    id: eliphaz-parent-zepho
+    subject_id: eliphaz
+    object_id: zepho
+  - <<: *parent
+    id: eliphaz-parent-gatam
+    subject_id: eliphaz
+    object_id: gatam
+  - <<: *parent
+    id: eliphaz-parent-kenaz
+    subject_id: eliphaz
+    object_id: kenaz-esau
+  - <<: *parent
+    id: reuel-parent-nahath
+    subject_id: reuel-esau
+    object_id: nahath
+  - <<: *parent
+    id: reuel-parent-zerah
+    subject_id: reuel-esau
+    object_id: zerah-esau
+  - <<: *parent
+    id: reuel-parent-shammah
+    subject_id: reuel-esau
+    object_id: shammah
+  - <<: *parent
+    id: reuel-parent-mizzah
+    subject_id: reuel-esau
+    object_id: mizzah

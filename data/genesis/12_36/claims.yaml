@@ -1,0 +1,403 @@
+schema_version: 1
+record_type: claims
+records:
+  - &age {id: abram-age-at-departure, subject_id: abram, predicate: age_at_event, object_id: abram-call-and-departure, value: {kind: duration, value: 75, unit: years}, evidence_type: explicit_text, witness_id: lxx-genesis-goettingen, confidence: A, citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 12:4", witness_id: lxx-genesis-goettingen, passage_id: gen-12-lxx}]}
+  - <<: *age
+    id: abram-age-at-ishmael-birth
+    predicate: age_at_birth_of
+    object_id: ishmael
+    value: {kind: duration, value: 86, unit: years}
+    citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 16:16", witness_id: lxx-genesis-goettingen, passage_id: gen-16-lxx}]
+  - <<: *age
+    id: abram-age-at-isaac-birth
+    predicate: age_at_birth_of
+    object_id: isaac
+    value: {kind: duration, value: 100, unit: years}
+    citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 21:5", witness_id: lxx-genesis-goettingen, passage_id: gen-21-lxx}]
+  - <<: *age
+    id: sarai-age-at-isaac-birth
+    subject_id: sarai
+    predicate: age_at_birth_of
+    object_id: isaac
+    value: {kind: duration, value: 90, unit: years}
+    citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 17:17", witness_id: lxx-genesis-goettingen, passage_id: gen-17-lxx}]
+  - <<: *age
+    id: isaac-age-at-marriage
+    subject_id: isaac
+    predicate: age_at_event
+    object_id: isaac-rebekah-marriage
+    value: {kind: duration, value: 40, unit: years}
+    citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 25:20", witness_id: lxx-genesis-goettingen, passage_id: gen-25-lxx}]
+  - <<: *age
+    id: isaac-age-at-twins-birth
+    subject_id: isaac
+    predicate: age_at_birth_of
+    object_id: jacob
+    value: {kind: duration, value: 60, unit: years}
+    citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 25:26", witness_id: lxx-genesis-goettingen, passage_id: gen-25-lxx}]
+  - &life {id: abram-lifespan-lxx, subject_id: abram, predicate: lifespan, value: {kind: duration, value: 175, unit: years}, evidence_type: explicit_text, witness_id: lxx-genesis-goettingen, confidence: A, citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 25:7", witness_id: lxx-genesis-goettingen, passage_id: gen-25-lxx}]}
+  - <<: *life
+    id: sarai-lifespan-lxx
+    subject_id: sarai
+    value: {kind: duration, value: 127, unit: years}
+    citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 23:1", witness_id: lxx-genesis-goettingen, passage_id: gen-23-lxx}]
+  - <<: *life
+    id: ishmael-lifespan-lxx
+    subject_id: ishmael
+    value: {kind: duration, value: 137, unit: years}
+    citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 25:17", witness_id: lxx-genesis-goettingen, passage_id: gen-25-lxx}]
+  - <<: *life
+    id: isaac-lifespan-lxx
+    subject_id: isaac
+    value: {kind: duration, value: 180, unit: years}
+    citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 35:28", witness_id: lxx-genesis-goettingen, passage_id: gen-35-lxx}]
+
+  - &att {id: hagar-attested, subject_id: hagar, predicate: attested_in_passage, value: {kind: attestation, status: mentioned}, evidence_type: explicit_text, witness_id: lxx-genesis-goettingen, confidence: A, citations: &attcite [{source_id: goettingen-genesis-1974, locator: "Genesis 12-36", witness_id: lxx-genesis-goettingen}]}
+  - <<: *att
+    id: ishmael-attested
+    subject_id: ishmael
+  - <<: *att
+    id: isaac-attested
+    subject_id: isaac
+  - <<: *att
+    id: rebekah-attested
+    subject_id: rebekah
+  - <<: *att
+    id: esau-attested
+    subject_id: esau
+  - <<: *att
+    id: jacob-attested
+    subject_id: jacob
+  - <<: *att
+    id: lot-wife-attested
+    subject_id: lot-wife
+  - <<: *att
+    id: lot-daughter-older-attested
+    subject_id: lot-daughter-older
+  - <<: *att
+    id: lot-daughter-younger-attested
+    subject_id: lot-daughter-younger
+  - <<: *att
+    id: abraham-servant-attested
+    subject_id: abraham-servant
+  - <<: *att
+    id: rebekah-mother-attested
+    subject_id: rebekah-mother
+  - <<: *att
+    id: pharaoh-gen12-attested
+    subject_id: pharaoh-gen12
+  - <<: *att
+    id: melchizedek-attested
+    subject_id: melchizedek
+  - <<: *att
+    id: abimelech-gen20-attested
+    subject_id: abimelech-gen20
+  - <<: *att
+    id: abimelech-gen26-attested
+    subject_id: abimelech-gen26
+  - <<: *att
+    id: phicol-gen21-attested
+    subject_id: phicol-gen21
+  - <<: *att
+    id: phicol-gen26-attested
+    subject_id: phicol-gen26
+  - <<: *att
+    id: ahuzzath-attested
+    subject_id: ahuzzath
+  - <<: *att
+    id: amraphel-attested
+    subject_id: amraphel
+  - <<: *att
+    id: arioch-attested
+    subject_id: arioch
+  - <<: *att
+    id: chedorlaomer-attested
+    subject_id: chedorlaomer
+  - <<: *att
+    id: tidal-attested
+    subject_id: tidal
+  - <<: *att
+    id: bera-attested
+    subject_id: bera
+  - <<: *att
+    id: birsha-attested
+    subject_id: birsha
+  - <<: *att
+    id: shinab-attested
+    subject_id: shinab
+  - <<: *att
+    id: shemeber-attested
+    subject_id: shemeber
+  - <<: *att
+    id: king-bela-gen14-attested
+    subject_id: king-bela-gen14
+  - <<: *att
+    id: mamre-attested
+    subject_id: mamre
+  - <<: *att
+    id: eshcol-attested
+    subject_id: eshcol
+  - <<: *att
+    id: aner-attested
+    subject_id: aner
+  - <<: *att
+    id: eliezer-damascus-attested
+    subject_id: eliezer-damascus
+  - <<: *att
+    id: moab-attested
+    subject_id: moab
+  - <<: *att
+    id: ben-ammi-attested
+    subject_id: ben-ammi
+  - <<: *att
+    id: keturah-attested
+    subject_id: keturah
+  - <<: *att
+    id: zimran-attested
+    subject_id: zimran
+  - <<: *att
+    id: jokshan-attested
+    subject_id: jokshan
+  - <<: *att
+    id: medan-attested
+    subject_id: medan
+  - <<: *att
+    id: midian-attested
+    subject_id: midian
+  - <<: *att
+    id: ishbak-attested
+    subject_id: ishbak
+  - <<: *att
+    id: shuah-attested
+    subject_id: shuah
+  - <<: *att
+    id: sheba-jokshan-attested
+    subject_id: sheba-jokshan
+  - <<: *att
+    id: dedan-jokshan-attested
+    subject_id: dedan-jokshan
+  - <<: *att
+    id: ephah-attested
+    subject_id: ephah
+  - <<: *att
+    id: epher-attested
+    subject_id: epher
+  - <<: *att
+    id: hanoch-midian-attested
+    subject_id: hanoch-midian
+  - <<: *att
+    id: abida-attested
+    subject_id: abida
+  - <<: *att
+    id: eldaah-attested
+    subject_id: eldaah
+  - <<: *att
+    id: nebaioth-attested
+    subject_id: nebaioth
+  - <<: *att
+    id: kedar-attested
+    subject_id: kedar
+  - <<: *att
+    id: adbeel-attested
+    subject_id: adbeel
+  - <<: *att
+    id: mibsam-attested
+    subject_id: mibsam
+  - <<: *att
+    id: mishma-attested
+    subject_id: mishma
+  - <<: *att
+    id: dumah-attested
+    subject_id: dumah
+  - <<: *att
+    id: massa-attested
+    subject_id: massa
+  - <<: *att
+    id: hadad-ishmael-attested
+    subject_id: hadad-ishmael
+  - <<: *att
+    id: tema-attested
+    subject_id: tema
+  - <<: *att
+    id: jetur-attested
+    subject_id: jetur
+  - <<: *att
+    id: naphish-attested
+    subject_id: naphish
+  - <<: *att
+    id: kedemah-attested
+    subject_id: kedemah
+  - <<: *att
+    id: uz-nahor-attested
+    subject_id: uz-nahor
+  - <<: *att
+    id: buz-attested
+    subject_id: buz
+  - <<: *att
+    id: kemuel-attested
+    subject_id: kemuel
+  - <<: *att
+    id: chesed-attested
+    subject_id: chesed
+  - <<: *att
+    id: hazo-attested
+    subject_id: hazo
+  - <<: *att
+    id: pildash-attested
+    subject_id: pildash
+  - <<: *att
+    id: jidlaph-attested
+    subject_id: jidlaph
+  - <<: *att
+    id: bethuel-attested
+    subject_id: bethuel
+  - <<: *att
+    id: reumah-attested
+    subject_id: reumah
+  - <<: *att
+    id: tebah-attested
+    subject_id: tebah
+  - <<: *att
+    id: gaham-attested
+    subject_id: gaham
+  - <<: *att
+    id: tahash-attested
+    subject_id: tahash
+  - <<: *att
+    id: maacah-attested
+    subject_id: maacah
+  - <<: *att
+    id: laban-attested
+    subject_id: laban
+  - <<: *att
+    id: ephron-attested
+    subject_id: ephron
+  - <<: *att
+    id: zohar-attested
+    subject_id: zohar
+  - <<: *att
+    id: deborah-rebekah-nurse-attested
+    subject_id: deborah-rebekah-nurse
+  - <<: *att
+    id: leah-attested
+    subject_id: leah
+  - <<: *att
+    id: rachel-attested
+    subject_id: rachel
+  - <<: *att
+    id: bilhah-attested
+    subject_id: bilhah
+  - <<: *att
+    id: zilpah-attested
+    subject_id: zilpah
+  - <<: *att
+    id: reuben-attested
+    subject_id: reuben
+  - <<: *att
+    id: simeon-attested
+    subject_id: simeon
+  - <<: *att
+    id: levi-attested
+    subject_id: levi
+  - <<: *att
+    id: judah-attested
+    subject_id: judah
+  - <<: *att
+    id: dan-attested
+    subject_id: dan
+  - <<: *att
+    id: naphtali-attested
+    subject_id: naphtali
+  - <<: *att
+    id: gad-attested
+    subject_id: gad
+  - <<: *att
+    id: asher-attested
+    subject_id: asher
+  - <<: *att
+    id: issachar-attested
+    subject_id: issachar
+  - <<: *att
+    id: zebulun-attested
+    subject_id: zebulun
+  - <<: *att
+    id: dinah-attested
+    subject_id: dinah
+  - <<: *att
+    id: joseph-attested
+    subject_id: joseph
+  - <<: *att
+    id: benjamin-attested
+    subject_id: benjamin
+  - <<: *att
+    id: hamor-attested
+    subject_id: hamor
+  - <<: *att
+    id: shechem-attested
+    subject_id: shechem
+  - <<: *att
+    id: judith-esau-attested
+    subject_id: judith-esau
+  - <<: *att
+    id: basemath-gen26-attested
+    subject_id: basemath-gen26
+  - <<: *att
+    id: mahalath-esau-attested
+    subject_id: mahalath-esau
+  - <<: *att
+    id: adah-esau-attested
+    subject_id: adah-esau
+  - <<: *att
+    id: oholibamah-esau-attested
+    subject_id: oholibamah-esau
+  - <<: *att
+    id: basemath-gen36-attested
+    subject_id: basemath-gen36
+  - <<: *att
+    id: eliphaz-attested
+    subject_id: eliphaz
+  - <<: *att
+    id: reuel-esau-attested
+    subject_id: reuel-esau
+  - <<: *att
+    id: jeush-attested
+    subject_id: jeush
+  - <<: *att
+    id: jalam-attested
+    subject_id: jalam
+  - <<: *att
+    id: korah-esau-attested
+    subject_id: korah-esau
+  - <<: *att
+    id: timna-eliphaz-attested
+    subject_id: timna-eliphaz
+  - <<: *att
+    id: amalek-attested
+    subject_id: amalek
+  - <<: *att
+    id: teman-attested
+    subject_id: teman
+  - <<: *att
+    id: omar-attested
+    subject_id: omar
+  - <<: *att
+    id: zepho-attested
+    subject_id: zepho
+  - <<: *att
+    id: gatam-attested
+    subject_id: gatam
+  - <<: *att
+    id: kenaz-esau-attested
+    subject_id: kenaz-esau
+  - <<: *att
+    id: nahath-attested
+    subject_id: nahath
+  - <<: *att
+    id: zerah-esau-attested
+    subject_id: zerah-esau
+  - <<: *att
+    id: shammah-attested
+    subject_id: shammah
+  - <<: *att
+    id: mizzah-attested
+    subject_id: mizzah

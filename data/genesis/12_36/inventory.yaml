@@ -1,0 +1,172 @@
+schema_version: 1
+record_type: inventory_units
+records:
+  - &i {id: inv-gen-12, work_id: genesis, locator: "Genesis 12", reviewed: true, passage_ids: [gen-12-lxx], identified_entity_ids: [abram, sarai, lot, pharaoh-gen12], event_ids: [abram-call-and-departure], no_individuals: false, citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 12", witness_id: lxx-genesis-goettingen}]}
+  - <<: *i
+    id: inv-gen-13
+    locator: "Genesis 13"
+    passage_ids: [gen-13-lxx]
+    identified_entity_ids: [abram, lot]
+    event_ids: []
+    citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 13", witness_id: lxx-genesis-goettingen}]
+  - <<: *i
+    id: inv-gen-14
+    locator: "Genesis 14"
+    passage_ids: [gen-14-lxx]
+    identified_entity_ids: [abram, lot, melchizedek, amraphel, arioch, chedorlaomer, tidal, bera, birsha, shinab, shemeber, king-bela-gen14, mamre, eshcol, aner]
+    event_ids: [war-of-the-kings]
+    citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 14", witness_id: lxx-genesis-goettingen}]
+  - <<: *i
+    id: inv-gen-15
+    locator: "Genesis 15"
+    passage_ids: [gen-15-lxx]
+    identified_entity_ids: [abram, eliezer-damascus]
+    event_ids: [abrahamic-covenant]
+    citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 15", witness_id: lxx-genesis-goettingen}]
+  - <<: *i
+    id: inv-gen-16
+    locator: "Genesis 16"
+    passage_ids: [gen-16-lxx]
+    identified_entity_ids: [abram, sarai, hagar, ishmael]
+    event_ids: [ishmael-birth]
+    citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 16", witness_id: lxx-genesis-goettingen}]
+  - <<: *i
+    id: inv-gen-17
+    locator: "Genesis 17"
+    passage_ids: [gen-17-lxx]
+    identified_entity_ids: [abram, sarai, ishmael, isaac]
+    event_ids: [covenant-of-circumcision]
+    citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 17", witness_id: lxx-genesis-goettingen}]
+  - <<: *i
+    id: inv-gen-18
+    locator: "Genesis 18"
+    passage_ids: [gen-18-lxx]
+    identified_entity_ids: [abram, sarai]
+    event_ids: []
+    citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 18", witness_id: lxx-genesis-goettingen}]
+  - <<: *i
+    id: inv-gen-19
+    locator: "Genesis 19"
+    passage_ids: [gen-19-lxx]
+    identified_entity_ids: [lot, lot-wife, lot-daughter-older, lot-daughter-younger, moab, ben-ammi]
+    event_ids: [sodom-destruction]
+    citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 19", witness_id: lxx-genesis-goettingen}]
+  - <<: *i
+    id: inv-gen-20
+    locator: "Genesis 20"
+    passage_ids: [gen-20-lxx]
+    identified_entity_ids: [abram, sarai, abimelech-gen20]
+    event_ids: []
+    citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 20", witness_id: lxx-genesis-goettingen}]
+  - <<: *i
+    id: inv-gen-21
+    locator: "Genesis 21"
+    passage_ids: [gen-21-lxx]
+    identified_entity_ids: [abram, sarai, isaac, hagar, ishmael, abimelech-gen20, phicol-gen21]
+    event_ids: [isaac-birth]
+    citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 21", witness_id: lxx-genesis-goettingen}]
+  - <<: *i
+    id: inv-gen-22
+    locator: "Genesis 22"
+    passage_ids: [gen-22-lxx]
+    identified_entity_ids: [abram, isaac, nahor-brother-abram, milcah, uz-nahor, buz, kemuel, chesed, hazo, pildash, jidlaph, bethuel, reumah, tebah, gaham, tahash, maacah]
+    event_ids: [binding-of-isaac]
+    citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 22", witness_id: lxx-genesis-goettingen}]
+  - <<: *i
+    id: inv-gen-23
+    locator: "Genesis 23"
+    passage_ids: [gen-23-lxx]
+    identified_entity_ids: [abram, sarai, ephron, zohar]
+    event_ids: [sarah-death]
+    citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 23", witness_id: lxx-genesis-goettingen}]
+  - <<: *i
+    id: inv-gen-24
+    locator: "Genesis 24"
+    passage_ids: [gen-24-lxx]
+    identified_entity_ids: [abram, isaac, abraham-servant, nahor-brother-abram, milcah, bethuel, laban, rebekah, rebekah-mother]
+    event_ids: [isaac-rebekah-marriage]
+    citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 24", witness_id: lxx-genesis-goettingen}]
+  - <<: *i
+    id: inv-gen-25
+    locator: "Genesis 25"
+    passage_ids: [gen-25-lxx]
+    identified_entity_ids: [abram, keturah, zimran, jokshan, medan, midian, ishbak, shuah, sheba-jokshan, dedan-jokshan, ephah, epher, hanoch-midian, abida, eldaah, ishmael, nebaioth, kedar, adbeel, mibsam, mishma, dumah, massa, hadad-ishmael, tema, jetur, naphish, kedemah, isaac, rebekah, esau, jacob]
+    event_ids: [abraham-death, twins-birth]
+    citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 25", witness_id: lxx-genesis-goettingen}]
+  - <<: *i
+    id: inv-gen-26
+    locator: "Genesis 26"
+    passage_ids: [gen-26-lxx]
+    identified_entity_ids: [isaac, rebekah, esau, abimelech-gen26, ahuzzath, phicol-gen26, judith-esau, basemath-gen26]
+    event_ids: []
+    citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 26", witness_id: lxx-genesis-goettingen}]
+  - <<: *i
+    id: inv-gen-27
+    locator: "Genesis 27"
+    passage_ids: [gen-27-lxx]
+    identified_entity_ids: [isaac, rebekah, esau, jacob]
+    event_ids: [jacob-receives-blessing]
+    citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 27", witness_id: lxx-genesis-goettingen}]
+  - <<: *i
+    id: inv-gen-28
+    locator: "Genesis 28"
+    passage_ids: [gen-28-lxx]
+    identified_entity_ids: [isaac, rebekah, esau, jacob, ishmael, mahalath-esau, laban, bethuel]
+    event_ids: [bethel-dream]
+    citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 28", witness_id: lxx-genesis-goettingen}]
+  - <<: *i
+    id: inv-gen-29
+    locator: "Genesis 29"
+    passage_ids: [gen-29-lxx]
+    identified_entity_ids: [jacob, laban, leah, rachel, reuben, simeon, levi, judah]
+    event_ids: [jacob-marriages]
+    citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 29", witness_id: lxx-genesis-goettingen}]
+  - <<: *i
+    id: inv-gen-30
+    locator: "Genesis 30"
+    passage_ids: [gen-30-lxx]
+    identified_entity_ids: [jacob, leah, rachel, bilhah, zilpah, dan, naphtali, gad, asher, issachar, zebulun, dinah, joseph, laban]
+    event_ids: [jacob-children-born]
+    citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 30", witness_id: lxx-genesis-goettingen}]
+  - <<: *i
+    id: inv-gen-31
+    locator: "Genesis 31"
+    passage_ids: [gen-31-lxx]
+    identified_entity_ids: [jacob, leah, rachel, laban]
+    event_ids: [jacob-leaves-laban]
+    citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 31", witness_id: lxx-genesis-goettingen}]
+  - <<: *i
+    id: inv-gen-32
+    locator: "Genesis 32"
+    passage_ids: [gen-32-lxx]
+    identified_entity_ids: [jacob, esau]
+    event_ids: [jacob-renamed-israel]
+    citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 32", witness_id: lxx-genesis-goettingen}]
+  - <<: *i
+    id: inv-gen-33
+    locator: "Genesis 33"
+    passage_ids: [gen-33-lxx]
+    identified_entity_ids: [jacob, esau, leah, rachel, bilhah, zilpah, hamor, shechem]
+    event_ids: [jacob-esau-reunion]
+    citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 33", witness_id: lxx-genesis-goettingen}]
+  - <<: *i
+    id: inv-gen-34
+    locator: "Genesis 34"
+    passage_ids: [gen-34-lxx]
+    identified_entity_ids: [jacob, dinah, hamor, shechem, simeon, levi]
+    event_ids: [dinah-and-shechem]
+    citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 34", witness_id: lxx-genesis-goettingen}]
+  - <<: *i
+    id: inv-gen-35
+    locator: "Genesis 35"
+    passage_ids: [gen-35-lxx]
+    identified_entity_ids: [jacob, deborah-rebekah-nurse, rachel, benjamin, reuben, bilhah, isaac, esau]
+    event_ids: [rachel-death, isaac-death]
+    citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 35", witness_id: lxx-genesis-goettingen}]
+  - <<: *i
+    id: inv-gen-36
+    locator: "Genesis 36"
+    passage_ids: [gen-36-lxx]
+    identified_entity_ids: [esau, adah-esau, oholibamah-esau, basemath-gen36, eliphaz, reuel-esau, jeush, jalam, korah-esau, timna-eliphaz, amalek, teman, omar, zepho, gatam, kenaz-esau, nahath, zerah-esau, shammah, mizzah]
+    event_ids: []
+    citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 36", witness_id: lxx-genesis-goettingen}]

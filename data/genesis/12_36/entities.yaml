@@ -1,0 +1,472 @@
+schema_version: 1
+record_type: entities
+records:
+  - &human
+    id: hagar
+    entity_type: human
+    primary_name: Hagar
+    aliases: []
+    classification: named_person
+    gender: female
+    identity_status: named
+    citations: &patcite [{source_id: goettingen-genesis-1974, locator: "Genesis 12-36", witness_id: lxx-genesis-goettingen}]
+  - <<: *human
+    id: ishmael
+    primary_name: Ishmael
+    aliases: [Ismael]
+    gender: male
+  - <<: *human
+    id: isaac
+    primary_name: Isaac
+    aliases: [Isaak]
+    gender: male
+  - <<: *human
+    id: rebekah
+    primary_name: Rebekah
+    aliases: [Rebecca]
+  - <<: *human
+    id: esau
+    primary_name: Esau
+    aliases: [Edom]
+    gender: male
+  - <<: *human
+    id: jacob
+    primary_name: Jacob
+    aliases: [Israel]
+    gender: male
+  - &unnamed
+    <<: *human
+    id: lot-wife
+    primary_name: Wife of Lot
+    aliases: []
+    classification: unnamed_person
+    identity_status: unnamed_unique
+  - <<: *unnamed
+    id: lot-daughter-older
+    primary_name: Lot's older daughter
+  - <<: *unnamed
+    id: lot-daughter-younger
+    primary_name: Lot's younger daughter
+  - <<: *unnamed
+    id: abraham-servant
+    primary_name: Abraham's senior servant
+    gender: male
+  - <<: *unnamed
+    id: rebekah-mother
+    primary_name: Rebekah's mother
+  - <<: *unnamed
+    id: pharaoh-gen12
+    primary_name: Pharaoh in Abraham's Egyptian episode
+    gender: male
+    description: Title-bearing ruler in Genesis 12; not merged with any later Pharaoh.
+  - <<: *human
+    id: melchizedek
+    primary_name: Melchizedek
+    aliases: [Melchisedek]
+    gender: male
+  - <<: *unnamed
+    id: abimelech-gen20
+    primary_name: Abimelech of Genesis 20
+    aliases: [Abimelech]
+    gender: male
+    description: Title/name bearer in Abraham's Gerar episode; identity with Genesis 26 is not asserted.
+  - <<: *unnamed
+    id: abimelech-gen26
+    primary_name: Abimelech of Genesis 26
+    aliases: [Abimelech]
+    gender: male
+    description: Title/name bearer in Isaac's Gerar episode; kept distinct from Genesis 20.
+  - <<: *human
+    id: phicol-gen21
+    primary_name: Phicol of Genesis 21
+    aliases: [Phikol]
+    gender: male
+  - <<: *human
+    id: phicol-gen26
+    primary_name: Phicol of Genesis 26
+    aliases: [Phikol]
+    gender: male
+    description: Kept distinct from the Phicol in Genesis 21 pending an identity claim.
+  - <<: *human
+    id: ahuzzath
+    primary_name: Ahuzzath
+    aliases: [Ochozath]
+    gender: male
+  - <<: *human
+    id: amraphel
+    primary_name: Amraphel
+    aliases: [Amarphal]
+    gender: male
+  - <<: *human
+    id: arioch
+    primary_name: Arioch
+    aliases: []
+    gender: male
+  - <<: *human
+    id: chedorlaomer
+    primary_name: Chedorlaomer
+    aliases: [Chodollogomor]
+    gender: male
+  - <<: *human
+    id: tidal
+    primary_name: Tidal
+    aliases: [Thargal]
+    gender: male
+  - <<: *human
+    id: bera
+    primary_name: Bera
+    aliases: [Balla]
+    gender: male
+  - <<: *human
+    id: birsha
+    primary_name: Birsha
+    aliases: [Barsa]
+    gender: male
+  - <<: *human
+    id: shinab
+    primary_name: Shinab
+    aliases: [Sennaar]
+    gender: male
+  - <<: *human
+    id: shemeber
+    primary_name: Shemeber
+    aliases: [Symobor]
+    gender: male
+  - <<: *unnamed
+    id: king-bela-gen14
+    primary_name: King of Bela in Genesis 14
+    gender: male
+  - <<: *human
+    id: mamre
+    primary_name: Mamre
+    aliases: []
+    gender: male
+  - <<: *human
+    id: eshcol
+    primary_name: Eshcol
+    aliases: [Eschol]
+    gender: male
+  - <<: *human
+    id: aner
+    primary_name: Aner
+    aliases: []
+    gender: male
+  - <<: *human
+    id: eliezer-damascus
+    primary_name: Eliezer of Damascus
+    aliases: []
+    gender: male
+  - <<: *human
+    id: moab
+    primary_name: Moab
+    aliases: []
+    gender: male
+  - <<: *human
+    id: ben-ammi
+    primary_name: Ben-ammi
+    aliases: [Ammon]
+    gender: male
+  - <<: *human
+    id: keturah
+    primary_name: Keturah
+    aliases: [Chettoura]
+  - &desc
+    <<: *human
+    id: zimran
+    primary_name: Zimran
+    aliases: []
+    gender: male
+  - <<: *desc
+    id: jokshan
+    primary_name: Jokshan
+    aliases: [Iezan]
+  - <<: *desc
+    id: medan
+    primary_name: Medan
+  - <<: *desc
+    id: midian
+    primary_name: Midian
+  - <<: *desc
+    id: ishbak
+    primary_name: Ishbak
+    aliases: [Iesbok]
+  - <<: *desc
+    id: shuah
+    primary_name: Shuah
+    aliases: [Soye]
+  - <<: *desc
+    id: sheba-jokshan
+    primary_name: Sheba
+    description: Son of Jokshan.
+  - <<: *desc
+    id: dedan-jokshan
+    primary_name: Dedan
+    description: Son of Jokshan.
+  - <<: *desc
+    id: ephah
+    primary_name: Ephah
+  - <<: *desc
+    id: epher
+    primary_name: Epher
+  - <<: *desc
+    id: hanoch-midian
+    primary_name: Hanoch
+    description: Son of Midian.
+  - <<: *desc
+    id: abida
+    primary_name: Abida
+  - <<: *desc
+    id: eldaah
+    primary_name: Eldaah
+  - <<: *desc
+    id: nebaioth
+    primary_name: Nebaioth
+  - <<: *desc
+    id: kedar
+    primary_name: Kedar
+  - <<: *desc
+    id: adbeel
+    primary_name: Adbeel
+  - <<: *desc
+    id: mibsam
+    primary_name: Mibsam
+  - <<: *desc
+    id: mishma
+    primary_name: Mishma
+  - <<: *desc
+    id: dumah
+    primary_name: Dumah
+  - <<: *desc
+    id: massa
+    primary_name: Massa
+  - <<: *desc
+    id: hadad-ishmael
+    primary_name: Hadad
+    aliases: [Hadar]
+    description: Son of Ishmael.
+  - <<: *desc
+    id: tema
+    primary_name: Tema
+  - <<: *desc
+    id: jetur
+    primary_name: Jetur
+  - <<: *desc
+    id: naphish
+    primary_name: Naphish
+  - <<: *desc
+    id: kedemah
+    primary_name: Kedemah
+  - <<: *desc
+    id: uz-nahor
+    primary_name: Uz
+    description: Son of Nahor and Milcah; not merged with other bearers.
+  - <<: *desc
+    id: buz
+    primary_name: Buz
+  - <<: *desc
+    id: kemuel
+    primary_name: Kemuel
+  - <<: *desc
+    id: chesed
+    primary_name: Chesed
+  - <<: *desc
+    id: hazo
+    primary_name: Hazo
+  - <<: *desc
+    id: pildash
+    primary_name: Pildash
+  - <<: *desc
+    id: jidlaph
+    primary_name: Jidlaph
+  - <<: *desc
+    id: bethuel
+    primary_name: Bethuel
+  - <<: *desc
+    id: reumah
+    primary_name: Reumah
+    gender: female
+  - <<: *desc
+    id: tebah
+    primary_name: Tebah
+  - <<: *desc
+    id: gaham
+    primary_name: Gaham
+  - <<: *desc
+    id: tahash
+    primary_name: Tahash
+  - <<: *desc
+    id: maacah
+    primary_name: Maacah
+  - <<: *human
+    id: laban
+    primary_name: Laban
+    aliases: []
+    gender: male
+  - <<: *human
+    id: ephron
+    primary_name: Ephron
+    aliases: []
+    gender: male
+  - <<: *human
+    id: zohar
+    primary_name: Zohar
+    aliases: []
+    gender: male
+  - <<: *human
+    id: deborah-rebekah-nurse
+    primary_name: Deborah
+    aliases: []
+    description: Rebekah's nurse in Genesis 35:8.
+  - <<: *human
+    id: leah
+    primary_name: Leah
+    aliases: [Leia]
+  - <<: *human
+    id: rachel
+    primary_name: Rachel
+    aliases: [Rachele]
+  - <<: *human
+    id: bilhah
+    primary_name: Bilhah
+    aliases: [Balla]
+  - <<: *human
+    id: zilpah
+    primary_name: Zilpah
+    aliases: [Zelpha]
+  - &jacob_child
+    <<: *desc
+    id: reuben
+    primary_name: Reuben
+    aliases: [Roubin]
+  - <<: *jacob_child
+    id: simeon
+    primary_name: Simeon
+  - <<: *jacob_child
+    id: levi
+    primary_name: Levi
+  - <<: *jacob_child
+    id: judah
+    primary_name: Judah
+    aliases: [Judas]
+  - <<: *jacob_child
+    id: dan
+    primary_name: Dan
+  - <<: *jacob_child
+    id: naphtali
+    primary_name: Naphtali
+  - <<: *jacob_child
+    id: gad
+    primary_name: Gad
+  - <<: *jacob_child
+    id: asher
+    primary_name: Asher
+  - <<: *jacob_child
+    id: issachar
+    primary_name: Issachar
+  - <<: *jacob_child
+    id: zebulun
+    primary_name: Zebulun
+  - <<: *jacob_child
+    id: dinah
+    primary_name: Dinah
+    gender: female
+  - <<: *jacob_child
+    id: joseph
+    primary_name: Joseph
+  - <<: *jacob_child
+    id: benjamin
+    primary_name: Benjamin
+  - <<: *human
+    id: hamor
+    primary_name: Hamor
+    aliases: [Emmor]
+    gender: male
+  - <<: *human
+    id: shechem
+    primary_name: Shechem
+    aliases: [Sychem]
+    gender: male
+  - <<: *human
+    id: judith-esau
+    primary_name: Judith
+    aliases: []
+    description: Esau's wife named in Genesis 26:34.
+  - <<: *human
+    id: basemath-gen26
+    primary_name: Basemath
+    aliases: []
+    description: Daughter of Elon in Genesis 26:34; not silently merged with Genesis 36's Basemath.
+  - <<: *human
+    id: mahalath-esau
+    primary_name: Mahalath
+    aliases: []
+    description: Daughter of Ishmael in Genesis 28:9.
+  - <<: *human
+    id: adah-esau
+    primary_name: Adah
+    aliases: []
+    description: Daughter of Elon in Genesis 36.
+  - <<: *human
+    id: oholibamah-esau
+    primary_name: Oholibamah
+    aliases: [Aholibamah]
+  - <<: *human
+    id: basemath-gen36
+    primary_name: Basemath
+    aliases: []
+    description: Daughter of Ishmael in Genesis 36; not silently merged with Genesis 26's Basemath or Genesis 28's Mahalath.
+  - <<: *desc
+    id: eliphaz
+    primary_name: Eliphaz
+  - <<: *desc
+    id: reuel-esau
+    primary_name: Reuel
+    description: Son of Esau; not merged with the Genesis 11 Reu.
+  - <<: *desc
+    id: jeush
+    primary_name: Jeush
+  - <<: *desc
+    id: jalam
+    primary_name: Jalam
+  - <<: *desc
+    id: korah-esau
+    primary_name: Korah
+    description: Son of Esau.
+  - <<: *human
+    id: timna-eliphaz
+    primary_name: Timna
+    aliases: []
+    description: Concubine of Eliphaz.
+  - <<: *desc
+    id: amalek
+    primary_name: Amalek
+  - <<: *desc
+    id: teman
+    primary_name: Teman
+  - <<: *desc
+    id: omar
+    primary_name: Omar
+  - <<: *desc
+    id: zepho
+    primary_name: Zepho
+    aliases: [Zephi]
+  - <<: *desc
+    id: gatam
+    primary_name: Gatam
+  - <<: *desc
+    id: kenaz-esau
+    primary_name: Kenaz
+    description: Descendant of Esau.
+  - <<: *desc
+    id: nahath
+    primary_name: Nahath
+  - <<: *desc
+    id: zerah-esau
+    primary_name: Zerah
+    description: Son of Reuel in Edom.
+  - <<: *desc
+    id: shammah
+    primary_name: Shammah
+  - <<: *desc
+    id: mizzah
+    primary_name: Mizzah

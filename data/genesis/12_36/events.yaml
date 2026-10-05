@@ -1,0 +1,130 @@
+schema_version: 1
+record_type: events
+records:
+  - &event {id: abram-call-and-departure, event_type: migration, name: Abram departs Haran, participants: [{entity_id: abram, role: migrant}, {entity_id: sarai, role: migrant}, {entity_id: lot, role: migrant}], date_claim_ids: [], citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 12:1-5", witness_id: lxx-genesis-goettingen}]}
+  - <<: *event
+    id: war-of-the-kings
+    event_type: war
+    name: War of the kings and rescue of Lot
+    participants: [{entity_id: abram, role: rescuer}, {entity_id: lot, role: captive}, {entity_id: chedorlaomer, role: king}]
+    citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 14", witness_id: lxx-genesis-goettingen}]
+  - <<: *event
+    id: abrahamic-covenant
+    event_type: covenant
+    name: Covenant with Abram
+    participants: [{entity_id: abram, role: covenant recipient}]
+    citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 15", witness_id: lxx-genesis-goettingen}]
+  - <<: *event
+    id: ishmael-birth
+    event_type: birth
+    name: Birth of Ishmael
+    participants: [{entity_id: ishmael, role: child}, {entity_id: hagar, role: mother}, {entity_id: abram, role: father}]
+    citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 16:15-16", witness_id: lxx-genesis-goettingen}]
+  - <<: *event
+    id: covenant-of-circumcision
+    event_type: covenant
+    name: Covenant of circumcision and renaming
+    participants: [{entity_id: abram, role: covenant recipient}, {entity_id: ishmael, role: household participant}]
+    citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 17", witness_id: lxx-genesis-goettingen}]
+  - <<: *event
+    id: sodom-destruction
+    event_type: catastrophe
+    name: Destruction of Sodom and Gomorrah
+    participants: [{entity_id: lot, role: survivor}, {entity_id: lot-wife, role: victim}, {entity_id: lot-daughter-older, role: survivor}, {entity_id: lot-daughter-younger, role: survivor}]
+    citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 19", witness_id: lxx-genesis-goettingen}]
+  - <<: *event
+    id: isaac-birth
+    event_type: birth
+    name: Birth of Isaac
+    participants: [{entity_id: isaac, role: child}, {entity_id: sarai, role: mother}, {entity_id: abram, role: father}]
+    citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 21:1-7", witness_id: lxx-genesis-goettingen}]
+  - <<: *event
+    id: binding-of-isaac
+    event_type: trial
+    name: Binding of Isaac
+    participants: [{entity_id: abram, role: father}, {entity_id: isaac, role: son}]
+    citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 22:1-19", witness_id: lxx-genesis-goettingen}]
+  - <<: *event
+    id: sarah-death
+    event_type: death
+    name: Death and burial of Sarah
+    participants: [{entity_id: sarai, role: deceased}, {entity_id: abram, role: mourner}, {entity_id: ephron, role: seller}]
+    citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 23", witness_id: lxx-genesis-goettingen}]
+  - <<: *event
+    id: isaac-rebekah-marriage
+    event_type: marriage
+    name: Marriage of Isaac and Rebekah
+    participants: [{entity_id: isaac, role: husband}, {entity_id: rebekah, role: wife}, {entity_id: abraham-servant, role: envoy}]
+    citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 24", witness_id: lxx-genesis-goettingen}]
+  - <<: *event
+    id: abraham-death
+    event_type: death
+    name: Death of Abraham
+    participants: [{entity_id: abram, role: deceased}, {entity_id: isaac, role: son}, {entity_id: ishmael, role: son}]
+    citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 25:7-10", witness_id: lxx-genesis-goettingen}]
+  - <<: *event
+    id: twins-birth
+    event_type: birth
+    name: Birth of Esau and Jacob
+    participants: [{entity_id: esau, role: child}, {entity_id: jacob, role: child}, {entity_id: rebekah, role: mother}, {entity_id: isaac, role: father}]
+    citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 25:19-26", witness_id: lxx-genesis-goettingen}]
+  - <<: *event
+    id: jacob-receives-blessing
+    event_type: blessing
+    name: Jacob receives Isaac's blessing
+    participants: [{entity_id: jacob, role: recipient}, {entity_id: isaac, role: father}, {entity_id: rebekah, role: planner}, {entity_id: esau, role: elder son}]
+    citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 27", witness_id: lxx-genesis-goettingen}]
+  - <<: *event
+    id: bethel-dream
+    event_type: vision
+    name: Jacob's dream at Bethel
+    participants: [{entity_id: jacob, role: dreamer}]
+    citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 28:10-22", witness_id: lxx-genesis-goettingen}]
+  - <<: *event
+    id: jacob-marriages
+    event_type: marriage
+    name: Jacob marries Leah and Rachel
+    participants: [{entity_id: jacob, role: husband}, {entity_id: leah, role: wife}, {entity_id: rachel, role: wife}, {entity_id: laban, role: father}]
+    citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 29", witness_id: lxx-genesis-goettingen}]
+  - <<: *event
+    id: jacob-children-born
+    event_type: births
+    name: Births in Jacob's household
+    participants: [{entity_id: jacob, role: father}, {entity_id: leah, role: mother}, {entity_id: rachel, role: mother}, {entity_id: bilhah, role: mother}, {entity_id: zilpah, role: mother}]
+    citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 29:31-30:24", witness_id: lxx-genesis-goettingen}]
+  - <<: *event
+    id: jacob-leaves-laban
+    event_type: migration
+    name: Jacob leaves Laban
+    participants: [{entity_id: jacob, role: migrant}, {entity_id: leah, role: migrant}, {entity_id: rachel, role: migrant}, {entity_id: laban, role: pursuer}]
+    citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 31", witness_id: lxx-genesis-goettingen}]
+  - <<: *event
+    id: jacob-renamed-israel
+    event_type: naming
+    name: Jacob receives the name Israel
+    participants: [{entity_id: jacob, role: renamed person}]
+    citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 32:22-32", witness_id: lxx-genesis-goettingen}]
+  - <<: *event
+    id: jacob-esau-reunion
+    event_type: reunion
+    name: Jacob and Esau reunite
+    participants: [{entity_id: jacob, role: brother}, {entity_id: esau, role: brother}]
+    citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 33", witness_id: lxx-genesis-goettingen}]
+  - <<: *event
+    id: dinah-and-shechem
+    event_type: conflict
+    name: Dinah and Shechem episode
+    participants: [{entity_id: dinah, role: victim}, {entity_id: shechem, role: aggressor}, {entity_id: hamor, role: father}, {entity_id: simeon, role: brother}, {entity_id: levi, role: brother}]
+    citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 34", witness_id: lxx-genesis-goettingen}]
+  - <<: *event
+    id: rachel-death
+    event_type: death
+    name: Death of Rachel and birth of Benjamin
+    participants: [{entity_id: rachel, role: deceased}, {entity_id: benjamin, role: child}, {entity_id: jacob, role: father}]
+    citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 35:16-20", witness_id: lxx-genesis-goettingen}]
+  - <<: *event
+    id: isaac-death
+    event_type: death
+    name: Death of Isaac
+    participants: [{entity_id: isaac, role: deceased}, {entity_id: esau, role: son}, {entity_id: jacob, role: son}]
+    citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 35:27-29", witness_id: lxx-genesis-goettingen}]

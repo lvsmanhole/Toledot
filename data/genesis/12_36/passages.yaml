@@ -1,0 +1,100 @@
+schema_version: 1
+record_type: passages
+records:
+  - &p {id: gen-12-lxx, work_id: genesis, witness_id: lxx-genesis-goettingen, locator: "Genesis 12", citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 12", witness_id: lxx-genesis-goettingen}]}
+  - <<: *p
+    id: gen-13-lxx
+    locator: "Genesis 13"
+    citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 13", witness_id: lxx-genesis-goettingen}]
+  - <<: *p
+    id: gen-14-lxx
+    locator: "Genesis 14"
+    citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 14", witness_id: lxx-genesis-goettingen}]
+  - <<: *p
+    id: gen-15-lxx
+    locator: "Genesis 15"
+    citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 15", witness_id: lxx-genesis-goettingen}]
+  - <<: *p
+    id: gen-16-lxx
+    locator: "Genesis 16"
+    citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 16", witness_id: lxx-genesis-goettingen}]
+  - <<: *p
+    id: gen-17-lxx
+    locator: "Genesis 17"
+    citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 17", witness_id: lxx-genesis-goettingen}]
+  - <<: *p
+    id: gen-18-lxx
+    locator: "Genesis 18"
+    citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 18", witness_id: lxx-genesis-goettingen}]
+  - <<: *p
+    id: gen-19-lxx
+    locator: "Genesis 19"
+    citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 19", witness_id: lxx-genesis-goettingen}]
+  - <<: *p
+    id: gen-20-lxx
+    locator: "Genesis 20"
+    citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 20", witness_id: lxx-genesis-goettingen}]
+  - <<: *p
+    id: gen-21-lxx
+    locator: "Genesis 21"
+    citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 21", witness_id: lxx-genesis-goettingen}]
+  - <<: *p
+    id: gen-22-lxx
+    locator: "Genesis 22"
+    citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 22", witness_id: lxx-genesis-goettingen}]
+  - <<: *p
+    id: gen-23-lxx
+    locator: "Genesis 23"
+    citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 23", witness_id: lxx-genesis-goettingen}]
+  - <<: *p
+    id: gen-24-lxx
+    locator: "Genesis 24"
+    citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 24", witness_id: lxx-genesis-goettingen}]
+  - <<: *p
+    id: gen-25-lxx
+    locator: "Genesis 25"
+    citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 25", witness_id: lxx-genesis-goettingen}]
+  - <<: *p
+    id: gen-26-lxx
+    locator: "Genesis 26"
+    citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 26", witness_id: lxx-genesis-goettingen}]
+  - <<: *p
+    id: gen-27-lxx
+    locator: "Genesis 27"
+    citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 27", witness_id: lxx-genesis-goettingen}]
+  - <<: *p
+    id: gen-28-lxx
+    locator: "Genesis 28"
+    citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 28", witness_id: lxx-genesis-goettingen}]
+  - <<: *p
+    id: gen-29-lxx
+    locator: "Genesis 29"
+    citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 29", witness_id: lxx-genesis-goettingen}]
+  - <<: *p
+    id: gen-30-lxx
+    locator: "Genesis 30"
+    citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 30", witness_id: lxx-genesis-goettingen}]
+  - <<: *p
+    id: gen-31-lxx
+    locator: "Genesis 31"
+    citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 31", witness_id: lxx-genesis-goettingen}]
+  - <<: *p
+    id: gen-32-lxx
+    locator: "Genesis 32"
+    citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 32", witness_id: lxx-genesis-goettingen}]
+  - <<: *p
+    id: gen-33-lxx
+    locator: "Genesis 33"
+    citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 33", witness_id: lxx-genesis-goettingen}]
+  - <<: *p
+    id: gen-34-lxx
+    locator: "Genesis 34"
+    citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 34", witness_id: lxx-genesis-goettingen}]
+  - <<: *p
+    id: gen-35-lxx
+    locator: "Genesis 35"
+    citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 35", witness_id: lxx-genesis-goettingen}]
+  - <<: *p
+    id: gen-36-lxx
+    locator: "Genesis 36"
+    citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 36", witness_id: lxx-genesis-goettingen}]
