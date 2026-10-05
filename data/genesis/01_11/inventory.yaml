@@ -36,7 +36,7 @@ records:
     id: inv-gen-4-17-24
     locator: "Genesis 4:17-24"
     passage_ids: [gen-4-17-24-lxx]
-    identified_entity_ids: [cain, enoch-cain, irad, mehujael, methushael, lamech-cain, adah, zillah, jabal, jubal, tubal-cain, naamah]
+    identified_entity_ids: [cain, cain-wife, enoch-cain, irad, mehujael, methushael, lamech-cain, adah, zillah, jabal, jubal, tubal-cain, naamah]
     event_ids: []
     citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 4:17-24", witness_id: lxx-genesis-goettingen}]
   - <<: *base

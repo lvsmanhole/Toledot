@@ -32,6 +32,8 @@ records:
     id: cain-parent-enoch-cain
     subject_id: cain
     object_id: enoch-cain
+  - {id: cain-spouse-unnamed-wife, relationship_type: spouse, subject_id: cain, object_id: cain-wife, claim_ids: [], citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 4:17", witness_id: lxx-genesis-goettingen}, {source_id: dillmann-octateuch-1853, locator: "Genesis 4:17", witness_id: geez-genesis-dillmann}, {source_id: bhs-genesis, locator: "Genesis 4:17", witness_id: mt-genesis-bhs}]}
+  - {id: cain-wife-parent-enoch-cain, relationship_type: parent, subject_id: cain-wife, object_id: enoch-cain, claim_ids: [], citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 4:17", witness_id: lxx-genesis-goettingen}, {source_id: dillmann-octateuch-1853, locator: "Genesis 4:17", witness_id: geez-genesis-dillmann}, {source_id: bhs-genesis, locator: "Genesis 4:17", witness_id: mt-genesis-bhs}]}
   - <<: *parent
     id: enoch-cain-parent-irad
     subject_id: enoch-cain

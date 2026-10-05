@@ -356,3 +356,28 @@ records:
     id: reuel-parent-mizzah
     subject_id: reuel-esau
     object_id: mizzah
+  - &g36parent {id: seir-parent-lotan, relationship_type: parent, subject_id: seir-horite, object_id: lotan-horite, claim_ids: [], citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 36:20-30", witness_id: lxx-genesis-goettingen}, {source_id: dillmann-octateuch-1853, locator: "Genesis 36:20-30", witness_id: geez-genesis-dillmann}, {source_id: bhs-genesis, locator: "Genesis 36:20-30", witness_id: mt-genesis-bhs}]}
+  - {<<: *g36parent, id: seir-parent-shobal, object_id: shobal-horite}
+  - {<<: *g36parent, id: seir-parent-zibeon, object_id: zibeon-horite}
+  - {<<: *g36parent, id: seir-parent-anah, object_id: anah-horite}
+  - {<<: *g36parent, id: seir-parent-dishon, object_id: dishon-horite}
+  - {<<: *g36parent, id: seir-parent-ezer, object_id: ezer-horite}
+  - {<<: *g36parent, id: seir-parent-dishan, object_id: dishan-horite}
+  - {<<: *g36parent, id: lotan-parent-hori, subject_id: lotan-horite, object_id: hori-lotan}
+  - {<<: *g36parent, id: lotan-parent-hemam, subject_id: lotan-horite, object_id: hemam-lotan}
+  - {<<: *g36parent, id: shobal-parent-alvan, subject_id: shobal-horite, object_id: alvan-shobal}
+  - {<<: *g36parent, id: shobal-parent-manahath, subject_id: shobal-horite, object_id: manahath-shobal}
+  - {<<: *g36parent, id: shobal-parent-ebal, subject_id: shobal-horite, object_id: ebal-shobal}
+  - {<<: *g36parent, id: shobal-parent-shepho, subject_id: shobal-horite, object_id: shepho-shobal}
+  - {<<: *g36parent, id: shobal-parent-onam, subject_id: shobal-horite, object_id: onam-shobal}
+  - {<<: *g36parent, id: zibeon-parent-aiah, subject_id: zibeon-horite, object_id: aiah-zibeon}
+  - {<<: *g36parent, id: anah-parent-dishon, subject_id: anah-horite, object_id: dishon-horite}
+  - {<<: *g36parent, id: dishon-parent-hemdan, subject_id: dishon-horite, object_id: hemdan-dishon}
+  - {<<: *g36parent, id: dishon-parent-eshban, subject_id: dishon-horite, object_id: eshban-dishon}
+  - {<<: *g36parent, id: dishon-parent-ithran, subject_id: dishon-horite, object_id: ithran-dishon}
+  - {<<: *g36parent, id: dishon-parent-cheran, subject_id: dishon-horite, object_id: cheran-dishon}
+  - {<<: *g36parent, id: ezer-parent-bilhan, subject_id: ezer-horite, object_id: bilhan-ezer}
+  - {<<: *g36parent, id: ezer-parent-zaavan, subject_id: ezer-horite, object_id: zaavan-ezer}
+  - {<<: *g36parent, id: ezer-parent-akan, subject_id: ezer-horite, object_id: akan-ezer}
+  - {<<: *g36parent, id: dishan-parent-uz, subject_id: dishan-horite, object_id: uz-dishan}
+  - {<<: *g36parent, id: dishan-parent-aran, subject_id: dishan-horite, object_id: aran-dishan}

@@ -21,6 +21,7 @@ records:
     primary_name: Cain
     aliases: [Kain]
     citations: &gen4 [{source_id: goettingen-genesis-1974, locator: "Genesis 4:1-24", witness_id: lxx-genesis-goettingen}]
+  - {id: cain-wife, entity_type: human, primary_name: Cain's wife, aliases: [], classification: unnamed_unique, identity_status: unnamed_unique, gender: female, citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 4:17", witness_id: lxx-genesis-goettingen}, {source_id: dillmann-octateuch-1853, locator: "Genesis 4:17", witness_id: geez-genesis-dillmann}, {source_id: bhs-genesis, locator: "Genesis 4:17", witness_id: mt-genesis-bhs}]}
   - <<: *human
     id: abel
     primary_name: Abel

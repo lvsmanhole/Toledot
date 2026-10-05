@@ -110,6 +110,8 @@ records:
       - {id: joseph-cycle-adult-death, operation: literal, year: {era: BCE, year: 1653}}
       - {id: migration-descendant-birth, operation: literal, year: {era: BCE, year: 1750}}
       - {id: migration-descendant-death, operation: literal, year: {era: BCE, year: 1550}}
+      - {id: genesis36-display-birth, operation: literal, year: {era: BCE, year: 2100}}
+      - {id: genesis36-display-death, operation: literal, year: {era: BCE, year: 1800}}
     resolutions:
       - &core {entity_id: adam, birth_derivation_id: adam-birth, death_derivation_id: adam-death, life_basis: synchronized, confidence_grade: D, evidence_claim_ids: [lxx-early-adam-anchor, adam-lifespan-lxx], alternative_claim_ids: [mt-early-adam-anchor, sp-early-adam-anchor], explanation: "Civil years use the declared LXX display anchor; lifespan is explicit in Genesis 5."}
       - <<: *core
@@ -264,6 +266,7 @@ records:
       - <<: *cainite_est
         entity_id: naamah
         evidence_claim_ids: [naamah-attested]
+      - {entity_id: cain-wife, birth_derivation_id: cainite-line-birth, death_derivation_id: cainite-line-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [cain-wife-attested], alternative_claim_ids: [], explanation: "Display-only overlap window; Genesis gives no age or calendar dates for Cain's unnamed wife."}
       - &flood_est {entity_id: noah-wife, birth_derivation_id: flood-household-birth, death_derivation_id: flood-household-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [noah-wife-attested], alternative_claim_ids: [], explanation: "Grade-E window synchronized to Noah's household; the person is textually distinct but numerically undated."}
       - <<: *flood_est
         entity_id: ham
@@ -844,6 +847,7 @@ records:
         entity_id: mizzah
         evidence_claim_ids: [mizzah-attested]
       - &cycle_est {entity_id: tamar, birth_derivation_id: joseph-cycle-adult-birth, death_derivation_id: joseph-cycle-adult-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [tamar-attested], alternative_claim_ids: [], explanation: "Grade-E Joseph-cycle window; the person is textually attested but Genesis supplies no complete numeric lifespan."}
+      - {entity_id: tamar-midwife, birth_derivation_id: joseph-cycle-adult-birth, death_derivation_id: joseph-cycle-adult-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [tamar-midwife-attested], alternative_claim_ids: [], explanation: "Display-only Joseph-cycle window; Genesis gives no age or calendar dates for the unnamed midwife."}
       - <<: *cycle_est
         entity_id: perez
         evidence_claim_ids: [perez-attested]
@@ -1055,3 +1059,51 @@ records:
       - <<: *migrant_est
         entity_id: ard
         evidence_claim_ids: [ard-attested]
+      - &g36est {entity_id: seir-horite, birth_derivation_id: genesis36-display-birth, death_derivation_id: genesis36-display-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [seir-horite-attested], alternative_claim_ids: [], explanation: "Provisional grade-E display window for an undated Genesis 36 person; the text supplies genealogy, not calendar years or lifespan."}
+      - {<<: *g36est, entity_id: lotan-horite, evidence_claim_ids: [lotan-horite-attested]}
+      - {<<: *g36est, entity_id: shobal-horite, evidence_claim_ids: [shobal-horite-attested]}
+      - {<<: *g36est, entity_id: zibeon-horite, evidence_claim_ids: [zibeon-horite-attested]}
+      - {<<: *g36est, entity_id: anah-horite, evidence_claim_ids: [anah-horite-attested]}
+      - {<<: *g36est, entity_id: dishon-horite, evidence_claim_ids: [dishon-horite-attested]}
+      - {<<: *g36est, entity_id: ezer-horite, evidence_claim_ids: [ezer-horite-attested]}
+      - {<<: *g36est, entity_id: dishan-horite, evidence_claim_ids: [dishan-horite-attested]}
+      - {<<: *g36est, entity_id: hori-lotan, evidence_claim_ids: [hori-lotan-attested]}
+      - {<<: *g36est, entity_id: hemam-lotan, evidence_claim_ids: [hemam-lotan-attested]}
+      - {<<: *g36est, entity_id: alvan-shobal, evidence_claim_ids: [alvan-shobal-attested]}
+      - {<<: *g36est, entity_id: manahath-shobal, evidence_claim_ids: [manahath-shobal-attested]}
+      - {<<: *g36est, entity_id: ebal-shobal, evidence_claim_ids: [ebal-shobal-attested]}
+      - {<<: *g36est, entity_id: shepho-shobal, evidence_claim_ids: [shepho-shobal-attested]}
+      - {<<: *g36est, entity_id: onam-shobal, evidence_claim_ids: [onam-shobal-attested]}
+      - {<<: *g36est, entity_id: aiah-zibeon, evidence_claim_ids: [aiah-zibeon-attested]}
+      - {<<: *g36est, entity_id: hemdan-dishon, evidence_claim_ids: [hemdan-dishon-attested]}
+      - {<<: *g36est, entity_id: eshban-dishon, evidence_claim_ids: [eshban-dishon-attested]}
+      - {<<: *g36est, entity_id: ithran-dishon, evidence_claim_ids: [ithran-dishon-attested]}
+      - {<<: *g36est, entity_id: cheran-dishon, evidence_claim_ids: [cheran-dishon-attested]}
+      - {<<: *g36est, entity_id: bilhan-ezer, evidence_claim_ids: [bilhan-ezer-attested]}
+      - {<<: *g36est, entity_id: zaavan-ezer, evidence_claim_ids: [zaavan-ezer-attested]}
+      - {<<: *g36est, entity_id: akan-ezer, evidence_claim_ids: [akan-ezer-attested]}
+      - {<<: *g36est, entity_id: uz-dishan, evidence_claim_ids: [uz-dishan-attested]}
+      - {<<: *g36est, entity_id: aran-dishan, evidence_claim_ids: [aran-dishan-attested]}
+      - {<<: *g36est, entity_id: bela-edom, evidence_claim_ids: [bela-edom-attested]}
+      - {<<: *g36est, entity_id: beor-edom, evidence_claim_ids: [beor-edom-attested]}
+      - {<<: *g36est, entity_id: jobab-edom, evidence_claim_ids: [jobab-edom-attested]}
+      - {<<: *g36est, entity_id: zerah-edom-king, evidence_claim_ids: [zerah-edom-king-attested]}
+      - {<<: *g36est, entity_id: husham-edom, evidence_claim_ids: [husham-edom-attested]}
+      - {<<: *g36est, entity_id: hadad-edom, evidence_claim_ids: [hadad-edom-attested]}
+      - {<<: *g36est, entity_id: bedad-edom, evidence_claim_ids: [bedad-edom-attested]}
+      - {<<: *g36est, entity_id: samlah-edom, evidence_claim_ids: [samlah-edom-attested]}
+      - {<<: *g36est, entity_id: shaul-edom, evidence_claim_ids: [shaul-edom-attested]}
+      - {<<: *g36est, entity_id: baal-hanan-edom, evidence_claim_ids: [baal-hanan-edom-attested]}
+      - {<<: *g36est, entity_id: achbor-edom, evidence_claim_ids: [achbor-edom-attested]}
+      - {<<: *g36est, entity_id: hadar-edom, evidence_claim_ids: [hadar-edom-attested]}
+      - {<<: *g36est, entity_id: mehetabel-edom, evidence_claim_ids: [mehetabel-edom-attested]}
+      - {<<: *g36est, entity_id: matred-edom, evidence_claim_ids: [matred-edom-attested]}
+      - {<<: *g36est, entity_id: mezahab-edom, evidence_claim_ids: [mezahab-edom-attested]}
+      - {<<: *g36est, entity_id: timnah-chief-edom, evidence_claim_ids: [timnah-chief-edom-attested]}
+      - {<<: *g36est, entity_id: alvah-chief-edom, evidence_claim_ids: [alvah-chief-edom-attested]}
+      - {<<: *g36est, entity_id: jetheth-chief-edom, evidence_claim_ids: [jetheth-chief-edom-attested]}
+      - {<<: *g36est, entity_id: elah-chief-edom, evidence_claim_ids: [elah-chief-edom-attested]}
+      - {<<: *g36est, entity_id: pinon-chief-edom, evidence_claim_ids: [pinon-chief-edom-attested]}
+      - {<<: *g36est, entity_id: mibzar-chief-edom, evidence_claim_ids: [mibzar-chief-edom-attested]}
+      - {<<: *g36est, entity_id: magdiel-chief-edom, evidence_claim_ids: [magdiel-chief-edom-attested]}
+      - {<<: *g36est, entity_id: iram-chief-edom, evidence_claim_ids: [iram-chief-edom-attested]}

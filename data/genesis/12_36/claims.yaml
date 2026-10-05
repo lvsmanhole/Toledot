@@ -401,3 +401,51 @@ records:
   - <<: *att
     id: mizzah-attested
     subject_id: mizzah
+  - &g36att {id: seir-horite-attested, subject_id: seir-horite, predicate: attested_in_passage, value: {kind: attestation, status: mentioned}, evidence_type: explicit_text, confidence: A, witness_id: lxx-genesis-goettingen, citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 36", witness_id: lxx-genesis-goettingen}, {source_id: dillmann-octateuch-1853, locator: "Genesis 36", witness_id: geez-genesis-dillmann}, {source_id: bhs-genesis, locator: "Genesis 36", witness_id: mt-genesis-bhs}]}
+  - {<<: *g36att, id: lotan-horite-attested, subject_id: lotan-horite}
+  - {<<: *g36att, id: shobal-horite-attested, subject_id: shobal-horite}
+  - {<<: *g36att, id: zibeon-horite-attested, subject_id: zibeon-horite}
+  - {<<: *g36att, id: anah-horite-attested, subject_id: anah-horite}
+  - {<<: *g36att, id: dishon-horite-attested, subject_id: dishon-horite}
+  - {<<: *g36att, id: ezer-horite-attested, subject_id: ezer-horite}
+  - {<<: *g36att, id: dishan-horite-attested, subject_id: dishan-horite}
+  - {<<: *g36att, id: hori-lotan-attested, subject_id: hori-lotan}
+  - {<<: *g36att, id: hemam-lotan-attested, subject_id: hemam-lotan}
+  - {<<: *g36att, id: alvan-shobal-attested, subject_id: alvan-shobal}
+  - {<<: *g36att, id: manahath-shobal-attested, subject_id: manahath-shobal}
+  - {<<: *g36att, id: ebal-shobal-attested, subject_id: ebal-shobal}
+  - {<<: *g36att, id: shepho-shobal-attested, subject_id: shepho-shobal}
+  - {<<: *g36att, id: onam-shobal-attested, subject_id: onam-shobal}
+  - {<<: *g36att, id: aiah-zibeon-attested, subject_id: aiah-zibeon}
+  - {<<: *g36att, id: hemdan-dishon-attested, subject_id: hemdan-dishon}
+  - {<<: *g36att, id: eshban-dishon-attested, subject_id: eshban-dishon}
+  - {<<: *g36att, id: ithran-dishon-attested, subject_id: ithran-dishon}
+  - {<<: *g36att, id: cheran-dishon-attested, subject_id: cheran-dishon}
+  - {<<: *g36att, id: bilhan-ezer-attested, subject_id: bilhan-ezer}
+  - {<<: *g36att, id: zaavan-ezer-attested, subject_id: zaavan-ezer}
+  - {<<: *g36att, id: akan-ezer-attested, subject_id: akan-ezer}
+  - {<<: *g36att, id: uz-dishan-attested, subject_id: uz-dishan}
+  - {<<: *g36att, id: aran-dishan-attested, subject_id: aran-dishan}
+  - {<<: *g36att, id: bela-edom-attested, subject_id: bela-edom}
+  - {<<: *g36att, id: beor-edom-attested, subject_id: beor-edom}
+  - {<<: *g36att, id: jobab-edom-attested, subject_id: jobab-edom}
+  - {<<: *g36att, id: zerah-edom-king-attested, subject_id: zerah-edom-king}
+  - {<<: *g36att, id: husham-edom-attested, subject_id: husham-edom}
+  - {<<: *g36att, id: hadad-edom-attested, subject_id: hadad-edom}
+  - {<<: *g36att, id: bedad-edom-attested, subject_id: bedad-edom}
+  - {<<: *g36att, id: samlah-edom-attested, subject_id: samlah-edom}
+  - {<<: *g36att, id: shaul-edom-attested, subject_id: shaul-edom}
+  - {<<: *g36att, id: baal-hanan-edom-attested, subject_id: baal-hanan-edom}
+  - {<<: *g36att, id: achbor-edom-attested, subject_id: achbor-edom}
+  - {<<: *g36att, id: hadar-edom-attested, subject_id: hadar-edom}
+  - {<<: *g36att, id: mehetabel-edom-attested, subject_id: mehetabel-edom}
+  - {<<: *g36att, id: matred-edom-attested, subject_id: matred-edom}
+  - {<<: *g36att, id: mezahab-edom-attested, subject_id: mezahab-edom}
+  - {<<: *g36att, id: timnah-chief-edom-attested, subject_id: timnah-chief-edom}
+  - {<<: *g36att, id: alvah-chief-edom-attested, subject_id: alvah-chief-edom}
+  - {<<: *g36att, id: jetheth-chief-edom-attested, subject_id: jetheth-chief-edom}
+  - {<<: *g36att, id: elah-chief-edom-attested, subject_id: elah-chief-edom}
+  - {<<: *g36att, id: pinon-chief-edom-attested, subject_id: pinon-chief-edom}
+  - {<<: *g36att, id: mibzar-chief-edom-attested, subject_id: mibzar-chief-edom}
+  - {<<: *g36att, id: magdiel-chief-edom-attested, subject_id: magdiel-chief-edom}
+  - {<<: *g36att, id: iram-chief-edom-attested, subject_id: iram-chief-edom}

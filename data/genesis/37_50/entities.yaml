@@ -7,6 +7,7 @@ records:
     primary_name: Perez
     aliases: [Phares]
     gender: male
+  - {id: tamar-midwife, entity_type: human, primary_name: Tamar's midwife, aliases: [], classification: unnamed_unique, identity_status: unnamed_unique, gender: female, citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 38:28", witness_id: lxx-genesis-goettingen}, {source_id: dillmann-octateuch-1853, locator: "Genesis 38:28", witness_id: geez-genesis-dillmann}, {source_id: bhs-genesis, locator: "Genesis 38:28", witness_id: mt-genesis-bhs}]}
   - <<: *human
     id: zerah-judah
     primary_name: Zerah

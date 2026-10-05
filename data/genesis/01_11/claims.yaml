@@ -894,3 +894,4 @@ records:
   - <<: *gen11att
     id: iscah-attested
     subject_id: iscah
+  - &cainwifeatt {id: cain-wife-attested, subject_id: cain-wife, predicate: attested_in_passage, value: {kind: attestation, status: mentioned}, evidence_type: explicit_text, witness_id: lxx-genesis-goettingen, confidence: A, citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 4:17", witness_id: lxx-genesis-goettingen}, {source_id: dillmann-octateuch-1853, locator: "Genesis 4:17", witness_id: geez-genesis-dillmann}, {source_id: bhs-genesis, locator: "Genesis 4:17", witness_id: mt-genesis-bhs}]}

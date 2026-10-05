@@ -6,7 +6,7 @@ records:
     id: inv-gen-38
     locator: "Genesis 38"
     passage_ids: [gen-38-lxx]
-    identified_entity_ids: [judah, hirah, shua-canaanite, judah-wife, er-judah, onan, shelah-judah, tamar, perez, zerah-judah]
+    identified_entity_ids: [judah, hirah, shua-canaanite, judah-wife, er-judah, onan, shelah-judah, tamar, tamar-midwife, perez, zerah-judah]
     event_ids: [tamar-perez-zerah]
     citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 38", witness_id: lxx-genesis-goettingen}]
   - <<: *i

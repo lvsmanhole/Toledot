@@ -6,7 +6,7 @@ records:
     id: tamar-perez-zerah
     event_type: birth
     name: Birth of Perez and Zerah
-    participants: [{entity_id: tamar, role: mother}, {entity_id: judah, role: father}, {entity_id: perez, role: child}, {entity_id: zerah-judah, role: child}]
+    participants: [{entity_id: tamar, role: mother}, {entity_id: judah, role: father}, {entity_id: tamar-midwife, role: midwife}, {entity_id: perez, role: child}, {entity_id: zerah-judah, role: child}]
     citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 38:27-30", witness_id: lxx-genesis-goettingen}]
   - <<: *event
     id: joseph-imprisoned

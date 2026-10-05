@@ -470,3 +470,51 @@ records:
   - <<: *desc
     id: mizzah
     primary_name: Mizzah
+  - &g36person {id: seir-horite, primary_name: Seir, entity_type: human, classification: named_person, identity_status: named, aliases: [], gender: male, citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 36", witness_id: lxx-genesis-goettingen}, {source_id: dillmann-octateuch-1853, locator: "Genesis 36", witness_id: geez-genesis-dillmann}, {source_id: bhs-genesis, locator: "Genesis 36", witness_id: mt-genesis-bhs}]}
+  - {<<: *g36person, id: lotan-horite, primary_name: Lotan}
+  - {<<: *g36person, id: shobal-horite, primary_name: Shobal}
+  - {<<: *g36person, id: zibeon-horite, primary_name: Zibeon}
+  - {<<: *g36person, id: anah-horite, primary_name: Anah}
+  - {<<: *g36person, id: dishon-horite, primary_name: Dishon}
+  - {<<: *g36person, id: ezer-horite, primary_name: Ezer}
+  - {<<: *g36person, id: dishan-horite, primary_name: Dishan}
+  - {<<: *g36person, id: hori-lotan, primary_name: Hori}
+  - {<<: *g36person, id: hemam-lotan, primary_name: Hemam}
+  - {<<: *g36person, id: alvan-shobal, primary_name: Alvan, aliases: [Alian]}
+  - {<<: *g36person, id: manahath-shobal, primary_name: Manahath}
+  - {<<: *g36person, id: ebal-shobal, primary_name: Ebal}
+  - {<<: *g36person, id: shepho-shobal, primary_name: Shepho}
+  - {<<: *g36person, id: onam-shobal, primary_name: Onam}
+  - {<<: *g36person, id: aiah-zibeon, primary_name: Aiah}
+  - {<<: *g36person, id: hemdan-dishon, primary_name: Hemdan}
+  - {<<: *g36person, id: eshban-dishon, primary_name: Eshban}
+  - {<<: *g36person, id: ithran-dishon, primary_name: Ithran}
+  - {<<: *g36person, id: cheran-dishon, primary_name: Cheran}
+  - {<<: *g36person, id: bilhan-ezer, primary_name: Bilhan}
+  - {<<: *g36person, id: zaavan-ezer, primary_name: Zaavan}
+  - {<<: *g36person, id: akan-ezer, primary_name: Akan}
+  - {<<: *g36person, id: uz-dishan, primary_name: Uz}
+  - {<<: *g36person, id: aran-dishan, primary_name: Aran}
+  - {<<: *g36person, id: bela-edom, primary_name: Bela}
+  - {<<: *g36person, id: beor-edom, primary_name: Beor}
+  - {<<: *g36person, id: jobab-edom, primary_name: Jobab}
+  - {<<: *g36person, id: zerah-edom-king, primary_name: Zerah}
+  - {<<: *g36person, id: husham-edom, primary_name: Husham}
+  - {<<: *g36person, id: hadad-edom, primary_name: Hadad}
+  - {<<: *g36person, id: bedad-edom, primary_name: Bedad}
+  - {<<: *g36person, id: samlah-edom, primary_name: Samlah}
+  - {<<: *g36person, id: shaul-edom, primary_name: Shaul}
+  - {<<: *g36person, id: baal-hanan-edom, primary_name: Baal-hanan}
+  - {<<: *g36person, id: achbor-edom, primary_name: Achbor}
+  - {<<: *g36person, id: hadar-edom, primary_name: Hadar}
+  - {<<: *g36person, id: mehetabel-edom, primary_name: Mehetabel, gender: female}
+  - {<<: *g36person, id: matred-edom, primary_name: Matred, gender: female}
+  - {<<: *g36person, id: mezahab-edom, primary_name: Me-zahab}
+  - {<<: *g36person, id: timnah-chief-edom, primary_name: Timnah, gender: female}
+  - {<<: *g36person, id: alvah-chief-edom, primary_name: Alvah}
+  - {<<: *g36person, id: jetheth-chief-edom, primary_name: Jetheth}
+  - {<<: *g36person, id: elah-chief-edom, primary_name: Elah}
+  - {<<: *g36person, id: pinon-chief-edom, primary_name: Pinon}
+  - {<<: *g36person, id: mibzar-chief-edom, primary_name: Mibzar}
+  - {<<: *g36person, id: magdiel-chief-edom, primary_name: Magdiel}
+  - {<<: *g36person, id: iram-chief-edom, primary_name: Iram}
