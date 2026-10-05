@@ -1,0 +1,248 @@
+schema_version: 1
+record_type: canon_memberships
+records:
+  - id: p66-genesis
+    work_id: genesis
+    canon_list_id: protestant-66
+    source_list_item_id: p66-01-genesis
+    status: included_standard
+    citations: &p66_membership_citation
+      - {source_id: protestant-66-toc, locator: Standard table of contents}
+  - {id: p66-exodus, work_id: exodus, canon_list_id: protestant-66, source_list_item_id: p66-02-exodus, status: included_standard, citations: *p66_membership_citation}
+  - {id: p66-leviticus, work_id: leviticus, canon_list_id: protestant-66, source_list_item_id: p66-03-leviticus, status: included_standard, citations: *p66_membership_citation}
+  - {id: p66-numbers, work_id: numbers, canon_list_id: protestant-66, source_list_item_id: p66-04-numbers, status: included_standard, citations: *p66_membership_citation}
+  - {id: p66-deuteronomy, work_id: deuteronomy, canon_list_id: protestant-66, source_list_item_id: p66-05-deuteronomy, status: included_standard, citations: *p66_membership_citation}
+  - {id: p66-joshua, work_id: joshua, canon_list_id: protestant-66, source_list_item_id: p66-06-joshua, status: included_standard, citations: *p66_membership_citation}
+  - {id: p66-judges, work_id: judges, canon_list_id: protestant-66, source_list_item_id: p66-07-judges, status: included_standard, citations: *p66_membership_citation}
+  - {id: p66-ruth, work_id: ruth, canon_list_id: protestant-66, source_list_item_id: p66-08-ruth, status: included_standard, citations: *p66_membership_citation}
+  - {id: p66-1-samuel, work_id: 1-samuel, canon_list_id: protestant-66, source_list_item_id: p66-09-1-samuel, status: included_standard, citations: *p66_membership_citation}
+  - {id: p66-2-samuel, work_id: 2-samuel, canon_list_id: protestant-66, source_list_item_id: p66-10-2-samuel, status: included_standard, citations: *p66_membership_citation}
+  - {id: p66-1-kings, work_id: 1-kings, canon_list_id: protestant-66, source_list_item_id: p66-11-1-kings, status: included_standard, citations: *p66_membership_citation}
+  - {id: p66-2-kings, work_id: 2-kings, canon_list_id: protestant-66, source_list_item_id: p66-12-2-kings, status: included_standard, citations: *p66_membership_citation}
+  - {id: p66-1-chronicles, work_id: 1-chronicles, canon_list_id: protestant-66, source_list_item_id: p66-13-1-chronicles, status: included_standard, citations: *p66_membership_citation}
+  - {id: p66-2-chronicles, work_id: 2-chronicles, canon_list_id: protestant-66, source_list_item_id: p66-14-2-chronicles, status: included_standard, citations: *p66_membership_citation}
+  - {id: p66-ezra, work_id: ezra, canon_list_id: protestant-66, source_list_item_id: p66-15-ezra, status: included_standard, citations: *p66_membership_citation}
+  - {id: p66-nehemiah, work_id: nehemiah, canon_list_id: protestant-66, source_list_item_id: p66-16-nehemiah, status: included_standard, citations: *p66_membership_citation}
+  - {id: p66-esther, work_id: esther, canon_list_id: protestant-66, source_list_item_id: p66-17-esther, status: included_standard, citations: *p66_membership_citation}
+  - {id: p66-job, work_id: job, canon_list_id: protestant-66, source_list_item_id: p66-18-job, status: included_standard, citations: *p66_membership_citation}
+  - {id: p66-psalms, work_id: psalms, canon_list_id: protestant-66, source_list_item_id: p66-19-psalms, status: included_standard, citations: *p66_membership_citation}
+  - {id: p66-proverbs, work_id: proverbs, canon_list_id: protestant-66, source_list_item_id: p66-20-proverbs, status: included_standard, citations: *p66_membership_citation}
+  - {id: p66-ecclesiastes, work_id: ecclesiastes, canon_list_id: protestant-66, source_list_item_id: p66-21-ecclesiastes, status: included_standard, citations: *p66_membership_citation}
+  - {id: p66-song, work_id: song-of-songs, canon_list_id: protestant-66, source_list_item_id: p66-22-song, status: included_standard, citations: *p66_membership_citation}
+  - {id: p66-isaiah, work_id: isaiah, canon_list_id: protestant-66, source_list_item_id: p66-23-isaiah, status: included_standard, citations: *p66_membership_citation}
+  - {id: p66-jeremiah, work_id: jeremiah, canon_list_id: protestant-66, source_list_item_id: p66-24-jeremiah, status: included_standard, citations: *p66_membership_citation}
+  - {id: p66-lamentations, work_id: lamentations, canon_list_id: protestant-66, source_list_item_id: p66-25-lamentations, status: included_standard, citations: *p66_membership_citation}
+  - {id: p66-ezekiel, work_id: ezekiel, canon_list_id: protestant-66, source_list_item_id: p66-26-ezekiel, status: included_standard, citations: *p66_membership_citation}
+  - {id: p66-daniel, work_id: daniel, canon_list_id: protestant-66, source_list_item_id: p66-27-daniel, status: included_standard, citations: *p66_membership_citation}
+  - {id: p66-hosea, work_id: hosea, canon_list_id: protestant-66, source_list_item_id: p66-28-hosea, status: included_standard, citations: *p66_membership_citation}
+  - {id: p66-joel, work_id: joel, canon_list_id: protestant-66, source_list_item_id: p66-29-joel, status: included_standard, citations: *p66_membership_citation}
+  - {id: p66-amos, work_id: amos, canon_list_id: protestant-66, source_list_item_id: p66-30-amos, status: included_standard, citations: *p66_membership_citation}
+  - {id: p66-obadiah, work_id: obadiah, canon_list_id: protestant-66, source_list_item_id: p66-31-obadiah, status: included_standard, citations: *p66_membership_citation}
+  - {id: p66-jonah, work_id: jonah, canon_list_id: protestant-66, source_list_item_id: p66-32-jonah, status: included_standard, citations: *p66_membership_citation}
+  - {id: p66-micah, work_id: micah, canon_list_id: protestant-66, source_list_item_id: p66-33-micah, status: included_standard, citations: *p66_membership_citation}
+  - {id: p66-nahum, work_id: nahum, canon_list_id: protestant-66, source_list_item_id: p66-34-nahum, status: included_standard, citations: *p66_membership_citation}
+  - {id: p66-habakkuk, work_id: habakkuk, canon_list_id: protestant-66, source_list_item_id: p66-35-habakkuk, status: included_standard, citations: *p66_membership_citation}
+  - {id: p66-zephaniah, work_id: zephaniah, canon_list_id: protestant-66, source_list_item_id: p66-36-zephaniah, status: included_standard, citations: *p66_membership_citation}
+  - {id: p66-haggai, work_id: haggai, canon_list_id: protestant-66, source_list_item_id: p66-37-haggai, status: included_standard, citations: *p66_membership_citation}
+  - {id: p66-zechariah, work_id: zechariah, canon_list_id: protestant-66, source_list_item_id: p66-38-zechariah, status: included_standard, citations: *p66_membership_citation}
+  - {id: p66-malachi, work_id: malachi, canon_list_id: protestant-66, source_list_item_id: p66-39-malachi, status: included_standard, citations: *p66_membership_citation}
+  - {id: p66-matthew, work_id: matthew, canon_list_id: protestant-66, source_list_item_id: p66-40-matthew, status: included_standard, citations: *p66_membership_citation}
+  - {id: p66-mark, work_id: mark, canon_list_id: protestant-66, source_list_item_id: p66-41-mark, status: included_standard, citations: *p66_membership_citation}
+  - {id: p66-luke, work_id: luke, canon_list_id: protestant-66, source_list_item_id: p66-42-luke, status: included_standard, citations: *p66_membership_citation}
+  - {id: p66-john, work_id: john, canon_list_id: protestant-66, source_list_item_id: p66-43-john, status: included_standard, citations: *p66_membership_citation}
+  - {id: p66-acts, work_id: acts, canon_list_id: protestant-66, source_list_item_id: p66-44-acts, status: included_standard, citations: *p66_membership_citation}
+  - {id: p66-romans, work_id: romans, canon_list_id: protestant-66, source_list_item_id: p66-45-romans, status: included_standard, citations: *p66_membership_citation}
+  - {id: p66-1-corinthians, work_id: 1-corinthians, canon_list_id: protestant-66, source_list_item_id: p66-46-1-corinthians, status: included_standard, citations: *p66_membership_citation}
+  - {id: p66-2-corinthians, work_id: 2-corinthians, canon_list_id: protestant-66, source_list_item_id: p66-47-2-corinthians, status: included_standard, citations: *p66_membership_citation}
+  - {id: p66-galatians, work_id: galatians, canon_list_id: protestant-66, source_list_item_id: p66-48-galatians, status: included_standard, citations: *p66_membership_citation}
+  - {id: p66-ephesians, work_id: ephesians, canon_list_id: protestant-66, source_list_item_id: p66-49-ephesians, status: included_standard, citations: *p66_membership_citation}
+  - {id: p66-philippians, work_id: philippians, canon_list_id: protestant-66, source_list_item_id: p66-50-philippians, status: included_standard, citations: *p66_membership_citation}
+  - {id: p66-colossians, work_id: colossians, canon_list_id: protestant-66, source_list_item_id: p66-51-colossians, status: included_standard, citations: *p66_membership_citation}
+  - {id: p66-1-thessalonians, work_id: 1-thessalonians, canon_list_id: protestant-66, source_list_item_id: p66-52-1-thessalonians, status: included_standard, citations: *p66_membership_citation}
+  - {id: p66-2-thessalonians, work_id: 2-thessalonians, canon_list_id: protestant-66, source_list_item_id: p66-53-2-thessalonians, status: included_standard, citations: *p66_membership_citation}
+  - {id: p66-1-timothy, work_id: 1-timothy, canon_list_id: protestant-66, source_list_item_id: p66-54-1-timothy, status: included_standard, citations: *p66_membership_citation}
+  - {id: p66-2-timothy, work_id: 2-timothy, canon_list_id: protestant-66, source_list_item_id: p66-55-2-timothy, status: included_standard, citations: *p66_membership_citation}
+  - {id: p66-titus, work_id: titus, canon_list_id: protestant-66, source_list_item_id: p66-56-titus, status: included_standard, citations: *p66_membership_citation}
+  - {id: p66-philemon, work_id: philemon, canon_list_id: protestant-66, source_list_item_id: p66-57-philemon, status: included_standard, citations: *p66_membership_citation}
+  - {id: p66-hebrews, work_id: hebrews, canon_list_id: protestant-66, source_list_item_id: p66-58-hebrews, status: included_standard, citations: *p66_membership_citation}
+  - {id: p66-james, work_id: james, canon_list_id: protestant-66, source_list_item_id: p66-59-james, status: included_standard, citations: *p66_membership_citation}
+  - {id: p66-1-peter, work_id: 1-peter, canon_list_id: protestant-66, source_list_item_id: p66-60-1-peter, status: included_standard, citations: *p66_membership_citation}
+  - {id: p66-2-peter, work_id: 2-peter, canon_list_id: protestant-66, source_list_item_id: p66-61-2-peter, status: included_standard, citations: *p66_membership_citation}
+  - {id: p66-1-john, work_id: 1-john, canon_list_id: protestant-66, source_list_item_id: p66-62-1-john, status: included_standard, citations: *p66_membership_citation}
+  - {id: p66-2-john, work_id: 2-john, canon_list_id: protestant-66, source_list_item_id: p66-63-2-john, status: included_standard, citations: *p66_membership_citation}
+  - {id: p66-3-john, work_id: 3-john, canon_list_id: protestant-66, source_list_item_id: p66-64-3-john, status: included_standard, citations: *p66_membership_citation}
+  - {id: p66-jude, work_id: jude, canon_list_id: protestant-66, source_list_item_id: p66-65-jude, status: included_standard, citations: *p66_membership_citation}
+  - {id: p66-revelation, work_id: revelation, canon_list_id: protestant-66, source_list_item_id: p66-66-revelation, status: included_standard, citations: *p66_membership_citation}
+
+  - id: lxx-genesis-membership
+    work_id: genesis
+    canon_list_id: septuagint-rahlfs-hanhart
+    source_list_item_id: lxx-genesis
+    status: edition_contents
+    citations: &lxx_membership_citation
+      - {source_id: rahlfs-hanhart-2006, locator: Edition contents}
+  - {id: lxx-exodus-membership, work_id: exodus, canon_list_id: septuagint-rahlfs-hanhart, source_list_item_id: lxx-exodus, status: edition_contents, citations: *lxx_membership_citation}
+  - {id: lxx-leviticus-membership, work_id: leviticus, canon_list_id: septuagint-rahlfs-hanhart, source_list_item_id: lxx-leviticus, status: edition_contents, citations: *lxx_membership_citation}
+  - {id: lxx-numbers-membership, work_id: numbers, canon_list_id: septuagint-rahlfs-hanhart, source_list_item_id: lxx-numbers, status: edition_contents, citations: *lxx_membership_citation}
+  - {id: lxx-deuteronomy-membership, work_id: deuteronomy, canon_list_id: septuagint-rahlfs-hanhart, source_list_item_id: lxx-deuteronomy, status: edition_contents, citations: *lxx_membership_citation}
+  - {id: lxx-joshua-membership, work_id: joshua, canon_list_id: septuagint-rahlfs-hanhart, source_list_item_id: lxx-joshua, status: edition_contents, citations: *lxx_membership_citation}
+  - {id: lxx-judges-membership, work_id: judges, canon_list_id: septuagint-rahlfs-hanhart, source_list_item_id: lxx-judges, status: edition_contents, citations: *lxx_membership_citation}
+  - {id: lxx-ruth-membership, work_id: ruth, canon_list_id: septuagint-rahlfs-hanhart, source_list_item_id: lxx-ruth, status: edition_contents, citations: *lxx_membership_citation}
+  - {id: lxx-1-kingdoms-membership, work_id: 1-samuel, canon_list_id: septuagint-rahlfs-hanhart, source_list_item_id: lxx-1-kingdoms, status: edition_contents, citations: *lxx_membership_citation}
+  - {id: lxx-2-kingdoms-membership, work_id: 2-samuel, canon_list_id: septuagint-rahlfs-hanhart, source_list_item_id: lxx-2-kingdoms, status: edition_contents, citations: *lxx_membership_citation}
+  - {id: lxx-3-kingdoms-membership, work_id: 1-kings, canon_list_id: septuagint-rahlfs-hanhart, source_list_item_id: lxx-3-kingdoms, status: edition_contents, citations: *lxx_membership_citation}
+  - {id: lxx-4-kingdoms-membership, work_id: 2-kings, canon_list_id: septuagint-rahlfs-hanhart, source_list_item_id: lxx-4-kingdoms, status: edition_contents, citations: *lxx_membership_citation}
+  - {id: lxx-1-supplements-membership, work_id: 1-chronicles, canon_list_id: septuagint-rahlfs-hanhart, source_list_item_id: lxx-1-supplements, status: edition_contents, citations: *lxx_membership_citation}
+  - {id: lxx-2-supplements-membership, work_id: 2-chronicles, canon_list_id: septuagint-rahlfs-hanhart, source_list_item_id: lxx-2-supplements, status: edition_contents, citations: *lxx_membership_citation}
+  - {id: lxx-1-esdras-membership, work_id: 1-esdras, canon_list_id: septuagint-rahlfs-hanhart, source_list_item_id: lxx-1-esdras, status: edition_contents, citations: *lxx_membership_citation}
+  - {id: lxx-ezra-membership, work_id: ezra, canon_list_id: septuagint-rahlfs-hanhart, source_list_item_id: lxx-ezra, status: edition_contents, citations: *lxx_membership_citation}
+  - {id: lxx-nehemiah-membership, work_id: nehemiah, canon_list_id: septuagint-rahlfs-hanhart, source_list_item_id: lxx-nehemiah, status: edition_contents, citations: *lxx_membership_citation}
+  - {id: lxx-esther-membership, work_id: esther, canon_list_id: septuagint-rahlfs-hanhart, source_list_item_id: lxx-esther, status: edition_contents, citations: *lxx_membership_citation}
+  - {id: lxx-esther-additions-membership, work_id: additions-to-esther, canon_list_id: septuagint-rahlfs-hanhart, source_list_item_id: lxx-esther-additions, status: edition_contents, citations: *lxx_membership_citation}
+  - {id: lxx-judith-membership, work_id: judith, canon_list_id: septuagint-rahlfs-hanhart, source_list_item_id: lxx-judith, status: edition_contents, citations: *lxx_membership_citation}
+  - {id: lxx-tobit-membership, work_id: tobit, canon_list_id: septuagint-rahlfs-hanhart, source_list_item_id: lxx-tobit, status: edition_contents, citations: *lxx_membership_citation}
+  - {id: lxx-1-maccabees-membership, work_id: 1-maccabees, canon_list_id: septuagint-rahlfs-hanhart, source_list_item_id: lxx-1-maccabees, status: edition_contents, citations: *lxx_membership_citation}
+  - {id: lxx-2-maccabees-membership, work_id: 2-maccabees, canon_list_id: septuagint-rahlfs-hanhart, source_list_item_id: lxx-2-maccabees, status: edition_contents, citations: *lxx_membership_citation}
+  - {id: lxx-3-maccabees-membership, work_id: 3-maccabees, canon_list_id: septuagint-rahlfs-hanhart, source_list_item_id: lxx-3-maccabees, status: edition_contents, citations: *lxx_membership_citation}
+  - {id: lxx-4-maccabees-membership, work_id: 4-maccabees, canon_list_id: septuagint-rahlfs-hanhart, source_list_item_id: lxx-4-maccabees, status: edition_appendix, citations: *lxx_membership_citation}
+  - {id: lxx-psalms-membership, work_id: psalms, canon_list_id: septuagint-rahlfs-hanhart, source_list_item_id: lxx-psalms, status: edition_contents, citations: *lxx_membership_citation}
+  - {id: lxx-psalm-151-membership, work_id: psalm-151, canon_list_id: septuagint-rahlfs-hanhart, source_list_item_id: lxx-psalm-151, status: edition_contents, citations: *lxx_membership_citation}
+  - {id: lxx-odes-membership, work_id: odes, canon_list_id: septuagint-rahlfs-hanhart, source_list_item_id: lxx-odes, status: edition_contents, citations: *lxx_membership_citation}
+  - {id: lxx-prayer-manasseh-membership, work_id: prayer-of-manasseh, canon_list_id: septuagint-rahlfs-hanhart, source_list_item_id: lxx-prayer-manasseh, status: component_of_odes, citations: *lxx_membership_citation}
+  - {id: lxx-proverbs-membership, work_id: proverbs, canon_list_id: septuagint-rahlfs-hanhart, source_list_item_id: lxx-proverbs, status: edition_contents, citations: *lxx_membership_citation}
+  - {id: lxx-ecclesiastes-membership, work_id: ecclesiastes, canon_list_id: septuagint-rahlfs-hanhart, source_list_item_id: lxx-ecclesiastes, status: edition_contents, citations: *lxx_membership_citation}
+  - {id: lxx-song-membership, work_id: song-of-songs, canon_list_id: septuagint-rahlfs-hanhart, source_list_item_id: lxx-song, status: edition_contents, citations: *lxx_membership_citation}
+  - {id: lxx-job-membership, work_id: job, canon_list_id: septuagint-rahlfs-hanhart, source_list_item_id: lxx-job, status: edition_contents, citations: *lxx_membership_citation}
+  - {id: lxx-wisdom-membership, work_id: wisdom-of-solomon, canon_list_id: septuagint-rahlfs-hanhart, source_list_item_id: lxx-wisdom, status: edition_contents, citations: *lxx_membership_citation}
+  - {id: lxx-sirach-membership, work_id: sirach, canon_list_id: septuagint-rahlfs-hanhart, source_list_item_id: lxx-sirach, status: edition_contents, citations: *lxx_membership_citation}
+  - {id: lxx-psalms-solomon-membership, work_id: psalms-of-solomon, canon_list_id: septuagint-rahlfs-hanhart, source_list_item_id: lxx-psalms-solomon, status: edition_appendix, citations: *lxx_membership_citation}
+  - {id: lxx-hosea-membership, work_id: hosea, canon_list_id: septuagint-rahlfs-hanhart, source_list_item_id: lxx-hosea, status: edition_contents, citations: *lxx_membership_citation}
+  - {id: lxx-amos-membership, work_id: amos, canon_list_id: septuagint-rahlfs-hanhart, source_list_item_id: lxx-amos, status: edition_contents, citations: *lxx_membership_citation}
+  - {id: lxx-micah-membership, work_id: micah, canon_list_id: septuagint-rahlfs-hanhart, source_list_item_id: lxx-micah, status: edition_contents, citations: *lxx_membership_citation}
+  - {id: lxx-joel-membership, work_id: joel, canon_list_id: septuagint-rahlfs-hanhart, source_list_item_id: lxx-joel, status: edition_contents, citations: *lxx_membership_citation}
+  - {id: lxx-obadiah-membership, work_id: obadiah, canon_list_id: septuagint-rahlfs-hanhart, source_list_item_id: lxx-obadiah, status: edition_contents, citations: *lxx_membership_citation}
+  - {id: lxx-jonah-membership, work_id: jonah, canon_list_id: septuagint-rahlfs-hanhart, source_list_item_id: lxx-jonah, status: edition_contents, citations: *lxx_membership_citation}
+  - {id: lxx-nahum-membership, work_id: nahum, canon_list_id: septuagint-rahlfs-hanhart, source_list_item_id: lxx-nahum, status: edition_contents, citations: *lxx_membership_citation}
+  - {id: lxx-habakkuk-membership, work_id: habakkuk, canon_list_id: septuagint-rahlfs-hanhart, source_list_item_id: lxx-habakkuk, status: edition_contents, citations: *lxx_membership_citation}
+  - {id: lxx-zephaniah-membership, work_id: zephaniah, canon_list_id: septuagint-rahlfs-hanhart, source_list_item_id: lxx-zephaniah, status: edition_contents, citations: *lxx_membership_citation}
+  - {id: lxx-haggai-membership, work_id: haggai, canon_list_id: septuagint-rahlfs-hanhart, source_list_item_id: lxx-haggai, status: edition_contents, citations: *lxx_membership_citation}
+  - {id: lxx-zechariah-membership, work_id: zechariah, canon_list_id: septuagint-rahlfs-hanhart, source_list_item_id: lxx-zechariah, status: edition_contents, citations: *lxx_membership_citation}
+  - {id: lxx-malachi-membership, work_id: malachi, canon_list_id: septuagint-rahlfs-hanhart, source_list_item_id: lxx-malachi, status: edition_contents, citations: *lxx_membership_citation}
+  - {id: lxx-isaiah-membership, work_id: isaiah, canon_list_id: septuagint-rahlfs-hanhart, source_list_item_id: lxx-isaiah, status: edition_contents, citations: *lxx_membership_citation}
+  - {id: lxx-jeremiah-membership, work_id: jeremiah, canon_list_id: septuagint-rahlfs-hanhart, source_list_item_id: lxx-jeremiah, status: edition_contents, citations: *lxx_membership_citation}
+  - {id: lxx-baruch-membership, work_id: baruch, canon_list_id: septuagint-rahlfs-hanhart, source_list_item_id: lxx-baruch, status: edition_contents, citations: *lxx_membership_citation}
+  - {id: lxx-lamentations-membership, work_id: lamentations, canon_list_id: septuagint-rahlfs-hanhart, source_list_item_id: lxx-lamentations, status: edition_contents, citations: *lxx_membership_citation}
+  - {id: lxx-letter-jeremiah-membership, work_id: letter-of-jeremiah, canon_list_id: septuagint-rahlfs-hanhart, source_list_item_id: lxx-letter-jeremiah, status: edition_contents, citations: *lxx_membership_citation}
+  - {id: lxx-ezekiel-membership, work_id: ezekiel, canon_list_id: septuagint-rahlfs-hanhart, source_list_item_id: lxx-ezekiel, status: edition_contents, citations: *lxx_membership_citation}
+  - {id: lxx-susanna-membership, work_id: susanna, canon_list_id: septuagint-rahlfs-hanhart, source_list_item_id: lxx-susanna, status: edition_contents, citations: *lxx_membership_citation}
+  - {id: lxx-daniel-membership, work_id: daniel, canon_list_id: septuagint-rahlfs-hanhart, source_list_item_id: lxx-daniel, status: edition_contents, citations: *lxx_membership_citation}
+  - {id: lxx-prayer-azariah-membership, work_id: prayer-of-azariah, canon_list_id: septuagint-rahlfs-hanhart, source_list_item_id: lxx-prayer-azariah, status: edition_contents, citations: *lxx_membership_citation}
+  - {id: lxx-bel-dragon-membership, work_id: bel-and-dragon, canon_list_id: septuagint-rahlfs-hanhart, source_list_item_id: lxx-bel-dragon, status: edition_contents, citations: *lxx_membership_citation}
+
+  - id: ethiopian-official-genesis
+    work_id: genesis
+    canon_list_id: ethiopian-official-81
+    source_list_item_id: eotc-ot01-genesis
+    status: included_narrower
+    citations: &eotc_membership_citation
+      - {source_id: eotc-official-canon, locator: Official 46 OT and 35 NT enumeration}
+  - {id: ethiopian-official-exodus, work_id: exodus, canon_list_id: ethiopian-official-81, source_list_item_id: eotc-ot02-exodus, status: included_narrower, citations: *eotc_membership_citation}
+  - {id: ethiopian-official-leviticus, work_id: leviticus, canon_list_id: ethiopian-official-81, source_list_item_id: eotc-ot03-leviticus, status: included_narrower, citations: *eotc_membership_citation}
+  - {id: ethiopian-official-numbers, work_id: numbers, canon_list_id: ethiopian-official-81, source_list_item_id: eotc-ot04-numbers, status: included_narrower, citations: *eotc_membership_citation}
+  - {id: ethiopian-official-deuteronomy, work_id: deuteronomy, canon_list_id: ethiopian-official-81, source_list_item_id: eotc-ot05-deuteronomy, status: included_narrower, citations: *eotc_membership_citation}
+  - {id: ethiopian-official-joshua, work_id: joshua, canon_list_id: ethiopian-official-81, source_list_item_id: eotc-ot06-joshua, status: included_narrower, citations: *eotc_membership_citation}
+  - {id: ethiopian-official-judges, work_id: judges, canon_list_id: ethiopian-official-81, source_list_item_id: eotc-ot07-judges, status: included_narrower, citations: *eotc_membership_citation}
+  - {id: ethiopian-official-ruth, work_id: ruth, canon_list_id: ethiopian-official-81, source_list_item_id: eotc-ot08-ruth, status: included_narrower, citations: *eotc_membership_citation}
+  - {id: ethiopian-official-1-samuel, work_id: 1-samuel, canon_list_id: ethiopian-official-81, source_list_item_id: eotc-ot09-1-samuel, status: included_narrower, counting_group: eotc-ot09-samuel, citations: *eotc_membership_citation}
+  - {id: ethiopian-official-2-samuel, work_id: 2-samuel, canon_list_id: ethiopian-official-81, source_list_item_id: eotc-ot09-2-samuel, status: included_narrower, counting_group: eotc-ot09-samuel, citations: *eotc_membership_citation}
+  - {id: ethiopian-official-1-kings, work_id: 1-kings, canon_list_id: ethiopian-official-81, source_list_item_id: eotc-ot10-1-kings, status: included_narrower, counting_group: eotc-ot10-kings, citations: *eotc_membership_citation}
+  - {id: ethiopian-official-2-kings, work_id: 2-kings, canon_list_id: ethiopian-official-81, source_list_item_id: eotc-ot10-2-kings, status: included_narrower, counting_group: eotc-ot10-kings, citations: *eotc_membership_citation}
+  - {id: ethiopian-official-1-chronicles, work_id: 1-chronicles, canon_list_id: ethiopian-official-81, source_list_item_id: eotc-ot11-1-chronicles, status: included_narrower, citations: *eotc_membership_citation}
+  - {id: ethiopian-official-2-chronicles, work_id: 2-chronicles, canon_list_id: ethiopian-official-81, source_list_item_id: eotc-ot12-2-chronicles, status: included_narrower, citations: *eotc_membership_citation}
+  - {id: ethiopian-official-jubilees, work_id: jubilees, canon_list_id: ethiopian-official-81, source_list_item_id: eotc-ot13-jubilees, status: included_narrower, citations: *eotc_membership_citation}
+  - {id: ethiopian-official-enoch, work_id: 1-enoch, canon_list_id: ethiopian-official-81, source_list_item_id: eotc-ot14-enoch, status: included_narrower, citations: *eotc_membership_citation}
+  - {id: ethiopian-official-ezra, work_id: ezra, canon_list_id: ethiopian-official-81, source_list_item_id: eotc-ot15-ezra, status: included_narrower, counting_group: eotc-ot15-ezra-nehemiah, citations: *eotc_membership_citation}
+  - {id: ethiopian-official-nehemiah, work_id: nehemiah, canon_list_id: ethiopian-official-81, source_list_item_id: eotc-ot15-nehemiah, status: included_narrower, counting_group: eotc-ot15-ezra-nehemiah, citations: *eotc_membership_citation}
+  - {id: ethiopian-official-1-esdras, work_id: 1-esdras, canon_list_id: ethiopian-official-81, source_list_item_id: eotc-ot16-1-esdras, status: included_narrower, counting_group: eotc-ot16-ezra, citations: *eotc_membership_citation}
+  - {id: ethiopian-official-ezra-sutuel, work_id: ezra-sutuel, canon_list_id: ethiopian-official-81, source_list_item_id: eotc-ot16-ezra-sutuel, status: included_narrower, counting_group: eotc-ot16-ezra, citations: *eotc_membership_citation}
+  - {id: ethiopian-official-tobit, work_id: tobit, canon_list_id: ethiopian-official-81, source_list_item_id: eotc-ot17-tobit, status: included_narrower, citations: *eotc_membership_citation}
+  - {id: ethiopian-official-judith, work_id: judith, canon_list_id: ethiopian-official-81, source_list_item_id: eotc-ot18-judith, status: included_narrower, citations: *eotc_membership_citation}
+  - {id: ethiopian-official-esther, work_id: esther, canon_list_id: ethiopian-official-81, source_list_item_id: eotc-ot19-esther, status: included_narrower, citations: *eotc_membership_citation}
+  - {id: ethiopian-official-1-meqabyan, work_id: 1-meqabyan, canon_list_id: ethiopian-official-81, source_list_item_id: eotc-ot20-1-meqabyan, status: included_narrower, citations: *eotc_membership_citation}
+  - {id: ethiopian-official-2-meqabyan, work_id: 2-meqabyan, canon_list_id: ethiopian-official-81, source_list_item_id: eotc-ot21-2-meqabyan, status: included_narrower, counting_group: eotc-ot21-meqabyan, citations: *eotc_membership_citation}
+  - {id: ethiopian-official-3-meqabyan, work_id: 3-meqabyan, canon_list_id: ethiopian-official-81, source_list_item_id: eotc-ot21-3-meqabyan, status: included_narrower, counting_group: eotc-ot21-meqabyan, citations: *eotc_membership_citation}
+  - {id: ethiopian-official-job, work_id: job, canon_list_id: ethiopian-official-81, source_list_item_id: eotc-ot22-job, status: included_narrower, citations: *eotc_membership_citation}
+  - {id: ethiopian-official-psalms, work_id: psalms, canon_list_id: ethiopian-official-81, source_list_item_id: eotc-ot23-psalms, status: included_narrower, citations: *eotc_membership_citation}
+  - {id: ethiopian-official-proverbs, work_id: proverbs, canon_list_id: ethiopian-official-81, source_list_item_id: eotc-ot24-proverbs, status: included_narrower, citations: *eotc_membership_citation}
+  - {id: ethiopian-official-tegsats, work_id: tegsats, canon_list_id: ethiopian-official-81, source_list_item_id: eotc-ot25-tegsats, status: included_narrower, citations: *eotc_membership_citation}
+  - {id: ethiopian-official-wisdom, work_id: wisdom-of-solomon, canon_list_id: ethiopian-official-81, source_list_item_id: eotc-ot26-wisdom, status: included_narrower, citations: *eotc_membership_citation}
+  - {id: ethiopian-official-ecclesiastes, work_id: ecclesiastes, canon_list_id: ethiopian-official-81, source_list_item_id: eotc-ot27-ecclesiastes, status: included_narrower, citations: *eotc_membership_citation}
+  - {id: ethiopian-official-song, work_id: song-of-songs, canon_list_id: ethiopian-official-81, source_list_item_id: eotc-ot28-song, status: included_narrower, citations: *eotc_membership_citation}
+  - {id: ethiopian-official-isaiah, work_id: isaiah, canon_list_id: ethiopian-official-81, source_list_item_id: eotc-ot29-isaiah, status: included_narrower, citations: *eotc_membership_citation}
+  - {id: ethiopian-official-jeremiah, work_id: jeremiah, canon_list_id: ethiopian-official-81, source_list_item_id: eotc-ot30-jeremiah, status: included_narrower, citations: *eotc_membership_citation}
+  - {id: ethiopian-official-ezekiel, work_id: ezekiel, canon_list_id: ethiopian-official-81, source_list_item_id: eotc-ot31-ezekiel, status: included_narrower, citations: *eotc_membership_citation}
+  - {id: ethiopian-official-daniel, work_id: daniel, canon_list_id: ethiopian-official-81, source_list_item_id: eotc-ot32-daniel, status: included_narrower, citations: *eotc_membership_citation}
+  - {id: ethiopian-official-hosea, work_id: hosea, canon_list_id: ethiopian-official-81, source_list_item_id: eotc-ot33-hosea, status: included_narrower, citations: *eotc_membership_citation}
+  - {id: ethiopian-official-amos, work_id: amos, canon_list_id: ethiopian-official-81, source_list_item_id: eotc-ot34-amos, status: included_narrower, citations: *eotc_membership_citation}
+  - {id: ethiopian-official-micah, work_id: micah, canon_list_id: ethiopian-official-81, source_list_item_id: eotc-ot35-micah, status: included_narrower, citations: *eotc_membership_citation}
+  - {id: ethiopian-official-joel, work_id: joel, canon_list_id: ethiopian-official-81, source_list_item_id: eotc-ot36-joel, status: included_narrower, citations: *eotc_membership_citation}
+  - {id: ethiopian-official-obadiah, work_id: obadiah, canon_list_id: ethiopian-official-81, source_list_item_id: eotc-ot37-obadiah, status: included_narrower, citations: *eotc_membership_citation}
+  - {id: ethiopian-official-jonah, work_id: jonah, canon_list_id: ethiopian-official-81, source_list_item_id: eotc-ot38-jonah, status: included_narrower, citations: *eotc_membership_citation}
+  - {id: ethiopian-official-nahum, work_id: nahum, canon_list_id: ethiopian-official-81, source_list_item_id: eotc-ot39-nahum, status: included_narrower, citations: *eotc_membership_citation}
+  - {id: ethiopian-official-habakkuk, work_id: habakkuk, canon_list_id: ethiopian-official-81, source_list_item_id: eotc-ot40-habakkuk, status: included_narrower, citations: *eotc_membership_citation}
+  - {id: ethiopian-official-zephaniah, work_id: zephaniah, canon_list_id: ethiopian-official-81, source_list_item_id: eotc-ot41-zephaniah, status: included_narrower, citations: *eotc_membership_citation}
+  - {id: ethiopian-official-haggai, work_id: haggai, canon_list_id: ethiopian-official-81, source_list_item_id: eotc-ot42-haggai, status: included_narrower, citations: *eotc_membership_citation}
+  - {id: ethiopian-official-zechariah, work_id: zechariah, canon_list_id: ethiopian-official-81, source_list_item_id: eotc-ot43-zechariah, status: included_narrower, citations: *eotc_membership_citation}
+  - {id: ethiopian-official-malachi, work_id: malachi, canon_list_id: ethiopian-official-81, source_list_item_id: eotc-ot44-malachi, status: included_narrower, citations: *eotc_membership_citation}
+  - {id: ethiopian-official-sirach, work_id: sirach, canon_list_id: ethiopian-official-81, source_list_item_id: eotc-ot45-sirach, status: included_narrower, citations: *eotc_membership_citation}
+  - {id: ethiopian-official-josippon, work_id: josippon, canon_list_id: ethiopian-official-81, source_list_item_id: eotc-ot46-josippon, status: included_narrower, citations: *eotc_membership_citation}
+  - {id: ethiopian-official-matthew, work_id: matthew, canon_list_id: ethiopian-official-81, source_list_item_id: eotc-nt01-matthew, status: included_narrower, citations: *eotc_membership_citation}
+  - {id: ethiopian-official-mark, work_id: mark, canon_list_id: ethiopian-official-81, source_list_item_id: eotc-nt02-mark, status: included_narrower, citations: *eotc_membership_citation}
+  - {id: ethiopian-official-luke, work_id: luke, canon_list_id: ethiopian-official-81, source_list_item_id: eotc-nt03-luke, status: included_narrower, citations: *eotc_membership_citation}
+  - {id: ethiopian-official-john, work_id: john, canon_list_id: ethiopian-official-81, source_list_item_id: eotc-nt04-john, status: included_narrower, citations: *eotc_membership_citation}
+  - {id: ethiopian-official-acts, work_id: acts, canon_list_id: ethiopian-official-81, source_list_item_id: eotc-nt05-acts, status: included_narrower, citations: *eotc_membership_citation}
+  - {id: ethiopian-official-romans, work_id: romans, canon_list_id: ethiopian-official-81, source_list_item_id: eotc-nt06-romans, status: included_narrower, citations: *eotc_membership_citation}
+  - {id: ethiopian-official-1-corinthians, work_id: 1-corinthians, canon_list_id: ethiopian-official-81, source_list_item_id: eotc-nt07-1-corinthians, status: included_narrower, citations: *eotc_membership_citation}
+  - {id: ethiopian-official-2-corinthians, work_id: 2-corinthians, canon_list_id: ethiopian-official-81, source_list_item_id: eotc-nt08-2-corinthians, status: included_narrower, citations: *eotc_membership_citation}
+  - {id: ethiopian-official-galatians, work_id: galatians, canon_list_id: ethiopian-official-81, source_list_item_id: eotc-nt09-galatians, status: included_narrower, citations: *eotc_membership_citation}
+  - {id: ethiopian-official-ephesians, work_id: ephesians, canon_list_id: ethiopian-official-81, source_list_item_id: eotc-nt10-ephesians, status: included_narrower, citations: *eotc_membership_citation}
+  - {id: ethiopian-official-philippians, work_id: philippians, canon_list_id: ethiopian-official-81, source_list_item_id: eotc-nt11-philippians, status: included_narrower, citations: *eotc_membership_citation}
+  - {id: ethiopian-official-colossians, work_id: colossians, canon_list_id: ethiopian-official-81, source_list_item_id: eotc-nt12-colossians, status: included_narrower, citations: *eotc_membership_citation}
+  - {id: ethiopian-official-1-thessalonians, work_id: 1-thessalonians, canon_list_id: ethiopian-official-81, source_list_item_id: eotc-nt13-1-thessalonians, status: included_narrower, citations: *eotc_membership_citation}
+  - {id: ethiopian-official-2-thessalonians, work_id: 2-thessalonians, canon_list_id: ethiopian-official-81, source_list_item_id: eotc-nt14-2-thessalonians, status: included_narrower, citations: *eotc_membership_citation}
+  - {id: ethiopian-official-1-timothy, work_id: 1-timothy, canon_list_id: ethiopian-official-81, source_list_item_id: eotc-nt15-1-timothy, status: included_narrower, citations: *eotc_membership_citation}
+  - {id: ethiopian-official-2-timothy, work_id: 2-timothy, canon_list_id: ethiopian-official-81, source_list_item_id: eotc-nt16-2-timothy, status: included_narrower, citations: *eotc_membership_citation}
+  - {id: ethiopian-official-titus, work_id: titus, canon_list_id: ethiopian-official-81, source_list_item_id: eotc-nt17-titus, status: included_narrower, citations: *eotc_membership_citation}
+  - {id: ethiopian-official-philemon, work_id: philemon, canon_list_id: ethiopian-official-81, source_list_item_id: eotc-nt18-philemon, status: included_narrower, citations: *eotc_membership_citation}
+  - {id: ethiopian-official-hebrews, work_id: hebrews, canon_list_id: ethiopian-official-81, source_list_item_id: eotc-nt19-hebrews, status: included_narrower, citations: *eotc_membership_citation}
+  - {id: ethiopian-official-1-peter, work_id: 1-peter, canon_list_id: ethiopian-official-81, source_list_item_id: eotc-nt20-1-peter, status: included_narrower, citations: *eotc_membership_citation}
+  - {id: ethiopian-official-2-peter, work_id: 2-peter, canon_list_id: ethiopian-official-81, source_list_item_id: eotc-nt21-2-peter, status: included_narrower, citations: *eotc_membership_citation}
+  - {id: ethiopian-official-1-john, work_id: 1-john, canon_list_id: ethiopian-official-81, source_list_item_id: eotc-nt22-1-john, status: included_narrower, citations: *eotc_membership_citation}
+  - {id: ethiopian-official-2-john, work_id: 2-john, canon_list_id: ethiopian-official-81, source_list_item_id: eotc-nt23-2-john, status: included_narrower, citations: *eotc_membership_citation}
+  - {id: ethiopian-official-3-john, work_id: 3-john, canon_list_id: ethiopian-official-81, source_list_item_id: eotc-nt24-3-john, status: included_narrower, citations: *eotc_membership_citation}
+  - {id: ethiopian-official-james, work_id: james, canon_list_id: ethiopian-official-81, source_list_item_id: eotc-nt25-james, status: included_narrower, citations: *eotc_membership_citation}
+  - {id: ethiopian-official-jude, work_id: jude, canon_list_id: ethiopian-official-81, source_list_item_id: eotc-nt26-jude, status: included_narrower, citations: *eotc_membership_citation}
+  - {id: ethiopian-official-revelation, work_id: revelation, canon_list_id: ethiopian-official-81, source_list_item_id: eotc-nt27-revelation, status: included_narrower, citations: *eotc_membership_citation}
+  - {id: ethiopian-official-sirate-tsion, work_id: sinodos-sirate-tsion, canon_list_id: ethiopian-official-81, source_list_item_id: eotc-nt28-sirate-tsion, status: included_broader, citations: *eotc_membership_citation}
+  - {id: ethiopian-official-tizaz, work_id: sinodos-tizaz, canon_list_id: ethiopian-official-81, source_list_item_id: eotc-nt29-tizaz, status: included_broader, citations: *eotc_membership_citation}
+  - {id: ethiopian-official-gitsew, work_id: sinodos-gitsew, canon_list_id: ethiopian-official-81, source_list_item_id: eotc-nt30-gitsew, status: included_broader, citations: *eotc_membership_citation}
+  - {id: ethiopian-official-abtilis, work_id: sinodos-abtilis, canon_list_id: ethiopian-official-81, source_list_item_id: eotc-nt31-abtilis, status: included_broader, citations: *eotc_membership_citation}
+  - {id: ethiopian-official-covenant-1, work_id: book-of-covenant-1, canon_list_id: ethiopian-official-81, source_list_item_id: eotc-nt32-dominos-1, status: included_broader, citations: *eotc_membership_citation}
+  - {id: ethiopian-official-covenant-2, work_id: book-of-covenant-2, canon_list_id: ethiopian-official-81, source_list_item_id: eotc-nt33-dominos-2, status: included_broader, citations: *eotc_membership_citation}
+  - {id: ethiopian-official-clement, work_id: ethiopic-clement, canon_list_id: ethiopian-official-81, source_list_item_id: eotc-nt34-clement, status: included_broader, citations: *eotc_membership_citation}
+  - {id: ethiopian-official-didascalia, work_id: ethiopic-didascalia, canon_list_id: ethiopian-official-81, source_list_item_id: eotc-nt35-didascalia, status: included_broader, citations: *eotc_membership_citation}
+
+  - id: ethiopian-broader-sirate-tsion
+    work_id: sinodos-sirate-tsion
+    canon_list_id: ethiopian-broader
+    source_list_item_id: eotc-broad-01-sirate-tsion
+    status: included_broader
+    citations: &eotc_broader_citation
+      - {source_id: mikre-sellassie-1993, locator: Broader Canon classification}
+  - {id: ethiopian-broader-tizaz, work_id: sinodos-tizaz, canon_list_id: ethiopian-broader, source_list_item_id: eotc-broad-02-tizaz, status: included_broader, citations: *eotc_broader_citation}
+  - {id: ethiopian-broader-gitsew, work_id: sinodos-gitsew, canon_list_id: ethiopian-broader, source_list_item_id: eotc-broad-03-gitsew, status: included_broader, citations: *eotc_broader_citation}
+  - {id: ethiopian-broader-abtilis, work_id: sinodos-abtilis, canon_list_id: ethiopian-broader, source_list_item_id: eotc-broad-04-abtilis, status: included_broader, citations: *eotc_broader_citation}
+  - {id: ethiopian-broader-covenant-1, work_id: book-of-covenant-1, canon_list_id: ethiopian-broader, source_list_item_id: eotc-broad-05-covenant-1, status: included_broader, citations: *eotc_broader_citation}
+  - {id: ethiopian-broader-covenant-2, work_id: book-of-covenant-2, canon_list_id: ethiopian-broader, source_list_item_id: eotc-broad-06-covenant-2, status: included_broader, citations: *eotc_broader_citation}
+  - {id: ethiopian-broader-ethiopic-clement, work_id: ethiopic-clement, canon_list_id: ethiopian-broader, source_list_item_id: eotc-broad-07-clement, status: included_broader, citations: *eotc_broader_citation}
+  - {id: ethiopian-broader-ethiopic-didascalia, work_id: ethiopic-didascalia, canon_list_id: ethiopian-broader, source_list_item_id: eotc-broad-08-didascalia, status: included_broader, citations: *eotc_broader_citation}

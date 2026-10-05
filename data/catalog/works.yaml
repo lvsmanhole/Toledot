@@ -1,0 +1,123 @@
+schema_version: 1
+record_type: works
+records:
+  - id: genesis
+    names: [Genesis, 1 Moses]
+    work_type: scripture
+    citations: &protestant_work_citation
+      - source_id: protestant-66-toc
+        locator: Comparative sixty-six-book table of contents
+  - {id: exodus, names: [Exodus, 2 Moses], work_type: scripture, citations: *protestant_work_citation}
+  - {id: leviticus, names: [Leviticus, 3 Moses], work_type: scripture, citations: *protestant_work_citation}
+  - {id: numbers, names: [Numbers, 4 Moses], work_type: scripture, citations: *protestant_work_citation}
+  - {id: deuteronomy, names: [Deuteronomy, 5 Moses], work_type: scripture, citations: *protestant_work_citation}
+  - {id: joshua, names: [Joshua], work_type: scripture, citations: *protestant_work_citation}
+  - {id: judges, names: [Judges], work_type: scripture, citations: *protestant_work_citation}
+  - {id: ruth, names: [Ruth], work_type: scripture, citations: *protestant_work_citation}
+  - {id: 1-samuel, names: [1 Samuel, 1 Kingdoms], work_type: scripture, citations: *protestant_work_citation}
+  - {id: 2-samuel, names: [2 Samuel, 2 Kingdoms], work_type: scripture, citations: *protestant_work_citation}
+  - {id: 1-kings, names: [1 Kings, 3 Kingdoms], work_type: scripture, citations: *protestant_work_citation}
+  - {id: 2-kings, names: [2 Kings, 4 Kingdoms], work_type: scripture, citations: *protestant_work_citation}
+  - {id: 1-chronicles, names: [1 Chronicles, 1 Supplements, 1 Paralipomenon], work_type: scripture, citations: *protestant_work_citation}
+  - {id: 2-chronicles, names: [2 Chronicles, 2 Supplements, 2 Paralipomenon], work_type: scripture, citations: *protestant_work_citation}
+  - {id: ezra, names: [Ezra], work_type: scripture, citations: *protestant_work_citation}
+  - {id: nehemiah, names: [Nehemiah], work_type: scripture, citations: *protestant_work_citation}
+  - {id: esther, names: [Esther], work_type: scripture, citations: *protestant_work_citation}
+  - {id: job, names: [Job], work_type: scripture, citations: *protestant_work_citation}
+  - {id: psalms, names: [Psalms, Psalter], work_type: scripture, citations: *protestant_work_citation}
+  - {id: proverbs, names: [Proverbs], work_type: scripture, citations: *protestant_work_citation}
+  - {id: ecclesiastes, names: [Ecclesiastes, Qoheleth], work_type: scripture, citations: *protestant_work_citation}
+  - {id: song-of-songs, names: [Song of Songs, Song of Solomon], work_type: scripture, citations: *protestant_work_citation}
+  - {id: isaiah, names: [Isaiah], work_type: scripture, citations: *protestant_work_citation}
+  - {id: jeremiah, names: [Jeremiah], work_type: scripture, citations: *protestant_work_citation}
+  - {id: lamentations, names: [Lamentations], work_type: scripture, citations: *protestant_work_citation}
+  - {id: ezekiel, names: [Ezekiel], work_type: scripture, citations: *protestant_work_citation}
+  - {id: daniel, names: [Daniel], work_type: scripture, citations: *protestant_work_citation}
+  - {id: hosea, names: [Hosea], work_type: scripture, citations: *protestant_work_citation}
+  - {id: joel, names: [Joel], work_type: scripture, citations: *protestant_work_citation}
+  - {id: amos, names: [Amos], work_type: scripture, citations: *protestant_work_citation}
+  - {id: obadiah, names: [Obadiah], work_type: scripture, citations: *protestant_work_citation}
+  - {id: jonah, names: [Jonah], work_type: scripture, citations: *protestant_work_citation}
+  - {id: micah, names: [Micah], work_type: scripture, citations: *protestant_work_citation}
+  - {id: nahum, names: [Nahum], work_type: scripture, citations: *protestant_work_citation}
+  - {id: habakkuk, names: [Habakkuk], work_type: scripture, citations: *protestant_work_citation}
+  - {id: zephaniah, names: [Zephaniah], work_type: scripture, citations: *protestant_work_citation}
+  - {id: haggai, names: [Haggai], work_type: scripture, citations: *protestant_work_citation}
+  - {id: zechariah, names: [Zechariah], work_type: scripture, citations: *protestant_work_citation}
+  - {id: malachi, names: [Malachi], work_type: scripture, citations: *protestant_work_citation}
+  - {id: matthew, names: [Matthew], work_type: scripture, citations: *protestant_work_citation}
+  - {id: mark, names: [Mark], work_type: scripture, citations: *protestant_work_citation}
+  - {id: luke, names: [Luke], work_type: scripture, citations: *protestant_work_citation}
+  - {id: john, names: [John], work_type: scripture, citations: *protestant_work_citation}
+  - {id: acts, names: [Acts of the Apostles, Acts], work_type: scripture, citations: *protestant_work_citation}
+  - {id: romans, names: [Romans], work_type: scripture, citations: *protestant_work_citation}
+  - {id: 1-corinthians, names: [1 Corinthians], work_type: scripture, citations: *protestant_work_citation}
+  - {id: 2-corinthians, names: [2 Corinthians], work_type: scripture, citations: *protestant_work_citation}
+  - {id: galatians, names: [Galatians], work_type: scripture, citations: *protestant_work_citation}
+  - {id: ephesians, names: [Ephesians], work_type: scripture, citations: *protestant_work_citation}
+  - {id: philippians, names: [Philippians], work_type: scripture, citations: *protestant_work_citation}
+  - {id: colossians, names: [Colossians], work_type: scripture, citations: *protestant_work_citation}
+  - {id: 1-thessalonians, names: [1 Thessalonians], work_type: scripture, citations: *protestant_work_citation}
+  - {id: 2-thessalonians, names: [2 Thessalonians], work_type: scripture, citations: *protestant_work_citation}
+  - {id: 1-timothy, names: [1 Timothy], work_type: scripture, citations: *protestant_work_citation}
+  - {id: 2-timothy, names: [2 Timothy], work_type: scripture, citations: *protestant_work_citation}
+  - {id: titus, names: [Titus], work_type: scripture, citations: *protestant_work_citation}
+  - {id: philemon, names: [Philemon], work_type: scripture, citations: *protestant_work_citation}
+  - {id: hebrews, names: [Hebrews], work_type: scripture, citations: *protestant_work_citation}
+  - {id: james, names: [James], work_type: scripture, citations: *protestant_work_citation}
+  - {id: 1-peter, names: [1 Peter], work_type: scripture, citations: *protestant_work_citation}
+  - {id: 2-peter, names: [2 Peter], work_type: scripture, citations: *protestant_work_citation}
+  - {id: 1-john, names: [1 John], work_type: scripture, citations: *protestant_work_citation}
+  - {id: 2-john, names: [2 John], work_type: scripture, citations: *protestant_work_citation}
+  - {id: 3-john, names: [3 John], work_type: scripture, citations: *protestant_work_citation}
+  - {id: jude, names: [Jude], work_type: scripture, citations: *protestant_work_citation}
+  - {id: revelation, names: [Revelation, Apocalypse of John], work_type: scripture, citations: *protestant_work_citation}
+
+  - id: 1-esdras
+    names: [1 Esdras, Greek Esdras]
+    work_type: scripture
+    citations: &lxx_work_citation
+      - source_id: rahlfs-hanhart-2006
+        locator: Edition contents
+  - {id: tobit, names: [Tobit], work_type: scripture, citations: *lxx_work_citation}
+  - {id: judith, names: [Judith], work_type: scripture, citations: *lxx_work_citation}
+  - {id: wisdom-of-solomon, names: [Wisdom of Solomon, Wisdom], work_type: scripture, citations: *lxx_work_citation}
+  - {id: sirach, names: [Sirach, Wisdom of Jesus Son of Sirach, Ecclesiasticus], work_type: scripture, citations: *lxx_work_citation}
+  - {id: baruch, names: [Baruch], work_type: scripture, citations: *lxx_work_citation}
+  - {id: letter-of-jeremiah, names: [Letter of Jeremiah, Epistle of Jeremiah], work_type: scripture_addition, citations: *lxx_work_citation}
+  - {id: prayer-of-azariah, names: [Prayer of Azariah, Song of the Three], work_type: scripture_addition, citations: *lxx_work_citation}
+  - {id: susanna, names: [Susanna], work_type: scripture_addition, citations: *lxx_work_citation}
+  - {id: bel-and-dragon, names: [Bel and the Dragon], work_type: scripture_addition, citations: *lxx_work_citation}
+  - {id: additions-to-esther, names: [Additions to Esther], work_type: scripture_addition, citations: *lxx_work_citation}
+  - {id: 1-maccabees, names: [1 Maccabees], work_type: scripture, citations: *lxx_work_citation}
+  - {id: 2-maccabees, names: [2 Maccabees], work_type: scripture, citations: *lxx_work_citation}
+  - {id: 3-maccabees, names: [3 Maccabees], work_type: scripture, citations: *lxx_work_citation}
+  - {id: 4-maccabees, names: [4 Maccabees], work_type: appendix, citations: *lxx_work_citation}
+  - {id: psalm-151, names: [Psalm 151], work_type: scripture_addition, citations: *lxx_work_citation}
+  - {id: odes, names: [Odes], work_type: liturgical_collection, citations: *lxx_work_citation}
+  - {id: prayer-of-manasseh, names: [Prayer of Manasseh], work_type: scripture_addition, citations: *lxx_work_citation}
+  - {id: psalms-of-solomon, names: [Psalms of Solomon], work_type: appendix, citations: *lxx_work_citation}
+
+  - id: 1-enoch
+    names: [1 Enoch, Ethiopic Enoch]
+    work_type: scripture
+    citations: &ethiopian_work_citation
+      - source_id: eotc-official-canon
+        locator: Ethiopian canon enumeration
+  - {id: jubilees, names: [Jubilees, Kufale], work_type: scripture, citations: *ethiopian_work_citation}
+  - {id: 1-meqabyan, names: [1 Meqabyan, Ethiopic 1 Maccabees], work_type: scripture, citations: *ethiopian_work_citation}
+  - {id: 2-meqabyan, names: [2 Meqabyan, Ethiopic 2 Maccabees], work_type: scripture, citations: *ethiopian_work_citation}
+  - {id: 3-meqabyan, names: [3 Meqabyan, Ethiopic 3 Maccabees], work_type: scripture, citations: *ethiopian_work_citation}
+  - {id: ezra-sutuel, names: [Ezra Sutuel, Apocalypse of Ezra], work_type: scripture, citations: *ethiopian_work_citation}
+  - {id: tegsats, names: [Tegsats, Reproof], work_type: scripture, citations: *ethiopian_work_citation}
+  - {id: josippon, names: [Josippon, Josephas Son of Bengorion], work_type: scripture_history, citations: *ethiopian_work_citation}
+  - {id: rest-of-words-of-baruch, names: [Rest of the Words of Baruch, 4 Baruch], work_type: scripture, citations: *ethiopian_work_citation}
+  - {id: ascension-of-isaiah, names: [Ascension of Isaiah], work_type: scripture, citations: *ethiopian_work_citation}
+  - {id: sinodos-sirate-tsion, names: [Sirate Tsion, Order of Zion], work_type: church_order, citations: *ethiopian_work_citation}
+  - {id: sinodos-tizaz, names: [Tizaz, Commandment], work_type: church_order, citations: *ethiopian_work_citation}
+  - {id: sinodos-gitsew, names: [Gitsew, Gitzew], work_type: church_order, citations: *ethiopian_work_citation}
+  - {id: sinodos-abtilis, names: [Abtilis, Apostolic Canons], work_type: church_order, citations: *ethiopian_work_citation}
+  - {id: book-of-covenant-1, names: [1 Book of Covenant, 1 Dominos], work_type: church_order, citations: *ethiopian_work_citation}
+  - {id: book-of-covenant-2, names: [2 Book of Covenant, 2 Dominos], work_type: church_order, citations: *ethiopian_work_citation}
+  - {id: ethiopic-clement, names: [Ethiopic Clement, Qalementos], work_type: church_order, citations: *ethiopian_work_citation}
+  - {id: ethiopic-didascalia, names: [Ethiopic Didascalia, Didesqelya], work_type: church_order, citations: *ethiopian_work_citation}

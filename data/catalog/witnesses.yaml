@@ -1,0 +1,53 @@
+schema_version: 1
+record_type: witnesses
+records:
+  - id: lxx-genesis-goettingen
+    work_id: genesis
+    tradition: septuagint
+    language: grc
+    edition: Wevers, Göttingen Septuagint Genesis (1974)
+    citations:
+      - source_id: goettingen-genesis-1974
+        locator: Genesis critical edition
+  - id: lxx-genesis-rahlfs-hanhart
+    work_id: genesis
+    tradition: septuagint
+    language: grc
+    edition: Rahlfs-Hanhart Septuaginta, editio altera (2006)
+    citations:
+      - source_id: rahlfs-hanhart-2006
+        locator: Genesis
+  - id: mt-genesis-bhs
+    work_id: genesis
+    tradition: masoretic
+    language: hbo
+    edition: Biblia Hebraica Stuttgartensia, Genesis
+    citations:
+      - source_id: bhs-genesis
+        locator: Genesis
+  - id: sp-genesis-schorch
+    work_id: genesis
+    tradition: samaritan
+    language: hbo-Samr
+    edition: Schorch, Samaritan Pentateuch Volume I Genesis (2021)
+    citations:
+      - source_id: schorch-samaritan-genesis-2021
+        locator: Genesis
+  - id: geez-genesis-dillmann
+    work_id: genesis
+    tradition: geez
+    language: gez
+    edition: Dillmann, Octateuchus Aethiopicus (1853–1855)
+    citations:
+      - source_id: dillmann-octateuch-1853
+        locator: Genesis
+    notes: Public-domain historical critical edition; later manuscript work may supersede individual readings.
+  - id: greek-matthew-na28
+    work_id: matthew
+    tradition: new_testament
+    language: grc
+    edition: Nestle-Aland Novum Testamentum Graece 28
+    citations:
+      - source_id: na28
+        locator: Matthew
+

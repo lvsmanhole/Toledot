@@ -1,0 +1,244 @@
+schema_version: 1
+record_type: canon_lists
+records:
+  - id: protestant-66
+    tradition: protestant
+    name: Standard Protestant sixty-six-book canon
+    source_id: protestant-66-toc
+    items:
+      - {id: p66-01-genesis, label: Genesis, position: 1, work_id: genesis}
+      - {id: p66-02-exodus, label: Exodus, position: 2, work_id: exodus}
+      - {id: p66-03-leviticus, label: Leviticus, position: 3, work_id: leviticus}
+      - {id: p66-04-numbers, label: Numbers, position: 4, work_id: numbers}
+      - {id: p66-05-deuteronomy, label: Deuteronomy, position: 5, work_id: deuteronomy}
+      - {id: p66-06-joshua, label: Joshua, position: 6, work_id: joshua}
+      - {id: p66-07-judges, label: Judges, position: 7, work_id: judges}
+      - {id: p66-08-ruth, label: Ruth, position: 8, work_id: ruth}
+      - {id: p66-09-1-samuel, label: 1 Samuel, position: 9, work_id: 1-samuel}
+      - {id: p66-10-2-samuel, label: 2 Samuel, position: 10, work_id: 2-samuel}
+      - {id: p66-11-1-kings, label: 1 Kings, position: 11, work_id: 1-kings}
+      - {id: p66-12-2-kings, label: 2 Kings, position: 12, work_id: 2-kings}
+      - {id: p66-13-1-chronicles, label: 1 Chronicles, position: 13, work_id: 1-chronicles}
+      - {id: p66-14-2-chronicles, label: 2 Chronicles, position: 14, work_id: 2-chronicles}
+      - {id: p66-15-ezra, label: Ezra, position: 15, work_id: ezra}
+      - {id: p66-16-nehemiah, label: Nehemiah, position: 16, work_id: nehemiah}
+      - {id: p66-17-esther, label: Esther, position: 17, work_id: esther}
+      - {id: p66-18-job, label: Job, position: 18, work_id: job}
+      - {id: p66-19-psalms, label: Psalms, position: 19, work_id: psalms}
+      - {id: p66-20-proverbs, label: Proverbs, position: 20, work_id: proverbs}
+      - {id: p66-21-ecclesiastes, label: Ecclesiastes, position: 21, work_id: ecclesiastes}
+      - {id: p66-22-song, label: Song of Songs, position: 22, work_id: song-of-songs}
+      - {id: p66-23-isaiah, label: Isaiah, position: 23, work_id: isaiah}
+      - {id: p66-24-jeremiah, label: Jeremiah, position: 24, work_id: jeremiah}
+      - {id: p66-25-lamentations, label: Lamentations, position: 25, work_id: lamentations}
+      - {id: p66-26-ezekiel, label: Ezekiel, position: 26, work_id: ezekiel}
+      - {id: p66-27-daniel, label: Daniel, position: 27, work_id: daniel}
+      - {id: p66-28-hosea, label: Hosea, position: 28, work_id: hosea}
+      - {id: p66-29-joel, label: Joel, position: 29, work_id: joel}
+      - {id: p66-30-amos, label: Amos, position: 30, work_id: amos}
+      - {id: p66-31-obadiah, label: Obadiah, position: 31, work_id: obadiah}
+      - {id: p66-32-jonah, label: Jonah, position: 32, work_id: jonah}
+      - {id: p66-33-micah, label: Micah, position: 33, work_id: micah}
+      - {id: p66-34-nahum, label: Nahum, position: 34, work_id: nahum}
+      - {id: p66-35-habakkuk, label: Habakkuk, position: 35, work_id: habakkuk}
+      - {id: p66-36-zephaniah, label: Zephaniah, position: 36, work_id: zephaniah}
+      - {id: p66-37-haggai, label: Haggai, position: 37, work_id: haggai}
+      - {id: p66-38-zechariah, label: Zechariah, position: 38, work_id: zechariah}
+      - {id: p66-39-malachi, label: Malachi, position: 39, work_id: malachi}
+      - {id: p66-40-matthew, label: Matthew, position: 40, work_id: matthew}
+      - {id: p66-41-mark, label: Mark, position: 41, work_id: mark}
+      - {id: p66-42-luke, label: Luke, position: 42, work_id: luke}
+      - {id: p66-43-john, label: John, position: 43, work_id: john}
+      - {id: p66-44-acts, label: Acts, position: 44, work_id: acts}
+      - {id: p66-45-romans, label: Romans, position: 45, work_id: romans}
+      - {id: p66-46-1-corinthians, label: 1 Corinthians, position: 46, work_id: 1-corinthians}
+      - {id: p66-47-2-corinthians, label: 2 Corinthians, position: 47, work_id: 2-corinthians}
+      - {id: p66-48-galatians, label: Galatians, position: 48, work_id: galatians}
+      - {id: p66-49-ephesians, label: Ephesians, position: 49, work_id: ephesians}
+      - {id: p66-50-philippians, label: Philippians, position: 50, work_id: philippians}
+      - {id: p66-51-colossians, label: Colossians, position: 51, work_id: colossians}
+      - {id: p66-52-1-thessalonians, label: 1 Thessalonians, position: 52, work_id: 1-thessalonians}
+      - {id: p66-53-2-thessalonians, label: 2 Thessalonians, position: 53, work_id: 2-thessalonians}
+      - {id: p66-54-1-timothy, label: 1 Timothy, position: 54, work_id: 1-timothy}
+      - {id: p66-55-2-timothy, label: 2 Timothy, position: 55, work_id: 2-timothy}
+      - {id: p66-56-titus, label: Titus, position: 56, work_id: titus}
+      - {id: p66-57-philemon, label: Philemon, position: 57, work_id: philemon}
+      - {id: p66-58-hebrews, label: Hebrews, position: 58, work_id: hebrews}
+      - {id: p66-59-james, label: James, position: 59, work_id: james}
+      - {id: p66-60-1-peter, label: 1 Peter, position: 60, work_id: 1-peter}
+      - {id: p66-61-2-peter, label: 2 Peter, position: 61, work_id: 2-peter}
+      - {id: p66-62-1-john, label: 1 John, position: 62, work_id: 1-john}
+      - {id: p66-63-2-john, label: 2 John, position: 63, work_id: 2-john}
+      - {id: p66-64-3-john, label: 3 John, position: 64, work_id: 3-john}
+      - {id: p66-65-jude, label: Jude, position: 65, work_id: jude}
+      - {id: p66-66-revelation, label: Revelation, position: 66, work_id: revelation}
+
+  - id: septuagint-rahlfs-hanhart
+    tradition: septuagint
+    name: Rahlfs-Hanhart Greek Old Testament contents, normalized to project works
+    source_id: rahlfs-hanhart-2006
+    items:
+      - {id: lxx-genesis, label: Genesis, position: 1, work_id: genesis}
+      - {id: lxx-exodus, label: Exodus, position: 2, work_id: exodus}
+      - {id: lxx-leviticus, label: Leviticus, position: 3, work_id: leviticus}
+      - {id: lxx-numbers, label: Numbers, position: 4, work_id: numbers}
+      - {id: lxx-deuteronomy, label: Deuteronomy, position: 5, work_id: deuteronomy}
+      - {id: lxx-joshua, label: Joshua, position: 6, work_id: joshua}
+      - {id: lxx-judges, label: Judges, position: 7, work_id: judges}
+      - {id: lxx-ruth, label: Ruth, position: 8, work_id: ruth}
+      - {id: lxx-1-kingdoms, label: 1 Kingdoms, position: 9, work_id: 1-samuel}
+      - {id: lxx-2-kingdoms, label: 2 Kingdoms, position: 10, work_id: 2-samuel}
+      - {id: lxx-3-kingdoms, label: 3 Kingdoms, position: 11, work_id: 1-kings}
+      - {id: lxx-4-kingdoms, label: 4 Kingdoms, position: 12, work_id: 2-kings}
+      - {id: lxx-1-supplements, label: 1 Supplements, position: 13, work_id: 1-chronicles}
+      - {id: lxx-2-supplements, label: 2 Supplements, position: 14, work_id: 2-chronicles}
+      - {id: lxx-1-esdras, label: 1 Esdras, position: 15, work_id: 1-esdras}
+      - {id: lxx-ezra, label: Ezra within 2 Esdras, position: 16, work_id: ezra}
+      - {id: lxx-nehemiah, label: Nehemiah within 2 Esdras, position: 16, work_id: nehemiah}
+      - {id: lxx-esther, label: Esther, position: 17, work_id: esther}
+      - {id: lxx-esther-additions, label: Additions to Esther, position: 17, work_id: additions-to-esther}
+      - {id: lxx-judith, label: Judith, position: 18, work_id: judith}
+      - {id: lxx-tobit, label: Tobit, position: 19, work_id: tobit}
+      - {id: lxx-1-maccabees, label: 1 Maccabees, position: 20, work_id: 1-maccabees}
+      - {id: lxx-2-maccabees, label: 2 Maccabees, position: 21, work_id: 2-maccabees}
+      - {id: lxx-3-maccabees, label: 3 Maccabees, position: 22, work_id: 3-maccabees}
+      - {id: lxx-4-maccabees, label: 4 Maccabees Appendix, position: 23, work_id: 4-maccabees}
+      - {id: lxx-psalms, label: Psalms, position: 24, work_id: psalms}
+      - {id: lxx-psalm-151, label: Psalm 151, position: 24, work_id: psalm-151}
+      - {id: lxx-odes, label: Odes, position: 25, work_id: odes}
+      - {id: lxx-prayer-manasseh, label: Prayer of Manasseh within Odes, position: 25, work_id: prayer-of-manasseh}
+      - {id: lxx-proverbs, label: Proverbs, position: 26, work_id: proverbs}
+      - {id: lxx-ecclesiastes, label: Ecclesiastes, position: 27, work_id: ecclesiastes}
+      - {id: lxx-song, label: Song of Songs, position: 28, work_id: song-of-songs}
+      - {id: lxx-job, label: Job, position: 29, work_id: job}
+      - {id: lxx-wisdom, label: Wisdom of Solomon, position: 30, work_id: wisdom-of-solomon}
+      - {id: lxx-sirach, label: Sirach, position: 31, work_id: sirach}
+      - {id: lxx-psalms-solomon, label: Psalms of Solomon Appendix, position: 32, work_id: psalms-of-solomon}
+      - {id: lxx-hosea, label: Hosea, position: 33, work_id: hosea}
+      - {id: lxx-amos, label: Amos, position: 34, work_id: amos}
+      - {id: lxx-micah, label: Micah, position: 35, work_id: micah}
+      - {id: lxx-joel, label: Joel, position: 36, work_id: joel}
+      - {id: lxx-obadiah, label: Obadiah, position: 37, work_id: obadiah}
+      - {id: lxx-jonah, label: Jonah, position: 38, work_id: jonah}
+      - {id: lxx-nahum, label: Nahum, position: 39, work_id: nahum}
+      - {id: lxx-habakkuk, label: Habakkuk, position: 40, work_id: habakkuk}
+      - {id: lxx-zephaniah, label: Zephaniah, position: 41, work_id: zephaniah}
+      - {id: lxx-haggai, label: Haggai, position: 42, work_id: haggai}
+      - {id: lxx-zechariah, label: Zechariah, position: 43, work_id: zechariah}
+      - {id: lxx-malachi, label: Malachi, position: 44, work_id: malachi}
+      - {id: lxx-isaiah, label: Isaiah, position: 45, work_id: isaiah}
+      - {id: lxx-jeremiah, label: Jeremiah, position: 46, work_id: jeremiah}
+      - {id: lxx-baruch, label: Baruch, position: 47, work_id: baruch}
+      - {id: lxx-lamentations, label: Lamentations, position: 48, work_id: lamentations}
+      - {id: lxx-letter-jeremiah, label: Letter of Jeremiah, position: 49, work_id: letter-of-jeremiah}
+      - {id: lxx-ezekiel, label: Ezekiel, position: 50, work_id: ezekiel}
+      - {id: lxx-susanna, label: Susanna, position: 51, work_id: susanna}
+      - {id: lxx-daniel, label: Daniel, position: 52, work_id: daniel}
+      - {id: lxx-prayer-azariah, label: Prayer of Azariah, position: 52, work_id: prayer-of-azariah}
+      - {id: lxx-bel-dragon, label: Bel and the Dragon, position: 52, work_id: bel-and-dragon}
+
+  - id: ethiopian-official-81
+    tradition: ethiopian_orthodox_tewahedo
+    name: Ethiopian Orthodox Church official 46 Old Testament and 35 New Testament list
+    source_id: eotc-official-canon
+    items:
+      - {id: eotc-ot01-genesis, label: Genesis, position: 1, work_id: genesis}
+      - {id: eotc-ot02-exodus, label: Exodus, position: 2, work_id: exodus}
+      - {id: eotc-ot03-leviticus, label: Leviticus, position: 3, work_id: leviticus}
+      - {id: eotc-ot04-numbers, label: Numbers, position: 4, work_id: numbers}
+      - {id: eotc-ot05-deuteronomy, label: Deuteronomy, position: 5, work_id: deuteronomy}
+      - {id: eotc-ot06-joshua, label: Joshua, position: 6, work_id: joshua}
+      - {id: eotc-ot07-judges, label: Judges, position: 7, work_id: judges}
+      - {id: eotc-ot08-ruth, label: Ruth, position: 8, work_id: ruth}
+      - {id: eotc-ot09-1-samuel, label: I Samuel within official combined item, position: 9, work_id: 1-samuel}
+      - {id: eotc-ot09-2-samuel, label: II Samuel within official combined item, position: 9, work_id: 2-samuel}
+      - {id: eotc-ot10-1-kings, label: I Kings within official combined item, position: 10, work_id: 1-kings}
+      - {id: eotc-ot10-2-kings, label: II Kings within official combined item, position: 10, work_id: 2-kings}
+      - {id: eotc-ot11-1-chronicles, label: I Chronicles, position: 11, work_id: 1-chronicles}
+      - {id: eotc-ot12-2-chronicles, label: II Chronicles, position: 12, work_id: 2-chronicles}
+      - {id: eotc-ot13-jubilees, label: Jubilees, position: 13, work_id: jubilees}
+      - {id: eotc-ot14-enoch, label: Enoch, position: 14, work_id: 1-enoch}
+      - {id: eotc-ot15-ezra, label: Ezra within Ezra and Nehemia, position: 15, work_id: ezra}
+      - {id: eotc-ot15-nehemiah, label: Nehemia within Ezra and Nehemia, position: 15, work_id: nehemiah}
+      - {id: eotc-ot16-1-esdras, label: Ezra 2nd, position: 16, work_id: 1-esdras}
+      - {id: eotc-ot16-ezra-sutuel, label: Ezra Sutuel, position: 16, work_id: ezra-sutuel}
+      - {id: eotc-ot17-tobit, label: Tobit, position: 17, work_id: tobit}
+      - {id: eotc-ot18-judith, label: Judith, position: 18, work_id: judith}
+      - {id: eotc-ot19-esther, label: Esther, position: 19, work_id: esther}
+      - {id: eotc-ot20-1-meqabyan, label: I Maccabees or Meqabyan, position: 20, work_id: 1-meqabyan}
+      - {id: eotc-ot21-2-meqabyan, label: II Meqabyan within combined item, position: 21, work_id: 2-meqabyan}
+      - {id: eotc-ot21-3-meqabyan, label: III Meqabyan within combined item, position: 21, work_id: 3-meqabyan}
+      - {id: eotc-ot22-job, label: Job, position: 22, work_id: job}
+      - {id: eotc-ot23-psalms, label: Psalms, position: 23, work_id: psalms}
+      - {id: eotc-ot24-proverbs, label: Proverbs, position: 24, work_id: proverbs}
+      - {id: eotc-ot25-tegsats, label: Tegsats or Reproof, position: 25, work_id: tegsats}
+      - {id: eotc-ot26-wisdom, label: Metsihafe Tibeb or Books of Wisdom, position: 26, work_id: wisdom-of-solomon}
+      - {id: eotc-ot27-ecclesiastes, label: Ecclesiastes, position: 27, work_id: ecclesiastes}
+      - {id: eotc-ot28-song, label: Song of Songs, position: 28, work_id: song-of-songs}
+      - {id: eotc-ot29-isaiah, label: Isaiah, position: 29, work_id: isaiah}
+      - {id: eotc-ot30-jeremiah, label: Jeremiah, position: 30, work_id: jeremiah}
+      - {id: eotc-ot31-ezekiel, label: Ezekiel, position: 31, work_id: ezekiel}
+      - {id: eotc-ot32-daniel, label: Daniel, position: 32, work_id: daniel}
+      - {id: eotc-ot33-hosea, label: Hosea, position: 33, work_id: hosea}
+      - {id: eotc-ot34-amos, label: Amos, position: 34, work_id: amos}
+      - {id: eotc-ot35-micah, label: Micah, position: 35, work_id: micah}
+      - {id: eotc-ot36-joel, label: Joel, position: 36, work_id: joel}
+      - {id: eotc-ot37-obadiah, label: Obadiah, position: 37, work_id: obadiah}
+      - {id: eotc-ot38-jonah, label: Jonah, position: 38, work_id: jonah}
+      - {id: eotc-ot39-nahum, label: Nahum, position: 39, work_id: nahum}
+      - {id: eotc-ot40-habakkuk, label: Habakkuk, position: 40, work_id: habakkuk}
+      - {id: eotc-ot41-zephaniah, label: Zephaniah, position: 41, work_id: zephaniah}
+      - {id: eotc-ot42-haggai, label: Haggai, position: 42, work_id: haggai}
+      - {id: eotc-ot43-zechariah, label: Zechariah, position: 43, work_id: zechariah}
+      - {id: eotc-ot44-malachi, label: Malachi, position: 44, work_id: malachi}
+      - {id: eotc-ot45-sirach, label: Joshua son of Sirac, position: 45, work_id: sirach}
+      - {id: eotc-ot46-josippon, label: Josephas son of Bengorion, position: 46, work_id: josippon}
+      - {id: eotc-nt01-matthew, label: Matthew, position: 47, work_id: matthew}
+      - {id: eotc-nt02-mark, label: Mark, position: 48, work_id: mark}
+      - {id: eotc-nt03-luke, label: Luke, position: 49, work_id: luke}
+      - {id: eotc-nt04-john, label: John, position: 50, work_id: john}
+      - {id: eotc-nt05-acts, label: Acts, position: 51, work_id: acts}
+      - {id: eotc-nt06-romans, label: Romans, position: 52, work_id: romans}
+      - {id: eotc-nt07-1-corinthians, label: I Corinthians, position: 53, work_id: 1-corinthians}
+      - {id: eotc-nt08-2-corinthians, label: II Corinthians, position: 54, work_id: 2-corinthians}
+      - {id: eotc-nt09-galatians, label: Galatians, position: 55, work_id: galatians}
+      - {id: eotc-nt10-ephesians, label: Ephesians, position: 56, work_id: ephesians}
+      - {id: eotc-nt11-philippians, label: Philippians, position: 57, work_id: philippians}
+      - {id: eotc-nt12-colossians, label: Colossians, position: 58, work_id: colossians}
+      - {id: eotc-nt13-1-thessalonians, label: I Thessalonians, position: 59, work_id: 1-thessalonians}
+      - {id: eotc-nt14-2-thessalonians, label: II Thessalonians, position: 60, work_id: 2-thessalonians}
+      - {id: eotc-nt15-1-timothy, label: I Timothy, position: 61, work_id: 1-timothy}
+      - {id: eotc-nt16-2-timothy, label: II Timothy, position: 62, work_id: 2-timothy}
+      - {id: eotc-nt17-titus, label: Titus, position: 63, work_id: titus}
+      - {id: eotc-nt18-philemon, label: Philemon, position: 64, work_id: philemon}
+      - {id: eotc-nt19-hebrews, label: Hebrews, position: 65, work_id: hebrews}
+      - {id: eotc-nt20-1-peter, label: I Peter, position: 66, work_id: 1-peter}
+      - {id: eotc-nt21-2-peter, label: II Peter, position: 67, work_id: 2-peter}
+      - {id: eotc-nt22-1-john, label: I John, position: 68, work_id: 1-john}
+      - {id: eotc-nt23-2-john, label: II John, position: 69, work_id: 2-john}
+      - {id: eotc-nt24-3-john, label: III John, position: 70, work_id: 3-john}
+      - {id: eotc-nt25-james, label: James, position: 71, work_id: james}
+      - {id: eotc-nt26-jude, label: Jude, position: 72, work_id: jude}
+      - {id: eotc-nt27-revelation, label: Revelation, position: 73, work_id: revelation}
+      - {id: eotc-nt28-sirate-tsion, label: Sirate Tsion, position: 74, work_id: sinodos-sirate-tsion}
+      - {id: eotc-nt29-tizaz, label: Tizaz, position: 75, work_id: sinodos-tizaz}
+      - {id: eotc-nt30-gitsew, label: Gitsew, position: 76, work_id: sinodos-gitsew}
+      - {id: eotc-nt31-abtilis, label: Abtilis, position: 77, work_id: sinodos-abtilis}
+      - {id: eotc-nt32-dominos-1, label: I Book of Dominos, position: 78, work_id: book-of-covenant-1}
+      - {id: eotc-nt33-dominos-2, label: II Book of Dominos, position: 79, work_id: book-of-covenant-2}
+      - {id: eotc-nt34-clement, label: Book of Clement, position: 80, work_id: ethiopic-clement}
+      - {id: eotc-nt35-didascalia, label: Didascalia, position: 81, work_id: ethiopic-didascalia}
+
+  - id: ethiopian-broader
+    tradition: ethiopian_orthodox_tewahedo
+    name: Scholarly classification of the broader New Testament canon
+    source_id: mikre-sellassie-1993
+    items:
+      - {id: eotc-broad-01-sirate-tsion, label: Sirate Tsion, position: 1, work_id: sinodos-sirate-tsion}
+      - {id: eotc-broad-02-tizaz, label: Tizaz, position: 2, work_id: sinodos-tizaz}
+      - {id: eotc-broad-03-gitsew, label: Gitsew, position: 3, work_id: sinodos-gitsew}
+      - {id: eotc-broad-04-abtilis, label: Abtilis, position: 4, work_id: sinodos-abtilis}
+      - {id: eotc-broad-05-covenant-1, label: First Book of Covenant, position: 5, work_id: book-of-covenant-1}
+      - {id: eotc-broad-06-covenant-2, label: Second Book of Covenant, position: 6, work_id: book-of-covenant-2}
+      - {id: eotc-broad-07-clement, label: Ethiopic Clement, position: 7, work_id: ethiopic-clement}
+      - {id: eotc-broad-08-didascalia, label: Ethiopic Didascalia, position: 8, work_id: ethiopic-didascalia}

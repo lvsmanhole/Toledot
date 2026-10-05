@@ -1,0 +1,76 @@
+schema_version: 1
+record_type: sources
+records:
+  - id: eotc-official-canon
+    source_type: ecclesial_canon_list
+    title: The Holy Books of the Ethiopian Orthodox Tewahedo Church
+    bibliographic_locator: Ethiopian Orthodox Tewahedo Church, "The Bible," 46 Old Testament and 35 New Testament enumeration
+    url: https://www.ethiopianorthodox.org/english/canonical/books.html?lang=en
+    license_status: reference_only
+  - id: mikre-sellassie-1993
+    source_type: scholarly_article
+    title: The Bible and its Canon in the Ethiopian Orthodox Church
+    bibliographic_locator: Mikre-Sellassie, The Bible Translator 44.1 (1993), 111–123
+    url: https://translation.bible/wp-content/uploads/2024/06/mikre-sellassie-1993-the-bible-and-its-canon-in-the-ethiopian-orthodox-church.pdf
+    license_status: reference_only
+    authors: [Mikre-Sellassie]
+    publication_year: 1993
+  - id: crisp-2016
+    source_type: scholarly_article
+    title: The Septuagint as Canon
+    bibliographic_locator: Simon Crisp, Journal of Septuagint and Cognate Studies 49 (2016)
+    url: https://journals.sagepub.com/doi/10.1177/2051677016649429
+    license_status: reference_only
+    authors: [Simon Crisp]
+    publication_year: 2016
+  - id: protestant-66-toc
+    source_type: modern_canon_list
+    title: Protestant sixty-six-book table of contents
+    bibliographic_locator: Standard Protestant Old and New Testament enumeration used as a comparison corpus
+    license_status: factual_catalog_metadata
+  - id: rahlfs-hanhart-2006
+    source_type: critical_edition
+    title: Septuaginta, editio altera
+    bibliographic_locator: Alfred Rahlfs and Robert Hanhart, eds., Septuaginta, revised edition, Deutsche Bibelgesellschaft, 2006
+    url: https://septuaginta.uni-goettingen.de/ioscs/editions/
+    license_status: copyrighted_reference_only
+    authors: [Alfred Rahlfs, Robert Hanhart]
+    publication_year: 2006
+  - id: goettingen-genesis-1974
+    source_type: critical_edition
+    title: Septuaginta Vetus Testamentum Graecum I. Genesis
+    bibliographic_locator: John William Wevers, ed., Genesis, Göttingen Septuagint, 1974
+    url: https://septuaginta.uni-goettingen.de/ioscs/editions/
+    license_status: copyrighted_reference_only
+    authors: [John William Wevers]
+    publication_year: 1974
+  - id: bhs-genesis
+    source_type: critical_edition
+    title: Biblia Hebraica Stuttgartensia — Genesis
+    bibliographic_locator: BHS text of Codex Leningradensis, German Bible Society 1967/77
+    url: https://www.sbl-site.org/resources/digital-texts/biblica-hebraica-stuttgartensia/
+    license_status: copyrighted_download_permitted
+  - id: schorch-samaritan-genesis-2021
+    source_type: critical_edition
+    title: The Samaritan Pentateuch — Volume I Genesis
+    bibliographic_locator: Stefan Schorch, ed., The Samaritan Pentateuch, Volume I Genesis, De Gruyter, 2021
+    url: https://www.degruyter.com/document/doi/10.1515/9783110711783/html
+    license_status: copyrighted_reference_only
+    authors: [Stefan Schorch]
+    publication_year: 2021
+  - id: dillmann-octateuch-1853
+    source_type: critical_edition
+    title: Octateuchus Aethiopicus
+    bibliographic_locator: August Dillmann, Veteris Testamenti Aethiopici Tomus Primus, Leipzig, 1853–1855
+    url: https://digitale-sammlungen.ulb.uni-bonn.de/content/titleinfo/68563
+    license_status: public_domain
+    authors: [August Dillmann]
+    publication_year: 1853
+  - id: na28
+    source_type: critical_edition
+    title: Novum Testamentum Graece, 28th edition
+    bibliographic_locator: Nestle-Aland, Novum Testamentum Graece, 28th revised edition, Deutsche Bibelgesellschaft, 2012
+    url: https://www.die-bibel.de/en/bible/NA28
+    license_status: copyrighted_reference_only
+    publication_year: 2012
+
