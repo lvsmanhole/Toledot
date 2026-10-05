@@ -74,6 +74,31 @@ def test_reports_dangling_cross_record_references() -> None:
     }.issubset(_codes(dataset))
 
 
+def test_invalid_historical_year_claim_is_semantic_error() -> None:
+    dataset = _dataset()
+    dataset.claims["adam-age-at-seth-lxx"] = replace(
+        dataset.claims["adam-age-at-seth-lxx"],
+        value={"kind": "historical_year", "era": "BCE", "year": 0},
+    )
+    assert "invalid_historical_year" in _codes(dataset)
+
+
+def test_validation_resolves_models_and_checks_single_input_id_references() -> None:
+    dataset = _dataset()
+    model = dataset.chronology_models["test-model"]
+    dataset.chronology_models["test-model"] = replace(
+        model,
+        derivations=(
+            {"id": "adam-birth", "operation": "offset_years", "input_id": "missing"},
+            {"id": "adam-death", "operation": "literal", "year": {"era": "BCE", "year": 3000}},
+        ),
+        resolutions=(),
+    )
+    issues = validate_dataset(dataset)
+    assert "dangling_derivation" in {issue.code for issue in issues}
+    assert "invalid_model_resolution" in {issue.code for issue in issues}
+
+
 def test_reports_event_outside_explicit_grade_a_lifespan() -> None:
     dataset = _dataset()
     dataset.claims.update(
@@ -117,6 +142,36 @@ def test_reports_event_outside_explicit_grade_a_lifespan() -> None:
     )
 
     assert "event_outside_lifespan" in _codes(dataset)
+
+
+def test_conflicting_explicit_deaths_do_not_depend_on_claim_order() -> None:
+    dataset = _dataset()
+    claims = {
+        "adam-death-50": Claim(
+            id="adam-death-50", subject_id="adam", predicate="death_year",
+            value={"kind": "historical_year", "era": "BCE", "year": 50},
+            evidence_type="explicit_text", confidence="A", citations=(SOURCE_CITATION,),
+        ),
+        "adam-death-100": Claim(
+            id="adam-death-100", subject_id="adam", predicate="death_year",
+            value={"kind": "historical_year", "era": "BCE", "year": 100},
+            evidence_type="explicit_text", confidence="A", citations=(SOURCE_CITATION,),
+        ),
+        "event-year": Claim(
+            id="event-year", subject_id="event-between", predicate="event_year",
+            value={"kind": "historical_year", "era": "BCE", "year": 75},
+            evidence_type="explicit_text", confidence="A", citations=(SOURCE_CITATION,),
+        ),
+    }
+    dataset.claims.update(claims)
+    dataset.events["event-between"] = Event(
+        id="event-between", event_type="test", name="Between variants",
+        participants=(EventParticipant(entity_id="adam", role="subject"),),
+        date_claim_ids=("event-year",), citations=(SOURCE_CITATION,),
+    )
+    assert "event_outside_lifespan" not in _codes(dataset)
+    dataset.claims = dict(reversed(list(dataset.claims.items())))
+    assert "event_outside_lifespan" not in _codes(dataset)
 
 
 def test_reports_unexplained_editorial_estimate() -> None:

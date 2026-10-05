@@ -83,7 +83,11 @@ def test_named_and_unnamed_people_are_distinct_and_groups_are_not_people() -> No
     dataset = _dataset()
 
     assert NAMED_GENEALOGY_HUMANS <= set(dataset.entities)
-    assert all(dataset.entities[entity_id].entity_type == "human" for entity_id in NAMED_GENEALOGY_HUMANS)
+    nation_groups = {"ludim", "anamim", "lehabim", "naphtuhim", "pathrusim", "casluhim", "caphtorim"}
+    assert all(
+        dataset.entities[entity_id].entity_type == ("group" if entity_id in nation_groups else "human")
+        for entity_id in NAMED_GENEALOGY_HUMANS
+    )
     assert dataset.entities["enoch-cain"] != dataset.entities["enoch-seth"]
     assert dataset.entities["noah-wife"].identity_status == "unnamed_unique"
     assert {
@@ -114,6 +118,16 @@ def test_genesis_5_age_and_lifespan_claims_retain_each_witness() -> None:
             claim = dataset.claims[f"{person}-lifespan-{tradition}"]
             assert claim.witness_id == witness_id
             assert claim.value["unit"] == "years"
+
+    expected_lxx_locators = {
+        "adam": "Genesis 5:5", "seth": "Genesis 5:8", "enosh": "Genesis 5:11",
+        "kenan": "Genesis 5:14", "mahalalel": "Genesis 5:17", "jared": "Genesis 5:20",
+        "enoch-seth": "Genesis 5:23-24", "methuselah": "Genesis 5:27",
+        "lamech-seth": "Genesis 5:31", "noah": "Genesis 9:28-29",
+    }
+    for person, locator in expected_lxx_locators.items():
+        citation = dataset.claims[f"{person}-lifespan-lxx"].citations[0]
+        assert citation.locator == locator
 
 
 def test_genesis_11_variants_and_lxx_cainan_remain_separate() -> None:
@@ -159,3 +173,11 @@ def test_models_resolve_deterministically_and_hybrid_prefers_lxx_early_chain() -
 
 def test_genesis_1_through_11_has_no_semantic_errors() -> None:
     assert not [issue for issue in validate_dataset(_dataset()) if issue.severity == "error"]
+
+
+def test_plural_nations_in_genesis_10_are_groups_not_human_lifespans() -> None:
+    dataset = _dataset()
+    nation_ids = {"ludim", "anamim", "lehabim", "naphtuhim", "pathrusim", "casluhim", "caphtorim"}
+    assert all(dataset.entities[entity_id].entity_type == "group" for entity_id in nation_ids)
+    result = resolve_model(dataset, "hybrid_reference")
+    assert nation_ids.isdisjoint(result.lifespans)

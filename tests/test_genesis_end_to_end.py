@@ -27,6 +27,13 @@ def test_genesis_data_foundation_milestone(tmp_path: Path) -> None:
 
     human_ids = {entity.id for entity in dataset.entities.values() if entity.entity_type == "human"}
     assert human_ids <= set(resolution.lifespans)
+    inventoried_ids = {
+        entity_id
+        for unit in dataset.inventory_units.values()
+        if unit.work_id == "genesis"
+        for entity_id in unit.identified_entity_ids
+    }
+    assert human_ids <= inventoried_ids
     for lifespan in resolution.lifespans.values():
         assert lifespan.birth_year <= lifespan.death_year
         assert lifespan.evidence_claim_ids and lifespan.explanation

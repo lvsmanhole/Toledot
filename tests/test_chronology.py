@@ -242,3 +242,16 @@ def test_editorial_estimate_requires_grade_e_evidence_and_explanation(
 
     with pytest.raises(ChronologyResolutionError, match="editorial estimate"):
         resolve_model(dataset, "test-model")
+
+
+def test_hybrid_reference_parent_child_lifetimes_are_chronologically_possible() -> None:
+    root = Path(__file__).parents[1]
+    dataset = load_dataset(root / "data", root / "schemas")
+    result = resolve_model(dataset, "hybrid_reference")
+    for relationship in dataset.relationships.values():
+        if relationship.relationship_type != "parent":
+            continue
+        parent = result.lifespans.get(relationship.subject_id)
+        child = result.lifespans.get(relationship.object_id)
+        if parent is not None and child is not None:
+            assert parent.birth_year <= child.birth_year <= parent.death_year, relationship.id

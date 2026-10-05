@@ -5,6 +5,7 @@ from __future__ import annotations
 from dataclasses import dataclass
 from typing import Literal
 
+from .chronology import ChronologyResolutionError, resolve_model
 from .dates import HistoricalYear
 from .models import Claim, Dataset, Relationship
 
@@ -212,6 +213,12 @@ def validate_dataset(dataset: Dataset) -> tuple[ValidationIssue, ...]:
             error("dangling_object", claim.id, f"missing object {claim.object_id!r}")
         if claim.witness_id and claim.witness_id not in dataset.witnesses:
             error("dangling_witness", claim.id, f"missing witness {claim.witness_id!r}")
+        if claim.value.get("kind") == "historical_year" and _historical_year(claim) is None:
+            error(
+                "invalid_historical_year",
+                claim.id,
+                "historical year must use BCE or CE and a positive integer year",
+            )
         model_id = claim.value.get("chronology_model_id")
         if model_id and model_id not in dataset.chronology_models:
             error("dangling_model", claim.id, f"missing chronology model {model_id!r}")
@@ -232,7 +239,10 @@ def validate_dataset(dataset: Dataset) -> tuple[ValidationIssue, ...]:
             node.get("id") for node in model.derivations if isinstance(node.get("id"), str)
         }
         for node in model.derivations:
-            for input_id in node.get("input_ids", ()):
+            input_ids = (*node.get("input_ids", ()), node.get("input_id"))
+            for input_id in input_ids:
+                if input_id is None:
+                    continue
                 if input_id not in derivation_ids:
                     error("dangling_derivation", model.id, f"missing input {input_id!r}")
             claim_id = node.get("claim_id") or node.get("offset_claim_id")
@@ -263,13 +273,20 @@ def validate_dataset(dataset: Dataset) -> tuple[ValidationIssue, ...]:
                     f"editorial estimate for {entity_id!r} lacks an explanation",
                 )
 
-    explicit_boundaries: dict[str, dict[str, HistoricalYear]] = {}
+        try:
+            resolve_model(dataset, model.id)
+        except ChronologyResolutionError as exc:
+            error("invalid_model_resolution", model.id, str(exc))
+
+    explicit_boundaries: dict[str, dict[str, list[HistoricalYear]]] = {}
     for claim in dataset.claims.values():
         if claim.confidence != "A" or claim.evidence_type != "explicit_text":
             continue
         year = _historical_year(claim)
         if year and claim.predicate in {"birth_year", "death_year"}:
-            explicit_boundaries.setdefault(claim.subject_id, {})[claim.predicate] = year
+            explicit_boundaries.setdefault(claim.subject_id, {}).setdefault(
+                claim.predicate, []
+            ).append(year)
 
     for event in dataset.events.values():
         event_years = [
@@ -281,10 +298,12 @@ def validate_dataset(dataset: Dataset) -> tuple[ValidationIssue, ...]:
         ]
         for participant in event.participants:
             boundaries = explicit_boundaries.get(participant.entity_id, {})
-            birth = boundaries.get("birth_year")
-            death = boundaries.get("death_year")
+            births = boundaries.get("birth_year", [])
+            deaths = boundaries.get("death_year", [])
             for event_year in event_years:
-                if (birth and event_year < birth) or (death and death < event_year):
+                before_every_birth = bool(births) and all(event_year < birth for birth in births)
+                after_every_death = bool(deaths) and all(death < event_year for death in deaths)
+                if before_every_birth or after_every_death:
                     error(
                         "event_outside_lifespan",
                         event.id,

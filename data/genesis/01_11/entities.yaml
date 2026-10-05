@@ -284,34 +284,44 @@ records:
     id: nimrod
     primary_name: Nimrod
     aliases: [Nebrod]
-  - <<: *table
+  - &nation_group
     id: ludim
+    entity_type: group
     primary_name: Ludim
     aliases: []
-  - <<: *table
+    classification: collective
+    identity_status: collective
+    citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 10:13-14", witness_id: lxx-genesis-goettingen}]
+  - <<: *nation_group
     id: anamim
     primary_name: Anamim
     aliases: [Enemetiim]
-  - <<: *table
+    citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 10:13", witness_id: lxx-genesis-goettingen}]
+  - <<: *nation_group
     id: lehabim
     primary_name: Lehabim
     aliases: [Labieim]
-  - <<: *table
+    citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 10:13", witness_id: lxx-genesis-goettingen}]
+  - <<: *nation_group
     id: naphtuhim
     primary_name: Naphtuhim
     aliases: [Nephthalim]
-  - <<: *table
+    citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 10:13", witness_id: lxx-genesis-goettingen}]
+  - <<: *nation_group
     id: pathrusim
     primary_name: Pathrusim
     aliases: [Patrosoniim]
-  - <<: *table
+    citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 10:14", witness_id: lxx-genesis-goettingen}]
+  - <<: *nation_group
     id: casluhim
     primary_name: Casluhim
     aliases: [Chasloniim]
-  - <<: *table
+    citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 10:14", witness_id: lxx-genesis-goettingen}]
+  - <<: *nation_group
     id: caphtorim
     primary_name: Caphtorim
     aliases: [Caphthorim]
+    citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 10:14", witness_id: lxx-genesis-goettingen}]
   - <<: *table
     id: sidon
     primary_name: Sidon

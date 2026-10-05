@@ -5,8 +5,7 @@
   "properties": {
     "schema_version": {"const": 1},
     "record_type": {"const": "claims"},
-    "records": {"type": "array", "items": {"type": "object", "required": ["id", "subject_id", "predicate", "value", "evidence_type", "confidence", "citations"], "properties": {"id": {"type": "string"}, "subject_id": {"type": "string"}, "predicate": {"type": "string"}, "object_id": {"type": "string"}, "value": {"type": "object"}, "evidence_type": {"type": "string"}, "witness_id": {"type": "string"}, "confidence": {"enum": ["A", "B", "C", "D", "E"]}, "interpretation_note": {"type": "string"}, "citations": {"$ref": "common.schema.json#/$defs/citationList"}}, "additionalProperties": true}}
+    "records": {"type": "array", "items": {"type": "object", "required": ["id", "subject_id", "predicate", "value", "evidence_type", "confidence", "citations"], "properties": {"id": {"$ref": "common.schema.json#/$defs/stableId"}, "subject_id": {"$ref": "common.schema.json#/$defs/stableId"}, "predicate": {"type": "string"}, "object_id": {"$ref": "common.schema.json#/$defs/stableId"}, "value": {"type": "object"}, "evidence_type": {"type": "string"}, "witness_id": {"$ref": "common.schema.json#/$defs/stableId"}, "confidence": {"enum": ["A", "B", "C", "D", "E"]}, "interpretation_note": {"type": "string"}, "citations": {"$ref": "common.schema.json#/$defs/citationList"}}, "allOf": [{"if": {"properties": {"value": {"properties": {"kind": {"const": "historical_year"}}, "required": ["kind"]}}, "required": ["value"]}, "then": {"properties": {"value": {"required": ["era", "year"], "properties": {"era": {"enum": ["BCE", "CE"]}, "year": {"type": "integer", "minimum": 1}}}}}}], "additionalProperties": true}}
   },
   "additionalProperties": false
 }
-

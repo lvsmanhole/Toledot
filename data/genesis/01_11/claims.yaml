@@ -69,40 +69,48 @@ records:
     evidence_type: explicit_text
     witness_id: lxx-genesis-goettingen
     confidence: A
-    citations: *lxx5cite
+    citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 5:5", witness_id: lxx-genesis-goettingen, passage_id: gen-5-1-32-lxx}]
   - <<: *life_lxx5
     id: seth-lifespan-lxx
     subject_id: seth
     value: {kind: duration, value: 912, unit: years}
+    citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 5:8", witness_id: lxx-genesis-goettingen, passage_id: gen-5-1-32-lxx}]
   - <<: *life_lxx5
     id: enosh-lifespan-lxx
     subject_id: enosh
     value: {kind: duration, value: 905, unit: years}
+    citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 5:11", witness_id: lxx-genesis-goettingen, passage_id: gen-5-1-32-lxx}]
   - <<: *life_lxx5
     id: kenan-lifespan-lxx
     subject_id: kenan
     value: {kind: duration, value: 910, unit: years}
+    citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 5:14", witness_id: lxx-genesis-goettingen, passage_id: gen-5-1-32-lxx}]
   - <<: *life_lxx5
     id: mahalalel-lifespan-lxx
     subject_id: mahalalel
     value: {kind: duration, value: 895, unit: years}
+    citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 5:17", witness_id: lxx-genesis-goettingen, passage_id: gen-5-1-32-lxx}]
   - <<: *life_lxx5
     id: jared-lifespan-lxx
     subject_id: jared
     value: {kind: duration, value: 962, unit: years}
+    citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 5:20", witness_id: lxx-genesis-goettingen, passage_id: gen-5-1-32-lxx}]
   - <<: *life_lxx5
     id: enoch-seth-lifespan-lxx
     subject_id: enoch-seth
     value: {kind: duration, value: 365, unit: years}
     interpretation_note: Total years until Enoch was taken; encoded as the visible timeline endpoint, not an assertion of ordinary death.
+    citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 5:23-24", witness_id: lxx-genesis-goettingen, passage_id: gen-5-1-32-lxx}]
   - <<: *life_lxx5
     id: methuselah-lifespan-lxx
     subject_id: methuselah
     value: {kind: duration, value: 969, unit: years}
+    citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 5:27", witness_id: lxx-genesis-goettingen, passage_id: gen-5-1-32-lxx}]
   - <<: *life_lxx5
     id: lamech-seth-lifespan-lxx
     subject_id: lamech-seth
     value: {kind: duration, value: 753, unit: years}
+    citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 5:31", witness_id: lxx-genesis-goettingen, passage_id: gen-5-1-32-lxx}]
   - <<: *life_lxx5
     id: noah-lifespan-lxx
     subject_id: noah

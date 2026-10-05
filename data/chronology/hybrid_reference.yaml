@@ -59,14 +59,28 @@ records:
       - {id: flood-household-birth, operation: literal, year: {era: BCE, year: 3666}}
       - {id: flood-household-death, operation: literal, year: {era: BCE, year: 2966}}
       - {id: nations-generation-1-birth, operation: literal, year: {era: BCE, year: 3164}}
-      - {id: nations-generation-1-death, operation: literal, year: {era: BCE, year: 2964}}
-      - {id: nations-generation-2-birth, operation: literal, year: {era: BCE, year: 3064}}
-      - {id: nations-generation-2-death, operation: literal, year: {era: BCE, year: 2864}}
-      - {id: nations-generation-3-birth, operation: literal, year: {era: BCE, year: 2964}}
-      - {id: nations-generation-3-death, operation: literal, year: {era: BCE, year: 2764}}
-      - {id: terah-household-birth, operation: literal, year: {era: BCE, year: 1934}}
-      - {id: terah-household-death, operation: literal, year: {era: BCE, year: 1759}}
+      - {id: nations-generation-1-death, operation: literal, year: {era: BCE, year: 2764}}
+      - {id: nations-generation-2-birth, operation: literal, year: {era: BCE, year: 2860}}
+      - {id: nations-generation-2-death, operation: literal, year: {era: BCE, year: 2660}}
+      - {id: nations-generation-3-birth, operation: literal, year: {era: BCE, year: 2760}}
+      - {id: nations-generation-3-death, operation: literal, year: {era: BCE, year: 2560}}
+      - {id: terah-household-birth, operation: offset_years, input_id: terah-birth, offset_years: 130}
+      - {id: terah-household-death, operation: offset_years, input_id: terah-household-birth, offset_claim_id: abram-lifespan-lxx}
       - {id: abram-death, operation: offset_years, input_id: terah-household-birth, offset_claim_id: abram-lifespan-lxx}
+      - {id: nahor-brother-birth, operation: literal, year: {era: BCE, year: 2130}}
+      - {id: nahor-brother-death, operation: literal, year: {era: BCE, year: 1930}}
+      - {id: haran-birth, operation: literal, year: {era: BCE, year: 2160}}
+      - {id: haran-death, operation: literal, year: {era: BCE, year: 1960}}
+      - {id: lot-birth, operation: literal, year: {era: BCE, year: 1980}}
+      - {id: lot-death, operation: literal, year: {era: BCE, year: 1780}}
+      - {id: lot-daughters-birth, operation: literal, year: {era: BCE, year: 1950}}
+      - {id: lot-daughters-death, operation: literal, year: {era: BCE, year: 1750}}
+      - {id: lot-grandchildren-birth, operation: literal, year: {era: BCE, year: 1900}}
+      - {id: lot-grandchildren-death, operation: literal, year: {era: BCE, year: 1700}}
+      - {id: milcah-birth, operation: literal, year: {era: BCE, year: 2130}}
+      - {id: milcah-death, operation: literal, year: {era: BCE, year: 1930}}
+      - {id: iscah-birth, operation: literal, year: {era: BCE, year: 2160}}
+      - {id: iscah-death, operation: literal, year: {era: BCE, year: 1960}}
       - {id: sarai-birth, operation: offset_years, input_id: terah-household-birth, offset_years: 10}
       - {id: sarai-death, operation: offset_years, input_id: sarai-birth, offset_claim_id: sarai-lifespan-lxx}
       - {id: ishmael-birth, operation: offset_years, input_id: terah-household-birth, offset_claim_id: abram-age-at-ishmael-birth}
@@ -77,21 +91,25 @@ records:
       - {id: twins-editorial-death, operation: literal, year: {era: BCE, year: 1600}}
       - {id: patriarch-contemporary-birth, operation: literal, year: {era: BCE, year: 2000}}
       - {id: patriarch-contemporary-death, operation: literal, year: {era: BCE, year: 1800}}
-      - {id: abraham-household-birth, operation: literal, year: {era: BCE, year: 1950}}
-      - {id: abraham-household-death, operation: literal, year: {era: BCE, year: 1750}}
-      - {id: abraham-descendant-birth, operation: literal, year: {era: BCE, year: 1850}}
-      - {id: abraham-descendant-death, operation: literal, year: {era: BCE, year: 1650}}
-      - {id: jacob-household-birth, operation: literal, year: {era: BCE, year: 1774}}
-      - {id: jacob-household-death, operation: literal, year: {era: BCE, year: 1574}}
-      - {id: jacob-children-birth, operation: literal, year: {era: BCE, year: 1700}}
-      - {id: jacob-children-death, operation: literal, year: {era: BCE, year: 1500}}
+      - {id: abraham-household-birth, operation: literal, year: {era: BCE, year: 2100}}
+      - {id: abraham-household-death, operation: literal, year: {era: BCE, year: 1900}}
+      - {id: abraham-descendant-birth, operation: literal, year: {era: BCE, year: 1980}}
+      - {id: abraham-descendant-death, operation: literal, year: {era: BCE, year: 1780}}
+      - {id: bethuel-generation-birth, operation: literal, year: {era: BCE, year: 2130}}
+      - {id: bethuel-generation-death, operation: literal, year: {era: BCE, year: 1930}}
+      - {id: abraham-descendant-younger-birth, operation: literal, year: {era: BCE, year: 2050}}
+      - {id: abraham-descendant-younger-death, operation: literal, year: {era: BCE, year: 1750}}
+      - {id: jacob-household-birth, operation: literal, year: {era: BCE, year: 2050}}
+      - {id: jacob-household-death, operation: literal, year: {era: BCE, year: 1750}}
+      - {id: jacob-children-birth, operation: literal, year: {era: BCE, year: 1900}}
+      - {id: jacob-children-death, operation: literal, year: {era: BCE, year: 1700}}
       - {id: jacob-death, operation: offset_years, input_id: twins-birth, offset_claim_id: jacob-lifespan-lxx}
       - {id: joseph-birth, operation: offset_years, input_id: twins-birth, offset_claim_id: jacob-age-at-joseph-birth-calculated}
       - {id: joseph-death, operation: offset_years, input_id: joseph-birth, offset_claim_id: joseph-lifespan-lxx}
-      - {id: joseph-cycle-adult-birth, operation: literal, year: {era: BCE, year: 1700}}
-      - {id: joseph-cycle-adult-death, operation: literal, year: {era: BCE, year: 1500}}
-      - {id: migration-descendant-birth, operation: literal, year: {era: BCE, year: 1620}}
-      - {id: migration-descendant-death, operation: literal, year: {era: BCE, year: 1450}}
+      - {id: joseph-cycle-adult-birth, operation: literal, year: {era: BCE, year: 1853}}
+      - {id: joseph-cycle-adult-death, operation: literal, year: {era: BCE, year: 1653}}
+      - {id: migration-descendant-birth, operation: literal, year: {era: BCE, year: 1750}}
+      - {id: migration-descendant-death, operation: literal, year: {era: BCE, year: 1550}}
     resolutions:
       - &core {entity_id: adam, birth_derivation_id: adam-birth, death_derivation_id: adam-death, life_basis: synchronized, confidence_grade: D, evidence_claim_ids: [lxx-early-adam-anchor, adam-lifespan-lxx], alternative_claim_ids: [mt-early-adam-anchor, sp-early-adam-anchor], explanation: "Civil years use the declared LXX display anchor; lifespan is explicit in Genesis 5."}
       - <<: *core
@@ -343,27 +361,6 @@ records:
         entity_id: nimrod
         evidence_claim_ids: [nimrod-attested]
       - <<: *nation2
-        entity_id: ludim
-        evidence_claim_ids: [ludim-attested]
-      - <<: *nation2
-        entity_id: anamim
-        evidence_claim_ids: [anamim-attested]
-      - <<: *nation2
-        entity_id: lehabim
-        evidence_claim_ids: [lehabim-attested]
-      - <<: *nation2
-        entity_id: naphtuhim
-        evidence_claim_ids: [naphtuhim-attested]
-      - <<: *nation2
-        entity_id: pathrusim
-        evidence_claim_ids: [pathrusim-attested]
-      - <<: *nation2
-        entity_id: casluhim
-        evidence_claim_ids: [casluhim-attested]
-      - <<: *nation2
-        entity_id: caphtorim
-        evidence_claim_ids: [caphtorim-attested]
-      - <<: *nation2
         entity_id: sidon
         evidence_claim_ids: [sidon-attested]
       - <<: *nation2
@@ -430,13 +427,28 @@ records:
       - &terah_est {entity_id: abram, birth_derivation_id: terah-household-birth, death_derivation_id: abram-death, life_basis: synchronized, confidence_grade: D, evidence_claim_ids: [abram-attested, abram-lifespan-lxx], alternative_claim_ids: [], explanation: "Birth uses the disclosed LXX-chain synchronization; Genesis 25:7 supplies the 175-year lifespan."}
       - <<: *terah_est
         entity_id: nahor-brother-abram
+        birth_derivation_id: nahor-brother-birth
+        death_derivation_id: nahor-brother-death
+        life_basis: editorial_estimate
+        confidence_grade: E
         evidence_claim_ids: [nahor-brother-abram-attested]
+        explanation: "Grade-E display window; Genesis identifies Terah's son but provides no lifespan or birth year."
       - <<: *terah_est
         entity_id: haran
+        birth_derivation_id: haran-birth
+        death_derivation_id: haran-death
+        life_basis: editorial_estimate
+        confidence_grade: E
         evidence_claim_ids: [haran-attested]
+        explanation: "Grade-E display window; Genesis identifies Terah's son and Lot's father but provides no lifespan or birth year."
       - <<: *terah_est
         entity_id: lot
+        birth_derivation_id: lot-birth
+        death_derivation_id: lot-death
+        life_basis: editorial_estimate
+        confidence_grade: E
         evidence_claim_ids: [lot-attested]
+        explanation: "Grade-E display window; Genesis attests Lot and his family but gives no complete numeric lifespan."
       - <<: *terah_est
         entity_id: sarai
         birth_derivation_id: sarai-birth
@@ -445,10 +457,20 @@ records:
         explanation: "Sarah's birth is synchronized ten years after Abraham from Genesis 17:17; Genesis 23:1 supplies her lifespan."
       - <<: *terah_est
         entity_id: milcah
+        birth_derivation_id: milcah-birth
+        death_derivation_id: milcah-death
+        life_basis: editorial_estimate
+        confidence_grade: E
         evidence_claim_ids: [milcah-attested]
+        explanation: "Grade-E display window; Genesis identifies Milcah but does not give her lifespan."
       - <<: *terah_est
         entity_id: iscah
+        birth_derivation_id: iscah-birth
+        death_derivation_id: iscah-death
+        life_basis: editorial_estimate
+        confidence_grade: E
         evidence_claim_ids: [iscah-attested]
+        explanation: "Grade-E display window; Genesis identifies Iscah but does not give her lifespan."
       - {entity_id: ishmael, birth_derivation_id: ishmael-birth, death_derivation_id: ishmael-death, life_basis: synchronized, confidence_grade: D, evidence_claim_ids: [abram-age-at-ishmael-birth, ishmael-lifespan-lxx], alternative_claim_ids: [], explanation: "Birth and lifespan follow explicit Genesis 16:16 and 25:17 values on the reference anchor."}
       - {entity_id: isaac, birth_derivation_id: isaac-birth, death_derivation_id: isaac-death, life_basis: synchronized, confidence_grade: D, evidence_claim_ids: [abram-age-at-isaac-birth, isaac-lifespan-lxx], alternative_claim_ids: [], explanation: "Birth and lifespan follow explicit Genesis 21:5 and 35:28 values on the reference anchor."}
       - &twins_est {entity_id: esau, birth_derivation_id: twins-birth, death_derivation_id: twins-editorial-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [isaac-age-at-twins-birth, esau-attested], alternative_claim_ids: [], explanation: "The shared twin birth is calculated from Genesis 25:26; the display endpoint is grade E because Genesis does not state a death age."}
@@ -526,16 +548,28 @@ records:
       - &household_est {entity_id: hagar, birth_derivation_id: abraham-household-birth, death_derivation_id: abraham-household-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [hagar-attested], alternative_claim_ids: [], explanation: "Grade-E household window; presence is explicit but the boundaries are not numerically stated."}
       - <<: *household_est
         entity_id: rebekah
+        birth_derivation_id: abraham-descendant-younger-birth
+        death_derivation_id: abraham-descendant-younger-death
         evidence_claim_ids: [rebekah-attested]
       - <<: *household_est
         entity_id: lot-wife
         evidence_claim_ids: [lot-wife-attested]
       - <<: *household_est
         entity_id: lot-daughter-older
+        birth_derivation_id: lot-daughters-birth
+        death_derivation_id: lot-daughters-death
+        life_basis: editorial_estimate
+        confidence_grade: E
         evidence_claim_ids: [lot-daughter-older-attested]
+        explanation: "Grade-E window constrained to Lot's attested family chronology; no lifespan is specified."
       - <<: *household_est
         entity_id: lot-daughter-younger
+        birth_derivation_id: lot-daughters-birth
+        death_derivation_id: lot-daughters-death
+        life_basis: editorial_estimate
+        confidence_grade: E
         evidence_claim_ids: [lot-daughter-younger-attested]
+        explanation: "Grade-E window constrained to Lot's attested family chronology; no lifespan is specified."
       - <<: *household_est
         entity_id: abraham-servant
         evidence_claim_ids: [abraham-servant-attested]
@@ -547,17 +581,31 @@ records:
         evidence_claim_ids: [keturah-attested]
       - <<: *household_est
         entity_id: laban
+        birth_derivation_id: abraham-descendant-younger-birth
+        death_derivation_id: abraham-descendant-younger-death
         evidence_claim_ids: [laban-attested]
       - <<: *household_est
         entity_id: deborah-rebekah-nurse
         evidence_claim_ids: [deborah-rebekah-nurse-attested]
-      - &desc_est {entity_id: moab, birth_derivation_id: abraham-descendant-birth, death_derivation_id: abraham-descendant-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [moab-attested], alternative_claim_ids: [], explanation: "Grade-E descendant-generation window; genealogy is explicit but no numerical boundaries are supplied."}
-      - <<: *desc_est
+      -
+        entity_id: moab
+        birth_derivation_id: lot-grandchildren-birth
+        death_derivation_id: lot-grandchildren-death
+        life_basis: editorial_estimate
+        confidence_grade: E
+        evidence_claim_ids: [moab-attested]
+        alternative_claim_ids: []
+        explanation: "Grade-E window constrained to the named Lot family relationships; no lifespan is specified."
+      -
         entity_id: ben-ammi
+        life_basis: editorial_estimate
+        confidence_grade: E
         evidence_claim_ids: [ben-ammi-attested]
-      - <<: *desc_est
-        entity_id: zimran
-        evidence_claim_ids: [zimran-attested]
+        alternative_claim_ids: []
+        birth_derivation_id: lot-grandchildren-birth
+        death_derivation_id: lot-grandchildren-death
+        explanation: "Grade-E window constrained to the named Lot family relationships; no lifespan is specified."
+      - &desc_est {entity_id: zimran, birth_derivation_id: abraham-descendant-birth, death_derivation_id: abraham-descendant-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [zimran-attested], alternative_claim_ids: [], explanation: "Grade-E descendant-generation window; no numerical lifespan is supplied."}
       - <<: *desc_est
         entity_id: jokshan
         evidence_claim_ids: [jokshan-attested]
@@ -653,6 +701,8 @@ records:
         evidence_claim_ids: [jidlaph-attested]
       - <<: *desc_est
         entity_id: bethuel
+        birth_derivation_id: bethuel-generation-birth
+        death_derivation_id: bethuel-generation-death
         evidence_claim_ids: [bethuel-attested]
       - <<: *desc_est
         entity_id: reumah

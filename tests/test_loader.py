@@ -66,6 +66,17 @@ def test_missing_provenance_reports_file_and_json_pointer(tmp_path: Path) -> Non
     assert "citations" in str(caught.value)
 
 
+def test_claim_ids_must_follow_stable_id_format(tmp_path: Path) -> None:
+    data_root = tmp_path / "data"
+    shutil.copytree(FIXTURE_ROOT, data_root)
+    claims_path = data_root / "claims.yaml"
+    document = yaml.safe_load(claims_path.read_text(encoding="utf-8"))
+    document["records"][0]["id"] = "BAD ID"
+    claims_path.write_text(yaml.safe_dump(document, sort_keys=False), encoding="utf-8")
+    with pytest.raises(StructuralValidationError, match="BAD ID"):
+        load_dataset(data_root, SCHEMA_ROOT)
+
+
 def test_duplicate_record_ids_report_both_paths(tmp_path: Path) -> None:
     data_root = tmp_path / "data"
     shutil.copytree(FIXTURE_ROOT, data_root)

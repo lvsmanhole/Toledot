@@ -62,7 +62,7 @@ records:
     id: inv-gen-46
     locator: "Genesis 46"
     passage_ids: [gen-46-lxx]
-    identified_entity_ids: [jacob, joseph, reuben, simeon, levi, judah, dan, naphtali, gad, asher, issachar, zebulun, dinah, benjamin, manasseh, ephraim, perez, zerah-judah, jacob-descendants]
+    identified_entity_ids: [jacob, joseph, reuben, simeon, levi, judah, dan, naphtali, gad, asher, issachar, zebulun, dinah, benjamin, manasseh, ephraim, perez, zerah-judah, jacob-descendants, hanoch-reuben, pallu, hezron-reuben, carmi, jemuel, jamin, ohad, jachin, zohar-simeon, shaul-simeon, gershon, kohath, merari, hezron-perez, hamul, tola, puah, jashub, shimron, sered, elon-zebulun, jahleel, ziphion, haggi, shuni, ezbon, eri, arodi, areli, imnah, ishvah, ishvi, beriah, serah, heber-asher, malchiel, hushim, jahzeel, guni, jezer, shillem, bela-benjamin, beker, ashbel, gera, naaman, ehi, rosh, muppim, huppim, ard]
     event_ids: [jacob-household-migrates-egypt]
     citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 46", witness_id: lxx-genesis-goettingen}]
   - <<: *i

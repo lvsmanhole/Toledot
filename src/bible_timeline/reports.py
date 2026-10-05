@@ -97,11 +97,13 @@ def _conflicts(dataset: Dataset) -> dict[str, Any]:
 
 
 def _chapters(locator: str) -> set[int]:
-    match = re.fullmatch(r"Genesis (\d+)(?::\d+)?(?:-(\d+)(?::\d+)?)?", locator)
+    match = re.fullmatch(r"Genesis (\d+)(?::(\d+))?(?:-(?:(\d+):(\d+)|(\d+)))?", locator)
     if match is None:
         return set()
     start = int(match.group(1))
-    end = int(match.group(2) or start)
+    # A bare range after a verse locator is a verse range; without a verse it
+    # denotes chapters. A chapter:verse endpoint is always cross-chapter.
+    end = int(match.group(3) or (match.group(5) if match.group(2) is None else None) or start)
     return set(range(start, end + 1))
 
 

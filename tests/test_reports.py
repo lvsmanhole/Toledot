@@ -4,6 +4,7 @@ from pathlib import Path
 from bible_timeline.chronology import resolve_model
 from bible_timeline.loader import load_dataset
 from bible_timeline.reports import build_reports, write_reports
+from bible_timeline.reports import _chapters
 
 
 DATA_ROOT = Path(__file__).parents[1] / "data"
@@ -58,3 +59,9 @@ def test_write_reports_creates_deterministic_json_files(tmp_path: Path) -> None:
     for filename in ("provenance.json", "conflicts.json", "coverage.json", "validation.json"):
         assert json.loads((first / filename).read_text(encoding="utf-8"))
         assert (first / filename).read_bytes() == (second / filename).read_bytes()
+
+
+def test_genesis_locator_parser_distinguishes_verse_ranges_from_chapter_ranges() -> None:
+    assert _chapters("Genesis 2:4-25") == {2}
+    assert _chapters("Genesis 1:1-2:3") == {1, 2}
+    assert _chapters("Genesis 1-3") == {1, 2, 3}

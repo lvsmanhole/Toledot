@@ -98,3 +98,14 @@ def test_hybrid_reference_resolves_every_human_in_slice_with_explanations() -> N
 
 def test_genesis_12_through_36_has_no_semantic_errors() -> None:
     assert not [issue for issue in validate_dataset(_dataset()) if issue.severity == "error"]
+
+
+def test_terah_household_estimates_do_not_inherit_abram_lifespan_evidence() -> None:
+    dataset = _dataset()
+    result = resolve_model(dataset, "hybrid_reference")
+    for entity_id in ("nahor-brother-abram", "haran", "lot", "milcah", "iscah"):
+        lifespan = result.lifespans[entity_id]
+        assert lifespan.life_basis == "editorial_estimate"
+        assert lifespan.confidence_grade == "E"
+        assert lifespan.evidence_claim_ids == (f"{entity_id}-attested",)
+        assert f"{entity_id}-lifespan-lxx" not in lifespan.evidence_claim_ids
