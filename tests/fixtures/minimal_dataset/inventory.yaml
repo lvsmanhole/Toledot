@@ -1,0 +1,16 @@
+schema_version: 1
+record_type: inventory_units
+records:
+  - id: genesis-5-3-review
+    work_id: genesis
+    locator: "5:3"
+    reviewed: true
+    passage_ids: [genesis-5-3-lxx-test]
+    identified_entity_ids: [adam, seth]
+    event_ids: [birth-of-seth]
+    no_individuals: false
+    citations:
+      - source_id: source-genesis
+        passage_id: genesis-5-3-lxx-test
+        locator: "Genesis 5:3"
+

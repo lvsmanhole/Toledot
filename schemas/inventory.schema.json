@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": ["schema_version", "record_type", "records"],
+  "properties": {
+    "schema_version": {"const": 1},
+    "record_type": {"const": "inventory_units"},
+    "records": {"type": "array", "items": {"type": "object", "required": ["id", "work_id", "locator", "reviewed", "passage_ids", "identified_entity_ids", "event_ids", "no_individuals", "citations"], "properties": {"id": {"type": "string"}, "work_id": {"type": "string"}, "locator": {"type": "string"}, "reviewed": {"type": "boolean"}, "passage_ids": {"type": "array", "items": {"type": "string"}}, "identified_entity_ids": {"type": "array", "items": {"type": "string"}}, "event_ids": {"type": "array", "items": {"type": "string"}}, "no_individuals": {"type": "boolean"}, "citations": {"$ref": "common.schema.json#/$defs/citationList"}}, "additionalProperties": true}}
+  },
+  "additionalProperties": false
+}
+

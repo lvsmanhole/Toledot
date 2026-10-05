@@ -1,0 +1,11 @@
+schema_version: 1
+record_type: passages
+records:
+  - id: genesis-5-3-lxx-test
+    work_id: genesis
+    witness_id: lxx-genesis-test
+    locator: "5:3"
+    citations:
+      - source_id: source-genesis
+        locator: "Genesis 5:3"
+

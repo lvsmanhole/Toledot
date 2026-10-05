@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": ["schema_version", "record_type", "records"],
+  "properties": {
+    "schema_version": {"const": 1},
+    "record_type": {"const": "relationships"},
+    "records": {"type": "array", "items": {"type": "object", "required": ["id", "relationship_type", "subject_id", "object_id", "claim_ids", "citations"], "properties": {"id": {"type": "string"}, "relationship_type": {"type": "string"}, "subject_id": {"type": "string"}, "object_id": {"type": "string"}, "claim_ids": {"type": "array", "items": {"type": "string"}}, "derived_from": {"type": "string"}, "citations": {"$ref": "common.schema.json#/$defs/citationList"}}, "additionalProperties": true}}
+  },
+  "additionalProperties": false
+}
+

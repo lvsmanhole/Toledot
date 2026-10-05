@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": ["schema_version", "record_type", "records"],
+  "properties": {
+    "schema_version": {"const": 1},
+    "record_type": {"const": "canon_lists"},
+    "records": {"type": "array", "items": {"type": "object", "required": ["id", "tradition", "name", "source_id", "items"], "properties": {"id": {"type": "string"}, "tradition": {"type": "string"}, "name": {"type": "string"}, "source_id": {"type": "string"}, "items": {"type": "array", "items": {"type": "object", "required": ["id", "label", "position"], "properties": {"id": {"type": "string"}, "label": {"type": "string"}, "position": {"type": "integer", "minimum": 1}, "work_id": {"type": "string"}, "resolution_note": {"type": "string"}}, "additionalProperties": false}}}, "additionalProperties": true}}
+  },
+  "additionalProperties": false
+}
+

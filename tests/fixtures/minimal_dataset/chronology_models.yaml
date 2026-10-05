@@ -1,0 +1,12 @@
+schema_version: 1
+record_type: chronology_models
+records:
+  - id: test-model
+    name: Test chronology
+    description: Minimal model for loader tests
+    derivations: []
+    resolutions: []
+    citations:
+      - source_id: source-genesis
+        locator: Test model
+

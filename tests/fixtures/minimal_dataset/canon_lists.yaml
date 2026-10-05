@@ -1,0 +1,13 @@
+schema_version: 1
+record_type: canon_lists
+records:
+  - id: test-canon
+    tradition: test
+    name: Test canon
+    source_id: source-genesis
+    items:
+      - id: test-canon-genesis
+        label: Genesis
+        position: 1
+        work_id: genesis
+

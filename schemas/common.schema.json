@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "common.schema.json",
+  "$defs": {
+    "stableId": {"type": "string", "pattern": "^[a-z0-9][a-z0-9_-]*$"},
+    "citation": {
+      "type": "object",
+      "required": ["source_id", "locator"],
+      "properties": {
+        "source_id": {"type": "string"},
+        "locator": {"type": "string", "minLength": 1},
+        "witness_id": {"type": "string"},
+        "passage_id": {"type": "string"},
+        "direct": {"type": "boolean"},
+        "note": {"type": "string"}
+      },
+      "additionalProperties": false
+    },
+    "citationList": {
+      "type": "array",
+      "minItems": 1,
+      "items": {"$ref": "#/$defs/citation"}
+    }
+  }
+}
+

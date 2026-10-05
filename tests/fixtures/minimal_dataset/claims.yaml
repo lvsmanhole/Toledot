@@ -1,0 +1,35 @@
+schema_version: 1
+record_type: claims
+records:
+  - id: adam-age-at-seth-lxx
+    subject_id: adam
+    predicate: age_at_birth_of
+    object_id: seth
+    value:
+      kind: duration
+      value: 230
+      unit: years
+    evidence_type: explicit_text
+    witness_id: lxx-genesis-test
+    confidence: A
+    citations:
+      - source_id: source-genesis
+        passage_id: genesis-5-3-lxx-test
+        locator: "Genesis 5:3"
+  - id: adam-age-at-seth-mt
+    subject_id: adam
+    predicate: age_at_birth_of
+    object_id: seth
+    value:
+      kind: duration
+      value: 130
+      unit: years
+    evidence_type: explicit_text
+    witness_id: lxx-genesis-test
+    confidence: A
+    interpretation_note: Deliberately conflicting fixture claim
+    citations:
+      - source_id: source-genesis
+        passage_id: genesis-5-3-lxx-test
+        locator: "Genesis 5:3 alternate fixture"
+

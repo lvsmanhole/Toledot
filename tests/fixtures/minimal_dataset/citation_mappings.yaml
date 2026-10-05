@@ -1,0 +1,11 @@
+schema_version: 1
+record_type: citation_mappings
+records:
+  - id: genesis-5-3-self-map
+    from_passage_id: genesis-5-3-lxx-test
+    to_passage_id: genesis-5-3-lxx-test
+    note: Test identity mapping
+    citations:
+      - source_id: source-genesis
+        locator: Test mapping
+

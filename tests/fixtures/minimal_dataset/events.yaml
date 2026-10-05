@@ -1,0 +1,17 @@
+schema_version: 1
+record_type: events
+records:
+  - id: birth-of-seth
+    event_type: birth
+    name: Birth of Seth
+    participants:
+      - entity_id: seth
+        role: subject
+      - entity_id: adam
+        role: parent
+    date_claim_ids: [adam-age-at-seth-lxx]
+    citations:
+      - source_id: source-genesis
+        passage_id: genesis-5-3-lxx-test
+        locator: "Genesis 5:3"
+

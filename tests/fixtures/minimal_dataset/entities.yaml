@@ -1,0 +1,22 @@
+schema_version: 1
+record_type: entities
+records:
+  - id: adam
+    entity_type: human
+    primary_name: Adam
+    aliases: []
+    classification: historical_human
+    citations:
+      - source_id: source-genesis
+        passage_id: genesis-5-3-lxx-test
+        locator: "Genesis 5:3"
+  - id: seth
+    entity_type: human
+    primary_name: Seth
+    aliases: []
+    classification: historical_human
+    citations:
+      - source_id: source-genesis
+        passage_id: genesis-5-3-lxx-test
+        locator: "Genesis 5:3"
+

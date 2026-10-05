@@ -1,0 +1,12 @@
+schema_version: 1
+record_type: canon_memberships
+records:
+  - id: test-canon-genesis-membership
+    work_id: genesis
+    canon_list_id: test-canon
+    source_list_item_id: test-canon-genesis
+    status: included
+    citations:
+      - source_id: source-genesis
+        locator: Canon list, item 1
+

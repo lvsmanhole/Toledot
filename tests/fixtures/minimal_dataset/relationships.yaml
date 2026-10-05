@@ -1,0 +1,13 @@
+schema_version: 1
+record_type: relationships
+records:
+  - id: adam-parent-of-seth
+    relationship_type: parent
+    subject_id: adam
+    object_id: seth
+    claim_ids: [adam-age-at-seth-lxx]
+    citations:
+      - source_id: source-genesis
+        passage_id: genesis-5-3-lxx-test
+        locator: "Genesis 5:3"
+

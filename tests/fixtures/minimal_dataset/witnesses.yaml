@@ -1,0 +1,12 @@
+schema_version: 1
+record_type: witnesses
+records:
+  - id: lxx-genesis-test
+    work_id: genesis
+    tradition: septuagint
+    language: grc
+    edition: Test LXX
+    citations:
+      - source_id: source-genesis
+        locator: Witness description
+

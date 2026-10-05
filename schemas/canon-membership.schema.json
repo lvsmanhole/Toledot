@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": ["schema_version", "record_type", "records"],
+  "properties": {
+    "schema_version": {"const": 1},
+    "record_type": {"const": "canon_memberships"},
+    "records": {"type": "array", "items": {"type": "object", "required": ["id", "work_id", "canon_list_id", "source_list_item_id", "status", "citations"], "properties": {"id": {"type": "string"}, "work_id": {"type": "string"}, "canon_list_id": {"type": "string"}, "source_list_item_id": {"type": "string"}, "status": {"type": "string"}, "citations": {"$ref": "common.schema.json#/$defs/citationList"}}, "additionalProperties": true}}
+  },
+  "additionalProperties": false
+}
+

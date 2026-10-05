@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": ["schema_version", "record_type", "records"],
+  "properties": {
+    "schema_version": {"const": 1},
+    "record_type": {"const": "sources"},
+    "records": {"type": "array", "items": {"type": "object", "required": ["id", "source_type", "title", "bibliographic_locator", "license_status"], "properties": {"id": {"type": "string"}, "source_type": {"type": "string"}, "title": {"type": "string"}, "bibliographic_locator": {"type": "string"}, "url": {"type": "string"}, "license_status": {"type": "string"}}, "additionalProperties": true}}
+  },
+  "additionalProperties": false
+}
+

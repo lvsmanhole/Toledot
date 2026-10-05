@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": ["schema_version", "record_type", "records"],
+  "properties": {
+    "schema_version": {"const": 1},
+    "record_type": {"const": "entities"},
+    "records": {"type": "array", "items": {"type": "object", "required": ["id", "entity_type", "primary_name", "aliases", "classification", "citations"], "properties": {"id": {"type": "string"}, "entity_type": {"type": "string"}, "primary_name": {"type": "string"}, "aliases": {"type": "array", "items": {"type": "string"}}, "classification": {"type": "string"}, "citations": {"$ref": "common.schema.json#/$defs/citationList"}}, "additionalProperties": true}}
+  },
+  "additionalProperties": false
+}
+
