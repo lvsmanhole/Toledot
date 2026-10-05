@@ -1,0 +1,115 @@
+schema_version: 1
+record_type: passages
+records:
+  - &lxx_1_2
+    id: gen-1-1-2-3-lxx
+    work_id: genesis
+    witness_id: lxx-genesis-goettingen
+    locator: "Genesis 1:1-2:3"
+    citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 1:1-2:3", witness_id: lxx-genesis-goettingen}]
+  - id: gen-2-4-25-lxx
+    work_id: genesis
+    witness_id: lxx-genesis-goettingen
+    locator: "Genesis 2:4-25"
+    citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 2:4-25", witness_id: lxx-genesis-goettingen}]
+  - id: gen-3-1-24-lxx
+    work_id: genesis
+    witness_id: lxx-genesis-goettingen
+    locator: "Genesis 3:1-24"
+    citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 3:1-24", witness_id: lxx-genesis-goettingen}]
+  - id: gen-4-1-16-lxx
+    work_id: genesis
+    witness_id: lxx-genesis-goettingen
+    locator: "Genesis 4:1-16"
+    citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 4:1-16", witness_id: lxx-genesis-goettingen}]
+  - id: gen-4-17-24-lxx
+    work_id: genesis
+    witness_id: lxx-genesis-goettingen
+    locator: "Genesis 4:17-24"
+    citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 4:17-24", witness_id: lxx-genesis-goettingen}]
+  - id: gen-4-25-26-lxx
+    work_id: genesis
+    witness_id: lxx-genesis-goettingen
+    locator: "Genesis 4:25-26"
+    citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 4:25-26", witness_id: lxx-genesis-goettingen}]
+  - &gen5_lxx
+    id: gen-5-1-32-lxx
+    work_id: genesis
+    witness_id: lxx-genesis-goettingen
+    locator: "Genesis 5:1-32"
+    citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 5:1-32", witness_id: lxx-genesis-goettingen}]
+  - &gen5_mt
+    id: gen-5-1-32-mt
+    work_id: genesis
+    witness_id: mt-genesis-bhs
+    locator: "Genesis 5:1-32"
+    citations: [{source_id: bhs-genesis, locator: "Genesis 5:1-32", witness_id: mt-genesis-bhs}]
+  - &gen5_sp
+    id: gen-5-1-32-sp
+    work_id: genesis
+    witness_id: sp-genesis-schorch
+    locator: "Genesis 5:1-32"
+    citations: [{source_id: schorch-samaritan-genesis-2021, locator: "Genesis 5:1-32", witness_id: sp-genesis-schorch}]
+  - id: gen-6-1-8-lxx
+    work_id: genesis
+    witness_id: lxx-genesis-goettingen
+    locator: "Genesis 6:1-8"
+    citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 6:1-8", witness_id: lxx-genesis-goettingen}]
+  - id: gen-6-9-22-lxx
+    work_id: genesis
+    witness_id: lxx-genesis-goettingen
+    locator: "Genesis 6:9-22"
+    citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 6:9-22", witness_id: lxx-genesis-goettingen}]
+  - id: gen-7-1-24-lxx
+    work_id: genesis
+    witness_id: lxx-genesis-goettingen
+    locator: "Genesis 7:1-24"
+    citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 7:1-24", witness_id: lxx-genesis-goettingen}]
+  - id: gen-8-1-22-lxx
+    work_id: genesis
+    witness_id: lxx-genesis-goettingen
+    locator: "Genesis 8:1-22"
+    citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 8:1-22", witness_id: lxx-genesis-goettingen}]
+  - id: gen-9-1-17-lxx
+    work_id: genesis
+    witness_id: lxx-genesis-goettingen
+    locator: "Genesis 9:1-17"
+    citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 9:1-17", witness_id: lxx-genesis-goettingen}]
+  - id: gen-9-18-29-lxx
+    work_id: genesis
+    witness_id: lxx-genesis-goettingen
+    locator: "Genesis 9:18-29"
+    citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 9:18-29", witness_id: lxx-genesis-goettingen}]
+  - id: gen-10-1-32-lxx
+    work_id: genesis
+    witness_id: lxx-genesis-goettingen
+    locator: "Genesis 10:1-32"
+    citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 10:1-32", witness_id: lxx-genesis-goettingen}]
+  - id: gen-11-1-9-lxx
+    work_id: genesis
+    witness_id: lxx-genesis-goettingen
+    locator: "Genesis 11:1-9"
+    citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 11:1-9", witness_id: lxx-genesis-goettingen}]
+  - &gen11_lxx
+    id: gen-11-10-26-lxx
+    work_id: genesis
+    witness_id: lxx-genesis-goettingen
+    locator: "Genesis 11:10-26"
+    citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 11:10-26", witness_id: lxx-genesis-goettingen}]
+  - &gen11_mt
+    id: gen-11-10-26-mt
+    work_id: genesis
+    witness_id: mt-genesis-bhs
+    locator: "Genesis 11:10-26"
+    citations: [{source_id: bhs-genesis, locator: "Genesis 11:10-26", witness_id: mt-genesis-bhs}]
+  - &gen11_sp
+    id: gen-11-10-26-sp
+    work_id: genesis
+    witness_id: sp-genesis-schorch
+    locator: "Genesis 11:10-26"
+    citations: [{source_id: schorch-samaritan-genesis-2021, locator: "Genesis 11:10-26", witness_id: sp-genesis-schorch}]
+  - id: gen-11-27-32-lxx
+    work_id: genesis
+    witness_id: lxx-genesis-goettingen
+    locator: "Genesis 11:27-32"
+    citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 11:27-32", witness_id: lxx-genesis-goettingen}]

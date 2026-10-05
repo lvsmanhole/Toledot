@@ -1,0 +1,58 @@
+schema_version: 1
+record_type: events
+records:
+  - &event
+    id: creation-of-humankind
+    event_type: creation
+    name: Creation of humankind
+    participants: [{entity_id: adam, role: first man}, {entity_id: eve, role: first woman}]
+    date_claim_ids: []
+    citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 1:26-2:25", witness_id: lxx-genesis-goettingen}]
+  - <<: *event
+    id: eden-and-first-union
+    event_type: union
+    name: Life in Eden and the first human union
+    participants: [{entity_id: adam, role: husband}, {entity_id: eve, role: wife}]
+    citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 2:4-25", witness_id: lxx-genesis-goettingen}]
+  - <<: *event
+    id: expulsion-from-eden
+    event_type: migration
+    name: Expulsion from Eden
+    participants: [{entity_id: adam, role: expelled}, {entity_id: eve, role: expelled}]
+    citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 3:1-24", witness_id: lxx-genesis-goettingen}]
+  - <<: *event
+    id: murder-of-abel
+    event_type: death
+    name: Cain kills Abel
+    participants: [{entity_id: cain, role: killer}, {entity_id: abel, role: victim}]
+    citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 4:1-16", witness_id: lxx-genesis-goettingen}]
+  - <<: *event
+    id: ark-preparation
+    event_type: construction
+    name: Preparation of the ark
+    participants: [{entity_id: noah, role: builder}]
+    citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 6:9-22", witness_id: lxx-genesis-goettingen}]
+  - <<: *event
+    id: flood
+    event_type: catastrophe
+    name: The Flood
+    participants: [{entity_id: noah, role: survivor}, {entity_id: shem, role: survivor}, {entity_id: ham, role: survivor}, {entity_id: japheth, role: survivor}, {entity_id: noah-wife, role: survivor}, {entity_id: wife-shem, role: survivor}, {entity_id: wife-ham, role: survivor}, {entity_id: wife-japheth, role: survivor}]
+    citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 7:1-8:22", witness_id: lxx-genesis-goettingen}]
+  - <<: *event
+    id: noahic-covenant
+    event_type: covenant
+    name: Noahic covenant
+    participants: [{entity_id: noah, role: covenant recipient}, {entity_id: shem, role: covenant household}, {entity_id: ham, role: covenant household}, {entity_id: japheth, role: covenant household}]
+    citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 9:1-17", witness_id: lxx-genesis-goettingen}]
+  - <<: *event
+    id: babel
+    event_type: dispersion
+    name: Tower of Babel and dispersion
+    participants: [{entity_id: babel-builders, role: builders}]
+    citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 11:1-9", witness_id: lxx-genesis-goettingen}]
+  - <<: *event
+    id: terah-migration
+    event_type: migration
+    name: Terah's migration from Ur to Haran
+    participants: [{entity_id: terah, role: household head}, {entity_id: abram, role: migrant}, {entity_id: sarai, role: migrant}, {entity_id: lot, role: migrant}]
+    citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 11:27-32", witness_id: lxx-genesis-goettingen}]

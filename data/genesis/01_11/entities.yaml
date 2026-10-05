@@ -1,0 +1,511 @@
+schema_version: 1
+record_type: entities
+records:
+  - &human
+    id: adam
+    entity_type: human
+    primary_name: Adam
+    aliases: [Adām]
+    classification: named_person
+    gender: male
+    identity_status: named
+    citations: &gen1 [{source_id: goettingen-genesis-1974, locator: "Genesis 1:26-5:5", witness_id: lxx-genesis-goettingen}]
+  - <<: *human
+    id: eve
+    primary_name: Eve
+    aliases: [Zoe, Ḥawwāh]
+    gender: female
+    citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 2:18-4:25", witness_id: lxx-genesis-goettingen}]
+  - <<: *human
+    id: cain
+    primary_name: Cain
+    aliases: [Kain]
+    citations: &gen4 [{source_id: goettingen-genesis-1974, locator: "Genesis 4:1-24", witness_id: lxx-genesis-goettingen}]
+  - <<: *human
+    id: abel
+    primary_name: Abel
+    aliases: [Habel]
+    citations: *gen4
+  - <<: *human
+    id: seth
+    primary_name: Seth
+    aliases: []
+    citations: &gen5 [{source_id: goettingen-genesis-1974, locator: "Genesis 4:25-5:32", witness_id: lxx-genesis-goettingen}]
+  - <<: *human
+    id: enosh
+    primary_name: Enosh
+    aliases: [Enos]
+    citations: *gen5
+  - <<: *human
+    id: enoch-cain
+    primary_name: Enoch
+    aliases: [Henoch]
+    description: Son of Cain; not merged with the descendant of Jared.
+    citations: *gen4
+  - <<: *human
+    id: irad
+    primary_name: Irad
+    aliases: [Gaidad]
+    citations: *gen4
+  - <<: *human
+    id: mehujael
+    primary_name: Mehujael
+    aliases: [Maiel]
+    citations: *gen4
+  - <<: *human
+    id: methushael
+    primary_name: Methushael
+    aliases: [Mathousala]
+    citations: *gen4
+  - <<: *human
+    id: lamech-cain
+    primary_name: Lamech
+    aliases: []
+    description: Descendant of Cain; not merged with Noah's father.
+    citations: *gen4
+  - <<: *human
+    id: adah
+    primary_name: Adah
+    aliases: []
+    gender: female
+    citations: *gen4
+  - <<: *human
+    id: zillah
+    primary_name: Zillah
+    aliases: [Sella]
+    gender: female
+    citations: *gen4
+  - <<: *human
+    id: jabal
+    primary_name: Jabal
+    aliases: [Iobel]
+    citations: *gen4
+  - <<: *human
+    id: jubal
+    primary_name: Jubal
+    aliases: []
+    citations: *gen4
+  - <<: *human
+    id: tubal-cain
+    primary_name: Tubal-cain
+    aliases: [Thobel]
+    citations: *gen4
+  - <<: *human
+    id: naamah
+    primary_name: Naamah
+    aliases: [Noema]
+    gender: female
+    citations: *gen4
+  - <<: *human
+    id: kenan
+    primary_name: Kenan
+    aliases: [Cainan]
+    citations: *gen5
+  - <<: *human
+    id: mahalalel
+    primary_name: Mahalalel
+    aliases: [Maleleel]
+    citations: *gen5
+  - <<: *human
+    id: jared
+    primary_name: Jared
+    aliases: []
+    citations: *gen5
+  - <<: *human
+    id: enoch-seth
+    primary_name: Enoch
+    aliases: [Henoch]
+    description: Son of Jared; not merged with the son of Cain.
+    citations: *gen5
+  - <<: *human
+    id: methuselah
+    primary_name: Methuselah
+    aliases: [Mathousala]
+    citations: *gen5
+  - <<: *human
+    id: lamech-seth
+    primary_name: Lamech
+    aliases: []
+    description: Father of Noah; not merged with Cain's descendant.
+    citations: *gen5
+  - <<: *human
+    id: noah
+    primary_name: Noah
+    aliases: [Noe]
+    citations: &flood [{source_id: goettingen-genesis-1974, locator: "Genesis 5:28-10:1", witness_id: lxx-genesis-goettingen}]
+  - <<: *human
+    id: noah-wife
+    primary_name: Wife of Noah
+    aliases: []
+    classification: unnamed_person
+    gender: female
+    identity_status: unnamed_unique
+    citations: *flood
+  - <<: *human
+    id: shem
+    primary_name: Shem
+    aliases: [Sem]
+    citations: *flood
+  - <<: *human
+    id: ham
+    primary_name: Ham
+    aliases: [Cham]
+    citations: *flood
+  - <<: *human
+    id: japheth
+    primary_name: Japheth
+    aliases: [Iapheth]
+    citations: *flood
+  - <<: *human
+    id: wife-shem
+    primary_name: Wife of Shem
+    aliases: []
+    classification: unnamed_person
+    gender: female
+    identity_status: unnamed_unique
+    citations: *flood
+  - <<: *human
+    id: wife-ham
+    primary_name: Wife of Ham
+    aliases: []
+    classification: unnamed_person
+    gender: female
+    identity_status: unnamed_unique
+    citations: *flood
+  - <<: *human
+    id: wife-japheth
+    primary_name: Wife of Japheth
+    aliases: []
+    classification: unnamed_person
+    gender: female
+    identity_status: unnamed_unique
+    citations: *flood
+  - &table
+    <<: *human
+    id: gomer
+    primary_name: Gomer
+    aliases: []
+    citations: &gen10 [{source_id: goettingen-genesis-1974, locator: "Genesis 10:1-32", witness_id: lxx-genesis-goettingen}]
+  - <<: *table
+    id: magog
+    primary_name: Magog
+  - <<: *table
+    id: madai
+    primary_name: Madai
+    aliases: [Madai]
+  - <<: *table
+    id: javan
+    primary_name: Javan
+    aliases: [Iovan]
+  - <<: *table
+    id: tubal
+    primary_name: Tubal
+  - <<: *table
+    id: meshech
+    primary_name: Meshech
+    aliases: [Mosoch]
+  - <<: *table
+    id: tiras
+    primary_name: Tiras
+  - <<: *table
+    id: ashkenaz
+    primary_name: Ashkenaz
+    aliases: [Aschanaz]
+  - <<: *table
+    id: riphath
+    primary_name: Riphath
+    aliases: [Riphath, Diphath]
+  - <<: *table
+    id: togarmah
+    primary_name: Togarmah
+  - <<: *table
+    id: elishah
+    primary_name: Elishah
+    aliases: [Elisa]
+  - <<: *table
+    id: tarshish
+    primary_name: Tarshish
+    aliases: [Tharsis]
+  - <<: *table
+    id: kittim
+    primary_name: Kittim
+    aliases: [Kitians]
+  - <<: *table
+    id: dodanim
+    primary_name: Dodanim
+    aliases: [Rhodians, Rodanim]
+  - <<: *table
+    id: cush
+    primary_name: Cush
+    aliases: [Chous]
+  - <<: *table
+    id: mizraim
+    primary_name: Mizraim
+    aliases: [Mesraim]
+  - <<: *table
+    id: put
+    primary_name: Put
+    aliases: [Phoud]
+  - <<: *table
+    id: canaan
+    primary_name: Canaan
+    aliases: [Chanaan]
+  - <<: *table
+    id: seba
+    primary_name: Seba
+    aliases: [Saba]
+  - <<: *table
+    id: havilah-cush
+    primary_name: Havilah
+    aliases: [Evila]
+    description: Son of Cush; not merged with Joktan's son.
+  - <<: *table
+    id: sabtah
+    primary_name: Sabtah
+    aliases: [Sabatha]
+  - <<: *table
+    id: raamah
+    primary_name: Raamah
+    aliases: [Regma]
+  - <<: *table
+    id: sabteca
+    primary_name: Sabteca
+    aliases: [Sabacatha]
+  - <<: *table
+    id: sheba-raamah
+    primary_name: Sheba
+    aliases: [Saba]
+    description: Son of Raamah; not merged with Joktan's son.
+  - <<: *table
+    id: dedan-raamah
+    primary_name: Dedan
+    aliases: []
+  - <<: *table
+    id: nimrod
+    primary_name: Nimrod
+    aliases: [Nebrod]
+  - <<: *table
+    id: ludim
+    primary_name: Ludim
+    aliases: []
+  - <<: *table
+    id: anamim
+    primary_name: Anamim
+    aliases: [Enemetiim]
+  - <<: *table
+    id: lehabim
+    primary_name: Lehabim
+    aliases: [Labieim]
+  - <<: *table
+    id: naphtuhim
+    primary_name: Naphtuhim
+    aliases: [Nephthalim]
+  - <<: *table
+    id: pathrusim
+    primary_name: Pathrusim
+    aliases: [Patrosoniim]
+  - <<: *table
+    id: casluhim
+    primary_name: Casluhim
+    aliases: [Chasloniim]
+  - <<: *table
+    id: caphtorim
+    primary_name: Caphtorim
+    aliases: [Caphthorim]
+  - <<: *table
+    id: sidon
+    primary_name: Sidon
+    aliases: []
+  - <<: *table
+    id: heth
+    primary_name: Heth
+    aliases: [Chett]
+  - <<: *table
+    id: elam
+    primary_name: Elam
+  - <<: *table
+    id: asshur
+    primary_name: Asshur
+    aliases: [Assour]
+  - <<: *table
+    id: arphaxad
+    primary_name: Arphaxad
+    aliases: [Arpachshad]
+  - <<: *table
+    id: lud-shem
+    primary_name: Lud
+    description: Son of Shem.
+  - <<: *table
+    id: aram
+    primary_name: Aram
+  - <<: *table
+    id: uz
+    primary_name: Uz
+    aliases: [Os]
+  - <<: *table
+    id: hul
+    primary_name: Hul
+    aliases: [Houl]
+  - <<: *table
+    id: gether
+    primary_name: Gether
+    aliases: [Gather]
+  - <<: *table
+    id: mash
+    primary_name: Mash
+    aliases: [Meshech]
+  - <<: *table
+    id: cainan-postflood
+    primary_name: Cainan
+    aliases: [Kainan]
+    identity_status: witness_variant
+    description: Present between Arphaxad and Shelah in the Septuagint and Ge'ez line, absent from MT and SP.
+    citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 10:24; 11:12-13", witness_id: lxx-genesis-goettingen}]
+  - <<: *table
+    id: shelah
+    primary_name: Shelah
+    aliases: [Sala]
+  - <<: *table
+    id: eber
+    primary_name: Eber
+    aliases: [Heber]
+  - <<: *table
+    id: peleg
+    primary_name: Peleg
+    aliases: [Phalek]
+  - <<: *table
+    id: joktan
+    primary_name: Joktan
+    aliases: [Iektan]
+  - <<: *table
+    id: almodad
+    primary_name: Almodad
+    aliases: [Elmodad]
+  - <<: *table
+    id: sheleph
+    primary_name: Sheleph
+    aliases: [Saleph]
+  - <<: *table
+    id: hazarmaveth
+    primary_name: Hazarmaveth
+    aliases: [Sarmoth]
+  - <<: *table
+    id: jerah
+    primary_name: Jerah
+    aliases: [Iarach]
+  - <<: *table
+    id: hadoram
+    primary_name: Hadoram
+    aliases: [Odorrha]
+  - <<: *table
+    id: uzal
+    primary_name: Uzal
+    aliases: [Aizel]
+  - <<: *table
+    id: diklah
+    primary_name: Diklah
+    aliases: [Dekla]
+  - <<: *table
+    id: obal
+    primary_name: Obal
+    aliases: [Abimael]
+  - <<: *table
+    id: abimael
+    primary_name: Abimael
+    aliases: []
+  - <<: *table
+    id: sheba-joktan
+    primary_name: Sheba
+    aliases: [Saba]
+    description: Son of Joktan; not merged with Raamah's son.
+  - <<: *table
+    id: ophir
+    primary_name: Ophir
+    aliases: [Ouphir]
+  - <<: *table
+    id: havilah-joktan
+    primary_name: Havilah
+    aliases: [Evila]
+    description: Son of Joktan; not merged with Cush's son.
+  - <<: *table
+    id: jobab
+    primary_name: Jobab
+    aliases: [Iobab]
+  - &gen11
+    <<: *human
+    id: reu
+    primary_name: Reu
+    aliases: [Ragau]
+    citations: &gen11cite [{source_id: goettingen-genesis-1974, locator: "Genesis 11:10-32", witness_id: lxx-genesis-goettingen}]
+  - <<: *gen11
+    id: serug
+    primary_name: Serug
+    aliases: [Serouch]
+  - <<: *gen11
+    id: nahor-father-terah
+    primary_name: Nahor
+    aliases: [Nachor]
+    description: Father of Terah; not merged with Terah's son.
+  - <<: *gen11
+    id: terah
+    primary_name: Terah
+    aliases: [Thara]
+  - <<: *gen11
+    id: abram
+    primary_name: Abram
+    aliases: [Abraham]
+  - <<: *gen11
+    id: nahor-brother-abram
+    primary_name: Nahor
+    aliases: [Nachor]
+    description: Son of Terah; not merged with Terah's father.
+  - <<: *gen11
+    id: haran
+    primary_name: Haran
+    aliases: [Harran]
+  - <<: *gen11
+    id: lot
+    primary_name: Lot
+    aliases: []
+  - <<: *gen11
+    id: sarai
+    primary_name: Sarai
+    aliases: [Sarah, Sara]
+    gender: female
+  - <<: *gen11
+    id: milcah
+    primary_name: Milcah
+    aliases: [Melcha]
+    gender: female
+  - <<: *gen11
+    id: iscah
+    primary_name: Iscah
+    aliases: [Jescha]
+    gender: female
+  - &group
+    id: sons-of-god
+    entity_type: group
+    primary_name: Sons of God
+    aliases: []
+    classification: collective
+    identity_status: collective
+    citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 6:2,4", witness_id: lxx-genesis-goettingen}]
+  - <<: *group
+    id: daughters-of-men
+    primary_name: Daughters of Men
+    citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 6:1-4", witness_id: lxx-genesis-goettingen}]
+  - <<: *group
+    id: nephilim
+    primary_name: Giants
+    aliases: [Nephilim]
+    citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 6:4", witness_id: lxx-genesis-goettingen}]
+  - <<: *group
+    id: canaanite-peoples
+    primary_name: Canaanite peoples
+    aliases: [Jebusites, Amorites, Girgashites, Hivites, Arkites, Sinites, Arvadites, Zemarites, Hamathites]
+    citations: *gen10
+  - <<: *group
+    id: babel-builders
+    primary_name: Builders of Babel
+    aliases: []
+    citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 11:1-9", witness_id: lxx-genesis-goettingen}]

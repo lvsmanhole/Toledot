@@ -1,0 +1,138 @@
+schema_version: 1
+record_type: chronology_models
+records:
+  - id: masoretic_early
+    name: Masoretic early chronology
+    description: A deterministic Genesis 5 and 11 chain using BHS Masoretic claims, placed on the explicit editorial 4004 BCE display anchor.
+    citations: [{source_id: bhs-genesis, locator: "Genesis 5; 7:6; 9:28-29; 11:10-32", witness_id: mt-genesis-bhs}]
+    derivations:
+      - {id: adam-birth, operation: select_claim, claim_id: mt-early-adam-anchor}
+      - {id: adam-death, operation: offset_years, input_id: adam-birth, offset_claim_id: adam-lifespan-mt}
+      - {id: seth-birth, operation: offset_years, input_id: adam-birth, offset_claim_id: adam-age-at-seth-mt}
+      - {id: seth-death, operation: offset_years, input_id: seth-birth, offset_claim_id: seth-lifespan-mt}
+      - {id: enosh-birth, operation: offset_years, input_id: seth-birth, offset_claim_id: seth-age-at-enosh-mt}
+      - {id: enosh-death, operation: offset_years, input_id: enosh-birth, offset_claim_id: enosh-lifespan-mt}
+      - {id: kenan-birth, operation: offset_years, input_id: enosh-birth, offset_claim_id: enosh-age-at-kenan-mt}
+      - {id: kenan-death, operation: offset_years, input_id: kenan-birth, offset_claim_id: kenan-lifespan-mt}
+      - {id: mahalalel-birth, operation: offset_years, input_id: kenan-birth, offset_claim_id: kenan-age-at-mahalalel-mt}
+      - {id: mahalalel-death, operation: offset_years, input_id: mahalalel-birth, offset_claim_id: mahalalel-lifespan-mt}
+      - {id: jared-birth, operation: offset_years, input_id: mahalalel-birth, offset_claim_id: mahalalel-age-at-jared-mt}
+      - {id: jared-death, operation: offset_years, input_id: jared-birth, offset_claim_id: jared-lifespan-mt}
+      - {id: enoch-seth-birth, operation: offset_years, input_id: jared-birth, offset_claim_id: jared-age-at-enoch-seth-mt}
+      - {id: enoch-seth-death, operation: offset_years, input_id: enoch-seth-birth, offset_claim_id: enoch-seth-lifespan-mt}
+      - {id: methuselah-birth, operation: offset_years, input_id: enoch-seth-birth, offset_claim_id: enoch-seth-age-at-methuselah-mt}
+      - {id: methuselah-death, operation: offset_years, input_id: methuselah-birth, offset_claim_id: methuselah-lifespan-mt}
+      - {id: lamech-seth-birth, operation: offset_years, input_id: methuselah-birth, offset_claim_id: methuselah-age-at-lamech-seth-mt}
+      - {id: lamech-seth-death, operation: offset_years, input_id: lamech-seth-birth, offset_claim_id: lamech-seth-lifespan-mt}
+      - {id: noah-birth, operation: offset_years, input_id: lamech-seth-birth, offset_claim_id: lamech-seth-age-at-noah-mt}
+      - {id: noah-death, operation: offset_years, input_id: noah-birth, offset_claim_id: noah-lifespan-mt}
+      - {id: shem-birth, operation: offset_years, input_id: noah-birth, offset_claim_id: noah-age-at-shem-mt}
+      - {id: shem-death, operation: offset_years, input_id: shem-birth, offset_claim_id: shem-lifespan-mt}
+      - {id: arphaxad-birth, operation: offset_years, input_id: shem-birth, offset_claim_id: shem-age-at-arphaxad-mt}
+      - {id: arphaxad-death, operation: offset_years, input_id: arphaxad-birth, offset_claim_id: arphaxad-lifespan-mt}
+      - {id: shelah-birth, operation: offset_years, input_id: arphaxad-birth, offset_claim_id: arphaxad-age-at-shelah-mt}
+      - {id: shelah-death, operation: offset_years, input_id: shelah-birth, offset_claim_id: shelah-lifespan-mt}
+      - {id: eber-birth, operation: offset_years, input_id: shelah-birth, offset_claim_id: shelah-age-at-eber-mt}
+      - {id: eber-death, operation: offset_years, input_id: eber-birth, offset_claim_id: eber-lifespan-mt}
+      - {id: peleg-birth, operation: offset_years, input_id: eber-birth, offset_claim_id: eber-age-at-peleg-mt}
+      - {id: peleg-death, operation: offset_years, input_id: peleg-birth, offset_claim_id: peleg-lifespan-mt}
+      - {id: reu-birth, operation: offset_years, input_id: peleg-birth, offset_claim_id: peleg-age-at-reu-mt}
+      - {id: reu-death, operation: offset_years, input_id: reu-birth, offset_claim_id: reu-lifespan-mt}
+      - {id: serug-birth, operation: offset_years, input_id: reu-birth, offset_claim_id: reu-age-at-serug-mt}
+      - {id: serug-death, operation: offset_years, input_id: serug-birth, offset_claim_id: serug-lifespan-mt}
+      - {id: nahor-father-terah-birth, operation: offset_years, input_id: serug-birth, offset_claim_id: serug-age-at-nahor-father-terah-mt}
+      - {id: nahor-father-terah-death, operation: offset_years, input_id: nahor-father-terah-birth, offset_claim_id: nahor-father-terah-lifespan-mt}
+      - {id: terah-birth, operation: offset_years, input_id: nahor-father-terah-birth, offset_claim_id: nahor-father-terah-age-at-terah-mt}
+      - {id: terah-death, operation: offset_years, input_id: terah-birth, offset_claim_id: terah-lifespan-mt}
+    resolutions:
+      - &res {entity_id: adam, birth_derivation_id: adam-birth, death_derivation_id: adam-death, life_basis: synchronized, confidence_grade: D, evidence_claim_ids: [mt-early-adam-anchor, adam-lifespan-mt], alternative_claim_ids: [lxx-early-adam-anchor, sp-early-adam-anchor], explanation: "Civil years use the declared MT display anchor; relative ages and lifespan totals follow the selected witness."}
+      - <<: *res
+        entity_id: seth
+        birth_derivation_id: seth-birth
+        death_derivation_id: seth-death
+        evidence_claim_ids: [adam-age-at-seth-mt, seth-lifespan-mt]
+      - <<: *res
+        entity_id: enosh
+        birth_derivation_id: enosh-birth
+        death_derivation_id: enosh-death
+        evidence_claim_ids: [seth-age-at-enosh-mt, enosh-lifespan-mt]
+      - <<: *res
+        entity_id: kenan
+        birth_derivation_id: kenan-birth
+        death_derivation_id: kenan-death
+        evidence_claim_ids: [enosh-age-at-kenan-mt, kenan-lifespan-mt]
+      - <<: *res
+        entity_id: mahalalel
+        birth_derivation_id: mahalalel-birth
+        death_derivation_id: mahalalel-death
+        evidence_claim_ids: [kenan-age-at-mahalalel-mt, mahalalel-lifespan-mt]
+      - <<: *res
+        entity_id: jared
+        birth_derivation_id: jared-birth
+        death_derivation_id: jared-death
+        evidence_claim_ids: [mahalalel-age-at-jared-mt, jared-lifespan-mt]
+      - <<: *res
+        entity_id: enoch-seth
+        birth_derivation_id: enoch-seth-birth
+        death_derivation_id: enoch-seth-death
+        evidence_claim_ids: [jared-age-at-enoch-seth-mt, enoch-seth-lifespan-mt]
+      - <<: *res
+        entity_id: methuselah
+        birth_derivation_id: methuselah-birth
+        death_derivation_id: methuselah-death
+        evidence_claim_ids: [enoch-seth-age-at-methuselah-mt, methuselah-lifespan-mt]
+      - <<: *res
+        entity_id: lamech-seth
+        birth_derivation_id: lamech-seth-birth
+        death_derivation_id: lamech-seth-death
+        evidence_claim_ids: [methuselah-age-at-lamech-seth-mt, lamech-seth-lifespan-mt]
+      - <<: *res
+        entity_id: noah
+        birth_derivation_id: noah-birth
+        death_derivation_id: noah-death
+        evidence_claim_ids: [lamech-seth-age-at-noah-mt, noah-lifespan-mt]
+      - <<: *res
+        entity_id: shem
+        birth_derivation_id: shem-birth
+        death_derivation_id: shem-death
+        evidence_claim_ids: [noah-age-at-shem-mt, shem-lifespan-mt]
+      - <<: *res
+        entity_id: arphaxad
+        birth_derivation_id: arphaxad-birth
+        death_derivation_id: arphaxad-death
+        evidence_claim_ids: [shem-age-at-arphaxad-mt, arphaxad-lifespan-mt]
+      - <<: *res
+        entity_id: shelah
+        birth_derivation_id: shelah-birth
+        death_derivation_id: shelah-death
+        evidence_claim_ids: [arphaxad-age-at-shelah-mt, shelah-lifespan-mt]
+      - <<: *res
+        entity_id: eber
+        birth_derivation_id: eber-birth
+        death_derivation_id: eber-death
+        evidence_claim_ids: [shelah-age-at-eber-mt, eber-lifespan-mt]
+      - <<: *res
+        entity_id: peleg
+        birth_derivation_id: peleg-birth
+        death_derivation_id: peleg-death
+        evidence_claim_ids: [eber-age-at-peleg-mt, peleg-lifespan-mt]
+      - <<: *res
+        entity_id: reu
+        birth_derivation_id: reu-birth
+        death_derivation_id: reu-death
+        evidence_claim_ids: [peleg-age-at-reu-mt, reu-lifespan-mt]
+      - <<: *res
+        entity_id: serug
+        birth_derivation_id: serug-birth
+        death_derivation_id: serug-death
+        evidence_claim_ids: [reu-age-at-serug-mt, serug-lifespan-mt]
+      - <<: *res
+        entity_id: nahor-father-terah
+        birth_derivation_id: nahor-father-terah-birth
+        death_derivation_id: nahor-father-terah-death
+        evidence_claim_ids: [serug-age-at-nahor-father-terah-mt, nahor-father-terah-lifespan-mt]
+      - <<: *res
+        entity_id: terah
+        birth_derivation_id: terah-birth
+        death_derivation_id: terah-death
+        evidence_claim_ids: [nahor-father-terah-age-at-terah-mt, terah-lifespan-mt]

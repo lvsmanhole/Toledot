@@ -1,0 +1,405 @@
+schema_version: 1
+record_type: relationships
+records:
+  - &parent
+    id: adam-parent-cain
+    relationship_type: parent
+    subject_id: adam
+    object_id: cain
+    claim_ids: []
+    citations: &gencite [{source_id: goettingen-genesis-1974, locator: "Genesis 4-11", witness_id: lxx-genesis-goettingen}]
+  - <<: *parent
+    id: eve-parent-cain
+    subject_id: eve
+    object_id: cain
+  - <<: *parent
+    id: adam-parent-abel
+    subject_id: adam
+    object_id: abel
+  - <<: *parent
+    id: eve-parent-abel
+    subject_id: eve
+    object_id: abel
+  - <<: *parent
+    id: adam-parent-seth
+    subject_id: adam
+    object_id: seth
+  - <<: *parent
+    id: eve-parent-seth
+    subject_id: eve
+    object_id: seth
+  - <<: *parent
+    id: cain-parent-enoch-cain
+    subject_id: cain
+    object_id: enoch-cain
+  - <<: *parent
+    id: enoch-cain-parent-irad
+    subject_id: enoch-cain
+    object_id: irad
+  - <<: *parent
+    id: irad-parent-mehujael
+    subject_id: irad
+    object_id: mehujael
+  - <<: *parent
+    id: mehujael-parent-methushael
+    subject_id: mehujael
+    object_id: methushael
+  - <<: *parent
+    id: methushael-parent-lamech-cain
+    subject_id: methushael
+    object_id: lamech-cain
+  - <<: *parent
+    id: lamech-cain-parent-jabal
+    subject_id: lamech-cain
+    object_id: jabal
+  - <<: *parent
+    id: lamech-cain-parent-jubal
+    subject_id: lamech-cain
+    object_id: jubal
+  - <<: *parent
+    id: lamech-cain-parent-tubal-cain
+    subject_id: lamech-cain
+    object_id: tubal-cain
+  - <<: *parent
+    id: lamech-cain-parent-naamah
+    subject_id: lamech-cain
+    object_id: naamah
+  - <<: *parent
+    id: seth-parent-enosh
+    subject_id: seth
+    object_id: enosh
+  - <<: *parent
+    id: enosh-parent-kenan
+    subject_id: enosh
+    object_id: kenan
+  - <<: *parent
+    id: kenan-parent-mahalalel
+    subject_id: kenan
+    object_id: mahalalel
+  - <<: *parent
+    id: mahalalel-parent-jared
+    subject_id: mahalalel
+    object_id: jared
+  - <<: *parent
+    id: jared-parent-enoch-seth
+    subject_id: jared
+    object_id: enoch-seth
+  - <<: *parent
+    id: enoch-seth-parent-methuselah
+    subject_id: enoch-seth
+    object_id: methuselah
+  - <<: *parent
+    id: methuselah-parent-lamech-seth
+    subject_id: methuselah
+    object_id: lamech-seth
+  - <<: *parent
+    id: lamech-seth-parent-noah
+    subject_id: lamech-seth
+    object_id: noah
+  - <<: *parent
+    id: noah-parent-shem
+    subject_id: noah
+    object_id: shem
+  - <<: *parent
+    id: noah-parent-ham
+    subject_id: noah
+    object_id: ham
+  - <<: *parent
+    id: noah-parent-japheth
+    subject_id: noah
+    object_id: japheth
+  - <<: *parent
+    id: japheth-parent-gomer
+    subject_id: japheth
+    object_id: gomer
+  - <<: *parent
+    id: japheth-parent-magog
+    subject_id: japheth
+    object_id: magog
+  - <<: *parent
+    id: japheth-parent-madai
+    subject_id: japheth
+    object_id: madai
+  - <<: *parent
+    id: japheth-parent-javan
+    subject_id: japheth
+    object_id: javan
+  - <<: *parent
+    id: japheth-parent-tubal
+    subject_id: japheth
+    object_id: tubal
+  - <<: *parent
+    id: japheth-parent-meshech
+    subject_id: japheth
+    object_id: meshech
+  - <<: *parent
+    id: japheth-parent-tiras
+    subject_id: japheth
+    object_id: tiras
+  - <<: *parent
+    id: gomer-parent-ashkenaz
+    subject_id: gomer
+    object_id: ashkenaz
+  - <<: *parent
+    id: gomer-parent-riphath
+    subject_id: gomer
+    object_id: riphath
+  - <<: *parent
+    id: gomer-parent-togarmah
+    subject_id: gomer
+    object_id: togarmah
+  - <<: *parent
+    id: javan-parent-elishah
+    subject_id: javan
+    object_id: elishah
+  - <<: *parent
+    id: javan-parent-tarshish
+    subject_id: javan
+    object_id: tarshish
+  - <<: *parent
+    id: javan-parent-kittim
+    subject_id: javan
+    object_id: kittim
+  - <<: *parent
+    id: javan-parent-dodanim
+    subject_id: javan
+    object_id: dodanim
+  - <<: *parent
+    id: ham-parent-cush
+    subject_id: ham
+    object_id: cush
+  - <<: *parent
+    id: ham-parent-mizraim
+    subject_id: ham
+    object_id: mizraim
+  - <<: *parent
+    id: ham-parent-put
+    subject_id: ham
+    object_id: put
+  - <<: *parent
+    id: ham-parent-canaan
+    subject_id: ham
+    object_id: canaan
+  - <<: *parent
+    id: cush-parent-seba
+    subject_id: cush
+    object_id: seba
+  - <<: *parent
+    id: cush-parent-havilah-cush
+    subject_id: cush
+    object_id: havilah-cush
+  - <<: *parent
+    id: cush-parent-sabtah
+    subject_id: cush
+    object_id: sabtah
+  - <<: *parent
+    id: cush-parent-raamah
+    subject_id: cush
+    object_id: raamah
+  - <<: *parent
+    id: cush-parent-sabteca
+    subject_id: cush
+    object_id: sabteca
+  - <<: *parent
+    id: cush-parent-nimrod
+    subject_id: cush
+    object_id: nimrod
+  - <<: *parent
+    id: raamah-parent-sheba-raamah
+    subject_id: raamah
+    object_id: sheba-raamah
+  - <<: *parent
+    id: raamah-parent-dedan-raamah
+    subject_id: raamah
+    object_id: dedan-raamah
+  - <<: *parent
+    id: mizraim-parent-ludim
+    subject_id: mizraim
+    object_id: ludim
+  - <<: *parent
+    id: mizraim-parent-anamim
+    subject_id: mizraim
+    object_id: anamim
+  - <<: *parent
+    id: mizraim-parent-lehabim
+    subject_id: mizraim
+    object_id: lehabim
+  - <<: *parent
+    id: mizraim-parent-naphtuhim
+    subject_id: mizraim
+    object_id: naphtuhim
+  - <<: *parent
+    id: mizraim-parent-pathrusim
+    subject_id: mizraim
+    object_id: pathrusim
+  - <<: *parent
+    id: mizraim-parent-casluhim
+    subject_id: mizraim
+    object_id: casluhim
+  - <<: *parent
+    id: mizraim-parent-caphtorim
+    subject_id: mizraim
+    object_id: caphtorim
+  - <<: *parent
+    id: canaan-parent-sidon
+    subject_id: canaan
+    object_id: sidon
+  - <<: *parent
+    id: canaan-parent-heth
+    subject_id: canaan
+    object_id: heth
+  - <<: *parent
+    id: shem-parent-elam
+    subject_id: shem
+    object_id: elam
+  - <<: *parent
+    id: shem-parent-asshur
+    subject_id: shem
+    object_id: asshur
+  - <<: *parent
+    id: shem-parent-arphaxad
+    subject_id: shem
+    object_id: arphaxad
+  - <<: *parent
+    id: shem-parent-lud
+    subject_id: shem
+    object_id: lud-shem
+  - <<: *parent
+    id: shem-parent-aram
+    subject_id: shem
+    object_id: aram
+  - <<: *parent
+    id: aram-parent-uz
+    subject_id: aram
+    object_id: uz
+  - <<: *parent
+    id: aram-parent-hul
+    subject_id: aram
+    object_id: hul
+  - <<: *parent
+    id: aram-parent-gether
+    subject_id: aram
+    object_id: gether
+  - <<: *parent
+    id: aram-parent-mash
+    subject_id: aram
+    object_id: mash
+  - <<: *parent
+    id: arphaxad-parent-cainan-lxx
+    subject_id: arphaxad
+    object_id: cainan-postflood
+    citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 10:24; 11:12-13", witness_id: lxx-genesis-goettingen}]
+  - <<: *parent
+    id: cainan-parent-shelah-lxx
+    subject_id: cainan-postflood
+    object_id: shelah
+    citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 10:24; 11:13", witness_id: lxx-genesis-goettingen}]
+  - <<: *parent
+    id: arphaxad-parent-shelah-mt-sp
+    subject_id: arphaxad
+    object_id: shelah
+    citations: [{source_id: bhs-genesis, locator: "Genesis 10:24; 11:12", witness_id: mt-genesis-bhs}, {source_id: schorch-samaritan-genesis-2021, locator: "Genesis 10:24; 11:12", witness_id: sp-genesis-schorch}]
+  - <<: *parent
+    id: shelah-parent-eber
+    subject_id: shelah
+    object_id: eber
+  - <<: *parent
+    id: eber-parent-peleg
+    subject_id: eber
+    object_id: peleg
+  - <<: *parent
+    id: eber-parent-joktan
+    subject_id: eber
+    object_id: joktan
+  - <<: *parent
+    id: joktan-parent-almodad
+    subject_id: joktan
+    object_id: almodad
+  - <<: *parent
+    id: joktan-parent-sheleph
+    subject_id: joktan
+    object_id: sheleph
+  - <<: *parent
+    id: joktan-parent-hazarmaveth
+    subject_id: joktan
+    object_id: hazarmaveth
+  - <<: *parent
+    id: joktan-parent-jerah
+    subject_id: joktan
+    object_id: jerah
+  - <<: *parent
+    id: joktan-parent-hadoram
+    subject_id: joktan
+    object_id: hadoram
+  - <<: *parent
+    id: joktan-parent-uzal
+    subject_id: joktan
+    object_id: uzal
+  - <<: *parent
+    id: joktan-parent-diklah
+    subject_id: joktan
+    object_id: diklah
+  - <<: *parent
+    id: joktan-parent-obal
+    subject_id: joktan
+    object_id: obal
+  - <<: *parent
+    id: joktan-parent-abimael
+    subject_id: joktan
+    object_id: abimael
+  - <<: *parent
+    id: joktan-parent-sheba-joktan
+    subject_id: joktan
+    object_id: sheba-joktan
+  - <<: *parent
+    id: joktan-parent-ophir
+    subject_id: joktan
+    object_id: ophir
+  - <<: *parent
+    id: joktan-parent-havilah-joktan
+    subject_id: joktan
+    object_id: havilah-joktan
+  - <<: *parent
+    id: joktan-parent-jobab
+    subject_id: joktan
+    object_id: jobab
+  - <<: *parent
+    id: peleg-parent-reu
+    subject_id: peleg
+    object_id: reu
+  - <<: *parent
+    id: reu-parent-serug
+    subject_id: reu
+    object_id: serug
+  - <<: *parent
+    id: serug-parent-nahor
+    subject_id: serug
+    object_id: nahor-father-terah
+  - <<: *parent
+    id: nahor-parent-terah
+    subject_id: nahor-father-terah
+    object_id: terah
+  - <<: *parent
+    id: terah-parent-abram
+    subject_id: terah
+    object_id: abram
+  - <<: *parent
+    id: terah-parent-nahor
+    subject_id: terah
+    object_id: nahor-brother-abram
+  - <<: *parent
+    id: terah-parent-haran
+    subject_id: terah
+    object_id: haran
+  - <<: *parent
+    id: haran-parent-lot
+    subject_id: haran
+    object_id: lot
+  - <<: *parent
+    id: haran-parent-milcah
+    subject_id: haran
+    object_id: milcah
+  - <<: *parent
+    id: haran-parent-iscah
+    subject_id: haran
+    object_id: iscah

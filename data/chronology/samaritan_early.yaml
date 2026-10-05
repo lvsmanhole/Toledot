@@ -1,0 +1,138 @@
+schema_version: 1
+record_type: chronology_models
+records:
+  - id: samaritan_early
+    name: Samaritan Pentateuch early chronology
+    description: A deterministic Genesis 5 and 11 chain using the Samaritan Pentateuch claims, placed on an explicit editorial 4426 BCE display anchor.
+    citations: [{source_id: schorch-samaritan-genesis-2021, locator: "Genesis 5; 7:6; 9:28-29; 11:10-32", witness_id: sp-genesis-schorch}]
+    derivations:
+      - {id: adam-birth, operation: select_claim, claim_id: sp-early-adam-anchor}
+      - {id: adam-death, operation: offset_years, input_id: adam-birth, offset_claim_id: adam-lifespan-sp}
+      - {id: seth-birth, operation: offset_years, input_id: adam-birth, offset_claim_id: adam-age-at-seth-sp}
+      - {id: seth-death, operation: offset_years, input_id: seth-birth, offset_claim_id: seth-lifespan-sp}
+      - {id: enosh-birth, operation: offset_years, input_id: seth-birth, offset_claim_id: seth-age-at-enosh-sp}
+      - {id: enosh-death, operation: offset_years, input_id: enosh-birth, offset_claim_id: enosh-lifespan-sp}
+      - {id: kenan-birth, operation: offset_years, input_id: enosh-birth, offset_claim_id: enosh-age-at-kenan-sp}
+      - {id: kenan-death, operation: offset_years, input_id: kenan-birth, offset_claim_id: kenan-lifespan-sp}
+      - {id: mahalalel-birth, operation: offset_years, input_id: kenan-birth, offset_claim_id: kenan-age-at-mahalalel-sp}
+      - {id: mahalalel-death, operation: offset_years, input_id: mahalalel-birth, offset_claim_id: mahalalel-lifespan-sp}
+      - {id: jared-birth, operation: offset_years, input_id: mahalalel-birth, offset_claim_id: mahalalel-age-at-jared-sp}
+      - {id: jared-death, operation: offset_years, input_id: jared-birth, offset_claim_id: jared-lifespan-sp}
+      - {id: enoch-seth-birth, operation: offset_years, input_id: jared-birth, offset_claim_id: jared-age-at-enoch-seth-sp}
+      - {id: enoch-seth-death, operation: offset_years, input_id: enoch-seth-birth, offset_claim_id: enoch-seth-lifespan-sp}
+      - {id: methuselah-birth, operation: offset_years, input_id: enoch-seth-birth, offset_claim_id: enoch-seth-age-at-methuselah-sp}
+      - {id: methuselah-death, operation: offset_years, input_id: methuselah-birth, offset_claim_id: methuselah-lifespan-sp}
+      - {id: lamech-seth-birth, operation: offset_years, input_id: methuselah-birth, offset_claim_id: methuselah-age-at-lamech-seth-sp}
+      - {id: lamech-seth-death, operation: offset_years, input_id: lamech-seth-birth, offset_claim_id: lamech-seth-lifespan-sp}
+      - {id: noah-birth, operation: offset_years, input_id: lamech-seth-birth, offset_claim_id: lamech-seth-age-at-noah-sp}
+      - {id: noah-death, operation: offset_years, input_id: noah-birth, offset_claim_id: noah-lifespan-sp}
+      - {id: shem-birth, operation: offset_years, input_id: noah-birth, offset_claim_id: noah-age-at-shem-sp}
+      - {id: shem-death, operation: offset_years, input_id: shem-birth, offset_claim_id: shem-lifespan-sp}
+      - {id: arphaxad-birth, operation: offset_years, input_id: shem-birth, offset_claim_id: shem-age-at-arphaxad-sp}
+      - {id: arphaxad-death, operation: offset_years, input_id: arphaxad-birth, offset_claim_id: arphaxad-lifespan-sp}
+      - {id: shelah-birth, operation: offset_years, input_id: arphaxad-birth, offset_claim_id: arphaxad-age-at-shelah-sp}
+      - {id: shelah-death, operation: offset_years, input_id: shelah-birth, offset_claim_id: shelah-lifespan-sp}
+      - {id: eber-birth, operation: offset_years, input_id: shelah-birth, offset_claim_id: shelah-age-at-eber-sp}
+      - {id: eber-death, operation: offset_years, input_id: eber-birth, offset_claim_id: eber-lifespan-sp}
+      - {id: peleg-birth, operation: offset_years, input_id: eber-birth, offset_claim_id: eber-age-at-peleg-sp}
+      - {id: peleg-death, operation: offset_years, input_id: peleg-birth, offset_claim_id: peleg-lifespan-sp}
+      - {id: reu-birth, operation: offset_years, input_id: peleg-birth, offset_claim_id: peleg-age-at-reu-sp}
+      - {id: reu-death, operation: offset_years, input_id: reu-birth, offset_claim_id: reu-lifespan-sp}
+      - {id: serug-birth, operation: offset_years, input_id: reu-birth, offset_claim_id: reu-age-at-serug-sp}
+      - {id: serug-death, operation: offset_years, input_id: serug-birth, offset_claim_id: serug-lifespan-sp}
+      - {id: nahor-father-terah-birth, operation: offset_years, input_id: serug-birth, offset_claim_id: serug-age-at-nahor-father-terah-sp}
+      - {id: nahor-father-terah-death, operation: offset_years, input_id: nahor-father-terah-birth, offset_claim_id: nahor-father-terah-lifespan-sp}
+      - {id: terah-birth, operation: offset_years, input_id: nahor-father-terah-birth, offset_claim_id: nahor-father-terah-age-at-terah-sp}
+      - {id: terah-death, operation: offset_years, input_id: terah-birth, offset_claim_id: terah-lifespan-sp}
+    resolutions:
+      - &res {entity_id: adam, birth_derivation_id: adam-birth, death_derivation_id: adam-death, life_basis: synchronized, confidence_grade: D, evidence_claim_ids: [sp-early-adam-anchor, adam-lifespan-sp], alternative_claim_ids: [lxx-early-adam-anchor, mt-early-adam-anchor], explanation: "Civil years use the declared SP display anchor; relative ages and lifespan totals follow the selected witness."}
+      - <<: *res
+        entity_id: seth
+        birth_derivation_id: seth-birth
+        death_derivation_id: seth-death
+        evidence_claim_ids: [adam-age-at-seth-sp, seth-lifespan-sp]
+      - <<: *res
+        entity_id: enosh
+        birth_derivation_id: enosh-birth
+        death_derivation_id: enosh-death
+        evidence_claim_ids: [seth-age-at-enosh-sp, enosh-lifespan-sp]
+      - <<: *res
+        entity_id: kenan
+        birth_derivation_id: kenan-birth
+        death_derivation_id: kenan-death
+        evidence_claim_ids: [enosh-age-at-kenan-sp, kenan-lifespan-sp]
+      - <<: *res
+        entity_id: mahalalel
+        birth_derivation_id: mahalalel-birth
+        death_derivation_id: mahalalel-death
+        evidence_claim_ids: [kenan-age-at-mahalalel-sp, mahalalel-lifespan-sp]
+      - <<: *res
+        entity_id: jared
+        birth_derivation_id: jared-birth
+        death_derivation_id: jared-death
+        evidence_claim_ids: [mahalalel-age-at-jared-sp, jared-lifespan-sp]
+      - <<: *res
+        entity_id: enoch-seth
+        birth_derivation_id: enoch-seth-birth
+        death_derivation_id: enoch-seth-death
+        evidence_claim_ids: [jared-age-at-enoch-seth-sp, enoch-seth-lifespan-sp]
+      - <<: *res
+        entity_id: methuselah
+        birth_derivation_id: methuselah-birth
+        death_derivation_id: methuselah-death
+        evidence_claim_ids: [enoch-seth-age-at-methuselah-sp, methuselah-lifespan-sp]
+      - <<: *res
+        entity_id: lamech-seth
+        birth_derivation_id: lamech-seth-birth
+        death_derivation_id: lamech-seth-death
+        evidence_claim_ids: [methuselah-age-at-lamech-seth-sp, lamech-seth-lifespan-sp]
+      - <<: *res
+        entity_id: noah
+        birth_derivation_id: noah-birth
+        death_derivation_id: noah-death
+        evidence_claim_ids: [lamech-seth-age-at-noah-sp, noah-lifespan-sp]
+      - <<: *res
+        entity_id: shem
+        birth_derivation_id: shem-birth
+        death_derivation_id: shem-death
+        evidence_claim_ids: [noah-age-at-shem-sp, shem-lifespan-sp]
+      - <<: *res
+        entity_id: arphaxad
+        birth_derivation_id: arphaxad-birth
+        death_derivation_id: arphaxad-death
+        evidence_claim_ids: [shem-age-at-arphaxad-sp, arphaxad-lifespan-sp]
+      - <<: *res
+        entity_id: shelah
+        birth_derivation_id: shelah-birth
+        death_derivation_id: shelah-death
+        evidence_claim_ids: [arphaxad-age-at-shelah-sp, shelah-lifespan-sp]
+      - <<: *res
+        entity_id: eber
+        birth_derivation_id: eber-birth
+        death_derivation_id: eber-death
+        evidence_claim_ids: [shelah-age-at-eber-sp, eber-lifespan-sp]
+      - <<: *res
+        entity_id: peleg
+        birth_derivation_id: peleg-birth
+        death_derivation_id: peleg-death
+        evidence_claim_ids: [eber-age-at-peleg-sp, peleg-lifespan-sp]
+      - <<: *res
+        entity_id: reu
+        birth_derivation_id: reu-birth
+        death_derivation_id: reu-death
+        evidence_claim_ids: [peleg-age-at-reu-sp, reu-lifespan-sp]
+      - <<: *res
+        entity_id: serug
+        birth_derivation_id: serug-birth
+        death_derivation_id: serug-death
+        evidence_claim_ids: [reu-age-at-serug-sp, serug-lifespan-sp]
+      - <<: *res
+        entity_id: nahor-father-terah
+        birth_derivation_id: nahor-father-terah-birth
+        death_derivation_id: nahor-father-terah-death
+        evidence_claim_ids: [serug-age-at-nahor-father-terah-sp, nahor-father-terah-lifespan-sp]
+      - <<: *res
+        entity_id: terah
+        birth_derivation_id: terah-birth
+        death_derivation_id: terah-death
+        evidence_claim_ids: [nahor-father-terah-age-at-terah-sp, terah-lifespan-sp]

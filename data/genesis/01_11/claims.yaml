@@ -1,0 +1,888 @@
+schema_version: 1
+record_type: claims
+records:
+  # Genesis 5: age at the named descendant, preserved separately by witness.
+  - &age_lxx5
+    id: adam-age-at-seth-lxx
+    subject_id: adam
+    predicate: age_at_birth_of
+    object_id: seth
+    value: {kind: duration, value: 230, unit: years}
+    evidence_type: explicit_text
+    witness_id: lxx-genesis-goettingen
+    confidence: A
+    citations: &lxx5cite [{source_id: goettingen-genesis-1974, locator: "Genesis 5:3", witness_id: lxx-genesis-goettingen, passage_id: gen-5-1-32-lxx}]
+  - <<: *age_lxx5
+    id: seth-age-at-enosh-lxx
+    subject_id: seth
+    object_id: enosh
+    value: {kind: duration, value: 205, unit: years}
+    citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 5:6", witness_id: lxx-genesis-goettingen, passage_id: gen-5-1-32-lxx}]
+  - <<: *age_lxx5
+    id: enosh-age-at-kenan-lxx
+    subject_id: enosh
+    object_id: kenan
+    value: {kind: duration, value: 190, unit: years}
+    citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 5:9", witness_id: lxx-genesis-goettingen, passage_id: gen-5-1-32-lxx}]
+  - <<: *age_lxx5
+    id: kenan-age-at-mahalalel-lxx
+    subject_id: kenan
+    object_id: mahalalel
+    value: {kind: duration, value: 170, unit: years}
+    citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 5:12", witness_id: lxx-genesis-goettingen, passage_id: gen-5-1-32-lxx}]
+  - <<: *age_lxx5
+    id: mahalalel-age-at-jared-lxx
+    subject_id: mahalalel
+    object_id: jared
+    value: {kind: duration, value: 165, unit: years}
+    citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 5:15", witness_id: lxx-genesis-goettingen, passage_id: gen-5-1-32-lxx}]
+  - <<: *age_lxx5
+    id: jared-age-at-enoch-seth-lxx
+    subject_id: jared
+    object_id: enoch-seth
+    value: {kind: duration, value: 162, unit: years}
+    citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 5:18", witness_id: lxx-genesis-goettingen, passage_id: gen-5-1-32-lxx}]
+  - <<: *age_lxx5
+    id: enoch-seth-age-at-methuselah-lxx
+    subject_id: enoch-seth
+    object_id: methuselah
+    value: {kind: duration, value: 165, unit: years}
+    citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 5:21", witness_id: lxx-genesis-goettingen, passage_id: gen-5-1-32-lxx}]
+  - <<: *age_lxx5
+    id: methuselah-age-at-lamech-seth-lxx
+    subject_id: methuselah
+    object_id: lamech-seth
+    value: {kind: duration, value: 167, unit: years}
+    interpretation_note: Rahlfs/Wevers base reading; other Greek manuscript traditions preserve 187.
+    citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 5:25 and apparatus", witness_id: lxx-genesis-goettingen, passage_id: gen-5-1-32-lxx}]
+  - <<: *age_lxx5
+    id: lamech-seth-age-at-noah-lxx
+    subject_id: lamech-seth
+    object_id: noah
+    value: {kind: duration, value: 188, unit: years}
+    citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 5:28", witness_id: lxx-genesis-goettingen, passage_id: gen-5-1-32-lxx}]
+  - &life_lxx5
+    id: adam-lifespan-lxx
+    subject_id: adam
+    predicate: lifespan
+    value: {kind: duration, value: 930, unit: years}
+    evidence_type: explicit_text
+    witness_id: lxx-genesis-goettingen
+    confidence: A
+    citations: *lxx5cite
+  - <<: *life_lxx5
+    id: seth-lifespan-lxx
+    subject_id: seth
+    value: {kind: duration, value: 912, unit: years}
+  - <<: *life_lxx5
+    id: enosh-lifespan-lxx
+    subject_id: enosh
+    value: {kind: duration, value: 905, unit: years}
+  - <<: *life_lxx5
+    id: kenan-lifespan-lxx
+    subject_id: kenan
+    value: {kind: duration, value: 910, unit: years}
+  - <<: *life_lxx5
+    id: mahalalel-lifespan-lxx
+    subject_id: mahalalel
+    value: {kind: duration, value: 895, unit: years}
+  - <<: *life_lxx5
+    id: jared-lifespan-lxx
+    subject_id: jared
+    value: {kind: duration, value: 962, unit: years}
+  - <<: *life_lxx5
+    id: enoch-seth-lifespan-lxx
+    subject_id: enoch-seth
+    value: {kind: duration, value: 365, unit: years}
+    interpretation_note: Total years until Enoch was taken; encoded as the visible timeline endpoint, not an assertion of ordinary death.
+  - <<: *life_lxx5
+    id: methuselah-lifespan-lxx
+    subject_id: methuselah
+    value: {kind: duration, value: 969, unit: years}
+  - <<: *life_lxx5
+    id: lamech-seth-lifespan-lxx
+    subject_id: lamech-seth
+    value: {kind: duration, value: 753, unit: years}
+  - <<: *life_lxx5
+    id: noah-lifespan-lxx
+    subject_id: noah
+    value: {kind: duration, value: 950, unit: years}
+    citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 9:28-29", witness_id: lxx-genesis-goettingen, passage_id: gen-9-18-29-lxx}]
+
+  - &age_mt5
+    id: adam-age-at-seth-mt
+    subject_id: adam
+    predicate: age_at_birth_of
+    object_id: seth
+    value: {kind: duration, value: 130, unit: years}
+    evidence_type: explicit_text
+    witness_id: mt-genesis-bhs
+    confidence: A
+    citations: &mt5cite [{source_id: bhs-genesis, locator: "Genesis 5", witness_id: mt-genesis-bhs, passage_id: gen-5-1-32-mt}]
+  - <<: *age_mt5
+    id: seth-age-at-enosh-mt
+    subject_id: seth
+    object_id: enosh
+    value: {kind: duration, value: 105, unit: years}
+  - <<: *age_mt5
+    id: enosh-age-at-kenan-mt
+    subject_id: enosh
+    object_id: kenan
+    value: {kind: duration, value: 90, unit: years}
+  - <<: *age_mt5
+    id: kenan-age-at-mahalalel-mt
+    subject_id: kenan
+    object_id: mahalalel
+    value: {kind: duration, value: 70, unit: years}
+  - <<: *age_mt5
+    id: mahalalel-age-at-jared-mt
+    subject_id: mahalalel
+    object_id: jared
+    value: {kind: duration, value: 65, unit: years}
+  - <<: *age_mt5
+    id: jared-age-at-enoch-seth-mt
+    subject_id: jared
+    object_id: enoch-seth
+    value: {kind: duration, value: 162, unit: years}
+  - <<: *age_mt5
+    id: enoch-seth-age-at-methuselah-mt
+    subject_id: enoch-seth
+    object_id: methuselah
+    value: {kind: duration, value: 65, unit: years}
+  - <<: *age_mt5
+    id: methuselah-age-at-lamech-seth-mt
+    subject_id: methuselah
+    object_id: lamech-seth
+    value: {kind: duration, value: 187, unit: years}
+  - <<: *age_mt5
+    id: lamech-seth-age-at-noah-mt
+    subject_id: lamech-seth
+    object_id: noah
+    value: {kind: duration, value: 182, unit: years}
+  - &life_mt5
+    id: adam-lifespan-mt
+    subject_id: adam
+    predicate: lifespan
+    value: {kind: duration, value: 930, unit: years}
+    evidence_type: explicit_text
+    witness_id: mt-genesis-bhs
+    confidence: A
+    citations: *mt5cite
+  - <<: *life_mt5
+    id: seth-lifespan-mt
+    subject_id: seth
+    value: {kind: duration, value: 912, unit: years}
+  - <<: *life_mt5
+    id: enosh-lifespan-mt
+    subject_id: enosh
+    value: {kind: duration, value: 905, unit: years}
+  - <<: *life_mt5
+    id: kenan-lifespan-mt
+    subject_id: kenan
+    value: {kind: duration, value: 910, unit: years}
+  - <<: *life_mt5
+    id: mahalalel-lifespan-mt
+    subject_id: mahalalel
+    value: {kind: duration, value: 895, unit: years}
+  - <<: *life_mt5
+    id: jared-lifespan-mt
+    subject_id: jared
+    value: {kind: duration, value: 962, unit: years}
+  - <<: *life_mt5
+    id: enoch-seth-lifespan-mt
+    subject_id: enoch-seth
+    value: {kind: duration, value: 365, unit: years}
+  - <<: *life_mt5
+    id: methuselah-lifespan-mt
+    subject_id: methuselah
+    value: {kind: duration, value: 969, unit: years}
+  - <<: *life_mt5
+    id: lamech-seth-lifespan-mt
+    subject_id: lamech-seth
+    value: {kind: duration, value: 777, unit: years}
+  - <<: *life_mt5
+    id: noah-lifespan-mt
+    subject_id: noah
+    value: {kind: duration, value: 950, unit: years}
+
+  - &age_sp5
+    id: adam-age-at-seth-sp
+    subject_id: adam
+    predicate: age_at_birth_of
+    object_id: seth
+    value: {kind: duration, value: 130, unit: years}
+    evidence_type: explicit_text
+    witness_id: sp-genesis-schorch
+    confidence: A
+    citations: &sp5cite [{source_id: schorch-samaritan-genesis-2021, locator: "Genesis 5", witness_id: sp-genesis-schorch, passage_id: gen-5-1-32-sp}]
+  - <<: *age_sp5
+    id: seth-age-at-enosh-sp
+    subject_id: seth
+    object_id: enosh
+    value: {kind: duration, value: 105, unit: years}
+  - <<: *age_sp5
+    id: enosh-age-at-kenan-sp
+    subject_id: enosh
+    object_id: kenan
+    value: {kind: duration, value: 90, unit: years}
+  - <<: *age_sp5
+    id: kenan-age-at-mahalalel-sp
+    subject_id: kenan
+    object_id: mahalalel
+    value: {kind: duration, value: 70, unit: years}
+  - <<: *age_sp5
+    id: mahalalel-age-at-jared-sp
+    subject_id: mahalalel
+    object_id: jared
+    value: {kind: duration, value: 65, unit: years}
+  - <<: *age_sp5
+    id: jared-age-at-enoch-seth-sp
+    subject_id: jared
+    object_id: enoch-seth
+    value: {kind: duration, value: 62, unit: years}
+  - <<: *age_sp5
+    id: enoch-seth-age-at-methuselah-sp
+    subject_id: enoch-seth
+    object_id: methuselah
+    value: {kind: duration, value: 65, unit: years}
+  - <<: *age_sp5
+    id: methuselah-age-at-lamech-seth-sp
+    subject_id: methuselah
+    object_id: lamech-seth
+    value: {kind: duration, value: 67, unit: years}
+  - <<: *age_sp5
+    id: lamech-seth-age-at-noah-sp
+    subject_id: lamech-seth
+    object_id: noah
+    value: {kind: duration, value: 53, unit: years}
+  - &life_sp5
+    id: adam-lifespan-sp
+    subject_id: adam
+    predicate: lifespan
+    value: {kind: duration, value: 930, unit: years}
+    evidence_type: explicit_text
+    witness_id: sp-genesis-schorch
+    confidence: A
+    citations: *sp5cite
+  - <<: *life_sp5
+    id: seth-lifespan-sp
+    subject_id: seth
+    value: {kind: duration, value: 912, unit: years}
+  - <<: *life_sp5
+    id: enosh-lifespan-sp
+    subject_id: enosh
+    value: {kind: duration, value: 905, unit: years}
+  - <<: *life_sp5
+    id: kenan-lifespan-sp
+    subject_id: kenan
+    value: {kind: duration, value: 910, unit: years}
+  - <<: *life_sp5
+    id: mahalalel-lifespan-sp
+    subject_id: mahalalel
+    value: {kind: duration, value: 895, unit: years}
+  - <<: *life_sp5
+    id: jared-lifespan-sp
+    subject_id: jared
+    value: {kind: duration, value: 847, unit: years}
+  - <<: *life_sp5
+    id: enoch-seth-lifespan-sp
+    subject_id: enoch-seth
+    value: {kind: duration, value: 365, unit: years}
+  - <<: *life_sp5
+    id: methuselah-lifespan-sp
+    subject_id: methuselah
+    value: {kind: duration, value: 720, unit: years}
+  - <<: *life_sp5
+    id: lamech-seth-lifespan-sp
+    subject_id: lamech-seth
+    value: {kind: duration, value: 653, unit: years}
+  - <<: *life_sp5
+    id: noah-lifespan-sp
+    subject_id: noah
+    value: {kind: duration, value: 950, unit: years}
+
+  # Genesis 11: direct begetting ages. Cainan is retained only in the LXX chain.
+  - &age_lxx11
+    id: shem-age-at-arphaxad-lxx
+    subject_id: shem
+    predicate: age_at_birth_of
+    object_id: arphaxad
+    value: {kind: duration, value: 100, unit: years}
+    evidence_type: explicit_text
+    witness_id: lxx-genesis-goettingen
+    confidence: A
+    citations: &lxx11cite [{source_id: goettingen-genesis-1974, locator: "Genesis 11:10-26", witness_id: lxx-genesis-goettingen, passage_id: gen-11-10-26-lxx}]
+  - <<: *age_lxx11
+    id: arphaxad-age-at-cainan-postflood-lxx
+    subject_id: arphaxad
+    object_id: cainan-postflood
+    value: {kind: duration, value: 135, unit: years}
+  - <<: *age_lxx11
+    id: cainan-postflood-age-at-shelah-lxx
+    subject_id: cainan-postflood
+    object_id: shelah
+    value: {kind: duration, value: 130, unit: years}
+  - <<: *age_lxx11
+    id: shelah-age-at-eber-lxx
+    subject_id: shelah
+    object_id: eber
+    value: {kind: duration, value: 130, unit: years}
+  - <<: *age_lxx11
+    id: eber-age-at-peleg-lxx
+    subject_id: eber
+    object_id: peleg
+    value: {kind: duration, value: 134, unit: years}
+  - <<: *age_lxx11
+    id: peleg-age-at-reu-lxx
+    subject_id: peleg
+    object_id: reu
+    value: {kind: duration, value: 130, unit: years}
+  - <<: *age_lxx11
+    id: reu-age-at-serug-lxx
+    subject_id: reu
+    object_id: serug
+    value: {kind: duration, value: 132, unit: years}
+  - <<: *age_lxx11
+    id: serug-age-at-nahor-father-terah-lxx
+    subject_id: serug
+    object_id: nahor-father-terah
+    value: {kind: duration, value: 130, unit: years}
+  - <<: *age_lxx11
+    id: nahor-father-terah-age-at-terah-lxx
+    subject_id: nahor-father-terah
+    object_id: terah
+    value: {kind: duration, value: 79, unit: years}
+  - &age_mt11
+    id: shem-age-at-arphaxad-mt
+    subject_id: shem
+    predicate: age_at_birth_of
+    object_id: arphaxad
+    value: {kind: duration, value: 100, unit: years}
+    evidence_type: explicit_text
+    witness_id: mt-genesis-bhs
+    confidence: A
+    citations: &mt11cite [{source_id: bhs-genesis, locator: "Genesis 11:10-26", witness_id: mt-genesis-bhs, passage_id: gen-11-10-26-mt}]
+  - <<: *age_mt11
+    id: arphaxad-age-at-shelah-mt
+    subject_id: arphaxad
+    object_id: shelah
+    value: {kind: duration, value: 35, unit: years}
+  - <<: *age_mt11
+    id: shelah-age-at-eber-mt
+    subject_id: shelah
+    object_id: eber
+    value: {kind: duration, value: 30, unit: years}
+  - <<: *age_mt11
+    id: eber-age-at-peleg-mt
+    subject_id: eber
+    object_id: peleg
+    value: {kind: duration, value: 34, unit: years}
+  - <<: *age_mt11
+    id: peleg-age-at-reu-mt
+    subject_id: peleg
+    object_id: reu
+    value: {kind: duration, value: 30, unit: years}
+  - <<: *age_mt11
+    id: reu-age-at-serug-mt
+    subject_id: reu
+    object_id: serug
+    value: {kind: duration, value: 32, unit: years}
+  - <<: *age_mt11
+    id: serug-age-at-nahor-father-terah-mt
+    subject_id: serug
+    object_id: nahor-father-terah
+    value: {kind: duration, value: 30, unit: years}
+  - <<: *age_mt11
+    id: nahor-father-terah-age-at-terah-mt
+    subject_id: nahor-father-terah
+    object_id: terah
+    value: {kind: duration, value: 29, unit: years}
+  - &age_sp11
+    id: shem-age-at-arphaxad-sp
+    subject_id: shem
+    predicate: age_at_birth_of
+    object_id: arphaxad
+    value: {kind: duration, value: 100, unit: years}
+    evidence_type: explicit_text
+    witness_id: sp-genesis-schorch
+    confidence: A
+    citations: &sp11cite [{source_id: schorch-samaritan-genesis-2021, locator: "Genesis 11:10-26", witness_id: sp-genesis-schorch, passage_id: gen-11-10-26-sp}]
+  - <<: *age_sp11
+    id: arphaxad-age-at-shelah-sp
+    subject_id: arphaxad
+    object_id: shelah
+    value: {kind: duration, value: 135, unit: years}
+  - <<: *age_sp11
+    id: shelah-age-at-eber-sp
+    subject_id: shelah
+    object_id: eber
+    value: {kind: duration, value: 130, unit: years}
+  - <<: *age_sp11
+    id: eber-age-at-peleg-sp
+    subject_id: eber
+    object_id: peleg
+    value: {kind: duration, value: 134, unit: years}
+  - <<: *age_sp11
+    id: peleg-age-at-reu-sp
+    subject_id: peleg
+    object_id: reu
+    value: {kind: duration, value: 130, unit: years}
+  - <<: *age_sp11
+    id: reu-age-at-serug-sp
+    subject_id: reu
+    object_id: serug
+    value: {kind: duration, value: 132, unit: years}
+  - <<: *age_sp11
+    id: serug-age-at-nahor-father-terah-sp
+    subject_id: serug
+    object_id: nahor-father-terah
+    value: {kind: duration, value: 130, unit: years}
+  - <<: *age_sp11
+    id: nahor-father-terah-age-at-terah-sp
+    subject_id: nahor-father-terah
+    object_id: terah
+    value: {kind: duration, value: 79, unit: years}
+
+  # Synchronizing and anchor claims used transparently by the chronology models.
+  - &calc
+    id: noah-age-at-shem-lxx
+    subject_id: noah
+    predicate: age_at_birth_of
+    object_id: shem
+    value: {kind: duration, value: 502, unit: years}
+    evidence_type: calculated
+    witness_id: lxx-genesis-goettingen
+    confidence: B
+    interpretation_note: Derived from Noah being 600 at the Flood and Shem being 100 two years after it.
+    citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 7:6; 11:10", witness_id: lxx-genesis-goettingen}]
+  - <<: *calc
+    id: noah-age-at-shem-mt
+    witness_id: mt-genesis-bhs
+    citations: [{source_id: bhs-genesis, locator: "Genesis 7:6; 11:10", witness_id: mt-genesis-bhs}]
+  - <<: *calc
+    id: noah-age-at-shem-sp
+    witness_id: sp-genesis-schorch
+    citations: [{source_id: schorch-samaritan-genesis-2021, locator: "Genesis 7:6; 11:10", witness_id: sp-genesis-schorch}]
+  - id: lxx-early-adam-anchor
+    subject_id: adam
+    predicate: birth_year
+    value: {kind: historical_year, era: BCE, year: 5508}
+    evidence_type: editorial_anchor
+    confidence: E
+    interpretation_note: Definite display anchor using the Byzantine Septuagint-era creation epoch; it is a model convention, not an explicit Genesis civil date.
+    citations: [{source_id: crisp-2016, locator: "discussion of Septuagint chronology", witness_id: lxx-genesis-goettingen}]
+  - id: mt-early-adam-anchor
+    subject_id: adam
+    predicate: birth_year
+    value: {kind: historical_year, era: BCE, year: 4004}
+    evidence_type: editorial_anchor
+    confidence: E
+    interpretation_note: Definite display anchor using the conventional Ussher-style MT epoch; it is a model convention, not an explicit Genesis civil date.
+    citations: [{source_id: bhs-genesis, locator: "Genesis 5 and chronology model note", witness_id: mt-genesis-bhs}]
+  - id: sp-early-adam-anchor
+    subject_id: adam
+    predicate: birth_year
+    value: {kind: historical_year, era: BCE, year: 4426}
+    evidence_type: editorial_anchor
+    confidence: E
+    interpretation_note: Definite display anchor selected to expose the Samaritan relative chain on a civil-year axis; the anchor is editorial.
+    citations: [{source_id: schorch-samaritan-genesis-2021, locator: "Genesis 5 and 11", witness_id: sp-genesis-schorch}]
+
+  # Genesis 11 lifespan totals (begetting age plus the stated remaining years).
+  - &life_lxx11
+    id: shem-lifespan-lxx
+    subject_id: shem
+    predicate: lifespan
+    value: {kind: duration, value: 600, unit: years}
+    evidence_type: explicit_text
+    witness_id: lxx-genesis-goettingen
+    confidence: A
+    citations: *lxx11cite
+  - <<: *life_lxx11
+    id: arphaxad-lifespan-lxx
+    subject_id: arphaxad
+    value: {kind: duration, value: 565, unit: years}
+  - <<: *life_lxx11
+    id: cainan-postflood-lifespan-lxx
+    subject_id: cainan-postflood
+    value: {kind: duration, value: 460, unit: years}
+  - <<: *life_lxx11
+    id: shelah-lifespan-lxx
+    subject_id: shelah
+    value: {kind: duration, value: 460, unit: years}
+  - <<: *life_lxx11
+    id: eber-lifespan-lxx
+    subject_id: eber
+    value: {kind: duration, value: 504, unit: years}
+  - <<: *life_lxx11
+    id: peleg-lifespan-lxx
+    subject_id: peleg
+    value: {kind: duration, value: 339, unit: years}
+  - <<: *life_lxx11
+    id: reu-lifespan-lxx
+    subject_id: reu
+    value: {kind: duration, value: 339, unit: years}
+  - <<: *life_lxx11
+    id: serug-lifespan-lxx
+    subject_id: serug
+    value: {kind: duration, value: 330, unit: years}
+  - <<: *life_lxx11
+    id: nahor-father-terah-lifespan-lxx
+    subject_id: nahor-father-terah
+    value: {kind: duration, value: 208, unit: years}
+  - <<: *life_lxx11
+    id: terah-lifespan-lxx
+    subject_id: terah
+    value: {kind: duration, value: 205, unit: years}
+    citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 11:32", witness_id: lxx-genesis-goettingen, passage_id: gen-11-27-32-lxx}]
+  - &life_mt11
+    id: shem-lifespan-mt
+    subject_id: shem
+    predicate: lifespan
+    value: {kind: duration, value: 600, unit: years}
+    evidence_type: explicit_text
+    witness_id: mt-genesis-bhs
+    confidence: A
+    citations: *mt11cite
+  - <<: *life_mt11
+    id: arphaxad-lifespan-mt
+    subject_id: arphaxad
+    value: {kind: duration, value: 438, unit: years}
+  - <<: *life_mt11
+    id: shelah-lifespan-mt
+    subject_id: shelah
+    value: {kind: duration, value: 433, unit: years}
+  - <<: *life_mt11
+    id: eber-lifespan-mt
+    subject_id: eber
+    value: {kind: duration, value: 464, unit: years}
+  - <<: *life_mt11
+    id: peleg-lifespan-mt
+    subject_id: peleg
+    value: {kind: duration, value: 239, unit: years}
+  - <<: *life_mt11
+    id: reu-lifespan-mt
+    subject_id: reu
+    value: {kind: duration, value: 239, unit: years}
+  - <<: *life_mt11
+    id: serug-lifespan-mt
+    subject_id: serug
+    value: {kind: duration, value: 230, unit: years}
+  - <<: *life_mt11
+    id: nahor-father-terah-lifespan-mt
+    subject_id: nahor-father-terah
+    value: {kind: duration, value: 148, unit: years}
+  - <<: *life_mt11
+    id: terah-lifespan-mt
+    subject_id: terah
+    value: {kind: duration, value: 205, unit: years}
+  - &life_sp11
+    id: shem-lifespan-sp
+    subject_id: shem
+    predicate: lifespan
+    value: {kind: duration, value: 600, unit: years}
+    evidence_type: explicit_text
+    witness_id: sp-genesis-schorch
+    confidence: A
+    citations: *sp11cite
+  - <<: *life_sp11
+    id: arphaxad-lifespan-sp
+    subject_id: arphaxad
+    value: {kind: duration, value: 438, unit: years}
+  - <<: *life_sp11
+    id: shelah-lifespan-sp
+    subject_id: shelah
+    value: {kind: duration, value: 433, unit: years}
+  - <<: *life_sp11
+    id: eber-lifespan-sp
+    subject_id: eber
+    value: {kind: duration, value: 404, unit: years}
+  - <<: *life_sp11
+    id: peleg-lifespan-sp
+    subject_id: peleg
+    value: {kind: duration, value: 239, unit: years}
+  - <<: *life_sp11
+    id: reu-lifespan-sp
+    subject_id: reu
+    value: {kind: duration, value: 239, unit: years}
+  - <<: *life_sp11
+    id: serug-lifespan-sp
+    subject_id: serug
+    value: {kind: duration, value: 230, unit: years}
+  - <<: *life_sp11
+    id: nahor-father-terah-lifespan-sp
+    subject_id: nahor-father-terah
+    value: {kind: duration, value: 148, unit: years}
+  - <<: *life_sp11
+    id: terah-lifespan-sp
+    subject_id: terah
+    value: {kind: duration, value: 145, unit: years}
+
+  # Attestation claims give otherwise undated humans an evidence hook for grade-E display estimates.
+  - &att
+    id: eve-attested
+    subject_id: eve
+    predicate: attested_in_passage
+    value: {kind: attestation, status: mentioned}
+    evidence_type: explicit_text
+    confidence: A
+    citations: &earlyatt [{source_id: goettingen-genesis-1974, locator: "Genesis 2-4", witness_id: lxx-genesis-goettingen}]
+  - <<: *att
+    id: cain-attested
+    subject_id: cain
+  - <<: *att
+    id: abel-attested
+    subject_id: abel
+  - <<: *att
+    id: enoch-cain-attested
+    subject_id: enoch-cain
+  - <<: *att
+    id: irad-attested
+    subject_id: irad
+  - <<: *att
+    id: mehujael-attested
+    subject_id: mehujael
+  - <<: *att
+    id: methushael-attested
+    subject_id: methushael
+  - <<: *att
+    id: lamech-cain-attested
+    subject_id: lamech-cain
+  - <<: *att
+    id: adah-attested
+    subject_id: adah
+  - <<: *att
+    id: zillah-attested
+    subject_id: zillah
+  - <<: *att
+    id: jabal-attested
+    subject_id: jabal
+  - <<: *att
+    id: jubal-attested
+    subject_id: jubal
+  - <<: *att
+    id: tubal-cain-attested
+    subject_id: tubal-cain
+  - <<: *att
+    id: naamah-attested
+    subject_id: naamah
+  - <<: *att
+    id: noah-wife-attested
+    subject_id: noah-wife
+    citations: &floodatt [{source_id: goettingen-genesis-1974, locator: "Genesis 6:18; 7:7,13; 8:16,18", witness_id: lxx-genesis-goettingen}]
+  - <<: *att
+    id: ham-attested
+    subject_id: ham
+    citations: *floodatt
+  - <<: *att
+    id: japheth-attested
+    subject_id: japheth
+    citations: *floodatt
+  - <<: *att
+    id: wife-shem-attested
+    subject_id: wife-shem
+    citations: *floodatt
+  - <<: *att
+    id: wife-ham-attested
+    subject_id: wife-ham
+    citations: *floodatt
+  - <<: *att
+    id: wife-japheth-attested
+    subject_id: wife-japheth
+    citations: *floodatt
+  - &tableatt
+    <<: *att
+    id: gomer-attested
+    subject_id: gomer
+    citations: &gen10att [{source_id: goettingen-genesis-1974, locator: "Genesis 10", witness_id: lxx-genesis-goettingen, passage_id: gen-10-1-32-lxx}]
+  - <<: *tableatt
+    id: magog-attested
+    subject_id: magog
+  - <<: *tableatt
+    id: madai-attested
+    subject_id: madai
+  - <<: *tableatt
+    id: javan-attested
+    subject_id: javan
+  - <<: *tableatt
+    id: tubal-attested
+    subject_id: tubal
+  - <<: *tableatt
+    id: meshech-attested
+    subject_id: meshech
+  - <<: *tableatt
+    id: tiras-attested
+    subject_id: tiras
+  - <<: *tableatt
+    id: ashkenaz-attested
+    subject_id: ashkenaz
+  - <<: *tableatt
+    id: riphath-attested
+    subject_id: riphath
+  - <<: *tableatt
+    id: togarmah-attested
+    subject_id: togarmah
+  - <<: *tableatt
+    id: elishah-attested
+    subject_id: elishah
+  - <<: *tableatt
+    id: tarshish-attested
+    subject_id: tarshish
+  - <<: *tableatt
+    id: kittim-attested
+    subject_id: kittim
+  - <<: *tableatt
+    id: dodanim-attested
+    subject_id: dodanim
+  - <<: *tableatt
+    id: cush-attested
+    subject_id: cush
+  - <<: *tableatt
+    id: mizraim-attested
+    subject_id: mizraim
+  - <<: *tableatt
+    id: put-attested
+    subject_id: put
+  - <<: *tableatt
+    id: canaan-attested
+    subject_id: canaan
+  - <<: *tableatt
+    id: seba-attested
+    subject_id: seba
+  - <<: *tableatt
+    id: havilah-cush-attested
+    subject_id: havilah-cush
+  - <<: *tableatt
+    id: sabtah-attested
+    subject_id: sabtah
+  - <<: *tableatt
+    id: raamah-attested
+    subject_id: raamah
+  - <<: *tableatt
+    id: sabteca-attested
+    subject_id: sabteca
+  - <<: *tableatt
+    id: sheba-raamah-attested
+    subject_id: sheba-raamah
+  - <<: *tableatt
+    id: dedan-raamah-attested
+    subject_id: dedan-raamah
+  - <<: *tableatt
+    id: nimrod-attested
+    subject_id: nimrod
+  - <<: *tableatt
+    id: ludim-attested
+    subject_id: ludim
+  - <<: *tableatt
+    id: anamim-attested
+    subject_id: anamim
+  - <<: *tableatt
+    id: lehabim-attested
+    subject_id: lehabim
+  - <<: *tableatt
+    id: naphtuhim-attested
+    subject_id: naphtuhim
+  - <<: *tableatt
+    id: pathrusim-attested
+    subject_id: pathrusim
+  - <<: *tableatt
+    id: casluhim-attested
+    subject_id: casluhim
+  - <<: *tableatt
+    id: caphtorim-attested
+    subject_id: caphtorim
+  - <<: *tableatt
+    id: sidon-attested
+    subject_id: sidon
+  - <<: *tableatt
+    id: heth-attested
+    subject_id: heth
+  - <<: *tableatt
+    id: elam-attested
+    subject_id: elam
+  - <<: *tableatt
+    id: asshur-attested
+    subject_id: asshur
+  - <<: *tableatt
+    id: lud-shem-attested
+    subject_id: lud-shem
+  - <<: *tableatt
+    id: aram-attested
+    subject_id: aram
+  - <<: *tableatt
+    id: uz-attested
+    subject_id: uz
+  - <<: *tableatt
+    id: hul-attested
+    subject_id: hul
+  - <<: *tableatt
+    id: gether-attested
+    subject_id: gether
+  - <<: *tableatt
+    id: mash-attested
+    subject_id: mash
+  - <<: *tableatt
+    id: joktan-attested
+    subject_id: joktan
+  - <<: *tableatt
+    id: almodad-attested
+    subject_id: almodad
+  - <<: *tableatt
+    id: sheleph-attested
+    subject_id: sheleph
+  - <<: *tableatt
+    id: hazarmaveth-attested
+    subject_id: hazarmaveth
+  - <<: *tableatt
+    id: jerah-attested
+    subject_id: jerah
+  - <<: *tableatt
+    id: hadoram-attested
+    subject_id: hadoram
+  - <<: *tableatt
+    id: uzal-attested
+    subject_id: uzal
+  - <<: *tableatt
+    id: diklah-attested
+    subject_id: diklah
+  - <<: *tableatt
+    id: obal-attested
+    subject_id: obal
+  - <<: *tableatt
+    id: abimael-attested
+    subject_id: abimael
+  - <<: *tableatt
+    id: sheba-joktan-attested
+    subject_id: sheba-joktan
+  - <<: *tableatt
+    id: ophir-attested
+    subject_id: ophir
+  - <<: *tableatt
+    id: havilah-joktan-attested
+    subject_id: havilah-joktan
+  - <<: *tableatt
+    id: jobab-attested
+    subject_id: jobab
+  - &gen11att
+    <<: *att
+    id: abram-attested
+    subject_id: abram
+    citations: &gen11attcite [{source_id: goettingen-genesis-1974, locator: "Genesis 11:26-32", witness_id: lxx-genesis-goettingen, passage_id: gen-11-27-32-lxx}]
+  - <<: *gen11att
+    id: nahor-brother-abram-attested
+    subject_id: nahor-brother-abram
+  - <<: *gen11att
+    id: haran-attested
+    subject_id: haran
+  - <<: *gen11att
+    id: lot-attested
+    subject_id: lot
+  - <<: *gen11att
+    id: sarai-attested
+    subject_id: sarai
+  - <<: *gen11att
+    id: milcah-attested
+    subject_id: milcah
+  - <<: *gen11att
+    id: iscah-attested
+    subject_id: iscah

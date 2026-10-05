@@ -1,0 +1,422 @@
+schema_version: 1
+record_type: chronology_models
+records:
+  - id: hybrid_reference
+    name: Hybrid reference chronology
+    description: The site's definite reference view. It selects the documented LXX early chain and uses explicit grade-E display windows, never silent precision, for otherwise undated Genesis 1-11 humans.
+    citations:
+      - {source_id: goettingen-genesis-1974, locator: "Genesis 1-11", witness_id: lxx-genesis-goettingen}
+      - {source_id: bhs-genesis, locator: "Genesis 1-11", witness_id: mt-genesis-bhs}
+      - {source_id: schorch-samaritan-genesis-2021, locator: "Genesis 1-11", witness_id: sp-genesis-schorch}
+    derivations:
+      - {id: adam-birth, operation: select_claim, claim_id: lxx-early-adam-anchor}
+      - {id: adam-death, operation: offset_years, input_id: adam-birth, offset_claim_id: adam-lifespan-lxx}
+      - {id: seth-birth, operation: offset_years, input_id: adam-birth, offset_claim_id: adam-age-at-seth-lxx}
+      - {id: seth-death, operation: offset_years, input_id: seth-birth, offset_claim_id: seth-lifespan-lxx}
+      - {id: enosh-birth, operation: offset_years, input_id: seth-birth, offset_claim_id: seth-age-at-enosh-lxx}
+      - {id: enosh-death, operation: offset_years, input_id: enosh-birth, offset_claim_id: enosh-lifespan-lxx}
+      - {id: kenan-birth, operation: offset_years, input_id: enosh-birth, offset_claim_id: enosh-age-at-kenan-lxx}
+      - {id: kenan-death, operation: offset_years, input_id: kenan-birth, offset_claim_id: kenan-lifespan-lxx}
+      - {id: mahalalel-birth, operation: offset_years, input_id: kenan-birth, offset_claim_id: kenan-age-at-mahalalel-lxx}
+      - {id: mahalalel-death, operation: offset_years, input_id: mahalalel-birth, offset_claim_id: mahalalel-lifespan-lxx}
+      - {id: jared-birth, operation: offset_years, input_id: mahalalel-birth, offset_claim_id: mahalalel-age-at-jared-lxx}
+      - {id: jared-death, operation: offset_years, input_id: jared-birth, offset_claim_id: jared-lifespan-lxx}
+      - {id: enoch-seth-birth, operation: offset_years, input_id: jared-birth, offset_claim_id: jared-age-at-enoch-seth-lxx}
+      - {id: enoch-seth-death, operation: offset_years, input_id: enoch-seth-birth, offset_claim_id: enoch-seth-lifespan-lxx}
+      - {id: methuselah-birth, operation: offset_years, input_id: enoch-seth-birth, offset_claim_id: enoch-seth-age-at-methuselah-lxx}
+      - {id: methuselah-death, operation: offset_years, input_id: methuselah-birth, offset_claim_id: methuselah-lifespan-lxx}
+      - {id: lamech-seth-birth, operation: offset_years, input_id: methuselah-birth, offset_claim_id: methuselah-age-at-lamech-seth-lxx}
+      - {id: lamech-seth-death, operation: offset_years, input_id: lamech-seth-birth, offset_claim_id: lamech-seth-lifespan-lxx}
+      - {id: noah-birth, operation: offset_years, input_id: lamech-seth-birth, offset_claim_id: lamech-seth-age-at-noah-lxx}
+      - {id: noah-death, operation: offset_years, input_id: noah-birth, offset_claim_id: noah-lifespan-lxx}
+      - {id: shem-birth, operation: offset_years, input_id: noah-birth, offset_claim_id: noah-age-at-shem-lxx}
+      - {id: shem-death, operation: offset_years, input_id: shem-birth, offset_claim_id: shem-lifespan-lxx}
+      - {id: arphaxad-birth, operation: offset_years, input_id: shem-birth, offset_claim_id: shem-age-at-arphaxad-lxx}
+      - {id: arphaxad-death, operation: offset_years, input_id: arphaxad-birth, offset_claim_id: arphaxad-lifespan-lxx}
+      - {id: cainan-postflood-birth, operation: offset_years, input_id: arphaxad-birth, offset_claim_id: arphaxad-age-at-cainan-postflood-lxx}
+      - {id: cainan-postflood-death, operation: offset_years, input_id: cainan-postflood-birth, offset_claim_id: cainan-postflood-lifespan-lxx}
+      - {id: shelah-birth, operation: offset_years, input_id: cainan-postflood-birth, offset_claim_id: cainan-postflood-age-at-shelah-lxx}
+      - {id: shelah-death, operation: offset_years, input_id: shelah-birth, offset_claim_id: shelah-lifespan-lxx}
+      - {id: eber-birth, operation: offset_years, input_id: shelah-birth, offset_claim_id: shelah-age-at-eber-lxx}
+      - {id: eber-death, operation: offset_years, input_id: eber-birth, offset_claim_id: eber-lifespan-lxx}
+      - {id: peleg-birth, operation: offset_years, input_id: eber-birth, offset_claim_id: eber-age-at-peleg-lxx}
+      - {id: peleg-death, operation: offset_years, input_id: peleg-birth, offset_claim_id: peleg-lifespan-lxx}
+      - {id: reu-birth, operation: offset_years, input_id: peleg-birth, offset_claim_id: peleg-age-at-reu-lxx}
+      - {id: reu-death, operation: offset_years, input_id: reu-birth, offset_claim_id: reu-lifespan-lxx}
+      - {id: serug-birth, operation: offset_years, input_id: reu-birth, offset_claim_id: reu-age-at-serug-lxx}
+      - {id: serug-death, operation: offset_years, input_id: serug-birth, offset_claim_id: serug-lifespan-lxx}
+      - {id: nahor-father-terah-birth, operation: offset_years, input_id: serug-birth, offset_claim_id: serug-age-at-nahor-father-terah-lxx}
+      - {id: nahor-father-terah-death, operation: offset_years, input_id: nahor-father-terah-birth, offset_claim_id: nahor-father-terah-lifespan-lxx}
+      - {id: terah-birth, operation: offset_years, input_id: nahor-father-terah-birth, offset_claim_id: nahor-father-terah-age-at-terah-lxx}
+      - {id: terah-death, operation: offset_years, input_id: terah-birth, offset_claim_id: terah-lifespan-lxx}
+      - {id: first-humans-birth, operation: literal, year: {era: BCE, year: 5508}}
+      - {id: first-humans-death, operation: literal, year: {era: BCE, year: 4578}}
+      - {id: first-generation-birth, operation: literal, year: {era: BCE, year: 5278}}
+      - {id: first-generation-death, operation: literal, year: {era: BCE, year: 4348}}
+      - {id: abel-death, operation: literal, year: {era: BCE, year: 5200}}
+      - {id: cainite-line-birth, operation: literal, year: {era: BCE, year: 5000}}
+      - {id: cainite-line-death, operation: literal, year: {era: BCE, year: 4100}}
+      - {id: flood-household-birth, operation: literal, year: {era: BCE, year: 3666}}
+      - {id: flood-household-death, operation: literal, year: {era: BCE, year: 2966}}
+      - {id: nations-generation-1-birth, operation: literal, year: {era: BCE, year: 3164}}
+      - {id: nations-generation-1-death, operation: literal, year: {era: BCE, year: 2964}}
+      - {id: nations-generation-2-birth, operation: literal, year: {era: BCE, year: 3064}}
+      - {id: nations-generation-2-death, operation: literal, year: {era: BCE, year: 2864}}
+      - {id: nations-generation-3-birth, operation: literal, year: {era: BCE, year: 2964}}
+      - {id: nations-generation-3-death, operation: literal, year: {era: BCE, year: 2764}}
+      - {id: terah-household-birth, operation: literal, year: {era: BCE, year: 1934}}
+      - {id: terah-household-death, operation: literal, year: {era: BCE, year: 1759}}
+    resolutions:
+      - &core {entity_id: adam, birth_derivation_id: adam-birth, death_derivation_id: adam-death, life_basis: synchronized, confidence_grade: D, evidence_claim_ids: [lxx-early-adam-anchor, adam-lifespan-lxx], alternative_claim_ids: [mt-early-adam-anchor, sp-early-adam-anchor], explanation: "Civil years use the declared LXX display anchor; lifespan is explicit in Genesis 5."}
+      - <<: *core
+        entity_id: seth
+        birth_derivation_id: seth-birth
+        death_derivation_id: seth-death
+        evidence_claim_ids: [adam-age-at-seth-lxx, seth-lifespan-lxx]
+        alternative_claim_ids: [adam-age-at-seth-mt, adam-age-at-seth-sp]
+      - <<: *core
+        entity_id: enosh
+        birth_derivation_id: enosh-birth
+        death_derivation_id: enosh-death
+        evidence_claim_ids: [seth-age-at-enosh-lxx, enosh-lifespan-lxx]
+        alternative_claim_ids: [seth-age-at-enosh-mt, seth-age-at-enosh-sp]
+      - <<: *core
+        entity_id: kenan
+        birth_derivation_id: kenan-birth
+        death_derivation_id: kenan-death
+        evidence_claim_ids: [enosh-age-at-kenan-lxx, kenan-lifespan-lxx]
+        alternative_claim_ids: [enosh-age-at-kenan-mt, enosh-age-at-kenan-sp]
+      - <<: *core
+        entity_id: mahalalel
+        birth_derivation_id: mahalalel-birth
+        death_derivation_id: mahalalel-death
+        evidence_claim_ids: [kenan-age-at-mahalalel-lxx, mahalalel-lifespan-lxx]
+        alternative_claim_ids: [kenan-age-at-mahalalel-mt, kenan-age-at-mahalalel-sp]
+      - <<: *core
+        entity_id: jared
+        birth_derivation_id: jared-birth
+        death_derivation_id: jared-death
+        evidence_claim_ids: [mahalalel-age-at-jared-lxx, jared-lifespan-lxx]
+        alternative_claim_ids: [mahalalel-age-at-jared-mt, mahalalel-age-at-jared-sp]
+      - <<: *core
+        entity_id: enoch-seth
+        birth_derivation_id: enoch-seth-birth
+        death_derivation_id: enoch-seth-death
+        evidence_claim_ids: [jared-age-at-enoch-seth-lxx, enoch-seth-lifespan-lxx]
+        alternative_claim_ids: [jared-age-at-enoch-seth-mt, jared-age-at-enoch-seth-sp]
+      - <<: *core
+        entity_id: methuselah
+        birth_derivation_id: methuselah-birth
+        death_derivation_id: methuselah-death
+        evidence_claim_ids: [enoch-seth-age-at-methuselah-lxx, methuselah-lifespan-lxx]
+        alternative_claim_ids: [enoch-seth-age-at-methuselah-mt, enoch-seth-age-at-methuselah-sp]
+      - <<: *core
+        entity_id: lamech-seth
+        birth_derivation_id: lamech-seth-birth
+        death_derivation_id: lamech-seth-death
+        evidence_claim_ids: [methuselah-age-at-lamech-seth-lxx, lamech-seth-lifespan-lxx]
+        alternative_claim_ids: [methuselah-age-at-lamech-seth-mt, methuselah-age-at-lamech-seth-sp]
+      - <<: *core
+        entity_id: noah
+        birth_derivation_id: noah-birth
+        death_derivation_id: noah-death
+        evidence_claim_ids: [lamech-seth-age-at-noah-lxx, noah-lifespan-lxx]
+        alternative_claim_ids: [lamech-seth-age-at-noah-mt, lamech-seth-age-at-noah-sp]
+      - <<: *core
+        entity_id: shem
+        birth_derivation_id: shem-birth
+        death_derivation_id: shem-death
+        evidence_claim_ids: [noah-age-at-shem-lxx, shem-lifespan-lxx]
+        alternative_claim_ids: [noah-age-at-shem-mt, noah-age-at-shem-sp]
+      - <<: *core
+        entity_id: arphaxad
+        birth_derivation_id: arphaxad-birth
+        death_derivation_id: arphaxad-death
+        evidence_claim_ids: [shem-age-at-arphaxad-lxx, arphaxad-lifespan-lxx]
+        alternative_claim_ids: [shem-age-at-arphaxad-mt, shem-age-at-arphaxad-sp]
+      - <<: *core
+        entity_id: cainan-postflood
+        birth_derivation_id: cainan-postflood-birth
+        death_derivation_id: cainan-postflood-death
+        evidence_claim_ids: [arphaxad-age-at-cainan-postflood-lxx, cainan-postflood-lifespan-lxx]
+        alternative_claim_ids: [arphaxad-age-at-shelah-mt, arphaxad-age-at-shelah-sp]
+      - <<: *core
+        entity_id: shelah
+        birth_derivation_id: shelah-birth
+        death_derivation_id: shelah-death
+        evidence_claim_ids: [cainan-postflood-age-at-shelah-lxx, shelah-lifespan-lxx]
+        alternative_claim_ids: [arphaxad-age-at-shelah-mt, arphaxad-age-at-shelah-sp]
+      - <<: *core
+        entity_id: eber
+        birth_derivation_id: eber-birth
+        death_derivation_id: eber-death
+        evidence_claim_ids: [shelah-age-at-eber-lxx, eber-lifespan-lxx]
+        alternative_claim_ids: [shelah-age-at-eber-mt, shelah-age-at-eber-sp]
+      - <<: *core
+        entity_id: peleg
+        birth_derivation_id: peleg-birth
+        death_derivation_id: peleg-death
+        evidence_claim_ids: [eber-age-at-peleg-lxx, peleg-lifespan-lxx]
+        alternative_claim_ids: [eber-age-at-peleg-mt, eber-age-at-peleg-sp]
+      - <<: *core
+        entity_id: reu
+        birth_derivation_id: reu-birth
+        death_derivation_id: reu-death
+        evidence_claim_ids: [peleg-age-at-reu-lxx, reu-lifespan-lxx]
+        alternative_claim_ids: [peleg-age-at-reu-mt, peleg-age-at-reu-sp]
+      - <<: *core
+        entity_id: serug
+        birth_derivation_id: serug-birth
+        death_derivation_id: serug-death
+        evidence_claim_ids: [reu-age-at-serug-lxx, serug-lifespan-lxx]
+        alternative_claim_ids: [reu-age-at-serug-mt, reu-age-at-serug-sp]
+      - <<: *core
+        entity_id: nahor-father-terah
+        birth_derivation_id: nahor-father-terah-birth
+        death_derivation_id: nahor-father-terah-death
+        evidence_claim_ids: [serug-age-at-nahor-father-terah-lxx, nahor-father-terah-lifespan-lxx]
+        alternative_claim_ids: [serug-age-at-nahor-father-terah-mt, serug-age-at-nahor-father-terah-sp]
+      - <<: *core
+        entity_id: terah
+        birth_derivation_id: terah-birth
+        death_derivation_id: terah-death
+        evidence_claim_ids: [nahor-father-terah-age-at-terah-lxx, terah-lifespan-lxx]
+        alternative_claim_ids: [nahor-father-terah-age-at-terah-mt, nahor-father-terah-age-at-terah-sp]
+
+      - &first_est {entity_id: eve, birth_derivation_id: first-humans-birth, death_derivation_id: first-humans-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [eve-attested], alternative_claim_ids: [], explanation: "Grade-E display window synchronized to the surrounding LXX-derived generation; Genesis supplies no numeric lifespan."}
+      - &first_gen_est {entity_id: cain, birth_derivation_id: first-generation-birth, death_derivation_id: first-generation-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [cain-attested], alternative_claim_ids: [], explanation: "Grade-E display window synchronized to the surrounding LXX-derived generation; Genesis supplies no numeric lifespan."}
+      - <<: *first_gen_est
+        entity_id: abel
+        death_derivation_id: abel-death
+        evidence_claim_ids: [abel-attested]
+      - &cainite_est {entity_id: enoch-cain, birth_derivation_id: cainite-line-birth, death_derivation_id: cainite-line-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [enoch-cain-attested], alternative_claim_ids: [], explanation: "Grade-E shared window for Cain's undated genealogy; it is a visualization convention, not a textual age."}
+      - <<: *cainite_est
+        entity_id: irad
+        evidence_claim_ids: [irad-attested]
+      - <<: *cainite_est
+        entity_id: mehujael
+        evidence_claim_ids: [mehujael-attested]
+      - <<: *cainite_est
+        entity_id: methushael
+        evidence_claim_ids: [methushael-attested]
+      - <<: *cainite_est
+        entity_id: lamech-cain
+        evidence_claim_ids: [lamech-cain-attested]
+      - <<: *cainite_est
+        entity_id: adah
+        evidence_claim_ids: [adah-attested]
+      - <<: *cainite_est
+        entity_id: zillah
+        evidence_claim_ids: [zillah-attested]
+      - <<: *cainite_est
+        entity_id: jabal
+        evidence_claim_ids: [jabal-attested]
+      - <<: *cainite_est
+        entity_id: jubal
+        evidence_claim_ids: [jubal-attested]
+      - <<: *cainite_est
+        entity_id: tubal-cain
+        evidence_claim_ids: [tubal-cain-attested]
+      - <<: *cainite_est
+        entity_id: naamah
+        evidence_claim_ids: [naamah-attested]
+      - &flood_est {entity_id: noah-wife, birth_derivation_id: flood-household-birth, death_derivation_id: flood-household-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [noah-wife-attested], alternative_claim_ids: [], explanation: "Grade-E window synchronized to Noah's household; the person is textually distinct but numerically undated."}
+      - <<: *flood_est
+        entity_id: ham
+        evidence_claim_ids: [ham-attested]
+      - <<: *flood_est
+        entity_id: japheth
+        evidence_claim_ids: [japheth-attested]
+      - <<: *flood_est
+        entity_id: wife-shem
+        evidence_claim_ids: [wife-shem-attested]
+      - <<: *flood_est
+        entity_id: wife-ham
+        evidence_claim_ids: [wife-ham-attested]
+      - <<: *flood_est
+        entity_id: wife-japheth
+        evidence_claim_ids: [wife-japheth-attested]
+      - &nation1 {entity_id: gomer, birth_derivation_id: nations-generation-1-birth, death_derivation_id: nations-generation-1-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [gomer-attested], alternative_claim_ids: [], explanation: "Grade-E generational window for an eponymous ancestor in Genesis 10; no lifespan number is supplied."}
+      - <<: *nation1
+        entity_id: magog
+        evidence_claim_ids: [magog-attested]
+      - <<: *nation1
+        entity_id: madai
+        evidence_claim_ids: [madai-attested]
+      - <<: *nation1
+        entity_id: javan
+        evidence_claim_ids: [javan-attested]
+      - <<: *nation1
+        entity_id: tubal
+        evidence_claim_ids: [tubal-attested]
+      - <<: *nation1
+        entity_id: meshech
+        evidence_claim_ids: [meshech-attested]
+      - <<: *nation1
+        entity_id: tiras
+        evidence_claim_ids: [tiras-attested]
+      - <<: *nation1
+        entity_id: cush
+        evidence_claim_ids: [cush-attested]
+      - <<: *nation1
+        entity_id: mizraim
+        evidence_claim_ids: [mizraim-attested]
+      - <<: *nation1
+        entity_id: put
+        evidence_claim_ids: [put-attested]
+      - <<: *nation1
+        entity_id: canaan
+        evidence_claim_ids: [canaan-attested]
+      - <<: *nation1
+        entity_id: elam
+        evidence_claim_ids: [elam-attested]
+      - <<: *nation1
+        entity_id: asshur
+        evidence_claim_ids: [asshur-attested]
+      - <<: *nation1
+        entity_id: lud-shem
+        evidence_claim_ids: [lud-shem-attested]
+      - <<: *nation1
+        entity_id: aram
+        evidence_claim_ids: [aram-attested]
+      - &nation2 {entity_id: ashkenaz, birth_derivation_id: nations-generation-2-birth, death_derivation_id: nations-generation-2-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [ashkenaz-attested], alternative_claim_ids: [], explanation: "Grade-E generational window for an eponymous ancestor in Genesis 10; no lifespan number is supplied."}
+      - <<: *nation2
+        entity_id: riphath
+        evidence_claim_ids: [riphath-attested]
+      - <<: *nation2
+        entity_id: togarmah
+        evidence_claim_ids: [togarmah-attested]
+      - <<: *nation2
+        entity_id: elishah
+        evidence_claim_ids: [elishah-attested]
+      - <<: *nation2
+        entity_id: tarshish
+        evidence_claim_ids: [tarshish-attested]
+      - <<: *nation2
+        entity_id: kittim
+        evidence_claim_ids: [kittim-attested]
+      - <<: *nation2
+        entity_id: dodanim
+        evidence_claim_ids: [dodanim-attested]
+      - <<: *nation2
+        entity_id: seba
+        evidence_claim_ids: [seba-attested]
+      - <<: *nation2
+        entity_id: havilah-cush
+        evidence_claim_ids: [havilah-cush-attested]
+      - <<: *nation2
+        entity_id: sabtah
+        evidence_claim_ids: [sabtah-attested]
+      - <<: *nation2
+        entity_id: raamah
+        evidence_claim_ids: [raamah-attested]
+      - <<: *nation2
+        entity_id: sabteca
+        evidence_claim_ids: [sabteca-attested]
+      - <<: *nation2
+        entity_id: nimrod
+        evidence_claim_ids: [nimrod-attested]
+      - <<: *nation2
+        entity_id: ludim
+        evidence_claim_ids: [ludim-attested]
+      - <<: *nation2
+        entity_id: anamim
+        evidence_claim_ids: [anamim-attested]
+      - <<: *nation2
+        entity_id: lehabim
+        evidence_claim_ids: [lehabim-attested]
+      - <<: *nation2
+        entity_id: naphtuhim
+        evidence_claim_ids: [naphtuhim-attested]
+      - <<: *nation2
+        entity_id: pathrusim
+        evidence_claim_ids: [pathrusim-attested]
+      - <<: *nation2
+        entity_id: casluhim
+        evidence_claim_ids: [casluhim-attested]
+      - <<: *nation2
+        entity_id: caphtorim
+        evidence_claim_ids: [caphtorim-attested]
+      - <<: *nation2
+        entity_id: sidon
+        evidence_claim_ids: [sidon-attested]
+      - <<: *nation2
+        entity_id: heth
+        evidence_claim_ids: [heth-attested]
+      - <<: *nation2
+        entity_id: uz
+        evidence_claim_ids: [uz-attested]
+      - <<: *nation2
+        entity_id: hul
+        evidence_claim_ids: [hul-attested]
+      - <<: *nation2
+        entity_id: gether
+        evidence_claim_ids: [gether-attested]
+      - <<: *nation2
+        entity_id: mash
+        evidence_claim_ids: [mash-attested]
+      - <<: *nation2
+        entity_id: joktan
+        evidence_claim_ids: [joktan-attested]
+      - &nation3 {entity_id: sheba-raamah, birth_derivation_id: nations-generation-3-birth, death_derivation_id: nations-generation-3-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [sheba-raamah-attested], alternative_claim_ids: [], explanation: "Grade-E generational window for an eponymous ancestor in Genesis 10; no lifespan number is supplied."}
+      - <<: *nation3
+        entity_id: dedan-raamah
+        evidence_claim_ids: [dedan-raamah-attested]
+      - <<: *nation3
+        entity_id: almodad
+        evidence_claim_ids: [almodad-attested]
+      - <<: *nation3
+        entity_id: sheleph
+        evidence_claim_ids: [sheleph-attested]
+      - <<: *nation3
+        entity_id: hazarmaveth
+        evidence_claim_ids: [hazarmaveth-attested]
+      - <<: *nation3
+        entity_id: jerah
+        evidence_claim_ids: [jerah-attested]
+      - <<: *nation3
+        entity_id: hadoram
+        evidence_claim_ids: [hadoram-attested]
+      - <<: *nation3
+        entity_id: uzal
+        evidence_claim_ids: [uzal-attested]
+      - <<: *nation3
+        entity_id: diklah
+        evidence_claim_ids: [diklah-attested]
+      - <<: *nation3
+        entity_id: obal
+        evidence_claim_ids: [obal-attested]
+      - <<: *nation3
+        entity_id: abimael
+        evidence_claim_ids: [abimael-attested]
+      - <<: *nation3
+        entity_id: sheba-joktan
+        evidence_claim_ids: [sheba-joktan-attested]
+      - <<: *nation3
+        entity_id: ophir
+        evidence_claim_ids: [ophir-attested]
+      - <<: *nation3
+        entity_id: havilah-joktan
+        evidence_claim_ids: [havilah-joktan-attested]
+      - <<: *nation3
+        entity_id: jobab
+        evidence_claim_ids: [jobab-attested]
+      - &terah_est {entity_id: abram, birth_derivation_id: terah-household-birth, death_derivation_id: terah-household-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [abram-attested], alternative_claim_ids: [], explanation: "Grade-E provisional Genesis 11 window; later patriarchal passages replace it with explicit calculations in the next data slice."}
+      - <<: *terah_est
+        entity_id: nahor-brother-abram
+        evidence_claim_ids: [nahor-brother-abram-attested]
+      - <<: *terah_est
+        entity_id: haran
+        evidence_claim_ids: [haran-attested]
+      - <<: *terah_est
+        entity_id: lot
+        evidence_claim_ids: [lot-attested]
+      - <<: *terah_est
+        entity_id: sarai
+        evidence_claim_ids: [sarai-attested]
+      - <<: *terah_est
+        entity_id: milcah
+        evidence_claim_ids: [milcah-attested]
+      - <<: *terah_est
+        entity_id: iscah
+        evidence_claim_ids: [iscah-attested]

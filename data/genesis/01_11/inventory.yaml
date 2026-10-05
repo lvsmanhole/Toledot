@@ -1,0 +1,131 @@
+schema_version: 1
+record_type: inventory_units
+records:
+  - &base
+    id: inv-gen-1-1-2-3
+    work_id: genesis
+    locator: "Genesis 1:1-2:3"
+    reviewed: true
+    passage_ids: [gen-1-1-2-3-lxx]
+    identified_entity_ids: [adam, eve]
+    event_ids: [creation-of-humankind]
+    no_individuals: false
+    citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 1:1-2:3", witness_id: lxx-genesis-goettingen}]
+  - <<: *base
+    id: inv-gen-2-4-25
+    locator: "Genesis 2:4-25"
+    passage_ids: [gen-2-4-25-lxx]
+    identified_entity_ids: [adam, eve]
+    event_ids: [eden-and-first-union]
+    citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 2:4-25", witness_id: lxx-genesis-goettingen}]
+  - <<: *base
+    id: inv-gen-3-1-24
+    locator: "Genesis 3:1-24"
+    passage_ids: [gen-3-1-24-lxx]
+    identified_entity_ids: [adam, eve]
+    event_ids: [expulsion-from-eden]
+    citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 3:1-24", witness_id: lxx-genesis-goettingen}]
+  - <<: *base
+    id: inv-gen-4-1-16
+    locator: "Genesis 4:1-16"
+    passage_ids: [gen-4-1-16-lxx]
+    identified_entity_ids: [adam, eve, cain, abel]
+    event_ids: [murder-of-abel]
+    citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 4:1-16", witness_id: lxx-genesis-goettingen}]
+  - <<: *base
+    id: inv-gen-4-17-24
+    locator: "Genesis 4:17-24"
+    passage_ids: [gen-4-17-24-lxx]
+    identified_entity_ids: [cain, enoch-cain, irad, mehujael, methushael, lamech-cain, adah, zillah, jabal, jubal, tubal-cain, naamah]
+    event_ids: []
+    citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 4:17-24", witness_id: lxx-genesis-goettingen}]
+  - <<: *base
+    id: inv-gen-4-25-26
+    locator: "Genesis 4:25-26"
+    passage_ids: [gen-4-25-26-lxx]
+    identified_entity_ids: [adam, eve, seth, enosh]
+    event_ids: []
+    citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 4:25-26", witness_id: lxx-genesis-goettingen}]
+  - <<: *base
+    id: inv-gen-5-1-32
+    locator: "Genesis 5:1-32"
+    passage_ids: [gen-5-1-32-lxx, gen-5-1-32-mt, gen-5-1-32-sp]
+    identified_entity_ids: [adam, seth, enosh, kenan, mahalalel, jared, enoch-seth, methuselah, lamech-seth, noah, shem, ham, japheth]
+    event_ids: []
+    citations:
+      - {source_id: goettingen-genesis-1974, locator: "Genesis 5", witness_id: lxx-genesis-goettingen}
+      - {source_id: bhs-genesis, locator: "Genesis 5", witness_id: mt-genesis-bhs}
+      - {source_id: schorch-samaritan-genesis-2021, locator: "Genesis 5", witness_id: sp-genesis-schorch}
+  - <<: *base
+    id: inv-gen-6-1-8
+    locator: "Genesis 6:1-8"
+    passage_ids: [gen-6-1-8-lxx]
+    identified_entity_ids: [sons-of-god, daughters-of-men, nephilim, noah]
+    event_ids: []
+    citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 6:1-8", witness_id: lxx-genesis-goettingen}]
+  - <<: *base
+    id: inv-gen-6-9-22
+    locator: "Genesis 6:9-22"
+    passage_ids: [gen-6-9-22-lxx]
+    identified_entity_ids: [noah, shem, ham, japheth, noah-wife, wife-shem, wife-ham, wife-japheth]
+    event_ids: [ark-preparation]
+    citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 6:9-22", witness_id: lxx-genesis-goettingen}]
+  - <<: *base
+    id: inv-gen-7-1-24
+    locator: "Genesis 7:1-24"
+    passage_ids: [gen-7-1-24-lxx]
+    identified_entity_ids: [noah, shem, ham, japheth, noah-wife, wife-shem, wife-ham, wife-japheth]
+    event_ids: [flood]
+    citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 7:1-24", witness_id: lxx-genesis-goettingen}]
+  - <<: *base
+    id: inv-gen-8-1-22
+    locator: "Genesis 8:1-22"
+    passage_ids: [gen-8-1-22-lxx]
+    identified_entity_ids: [noah, shem, ham, japheth, noah-wife, wife-shem, wife-ham, wife-japheth]
+    event_ids: [flood]
+    citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 8:1-22", witness_id: lxx-genesis-goettingen}]
+  - <<: *base
+    id: inv-gen-9-1-17
+    locator: "Genesis 9:1-17"
+    passage_ids: [gen-9-1-17-lxx]
+    identified_entity_ids: [noah, shem, ham, japheth]
+    event_ids: [noahic-covenant]
+    citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 9:1-17", witness_id: lxx-genesis-goettingen}]
+  - <<: *base
+    id: inv-gen-9-18-29
+    locator: "Genesis 9:18-29"
+    passage_ids: [gen-9-18-29-lxx]
+    identified_entity_ids: [noah, shem, ham, japheth, canaan]
+    event_ids: []
+    citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 9:18-29", witness_id: lxx-genesis-goettingen}]
+  - <<: *base
+    id: inv-gen-10-1-32
+    locator: "Genesis 10:1-32"
+    passage_ids: [gen-10-1-32-lxx]
+    identified_entity_ids: [shem, ham, japheth, gomer, magog, madai, javan, tubal, meshech, tiras, ashkenaz, riphath, togarmah, elishah, tarshish, kittim, dodanim, cush, mizraim, put, canaan, seba, havilah-cush, sabtah, raamah, sabteca, sheba-raamah, dedan-raamah, nimrod, ludim, anamim, lehabim, naphtuhim, pathrusim, casluhim, caphtorim, sidon, heth, canaanite-peoples, elam, asshur, arphaxad, lud-shem, aram, uz, hul, gether, mash, cainan-postflood, shelah, eber, peleg, joktan, almodad, sheleph, hazarmaveth, jerah, hadoram, uzal, diklah, obal, abimael, sheba-joktan, ophir, havilah-joktan, jobab]
+    event_ids: []
+    citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 10:1-32", witness_id: lxx-genesis-goettingen}]
+  - <<: *base
+    id: inv-gen-11-1-9
+    locator: "Genesis 11:1-9"
+    passage_ids: [gen-11-1-9-lxx]
+    identified_entity_ids: [babel-builders]
+    event_ids: [babel]
+    citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 11:1-9", witness_id: lxx-genesis-goettingen}]
+  - <<: *base
+    id: inv-gen-11-10-26
+    locator: "Genesis 11:10-26"
+    passage_ids: [gen-11-10-26-lxx, gen-11-10-26-mt, gen-11-10-26-sp]
+    identified_entity_ids: [shem, arphaxad, cainan-postflood, shelah, eber, peleg, reu, serug, nahor-father-terah, terah, abram, nahor-brother-abram, haran]
+    event_ids: []
+    citations:
+      - {source_id: goettingen-genesis-1974, locator: "Genesis 11:10-26", witness_id: lxx-genesis-goettingen}
+      - {source_id: bhs-genesis, locator: "Genesis 11:10-26", witness_id: mt-genesis-bhs}
+      - {source_id: schorch-samaritan-genesis-2021, locator: "Genesis 11:10-26", witness_id: sp-genesis-schorch}
+  - <<: *base
+    id: inv-gen-11-27-32
+    locator: "Genesis 11:27-32"
+    passage_ids: [gen-11-27-32-lxx]
+    identified_entity_ids: [terah, abram, nahor-brother-abram, haran, lot, sarai, milcah, iscah]
+    event_ids: [terah-migration]
+    citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 11:27-32", witness_id: lxx-genesis-goettingen}]
