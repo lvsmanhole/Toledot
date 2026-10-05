@@ -1,0 +1,30 @@
+schema_version: 1
+record_type: passages
+records:
+  - &lxx {id: exod-32-lxx, work_id: exodus, witness_id: lxx-exodus-rahlfs-hanhart, locator: "Exodus 32", citations: [{source_id: rahlfs-hanhart-2006, locator: "Exodus 32", witness_id: lxx-exodus-rahlfs-hanhart}]}
+  - &gee {id: exod-32-geez, work_id: exodus, witness_id: geez-exodus-dillmann, locator: "Exodus 32", citations: [{source_id: dillmann-octateuch-1853, locator: "Exodus 32", witness_id: geez-exodus-dillmann}]}
+  - &mt {id: exod-32-mt, work_id: exodus, witness_id: mt-exodus-bhs, locator: "Exodus 32", citations: [{source_id: bhs-exodus, locator: "Exodus 32", witness_id: mt-exodus-bhs}]}
+  - {<<: *lxx, id: exod-33-lxx, locator: "Exodus 33", citations: [{source_id: rahlfs-hanhart-2006, locator: "Exodus 33", witness_id: lxx-exodus-rahlfs-hanhart}]}
+  - {<<: *gee, id: exod-33-geez, locator: "Exodus 33", citations: [{source_id: dillmann-octateuch-1853, locator: "Exodus 33", witness_id: geez-exodus-dillmann}]}
+  - {<<: *mt, id: exod-33-mt, locator: "Exodus 33", citations: [{source_id: bhs-exodus, locator: "Exodus 33", witness_id: mt-exodus-bhs}]}
+  - {<<: *lxx, id: exod-34-lxx, locator: "Exodus 34", citations: [{source_id: rahlfs-hanhart-2006, locator: "Exodus 34", witness_id: lxx-exodus-rahlfs-hanhart}]}
+  - {<<: *gee, id: exod-34-geez, locator: "Exodus 34", citations: [{source_id: dillmann-octateuch-1853, locator: "Exodus 34", witness_id: geez-exodus-dillmann}]}
+  - {<<: *mt, id: exod-34-mt, locator: "Exodus 34", citations: [{source_id: bhs-exodus, locator: "Exodus 34", witness_id: mt-exodus-bhs}]}
+  - {<<: *lxx, id: exod-35-lxx, locator: "Exodus 35", citations: [{source_id: rahlfs-hanhart-2006, locator: "Exodus 35", witness_id: lxx-exodus-rahlfs-hanhart}]}
+  - {<<: *gee, id: exod-35-geez, locator: "Exodus 35", citations: [{source_id: dillmann-octateuch-1853, locator: "Exodus 35", witness_id: geez-exodus-dillmann}]}
+  - {<<: *mt, id: exod-35-mt, locator: "Exodus 35", citations: [{source_id: bhs-exodus, locator: "Exodus 35", witness_id: mt-exodus-bhs}]}
+  - {<<: *lxx, id: exod-36-lxx, locator: "Exodus 36", citations: [{source_id: rahlfs-hanhart-2006, locator: "Exodus 36", witness_id: lxx-exodus-rahlfs-hanhart}]}
+  - {<<: *gee, id: exod-36-geez, locator: "Exodus 36", citations: [{source_id: dillmann-octateuch-1853, locator: "Exodus 36", witness_id: geez-exodus-dillmann}]}
+  - {<<: *mt, id: exod-36-mt, locator: "Exodus 36", citations: [{source_id: bhs-exodus, locator: "Exodus 36", witness_id: mt-exodus-bhs}]}
+  - {<<: *lxx, id: exod-37-lxx, locator: "Exodus 37", citations: [{source_id: rahlfs-hanhart-2006, locator: "Exodus 37", witness_id: lxx-exodus-rahlfs-hanhart}]}
+  - {<<: *gee, id: exod-37-geez, locator: "Exodus 37", citations: [{source_id: dillmann-octateuch-1853, locator: "Exodus 37", witness_id: geez-exodus-dillmann}]}
+  - {<<: *mt, id: exod-37-mt, locator: "Exodus 37", citations: [{source_id: bhs-exodus, locator: "Exodus 37", witness_id: mt-exodus-bhs}]}
+  - {<<: *lxx, id: exod-38-lxx, locator: "Exodus 38", citations: [{source_id: rahlfs-hanhart-2006, locator: "Exodus 38", witness_id: lxx-exodus-rahlfs-hanhart}]}
+  - {<<: *gee, id: exod-38-geez, locator: "Exodus 38", citations: [{source_id: dillmann-octateuch-1853, locator: "Exodus 38", witness_id: geez-exodus-dillmann}]}
+  - {<<: *mt, id: exod-38-mt, locator: "Exodus 38", citations: [{source_id: bhs-exodus, locator: "Exodus 38", witness_id: mt-exodus-bhs}]}
+  - {<<: *lxx, id: exod-39-lxx, locator: "Exodus 39", citations: [{source_id: rahlfs-hanhart-2006, locator: "Exodus 39", witness_id: lxx-exodus-rahlfs-hanhart}]}
+  - {<<: *gee, id: exod-39-geez, locator: "Exodus 39", citations: [{source_id: dillmann-octateuch-1853, locator: "Exodus 39", witness_id: geez-exodus-dillmann}]}
+  - {<<: *mt, id: exod-39-mt, locator: "Exodus 39", citations: [{source_id: bhs-exodus, locator: "Exodus 39", witness_id: mt-exodus-bhs}]}
+  - {<<: *lxx, id: exod-40-lxx, locator: "Exodus 40", citations: [{source_id: rahlfs-hanhart-2006, locator: "Exodus 40", witness_id: lxx-exodus-rahlfs-hanhart}]}
+  - {<<: *gee, id: exod-40-geez, locator: "Exodus 40", citations: [{source_id: dillmann-octateuch-1853, locator: "Exodus 40", witness_id: geez-exodus-dillmann}]}
+  - {<<: *mt, id: exod-40-mt, locator: "Exodus 40", citations: [{source_id: bhs-exodus, locator: "Exodus 40", witness_id: mt-exodus-bhs}]}
