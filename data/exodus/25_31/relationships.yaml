@@ -1,0 +1,7 @@
+schema_version: 1
+record_type: relationships
+records:
+  - &rel {id: uri-parent-bezalel, relationship_type: parent, subject_id: uri-bezalel, object_id: bezalel, claim_ids: [], citations: [{source_id: rahlfs-hanhart-2006, locator: "Exodus 31:2", witness_id: lxx-exodus-rahlfs-hanhart}, {source_id: dillmann-octateuch-1853, locator: "Exodus 31:2", witness_id: geez-exodus-dillmann}, {source_id: bhs-exodus, locator: "Exodus 31:2", witness_id: mt-exodus-bhs}]}
+  - {<<: *rel, id: ahisamach-parent-oholiab, subject_id: ahisamach, object_id: oholiab, citations: [{source_id: rahlfs-hanhart-2006, locator: "Exodus 31:6", witness_id: lxx-exodus-rahlfs-hanhart}, {source_id: dillmann-octateuch-1853, locator: "Exodus 31:6", witness_id: geez-exodus-dillmann}, {source_id: bhs-exodus, locator: "Exodus 31:6", witness_id: mt-exodus-bhs}]}
+  - {<<: *rel, id: hur-ancestor-parent-uri, subject_id: hur-ancestor-bezalel, object_id: uri-bezalel}
+  - {<<: *rel, id: exodus-hur-possible-identity-link, relationship_type: possible_identity, subject_id: hur-exodus, object_id: hur-ancestor-bezalel, claim_ids: [hur-exodus-possible-ancestor-identity], citations: [{source_id: rahlfs-hanhart-2006, locator: "Exodus 17:10-12; 31:2", witness_id: lxx-exodus-rahlfs-hanhart}, {source_id: dillmann-octateuch-1853, locator: "Exodus 17:10-12; 31:2", witness_id: geez-exodus-dillmann}, {source_id: bhs-exodus, locator: "Exodus 17:10-12; 31:2", witness_id: mt-exodus-bhs}]}

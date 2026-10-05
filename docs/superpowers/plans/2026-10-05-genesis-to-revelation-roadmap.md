@@ -35,7 +35,8 @@
 - [ ] Exodus 8–40: plagues, Passover, departure, wilderness events, Sinai/covenant, tabernacle; all named and uniquely identifiable unnamed people.
   - [x] Exodus 8–18: plague sequence, departure and sea crossing, wilderness provisions, Amalek battle, Jethro visit; Joshua, Hur, Pharaoh's firstborn, and group entities.
   - [x] Exodus 19–24: Sinai arrival, covenant proposal and ratification, Ten Words, and Moses' ascent.
-  - [ ] Exodus 25–40: tabernacle construction and additional wilderness events.
+  - [x] Exodus 25–31: sanctuary instructions, priestly garments and service, Bezalel, Oholiab/Eliab textual form, and the Sabbath sign.
+  - [ ] Exodus 32–40: calf episode, covenant renewal, tablets, and tabernacle construction narrative.
 - [ ] Leviticus 1–27: include narrative persons, otherwise record explicit chapter review with no individuals; track relevant foreign witnesses and events.
 - [ ] Numbers 1–36: census lists, wilderness generation, named and unnamed persons, tribal/family relations, age/death claims.
 - [ ] Deuteronomy 1–34: speeches, named/unnamed people, Moses' age and death, variant witnesses.

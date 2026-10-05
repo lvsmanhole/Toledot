@@ -1,0 +1,24 @@
+schema_version: 1
+record_type: passages
+records:
+  - &lxx {id: exod-25-lxx, work_id: exodus, witness_id: lxx-exodus-rahlfs-hanhart, locator: "Exodus 25", citations: [{source_id: rahlfs-hanhart-2006, locator: "Exodus 25", witness_id: lxx-exodus-rahlfs-hanhart}]}
+  - &gee {id: exod-25-geez, work_id: exodus, witness_id: geez-exodus-dillmann, locator: "Exodus 25", citations: [{source_id: dillmann-octateuch-1853, locator: "Exodus 25", witness_id: geez-exodus-dillmann}]}
+  - &mt {id: exod-25-mt, work_id: exodus, witness_id: mt-exodus-bhs, locator: "Exodus 25", citations: [{source_id: bhs-exodus, locator: "Exodus 25", witness_id: mt-exodus-bhs}]}
+  - {<<: *lxx, id: exod-26-lxx, locator: "Exodus 26", citations: [{source_id: rahlfs-hanhart-2006, locator: "Exodus 26", witness_id: lxx-exodus-rahlfs-hanhart}]}
+  - {<<: *gee, id: exod-26-geez, locator: "Exodus 26", citations: [{source_id: dillmann-octateuch-1853, locator: "Exodus 26", witness_id: geez-exodus-dillmann}]}
+  - {<<: *mt, id: exod-26-mt, locator: "Exodus 26", citations: [{source_id: bhs-exodus, locator: "Exodus 26", witness_id: mt-exodus-bhs}]}
+  - {<<: *lxx, id: exod-27-lxx, locator: "Exodus 27", citations: [{source_id: rahlfs-hanhart-2006, locator: "Exodus 27", witness_id: lxx-exodus-rahlfs-hanhart}]}
+  - {<<: *gee, id: exod-27-geez, locator: "Exodus 27", citations: [{source_id: dillmann-octateuch-1853, locator: "Exodus 27", witness_id: geez-exodus-dillmann}]}
+  - {<<: *mt, id: exod-27-mt, locator: "Exodus 27", citations: [{source_id: bhs-exodus, locator: "Exodus 27", witness_id: mt-exodus-bhs}]}
+  - {<<: *lxx, id: exod-28-lxx, locator: "Exodus 28", citations: [{source_id: rahlfs-hanhart-2006, locator: "Exodus 28", witness_id: lxx-exodus-rahlfs-hanhart}]}
+  - {<<: *gee, id: exod-28-geez, locator: "Exodus 28", citations: [{source_id: dillmann-octateuch-1853, locator: "Exodus 28", witness_id: geez-exodus-dillmann}]}
+  - {<<: *mt, id: exod-28-mt, locator: "Exodus 28", citations: [{source_id: bhs-exodus, locator: "Exodus 28", witness_id: mt-exodus-bhs}]}
+  - {<<: *lxx, id: exod-29-lxx, locator: "Exodus 29", citations: [{source_id: rahlfs-hanhart-2006, locator: "Exodus 29", witness_id: lxx-exodus-rahlfs-hanhart}]}
+  - {<<: *gee, id: exod-29-geez, locator: "Exodus 29", citations: [{source_id: dillmann-octateuch-1853, locator: "Exodus 29", witness_id: geez-exodus-dillmann}]}
+  - {<<: *mt, id: exod-29-mt, locator: "Exodus 29", citations: [{source_id: bhs-exodus, locator: "Exodus 29", witness_id: mt-exodus-bhs}]}
+  - {<<: *lxx, id: exod-30-lxx, locator: "Exodus 30", citations: [{source_id: rahlfs-hanhart-2006, locator: "Exodus 30", witness_id: lxx-exodus-rahlfs-hanhart}]}
+  - {<<: *gee, id: exod-30-geez, locator: "Exodus 30", citations: [{source_id: dillmann-octateuch-1853, locator: "Exodus 30", witness_id: geez-exodus-dillmann}]}
+  - {<<: *mt, id: exod-30-mt, locator: "Exodus 30", citations: [{source_id: bhs-exodus, locator: "Exodus 30", witness_id: mt-exodus-bhs}]}
+  - {<<: *lxx, id: exod-31-lxx, locator: "Exodus 31", citations: [{source_id: rahlfs-hanhart-2006, locator: "Exodus 31", witness_id: lxx-exodus-rahlfs-hanhart}]}
+  - {<<: *gee, id: exod-31-geez, locator: "Exodus 31", citations: [{source_id: dillmann-octateuch-1853, locator: "Exodus 31", witness_id: geez-exodus-dillmann}]}
+  - {<<: *mt, id: exod-31-mt, locator: "Exodus 31", citations: [{source_id: bhs-exodus, locator: "Exodus 31", witness_id: mt-exodus-bhs}]}
