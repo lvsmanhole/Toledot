@@ -1,0 +1,33 @@
+schema_version: 1
+record_type: entities
+records:
+  - &nh {id: elizur-reuben, entity_type: human, primary_name: Elizur, aliases: [Elisour (LXX form)], classification: named_person, identity_status: named, gender: male, citations: [{source_id: rahlfs-hanhart-2006, locator: "Numbers 1:5-15", witness_id: lxx-numbers-rahlfs-hanhart}, {source_id: dillmann-octateuch-1853, locator: "Numeri 1:5-15", witness_id: geez-numbers-dillmann}, {source_id: bhs-numbers, locator: "Numbers 1:5-15", witness_id: mt-numbers-bhs}]}
+  - {<<: *nh, id: shedeur, primary_name: Shedeur, aliases: [Sedious (LXX form)]}
+  - {<<: *nh, id: shelumiel, primary_name: Shelumiel, aliases: [Salamiel (LXX form)]}
+  - {<<: *nh, id: zurishaddai, primary_name: Zurishaddai, aliases: [Sourisadai (LXX form)]}
+  - {<<: *nh, id: nethanel-issachar, primary_name: Nethanel, aliases: [Nathanael (LXX form)]}
+  - {<<: *nh, id: zuar, primary_name: Zuar, aliases: [Sogar (LXX form)]}
+  - {<<: *nh, id: eliab-zebulun, primary_name: Eliab, aliases: []}
+  - {<<: *nh, id: helon, primary_name: Helon, aliases: [Chailon (LXX form)]}
+  - {<<: *nh, id: elishama-ephraim, primary_name: Elishama, aliases: [Elisama (LXX form)]}
+  - {<<: *nh, id: ammihud-ephraim, primary_name: Ammihud, aliases: [Emioud (LXX form)]}
+  - {<<: *nh, id: gamaliel-manasseh, primary_name: Gamaliel, aliases: [Gamaliel (LXX form)]}
+  - {<<: *nh, id: pedahzur, primary_name: Pedahzur, aliases: [Phadassour (LXX form)]}
+  - {<<: *nh, id: abidan-benjamin, primary_name: Abidan, aliases: [Abidan (LXX form)]}
+  - {<<: *nh, id: gideoni, primary_name: Gideoni, aliases: [Gadeoni (LXX form)]}
+  - {<<: *nh, id: ahiezer-dan, primary_name: Ahiezer, aliases: [Achiezer (LXX form)]}
+  - {<<: *nh, id: ammishaddai, primary_name: Ammishaddai, aliases: [Amisadai (LXX form)]}
+  - {<<: *nh, id: pagiel-asher, primary_name: Pagiel, aliases: [Phagaiel (LXX form)]}
+  - {<<: *nh, id: ochran, primary_name: Ocran, aliases: [Echran (LXX form)]}
+  - {<<: *nh, id: eliasaph-gad, primary_name: Eliasaph, aliases: [Elisaph (LXX form)]}
+  - {<<: *nh, id: deuel, primary_name: Deuel, aliases: [Ragouel (LXX form), Reuel (Numbers 2:14 form)]}
+  - {<<: *nh, id: ahira, primary_name: Ahira, aliases: [Achire (LXX form)]}
+  - {<<: *nh, id: enan, primary_name: Enan, aliases: [Ainan (LXX form)]}
+  - {<<: *nh, id: libni-numbers, primary_name: Libni, aliases: [Lobeni (LXX form)]}
+  - {<<: *nh, id: shimei-numbers, primary_name: Shimei son of Gershon, aliases: [Semei (LXX form)]}
+  - {<<: *nh, id: mahli-numbers, primary_name: Mahli, aliases: [Mooli (LXX form)]}
+  - {<<: *nh, id: mushi-numbers, primary_name: Mushi, aliases: [Mousi (LXX form)]}
+  - {<<: *nh, id: eliasaph-gershon, primary_name: Eliasaph son of Lael, aliases: [Elisaph (LXX form)], citations: [{source_id: rahlfs-hanhart-2006, locator: "Numbers 3:24", witness_id: lxx-numbers-rahlfs-hanhart}, {source_id: dillmann-octateuch-1853, locator: "Numeri 3:24", witness_id: geez-numbers-dillmann}, {source_id: bhs-numbers, locator: "Numbers 3:24", witness_id: mt-numbers-bhs}]}
+  - {<<: *nh, id: zuriel-merari, primary_name: Zuriel, aliases: [], citations: [{source_id: rahlfs-hanhart-2006, locator: "Numbers 3:35", witness_id: lxx-numbers-rahlfs-hanhart}, {source_id: dillmann-octateuch-1853, locator: "Numeri 3:35", witness_id: geez-numbers-dillmann}, {source_id: bhs-numbers, locator: "Numbers 3:35", witness_id: mt-numbers-bhs}]}
+  - {<<: *nh, id: abihail-merari, primary_name: Abihail, aliases: [], citations: [{source_id: rahlfs-hanhart-2006, locator: "Numbers 3:35", witness_id: lxx-numbers-rahlfs-hanhart}, {source_id: dillmann-octateuch-1853, locator: "Numeri 3:35", witness_id: geez-numbers-dillmann}, {source_id: bhs-numbers, locator: "Numbers 3:35", witness_id: mt-numbers-bhs}]}
+  - {<<: *nh, id: lael, primary_name: Lael, aliases: [], citations: [{source_id: rahlfs-hanhart-2006, locator: "Numbers 3:24", witness_id: lxx-numbers-rahlfs-hanhart}, {source_id: dillmann-octateuch-1853, locator: "Numeri 3:24", witness_id: geez-numbers-dillmann}, {source_id: bhs-numbers, locator: "Numbers 3:24", witness_id: mt-numbers-bhs}]}

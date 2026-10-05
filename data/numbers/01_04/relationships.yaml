@@ -1,0 +1,20 @@
+schema_version: 1
+record_type: relationships
+records:
+  - &parent {id: shedeur-parent-elizur, relationship_type: parent, subject_id: shedeur, object_id: elizur-reuben, claim_ids: [], citations: [{source_id: rahlfs-hanhart-2006, locator: "Numbers 1:5-15", witness_id: lxx-numbers-rahlfs-hanhart}, {source_id: dillmann-octateuch-1853, locator: "Numeri 1:5-15", witness_id: geez-numbers-dillmann}, {source_id: bhs-numbers, locator: "Numbers 1:5-15", witness_id: mt-numbers-bhs}]}
+  - {<<: *parent, id: zurishaddai-parent-shelumiel, subject_id: zurishaddai, object_id: shelumiel}
+  - {<<: *parent, id: zuar-parent-nethanel, subject_id: zuar, object_id: nethanel-issachar}
+  - {<<: *parent, id: helon-parent-eliab, subject_id: helon, object_id: eliab-zebulun}
+  - {<<: *parent, id: ammihud-parent-elishama-ephraim, subject_id: ammihud-ephraim, object_id: elishama-ephraim}
+  - {<<: *parent, id: pedahzur-parent-gamaliel, subject_id: pedahzur, object_id: gamaliel-manasseh}
+  - {<<: *parent, id: gideoni-parent-abidan, subject_id: gideoni, object_id: abidan-benjamin}
+  - {<<: *parent, id: ammishaddai-parent-ahiezer, subject_id: ammishaddai, object_id: ahiezer-dan}
+  - {<<: *parent, id: ochran-parent-pagiel, subject_id: ochran, object_id: pagiel-asher}
+  - {<<: *parent, id: deuel-parent-eliasaph-gad, subject_id: deuel, object_id: eliasaph-gad}
+  - {<<: *parent, id: enan-parent-ahira, subject_id: enan, object_id: ahira}
+  - {<<: *parent, id: gershon-parent-libni-numbers, subject_id: gershon, object_id: libni-numbers, citations: [{source_id: rahlfs-hanhart-2006, locator: "Numbers 3:18", witness_id: lxx-numbers-rahlfs-hanhart}, {source_id: dillmann-octateuch-1853, locator: "Numeri 3:18", witness_id: geez-numbers-dillmann}, {source_id: bhs-numbers, locator: "Numbers 3:18", witness_id: mt-numbers-bhs}]}
+  - {<<: *parent, id: gershon-parent-shimei-numbers, subject_id: gershon, object_id: shimei-numbers}
+  - {<<: *parent, id: merari-parent-mahli-numbers, subject_id: merari, object_id: mahli-numbers, citations: [{source_id: rahlfs-hanhart-2006, locator: "Numbers 3:20", witness_id: lxx-numbers-rahlfs-hanhart}, {source_id: dillmann-octateuch-1853, locator: "Numeri 3:20", witness_id: geez-numbers-dillmann}, {source_id: bhs-numbers, locator: "Numbers 3:20", witness_id: mt-numbers-bhs}]}
+  - {<<: *parent, id: merari-parent-mushi-numbers, subject_id: merari, object_id: mushi-numbers}
+  - {<<: *parent, id: lael-parent-eliasaph-gershon, subject_id: lael, object_id: eliasaph-gershon, citations: [{source_id: rahlfs-hanhart-2006, locator: "Numbers 3:24", witness_id: lxx-numbers-rahlfs-hanhart}, {source_id: dillmann-octateuch-1853, locator: "Numeri 3:24", witness_id: geez-numbers-dillmann}, {source_id: bhs-numbers, locator: "Numbers 3:24", witness_id: mt-numbers-bhs}]}
+  - {<<: *parent, id: abihail-parent-zuriel, subject_id: abihail-merari, object_id: zuriel-merari, citations: [{source_id: rahlfs-hanhart-2006, locator: "Numbers 3:35", witness_id: lxx-numbers-rahlfs-hanhart}, {source_id: dillmann-octateuch-1853, locator: "Numeri 3:35", witness_id: geez-numbers-dillmann}, {source_id: bhs-numbers, locator: "Numbers 3:35", witness_id: mt-numbers-bhs}]}

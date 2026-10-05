@@ -1,0 +1,15 @@
+schema_version: 1
+record_type: passages
+records:
+  - &lxx {id: num-1-lxx, work_id: numbers, witness_id: lxx-numbers-rahlfs-hanhart, locator: "Numbers 1", citations: [{source_id: rahlfs-hanhart-2006, locator: "Numbers 1", witness_id: lxx-numbers-rahlfs-hanhart}]}
+  - &gee {id: num-1-geez, work_id: numbers, witness_id: geez-numbers-dillmann, locator: "Numbers 1", citations: [{source_id: dillmann-octateuch-1853, locator: "Numeri 1", witness_id: geez-numbers-dillmann}]}
+  - &mt {id: num-1-mt, work_id: numbers, witness_id: mt-numbers-bhs, locator: "Numbers 1", citations: [{source_id: bhs-numbers, locator: "Numbers 1", witness_id: mt-numbers-bhs}]}
+  - {<<: *lxx, id: num-2-lxx, locator: "Numbers 2", citations: [{source_id: rahlfs-hanhart-2006, locator: "Numbers 2", witness_id: lxx-numbers-rahlfs-hanhart}]}
+  - {<<: *gee, id: num-2-geez, locator: "Numbers 2", citations: [{source_id: dillmann-octateuch-1853, locator: "Numeri 2", witness_id: geez-numbers-dillmann}]}
+  - {<<: *mt, id: num-2-mt, locator: "Numbers 2", citations: [{source_id: bhs-numbers, locator: "Numbers 2", witness_id: mt-numbers-bhs}]}
+  - {<<: *lxx, id: num-3-lxx, locator: "Numbers 3", citations: [{source_id: rahlfs-hanhart-2006, locator: "Numbers 3", witness_id: lxx-numbers-rahlfs-hanhart}]}
+  - {<<: *gee, id: num-3-geez, locator: "Numbers 3", citations: [{source_id: dillmann-octateuch-1853, locator: "Numeri 3", witness_id: geez-numbers-dillmann}]}
+  - {<<: *mt, id: num-3-mt, locator: "Numbers 3", citations: [{source_id: bhs-numbers, locator: "Numbers 3", witness_id: mt-numbers-bhs}]}
+  - {<<: *lxx, id: num-4-lxx, locator: "Numbers 4", citations: [{source_id: rahlfs-hanhart-2006, locator: "Numbers 4", witness_id: lxx-numbers-rahlfs-hanhart}]}
+  - {<<: *gee, id: num-4-geez, locator: "Numbers 4", citations: [{source_id: dillmann-octateuch-1853, locator: "Numeri 4", witness_id: geez-numbers-dillmann}]}
+  - {<<: *mt, id: num-4-mt, locator: "Numbers 4", citations: [{source_id: bhs-numbers, locator: "Numbers 4", witness_id: mt-numbers-bhs}]}

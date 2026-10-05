@@ -1,0 +1,156 @@
+schema_version: 1
+record_type: claims
+records:
+  - &nl {id: elizur-reuben-attested-lxx, subject_id: elizur-reuben, predicate: attested_in_passage, value: {kind: attestation, status: mentioned}, evidence_type: explicit_text, witness_id: lxx-numbers-rahlfs-hanhart, confidence: A, citations: [{source_id: rahlfs-hanhart-2006, locator: "Numbers 1:5-15", witness_id: lxx-numbers-rahlfs-hanhart}]}
+  - &ng {id: elizur-reuben-attested-geez, subject_id: elizur-reuben, predicate: attested_in_passage, value: {kind: attestation, status: mentioned}, evidence_type: explicit_text, witness_id: geez-numbers-dillmann, confidence: A, citations: [{source_id: dillmann-octateuch-1853, locator: "Numeri 1:5-15", witness_id: geez-numbers-dillmann}]}
+  - &nm {id: elizur-reuben-attested-mt, subject_id: elizur-reuben, predicate: attested_in_passage, value: {kind: attestation, status: mentioned}, evidence_type: explicit_text, witness_id: mt-numbers-bhs, confidence: A, citations: [{source_id: bhs-numbers, locator: "Numbers 1:5-15", witness_id: mt-numbers-bhs}]}
+  - {<<: *nl, id: shedeur-attested-lxx, subject_id: shedeur}
+  - {<<: *ng, id: shedeur-attested-geez, subject_id: shedeur}
+  - {<<: *nm, id: shedeur-attested-mt, subject_id: shedeur}
+  - {<<: *nl, id: shelumiel-attested-lxx, subject_id: shelumiel}
+  - {<<: *ng, id: shelumiel-attested-geez, subject_id: shelumiel}
+  - {<<: *nm, id: shelumiel-attested-mt, subject_id: shelumiel}
+  - {<<: *nl, id: zurishaddai-attested-lxx, subject_id: zurishaddai}
+  - {<<: *ng, id: zurishaddai-attested-geez, subject_id: zurishaddai}
+  - {<<: *nm, id: zurishaddai-attested-mt, subject_id: zurishaddai}
+  - {<<: *nl, id: nethanel-issachar-attested-lxx, subject_id: nethanel-issachar}
+  - {<<: *ng, id: nethanel-issachar-attested-geez, subject_id: nethanel-issachar}
+  - {<<: *nm, id: nethanel-issachar-attested-mt, subject_id: nethanel-issachar}
+  - {<<: *nl, id: zuar-attested-lxx, subject_id: zuar}
+  - {<<: *ng, id: zuar-attested-geez, subject_id: zuar}
+  - {<<: *nm, id: zuar-attested-mt, subject_id: zuar}
+  - {<<: *nl, id: eliab-zebulun-attested-lxx, subject_id: eliab-zebulun}
+  - {<<: *ng, id: eliab-zebulun-attested-geez, subject_id: eliab-zebulun}
+  - {<<: *nm, id: eliab-zebulun-attested-mt, subject_id: eliab-zebulun}
+  - {<<: *nl, id: helon-attested-lxx, subject_id: helon}
+  - {<<: *ng, id: helon-attested-geez, subject_id: helon}
+  - {<<: *nm, id: helon-attested-mt, subject_id: helon}
+  - {<<: *nl, id: elishama-ephraim-attested-lxx, subject_id: elishama-ephraim}
+  - {<<: *ng, id: elishama-ephraim-attested-geez, subject_id: elishama-ephraim}
+  - {<<: *nm, id: elishama-ephraim-attested-mt, subject_id: elishama-ephraim}
+  - {<<: *nl, id: ammihud-ephraim-attested-lxx, subject_id: ammihud-ephraim}
+  - {<<: *ng, id: ammihud-ephraim-attested-geez, subject_id: ammihud-ephraim}
+  - {<<: *nm, id: ammihud-ephraim-attested-mt, subject_id: ammihud-ephraim}
+  - {<<: *nl, id: gamaliel-manasseh-attested-lxx, subject_id: gamaliel-manasseh}
+  - {<<: *ng, id: gamaliel-manasseh-attested-geez, subject_id: gamaliel-manasseh}
+  - {<<: *nm, id: gamaliel-manasseh-attested-mt, subject_id: gamaliel-manasseh}
+  - {<<: *nl, id: pedahzur-attested-lxx, subject_id: pedahzur}
+  - {<<: *ng, id: pedahzur-attested-geez, subject_id: pedahzur}
+  - {<<: *nm, id: pedahzur-attested-mt, subject_id: pedahzur}
+  - {<<: *nl, id: abidan-benjamin-attested-lxx, subject_id: abidan-benjamin}
+  - {<<: *ng, id: abidan-benjamin-attested-geez, subject_id: abidan-benjamin}
+  - {<<: *nm, id: abidan-benjamin-attested-mt, subject_id: abidan-benjamin}
+  - {<<: *nl, id: gideoni-attested-lxx, subject_id: gideoni}
+  - {<<: *ng, id: gideoni-attested-geez, subject_id: gideoni}
+  - {<<: *nm, id: gideoni-attested-mt, subject_id: gideoni}
+  - {<<: *nl, id: ahiezer-dan-attested-lxx, subject_id: ahiezer-dan}
+  - {<<: *ng, id: ahiezer-dan-attested-geez, subject_id: ahiezer-dan}
+  - {<<: *nm, id: ahiezer-dan-attested-mt, subject_id: ahiezer-dan}
+  - {<<: *nl, id: ammishaddai-attested-lxx, subject_id: ammishaddai}
+  - {<<: *ng, id: ammishaddai-attested-geez, subject_id: ammishaddai}
+  - {<<: *nm, id: ammishaddai-attested-mt, subject_id: ammishaddai}
+  - {<<: *nl, id: pagiel-asher-attested-lxx, subject_id: pagiel-asher}
+  - {<<: *ng, id: pagiel-asher-attested-geez, subject_id: pagiel-asher}
+  - {<<: *nm, id: pagiel-asher-attested-mt, subject_id: pagiel-asher}
+  - {<<: *nl, id: ochran-attested-lxx, subject_id: ochran}
+  - {<<: *ng, id: ochran-attested-geez, subject_id: ochran}
+  - {<<: *nm, id: ochran-attested-mt, subject_id: ochran}
+  - {<<: *nl, id: eliasaph-gad-attested-lxx, subject_id: eliasaph-gad}
+  - {<<: *ng, id: eliasaph-gad-attested-geez, subject_id: eliasaph-gad}
+  - {<<: *nm, id: eliasaph-gad-attested-mt, subject_id: eliasaph-gad}
+  - {<<: *nl, id: deuel-attested-lxx, subject_id: deuel}
+  - {<<: *ng, id: deuel-attested-geez, subject_id: deuel}
+  - {<<: *nm, id: deuel-attested-mt, subject_id: deuel}
+  - {<<: *nl, id: ahira-attested-lxx, subject_id: ahira}
+  - {<<: *ng, id: ahira-attested-geez, subject_id: ahira}
+  - {<<: *nm, id: ahira-attested-mt, subject_id: ahira}
+  - {<<: *nl, id: enan-attested-lxx, subject_id: enan}
+  - {<<: *ng, id: enan-attested-geez, subject_id: enan}
+  - {<<: *nm, id: enan-attested-mt, subject_id: enan}
+  - {<<: *nl, id: nahshon-attested-numbers-lxx, subject_id: nahshon, citations: [{source_id: rahlfs-hanhart-2006, locator: "Numbers 1:7", witness_id: lxx-numbers-rahlfs-hanhart}]}
+  - {<<: *ng, id: nahshon-attested-numbers-geez, subject_id: nahshon, citations: [{source_id: dillmann-octateuch-1853, locator: "Numeri 1:7", witness_id: geez-numbers-dillmann}]}
+  - {<<: *nm, id: nahshon-attested-numbers-mt, subject_id: nahshon, citations: [{source_id: bhs-numbers, locator: "Numbers 1:7", witness_id: mt-numbers-bhs}]}
+  - {<<: *nl, id: amminadab-attested-numbers-lxx, subject_id: amminadab, citations: [{source_id: rahlfs-hanhart-2006, locator: "Numbers 1:7", witness_id: lxx-numbers-rahlfs-hanhart}]}
+  - {<<: *ng, id: amminadab-attested-numbers-geez, subject_id: amminadab, citations: [{source_id: dillmann-octateuch-1853, locator: "Numeri 1:7", witness_id: geez-numbers-dillmann}]}
+  - {<<: *nm, id: amminadab-attested-numbers-mt, subject_id: amminadab, citations: [{source_id: bhs-numbers, locator: "Numbers 1:7", witness_id: mt-numbers-bhs}]}
+  - &n3l {id: libni-numbers-attested-lxx, subject_id: libni-numbers, predicate: attested_in_passage, value: {kind: attestation, status: mentioned}, evidence_type: explicit_text, witness_id: lxx-numbers-rahlfs-hanhart, confidence: A, citations: [{source_id: rahlfs-hanhart-2006, locator: "Numbers 3:18", witness_id: lxx-numbers-rahlfs-hanhart}]}
+  - &n3g {id: libni-numbers-attested-geez, subject_id: libni-numbers, predicate: attested_in_passage, value: {kind: attestation, status: mentioned}, evidence_type: explicit_text, witness_id: geez-numbers-dillmann, confidence: A, citations: [{source_id: dillmann-octateuch-1853, locator: "Numeri 3:18", witness_id: geez-numbers-dillmann}]}
+  - &n3m {id: libni-numbers-attested-mt, subject_id: libni-numbers, predicate: attested_in_passage, value: {kind: attestation, status: mentioned}, evidence_type: explicit_text, witness_id: mt-numbers-bhs, confidence: A, citations: [{source_id: bhs-numbers, locator: "Numbers 3:18", witness_id: mt-numbers-bhs}]}
+  - {<<: *n3l, id: shimei-numbers-attested-lxx, subject_id: shimei-numbers, citations: [{source_id: rahlfs-hanhart-2006, locator: "Numbers 3:18", witness_id: lxx-numbers-rahlfs-hanhart}]}
+  - {<<: *n3g, id: shimei-numbers-attested-geez, subject_id: shimei-numbers, citations: [{source_id: dillmann-octateuch-1853, locator: "Numeri 3:18", witness_id: geez-numbers-dillmann}]}
+  - {<<: *n3m, id: shimei-numbers-attested-mt, subject_id: shimei-numbers, citations: [{source_id: bhs-numbers, locator: "Numbers 3:18", witness_id: mt-numbers-bhs}]}
+  - {<<: *n3l, id: mahli-numbers-attested-lxx, subject_id: mahli-numbers, citations: [{source_id: rahlfs-hanhart-2006, locator: "Numbers 3:20", witness_id: lxx-numbers-rahlfs-hanhart}]}
+  - {<<: *n3g, id: mahli-numbers-attested-geez, subject_id: mahli-numbers, citations: [{source_id: dillmann-octateuch-1853, locator: "Numeri 3:20", witness_id: geez-numbers-dillmann}]}
+  - {<<: *n3m, id: mahli-numbers-attested-mt, subject_id: mahli-numbers, citations: [{source_id: bhs-numbers, locator: "Numbers 3:20", witness_id: mt-numbers-bhs}]}
+  - {<<: *n3l, id: mushi-numbers-attested-lxx, subject_id: mushi-numbers, citations: [{source_id: rahlfs-hanhart-2006, locator: "Numbers 3:20", witness_id: lxx-numbers-rahlfs-hanhart}]}
+  - {<<: *n3g, id: mushi-numbers-attested-geez, subject_id: mushi-numbers, citations: [{source_id: dillmann-octateuch-1853, locator: "Numeri 3:20", witness_id: geez-numbers-dillmann}]}
+  - {<<: *n3m, id: mushi-numbers-attested-mt, subject_id: mushi-numbers, citations: [{source_id: bhs-numbers, locator: "Numbers 3:20", witness_id: mt-numbers-bhs}]}
+  - {<<: *n3l, id: eliasaph-gershon-attested-lxx, subject_id: eliasaph-gershon, citations: [{source_id: rahlfs-hanhart-2006, locator: "Numbers 3:24", witness_id: lxx-numbers-rahlfs-hanhart}]}
+  - {<<: *n3g, id: eliasaph-gershon-attested-geez, subject_id: eliasaph-gershon, citations: [{source_id: dillmann-octateuch-1853, locator: "Numeri 3:24", witness_id: geez-numbers-dillmann}]}
+  - {<<: *n3m, id: eliasaph-gershon-attested-mt, subject_id: eliasaph-gershon, citations: [{source_id: bhs-numbers, locator: "Numbers 3:24", witness_id: mt-numbers-bhs}]}
+  - {<<: *n3l, id: lael-attested-lxx, subject_id: lael, citations: [{source_id: rahlfs-hanhart-2006, locator: "Numbers 3:24", witness_id: lxx-numbers-rahlfs-hanhart}]}
+  - {<<: *n3g, id: lael-attested-geez, subject_id: lael, citations: [{source_id: dillmann-octateuch-1853, locator: "Numeri 3:24", witness_id: geez-numbers-dillmann}]}
+  - {<<: *n3m, id: lael-attested-mt, subject_id: lael, citations: [{source_id: bhs-numbers, locator: "Numbers 3:24", witness_id: mt-numbers-bhs}]}
+  - {<<: *n3l, id: zuriel-merari-attested-lxx, subject_id: zuriel-merari, citations: [{source_id: rahlfs-hanhart-2006, locator: "Numbers 3:35", witness_id: lxx-numbers-rahlfs-hanhart}]}
+  - {<<: *n3g, id: zuriel-merari-attested-geez, subject_id: zuriel-merari, citations: [{source_id: dillmann-octateuch-1853, locator: "Numeri 3:35", witness_id: geez-numbers-dillmann}]}
+  - {<<: *n3m, id: zuriel-merari-attested-mt, subject_id: zuriel-merari, citations: [{source_id: bhs-numbers, locator: "Numbers 3:35", witness_id: mt-numbers-bhs}]}
+  - {<<: *n3l, id: abihail-merari-attested-lxx, subject_id: abihail-merari, citations: [{source_id: rahlfs-hanhart-2006, locator: "Numbers 3:35", witness_id: lxx-numbers-rahlfs-hanhart}]}
+  - {<<: *n3g, id: abihail-merari-attested-geez, subject_id: abihail-merari, citations: [{source_id: dillmann-octateuch-1853, locator: "Numeri 3:35", witness_id: geez-numbers-dillmann}]}
+  - {<<: *n3m, id: abihail-merari-attested-mt, subject_id: abihail-merari, citations: [{source_id: bhs-numbers, locator: "Numbers 3:35", witness_id: mt-numbers-bhs}]}
+  - {<<: *n3l, id: census-israel-eligible-count-lxx, subject_id: israelites-exodus, predicate: population_count, value: {kind: integer_count, count: 603550, population: "Israelite males aged twenty or older eligible for military service; Levites excluded"}, citations: [{source_id: rahlfs-hanhart-2006, locator: "Numbers 1:45-49", witness_id: lxx-numbers-rahlfs-hanhart}]}
+  - {<<: *n3g, id: census-israel-eligible-count-geez, subject_id: israelites-exodus, predicate: population_count, value: {kind: integer_count, count: 603550, population: "Israelite males aged twenty or older eligible for military service; Levites excluded"}, citations: [{source_id: dillmann-octateuch-1853, locator: "Numeri 1:45-49", witness_id: geez-numbers-dillmann}]}
+  - {<<: *n3m, id: census-israel-eligible-count-mt, subject_id: israelites-exodus, predicate: population_count, value: {kind: integer_count, count: 603550, population: "Israelite males aged twenty or older eligible for military service; Levites excluded"}, citations: [{source_id: bhs-numbers, locator: "Numbers 1:45-49", witness_id: mt-numbers-bhs}]}
+  - &sr {id: tribe-reuben-count-lxx, subject_id: israelites-exodus, predicate: census_subcount, value: {kind: integer_count, count: 46500, population: "eligible Reubenite men, aged twenty and older"}, evidence_type: explicit_text, witness_id: lxx-numbers-rahlfs-hanhart, confidence: A, citations: [{source_id: rahlfs-hanhart-2006, locator: "Numbers 1:20-21", witness_id: lxx-numbers-rahlfs-hanhart}]}
+  - &sg {id: tribe-reuben-count-geez, subject_id: israelites-exodus, predicate: census_subcount, value: {kind: integer_count, count: 46500, population: "eligible Reubenite men, aged twenty and older"}, evidence_type: explicit_text, witness_id: geez-numbers-dillmann, confidence: A, citations: [{source_id: dillmann-octateuch-1853, locator: "Numeri 1:20-21", witness_id: geez-numbers-dillmann}]}
+  - &sm {id: tribe-reuben-count-mt, subject_id: israelites-exodus, predicate: census_subcount, value: {kind: integer_count, count: 46500, population: "eligible Reubenite men, aged twenty and older"}, evidence_type: explicit_text, witness_id: mt-numbers-bhs, confidence: A, citations: [{source_id: bhs-numbers, locator: "Numbers 1:20-21", witness_id: mt-numbers-bhs}]}
+  - {<<: *sr, id: tribe-simeon-count-lxx, value: {kind: integer_count, count: 59300, population: "eligible Simeonite men, aged twenty and older"}, citations: [{source_id: rahlfs-hanhart-2006, locator: "Numbers 1:22-23", witness_id: lxx-numbers-rahlfs-hanhart}]}
+  - {<<: *sg, id: tribe-simeon-count-geez, value: {kind: integer_count, count: 59300, population: "eligible Simeonite men, aged twenty and older"}, citations: [{source_id: dillmann-octateuch-1853, locator: "Numeri 1:22-23", witness_id: geez-numbers-dillmann}]}
+  - {<<: *sm, id: tribe-simeon-count-mt, value: {kind: integer_count, count: 59300, population: "eligible Simeonite men, aged twenty and older"}, citations: [{source_id: bhs-numbers, locator: "Numbers 1:22-23", witness_id: mt-numbers-bhs}]}
+  - {<<: *sr, id: tribe-judah-count-lxx, value: {kind: integer_count, count: 74600, population: "eligible Judahite men, aged twenty and older"}, citations: [{source_id: rahlfs-hanhart-2006, locator: "Numbers 1:24-25", witness_id: lxx-numbers-rahlfs-hanhart}]}
+  - {<<: *sg, id: tribe-judah-count-geez, value: {kind: integer_count, count: 74600, population: "eligible Judahite men, aged twenty and older"}, citations: [{source_id: dillmann-octateuch-1853, locator: "Numeri 1:24-25", witness_id: geez-numbers-dillmann}]}
+  - {<<: *sm, id: tribe-judah-count-mt, value: {kind: integer_count, count: 74600, population: "eligible Judahite men, aged twenty and older"}, citations: [{source_id: bhs-numbers, locator: "Numbers 1:24-25", witness_id: mt-numbers-bhs}]}
+  - {<<: *sr, id: tribe-issachar-count-lxx, value: {kind: integer_count, count: 54400, population: "eligible Issacharite men, aged twenty and older"}, citations: [{source_id: rahlfs-hanhart-2006, locator: "Numbers 1:26-27", witness_id: lxx-numbers-rahlfs-hanhart}]}
+  - {<<: *sg, id: tribe-issachar-count-geez, value: {kind: integer_count, count: 54400, population: "eligible Issacharite men, aged twenty and older"}, citations: [{source_id: dillmann-octateuch-1853, locator: "Numeri 1:26-27", witness_id: geez-numbers-dillmann}]}
+  - {<<: *sm, id: tribe-issachar-count-mt, value: {kind: integer_count, count: 54400, population: "eligible Issacharite men, aged twenty and older"}, citations: [{source_id: bhs-numbers, locator: "Numbers 1:26-27", witness_id: mt-numbers-bhs}]}
+  - {<<: *sr, id: tribe-zebulun-count-lxx, value: {kind: integer_count, count: 57400, population: "eligible Zebulunite men, aged twenty and older"}, citations: [{source_id: rahlfs-hanhart-2006, locator: "Numbers 1:28-29", witness_id: lxx-numbers-rahlfs-hanhart}]}
+  - {<<: *sg, id: tribe-zebulun-count-geez, value: {kind: integer_count, count: 57400, population: "eligible Zebulunite men, aged twenty and older"}, citations: [{source_id: dillmann-octateuch-1853, locator: "Numeri 1:28-29", witness_id: geez-numbers-dillmann}]}
+  - {<<: *sm, id: tribe-zebulun-count-mt, value: {kind: integer_count, count: 57400, population: "eligible Zebulunite men, aged twenty and older"}, citations: [{source_id: bhs-numbers, locator: "Numbers 1:28-29", witness_id: mt-numbers-bhs}]}
+  - {<<: *sr, id: tribe-ephraim-count-lxx, value: {kind: integer_count, count: 40500, population: "eligible Ephraimite men, aged twenty and older"}, citations: [{source_id: rahlfs-hanhart-2006, locator: "Numbers 1:30-31", witness_id: lxx-numbers-rahlfs-hanhart}]}
+  - {<<: *sg, id: tribe-ephraim-count-geez, value: {kind: integer_count, count: 40500, population: "eligible Ephraimite men, aged twenty and older"}, citations: [{source_id: dillmann-octateuch-1853, locator: "Numeri 1:30-31", witness_id: geez-numbers-dillmann}]}
+  - {<<: *sm, id: tribe-ephraim-count-mt, value: {kind: integer_count, count: 40500, population: "eligible Ephraimite men, aged twenty and older"}, citations: [{source_id: bhs-numbers, locator: "Numbers 1:30-31", witness_id: mt-numbers-bhs}]}
+  - {<<: *sr, id: tribe-manasseh-count-lxx, value: {kind: integer_count, count: 32200, population: "eligible Manassite men, aged twenty and older"}, citations: [{source_id: rahlfs-hanhart-2006, locator: "Numbers 1:32-33", witness_id: lxx-numbers-rahlfs-hanhart}]}
+  - {<<: *sg, id: tribe-manasseh-count-geez, value: {kind: integer_count, count: 32200, population: "eligible Manassite men, aged twenty and older"}, citations: [{source_id: dillmann-octateuch-1853, locator: "Numeri 1:32-33", witness_id: geez-numbers-dillmann}]}
+  - {<<: *sm, id: tribe-manasseh-count-mt, value: {kind: integer_count, count: 32200, population: "eligible Manassite men, aged twenty and older"}, citations: [{source_id: bhs-numbers, locator: "Numbers 1:32-33", witness_id: mt-numbers-bhs}]}
+  - {<<: *sr, id: tribe-benjamin-count-lxx, value: {kind: integer_count, count: 35400, population: "eligible Benjaminite men, aged twenty and older"}, citations: [{source_id: rahlfs-hanhart-2006, locator: "Numbers 1:34-35", witness_id: lxx-numbers-rahlfs-hanhart}]}
+  - {<<: *sg, id: tribe-benjamin-count-geez, value: {kind: integer_count, count: 35400, population: "eligible Benjaminite men, aged twenty and older"}, citations: [{source_id: dillmann-octateuch-1853, locator: "Numeri 1:34-35", witness_id: geez-numbers-dillmann}]}
+  - {<<: *sm, id: tribe-benjamin-count-mt, value: {kind: integer_count, count: 35400, population: "eligible Benjaminite men, aged twenty and older"}, citations: [{source_id: bhs-numbers, locator: "Numbers 1:34-35", witness_id: mt-numbers-bhs}]}
+  - {<<: *sr, id: tribe-gad-count-lxx, value: {kind: integer_count, count: 45650, population: "eligible Gadite men, aged twenty and older"}, citations: [{source_id: rahlfs-hanhart-2006, locator: "Numbers 1:36-37", witness_id: lxx-numbers-rahlfs-hanhart}]}
+  - {<<: *sg, id: tribe-gad-count-geez, value: {kind: integer_count, count: 45650, population: "eligible Gadite men, aged twenty and older"}, citations: [{source_id: dillmann-octateuch-1853, locator: "Numeri 1:36-37", witness_id: geez-numbers-dillmann}]}
+  - {<<: *sm, id: tribe-gad-count-mt, value: {kind: integer_count, count: 45650, population: "eligible Gadite men, aged twenty and older"}, citations: [{source_id: bhs-numbers, locator: "Numbers 1:36-37", witness_id: mt-numbers-bhs}]}
+  - {<<: *sr, id: tribe-dan-count-lxx, value: {kind: integer_count, count: 62700, population: "eligible Danite men, aged twenty and older"}, citations: [{source_id: rahlfs-hanhart-2006, locator: "Numbers 1:38-39", witness_id: lxx-numbers-rahlfs-hanhart}]}
+  - {<<: *sg, id: tribe-dan-count-geez, value: {kind: integer_count, count: 62700, population: "eligible Danite men, aged twenty and older"}, citations: [{source_id: dillmann-octateuch-1853, locator: "Numeri 1:38-39", witness_id: geez-numbers-dillmann}]}
+  - {<<: *sm, id: tribe-dan-count-mt, value: {kind: integer_count, count: 62700, population: "eligible Danite men, aged twenty and older"}, citations: [{source_id: bhs-numbers, locator: "Numbers 1:38-39", witness_id: mt-numbers-bhs}]}
+  - {<<: *sr, id: tribe-asher-count-lxx, value: {kind: integer_count, count: 41500, population: "eligible Asherite men, aged twenty and older"}, citations: [{source_id: rahlfs-hanhart-2006, locator: "Numbers 1:40-41", witness_id: lxx-numbers-rahlfs-hanhart}]}
+  - {<<: *sg, id: tribe-asher-count-geez, value: {kind: integer_count, count: 41500, population: "eligible Asherite men, aged twenty and older"}, citations: [{source_id: dillmann-octateuch-1853, locator: "Numeri 1:40-41", witness_id: geez-numbers-dillmann}]}
+  - {<<: *sm, id: tribe-asher-count-mt, value: {kind: integer_count, count: 41500, population: "eligible Asherite men, aged twenty and older"}, citations: [{source_id: bhs-numbers, locator: "Numbers 1:40-41", witness_id: mt-numbers-bhs}]}
+  - {<<: *sr, id: tribe-naphtali-count-lxx, value: {kind: integer_count, count: 53400, population: "eligible Naphtalite men, aged twenty and older"}, citations: [{source_id: rahlfs-hanhart-2006, locator: "Numbers 1:42-43", witness_id: lxx-numbers-rahlfs-hanhart}]}
+  - {<<: *sg, id: tribe-naphtali-count-geez, value: {kind: integer_count, count: 53400, population: "eligible Naphtalite men, aged twenty and older"}, citations: [{source_id: dillmann-octateuch-1853, locator: "Numeri 1:42-43", witness_id: geez-numbers-dillmann}]}
+  - {<<: *sm, id: tribe-naphtali-count-mt, value: {kind: integer_count, count: 53400, population: "eligible Naphtalite men, aged twenty and older"}, citations: [{source_id: bhs-numbers, locator: "Numbers 1:42-43", witness_id: mt-numbers-bhs}]}
+  - {<<: *n3l, id: levite-census-total-lxx, subject_id: levitical-priesthood, predicate: population_count, value: {kind: integer_count, count: 22000, population: "Levitite males from one month old and upward; printed total, not silently recalculated from clan subtotals"}, citations: [{source_id: rahlfs-hanhart-2006, locator: "Numbers 3:39", witness_id: lxx-numbers-rahlfs-hanhart}]}
+  - {<<: *n3g, id: levite-census-total-geez, subject_id: levitical-priesthood, predicate: population_count, value: {kind: integer_count, count: 22000, population: "Levitite males from one month old and upward; printed total, not silently recalculated from clan subtotals"}, citations: [{source_id: dillmann-octateuch-1853, locator: "Numeri 3:39", witness_id: geez-numbers-dillmann}]}
+  - {<<: *n3m, id: levite-census-total-mt, subject_id: levitical-priesthood, predicate: population_count, value: {kind: integer_count, count: 22000, population: "Levitite males from one month old and upward; printed total, not silently recalculated from clan subtotals"}, citations: [{source_id: bhs-numbers, locator: "Numbers 3:39", witness_id: mt-numbers-bhs}]}
+  - {<<: *n3l, id: levite-gershon-clan-count-lxx, subject_id: levitical-priesthood, predicate: census_subcount, value: {kind: integer_count, count: 7500, clan: Gershonite families, age_floor_months: 1}, citations: [{source_id: rahlfs-hanhart-2006, locator: "Numbers 3:22", witness_id: lxx-numbers-rahlfs-hanhart}]}
+  - {<<: *n3g, id: levite-gershon-clan-count-geez, subject_id: levitical-priesthood, predicate: census_subcount, value: {kind: integer_count, count: 7500, clan: Gershonite families, age_floor_months: 1}, citations: [{source_id: dillmann-octateuch-1853, locator: "Numeri 3:22", witness_id: geez-numbers-dillmann}]}
+  - {<<: *n3m, id: levite-gershon-clan-count-mt, subject_id: levitical-priesthood, predicate: census_subcount, value: {kind: integer_count, count: 7500, clan: Gershonite families, age_floor_months: 1}, citations: [{source_id: bhs-numbers, locator: "Numbers 3:22", witness_id: mt-numbers-bhs}]}
+  - {<<: *n3l, id: levite-kohath-clan-count-lxx, subject_id: levitical-priesthood, predicate: census_subcount, value: {kind: integer_count, count: 8600, clan: Kohathite families, age_floor_months: 1}, citations: [{source_id: rahlfs-hanhart-2006, locator: "Numbers 3:28", witness_id: lxx-numbers-rahlfs-hanhart}]}
+  - {<<: *n3g, id: levite-kohath-clan-count-geez, subject_id: levitical-priesthood, predicate: census_subcount, value: {kind: integer_count, count: 8600, clan: Kohathite families, age_floor_months: 1}, citations: [{source_id: dillmann-octateuch-1853, locator: "Numeri 3:28", witness_id: geez-numbers-dillmann}]}
+  - {<<: *n3m, id: levite-kohath-clan-count-mt, subject_id: levitical-priesthood, predicate: census_subcount, value: {kind: integer_count, count: 8600, clan: Kohathite families, age_floor_months: 1}, citations: [{source_id: bhs-numbers, locator: "Numbers 3:28", witness_id: mt-numbers-bhs}]}
+  - {<<: *n3l, id: levite-merari-clan-count-lxx, subject_id: levitical-priesthood, predicate: census_subcount, value: {kind: integer_count, count: 6200, clan: Merarite families, age_floor_months: 1}, citations: [{source_id: rahlfs-hanhart-2006, locator: "Numbers 3:34", witness_id: lxx-numbers-rahlfs-hanhart}]}
+  - {<<: *n3g, id: levite-merari-clan-count-geez, subject_id: levitical-priesthood, predicate: census_subcount, value: {kind: integer_count, count: 6200, clan: Merarite families, age_floor_months: 1}, citations: [{source_id: dillmann-octateuch-1853, locator: "Numeri 3:34", witness_id: geez-numbers-dillmann}]}
+  - {<<: *n3m, id: levite-merari-clan-count-mt, subject_id: levitical-priesthood, predicate: census_subcount, value: {kind: integer_count, count: 6200, clan: Merarite families, age_floor_months: 1}, citations: [{source_id: bhs-numbers, locator: "Numbers 3:34", witness_id: mt-numbers-bhs}]}
+  - {<<: *n3l, id: levite-service-age-range-lxx, subject_id: levitical-priesthood, predicate: census_service_age_range, value: {kind: age_range, minimum_age: 25, maximum_age: 50, applies_to: "Levites entering sanctuary service work"}, citations: [{source_id: rahlfs-hanhart-2006, locator: "Numbers 4:3", witness_id: lxx-numbers-rahlfs-hanhart}]}
+  - {id: levite-service-age-range-mt, subject_id: levitical-priesthood, predicate: census_service_age_range, value: {kind: age_range, minimum_age: 30, maximum_age: 50, applies_to: "Levites entering sanctuary service work"}, evidence_type: explicit_text, witness_id: mt-numbers-bhs, confidence: A, citations: [{source_id: bhs-numbers, locator: "Numbers 4:3", witness_id: mt-numbers-bhs}]}
+  - {id: numbers-census-relative-lxx, subject_id: first-census-and-camp-order, predicate: relative_event_date, value: {kind: relative_date, reference_event: passover-and-departure, year_number: 2, month_number: 2, day_number: 1}, evidence_type: explicit_text, witness_id: lxx-numbers-rahlfs-hanhart, confidence: A, citations: [{source_id: rahlfs-hanhart-2006, locator: "Numbers 1:1", witness_id: lxx-numbers-rahlfs-hanhart}]}
+  - {id: numbers-census-relative-geez, subject_id: first-census-and-camp-order, predicate: relative_event_date, value: {kind: relative_date, reference_event: passover-and-departure, year_number: 2, month_number: 2, day_number: 1}, evidence_type: explicit_text, witness_id: geez-numbers-dillmann, confidence: A, citations: [{source_id: dillmann-octateuch-1853, locator: "Numeri 1:1", witness_id: geez-numbers-dillmann}]}
+  - {id: numbers-census-relative-mt, subject_id: first-census-and-camp-order, predicate: relative_event_date, value: {kind: relative_date, reference_event: passover-and-departure, year_number: 2, month_number: 2, day_number: 1}, evidence_type: explicit_text, witness_id: mt-numbers-bhs, confidence: A, citations: [{source_id: bhs-numbers, locator: "Numbers 1:1", witness_id: mt-numbers-bhs}]}
+  - {id: numbers-census-year-hybrid, subject_id: first-census-and-camp-order, predicate: event_date, value: {kind: historical_year, era: BCE, year: 1449, chronology_model_id: hybrid_reference}, evidence_type: editorial_estimate, witness_id: lxx-numbers-rahlfs-hanhart, confidence: E, interpretation_note: "Illustrative absolute conversion of the explicit second-year, second-month date using the hybrid model's provisional 1450 BCE Exodus anchor; not a textual calendar year.", citations: [{source_id: rahlfs-hanhart-2006, locator: "Numbers 1:1", witness_id: lxx-numbers-rahlfs-hanhart}, {source_id: dillmann-octateuch-1853, locator: "Numeri 1:1", witness_id: geez-numbers-dillmann}, {source_id: bhs-numbers, locator: "Numbers 1:1", witness_id: mt-numbers-bhs}]}
