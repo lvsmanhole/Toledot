@@ -1,0 +1,52 @@
+schema_version: 1
+record_type: events
+records:
+  - &event {id: joseph-sold, event_type: enslavement, name: Joseph sold into Egypt, participants: [{entity_id: joseph, role: victim}, {entity_id: judah, role: brother}, {entity_id: reuben, role: brother}, {entity_id: potiphar, role: buyer}], date_claim_ids: [], citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 37", witness_id: lxx-genesis-goettingen}]}
+  - <<: *event
+    id: tamar-perez-zerah
+    event_type: birth
+    name: Birth of Perez and Zerah
+    participants: [{entity_id: tamar, role: mother}, {entity_id: judah, role: father}, {entity_id: perez, role: child}, {entity_id: zerah-judah, role: child}]
+    citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 38:27-30", witness_id: lxx-genesis-goettingen}]
+  - <<: *event
+    id: joseph-imprisoned
+    event_type: imprisonment
+    name: Joseph imprisoned
+    participants: [{entity_id: joseph, role: prisoner}, {entity_id: potiphar-wife, role: accuser}, {entity_id: prison-warden, role: keeper}]
+    citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 39", witness_id: lxx-genesis-goettingen}]
+  - <<: *event
+    id: joseph-exalted
+    event_type: appointment
+    name: Joseph appointed over Egypt
+    participants: [{entity_id: joseph, role: governor}, {entity_id: pharaoh-gen41, role: ruler}, {entity_id: asenath, role: wife}]
+    citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 41:37-57", witness_id: lxx-genesis-goettingen}]
+  - <<: *event
+    id: joseph-reveals-identity
+    event_type: reunion
+    name: Joseph reveals himself to his brothers
+    participants: [{entity_id: joseph, role: brother}, {entity_id: judah, role: brother}, {entity_id: benjamin, role: brother}]
+    citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 45", witness_id: lxx-genesis-goettingen}]
+  - <<: *event
+    id: jacob-household-migrates-egypt
+    event_type: migration
+    name: Jacob's household migrates to Egypt
+    participants: [{entity_id: jacob, role: patriarch}, {entity_id: joseph, role: host}, {entity_id: jacob-descendants, role: migrants}]
+    citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 46-47", witness_id: lxx-genesis-goettingen}]
+  - <<: *event
+    id: jacob-blesses-ephraim-manasseh
+    event_type: blessing
+    name: Jacob blesses Ephraim and Manasseh
+    participants: [{entity_id: jacob, role: grandfather}, {entity_id: joseph, role: father}, {entity_id: manasseh, role: grandson}, {entity_id: ephraim, role: grandson}]
+    citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 48", witness_id: lxx-genesis-goettingen}]
+  - <<: *event
+    id: jacob-death
+    event_type: death
+    name: Death of Jacob
+    participants: [{entity_id: jacob, role: deceased}, {entity_id: joseph, role: son}]
+    citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 49:29-50:14", witness_id: lxx-genesis-goettingen}]
+  - <<: *event
+    id: joseph-death
+    event_type: death
+    name: Death of Joseph
+    participants: [{entity_id: joseph, role: deceased}, {entity_id: manasseh, role: son}, {entity_id: ephraim, role: son}]
+    citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 50:22-26", witness_id: lxx-genesis-goettingen}]

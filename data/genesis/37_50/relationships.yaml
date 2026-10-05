@@ -1,0 +1,163 @@
+schema_version: 1
+record_type: relationships
+records:
+  - &parent {id: judah-parent-er, relationship_type: parent, subject_id: judah, object_id: er-judah, claim_ids: [], citations: &cite [{source_id: goettingen-genesis-1974, locator: "Genesis 38; 41; 46", witness_id: lxx-genesis-goettingen}]}
+  - <<: *parent
+    id: judah-parent-onan
+    subject_id: judah
+    object_id: onan
+  - <<: *parent
+    id: judah-parent-shelah
+    subject_id: judah
+    object_id: shelah-judah
+  - <<: *parent
+    id: judah-parent-perez
+    subject_id: judah
+    object_id: perez
+  - <<: *parent
+    id: judah-parent-zerah
+    subject_id: judah
+    object_id: zerah-judah
+  - <<: *parent
+    id: tamar-parent-perez
+    subject_id: tamar
+    object_id: perez
+  - <<: *parent
+    id: tamar-parent-zerah
+    subject_id: tamar
+    object_id: zerah-judah
+  - <<: *parent
+    id: perez-parent-hezron
+    subject_id: perez
+    object_id: hezron-perez
+  - <<: *parent
+    id: perez-parent-hamul
+    subject_id: perez
+    object_id: hamul
+  - <<: *parent
+    id: joseph-parent-manasseh
+    subject_id: joseph
+    object_id: manasseh
+  - <<: *parent
+    id: joseph-parent-ephraim
+    subject_id: joseph
+    object_id: ephraim
+  - <<: *parent
+    id: asenath-parent-manasseh
+    subject_id: asenath
+    object_id: manasseh
+  - <<: *parent
+    id: asenath-parent-ephraim
+    subject_id: asenath
+    object_id: ephraim
+  - <<: *parent
+    id: manasseh-parent-machir
+    subject_id: manasseh
+    object_id: machir
+  - &spouse
+    id: joseph-spouse-asenath
+    relationship_type: spouse
+    subject_id: joseph
+    object_id: asenath
+    claim_ids: []
+    citations: *cite
+  - <<: *parent
+    id: reuben-parent-hanoch
+    subject_id: reuben
+    object_id: hanoch-reuben
+  - <<: *parent
+    id: reuben-parent-pallu
+    subject_id: reuben
+    object_id: pallu
+  - <<: *parent
+    id: reuben-parent-hezron
+    subject_id: reuben
+    object_id: hezron-reuben
+  - <<: *parent
+    id: reuben-parent-carmi
+    subject_id: reuben
+    object_id: carmi
+  - <<: *parent
+    id: simeon-parent-jemuel
+    subject_id: simeon
+    object_id: jemuel
+  - <<: *parent
+    id: simeon-parent-jamin
+    subject_id: simeon
+    object_id: jamin
+  - <<: *parent
+    id: simeon-parent-ohad
+    subject_id: simeon
+    object_id: ohad
+  - <<: *parent
+    id: simeon-parent-jachin
+    subject_id: simeon
+    object_id: jachin
+  - <<: *parent
+    id: simeon-parent-zohar
+    subject_id: simeon
+    object_id: zohar-simeon
+  - <<: *parent
+    id: simeon-parent-shaul
+    subject_id: simeon
+    object_id: shaul-simeon
+  - <<: *parent
+    id: levi-parent-gershon
+    subject_id: levi
+    object_id: gershon
+  - <<: *parent
+    id: levi-parent-kohath
+    subject_id: levi
+    object_id: kohath
+  - <<: *parent
+    id: levi-parent-merari
+    subject_id: levi
+    object_id: merari
+  - <<: *parent
+    id: issachar-parent-tola
+    subject_id: issachar
+    object_id: tola
+  - <<: *parent
+    id: issachar-parent-puah
+    subject_id: issachar
+    object_id: puah
+  - <<: *parent
+    id: issachar-parent-jashub
+    subject_id: issachar
+    object_id: jashub
+  - <<: *parent
+    id: issachar-parent-shimron
+    subject_id: issachar
+    object_id: shimron
+  - <<: *parent
+    id: zebulun-parent-sered
+    subject_id: zebulun
+    object_id: sered
+  - <<: *parent
+    id: zebulun-parent-elon
+    subject_id: zebulun
+    object_id: elon-zebulun
+  - <<: *parent
+    id: zebulun-parent-jahleel
+    subject_id: zebulun
+    object_id: jahleel
+  - <<: *parent
+    id: dan-parent-hushim
+    subject_id: dan
+    object_id: hushim
+  - <<: *parent
+    id: naphtali-parent-jahzeel
+    subject_id: naphtali
+    object_id: jahzeel
+  - <<: *parent
+    id: naphtali-parent-guni
+    subject_id: naphtali
+    object_id: guni
+  - <<: *parent
+    id: naphtali-parent-jezer
+    subject_id: naphtali
+    object_id: jezer
+  - <<: *parent
+    id: naphtali-parent-shillem
+    subject_id: naphtali
+    object_id: shillem

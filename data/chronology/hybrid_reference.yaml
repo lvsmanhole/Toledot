@@ -85,6 +85,13 @@ records:
       - {id: jacob-household-death, operation: literal, year: {era: BCE, year: 1574}}
       - {id: jacob-children-birth, operation: literal, year: {era: BCE, year: 1700}}
       - {id: jacob-children-death, operation: literal, year: {era: BCE, year: 1500}}
+      - {id: jacob-death, operation: offset_years, input_id: twins-birth, offset_claim_id: jacob-lifespan-lxx}
+      - {id: joseph-birth, operation: offset_years, input_id: twins-birth, offset_claim_id: jacob-age-at-joseph-birth-calculated}
+      - {id: joseph-death, operation: offset_years, input_id: joseph-birth, offset_claim_id: joseph-lifespan-lxx}
+      - {id: joseph-cycle-adult-birth, operation: literal, year: {era: BCE, year: 1700}}
+      - {id: joseph-cycle-adult-death, operation: literal, year: {era: BCE, year: 1500}}
+      - {id: migration-descendant-birth, operation: literal, year: {era: BCE, year: 1620}}
+      - {id: migration-descendant-death, operation: literal, year: {era: BCE, year: 1450}}
     resolutions:
       - &core {entity_id: adam, birth_derivation_id: adam-birth, death_derivation_id: adam-death, life_basis: synchronized, confidence_grade: D, evidence_claim_ids: [lxx-early-adam-anchor, adam-lifespan-lxx], alternative_claim_ids: [mt-early-adam-anchor, sp-early-adam-anchor], explanation: "Civil years use the declared LXX display anchor; lifespan is explicit in Genesis 5."}
       - <<: *core
@@ -447,7 +454,11 @@ records:
       - &twins_est {entity_id: esau, birth_derivation_id: twins-birth, death_derivation_id: twins-editorial-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [isaac-age-at-twins-birth, esau-attested], alternative_claim_ids: [], explanation: "The shared twin birth is calculated from Genesis 25:26; the display endpoint is grade E because Genesis does not state a death age."}
       - <<: *twins_est
         entity_id: jacob
-        evidence_claim_ids: [isaac-age-at-twins-birth, jacob-attested]
+        death_derivation_id: jacob-death
+        life_basis: synchronized
+        confidence_grade: D
+        evidence_claim_ids: [isaac-age-at-twins-birth, jacob-age-before-pharaoh, jacob-lifespan-lxx]
+        explanation: "Birth follows Isaac's explicit age at the twins' birth; Genesis 47 gives Jacob's age in Egypt and his 147-year lifespan."
       - &pat_est {entity_id: pharaoh-gen12, birth_derivation_id: patriarch-contemporary-birth, death_derivation_id: patriarch-contemporary-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [pharaoh-gen12-attested], alternative_claim_ids: [], explanation: "Grade-E display window synchronized to the patriarchal narrative; the text names or distinguishes the person but gives no lifespan."}
       - <<: *pat_est
         entity_id: melchizedek
@@ -725,7 +736,12 @@ records:
         evidence_claim_ids: [dinah-attested]
       - <<: *children_est
         entity_id: joseph
-        evidence_claim_ids: [joseph-attested]
+        birth_derivation_id: joseph-birth
+        death_derivation_id: joseph-death
+        life_basis: synchronized
+        confidence_grade: D
+        evidence_claim_ids: [jacob-age-at-joseph-birth-calculated, joseph-age-seventeen, joseph-age-before-pharaoh, joseph-lifespan-lxx]
+        explanation: "Joseph's birth is synchronized from the explained 91-year calculation; ages 17 and 30 and the 110-year lifespan are explicit checks."
       - <<: *children_est
         entity_id: benjamin
         evidence_claim_ids: [benjamin-attested]
@@ -777,3 +793,215 @@ records:
       - <<: *children_est
         entity_id: mizzah
         evidence_claim_ids: [mizzah-attested]
+      - &cycle_est {entity_id: tamar, birth_derivation_id: joseph-cycle-adult-birth, death_derivation_id: joseph-cycle-adult-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [tamar-attested], alternative_claim_ids: [], explanation: "Grade-E Joseph-cycle window; the person is textually attested but Genesis supplies no complete numeric lifespan."}
+      - <<: *cycle_est
+        entity_id: perez
+        evidence_claim_ids: [perez-attested]
+      - <<: *cycle_est
+        entity_id: zerah-judah
+        evidence_claim_ids: [zerah-judah-attested]
+      - <<: *cycle_est
+        entity_id: hirah
+        evidence_claim_ids: [hirah-attested]
+      - <<: *cycle_est
+        entity_id: shua-canaanite
+        evidence_claim_ids: [shua-canaanite-attested]
+      - <<: *cycle_est
+        entity_id: judah-wife
+        evidence_claim_ids: [judah-wife-attested]
+      - <<: *cycle_est
+        entity_id: er-judah
+        evidence_claim_ids: [er-judah-attested]
+      - <<: *cycle_est
+        entity_id: onan
+        evidence_claim_ids: [onan-attested]
+      - <<: *cycle_est
+        entity_id: shelah-judah
+        evidence_claim_ids: [shelah-judah-attested]
+      - <<: *cycle_est
+        entity_id: potiphar
+        evidence_claim_ids: [potiphar-attested]
+      - <<: *cycle_est
+        entity_id: potiphar-wife
+        evidence_claim_ids: [potiphar-wife-attested]
+      - <<: *cycle_est
+        entity_id: prison-warden
+        evidence_claim_ids: [prison-warden-attested]
+      - <<: *cycle_est
+        entity_id: pharaoh-cupbearer
+        evidence_claim_ids: [pharaoh-cupbearer-attested]
+      - <<: *cycle_est
+        entity_id: pharaoh-baker
+        evidence_claim_ids: [pharaoh-baker-attested]
+      - <<: *cycle_est
+        entity_id: pharaoh-gen41
+        evidence_claim_ids: [pharaoh-gen41-attested]
+      - <<: *cycle_est
+        entity_id: joseph-house-steward
+        evidence_claim_ids: [joseph-house-steward-attested]
+      - <<: *cycle_est
+        entity_id: potiphera
+        evidence_claim_ids: [potiphera-attested]
+      - <<: *cycle_est
+        entity_id: asenath
+        evidence_claim_ids: [asenath-attested]
+      - <<: *cycle_est
+        entity_id: manasseh
+        evidence_claim_ids: [manasseh-attested]
+      - <<: *cycle_est
+        entity_id: ephraim
+        evidence_claim_ids: [ephraim-attested]
+      - <<: *cycle_est
+        entity_id: machir
+        evidence_claim_ids: [machir-attested]
+      - &migrant_est {entity_id: hanoch-reuben, birth_derivation_id: migration-descendant-birth, death_derivation_id: migration-descendant-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [hanoch-reuben-attested], alternative_claim_ids: [], explanation: "Grade-E migration-generation window; Genesis 46 names the person but gives no complete numeric lifespan."}
+      - <<: *migrant_est
+        entity_id: pallu
+        evidence_claim_ids: [pallu-attested]
+      - <<: *migrant_est
+        entity_id: hezron-reuben
+        evidence_claim_ids: [hezron-reuben-attested]
+      - <<: *migrant_est
+        entity_id: carmi
+        evidence_claim_ids: [carmi-attested]
+      - <<: *migrant_est
+        entity_id: jemuel
+        evidence_claim_ids: [jemuel-attested]
+      - <<: *migrant_est
+        entity_id: jamin
+        evidence_claim_ids: [jamin-attested]
+      - <<: *migrant_est
+        entity_id: ohad
+        evidence_claim_ids: [ohad-attested]
+      - <<: *migrant_est
+        entity_id: jachin
+        evidence_claim_ids: [jachin-attested]
+      - <<: *migrant_est
+        entity_id: zohar-simeon
+        evidence_claim_ids: [zohar-simeon-attested]
+      - <<: *migrant_est
+        entity_id: shaul-simeon
+        evidence_claim_ids: [shaul-simeon-attested]
+      - <<: *migrant_est
+        entity_id: gershon
+        evidence_claim_ids: [gershon-attested]
+      - <<: *migrant_est
+        entity_id: kohath
+        evidence_claim_ids: [kohath-attested]
+      - <<: *migrant_est
+        entity_id: merari
+        evidence_claim_ids: [merari-attested]
+      - <<: *migrant_est
+        entity_id: hezron-perez
+        evidence_claim_ids: [hezron-perez-attested]
+      - <<: *migrant_est
+        entity_id: hamul
+        evidence_claim_ids: [hamul-attested]
+      - <<: *migrant_est
+        entity_id: tola
+        evidence_claim_ids: [tola-attested]
+      - <<: *migrant_est
+        entity_id: puah
+        evidence_claim_ids: [puah-attested]
+      - <<: *migrant_est
+        entity_id: jashub
+        evidence_claim_ids: [jashub-attested]
+      - <<: *migrant_est
+        entity_id: shimron
+        evidence_claim_ids: [shimron-attested]
+      - <<: *migrant_est
+        entity_id: sered
+        evidence_claim_ids: [sered-attested]
+      - <<: *migrant_est
+        entity_id: elon-zebulun
+        evidence_claim_ids: [elon-zebulun-attested]
+      - <<: *migrant_est
+        entity_id: jahleel
+        evidence_claim_ids: [jahleel-attested]
+      - <<: *migrant_est
+        entity_id: ziphion
+        evidence_claim_ids: [ziphion-attested]
+      - <<: *migrant_est
+        entity_id: haggi
+        evidence_claim_ids: [haggi-attested]
+      - <<: *migrant_est
+        entity_id: shuni
+        evidence_claim_ids: [shuni-attested]
+      - <<: *migrant_est
+        entity_id: ezbon
+        evidence_claim_ids: [ezbon-attested]
+      - <<: *migrant_est
+        entity_id: eri
+        evidence_claim_ids: [eri-attested]
+      - <<: *migrant_est
+        entity_id: arodi
+        evidence_claim_ids: [arodi-attested]
+      - <<: *migrant_est
+        entity_id: areli
+        evidence_claim_ids: [areli-attested]
+      - <<: *migrant_est
+        entity_id: imnah
+        evidence_claim_ids: [imnah-attested]
+      - <<: *migrant_est
+        entity_id: ishvah
+        evidence_claim_ids: [ishvah-attested]
+      - <<: *migrant_est
+        entity_id: ishvi
+        evidence_claim_ids: [ishvi-attested]
+      - <<: *migrant_est
+        entity_id: beriah
+        evidence_claim_ids: [beriah-attested]
+      - <<: *migrant_est
+        entity_id: serah
+        evidence_claim_ids: [serah-attested]
+      - <<: *migrant_est
+        entity_id: heber-asher
+        evidence_claim_ids: [heber-asher-attested]
+      - <<: *migrant_est
+        entity_id: malchiel
+        evidence_claim_ids: [malchiel-attested]
+      - <<: *migrant_est
+        entity_id: hushim
+        evidence_claim_ids: [hushim-attested]
+      - <<: *migrant_est
+        entity_id: jahzeel
+        evidence_claim_ids: [jahzeel-attested]
+      - <<: *migrant_est
+        entity_id: guni
+        evidence_claim_ids: [guni-attested]
+      - <<: *migrant_est
+        entity_id: jezer
+        evidence_claim_ids: [jezer-attested]
+      - <<: *migrant_est
+        entity_id: shillem
+        evidence_claim_ids: [shillem-attested]
+      - <<: *migrant_est
+        entity_id: bela-benjamin
+        evidence_claim_ids: [bela-benjamin-attested]
+      - <<: *migrant_est
+        entity_id: beker
+        evidence_claim_ids: [beker-attested]
+      - <<: *migrant_est
+        entity_id: ashbel
+        evidence_claim_ids: [ashbel-attested]
+      - <<: *migrant_est
+        entity_id: gera
+        evidence_claim_ids: [gera-attested]
+      - <<: *migrant_est
+        entity_id: naaman
+        evidence_claim_ids: [naaman-attested]
+      - <<: *migrant_est
+        entity_id: ehi
+        evidence_claim_ids: [ehi-attested]
+      - <<: *migrant_est
+        entity_id: rosh
+        evidence_claim_ids: [rosh-attested]
+      - <<: *migrant_est
+        entity_id: muppim
+        evidence_claim_ids: [muppim-attested]
+      - <<: *migrant_est
+        entity_id: huppim
+        evidence_claim_ids: [huppim-attested]
+      - <<: *migrant_est
+        entity_id: ard
+        evidence_claim_ids: [ard-attested]

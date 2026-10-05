@@ -1,0 +1,246 @@
+schema_version: 1
+record_type: claims
+records:
+  - &age {id: joseph-age-seventeen, subject_id: joseph, predicate: age_at_event, object_id: joseph-sold, value: {kind: duration, value: 17, unit: years}, evidence_type: explicit_text, witness_id: lxx-genesis-goettingen, confidence: A, citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 37:2", witness_id: lxx-genesis-goettingen, passage_id: gen-37-lxx}]}
+  - <<: *age
+    id: joseph-age-before-pharaoh
+    object_id: joseph-exalted
+    value: {kind: duration, value: 30, unit: years}
+    citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 41:46", witness_id: lxx-genesis-goettingen, passage_id: gen-41-lxx}]
+  - <<: *age
+    id: jacob-age-before-pharaoh
+    subject_id: jacob
+    object_id: jacob-household-migrates-egypt
+    value: {kind: duration, value: 130, unit: years}
+    citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 47:9", witness_id: lxx-genesis-goettingen, passage_id: gen-47-lxx}]
+  - id: jacob-age-at-joseph-birth-calculated
+    subject_id: jacob
+    predicate: age_at_birth_of
+    object_id: joseph
+    value: {kind: duration, value: 91, unit: years}
+    evidence_type: calculated
+    witness_id: lxx-genesis-goettingen
+    confidence: B
+    interpretation_note: Joseph was 30 when appointed, seven plentiful years followed, and two famine years had elapsed when Jacob arrived at 130; 130 minus 39 yields 91.
+    citations:
+      - {source_id: goettingen-genesis-1974, locator: "Genesis 41:46,53-54; 45:6; 47:9", witness_id: lxx-genesis-goettingen}
+  - &life {id: joseph-lifespan-lxx, subject_id: joseph, predicate: lifespan, value: {kind: duration, value: 110, unit: years}, evidence_type: explicit_text, witness_id: lxx-genesis-goettingen, confidence: A, citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 50:22,26", witness_id: lxx-genesis-goettingen, passage_id: gen-50-lxx}]}
+  - <<: *life
+    id: jacob-lifespan-lxx
+    subject_id: jacob
+    value: {kind: duration, value: 147, unit: years}
+    citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 47:28", witness_id: lxx-genesis-goettingen, passage_id: gen-47-lxx}]
+  - &att {id: tamar-attested, subject_id: tamar, predicate: attested_in_passage, value: {kind: attestation, status: mentioned}, evidence_type: explicit_text, witness_id: lxx-genesis-goettingen, confidence: A, citations: &attcite [{source_id: goettingen-genesis-1974, locator: "Genesis 37-50", witness_id: lxx-genesis-goettingen}]}
+  - <<: *att
+    id: perez-attested
+    subject_id: perez
+  - <<: *att
+    id: zerah-judah-attested
+    subject_id: zerah-judah
+  - <<: *att
+    id: hirah-attested
+    subject_id: hirah
+  - <<: *att
+    id: shua-canaanite-attested
+    subject_id: shua-canaanite
+  - <<: *att
+    id: judah-wife-attested
+    subject_id: judah-wife
+  - <<: *att
+    id: er-judah-attested
+    subject_id: er-judah
+  - <<: *att
+    id: onan-attested
+    subject_id: onan
+  - <<: *att
+    id: shelah-judah-attested
+    subject_id: shelah-judah
+  - <<: *att
+    id: potiphar-attested
+    subject_id: potiphar
+  - <<: *att
+    id: potiphar-wife-attested
+    subject_id: potiphar-wife
+  - <<: *att
+    id: prison-warden-attested
+    subject_id: prison-warden
+  - <<: *att
+    id: pharaoh-cupbearer-attested
+    subject_id: pharaoh-cupbearer
+  - <<: *att
+    id: pharaoh-baker-attested
+    subject_id: pharaoh-baker
+  - <<: *att
+    id: pharaoh-gen41-attested
+    subject_id: pharaoh-gen41
+  - <<: *att
+    id: joseph-house-steward-attested
+    subject_id: joseph-house-steward
+  - <<: *att
+    id: potiphera-attested
+    subject_id: potiphera
+  - <<: *att
+    id: asenath-attested
+    subject_id: asenath
+  - <<: *att
+    id: manasseh-attested
+    subject_id: manasseh
+  - <<: *att
+    id: ephraim-attested
+    subject_id: ephraim
+  - <<: *att
+    id: machir-attested
+    subject_id: machir
+  - <<: *att
+    id: hanoch-reuben-attested
+    subject_id: hanoch-reuben
+  - <<: *att
+    id: pallu-attested
+    subject_id: pallu
+  - <<: *att
+    id: hezron-reuben-attested
+    subject_id: hezron-reuben
+  - <<: *att
+    id: carmi-attested
+    subject_id: carmi
+  - <<: *att
+    id: jemuel-attested
+    subject_id: jemuel
+  - <<: *att
+    id: jamin-attested
+    subject_id: jamin
+  - <<: *att
+    id: ohad-attested
+    subject_id: ohad
+  - <<: *att
+    id: jachin-attested
+    subject_id: jachin
+  - <<: *att
+    id: zohar-simeon-attested
+    subject_id: zohar-simeon
+  - <<: *att
+    id: shaul-simeon-attested
+    subject_id: shaul-simeon
+  - <<: *att
+    id: gershon-attested
+    subject_id: gershon
+  - <<: *att
+    id: kohath-attested
+    subject_id: kohath
+  - <<: *att
+    id: merari-attested
+    subject_id: merari
+  - <<: *att
+    id: hezron-perez-attested
+    subject_id: hezron-perez
+  - <<: *att
+    id: hamul-attested
+    subject_id: hamul
+  - <<: *att
+    id: tola-attested
+    subject_id: tola
+  - <<: *att
+    id: puah-attested
+    subject_id: puah
+  - <<: *att
+    id: jashub-attested
+    subject_id: jashub
+  - <<: *att
+    id: shimron-attested
+    subject_id: shimron
+  - <<: *att
+    id: sered-attested
+    subject_id: sered
+  - <<: *att
+    id: elon-zebulun-attested
+    subject_id: elon-zebulun
+  - <<: *att
+    id: jahleel-attested
+    subject_id: jahleel
+  - <<: *att
+    id: ziphion-attested
+    subject_id: ziphion
+  - <<: *att
+    id: haggi-attested
+    subject_id: haggi
+  - <<: *att
+    id: shuni-attested
+    subject_id: shuni
+  - <<: *att
+    id: ezbon-attested
+    subject_id: ezbon
+  - <<: *att
+    id: eri-attested
+    subject_id: eri
+  - <<: *att
+    id: arodi-attested
+    subject_id: arodi
+  - <<: *att
+    id: areli-attested
+    subject_id: areli
+  - <<: *att
+    id: imnah-attested
+    subject_id: imnah
+  - <<: *att
+    id: ishvah-attested
+    subject_id: ishvah
+  - <<: *att
+    id: ishvi-attested
+    subject_id: ishvi
+  - <<: *att
+    id: beriah-attested
+    subject_id: beriah
+  - <<: *att
+    id: serah-attested
+    subject_id: serah
+  - <<: *att
+    id: heber-asher-attested
+    subject_id: heber-asher
+  - <<: *att
+    id: malchiel-attested
+    subject_id: malchiel
+  - <<: *att
+    id: hushim-attested
+    subject_id: hushim
+  - <<: *att
+    id: jahzeel-attested
+    subject_id: jahzeel
+  - <<: *att
+    id: guni-attested
+    subject_id: guni
+  - <<: *att
+    id: jezer-attested
+    subject_id: jezer
+  - <<: *att
+    id: shillem-attested
+    subject_id: shillem
+  - <<: *att
+    id: bela-benjamin-attested
+    subject_id: bela-benjamin
+  - <<: *att
+    id: beker-attested
+    subject_id: beker
+  - <<: *att
+    id: ashbel-attested
+    subject_id: ashbel
+  - <<: *att
+    id: gera-attested
+    subject_id: gera
+  - <<: *att
+    id: naaman-attested
+    subject_id: naaman
+  - <<: *att
+    id: ehi-attested
+    subject_id: ehi
+  - <<: *att
+    id: rosh-attested
+    subject_id: rosh
+  - <<: *att
+    id: muppim-attested
+    subject_id: muppim
+  - <<: *att
+    id: huppim-attested
+    subject_id: huppim
+  - <<: *att
+    id: ard-attested
+    subject_id: ard

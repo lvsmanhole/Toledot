@@ -1,0 +1,265 @@
+schema_version: 1
+record_type: entities
+records:
+  - &human {id: tamar, entity_type: human, primary_name: Tamar, aliases: [Thamar], classification: named_person, gender: female, identity_status: named, citations: &cite [{source_id: goettingen-genesis-1974, locator: "Genesis 37-50", witness_id: lxx-genesis-goettingen}]}
+  - <<: *human
+    id: perez
+    primary_name: Perez
+    aliases: [Phares]
+    gender: male
+  - <<: *human
+    id: zerah-judah
+    primary_name: Zerah
+    aliases: [Zara]
+    gender: male
+    description: Son of Judah and Tamar.
+  - <<: *human
+    id: hirah
+    primary_name: Hirah
+    aliases: [Hiras]
+    gender: male
+  - <<: *human
+    id: shua-canaanite
+    primary_name: Shua
+    aliases: [Sava]
+    gender: male
+    description: Canaanite father of Judah's wife.
+  - &unnamed
+    <<: *human
+    id: judah-wife
+    primary_name: Wife of Judah
+    aliases: []
+    classification: unnamed_person
+    identity_status: unnamed_unique
+  - &desc
+    <<: *human
+    id: er-judah
+    primary_name: Er
+    aliases: []
+    gender: male
+  - <<: *desc
+    id: onan
+    primary_name: Onan
+  - <<: *desc
+    id: shelah-judah
+    primary_name: Shelah
+    aliases: [Selom]
+    description: Son of Judah; not merged with the post-flood patriarch.
+  - <<: *human
+    id: potiphar
+    primary_name: Potiphar
+    aliases: [Petephres]
+    gender: male
+  - <<: *unnamed
+    id: potiphar-wife
+    primary_name: Wife of Potiphar
+  - <<: *unnamed
+    id: prison-warden
+    primary_name: Keeper of the prison
+    gender: male
+  - <<: *unnamed
+    id: pharaoh-cupbearer
+    primary_name: Pharaoh's chief cupbearer
+    gender: male
+  - <<: *unnamed
+    id: pharaoh-baker
+    primary_name: Pharaoh's chief baker
+    gender: male
+  - <<: *unnamed
+    id: pharaoh-gen41
+    primary_name: Pharaoh of Joseph's rise
+    aliases: [Pharaoh]
+    gender: male
+    description: Unnamed Pharaoh in Genesis 40-50; not merged with the Genesis 12 ruler.
+  - <<: *unnamed
+    id: joseph-house-steward
+    primary_name: Steward of Joseph's house
+    gender: male
+  - <<: *human
+    id: potiphera
+    primary_name: Potiphera
+    aliases: [Petephre]
+    gender: male
+  - <<: *human
+    id: asenath
+    primary_name: Asenath
+    aliases: [Asenneth]
+  - <<: *desc
+    id: manasseh
+    primary_name: Manasseh
+  - <<: *desc
+    id: ephraim
+    primary_name: Ephraim
+  - <<: *desc
+    id: machir
+    primary_name: Machir
+  - <<: *desc
+    id: hanoch-reuben
+    primary_name: Hanoch
+    description: Son of Reuben.
+  - <<: *desc
+    id: pallu
+    primary_name: Pallu
+  - <<: *desc
+    id: hezron-reuben
+    primary_name: Hezron
+    description: Son of Reuben.
+  - <<: *desc
+    id: carmi
+    primary_name: Carmi
+  - <<: *desc
+    id: jemuel
+    primary_name: Jemuel
+  - <<: *desc
+    id: jamin
+    primary_name: Jamin
+  - <<: *desc
+    id: ohad
+    primary_name: Ohad
+  - <<: *desc
+    id: jachin
+    primary_name: Jachin
+  - <<: *desc
+    id: zohar-simeon
+    primary_name: Zohar
+    description: Son of Simeon.
+  - <<: *desc
+    id: shaul-simeon
+    primary_name: Shaul
+    description: Son of Simeon by a Canaanite woman.
+  - <<: *desc
+    id: gershon
+    primary_name: Gershon
+  - <<: *desc
+    id: kohath
+    primary_name: Kohath
+  - <<: *desc
+    id: merari
+    primary_name: Merari
+  - <<: *desc
+    id: hezron-perez
+    primary_name: Hezron
+    description: Son of Perez.
+  - <<: *desc
+    id: hamul
+    primary_name: Hamul
+  - <<: *desc
+    id: tola
+    primary_name: Tola
+  - <<: *desc
+    id: puah
+    primary_name: Puah
+  - <<: *desc
+    id: jashub
+    primary_name: Jashub
+    aliases: [Job]
+  - <<: *desc
+    id: shimron
+    primary_name: Shimron
+  - <<: *desc
+    id: sered
+    primary_name: Sered
+  - <<: *desc
+    id: elon-zebulun
+    primary_name: Elon
+    description: Son of Zebulun.
+  - <<: *desc
+    id: jahleel
+    primary_name: Jahleel
+  - <<: *desc
+    id: ziphion
+    primary_name: Ziphion
+  - <<: *desc
+    id: haggi
+    primary_name: Haggi
+  - <<: *desc
+    id: shuni
+    primary_name: Shuni
+  - <<: *desc
+    id: ezbon
+    primary_name: Ezbon
+  - <<: *desc
+    id: eri
+    primary_name: Eri
+  - <<: *desc
+    id: arodi
+    primary_name: Arodi
+  - <<: *desc
+    id: areli
+    primary_name: Areli
+  - <<: *desc
+    id: imnah
+    primary_name: Imnah
+  - <<: *desc
+    id: ishvah
+    primary_name: Ishvah
+  - <<: *desc
+    id: ishvi
+    primary_name: Ishvi
+  - <<: *desc
+    id: beriah
+    primary_name: Beriah
+  - <<: *human
+    id: serah
+    primary_name: Serah
+    aliases: []
+  - <<: *desc
+    id: heber-asher
+    primary_name: Heber
+    description: Son of Beriah.
+  - <<: *desc
+    id: malchiel
+    primary_name: Malchiel
+  - <<: *desc
+    id: hushim
+    primary_name: Hushim
+  - <<: *desc
+    id: jahzeel
+    primary_name: Jahzeel
+  - <<: *desc
+    id: guni
+    primary_name: Guni
+  - <<: *desc
+    id: jezer
+    primary_name: Jezer
+  - <<: *desc
+    id: shillem
+    primary_name: Shillem
+  - <<: *desc
+    id: bela-benjamin
+    primary_name: Bela
+    description: Son of Benjamin.
+  - <<: *desc
+    id: beker
+    primary_name: Beker
+  - <<: *desc
+    id: ashbel
+    primary_name: Ashbel
+  - <<: *desc
+    id: gera
+    primary_name: Gera
+  - <<: *desc
+    id: naaman
+    primary_name: Naaman
+  - <<: *desc
+    id: ehi
+    primary_name: Ehi
+  - <<: *desc
+    id: rosh
+    primary_name: Rosh
+  - <<: *desc
+    id: muppim
+    primary_name: Muppim
+  - <<: *desc
+    id: huppim
+    primary_name: Huppim
+  - <<: *desc
+    id: ard
+    primary_name: Ard
+  - id: jacob-descendants
+    entity_type: group
+    primary_name: Jacob's named descendants in the migration list
+    aliases: [House of Jacob]
+    classification: collective
+    identity_status: collective
+    citations: *cite
