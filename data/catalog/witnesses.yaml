@@ -42,6 +42,25 @@ records:
     citations:
       - source_id: bhs-exodus
         locator: Exodus
+  - id: lxx-leviticus-rahlfs-hanhart
+    work_id: leviticus
+    tradition: septuagint
+    language: grc
+    edition: Rahlfs-Hanhart Septuaginta, editio altera (2006)
+    citations: [{source_id: rahlfs-hanhart-2006, locator: Leviticus}]
+  - id: geez-leviticus-dillmann
+    work_id: leviticus
+    tradition: geez
+    language: gez
+    edition: Dillmann, Octateuchus Aethiopicus (1853–1855), digitized transcription
+    citations: [{source_id: dillmann-octateuch-1853, locator: Leviticus}]
+    notes: Follows LXX verse numbering; consult the edition apparatus for variant readings and bracketed supplements.
+  - id: mt-leviticus-bhs
+    work_id: leviticus
+    tradition: masoretic
+    language: hbo
+    edition: Biblia Hebraica Stuttgartensia, Leviticus
+    citations: [{source_id: bhs-leviticus, locator: Leviticus}]
   - id: lxx-numbers-rahlfs-hanhart
     work_id: numbers
     tradition: septuagint

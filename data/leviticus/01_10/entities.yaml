@@ -1,0 +1,5 @@
+schema_version: 1
+record_type: entities
+records:
+  - &group {id: levitical-priesthood, entity_type: group, primary_name: Priests serving at Israel's sanctuary, aliases: [], classification: collective, identity_status: collective, citations: [{source_id: rahlfs-hanhart-2006, locator: "Leviticus 1-10", witness_id: lxx-leviticus-rahlfs-hanhart}, {source_id: dillmann-octateuch-1853, locator: "Leviticus 1-10", witness_id: geez-leviticus-dillmann}, {source_id: bhs-leviticus, locator: "Leviticus 1-10", witness_id: mt-leviticus-bhs}]}
+  - {<<: *group, id: leviticus-worshippers, primary_name: Israelite worshippers bringing offerings, aliases: [], citations: [{source_id: rahlfs-hanhart-2006, locator: "Leviticus 1-7", witness_id: lxx-leviticus-rahlfs-hanhart}, {source_id: dillmann-octateuch-1853, locator: "Leviticus 1-7", witness_id: geez-leviticus-dillmann}, {source_id: bhs-leviticus, locator: "Leviticus 1-7", witness_id: mt-leviticus-bhs}]}

@@ -56,6 +56,12 @@ records:
     bibliographic_locator: BHS text of Codex Leningradensis, German Bible Society 1967/77
     url: https://www.die-bibel.de/en/bible/BHS/EXO.1
     license_status: copyrighted_download_permitted
+  - id: bhs-leviticus
+    source_type: critical_edition
+    title: Biblia Hebraica Stuttgartensia — Leviticus
+    bibliographic_locator: BHS text of Codex Leningradensis, German Bible Society 1967/77
+    url: https://www.die-bibel.de/en/bible/BHS/LEV.1
+    license_status: copyrighted_download_permitted
   - id: bhs-numbers
     source_type: critical_edition
     title: Biblia Hebraica Stuttgartensia — Numbers
