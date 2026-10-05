@@ -45,6 +45,7 @@
   - [x] Numbers 1–4: first census and camp order, 12 named tribal officers and fathers, Levitical family census, transport assignments, explicit 603,550 total, and LXX/MT Levite-service age difference.
   - [x] Numbers 5–10: camp purity/restitution, Nazirite vow, Aaronic blessing, tribal offerings, Levite consecration, Passover/cloud, trumpet signals, march order, Hobab, and Sinai departure date.
   - [x] Numbers 11–15: elders, Eldad/Medad, Miriam, scout mission and Caleb, wilderness sentence, and Numbers 15 instructions; undated lifespans are clearly grade-E windows.
+  - [x] Numbers 16–20: Korah's rebellion (distinct from Esau's Korah), Aaron's staff, priestly duties, red-heifer purification, Meribah, and Miriam/Aaron's deaths.
 - [ ] Deuteronomy 1–34: speeches, named/unnamed people, Moses' age and death, variant witnesses.
 
 ### Phase B — Settlement and united/divided monarchy

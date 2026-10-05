@@ -200,6 +200,12 @@ records:
       - {id: numbers-medad-death, operation: literal, year: {era: BCE, year: 1390}}
       - {id: numbers-jephunneh-birth, operation: literal, year: {era: BCE, year: 1540}}
       - {id: numbers-jephunneh-death, operation: literal, year: {era: BCE, year: 1400}}
+      - {id: numbers-dathan-birth, operation: literal, year: {era: BCE, year: 1510}}
+      - {id: numbers-dathan-death, operation: literal, year: {era: BCE, year: 1450}}
+      - {id: numbers-abiram-birth, operation: literal, year: {era: BCE, year: 1510}}
+      - {id: numbers-abiram-death, operation: literal, year: {era: BCE, year: 1450}}
+      - {id: numbers-on-birth, operation: literal, year: {era: BCE, year: 1510}}
+      - {id: numbers-on-death, operation: literal, year: {era: BCE, year: 1450}}
     resolutions:
       - &core {entity_id: adam, birth_derivation_id: adam-birth, death_derivation_id: adam-death, life_basis: synchronized, confidence_grade: D, evidence_claim_ids: [lxx-early-adam-anchor, adam-lifespan-lxx], alternative_claim_ids: [mt-early-adam-anchor, sp-early-adam-anchor], explanation: "Civil years use the declared LXX display anchor; lifespan is explicit in Genesis 5."}
       - <<: *core
@@ -1164,6 +1170,9 @@ records:
       - {<<: *exodus_low_confidence, entity_id: eldad-numbers, birth_derivation_id: numbers-eldad-birth, death_derivation_id: numbers-eldad-death, evidence_claim_ids: [eldad-attested-lxx, eldad-attested-geez, eldad-attested-mt], explanation: "Grade-E display window for a named elder; Numbers supplies an episode but no lifespan."}
       - {<<: *exodus_low_confidence, entity_id: medad-numbers, birth_derivation_id: numbers-medad-birth, death_derivation_id: numbers-medad-death, evidence_claim_ids: [medad-attested-lxx, medad-attested-geez, medad-attested-mt], explanation: "Grade-E display window for a named elder; Numbers supplies an episode but no lifespan."}
       - {<<: *exodus_low_confidence, entity_id: jephunneh-numbers, birth_derivation_id: numbers-jephunneh-birth, death_derivation_id: numbers-jephunneh-death, evidence_claim_ids: [jephunneh-attested-lxx, jephunneh-attested-geez, jephunneh-attested-mt], explanation: "Grade-E display window for Caleb's named father; Numbers does not provide lifespan dates."}
+      - {<<: *exodus_low_confidence, entity_id: dathan-numbers, birth_derivation_id: numbers-dathan-birth, death_derivation_id: numbers-dathan-death, evidence_claim_ids: [dathan-attested-lxx, dathan-attested-geez, dathan-attested-mt], explanation: "Grade-E display window. The text narrates Dathan's death in the wilderness rebellion but gives no birth year; the BCE window is only an illustrative placement."}
+      - {<<: *exodus_low_confidence, entity_id: abiram-numbers, birth_derivation_id: numbers-abiram-birth, death_derivation_id: numbers-abiram-death, evidence_claim_ids: [abiram-attested-lxx, abiram-attested-geez, abiram-attested-mt], explanation: "Grade-E display window. The text narrates Abiram's death in the wilderness rebellion but gives no birth year; the BCE window is only an illustrative placement."}
+      - {<<: *exodus_low_confidence, entity_id: on-numbers, birth_derivation_id: numbers-on-birth, death_derivation_id: numbers-on-death, evidence_claim_ids: [on-attested-lxx, on-attested-geez, on-attested-mt], explanation: "Grade-E display window for a named participant; Numbers 16 names On in the initial gathering but does not state his later fate or lifespan."}
       - {<<: *exodus_low_confidence, entity_id: zipporah, birth_derivation_id: exodus-zipporah-birth, death_derivation_id: exodus-zipporah-death, evidence_claim_ids: [zipporah-attested-lxx], explanation: "Grade-E display window for Zipporah; the narrative establishes family and events but no ages or calendar dates."}
       - {<<: *exodus_low_confidence, entity_id: gershom, birth_derivation_id: exodus-gershom-birth, death_derivation_id: exodus-gershom-death, evidence_claim_ids: [gershom-attested-lxx], explanation: "Grade-E display window; the name is attested, but no lifespan is supplied."}
       - {<<: *exodus_low_confidence, entity_id: eliezer-moses, birth_derivation_id: exodus-eliezer-birth, death_derivation_id: exodus-eliezer-death, evidence_claim_ids: [eliezer-moses-attested-lxx], explanation: "Grade-E display window; a named son of Moses, but no lifespan is supplied."}

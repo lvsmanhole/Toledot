@@ -1,0 +1,12 @@
+schema_version: 1
+record_type: claims
+records:
+  - &d {id: dathan-attested-lxx, subject_id: dathan-numbers, predicate: attested_in_passage, value: {kind: attestation, status: named participant in Korah's rebellion}, evidence_type: explicit_text, witness_id: lxx-numbers-rahlfs-hanhart, confidence: A, citations: [{source_id: rahlfs-hanhart-2006, locator: "Numbers 16:1", witness_id: lxx-numbers-rahlfs-hanhart}]}
+  - {<<: *d, id: dathan-attested-geez, witness_id: geez-numbers-dillmann, citations: [{source_id: dillmann-octateuch-1853, locator: "Numeri 16:1", witness_id: geez-numbers-dillmann}]}
+  - {<<: *d, id: dathan-attested-mt, witness_id: mt-numbers-bhs, citations: [{source_id: bhs-numbers, locator: "Numbers 16:1", witness_id: mt-numbers-bhs}]}
+  - {<<: *d, id: abiram-attested-lxx, subject_id: abiram-numbers, citations: [{source_id: rahlfs-hanhart-2006, locator: "Numbers 16:1", witness_id: lxx-numbers-rahlfs-hanhart}]}
+  - {<<: *d, id: abiram-attested-geez, subject_id: abiram-numbers, witness_id: geez-numbers-dillmann, citations: [{source_id: dillmann-octateuch-1853, locator: "Numeri 16:1", witness_id: geez-numbers-dillmann}]}
+  - {<<: *d, id: abiram-attested-mt, subject_id: abiram-numbers, witness_id: mt-numbers-bhs, citations: [{source_id: bhs-numbers, locator: "Numbers 16:1", witness_id: mt-numbers-bhs}]}
+  - {<<: *d, id: on-attested-lxx, subject_id: on-numbers, citations: [{source_id: rahlfs-hanhart-2006, locator: "Numbers 16:1", witness_id: lxx-numbers-rahlfs-hanhart}]}
+  - {<<: *d, id: on-attested-geez, subject_id: on-numbers, witness_id: geez-numbers-dillmann, citations: [{source_id: dillmann-octateuch-1853, locator: "Numeri 16:1", witness_id: geez-numbers-dillmann}]}
+  - {<<: *d, id: on-attested-mt, subject_id: on-numbers, witness_id: mt-numbers-bhs, citations: [{source_id: bhs-numbers, locator: "Numbers 16:1", witness_id: mt-numbers-bhs}]}

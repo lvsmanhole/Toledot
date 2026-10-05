@@ -1,0 +1,18 @@
+schema_version: 1
+record_type: passages
+records:
+  - &l {id: num-16-lxx, work_id: numbers, witness_id: lxx-numbers-rahlfs-hanhart, locator: "Numbers 16", citations: [{source_id: rahlfs-hanhart-2006, locator: "Numbers 16", witness_id: lxx-numbers-rahlfs-hanhart}]}
+  - &g {id: num-16-geez, work_id: numbers, witness_id: geez-numbers-dillmann, locator: "Numeri 16", citations: [{source_id: dillmann-octateuch-1853, locator: "Numeri 16", witness_id: geez-numbers-dillmann}]}
+  - &m {id: num-16-mt, work_id: numbers, witness_id: mt-numbers-bhs, locator: "Numbers 16", citations: [{source_id: bhs-numbers, locator: "Numbers 16", witness_id: mt-numbers-bhs}]}
+  - {<<: *l, id: num-17-lxx, locator: "Numbers 17", citations: [{source_id: rahlfs-hanhart-2006, locator: "Numbers 17", witness_id: lxx-numbers-rahlfs-hanhart}]}
+  - {<<: *g, id: num-17-geez, locator: "Numeri 17", citations: [{source_id: dillmann-octateuch-1853, locator: "Numeri 17", witness_id: geez-numbers-dillmann}]}
+  - {<<: *m, id: num-17-mt, locator: "Numbers 17", citations: [{source_id: bhs-numbers, locator: "Numbers 17", witness_id: mt-numbers-bhs}]}
+  - {<<: *l, id: num-18-lxx, locator: "Numbers 18", citations: [{source_id: rahlfs-hanhart-2006, locator: "Numbers 18", witness_id: lxx-numbers-rahlfs-hanhart}]}
+  - {<<: *g, id: num-18-geez, locator: "Numeri 18", citations: [{source_id: dillmann-octateuch-1853, locator: "Numeri 18", witness_id: geez-numbers-dillmann}]}
+  - {<<: *m, id: num-18-mt, locator: "Numbers 18", citations: [{source_id: bhs-numbers, locator: "Numbers 18", witness_id: mt-numbers-bhs}]}
+  - {<<: *l, id: num-19-lxx, locator: "Numbers 19", citations: [{source_id: rahlfs-hanhart-2006, locator: "Numbers 19", witness_id: lxx-numbers-rahlfs-hanhart}]}
+  - {<<: *g, id: num-19-geez, locator: "Numeri 19", citations: [{source_id: dillmann-octateuch-1853, locator: "Numeri 19", witness_id: geez-numbers-dillmann}]}
+  - {<<: *m, id: num-19-mt, locator: "Numbers 19", citations: [{source_id: bhs-numbers, locator: "Numbers 19", witness_id: mt-numbers-bhs}]}
+  - {<<: *l, id: num-20-lxx, locator: "Numbers 20", citations: [{source_id: rahlfs-hanhart-2006, locator: "Numbers 20", witness_id: lxx-numbers-rahlfs-hanhart}]}
+  - {<<: *g, id: num-20-geez, locator: "Numeri 20", citations: [{source_id: dillmann-octateuch-1853, locator: "Numeri 20", witness_id: geez-numbers-dillmann}]}
+  - {<<: *m, id: num-20-mt, locator: "Numbers 20", citations: [{source_id: bhs-numbers, locator: "Numbers 20", witness_id: mt-numbers-bhs}]}

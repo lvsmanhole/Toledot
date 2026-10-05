@@ -1,6 +1,6 @@
 # Bible Timeline data foundation
 
-This repository is the evidence-aware data pipeline for an immersive horizontal Bible chronology. The authored corpus currently reviews Genesis 1–50, Exodus 1–40, Leviticus 1–27, and Numbers 1–15 in the Septuagint, Geʽez, and Masoretic traditions; it preserves textual variants instead of hiding them behind a single unexplained date. The immersive website is planned after broader book coverage and is not implemented yet.
+This repository is the evidence-aware data pipeline for an immersive horizontal Bible chronology. The authored corpus currently reviews Genesis 1–50, Exodus 1–40, Leviticus 1–27, and Numbers 1–20 in the Septuagint, Geʽez, and Masoretic traditions; it preserves textual variants instead of hiding them behind a single unexplained date. The immersive website is planned after broader book coverage and is not implemented yet.
 
 ## Install and verify
 

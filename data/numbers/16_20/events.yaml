@@ -1,0 +1,10 @@
+schema_version: 1
+record_type: events
+records:
+  - &ev {id: numbers-16-20-base-event, event_type: narrative, name: Numbers 16-20 wilderness events, participants: [{entity_id: moses, role: leader}, {entity_id: israelites-exodus, role: community}], date_claim_ids: [], citations: [{source_id: rahlfs-hanhart-2006, locator: "Numbers 16-20", witness_id: lxx-numbers-rahlfs-hanhart}, {source_id: dillmann-octateuch-1853, locator: "Numeri 16-20", witness_id: geez-numbers-dillmann}, {source_id: bhs-numbers, locator: "Numbers 16-20", witness_id: mt-numbers-bhs}]}
+  - {<<: *ev, id: korah-rebellion, name: Korah, Dathan, Abiram, and On rebel against Moses and Aaron, participants: [{entity_id: korah-levite, role: challenger}, {entity_id: dathan-numbers, role: challenger}, {entity_id: abiram-numbers, role: challenger}, {entity_id: on-numbers, role: challenger}, {entity_id: moses, role: challenged leader}, {entity_id: aaron, role: challenged priest}]}
+  - {<<: *ev, id: aarons-rod-confirmed, name: Aaron's staff buds as sign of priestly selection, event_type: sign, participants: [{entity_id: aaron, role: priest}, {entity_id: moses, role: custodian}]}
+  - {<<: *ev, id: red-heifer-purity-ordinance, name: Red-heifer purification ordinance, event_type: instruction, participants: [{entity_id: moses, role: recipient}, {entity_id: aaron, role: priest}, {entity_id: israelites-exodus, role: addressed community}]}
+  - {<<: *ev, id: water-from-rock-at-meribah, name: Water from the rock at Meribah, event_type: miracle, participants: [{entity_id: moses, role: leader}, {entity_id: aaron, role: priest}, {entity_id: israelites-exodus, role: community}]}
+  - {<<: *ev, id: aarons-death-at-hor, name: Aaron dies on Mount Hor and Eleazar succeeds him, event_type: death, participants: [{entity_id: aaron, role: dies at age 123}, {entity_id: moses, role: witness}, {entity_id: eleazar-aaron, role: successor}]}
+  - {<<: *ev, id: miriams-death-in-wilderness, name: Miriam dies at Kadesh, event_type: death, participants: [{entity_id: miriam, role: dies}, {entity_id: israelites-exodus, role: community}]}
