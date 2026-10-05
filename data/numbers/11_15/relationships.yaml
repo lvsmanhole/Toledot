@@ -1,0 +1,4 @@
+schema_version: 1
+record_type: relationships
+records:
+  - {id: caleb-parent-jephunneh, relationship_type: parent, subject_id: jephunneh-numbers, object_id: caleb-numbers, claim_ids: [], citations: [{source_id: rahlfs-hanhart-2006, locator: "Numbers 13:6", witness_id: lxx-numbers-rahlfs-hanhart}, {source_id: dillmann-octateuch-1853, locator: "Numeri 13:6", witness_id: geez-numbers-dillmann}, {source_id: bhs-numbers, locator: "Numbers 13:6", witness_id: mt-numbers-bhs}]}

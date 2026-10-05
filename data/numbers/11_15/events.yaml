@@ -1,0 +1,9 @@
+schema_version: 1
+record_type: events
+records:
+  - &ev {id: numbers-wilderness-base-event, event_type: narrative, name: Wilderness events in Numbers 11-15, participants: [{entity_id: moses, role: leader}, {entity_id: aaron, role: leader}, {entity_id: israelites-exodus, role: community}], date_claim_ids: [], citations: [{source_id: rahlfs-hanhart-2006, locator: "Numbers 11-15", witness_id: lxx-numbers-rahlfs-hanhart}, {source_id: dillmann-octateuch-1853, locator: "Numeri 11-15", witness_id: geez-numbers-dillmann}, {source_id: bhs-numbers, locator: "Numbers 11-15", witness_id: mt-numbers-bhs}]}
+  - {<<: *ev, id: eldads-and-medads-prophesy, name: Eldad and Medad prophesy in the camp, participants: [{entity_id: moses, role: leader}, {entity_id: joshua-exodus, role: attendant}, {entity_id: eldad-numbers, role: prophet}, {entity_id: medad-numbers, role: prophet}]}
+  - {<<: *ev, id: miriam-and-aaron-challenge-moses, name: Miriam and Aaron speak against Moses, participants: [{entity_id: moses, role: challenged leader}, {entity_id: aaron, role: speaker}, {entity_id: miriam, role: speaker}]}
+  - {<<: *ev, id: twelve-spies-sent, event_type: mission, name: Twelve scouts sent to Canaan, participants: [{entity_id: moses, role: sends scouts}, {entity_id: joshua-exodus, role: scout}, {entity_id: caleb-numbers, role: scout}]}
+  - {<<: *ev, id: wilderness-generation-sentence, name: Wilderness generation sentenced to remain outside the land, participants: [{entity_id: moses, role: intercessor}, {entity_id: aaron, role: leader}, {entity_id: joshua-exodus, role: exception}, {entity_id: caleb-numbers, role: exception}, {entity_id: israelites-exodus, role: sentenced community}]}
+  - {<<: *ev, id: numbers-fifteen-instructions, event_type: instruction, name: Offerings, inadvertent sin, Sabbath violation, and tassel instructions, participants: [{entity_id: moses, role: recipient}, {entity_id: israelites-exodus, role: addressed community}]}
