@@ -6,6 +6,8 @@ from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Any, Mapping
 
+from .dates import HistoricalYear
+
 
 @dataclass(frozen=True, slots=True)
 class Citation:
@@ -176,6 +178,40 @@ class ChronologyModel:
     citations: tuple[Citation, ...]
 
 
+@dataclass(frozen=True, slots=True)
+class YearRange:
+    earliest: HistoricalYear
+    latest: HistoricalYear
+
+    def __post_init__(self) -> None:
+        if self.latest < self.earliest:
+            raise ValueError("year range latest boundary precedes earliest boundary")
+
+
+@dataclass(frozen=True, slots=True)
+class ResolvedLifespan:
+    entity_id: str
+    model_id: str
+    birth_year: HistoricalYear
+    death_year: HistoricalYear
+    birth_range: YearRange | None
+    death_range: YearRange | None
+    life_basis: str
+    confidence_grade: str
+    explanation: str
+    birth_derivation_id: str
+    death_derivation_id: str
+    evidence_claim_ids: tuple[str, ...] = ()
+    alternative_claim_ids: tuple[str, ...] = ()
+
+
+@dataclass(frozen=True, slots=True)
+class ResolutionResult:
+    model_id: str
+    derivation_values: Mapping[str, HistoricalYear]
+    lifespans: Mapping[str, ResolvedLifespan]
+
+
 @dataclass(slots=True)
 class Dataset:
     works: dict[str, Work] = field(default_factory=dict)
@@ -192,4 +228,3 @@ class Dataset:
     claims: dict[str, Claim] = field(default_factory=dict)
     chronology_models: dict[str, ChronologyModel] = field(default_factory=dict)
     record_paths: dict[str, Path] = field(default_factory=dict, repr=False)
-
