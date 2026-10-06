@@ -23,26 +23,53 @@ The installed `bible-timeline` command accepts the same subcommands. `validate -
 
 ## Website
 
-`site/` is a static, dependency-free website (ES modules, canvas rendering). Generate its data bundle, then serve the folder over HTTP:
+`site/` holds two parts:
+
+- **The Journey** (landing page, source in `journey/`) is a cinematic, scroll-driven WebGL telling of the story. It's built with Three.js and Vite. The built slice covers the Prologue, Creation, Eden and the Fall.
+  - Every environment is procedural (shaders, particles, simple geometry), and figures appear only as silhouettes.
+  - Ambient sound is synthesized in the browser and is off until the visitor turns it on.
+  - Scripture is quoted from the World English Bible (public domain).
+- **Toledot** (`site/timeline/`) is the research timeline of every person. It's dependency-free (ES modules, canvas) and reads the generated bundle in `site/data/`.
+
+Build and serve:
 
 ```powershell
 py -3.11 -m bible_timeline site            # writes site/data/core.json and details.json
+cd journey; npm install; npm run build; cd ..   # writes site/index.html and site/assets/
 py -3.11 -m http.server 8765 -d site       # open http://127.0.0.1:8765/
-node --test site/tests/layout.test.mjs     # unit tests for the layout helpers
+node --test site/timeline/tests/layout.test.mjs journey/tests/script.test.mjs
 ```
 
-`core.json` (about 0.8 MB) holds books and chapters, people with display years and grades, events, and family links. `details.json` (about 3.5 MB) holds claims, citations, witnesses, and sources, and loads after first paint. Display years are astronomical (1 BCE = 0). Every event says how its year was obtained: `dated_claim` (an explicit or anchored date), `participants` (within the years its participants are alive together, the youngest taken as an adult), or `chapter`. Lifespans resolved at grade E are drawn dashed and labelled as editorial estimates; synchronized lifespans are solid.
+`npm run dev` inside `journey/` serves the journey alone with hot reload; the timeline links need the built `site/`. The journey's story lives in `journey/src/script.js`:
 
-The site offers:
+- scene ranges and transitions on a 0–100 story axis;
+- captions and their references;
+- the act list, where acts not yet built are shown as "in production".
+
+Each scene in `journey/src/scenes/` returns grade and audio levels per frame, and `journey/src/main.js` directs them.
+
+### Toledot data bundle
+
+`core.json` (about 0.8 MB) holds books and chapters, people with display years and grades, events, and family links. `details.json` (about 3.5 MB) holds claims, citations, witnesses, and sources, and loads after first paint.
+
+Display years are astronomical (1 BCE = 0). Every event says how its year was obtained:
+
+- `dated_claim`: an explicit or anchored date;
+- `participants`: placed within the years its participants are alive together, with the youngest taken as an adult;
+- `chapter`: placed by the chapters that narrate it.
+
+Lifespans resolved at grade E are drawn dashed and labelled as editorial estimates; synchronized lifespans are solid.
+
+Toledot offers:
 
 - a pan/zoom timeline (drag, Ctrl+scroll or pinch, and the keyboard: arrows, `+`/`-`, `0`, `[`/`]` to step through people, Enter for details);
 - book and chapter focus;
-- canon filters (Protestant, Rahlfs–Hanhart, Ethiopian), and a filter for text-anchored dates only;
-- search across names, aliases and descriptions;
+- canon filters, and a filter for text-anchored dates only;
+- search;
 - person and event panels with claims, witnesses and family;
 - a Gospel-parallels table, a list view, and a method page.
 
-Selection and filters live in the URL hash, so every view can be linked. `site/data/` is generated and not committed.
+Selection and filters live in the URL hash. Generated files (`site/data/`, `site/index.html`, `site/assets/`) are not committed.
 
 ## Authoritative and generated files
 

@@ -125,7 +125,7 @@ function applyRoute(next) {
 
   // views
   for (const view of VIEWS) $(`view-${view}`).hidden = view !== route.view;
-  for (const link of document.querySelectorAll(".views a")) {
+  for (const link of document.querySelectorAll(".views a[data-view]")) {
     if (link.dataset.view === route.view) link.setAttribute("aria-current", "page"); else link.removeAttribute("aria-current");
     link.href = hashFor({ ...route, view: link.dataset.view, p: null, e: null });
   }

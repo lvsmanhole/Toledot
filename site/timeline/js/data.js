@@ -2,7 +2,7 @@
 
 import { fold } from "./layout.js";
 
-const DATA_ROOT = new URL("../data/", import.meta.url);
+const DATA_ROOT = new URL("../../data/", import.meta.url);
 
 async function fetchJson(name) {
   const response = await fetch(new URL(name, DATA_ROOT));
