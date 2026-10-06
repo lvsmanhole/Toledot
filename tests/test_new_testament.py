@@ -135,3 +135,19 @@ def test_original_language_name_forms_are_recorded() -> None:
     assert nfc(claims["isaiah-2ki19-mark-original-name"].value["form"]) == nfc("Ἡσαΐας")
     assert nfc(claims["david-1-samuel-original-name"].value["form"]) == nfc("דָּוִד")
     assert claims["jesus-1-john-original-name"].witness_id == "greek-1-john-na28"
+
+
+def test_manual_review_decisions_hold() -> None:
+    dataset = _dataset()
+    assert "lahmi" not in _unit("2 Samuel 21").identified_entity_ids and "lahmi" in _unit("1 Chronicles 20").identified_entity_ids
+    assert not any("agag-1sa15" in u.identified_entity_ids for u in dataset.inventory_units.values() if u.work_id == "esther")
+    assert "midian-priest-exodus" not in _unit("Judges 1").identified_entity_ids
+    assert "asen" not in dataset.entities and "amminadib" not in dataset.entities
+    for locator in ("Matthew 27", "Mark 15", "Mark 16", "Luke 24"):
+        people = set(_unit(locator).identified_entity_ids)
+        assert "james-the-younger" in people and "james-mat10" not in people, locator
+    assert "mary-wife-of-clopas" in _unit("John 19").identified_entity_ids
+    assert "mary-mat27" not in _unit("John 19").identified_entity_ids
+    pairs = {(r.relationship_type, r.subject_id, r.object_id) for r in dataset.relationships.values()}
+    assert ("parent", "mary-mat27", "james-the-younger") in pairs
+    assert ("spouse", "alphaeus", "mary-mat27") not in pairs

@@ -52,7 +52,6 @@ records:
   - {id: shimeah-1sa16-parent-jonadab-2sa13, relationship_type: parent, subject_id: shimeah-1sa16, object_id: jonadab-2sa13, claim_ids: [], citations: [{source_id: bhs-2-samuel, locator: "2 Samuel 13:3", witness_id: mt-2-samuel-bhs}]}
   - {id: abiathar-parent-jonathan-2sa15, relationship_type: parent, subject_id: abiathar, object_id: jonathan-2sa15, claim_ids: [], citations: [{source_id: bhs-2-samuel, locator: "2 Samuel 15:27", witness_id: mt-2-samuel-bhs}]}
   - {id: toi-parent-joram-2sa8, relationship_type: parent, subject_id: toi, object_id: joram-2sa8, claim_ids: [], citations: [{source_id: bhs-2-samuel, locator: "2 Samuel 8:10", witness_id: mt-2-samuel-bhs}]}
-  - {id: rapha-parent-lahmi, relationship_type: parent, subject_id: rapha, object_id: lahmi, claim_ids: [], citations: [{source_id: bhs-2-samuel, locator: "2 Samuel 21:19", witness_id: mt-2-samuel-bhs}]}
   - {id: talmai-2sa3-parent-maacah-2sa3, relationship_type: parent, subject_id: talmai-2sa3, object_id: maacah-2sa3, claim_ids: [], citations: [{source_id: bhs-2-samuel, locator: "2 Samuel 3:3", witness_id: mt-2-samuel-bhs}]}
   - {id: ammiel-2sa9-parent-machir-2sa9, relationship_type: parent, subject_id: ammiel-2sa9, object_id: machir-2sa9, claim_ids: [], citations: [{source_id: bhs-2-samuel, locator: "2 Samuel 9:4", witness_id: mt-2-samuel-bhs}]}
   - {id: saul-parent-mephibosheth-2sa21, relationship_type: parent, subject_id: saul, object_id: mephibosheth-2sa21, claim_ids: [], citations: [{source_id: bhs-2-samuel, locator: "2 Samuel 21:8", witness_id: mt-2-samuel-bhs}]}

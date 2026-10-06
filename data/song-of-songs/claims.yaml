@@ -1,7 +1,6 @@
 schema_version: 1
 record_type: claims
 records:
-  - {id: amminadib-song-of-songs-mt-attested, subject_id: amminadib, predicate: attested_in_passage, value: {kind: attestation, status: "named in Song of Songs"}, evidence_type: explicit_text, witness_id: mt-song-of-songs-bhs, confidence: A, citations: [{source_id: bhs-song-of-songs, locator: "Song of Songs 6:12", witness_id: mt-song-of-songs-bhs}]}
   - {id: david-song-of-songs-mt-attested, subject_id: david, predicate: attested_in_passage, value: {kind: attestation, status: "named in Song of Songs"}, evidence_type: explicit_text, witness_id: mt-song-of-songs-bhs, confidence: A, citations: [{source_id: bhs-song-of-songs, locator: "Song of Songs 4:4", witness_id: mt-song-of-songs-bhs}]}
   - {id: pharaoh-1ki3-song-of-songs-mt-attested, subject_id: pharaoh-1ki3, predicate: attested_in_passage, value: {kind: attestation, status: "named in Song of Songs"}, evidence_type: explicit_text, witness_id: mt-song-of-songs-bhs, confidence: A, citations: [{source_id: bhs-song-of-songs, locator: "Song of Songs 1:9", witness_id: mt-song-of-songs-bhs}]}
   - {id: solomon-song-of-songs-mt-attested, subject_id: solomon, predicate: attested_in_passage, value: {kind: attestation, status: "named in Song of Songs"}, evidence_type: explicit_text, witness_id: mt-song-of-songs-bhs, confidence: A, citations: [{source_id: bhs-song-of-songs, locator: "Song of Songs 1:1, 5; 3:7, 9, 11; 8:11, 12", witness_id: mt-song-of-songs-bhs}]}

@@ -129,3 +129,29 @@ Most are framing presences: Moses as the speaker of the Deuteronomy law code, or
 - `simeon`: Genesis 37, Genesis 45
 - `zebulun`: Genesis 37, Genesis 42, Genesis 43, Genesis 45
 - `zilpah`: Genesis 33
+
+## Review decisions (2026-10-06)
+
+All 60 entries were checked against the verse text. Decisions are applied by `tools/ot_census/review_fixes.py`.
+
+- **Kept, name present in the verse (about 45 entries).** The verifier missed the tag because of index-version differences.
+  - Examples: Calcol, Gazez and Mesha (1 Chr 2); the 1 Kings 4 "Ben-" officials; Stephen (Acts 8:2); Esau (Heb 11–12, Rom 9); the Elnathans (Ezra 8:16); Nergal-sharezer (Jer 39:3).
+  - Spelling variants: Shelomoth/Shelomith (Ketiv/Qere) and Zabbai/Zakkai.
+  - Jesus in Mark 7, who is present by pronoun in NA28.
+- **Kept, a personal mention within a phrase:**
+  - Arba, "the greatest man among the Anakim" (Josh 14:15; 15:13; 21:11).
+  - Barzillai the Gileadite as a family's ancestor (Ezra 2:61; Neh 7:63).
+  - "His wife the Judean" (Jehudijah, 1 Chr 4:18).
+- **Removed, not named in the base text:**
+  - Lahmi from 2 Samuel 21. The Masoretic 21:19 has Elhanan kill Goliath; Lahmi comes from 1 Chr 20:5. The "Rapha parent of Lahmi" link was also dropped, since 1 Chr 20:8 states descent from the giants.
+  - Agag from Esther. Only the gentilic "Agagite" occurs.
+  - Moses' father-in-law from Judges 1. He is unnamed in 1:16, and 4:11 names Hobab.
+  - "Jehiel" from 1 Chronicles 6, where the text has Jahath. The dependent "Jehiel parent of Shimei" link was dropped.
+  - "Hodiah" from Nehemiah 12:8, where the text has Judah.
+- **Deleted as not persons:**
+  - "Asen": Nehemiah 7:24 reads Hariph.
+  - "Amminadib": Song 6:12 is a phrase, not a name.
+- **Split, where the merge is traditional rather than textual:**
+  - James the younger (Matt 27:56; Mark 15:40; 16:1; Luke 24:10) is now separate from James son of Alphaeus.
+  - Mary the mother of James and Joses is now separate from Mary the wife of Clopas (John 19:25).
+  - The index's "Alphaeus married this Mary" link (Alphaeus = Clopas) was dropped.

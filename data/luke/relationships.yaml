@@ -29,7 +29,6 @@ records:
   - {id: melchi-luk3-parent-levi-luk3, relationship_type: parent, subject_id: melchi-luk3, object_id: levi-luk3, claim_ids: [], citations: [{source_id: na28, locator: "Luke 3:24", witness_id: greek-luke-na28}]}
   - {id: simeon-luk3-parent-levi-luk3-29, relationship_type: parent, subject_id: simeon-luk3, object_id: levi-luk3-29, claim_ids: [], citations: [{source_id: na28, locator: "Luke 3:30", witness_id: greek-luke-na28}]}
   - {id: mattathias-luk3-26-parent-maath, relationship_type: parent, subject_id: mattathias-luk3-26, object_id: maath, claim_ids: [], citations: [{source_id: na28, locator: "Luke 3:26", witness_id: greek-luke-na28}]}
-  - {id: alphaeus-spouse-mary-mat27, relationship_type: spouse, subject_id: alphaeus, object_id: mary-mat27, claim_ids: [], citations: [{source_id: na28, locator: "Luke 24:18", witness_id: greek-luke-na28}]}
   - {id: nathan-2sa5-parent-mattatha, relationship_type: parent, subject_id: nathan-2sa5, object_id: mattatha, claim_ids: [], citations: [{source_id: na28, locator: "Luke 3:31", witness_id: greek-luke-na28}]}
   - {id: amos-luk3-parent-mattathias-luk3, relationship_type: parent, subject_id: amos-luk3, object_id: mattathias-luk3, claim_ids: [], citations: [{source_id: na28, locator: "Luke 3:25", witness_id: greek-luke-na28}]}
   - {id: semein-parent-mattathias-luk3-26, relationship_type: parent, subject_id: semein, object_id: mattathias-luk3-26, claim_ids: [], citations: [{source_id: na28, locator: "Luke 3:26", witness_id: greek-luke-na28}]}

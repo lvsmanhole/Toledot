@@ -1241,7 +1241,6 @@
 "jacob",
 "jeatherai",
 "jeduthun-1ch6",
-"jehiel-1ch6",
 "jehozadak",
 "jephunneh-numbers",
 "jeroham-1sa1",
@@ -4490,7 +4489,6 @@
 "jonadab-2sa13",
 "jonathan-1sa13",
 "kish-1sa9",
-"lahmi",
 "mephibosheth-2sa21",
 "mephibosheth-2sa4",
 "merab",
@@ -5751,7 +5749,6 @@
 "vashti"
 ],
 "Esther 3": [
-"agag-1sa15",
 "ahasuerus",
 "haman",
 "hammedatha",
@@ -5779,7 +5776,6 @@
 "zeresh"
 ],
 "Esther 7": [
-"agag-1sa15",
 "ahasuerus",
 "esther-est2",
 "haman",
@@ -5796,7 +5792,6 @@
 "Esther 9": [
 "abihail-est2",
 "adalia",
-"agag-1sa15",
 "ahasuerus",
 "aridai",
 "aridatha",
@@ -8406,7 +8401,7 @@
 "jesus",
 "joseph-mat27",
 "mary-magdalene",
-"mary-mat27",
+"mary-wife-of-clopas",
 "nicodemus",
 "pilate",
 "tiberius"
@@ -9361,7 +9356,6 @@
 "joshua-exodus",
 "kenaz-jos15",
 "man-of-luz",
-"midian-priest-exodus",
 "moses",
 "othniel",
 "sheshai-anak",
@@ -9926,7 +9920,7 @@
 ],
 "Luke 24": [
 "alphaeus",
-"james-mat10",
+"james-the-younger",
 "jesus",
 "joanna",
 "mary-magdalene",
@@ -10175,7 +10169,7 @@
 "barabbas",
 "centurion-at-the-cross",
 "elijah-1ki17",
-"james-mat10",
+"james-the-younger",
 "jesus",
 "joseph-mat27",
 "joses-mat27",
@@ -10188,7 +10182,7 @@
 "simon-mat27"
 ],
 "Mark 16": [
-"james-mat10",
+"james-the-younger",
 "jesus",
 "mary-magdalene",
 "mary-mat27",
@@ -10462,7 +10456,7 @@
 "barabbas",
 "centurion-at-the-cross",
 "elijah-1ki17",
-"james-mat10",
+"james-the-younger",
 "jeremiah-2ch35",
 "jesus",
 "joseph-mat27",
@@ -10772,7 +10766,6 @@
 "hattush-neh10",
 "helkai",
 "hilkiah-neh12",
-"hodiah-neh8",
 "hoshaiah-neh12",
 "iddo-neh12",
 "jaddua-neh12",
@@ -10974,7 +10967,6 @@
 "ami",
 "arah-ezr2",
 "asaph-1ch6",
-"asen",
 "ater-ezr2",
 "ater-ezr2-42",
 "azariah-neh7",
@@ -12527,9 +12519,7 @@
 "david"
 ],
 "Song of Songs 5": [],
-"Song of Songs 6": [
-"amminadib"
-],
+"Song of Songs 6": [],
 "Song of Songs 7": [],
 "Song of Songs 8": [
 "solomon"

@@ -1,4 +1,3 @@
 schema_version: 1
 record_type: entities
-records:
-  - {id: amminadib, entity_type: human, primary_name: "Amminadib", classification: named_person, identity_status: named, aliases: ["my kinsman,a prince", "royal of my people"], gender: male, description: "Noble mentioned in a love song", tipnr_id: "Amminadib@Sng.6.12", citations: [{source_id: bhs-song-of-songs, locator: "Song of Songs 6:12", witness_id: mt-song-of-songs-bhs}, {source_id: tipnr-stepbible, locator: "Amminadib@Sng.6.12"}]}
+records: []

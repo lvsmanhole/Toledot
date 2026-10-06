@@ -1,4 +1,4 @@
 schema_version: 1
 record_type: events
 records:
-  - {id: song-of-songs-1-8-the-song-of-songs, event_type: poetry, name: "The Song of Songs", participants: [{entity_id: solomon, role: named participant}, {entity_id: amminadib, role: named participant}, {entity_id: david, role: named participant}, {entity_id: pharaoh-1ki3, role: named participant}], date_claim_ids: [], citations: [{source_id: bhs-song-of-songs, locator: "Song of Songs 1-8", witness_id: mt-song-of-songs-bhs}, {source_id: rahlfs-hanhart-2006, locator: "Song of Songs (corresponding to Song of Songs 1-8)", witness_id: lxx-song-of-songs-rahlfs-hanhart}]}
+  - {id: song-of-songs-1-8-the-song-of-songs, event_type: poetry, name: "The Song of Songs", participants: [{entity_id: solomon, role: named participant}, {entity_id: david, role: named participant}, {entity_id: pharaoh-1ki3, role: named participant}], date_claim_ids: [], citations: [{source_id: bhs-song-of-songs, locator: "Song of Songs 1-8", witness_id: mt-song-of-songs-bhs}, {source_id: rahlfs-hanhart-2006, locator: "Song of Songs (corresponding to Song of Songs 1-8)", witness_id: lxx-song-of-songs-rahlfs-hanhart}]}
