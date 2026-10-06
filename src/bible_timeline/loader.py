@@ -242,6 +242,10 @@ _RECORD_CONFIG: dict[str, tuple[str, str, Builder]] = {
 }
 
 
+# libyaml's C parser is an order of magnitude faster and constructs identical safe types.
+_SAFE_LOADER = getattr(yaml, "CSafeLoader", yaml.SafeLoader)
+
+
 def _pointer(parts: Any) -> str:
     escaped = (str(part).replace("~", "~0").replace("/", "~1") for part in parts)
     return "/" + "/".join(escaped)
@@ -249,7 +253,7 @@ def _pointer(parts: Any) -> str:
 
 def _load_yaml(path: Path) -> dict[str, Any]:
     try:
-        document = yaml.safe_load(path.read_text(encoding="utf-8"))
+        document = yaml.load(path.read_text(encoding="utf-8"), Loader=_SAFE_LOADER)
     except (OSError, UnicodeError, yaml.YAMLError) as error:
         raise StructuralValidationError(path, "", str(error)) from error
     if not isinstance(document, dict):
