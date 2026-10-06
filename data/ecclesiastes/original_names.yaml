@@ -1,0 +1,4 @@
+schema_version: 1
+record_type: claims
+records:
+  - {id: david-ecclesiastes-original-name, subject_id: david, predicate: name_as, value: {kind: name_variant, form: "דָּוִד", language: "Hebrew/Aramaic (Leningrad)"}, evidence_type: explicit_text, witness_id: mt-ecclesiastes-bhs, confidence: A, interpretation_note: "Dictionary (lemma) form of the name as tagged in the STEPBible amalgamated text.", citations: [{source_id: bhs-ecclesiastes, locator: "Ecclesiastes 1:1", witness_id: mt-ecclesiastes-bhs}, {source_id: stepbible-tagged-texts, locator: "Ecclesiastes 1:1"}]}

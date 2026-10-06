@@ -94,6 +94,9 @@
 - [x] Ethiopian New Testament broader-canon books and relevant witnesses (book-level entries; person extraction awaits a citable edition).
 - New Testament census (2026-10-06): all 260 chapters against NA28, about 420 people (266 new from the TIPNR index plus 49 curated unnamed individuals), 28 Gospel-parallel events, Herodian/Roman anchors, and explicit ages. Policies are in `tools/ot_census/README.md`. Open: Greek name forms and NA28-specific readings beyond the subscription and omitted-verse filters; no Geʽez New Testament edition selected.
 
+- [x] Base-text verification (2026-10-06): person/chapter entries checked against the STEPBible tagged Leningrad (TAHOT) and NA28 (TAGNT) texts; edition-only names removed; Hebrew/Greek name forms recorded. Manual review list: `docs/review/tagged-text-review.md`.
+- [ ] Still open (needs sources not yet available to the project): Geʽez name forms and editions beyond the Octateuch, 1 Enoch, and Jubilees; verse-level Septuagint forms; Rahlfs–Hanhart check of the deuterocanon; persons for Meqabyan, Tegsats, Josippon, 4 Baruch, the Ascension of Isaiah, and the Ethiopian New Testament church orders.
+
 ### Phase E — Immersive website
 
 - [ ] Define the frontend architecture against final published data contracts.

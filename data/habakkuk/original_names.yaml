@@ -1,0 +1,4 @@
+schema_version: 1
+record_type: claims
+records:
+  - {id: habakkuk-hab1-habakkuk-original-name, subject_id: habakkuk-hab1, predicate: name_as, value: {kind: name_variant, form: "חֲבַקּוּק", language: "Hebrew/Aramaic (Leningrad)"}, evidence_type: explicit_text, witness_id: mt-habakkuk-bhs, confidence: A, interpretation_note: "Dictionary (lemma) form of the name as tagged in the STEPBible amalgamated text.", citations: [{source_id: bhs-habakkuk, locator: "Habakkuk 1:1", witness_id: mt-habakkuk-bhs}, {source_id: stepbible-tagged-texts, locator: "Habakkuk 1:1"}]}

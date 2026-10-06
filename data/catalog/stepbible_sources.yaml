@@ -1,0 +1,4 @@
+schema_version: 1
+record_type: sources
+records:
+  - {id: stepbible-tagged-texts, source_type: reference_index, title: "TAHOT and TAGNT - Translators Amalgamated Hebrew OT and Greek NT", bibliographic_locator: "STEPBible.org / Tyndale House Cambridge, STEPBible-Data repository", url: https://github.com/STEPBible/STEPBible-Data, license_status: cc_by_4_0_reference, usage_note: "Used to verify that each indexed person is named in the Leningrad (OT) or NA28 (NT) text of each chapter, and to record dictionary forms of names. The data files are not redistributed."}

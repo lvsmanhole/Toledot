@@ -75,3 +75,14 @@ py -3.11 tools/ot_census/check_parent_child.py .
   - Explicit claims (grade A): Jesus about thirty (Luke 3:23), Anna 84, Jairus' daughter 12, the lame man over 40, Luke 3:1's fifteenth year of Tiberius.
 - **Gospel parallels:** 28 linked events with per-Gospel ranges and notes on real differences (temple-cleansing timing, the Passover chronology, one versus two demoniacs).
 - **Ethiopian broader New Testament** (Sinodos, Book of the Covenant, Clement, Didascalia): book-level entries only.
+
+## Verification against the tagged base texts
+
+`verify_tagged.py` (with `tagged_text.py`) reads STEPBible's TAHOT and TAGNT (CC BY 4.0; not redistributed). It checks every person/chapter entry derived from TIPNR against the base text: Leningrad (including Qere and restored text) for the Old Testament, and words present in NA28 for the New.
+
+- **Removed:** entries whose name occurs only in other editions (TR/Byzantine readings, or text supplied from the Septuagint).
+- **Kept:** entries with no tagged name occurrence. The person may be present by pronoun or description. These are listed in `docs/review/tagged-text-review.md` for manual review.
+- **Rewritten:** each person's per-book attestation claim, so its locator lists only verses where the name is tagged in the base text.
+- **Added:** a `name_as` claim per person and book, giving the Hebrew/Aramaic or Greek dictionary form.
+
+Unnamed people are not checked, since they are identified by description rather than by name tags.

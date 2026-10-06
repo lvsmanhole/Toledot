@@ -74,8 +74,15 @@ git diff --check
 - **Coverage:** all 27 books, against the NA28 witness. That is about 420 people: 266 new from TIPNR and 49 curated unnamed individuals, plus Old Testament people mentioned retrospectively.
 - **Events:** 28 Gospel-parallel events, plus dated events (census of Quirinius, Luke 3:1, crucifixion, Agrippa I's death, Claudius' edict, Gallio).
 - **Identity decisions:** listed in `tools/ot_census/README.md`. Isaiah's Immanuel was split from Jesus in commit `b9e098b`.
+- **Verification (2026-10-06):**
+  - Every TIPNR-derived person/chapter entry is checked against STEPBible's tagged Leningrad (TAHOT) and NA28 (TAGNT) texts: 7,251 entries are verified.
+  - 5 entries are removed, because the name is only in TR/Byzantine readings or supplied from the Septuagint.
+  - 60 entries are kept for manual review; see `docs/review/tagged-text-review.md`.
+  - Claim locators now list only verses where the name is confirmed, and about 4,000 Hebrew/Greek dictionary-form name claims were added.
 - **Open:**
-  - NA28 versus English (World English Bible / Majority text) differences are only partly handled: the KJV-subscription and omitted-verse filters are in place, but places such as Mark 1:2 "Isaiah" and Luke 3:19 "Philip" are not.
+  - Manual review of the 60 entries without a tagged occurrence. Examples:
+    - James son of Alphaeus is identified with James the younger, and Mary the mother of James with Mary of Clopas; both are traditional, not textual.
+    - Arba appears inside the place name Kiriath-arba.
   - No Geʽez New Testament edition is selected.
   - The traditional identifications of epistle authors (James, Jude, Peter) follow TIPNR.
 

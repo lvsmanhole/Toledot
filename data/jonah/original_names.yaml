@@ -1,0 +1,5 @@
+schema_version: 1
+record_type: claims
+records:
+  - {id: amittai-jonah-original-name, subject_id: amittai, predicate: name_as, value: {kind: name_variant, form: "אֲמִתַּי", language: "Hebrew/Aramaic (Leningrad)"}, evidence_type: explicit_text, witness_id: mt-jonah-bhs, confidence: A, interpretation_note: "Dictionary (lemma) form of the name as tagged in the STEPBible amalgamated text.", citations: [{source_id: bhs-jonah, locator: "Jonah 1:1", witness_id: mt-jonah-bhs}, {source_id: stepbible-tagged-texts, locator: "Jonah 1:1"}]}
+  - {id: jonah-2ki14-jonah-original-name, subject_id: jonah-2ki14, predicate: name_as, value: {kind: name_variant, form: "יוֹנָה", language: "Hebrew/Aramaic (Leningrad)"}, evidence_type: explicit_text, witness_id: mt-jonah-bhs, confidence: A, interpretation_note: "Dictionary (lemma) form of the name as tagged in the STEPBible amalgamated text.", citations: [{source_id: bhs-jonah, locator: "Jonah 1:1", witness_id: mt-jonah-bhs}, {source_id: stepbible-tagged-texts, locator: "Jonah 1:1"}]}

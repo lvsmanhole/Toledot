@@ -1,3 +1,4 @@
+import unicodedata
 from functools import lru_cache
 from pathlib import Path
 
@@ -118,3 +119,19 @@ def test_genealogy_readings_that_conflict_are_claims() -> None:
     dataset = _dataset()
     assert not any(r.relationship_type == "parent" and (r.subject_id, r.object_id) == ("salmon", "boaz") for r in dataset.relationships.values())
     assert any(c.predicate == "parent_reference" and c.subject_id == "boaz" and c.object_id == "salmon" for c in dataset.claims.values())
+
+
+def test_names_found_only_outside_the_base_text_are_not_inventoried() -> None:
+    assert "philip-mat14" not in _unit("Luke 3").identified_entity_ids      # 'Philip' in Luke 3:19 is a TR/Byzantine reading
+    assert "simon-jhn6" not in _unit("John 12").identified_entity_ids      # 'son of Simon' in John 12:4 is TR/Byzantine
+    assert "daniel-ezk14" not in _unit("Mark 13").identified_entity_ids    # Mark 13:14 names Daniel only in TR/Byzantine
+    assert "isaiah-2ki19" in _unit("Mark 1").identified_entity_ids         # NA28 reads 'in Isaiah the prophet' (Mark 1:2)
+    assert "jesus" in _unit("Mark 7").identified_entity_ids                # present by pronoun in NA28
+
+
+def test_original_language_name_forms_are_recorded() -> None:
+    claims = _dataset().claims
+    nfc = lambda s: unicodedata.normalize("NFC", s)  # noqa: E731
+    assert nfc(claims["isaiah-2ki19-mark-original-name"].value["form"]) == nfc("Ἡσαΐας")
+    assert nfc(claims["david-1-samuel-original-name"].value["form"]) == nfc("דָּוִד")
+    assert claims["jesus-1-john-original-name"].witness_id == "greek-1-john-na28"

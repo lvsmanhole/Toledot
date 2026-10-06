@@ -1,0 +1,5 @@
+schema_version: 1
+record_type: claims
+records:
+  - {id: joel-jol1-joel-original-name, subject_id: joel-jol1, predicate: name_as, value: {kind: name_variant, form: "יוֹאֵל", language: "Hebrew/Aramaic (Leningrad)"}, evidence_type: explicit_text, witness_id: mt-joel-bhs, confidence: A, interpretation_note: "Dictionary (lemma) form of the name as tagged in the STEPBible amalgamated text.", citations: [{source_id: bhs-joel, locator: "Joel 1:1", witness_id: mt-joel-bhs}, {source_id: stepbible-tagged-texts, locator: "Joel 1:1"}]}
+  - {id: pethuel-joel-original-name, subject_id: pethuel, predicate: name_as, value: {kind: name_variant, form: "פְּתוּאֵל", language: "Hebrew/Aramaic (Leningrad)"}, evidence_type: explicit_text, witness_id: mt-joel-bhs, confidence: A, interpretation_note: "Dictionary (lemma) form of the name as tagged in the STEPBible amalgamated text.", citations: [{source_id: bhs-joel, locator: "Joel 1:1", witness_id: mt-joel-bhs}, {source_id: stepbible-tagged-texts, locator: "Joel 1:1"}]}

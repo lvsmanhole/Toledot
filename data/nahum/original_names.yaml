@@ -1,0 +1,4 @@
+schema_version: 1
+record_type: claims
+records:
+  - {id: nahum-nam1-nahum-original-name, subject_id: nahum-nam1, predicate: name_as, value: {kind: name_variant, form: "נַחוּם", language: "Hebrew/Aramaic (Leningrad)"}, evidence_type: explicit_text, witness_id: mt-nahum-bhs, confidence: A, interpretation_note: "Dictionary (lemma) form of the name as tagged in the STEPBible amalgamated text.", citations: [{source_id: bhs-nahum, locator: "Nahum 1:1", witness_id: mt-nahum-bhs}, {source_id: stepbible-tagged-texts, locator: "Nahum 1:1"}]}
