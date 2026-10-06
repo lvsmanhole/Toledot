@@ -1,0 +1,4 @@
+schema_version: 1
+record_type: entities
+records:
+  - {id: malachi-mal1, entity_type: human, primary_name: "Malachi", classification: named_person, identity_status: named, aliases: [], gender: male, description: "Prophet who wrote the book bearing his name.", tipnr_id: "Malachi@Mal.1.1", citations: [{source_id: bhs-malachi, locator: "Malachi 1:1", witness_id: mt-malachi-bhs}, {source_id: tipnr-stepbible, locator: "Malachi@Mal.1.1"}]}

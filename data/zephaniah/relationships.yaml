@@ -1,0 +1,7 @@
+schema_version: 1
+record_type: relationships
+records:
+  - {id: hezekiah-zep1-parent-amariah-zep1, relationship_type: parent, subject_id: hezekiah-zep1, object_id: amariah-zep1, claim_ids: [], citations: [{source_id: bhs-zephaniah, locator: "Zephaniah 1:1", witness_id: mt-zephaniah-bhs}]}
+  - {id: gedaliah-zep1-parent-cushi-zep1, relationship_type: parent, subject_id: gedaliah-zep1, object_id: cushi-zep1, claim_ids: [], citations: [{source_id: bhs-zephaniah, locator: "Zephaniah 1:1", witness_id: mt-zephaniah-bhs}]}
+  - {id: amariah-zep1-parent-gedaliah-zep1, relationship_type: parent, subject_id: amariah-zep1, object_id: gedaliah-zep1, claim_ids: [], citations: [{source_id: bhs-zephaniah, locator: "Zephaniah 1:1", witness_id: mt-zephaniah-bhs}]}
+  - {id: cushi-zep1-parent-zephaniah-zep1, relationship_type: parent, subject_id: cushi-zep1, object_id: zephaniah-zep1, claim_ids: [], citations: [{source_id: bhs-zephaniah, locator: "Zephaniah 1:1", witness_id: mt-zephaniah-bhs}]}

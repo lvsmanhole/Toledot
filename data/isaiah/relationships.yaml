@@ -1,0 +1,8 @@
+schema_version: 1
+record_type: relationships
+records:
+  - {id: isaiah-2ki19-spouse-isaiah-wife-prophetess, relationship_type: spouse, subject_id: isaiah-2ki19, object_id: isaiah-wife-prophetess, claim_ids: [], citations: [{source_id: bhs-isaiah, locator: "Isaiah 8:3", witness_id: mt-isaiah-bhs}]}
+  - {id: isaiah-2ki19-parent-shear-jashub, relationship_type: parent, subject_id: isaiah-2ki19, object_id: shear-jashub, claim_ids: [], citations: [{source_id: bhs-isaiah, locator: "Isaiah 7:3", witness_id: mt-isaiah-bhs}]}
+  - {id: jeberechiah-parent-zechariah-isa8, relationship_type: parent, subject_id: jeberechiah, object_id: zechariah-isa8, claim_ids: [], citations: [{source_id: bhs-isaiah, locator: "Isaiah 8:2", witness_id: mt-isaiah-bhs}]}
+  - {id: isaiah-wife-prophetess-parent-maher-shalal-hash-baz, relationship_type: parent, subject_id: isaiah-wife-prophetess, object_id: maher-shalal-hash-baz, claim_ids: [], citations: [{source_id: bhs-isaiah, locator: "Isaiah 8:1", witness_id: mt-isaiah-bhs}]}
+  - {id: isaiah-2ki19-parent-maher-shalal-hash-baz, relationship_type: parent, subject_id: isaiah-2ki19, object_id: maher-shalal-hash-baz, claim_ids: [], interpretation_note: "The parent narrates the birth in the first person.", citations: [{source_id: bhs-isaiah, locator: "Isaiah 8:3", witness_id: mt-isaiah-bhs}]}

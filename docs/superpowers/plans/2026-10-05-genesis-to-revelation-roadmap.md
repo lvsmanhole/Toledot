@@ -64,16 +64,19 @@
 
 ### Phase B — Settlement and united/divided monarchy
 
-- [ ] Joshua, Judges, Ruth: full named/unnamed person census and generation links.
-- [ ] 1–2 Samuel / 1–2 Kingdoms: Saul, David, courts, families, prophets, successions, and synchronisms.
-- [ ] 1–2 Kings / 3–4 Kingdoms: king-by-king chronology, accession conventions, coregencies, prophetic overlaps, and external anchors.
-- [ ] 1–2 Chronicles / Supplements: resolve duplicate/variant names against Samuel–Kings with explicit identity confidence; include genealogical lists without conflation.
+- [x] Joshua, Judges, Ruth: full named/unnamed person census and generation links.
+- [x] 1–2 Samuel / 1–2 Kingdoms: Saul, David, courts, families, prophets, successions, and synchronisms.
+- [x] 1–2 Kings / 3–4 Kingdoms: king-by-king chronology, accession conventions, coregencies, prophetic overlaps, and external anchors. Accession ages and reign lengths are Masoretic claims (grade A); BCE reign windows follow a conventional synchronized chronology (grade C); Israelite kings' births stay grade E.
+- [x] 1–2 Chronicles / Supplements: resolve duplicate/variant names against Samuel–Kings with explicit identity confidence; include genealogical lists without conflation. Variant ages kept (2 Chr 22:2 = 42, 2 Chr 36:9 = 8); compressed 'son of' links recorded as descent.
+
+- Census method (2026-10-06): every chapter of Joshua–Malachi is inventoried and cross-checked against the TIPNR proper-name index (STEPBible, CC BY 4.0), with hand-curated unnamed individuals, regnal data, dated events, and index corrections. The same pass added missing Pentateuch people (e.g. Aram son of Kemuel, Korah's sons, Beeri and Elon the Hittites). Tooling and policies: `tools/ot_census/README.md`. A committed snapshot (`tests/fixtures/chapter_people_snapshot.json`) fails the suite if any chapter loses a person.
+- Open (Phase B/C): Septuagint and Geʽez presence beyond the Octateuch is book-level and grade C; no Geʽez edition has been selected for Samuel–Malachi; verse-level Greek name forms are not yet recorded.
 
 ### Phase C — Exile, restoration, wisdom, and prophets
 
-- [ ] Ezra, Nehemiah, Esther and Greek additions: people, court/census lists, competing textual scope.
-- [ ] Job, Psalms, Proverbs, Ecclesiastes, Song: identify named individuals only where text supports them; preserve uncertain traditional attributions.
-- [ ] Isaiah through Malachi: prophetic lifespan windows, kings and synchronisms, named/unnamed courts and audiences.
+- [x] Ezra, Nehemiah, Esther: people, court/census lists, dated events (Greek Additions to Esther remain with the deuterocanonical works below).
+- [x] Job, Psalms, Proverbs, Ecclesiastes, Song: named individuals (including superscription names) inventoried; Job's era is editorial; the Greek Job 42:16 numbers are recorded as a grade-C variant.
+- [x] Isaiah through Malachi: prophetic lifespan windows, kings and synchronisms, named/unnamed courts and audiences. Greek Jeremiah/Psalms chapter correspondences are recorded on the Septuagint passages.
 - [ ] Tobit, Judith, Wisdom, Sirach, Baruch, Greek Ezra and other Septuagint/Ethiopic works: add canon-specific witnesses and claims under their actual textual status.
 - [ ] Ethiopic broader-canon sentinels (including Enoch, Jubilees, and Meqabyan): book-level source/canon review before person extraction.
 

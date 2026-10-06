@@ -1,0 +1,4 @@
+schema_version: 1
+record_type: entities
+records:
+  - {id: agag-num24, entity_type: human, primary_name: "Agag", classification: named_person, identity_status: named, aliases: [], gender: male, description: "King mentioned in Balaam's oracle about Israel", tipnr_id: "Agag@Num.24.7", citations: [{source_id: bhs-numbers, locator: "Numbers 24:7", witness_id: mt-numbers-bhs}, {source_id: tipnr-stepbible, locator: "Agag@Num.24.7"}]}

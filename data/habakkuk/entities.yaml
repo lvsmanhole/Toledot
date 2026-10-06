@@ -1,0 +1,4 @@
+schema_version: 1
+record_type: entities
+records:
+  - {id: habakkuk-hab1, entity_type: human, primary_name: "Habakkuk", classification: named_person, identity_status: named, aliases: [], gender: male, description: "A prophet who questioned God's justice.", tipnr_id: "Habakkuk@Hab.1.1-", citations: [{source_id: bhs-habakkuk, locator: "Habakkuk 1:1", witness_id: mt-habakkuk-bhs}, {source_id: tipnr-stepbible, locator: "Habakkuk@Hab.1.1-"}]}

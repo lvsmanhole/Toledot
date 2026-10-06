@@ -1,0 +1,4 @@
+schema_version: 1
+record_type: relationships
+records:
+  - {id: jakeh-parent-agur, relationship_type: parent, subject_id: jakeh, object_id: agur, claim_ids: [], citations: [{source_id: bhs-proverbs, locator: "Proverbs 30:1", witness_id: mt-proverbs-bhs}]}

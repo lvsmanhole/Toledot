@@ -1,6 +1,6 @@
 # Bible Timeline data foundation
 
-This repository is the evidence-aware data pipeline for an immersive horizontal Bible chronology. The authored corpus currently reviews Genesis 1–50, Exodus 1–40, Leviticus 1–27, Numbers 1–36, and Deuteronomy 1–34 in the Septuagint, Geʽez, and Masoretic traditions; it preserves textual variants instead of hiding them behind a single unexplained date. Numbers and Deuteronomy have person-level completeness reviews backed by regression tests. Exodus and Leviticus are reviewed chapter by chapter, but they have not had the same person-by-person audit yet, and Geʽez name spellings are not yet verified reading by reading. The immersive website is planned after broader book coverage and is not implemented yet.
+This repository is the evidence-aware data pipeline for an immersive horizontal Bible chronology. The authored corpus covers every chapter of the Hebrew-canon Old Testament (Genesis–Malachi, about 2,900 people) in the Masoretic and Septuagint traditions, with Geʽez witnesses for the Octateuch (Genesis–Ruth); it preserves textual variants instead of hiding them behind a single unexplained date. Every chapter's person inventory is cross-checked against the TIPNR proper-name index and guarded by regression tests (see `tools/ot_census/README.md`). Septuagint presence outside the Pentateuch is recorded at book level (grade C), and Geʽez name spellings are not yet verified reading by reading. The deuterocanonical and Ethiopic broader-canon books, the New Testament, and the website are still to come.
 
 ## Install and verify
 

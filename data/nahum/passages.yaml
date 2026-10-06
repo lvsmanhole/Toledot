@@ -1,0 +1,9 @@
+schema_version: 1
+record_type: passages
+records:
+  - {id: nahum-1-mt, work_id: nahum, witness_id: mt-nahum-bhs, locator: "Nahum 1", versification: english, citations: [{source_id: bhs-nahum, locator: "Nahum 1", witness_id: mt-nahum-bhs}]}
+  - {id: nahum-1-lxx, work_id: nahum, witness_id: lxx-nahum-rahlfs-hanhart, locator: "Nahum 1", corresponds_to: "Nahum 1", citations: [{source_id: rahlfs-hanhart-2006, locator: "Nahum 1", witness_id: lxx-nahum-rahlfs-hanhart}]}
+  - {id: nahum-2-mt, work_id: nahum, witness_id: mt-nahum-bhs, locator: "Nahum 2", versification: english, citations: [{source_id: bhs-nahum, locator: "Nahum 2", witness_id: mt-nahum-bhs}]}
+  - {id: nahum-2-lxx, work_id: nahum, witness_id: lxx-nahum-rahlfs-hanhart, locator: "Nahum 2", corresponds_to: "Nahum 2", citations: [{source_id: rahlfs-hanhart-2006, locator: "Nahum 2", witness_id: lxx-nahum-rahlfs-hanhart}]}
+  - {id: nahum-3-mt, work_id: nahum, witness_id: mt-nahum-bhs, locator: "Nahum 3", versification: english, citations: [{source_id: bhs-nahum, locator: "Nahum 3", witness_id: mt-nahum-bhs}]}
+  - {id: nahum-3-lxx, work_id: nahum, witness_id: lxx-nahum-rahlfs-hanhart, locator: "Nahum 3", corresponds_to: "Nahum 3", citations: [{source_id: rahlfs-hanhart-2006, locator: "Nahum 3", witness_id: lxx-nahum-rahlfs-hanhart}]}

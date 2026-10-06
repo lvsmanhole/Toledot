@@ -27,6 +27,8 @@ _DIRECTED_INVERSES = {
     "disciple": "teacher",
     "predecessor": "successor",
     "successor": "predecessor",
+    "ancestor": "descendant",
+    "descendant": "ancestor",
 }
 
 

@@ -1,0 +1,4 @@
+schema_version: 1
+record_type: events
+records:
+  - {id: ecclesiastes-1-12-words-of-the-preacher, event_type: wisdom, name: "Words of the Preacher", participants: [{entity_id: david, role: named participant}], date_claim_ids: [], citations: [{source_id: bhs-ecclesiastes, locator: "Ecclesiastes 1-12", witness_id: mt-ecclesiastes-bhs}, {source_id: rahlfs-hanhart-2006, locator: "Ecclesiastes (corresponding to Ecclesiastes 1-12)", witness_id: lxx-ecclesiastes-rahlfs-hanhart}]}

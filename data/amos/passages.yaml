@@ -1,0 +1,21 @@
+schema_version: 1
+record_type: passages
+records:
+  - {id: amos-1-mt, work_id: amos, witness_id: mt-amos-bhs, locator: "Amos 1", versification: english, citations: [{source_id: bhs-amos, locator: "Amos 1", witness_id: mt-amos-bhs}]}
+  - {id: amos-1-lxx, work_id: amos, witness_id: lxx-amos-rahlfs-hanhart, locator: "Amos 1", corresponds_to: "Amos 1", citations: [{source_id: rahlfs-hanhart-2006, locator: "Amos 1", witness_id: lxx-amos-rahlfs-hanhart}]}
+  - {id: amos-2-mt, work_id: amos, witness_id: mt-amos-bhs, locator: "Amos 2", versification: english, citations: [{source_id: bhs-amos, locator: "Amos 2", witness_id: mt-amos-bhs}]}
+  - {id: amos-2-lxx, work_id: amos, witness_id: lxx-amos-rahlfs-hanhart, locator: "Amos 2", corresponds_to: "Amos 2", citations: [{source_id: rahlfs-hanhart-2006, locator: "Amos 2", witness_id: lxx-amos-rahlfs-hanhart}]}
+  - {id: amos-3-mt, work_id: amos, witness_id: mt-amos-bhs, locator: "Amos 3", versification: english, citations: [{source_id: bhs-amos, locator: "Amos 3", witness_id: mt-amos-bhs}]}
+  - {id: amos-3-lxx, work_id: amos, witness_id: lxx-amos-rahlfs-hanhart, locator: "Amos 3", corresponds_to: "Amos 3", citations: [{source_id: rahlfs-hanhart-2006, locator: "Amos 3", witness_id: lxx-amos-rahlfs-hanhart}]}
+  - {id: amos-4-mt, work_id: amos, witness_id: mt-amos-bhs, locator: "Amos 4", versification: english, citations: [{source_id: bhs-amos, locator: "Amos 4", witness_id: mt-amos-bhs}]}
+  - {id: amos-4-lxx, work_id: amos, witness_id: lxx-amos-rahlfs-hanhart, locator: "Amos 4", corresponds_to: "Amos 4", citations: [{source_id: rahlfs-hanhart-2006, locator: "Amos 4", witness_id: lxx-amos-rahlfs-hanhart}]}
+  - {id: amos-5-mt, work_id: amos, witness_id: mt-amos-bhs, locator: "Amos 5", versification: english, citations: [{source_id: bhs-amos, locator: "Amos 5", witness_id: mt-amos-bhs}]}
+  - {id: amos-5-lxx, work_id: amos, witness_id: lxx-amos-rahlfs-hanhart, locator: "Amos 5", corresponds_to: "Amos 5", citations: [{source_id: rahlfs-hanhart-2006, locator: "Amos 5", witness_id: lxx-amos-rahlfs-hanhart}]}
+  - {id: amos-6-mt, work_id: amos, witness_id: mt-amos-bhs, locator: "Amos 6", versification: english, citations: [{source_id: bhs-amos, locator: "Amos 6", witness_id: mt-amos-bhs}]}
+  - {id: amos-6-lxx, work_id: amos, witness_id: lxx-amos-rahlfs-hanhart, locator: "Amos 6", corresponds_to: "Amos 6", citations: [{source_id: rahlfs-hanhart-2006, locator: "Amos 6", witness_id: lxx-amos-rahlfs-hanhart}]}
+  - {id: amos-7-mt, work_id: amos, witness_id: mt-amos-bhs, locator: "Amos 7", versification: english, citations: [{source_id: bhs-amos, locator: "Amos 7", witness_id: mt-amos-bhs}]}
+  - {id: amos-7-lxx, work_id: amos, witness_id: lxx-amos-rahlfs-hanhart, locator: "Amos 7", corresponds_to: "Amos 7", citations: [{source_id: rahlfs-hanhart-2006, locator: "Amos 7", witness_id: lxx-amos-rahlfs-hanhart}]}
+  - {id: amos-8-mt, work_id: amos, witness_id: mt-amos-bhs, locator: "Amos 8", versification: english, citations: [{source_id: bhs-amos, locator: "Amos 8", witness_id: mt-amos-bhs}]}
+  - {id: amos-8-lxx, work_id: amos, witness_id: lxx-amos-rahlfs-hanhart, locator: "Amos 8", corresponds_to: "Amos 8", citations: [{source_id: rahlfs-hanhart-2006, locator: "Amos 8", witness_id: lxx-amos-rahlfs-hanhart}]}
+  - {id: amos-9-mt, work_id: amos, witness_id: mt-amos-bhs, locator: "Amos 9", versification: english, citations: [{source_id: bhs-amos, locator: "Amos 9", witness_id: mt-amos-bhs}]}
+  - {id: amos-9-lxx, work_id: amos, witness_id: lxx-amos-rahlfs-hanhart, locator: "Amos 9", corresponds_to: "Amos 9", citations: [{source_id: rahlfs-hanhart-2006, locator: "Amos 9", witness_id: lxx-amos-rahlfs-hanhart}]}

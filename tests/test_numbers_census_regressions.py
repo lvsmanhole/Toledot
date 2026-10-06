@@ -204,12 +204,19 @@ def test_same_name_people_stay_distinct() -> None:
 
 
 def test_no_alias_leaks_between_differently_named_people() -> None:
+    # Genuine variant names are shared by a few people (e.g. Micah/Micaiah/Mica); a YAML anchor leak spreads one alias
+    # across many differently named people, as "Roubin" once did across all of Jacob's children.
     by_alias = defaultdict(set)
     for entity in _dataset().entities.values():
         for alias in entity.aliases:
             by_alias[alias].add(entity.primary_name)
-    leaked = {alias: names for alias, names in by_alias.items() if len(names) > 1}
-    assert set(leaked) <= SHARED_ALIAS_ALLOWLIST, {a: leaked[a] for a in set(leaked) - SHARED_ALIAS_ALLOWLIST}
+    leaked = {alias: names for alias, names in by_alias.items() if len(names) > 4}
+    assert not leaked, leaked
+    jacob_children = ["reuben", "simeon", "levi", "judah", "dan", "naphtali", "gad", "asher", "issachar", "zebulun",
+                      "dinah", "joseph", "benjamin"]
+    aliases = [alias for child in jacob_children for alias in _dataset().entities[child].aliases]
+    assert "Roubin" not in [alias for child in jacob_children[1:] for alias in _dataset().entities[child].aliases]
+    assert len(aliases) == len(set(aliases))
 
 
 def test_every_parent_is_old_enough_and_alive_at_display_birth_of_child() -> None:

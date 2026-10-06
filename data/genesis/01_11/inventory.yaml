@@ -102,7 +102,7 @@ records:
     id: inv-gen-10-1-32
     locator: "Genesis 10:1-32"
     passage_ids: [gen-10-1-32-lxx]
-    identified_entity_ids: [shem, ham, japheth, gomer, magog, madai, javan, tubal, meshech, tiras, ashkenaz, riphath, togarmah, elishah, tarshish, kittim, dodanim, cush, mizraim, put, canaan, seba, havilah-cush, sabtah, raamah, sabteca, sheba-raamah, dedan-raamah, nimrod, ludim, anamim, lehabim, naphtuhim, pathrusim, casluhim, caphtorim, sidon, heth, canaanite-peoples, elam, asshur, arphaxad, lud-shem, aram, uz, hul, gether, mash, cainan-postflood, shelah, eber, peleg, joktan, almodad, sheleph, hazarmaveth, jerah, hadoram, uzal, diklah, obal, abimael, sheba-joktan, ophir, havilah-joktan, jobab]
+    identified_entity_ids: [shem, ham, japheth, gomer, magog, madai, javan, tubal, meshech, tiras, ashkenaz, riphath, togarmah, elishah, tarshish, kittim, dodanim, cush, mizraim, put, canaan, seba, havilah-cush, sabtah, raamah, sabteca, sheba-raamah, dedan-raamah, nimrod, ludim, anamim, lehabim, naphtuhim, pathrusim, casluhim, caphtorim, sidon, heth, canaanite-peoples, elam, asshur, arphaxad, lud-shem, aram, uz, hul, gether, mash, cainan-postflood, shelah, eber, peleg, joktan, almodad, sheleph, hazarmaveth, jerah, hadoram, uzal, diklah, obal, abimael, sheba-joktan, ophir, havilah-joktan, jobab, noah, philistine]
     event_ids: []
     citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 10:1-32", witness_id: lxx-genesis-goettingen}]
   - <<: *base

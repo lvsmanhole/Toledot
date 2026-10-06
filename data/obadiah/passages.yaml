@@ -1,0 +1,5 @@
+schema_version: 1
+record_type: passages
+records:
+  - {id: obadiah-1-mt, work_id: obadiah, witness_id: mt-obadiah-bhs, locator: "Obadiah 1", versification: english, citations: [{source_id: bhs-obadiah, locator: "Obadiah 1", witness_id: mt-obadiah-bhs}]}
+  - {id: obadiah-1-lxx, work_id: obadiah, witness_id: lxx-obadiah-rahlfs-hanhart, locator: "Obadiah 1", corresponds_to: "Obadiah 1", citations: [{source_id: rahlfs-hanhart-2006, locator: "Obadiah 1", witness_id: lxx-obadiah-rahlfs-hanhart}]}

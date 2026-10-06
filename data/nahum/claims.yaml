@@ -1,0 +1,4 @@
+schema_version: 1
+record_type: claims
+records:
+  - {id: nahum-nam1-nahum-mt-attested, subject_id: nahum-nam1, predicate: attested_in_passage, value: {kind: attestation, status: "named in Nahum"}, evidence_type: explicit_text, witness_id: mt-nahum-bhs, confidence: A, citations: [{source_id: bhs-nahum, locator: "Nahum 1:1", witness_id: mt-nahum-bhs}]}

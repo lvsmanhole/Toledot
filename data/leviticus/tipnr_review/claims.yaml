@@ -1,0 +1,7 @@
+schema_version: 1
+record_type: claims
+records:
+  - {id: aaron-leviticus-mt-attested, subject_id: aaron, predicate: attested_in_passage, value: {kind: attestation, status: "named in Leviticus"}, evidence_type: explicit_text, witness_id: mt-leviticus-bhs, confidence: A, citations: [{source_id: bhs-leviticus, locator: "Leviticus 1-3, 24", witness_id: mt-leviticus-bhs}]}
+  - {id: abram-leviticus-mt-attested, subject_id: abram, predicate: attested_in_passage, value: {kind: attestation, status: "named in Leviticus"}, evidence_type: explicit_text, witness_id: mt-leviticus-bhs, confidence: A, citations: [{source_id: bhs-leviticus, locator: "Leviticus 26:42", witness_id: mt-leviticus-bhs}]}
+  - {id: isaac-leviticus-mt-attested, subject_id: isaac, predicate: attested_in_passage, value: {kind: attestation, status: "named in Leviticus"}, evidence_type: explicit_text, witness_id: mt-leviticus-bhs, confidence: A, citations: [{source_id: bhs-leviticus, locator: "Leviticus 26:42", witness_id: mt-leviticus-bhs}]}
+  - {id: uzziel-leviticus-mt-attested, subject_id: uzziel, predicate: attested_in_passage, value: {kind: attestation, status: "named in Leviticus"}, evidence_type: explicit_text, witness_id: mt-leviticus-bhs, confidence: A, citations: [{source_id: bhs-leviticus, locator: "Leviticus 10:4", witness_id: mt-leviticus-bhs}]}

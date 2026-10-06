@@ -1,0 +1,4 @@
+schema_version: 1
+record_type: events
+records:
+  - {id: obadiah-1-1-obadiah-s-oracle-against-edom, event_type: prophecy, name: "Obadiah's oracle against Edom", participants: [{entity_id: obadiah-oba1, role: named participant}], date_claim_ids: [], citations: [{source_id: bhs-obadiah, locator: "Obadiah 1", witness_id: mt-obadiah-bhs}, {source_id: rahlfs-hanhart-2006, locator: "Obadiah (corresponding to Obadiah 1)", witness_id: lxx-obadiah-rahlfs-hanhart}]}

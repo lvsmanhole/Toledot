@@ -1,0 +1,5 @@
+schema_version: 1
+record_type: entities
+records:
+  - {id: jonah-ship-captain, entity_type: human, primary_name: "Captain of Jonah's ship", classification: unnamed_person, identity_status: unnamed_unique, aliases: [], gender: male, description: "Woke Jonah during the storm (Jonah 1:6).", citations: [{source_id: bhs-jonah, locator: "Jonah 1:6", witness_id: mt-jonah-bhs}]}
+  - {id: king-of-nineveh, entity_type: human, primary_name: "King of Nineveh", classification: unnamed_person, identity_status: unnamed_unique, aliases: [], gender: male, description: "Proclaimed Nineveh's fast at Jonah's preaching (Jonah 3:6-9).", citations: [{source_id: bhs-jonah, locator: "Jonah 3:6", witness_id: mt-jonah-bhs}]}

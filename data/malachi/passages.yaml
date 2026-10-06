@@ -1,0 +1,11 @@
+schema_version: 1
+record_type: passages
+records:
+  - {id: malachi-1-mt, work_id: malachi, witness_id: mt-malachi-bhs, locator: "Malachi 1", versification: english, citations: [{source_id: bhs-malachi, locator: "Malachi 1", witness_id: mt-malachi-bhs}]}
+  - {id: malachi-1-lxx, work_id: malachi, witness_id: lxx-malachi-rahlfs-hanhart, locator: "Malachi 1", corresponds_to: "Malachi 1", citations: [{source_id: rahlfs-hanhart-2006, locator: "Malachi 1", witness_id: lxx-malachi-rahlfs-hanhart}]}
+  - {id: malachi-2-mt, work_id: malachi, witness_id: mt-malachi-bhs, locator: "Malachi 2", versification: english, citations: [{source_id: bhs-malachi, locator: "Malachi 2", witness_id: mt-malachi-bhs}]}
+  - {id: malachi-2-lxx, work_id: malachi, witness_id: lxx-malachi-rahlfs-hanhart, locator: "Malachi 2", corresponds_to: "Malachi 2", citations: [{source_id: rahlfs-hanhart-2006, locator: "Malachi 2", witness_id: lxx-malachi-rahlfs-hanhart}]}
+  - {id: malachi-3-mt, work_id: malachi, witness_id: mt-malachi-bhs, locator: "Malachi 3", versification: english, citations: [{source_id: bhs-malachi, locator: "Malachi 3", witness_id: mt-malachi-bhs}]}
+  - {id: malachi-3-lxx, work_id: malachi, witness_id: lxx-malachi-rahlfs-hanhart, locator: "Malachi 3", corresponds_to: "Malachi 3", citations: [{source_id: rahlfs-hanhart-2006, locator: "Malachi 3", witness_id: lxx-malachi-rahlfs-hanhart}]}
+  - {id: malachi-4-mt, work_id: malachi, witness_id: mt-malachi-bhs, locator: "Malachi 4", versification: english, citations: [{source_id: bhs-malachi, locator: "Malachi 4", witness_id: mt-malachi-bhs}]}
+  - {id: malachi-4-lxx, work_id: malachi, witness_id: lxx-malachi-rahlfs-hanhart, locator: "Malachi 3:19-24", corresponds_to: "Malachi 4", citations: [{source_id: rahlfs-hanhart-2006, locator: "Malachi 3:19-24", witness_id: lxx-malachi-rahlfs-hanhart}]}

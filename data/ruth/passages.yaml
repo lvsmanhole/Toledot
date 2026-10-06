@@ -1,0 +1,15 @@
+schema_version: 1
+record_type: passages
+records:
+  - {id: ruth-1-mt, work_id: ruth, witness_id: mt-ruth-bhs, locator: "Ruth 1", versification: english, citations: [{source_id: bhs-ruth, locator: "Ruth 1", witness_id: mt-ruth-bhs}]}
+  - {id: ruth-1-lxx, work_id: ruth, witness_id: lxx-ruth-rahlfs-hanhart, locator: "Ruth 1", corresponds_to: "Ruth 1", citations: [{source_id: rahlfs-hanhart-2006, locator: "Ruth 1", witness_id: lxx-ruth-rahlfs-hanhart}]}
+  - {id: ruth-1-geez, work_id: ruth, witness_id: geez-ruth-dillmann, locator: "Ruth 1", citations: [{source_id: dillmann-octateuch-1853, locator: "Ruth 1", witness_id: geez-ruth-dillmann}]}
+  - {id: ruth-2-mt, work_id: ruth, witness_id: mt-ruth-bhs, locator: "Ruth 2", versification: english, citations: [{source_id: bhs-ruth, locator: "Ruth 2", witness_id: mt-ruth-bhs}]}
+  - {id: ruth-2-lxx, work_id: ruth, witness_id: lxx-ruth-rahlfs-hanhart, locator: "Ruth 2", corresponds_to: "Ruth 2", citations: [{source_id: rahlfs-hanhart-2006, locator: "Ruth 2", witness_id: lxx-ruth-rahlfs-hanhart}]}
+  - {id: ruth-2-geez, work_id: ruth, witness_id: geez-ruth-dillmann, locator: "Ruth 2", citations: [{source_id: dillmann-octateuch-1853, locator: "Ruth 2", witness_id: geez-ruth-dillmann}]}
+  - {id: ruth-3-mt, work_id: ruth, witness_id: mt-ruth-bhs, locator: "Ruth 3", versification: english, citations: [{source_id: bhs-ruth, locator: "Ruth 3", witness_id: mt-ruth-bhs}]}
+  - {id: ruth-3-lxx, work_id: ruth, witness_id: lxx-ruth-rahlfs-hanhart, locator: "Ruth 3", corresponds_to: "Ruth 3", citations: [{source_id: rahlfs-hanhart-2006, locator: "Ruth 3", witness_id: lxx-ruth-rahlfs-hanhart}]}
+  - {id: ruth-3-geez, work_id: ruth, witness_id: geez-ruth-dillmann, locator: "Ruth 3", citations: [{source_id: dillmann-octateuch-1853, locator: "Ruth 3", witness_id: geez-ruth-dillmann}]}
+  - {id: ruth-4-mt, work_id: ruth, witness_id: mt-ruth-bhs, locator: "Ruth 4", versification: english, citations: [{source_id: bhs-ruth, locator: "Ruth 4", witness_id: mt-ruth-bhs}]}
+  - {id: ruth-4-lxx, work_id: ruth, witness_id: lxx-ruth-rahlfs-hanhart, locator: "Ruth 4", corresponds_to: "Ruth 4", citations: [{source_id: rahlfs-hanhart-2006, locator: "Ruth 4", witness_id: lxx-ruth-rahlfs-hanhart}]}
+  - {id: ruth-4-geez, work_id: ruth, witness_id: geez-ruth-dillmann, locator: "Ruth 4", citations: [{source_id: dillmann-octateuch-1853, locator: "Ruth 4", witness_id: geez-ruth-dillmann}]}

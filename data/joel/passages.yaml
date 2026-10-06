@@ -1,0 +1,9 @@
+schema_version: 1
+record_type: passages
+records:
+  - {id: joel-1-mt, work_id: joel, witness_id: mt-joel-bhs, locator: "Joel 1", versification: english, citations: [{source_id: bhs-joel, locator: "Joel 1", witness_id: mt-joel-bhs}]}
+  - {id: joel-1-lxx, work_id: joel, witness_id: lxx-joel-rahlfs-hanhart, locator: "Joel 1", corresponds_to: "Joel 1", citations: [{source_id: rahlfs-hanhart-2006, locator: "Joel 1", witness_id: lxx-joel-rahlfs-hanhart}]}
+  - {id: joel-2-mt, work_id: joel, witness_id: mt-joel-bhs, locator: "Joel 2", versification: english, citations: [{source_id: bhs-joel, locator: "Joel 2", witness_id: mt-joel-bhs}]}
+  - {id: joel-2-lxx, work_id: joel, witness_id: lxx-joel-rahlfs-hanhart, locator: "Joel 2", corresponds_to: "Joel 2", citations: [{source_id: rahlfs-hanhart-2006, locator: "Joel 2", witness_id: lxx-joel-rahlfs-hanhart}]}
+  - {id: joel-3-mt, work_id: joel, witness_id: mt-joel-bhs, locator: "Joel 3", versification: english, citations: [{source_id: bhs-joel, locator: "Joel 3", witness_id: mt-joel-bhs}]}
+  - {id: joel-3-lxx, work_id: joel, witness_id: lxx-joel-rahlfs-hanhart, locator: "Joel 4", corresponds_to: "Joel 3", citations: [{source_id: rahlfs-hanhart-2006, locator: "Joel 4", witness_id: lxx-joel-rahlfs-hanhart}]}

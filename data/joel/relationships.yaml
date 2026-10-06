@@ -1,0 +1,4 @@
+schema_version: 1
+record_type: relationships
+records:
+  - {id: pethuel-parent-joel-jol1, relationship_type: parent, subject_id: pethuel, object_id: joel-jol1, claim_ids: [], citations: [{source_id: bhs-joel, locator: "Joel 1:1", witness_id: mt-joel-bhs}]}

@@ -1,0 +1,4 @@
+schema_version: 1
+record_type: inventory_units
+records:
+  - {id: inv-obadiah-1, work_id: obadiah, locator: "Obadiah 1", reviewed: true, passage_ids: [obadiah-1-mt, obadiah-1-lxx], identified_entity_ids: [obadiah-oba1], event_ids: [obadiah-1-1-obadiah-s-oracle-against-edom], no_individuals: false, review_basis: "Person census cross-checked against the TIPNR proper-name index (English versification); unnamed individuals curated by hand.", citations: [{source_id: bhs-obadiah, locator: "Obadiah 1", witness_id: mt-obadiah-bhs}]}

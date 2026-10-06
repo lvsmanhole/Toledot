@@ -1,0 +1,5 @@
+schema_version: 1
+record_type: claims
+records:
+  - {id: joel-jol1-joel-mt-attested, subject_id: joel-jol1, predicate: attested_in_passage, value: {kind: attestation, status: "named in Joel"}, evidence_type: explicit_text, witness_id: mt-joel-bhs, confidence: A, citations: [{source_id: bhs-joel, locator: "Joel 1:1", witness_id: mt-joel-bhs}]}
+  - {id: pethuel-joel-mt-attested, subject_id: pethuel, predicate: attested_in_passage, value: {kind: attestation, status: "named in Joel"}, evidence_type: explicit_text, witness_id: mt-joel-bhs, confidence: A, citations: [{source_id: bhs-joel, locator: "Joel 1:1", witness_id: mt-joel-bhs}]}

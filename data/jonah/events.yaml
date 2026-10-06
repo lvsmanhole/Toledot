@@ -1,0 +1,4 @@
+schema_version: 1
+record_type: events
+records:
+  - {id: jonah-1-4-jonah-s-flight-and-nineveh-s-repentance, event_type: narrative, name: "Jonah's flight and Nineveh's repentance", participants: [{entity_id: jonah-2ki14, role: named participant}, {entity_id: amittai, role: named participant}, {entity_id: jonah-ship-captain, role: named participant}, {entity_id: king-of-nineveh, role: named participant}], date_claim_ids: [], citations: [{source_id: bhs-jonah, locator: "Jonah 1-4", witness_id: mt-jonah-bhs}, {source_id: rahlfs-hanhart-2006, locator: "Jonah (corresponding to Jonah 1-4)", witness_id: lxx-jonah-rahlfs-hanhart}]}

@@ -1,0 +1,5 @@
+schema_version: 1
+record_type: claims
+records:
+  - {id: adam-deuteronomy-mt-attested, subject_id: adam, predicate: attested_in_passage, value: {kind: attestation, status: "named in Deuteronomy"}, evidence_type: explicit_text, witness_id: mt-deuteronomy-bhs, confidence: A, citations: [{source_id: bhs-deuteronomy, locator: "Deuteronomy 32:8", witness_id: mt-deuteronomy-bhs}]}
+  - {id: nun-ephraim-deuteronomy-mt-attested, subject_id: nun-ephraim, predicate: attested_in_passage, value: {kind: attestation, status: "named in Deuteronomy"}, evidence_type: explicit_text, witness_id: mt-deuteronomy-bhs, confidence: A, citations: [{source_id: bhs-deuteronomy, locator: "Deuteronomy 31:23", witness_id: mt-deuteronomy-bhs}]}

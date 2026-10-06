@@ -1,0 +1,9 @@
+schema_version: 1
+record_type: passages
+records:
+  - {id: zephaniah-1-mt, work_id: zephaniah, witness_id: mt-zephaniah-bhs, locator: "Zephaniah 1", versification: english, citations: [{source_id: bhs-zephaniah, locator: "Zephaniah 1", witness_id: mt-zephaniah-bhs}]}
+  - {id: zephaniah-1-lxx, work_id: zephaniah, witness_id: lxx-zephaniah-rahlfs-hanhart, locator: "Zephaniah 1", corresponds_to: "Zephaniah 1", citations: [{source_id: rahlfs-hanhart-2006, locator: "Zephaniah 1", witness_id: lxx-zephaniah-rahlfs-hanhart}]}
+  - {id: zephaniah-2-mt, work_id: zephaniah, witness_id: mt-zephaniah-bhs, locator: "Zephaniah 2", versification: english, citations: [{source_id: bhs-zephaniah, locator: "Zephaniah 2", witness_id: mt-zephaniah-bhs}]}
+  - {id: zephaniah-2-lxx, work_id: zephaniah, witness_id: lxx-zephaniah-rahlfs-hanhart, locator: "Zephaniah 2", corresponds_to: "Zephaniah 2", citations: [{source_id: rahlfs-hanhart-2006, locator: "Zephaniah 2", witness_id: lxx-zephaniah-rahlfs-hanhart}]}
+  - {id: zephaniah-3-mt, work_id: zephaniah, witness_id: mt-zephaniah-bhs, locator: "Zephaniah 3", versification: english, citations: [{source_id: bhs-zephaniah, locator: "Zephaniah 3", witness_id: mt-zephaniah-bhs}]}
+  - {id: zephaniah-3-lxx, work_id: zephaniah, witness_id: lxx-zephaniah-rahlfs-hanhart, locator: "Zephaniah 3", corresponds_to: "Zephaniah 3", citations: [{source_id: rahlfs-hanhart-2006, locator: "Zephaniah 3", witness_id: lxx-zephaniah-rahlfs-hanhart}]}

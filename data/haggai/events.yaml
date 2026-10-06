@@ -1,0 +1,5 @@
+schema_version: 1
+record_type: events
+records:
+  - {id: haggai-1-2-haggai-s-temple-oracles, event_type: prophecy, name: "Haggai's temple oracles", participants: [{entity_id: haggai-ezr5, role: named participant}, {entity_id: zerubbabel-1ch3, role: named participant}, {entity_id: jehozadak, role: named participant}, {entity_id: joshua-ezr2, role: named participant}, {entity_id: shealtiel-1ch3, role: named participant}, {entity_id: darius-ezr4, role: named participant}], date_claim_ids: [], citations: [{source_id: bhs-haggai, locator: "Haggai 1-2", witness_id: mt-haggai-bhs}, {source_id: rahlfs-hanhart-2006, locator: "Haggai (corresponding to Haggai 1-2)", witness_id: lxx-haggai-rahlfs-hanhart}]}
+  - {id: haggai-first-oracle, event_type: prophecy, name: "Haggai urges the rebuilding of the temple", participants: [{entity_id: haggai-ezr5, role: named participant}, {entity_id: zerubbabel-1ch3, role: named participant}], date_claim_ids: [haggai-first-oracle-date-mt, haggai-first-oracle-display-year], citations: [{source_id: bhs-haggai, locator: "Haggai 1:1", witness_id: mt-haggai-bhs}]}

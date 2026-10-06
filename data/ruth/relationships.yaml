@@ -1,0 +1,22 @@
+schema_version: 1
+record_type: relationships
+records:
+  - {id: boaz-spouse-ruth-rut1, relationship_type: spouse, subject_id: boaz, object_id: ruth-rut1, claim_ids: [], citations: [{source_id: bhs-ruth, locator: "Ruth 2:8", witness_id: mt-ruth-bhs}]}
+  - {id: chilion-spouse-orpah, relationship_type: spouse, subject_id: chilion, object_id: orpah, claim_ids: [], citations: [{source_id: bhs-ruth, locator: "Ruth 1:2", witness_id: mt-ruth-bhs}]}
+  - {id: david-spouse-maacah-2sa3, relationship_type: spouse, subject_id: david, object_id: maacah-2sa3, claim_ids: [], citations: [{source_id: bhs-ruth, locator: "Ruth 4:17", witness_id: mt-ruth-bhs}]}
+  - {id: elimelech-spouse-naomi, relationship_type: spouse, subject_id: elimelech, object_id: naomi, claim_ids: [], citations: [{source_id: bhs-ruth, locator: "Ruth 1:2", witness_id: mt-ruth-bhs}]}
+  - {id: judah-spouse-tamar, relationship_type: spouse, subject_id: judah, object_id: tamar, claim_ids: [], citations: [{source_id: bhs-ruth, locator: "Ruth 4:12", witness_id: mt-ruth-bhs}]}
+  - {id: mahlon-spouse-ruth-rut1, relationship_type: spouse, subject_id: mahlon, object_id: ruth-rut1, claim_ids: [], citations: [{source_id: bhs-ruth, locator: "Ruth 4:10", witness_id: mt-ruth-bhs}]}
+  - {id: ram-rut4-parent-amminadab, relationship_type: parent, subject_id: ram-rut4, object_id: amminadab, claim_ids: [], citations: [{source_id: bhs-ruth, locator: "Ruth 4:19", witness_id: mt-ruth-bhs}]}
+  - {id: salmon-ancestor-of-boaz, relationship_type: ancestor, subject_id: salmon, object_id: boaz, claim_ids: [], interpretation_note: "The text calls this person a son (or daughter) of the ancestor, but the narrative setting places the birth more than 60 years after the ancestor's death or last appearance, so the link is recorded as descent, not parenthood.", citations: [{source_id: bhs-ruth, locator: "Ruth 4:21", witness_id: mt-ruth-bhs}]}
+  - {id: elimelech-parent-chilion, relationship_type: parent, subject_id: elimelech, object_id: chilion, claim_ids: [], citations: [{source_id: bhs-ruth, locator: "Ruth 1:2", witness_id: mt-ruth-bhs}]}
+  - {id: naomi-parent-chilion, relationship_type: parent, subject_id: naomi, object_id: chilion, claim_ids: [], citations: [{source_id: bhs-ruth, locator: "Ruth 1:2", witness_id: mt-ruth-bhs}]}
+  - {id: jesse-parent-david, relationship_type: parent, subject_id: jesse, object_id: david, claim_ids: [], citations: [{source_id: bhs-ruth, locator: "Ruth 4:17", witness_id: mt-ruth-bhs}]}
+  - {id: nahash-2sa17-parent-david, relationship_type: parent, subject_id: nahash-2sa17, object_id: david, claim_ids: [], citations: [{source_id: bhs-ruth, locator: "Ruth 4:17", witness_id: mt-ruth-bhs}]}
+  - {id: obed-rut4-parent-jesse, relationship_type: parent, subject_id: obed-rut4, object_id: jesse, claim_ids: [], citations: [{source_id: bhs-ruth, locator: "Ruth 4:17", witness_id: mt-ruth-bhs}]}
+  - {id: elimelech-parent-mahlon, relationship_type: parent, subject_id: elimelech, object_id: mahlon, claim_ids: [], citations: [{source_id: bhs-ruth, locator: "Ruth 1:2", witness_id: mt-ruth-bhs}]}
+  - {id: naomi-parent-mahlon, relationship_type: parent, subject_id: naomi, object_id: mahlon, claim_ids: [], citations: [{source_id: bhs-ruth, locator: "Ruth 1:2", witness_id: mt-ruth-bhs}]}
+  - {id: boaz-parent-obed-rut4, relationship_type: parent, subject_id: boaz, object_id: obed-rut4, claim_ids: [], citations: [{source_id: bhs-ruth, locator: "Ruth 4:21", witness_id: mt-ruth-bhs}]}
+  - {id: ruth-rut1-parent-obed-rut4, relationship_type: parent, subject_id: ruth-rut1, object_id: obed-rut4, claim_ids: [], citations: [{source_id: bhs-ruth, locator: "Ruth 4:17", witness_id: mt-ruth-bhs}]}
+  - {id: hezron-perez-parent-ram-rut4, relationship_type: parent, subject_id: hezron-perez, object_id: ram-rut4, claim_ids: [], citations: [{source_id: bhs-ruth, locator: "Ruth 4:19", witness_id: mt-ruth-bhs}]}
+  - {id: nahshon-parent-salmon, relationship_type: parent, subject_id: nahshon, object_id: salmon, claim_ids: [], citations: [{source_id: bhs-ruth, locator: "Ruth 4:20", witness_id: mt-ruth-bhs}]}

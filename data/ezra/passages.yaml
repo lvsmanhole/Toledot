@@ -1,0 +1,23 @@
+schema_version: 1
+record_type: passages
+records:
+  - {id: ezra-1-mt, work_id: ezra, witness_id: mt-ezra-bhs, locator: "Ezra 1", versification: english, citations: [{source_id: bhs-ezra, locator: "Ezra 1", witness_id: mt-ezra-bhs}]}
+  - {id: ezra-1-lxx, work_id: ezra, witness_id: lxx-ezra-rahlfs-hanhart, locator: "2 Esdras 1", corresponds_to: "Ezra 1", citations: [{source_id: rahlfs-hanhart-2006, locator: "2 Esdras 1", witness_id: lxx-ezra-rahlfs-hanhart}]}
+  - {id: ezra-2-mt, work_id: ezra, witness_id: mt-ezra-bhs, locator: "Ezra 2", versification: english, citations: [{source_id: bhs-ezra, locator: "Ezra 2", witness_id: mt-ezra-bhs}]}
+  - {id: ezra-2-lxx, work_id: ezra, witness_id: lxx-ezra-rahlfs-hanhart, locator: "2 Esdras 2", corresponds_to: "Ezra 2", citations: [{source_id: rahlfs-hanhart-2006, locator: "2 Esdras 2", witness_id: lxx-ezra-rahlfs-hanhart}]}
+  - {id: ezra-3-mt, work_id: ezra, witness_id: mt-ezra-bhs, locator: "Ezra 3", versification: english, citations: [{source_id: bhs-ezra, locator: "Ezra 3", witness_id: mt-ezra-bhs}]}
+  - {id: ezra-3-lxx, work_id: ezra, witness_id: lxx-ezra-rahlfs-hanhart, locator: "2 Esdras 3", corresponds_to: "Ezra 3", citations: [{source_id: rahlfs-hanhart-2006, locator: "2 Esdras 3", witness_id: lxx-ezra-rahlfs-hanhart}]}
+  - {id: ezra-4-mt, work_id: ezra, witness_id: mt-ezra-bhs, locator: "Ezra 4", versification: english, citations: [{source_id: bhs-ezra, locator: "Ezra 4", witness_id: mt-ezra-bhs}]}
+  - {id: ezra-4-lxx, work_id: ezra, witness_id: lxx-ezra-rahlfs-hanhart, locator: "2 Esdras 4", corresponds_to: "Ezra 4", citations: [{source_id: rahlfs-hanhart-2006, locator: "2 Esdras 4", witness_id: lxx-ezra-rahlfs-hanhart}]}
+  - {id: ezra-5-mt, work_id: ezra, witness_id: mt-ezra-bhs, locator: "Ezra 5", versification: english, citations: [{source_id: bhs-ezra, locator: "Ezra 5", witness_id: mt-ezra-bhs}]}
+  - {id: ezra-5-lxx, work_id: ezra, witness_id: lxx-ezra-rahlfs-hanhart, locator: "2 Esdras 5", corresponds_to: "Ezra 5", citations: [{source_id: rahlfs-hanhart-2006, locator: "2 Esdras 5", witness_id: lxx-ezra-rahlfs-hanhart}]}
+  - {id: ezra-6-mt, work_id: ezra, witness_id: mt-ezra-bhs, locator: "Ezra 6", versification: english, citations: [{source_id: bhs-ezra, locator: "Ezra 6", witness_id: mt-ezra-bhs}]}
+  - {id: ezra-6-lxx, work_id: ezra, witness_id: lxx-ezra-rahlfs-hanhart, locator: "2 Esdras 6", corresponds_to: "Ezra 6", citations: [{source_id: rahlfs-hanhart-2006, locator: "2 Esdras 6", witness_id: lxx-ezra-rahlfs-hanhart}]}
+  - {id: ezra-7-mt, work_id: ezra, witness_id: mt-ezra-bhs, locator: "Ezra 7", versification: english, citations: [{source_id: bhs-ezra, locator: "Ezra 7", witness_id: mt-ezra-bhs}]}
+  - {id: ezra-7-lxx, work_id: ezra, witness_id: lxx-ezra-rahlfs-hanhart, locator: "2 Esdras 7", corresponds_to: "Ezra 7", citations: [{source_id: rahlfs-hanhart-2006, locator: "2 Esdras 7", witness_id: lxx-ezra-rahlfs-hanhart}]}
+  - {id: ezra-8-mt, work_id: ezra, witness_id: mt-ezra-bhs, locator: "Ezra 8", versification: english, citations: [{source_id: bhs-ezra, locator: "Ezra 8", witness_id: mt-ezra-bhs}]}
+  - {id: ezra-8-lxx, work_id: ezra, witness_id: lxx-ezra-rahlfs-hanhart, locator: "2 Esdras 8", corresponds_to: "Ezra 8", citations: [{source_id: rahlfs-hanhart-2006, locator: "2 Esdras 8", witness_id: lxx-ezra-rahlfs-hanhart}]}
+  - {id: ezra-9-mt, work_id: ezra, witness_id: mt-ezra-bhs, locator: "Ezra 9", versification: english, citations: [{source_id: bhs-ezra, locator: "Ezra 9", witness_id: mt-ezra-bhs}]}
+  - {id: ezra-9-lxx, work_id: ezra, witness_id: lxx-ezra-rahlfs-hanhart, locator: "2 Esdras 9", corresponds_to: "Ezra 9", citations: [{source_id: rahlfs-hanhart-2006, locator: "2 Esdras 9", witness_id: lxx-ezra-rahlfs-hanhart}]}
+  - {id: ezra-10-mt, work_id: ezra, witness_id: mt-ezra-bhs, locator: "Ezra 10", versification: english, citations: [{source_id: bhs-ezra, locator: "Ezra 10", witness_id: mt-ezra-bhs}]}
+  - {id: ezra-10-lxx, work_id: ezra, witness_id: lxx-ezra-rahlfs-hanhart, locator: "2 Esdras 10", corresponds_to: "Ezra 10", citations: [{source_id: rahlfs-hanhart-2006, locator: "2 Esdras 10", witness_id: lxx-ezra-rahlfs-hanhart}]}

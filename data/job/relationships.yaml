@@ -1,0 +1,8 @@
+schema_version: 1
+record_type: relationships
+records:
+  - {id: job-job1-spouse-job-wife, relationship_type: spouse, subject_id: job-job1, object_id: job-wife, claim_ids: [], citations: [{source_id: bhs-job, locator: "Job 2:9", witness_id: mt-job-bhs}]}
+  - {id: barachel-parent-elihu-job32, relationship_type: parent, subject_id: barachel, object_id: elihu-job32, claim_ids: [], citations: [{source_id: bhs-job, locator: "Job 32:2", witness_id: mt-job-bhs}]}
+  - {id: job-job1-parent-jemimah, relationship_type: parent, subject_id: job-job1, object_id: jemimah, claim_ids: [], citations: [{source_id: bhs-job, locator: "Job 42:14", witness_id: mt-job-bhs}]}
+  - {id: job-job1-parent-keren-happuch, relationship_type: parent, subject_id: job-job1, object_id: keren-happuch, claim_ids: [], citations: [{source_id: bhs-job, locator: "Job 42:14", witness_id: mt-job-bhs}]}
+  - {id: job-job1-parent-keziah, relationship_type: parent, subject_id: job-job1, object_id: keziah, claim_ids: [], citations: [{source_id: bhs-job, locator: "Job 42:14", witness_id: mt-job-bhs}]}

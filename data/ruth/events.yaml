@@ -1,0 +1,4 @@
+schema_version: 1
+record_type: events
+records:
+  - {id: ruth-1-4-ruth-and-naomi-boaz-redeems, event_type: narrative, name: "Ruth and Naomi; Boaz redeems", participants: [{entity_id: naomi, role: named participant}, {entity_id: boaz, role: named participant}, {entity_id: ruth-rut1, role: named participant}, {entity_id: elimelech, role: named participant}, {entity_id: mahlon, role: named participant}, {entity_id: chilion, role: named participant}], date_claim_ids: [], citations: [{source_id: bhs-ruth, locator: "Ruth 1-4", witness_id: mt-ruth-bhs}, {source_id: rahlfs-hanhart-2006, locator: "Ruth (corresponding to Ruth 1-4)", witness_id: lxx-ruth-rahlfs-hanhart}]}

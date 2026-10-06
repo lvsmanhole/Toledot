@@ -1,0 +1,6 @@
+schema_version: 1
+record_type: entities
+records:
+  - {id: assir-exo6, entity_type: human, primary_name: "Assir", classification: named_person, identity_status: named, aliases: [], gender: male, description: "Son of Korah who is grandson of Kohath", tipnr_id: "Assir@Exo.6.24-1Ch", citations: [{source_id: bhs-exodus, locator: "Exodus 6:24", witness_id: mt-exodus-bhs}, {source_id: tipnr-stepbible, locator: "Assir@Exo.6.24-1Ch"}]}
+  - {id: ebiasaph, entity_type: human, primary_name: "Ebiasaph", classification: named_person, identity_status: named, aliases: ["Abiasaph", "Asaph"], gender: male, description: "Levite descendant of Korah, ancestor of temple gatekeepers", tipnr_id: "Ebiasaph@Exo.6.24-1Ch", citations: [{source_id: bhs-exodus, locator: "Exodus 6:24", witness_id: mt-exodus-bhs}, {source_id: tipnr-stepbible, locator: "Ebiasaph@Exo.6.24-1Ch"}]}
+  - {id: elkanah-exo6, entity_type: human, primary_name: "Elkanah", classification: named_person, identity_status: named, aliases: [], gender: male, description: "A Levite descendant of Korah.", tipnr_id: "Elkanah@Exo.6.24-1Ch", citations: [{source_id: bhs-exodus, locator: "Exodus 6:24", witness_id: mt-exodus-bhs}, {source_id: tipnr-stepbible, locator: "Elkanah@Exo.6.24-1Ch"}]}

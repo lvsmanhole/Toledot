@@ -1,0 +1,11 @@
+schema_version: 1
+record_type: relationships
+records:
+  - {id: achsah-jos15-spouse-othniel, relationship_type: spouse, subject_id: achsah-jos15, object_id: othniel, claim_ids: [], citations: [{source_id: bhs-joshua, locator: "Joshua 15:17", witness_id: mt-joshua-bhs}]}
+  - {id: carmi-jos7-parent-achan, relationship_type: parent, subject_id: carmi-jos7, object_id: achan, claim_ids: [], citations: [{source_id: bhs-joshua, locator: "Joshua 7:1", witness_id: mt-joshua-bhs}]}
+  - {id: caleb-numbers-parent-achsah-jos15, relationship_type: parent, subject_id: caleb-numbers, object_id: achsah-jos15, claim_ids: [], citations: [{source_id: bhs-joshua, locator: "Joshua 15:16", witness_id: mt-joshua-bhs}]}
+  - {id: arba-parent-anak, relationship_type: parent, subject_id: arba, object_id: anak, claim_ids: [], citations: [{source_id: bhs-joshua, locator: "Joshua 15:13", witness_id: mt-joshua-bhs}]}
+  - {id: zabdi-jos7-parent-carmi-jos7, relationship_type: parent, subject_id: zabdi-jos7, object_id: carmi-jos7, claim_ids: [], citations: [{source_id: bhs-joshua, locator: "Joshua 7:1", witness_id: mt-joshua-bhs}]}
+  - {id: jephunneh-numbers-parent-kenaz-jos15, relationship_type: parent, subject_id: jephunneh-numbers, object_id: kenaz-jos15, claim_ids: [], citations: [{source_id: bhs-joshua, locator: "Joshua 15:17", witness_id: mt-joshua-bhs}]}
+  - {id: kenaz-jos15-parent-othniel, relationship_type: parent, subject_id: kenaz-jos15, object_id: othniel, claim_ids: [], citations: [{source_id: bhs-joshua, locator: "Joshua 15:17", witness_id: mt-joshua-bhs}]}
+  - {id: zerah-judah-ancestor-of-zabdi-jos7, relationship_type: ancestor, subject_id: zerah-judah, object_id: zabdi-jos7, claim_ids: [], interpretation_note: "The text calls this person a son (or daughter) of the ancestor, but the narrative setting places the birth more than 60 years after the ancestor's death or last appearance, so the link is recorded as descent, not parenthood.", citations: [{source_id: bhs-joshua, locator: "Joshua 7:1", witness_id: mt-joshua-bhs}]}

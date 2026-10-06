@@ -1,7 +1,7 @@
 schema_version: 1
 record_type: inventory_units
 records:
-  - &i {id: inv-gen-37, work_id: genesis, locator: "Genesis 37", reviewed: true, passage_ids: [gen-37-lxx], identified_entity_ids: [jacob, joseph, reuben, simeon, levi, judah, dan, naphtali, gad, asher, issachar, zebulun, benjamin, potiphar], event_ids: [joseph-sold], no_individuals: false, citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 37", witness_id: lxx-genesis-goettingen}]}
+  - &i {id: inv-gen-37, work_id: genesis, locator: "Genesis 37", reviewed: true, passage_ids: [gen-37-lxx], identified_entity_ids: [jacob, joseph, reuben, simeon, levi, judah, dan, naphtali, gad, asher, issachar, zebulun, benjamin, potiphar, bilhah, pharaoh-gen41, zilpah], event_ids: [joseph-sold], no_individuals: false, citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 37", witness_id: lxx-genesis-goettingen}]}
   - <<: *i
     id: inv-gen-38
     locator: "Genesis 38"
@@ -13,7 +13,7 @@ records:
     id: inv-gen-39
     locator: "Genesis 39"
     passage_ids: [gen-39-lxx]
-    identified_entity_ids: [joseph, potiphar, potiphar-wife, prison-warden]
+    identified_entity_ids: [joseph, potiphar, potiphar-wife, prison-warden, pharaoh-gen41]
     event_ids: [joseph-imprisoned]
     citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 39", witness_id: lxx-genesis-goettingen}]
   - <<: *i
@@ -34,7 +34,7 @@ records:
     id: inv-gen-42
     locator: "Genesis 42"
     passage_ids: [gen-42-lxx]
-    identified_entity_ids: [jacob, joseph, reuben, simeon, levi, judah, dan, naphtali, gad, asher, issachar, zebulun, benjamin]
+    identified_entity_ids: [jacob, joseph, reuben, simeon, levi, judah, dan, naphtali, gad, asher, issachar, zebulun, benjamin, pharaoh-gen41]
     event_ids: []
     citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 42", witness_id: lxx-genesis-goettingen}]
   - <<: *i
@@ -48,7 +48,7 @@ records:
     id: inv-gen-44
     locator: "Genesis 44"
     passage_ids: [gen-44-lxx]
-    identified_entity_ids: [joseph, judah, benjamin, joseph-house-steward]
+    identified_entity_ids: [joseph, judah, benjamin, joseph-house-steward, pharaoh-gen41]
     event_ids: []
     citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 44", witness_id: lxx-genesis-goettingen}]
   - <<: *i
@@ -62,7 +62,7 @@ records:
     id: inv-gen-46
     locator: "Genesis 46"
     passage_ids: [gen-46-lxx]
-    identified_entity_ids: [jacob, joseph, reuben, simeon, levi, judah, dan, naphtali, gad, asher, issachar, zebulun, dinah, benjamin, manasseh, ephraim, perez, zerah-judah, jacob-descendants, hanoch-reuben, pallu, hezron-reuben, carmi, jemuel, jamin, ohad, jachin, zohar-simeon, shaul-simeon, gershon, kohath, merari, hezron-perez, hamul, tola, puah, jashub, shimron, sered, elon-zebulun, jahleel, ziphion, haggi, shuni, ezbon, eri, arodi, areli, imnah, ishvah, ishvi, beriah, serah, heber-asher, malchiel, hushim, jahzeel, guni, jezer, shillem, bela-benjamin, beker, ashbel, gera, naaman, ehi, rosh, muppim, huppim, ard]
+    identified_entity_ids: [jacob, joseph, reuben, simeon, levi, judah, dan, naphtali, gad, asher, issachar, zebulun, dinah, benjamin, manasseh, ephraim, perez, zerah-judah, jacob-descendants, hanoch-reuben, pallu, hezron-reuben, carmi, jemuel, jamin, ohad, jachin, zohar-simeon, shaul-simeon, gershon, kohath, merari, hezron-perez, hamul, tola, puah, jashub, shimron, sered, elon-zebulun, jahleel, ziphion, haggi, shuni, ezbon, eri, arodi, areli, imnah, ishvah, ishvi, beriah, serah, heber-asher, malchiel, hushim, jahzeel, guni, jezer, shillem, bela-benjamin, beker, ashbel, gera, naaman, ehi, rosh, muppim, huppim, ard, asenath, bilhah, er-judah, eran-shuthelah, isaac, laban, leah, onan, pharaoh-gen41, potiphera, rachel, shelah-judah, zilpah]
     event_ids: [jacob-household-migrates-egypt]
     citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 46", witness_id: lxx-genesis-goettingen}]
   - <<: *i
@@ -76,20 +76,20 @@ records:
     id: inv-gen-48
     locator: "Genesis 48"
     passage_ids: [gen-48-lxx]
-    identified_entity_ids: [jacob, joseph, manasseh, ephraim]
+    identified_entity_ids: [jacob, joseph, manasseh, ephraim, abram, isaac, rachel]
     event_ids: [jacob-blesses-ephraim-manasseh]
     citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 48", witness_id: lxx-genesis-goettingen}]
   - <<: *i
     id: inv-gen-49
     locator: "Genesis 49"
     passage_ids: [gen-49-lxx]
-    identified_entity_ids: [jacob, reuben, simeon, levi, judah, dan, naphtali, gad, asher, issachar, zebulun, joseph, benjamin]
+    identified_entity_ids: [jacob, reuben, simeon, levi, judah, dan, naphtali, gad, asher, issachar, zebulun, joseph, benjamin, abram, ephron, heth, isaac, leah, rebekah, sarai]
     event_ids: [jacob-death]
     citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 49", witness_id: lxx-genesis-goettingen}]
   - <<: *i
     id: inv-gen-50
     locator: "Genesis 50"
     passage_ids: [gen-50-lxx]
-    identified_entity_ids: [joseph, jacob, pharaoh-gen41, manasseh, ephraim, machir]
+    identified_entity_ids: [joseph, jacob, pharaoh-gen41, manasseh, ephraim, machir, abram, ephron, isaac]
     event_ids: [joseph-death]
     citations: [{source_id: goettingen-genesis-1974, locator: "Genesis 50", witness_id: lxx-genesis-goettingen}]

@@ -1,0 +1,5 @@
+schema_version: 1
+record_type: entities
+records:
+  - {id: amos-amo1, entity_type: human, primary_name: "Amos", classification: named_person, identity_status: named, aliases: [], gender: male, description: "Prophet from Tekoa who prophesied to Israel", tipnr_id: "Amos@Amo.1.1-", citations: [{source_id: bhs-amos, locator: "Amos 1:1", witness_id: mt-amos-bhs}, {source_id: tipnr-stepbible, locator: "Amos@Amo.1.1-"}]}
+  - {id: amaziah-amo7, entity_type: human, primary_name: "Amaziah", classification: named_person, identity_status: named, aliases: [], gender: male, description: "Priest of Bethel during Amos' ministry", tipnr_id: "Amaziah@Amo.7.10-", citations: [{source_id: bhs-amos, locator: "Amos 7:10", witness_id: mt-amos-bhs}, {source_id: tipnr-stepbible, locator: "Amaziah@Amo.7.10-"}]}

@@ -1,0 +1,27 @@
+schema_version: 1
+record_type: passages
+records:
+  - {id: daniel-1-mt, work_id: daniel, witness_id: mt-daniel-bhs, locator: "Daniel 1", versification: english, citations: [{source_id: bhs-daniel, locator: "Daniel 1", witness_id: mt-daniel-bhs}]}
+  - {id: daniel-1-lxx, work_id: daniel, witness_id: lxx-daniel-rahlfs-hanhart, locator: "Daniel 1", corresponds_to: "Daniel 1", citations: [{source_id: rahlfs-hanhart-2006, locator: "Daniel 1", witness_id: lxx-daniel-rahlfs-hanhart}]}
+  - {id: daniel-2-mt, work_id: daniel, witness_id: mt-daniel-bhs, locator: "Daniel 2", versification: english, citations: [{source_id: bhs-daniel, locator: "Daniel 2", witness_id: mt-daniel-bhs}]}
+  - {id: daniel-2-lxx, work_id: daniel, witness_id: lxx-daniel-rahlfs-hanhart, locator: "Daniel 2", corresponds_to: "Daniel 2", citations: [{source_id: rahlfs-hanhart-2006, locator: "Daniel 2", witness_id: lxx-daniel-rahlfs-hanhart}]}
+  - {id: daniel-3-mt, work_id: daniel, witness_id: mt-daniel-bhs, locator: "Daniel 3", versification: english, citations: [{source_id: bhs-daniel, locator: "Daniel 3", witness_id: mt-daniel-bhs}]}
+  - {id: daniel-3-lxx, work_id: daniel, witness_id: lxx-daniel-rahlfs-hanhart, locator: "Daniel 3", corresponds_to: "Daniel 3", citations: [{source_id: rahlfs-hanhart-2006, locator: "Daniel 3", witness_id: lxx-daniel-rahlfs-hanhart}]}
+  - {id: daniel-4-mt, work_id: daniel, witness_id: mt-daniel-bhs, locator: "Daniel 4", versification: english, citations: [{source_id: bhs-daniel, locator: "Daniel 4", witness_id: mt-daniel-bhs}]}
+  - {id: daniel-4-lxx, work_id: daniel, witness_id: lxx-daniel-rahlfs-hanhart, locator: "Daniel 4", corresponds_to: "Daniel 4", citations: [{source_id: rahlfs-hanhart-2006, locator: "Daniel 4", witness_id: lxx-daniel-rahlfs-hanhart}]}
+  - {id: daniel-5-mt, work_id: daniel, witness_id: mt-daniel-bhs, locator: "Daniel 5", versification: english, citations: [{source_id: bhs-daniel, locator: "Daniel 5", witness_id: mt-daniel-bhs}]}
+  - {id: daniel-5-lxx, work_id: daniel, witness_id: lxx-daniel-rahlfs-hanhart, locator: "Daniel 5", corresponds_to: "Daniel 5", citations: [{source_id: rahlfs-hanhart-2006, locator: "Daniel 5", witness_id: lxx-daniel-rahlfs-hanhart}]}
+  - {id: daniel-6-mt, work_id: daniel, witness_id: mt-daniel-bhs, locator: "Daniel 6", versification: english, citations: [{source_id: bhs-daniel, locator: "Daniel 6", witness_id: mt-daniel-bhs}]}
+  - {id: daniel-6-lxx, work_id: daniel, witness_id: lxx-daniel-rahlfs-hanhart, locator: "Daniel 6", corresponds_to: "Daniel 6", citations: [{source_id: rahlfs-hanhart-2006, locator: "Daniel 6", witness_id: lxx-daniel-rahlfs-hanhart}]}
+  - {id: daniel-7-mt, work_id: daniel, witness_id: mt-daniel-bhs, locator: "Daniel 7", versification: english, citations: [{source_id: bhs-daniel, locator: "Daniel 7", witness_id: mt-daniel-bhs}]}
+  - {id: daniel-7-lxx, work_id: daniel, witness_id: lxx-daniel-rahlfs-hanhart, locator: "Daniel 7", corresponds_to: "Daniel 7", citations: [{source_id: rahlfs-hanhart-2006, locator: "Daniel 7", witness_id: lxx-daniel-rahlfs-hanhart}]}
+  - {id: daniel-8-mt, work_id: daniel, witness_id: mt-daniel-bhs, locator: "Daniel 8", versification: english, citations: [{source_id: bhs-daniel, locator: "Daniel 8", witness_id: mt-daniel-bhs}]}
+  - {id: daniel-8-lxx, work_id: daniel, witness_id: lxx-daniel-rahlfs-hanhart, locator: "Daniel 8", corresponds_to: "Daniel 8", citations: [{source_id: rahlfs-hanhart-2006, locator: "Daniel 8", witness_id: lxx-daniel-rahlfs-hanhart}]}
+  - {id: daniel-9-mt, work_id: daniel, witness_id: mt-daniel-bhs, locator: "Daniel 9", versification: english, citations: [{source_id: bhs-daniel, locator: "Daniel 9", witness_id: mt-daniel-bhs}]}
+  - {id: daniel-9-lxx, work_id: daniel, witness_id: lxx-daniel-rahlfs-hanhart, locator: "Daniel 9", corresponds_to: "Daniel 9", citations: [{source_id: rahlfs-hanhart-2006, locator: "Daniel 9", witness_id: lxx-daniel-rahlfs-hanhart}]}
+  - {id: daniel-10-mt, work_id: daniel, witness_id: mt-daniel-bhs, locator: "Daniel 10", versification: english, citations: [{source_id: bhs-daniel, locator: "Daniel 10", witness_id: mt-daniel-bhs}]}
+  - {id: daniel-10-lxx, work_id: daniel, witness_id: lxx-daniel-rahlfs-hanhart, locator: "Daniel 10", corresponds_to: "Daniel 10", citations: [{source_id: rahlfs-hanhart-2006, locator: "Daniel 10", witness_id: lxx-daniel-rahlfs-hanhart}]}
+  - {id: daniel-11-mt, work_id: daniel, witness_id: mt-daniel-bhs, locator: "Daniel 11", versification: english, citations: [{source_id: bhs-daniel, locator: "Daniel 11", witness_id: mt-daniel-bhs}]}
+  - {id: daniel-11-lxx, work_id: daniel, witness_id: lxx-daniel-rahlfs-hanhart, locator: "Daniel 11", corresponds_to: "Daniel 11", citations: [{source_id: rahlfs-hanhart-2006, locator: "Daniel 11", witness_id: lxx-daniel-rahlfs-hanhart}]}
+  - {id: daniel-12-mt, work_id: daniel, witness_id: mt-daniel-bhs, locator: "Daniel 12", versification: english, citations: [{source_id: bhs-daniel, locator: "Daniel 12", witness_id: mt-daniel-bhs}]}
+  - {id: daniel-12-lxx, work_id: daniel, witness_id: lxx-daniel-rahlfs-hanhart, locator: "Daniel 12", corresponds_to: "Daniel 12", citations: [{source_id: rahlfs-hanhart-2006, locator: "Daniel 12", witness_id: lxx-daniel-rahlfs-hanhart}]}

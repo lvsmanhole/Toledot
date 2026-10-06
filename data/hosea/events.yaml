@@ -1,0 +1,4 @@
+schema_version: 1
+record_type: events
+records:
+  - {id: hosea-1-14-hosea-s-marriage-and-oracles, event_type: prophecy, name: "Hosea's marriage and oracles", participants: [{entity_id: hosea-hos1, role: named participant}, {entity_id: lo-ruhamah, role: named participant}, {entity_id: tiglath-pileser, role: named participant}, {entity_id: adam, role: named participant}, {entity_id: ahaz-2ki15, role: named participant}, {entity_id: beeri-hos1, role: named participant}], date_claim_ids: [], citations: [{source_id: bhs-hosea, locator: "Hosea 1-14", witness_id: mt-hosea-bhs}, {source_id: rahlfs-hanhart-2006, locator: "Hosea (corresponding to Hosea 1-14)", witness_id: lxx-hosea-rahlfs-hanhart}]}

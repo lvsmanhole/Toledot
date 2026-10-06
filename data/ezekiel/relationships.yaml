@@ -1,0 +1,8 @@
+schema_version: 1
+record_type: relationships
+records:
+  - {id: ezekiel-ezk1-spouse-wife-of-ezekiel, relationship_type: spouse, subject_id: ezekiel-ezk1, object_id: wife-of-ezekiel, claim_ids: [], citations: [{source_id: bhs-ezekiel, locator: "Ezekiel 1:3", witness_id: mt-ezekiel-bhs}]}
+  - {id: buzi-parent-ezekiel-ezk1, relationship_type: parent, subject_id: buzi, object_id: ezekiel-ezk1, claim_ids: [], citations: [{source_id: bhs-ezekiel, locator: "Ezekiel 1:3", witness_id: mt-ezekiel-bhs}]}
+  - {id: azzur-ezk11-parent-jaazaniah-ezk11, relationship_type: parent, subject_id: azzur-ezk11, object_id: jaazaniah-ezk11, claim_ids: [], citations: [{source_id: bhs-ezekiel, locator: "Ezekiel 11:1", witness_id: mt-ezekiel-bhs}]}
+  - {id: shaphan-ezk8-parent-jaazaniah-ezk8, relationship_type: parent, subject_id: shaphan-ezk8, object_id: jaazaniah-ezk8, claim_ids: [], citations: [{source_id: bhs-ezekiel, locator: "Ezekiel 8:11", witness_id: mt-ezekiel-bhs}]}
+  - {id: benaiah-ezk11-parent-pelatiah-ezk11, relationship_type: parent, subject_id: benaiah-ezk11, object_id: pelatiah-ezk11, claim_ids: [], citations: [{source_id: bhs-ezekiel, locator: "Ezekiel 11:1", witness_id: mt-ezekiel-bhs}]}

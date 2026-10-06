@@ -1,0 +1,7 @@
+schema_version: 1
+record_type: relationships
+records:
+  - {id: iddo-ezr5-parent-berechiah-zec1, relationship_type: parent, subject_id: iddo-ezr5, object_id: berechiah-zec1, claim_ids: [], citations: [{source_id: bhs-zechariah, locator: "Zechariah 1:1", witness_id: mt-zechariah-bhs}]}
+  - {id: zephaniah-zec6-parent-josiah-zec6, relationship_type: parent, subject_id: zephaniah-zec6, object_id: josiah-zec6, claim_ids: [], citations: [{source_id: bhs-zechariah, locator: "Zechariah 6:10", witness_id: mt-zechariah-bhs}]}
+  - {id: david-parent-nathan-2sa5, relationship_type: parent, subject_id: david, object_id: nathan-2sa5, claim_ids: [], citations: [{source_id: bhs-zechariah, locator: "Zechariah 12:12", witness_id: mt-zechariah-bhs}]}
+  - {id: berechiah-zec1-parent-zechariah-ezr5, relationship_type: parent, subject_id: berechiah-zec1, object_id: zechariah-ezr5, claim_ids: [], citations: [{source_id: bhs-zechariah, locator: "Zechariah 1:1", witness_id: mt-zechariah-bhs}]}

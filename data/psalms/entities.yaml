@@ -1,0 +1,4 @@
+schema_version: 1
+record_type: entities
+records:
+  - {id: cush-psa7, entity_type: human, primary_name: "Cush", classification: named_person, identity_status: named, aliases: [], gender: male, description: "Benjamite mentioned in the title of Psalm 7", tipnr_id: "Cush@Psa.7.1", citations: [{source_id: bhs-psalms, locator: "Psalms 7:1", witness_id: mt-psalms-bhs}, {source_id: tipnr-stepbible, locator: "Cush@Psa.7.1"}]}

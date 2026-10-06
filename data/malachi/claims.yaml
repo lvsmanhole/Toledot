@@ -1,0 +1,6 @@
+schema_version: 1
+record_type: claims
+records:
+  - {id: elijah-1ki17-malachi-mt-attested, subject_id: elijah-1ki17, predicate: attested_in_passage, value: {kind: attestation, status: "named in Malachi"}, evidence_type: explicit_text, witness_id: mt-malachi-bhs, confidence: A, citations: [{source_id: bhs-malachi, locator: "Malachi 4:5", witness_id: mt-malachi-bhs}]}
+  - {id: malachi-mal1-malachi-mt-attested, subject_id: malachi-mal1, predicate: attested_in_passage, value: {kind: attestation, status: "named in Malachi"}, evidence_type: explicit_text, witness_id: mt-malachi-bhs, confidence: A, citations: [{source_id: bhs-malachi, locator: "Malachi 1:1", witness_id: mt-malachi-bhs}]}
+  - {id: moses-malachi-mt-attested, subject_id: moses, predicate: attested_in_passage, value: {kind: attestation, status: "named in Malachi"}, evidence_type: explicit_text, witness_id: mt-malachi-bhs, confidence: A, citations: [{source_id: bhs-malachi, locator: "Malachi 4:4", witness_id: mt-malachi-bhs}]}

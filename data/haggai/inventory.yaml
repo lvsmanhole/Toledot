@@ -1,0 +1,5 @@
+schema_version: 1
+record_type: inventory_units
+records:
+  - {id: inv-haggai-1, work_id: haggai, locator: "Haggai 1", reviewed: true, passage_ids: [haggai-1-mt, haggai-1-lxx], identified_entity_ids: [darius-ezr4, haggai-ezr5, jehozadak, joshua-ezr2, shealtiel-1ch3, zerubbabel-1ch3], event_ids: [haggai-1-2-haggai-s-temple-oracles, haggai-first-oracle], no_individuals: false, review_basis: "Person census cross-checked against the TIPNR proper-name index (English versification); unnamed individuals curated by hand.", citations: [{source_id: bhs-haggai, locator: "Haggai 1", witness_id: mt-haggai-bhs}]}
+  - {id: inv-haggai-2, work_id: haggai, locator: "Haggai 2", reviewed: true, passage_ids: [haggai-2-mt, haggai-2-lxx], identified_entity_ids: [darius-ezr4, haggai-ezr5, jehozadak, joshua-ezr2, shealtiel-1ch3, zerubbabel-1ch3], event_ids: [haggai-1-2-haggai-s-temple-oracles], no_individuals: false, review_basis: "Person census cross-checked against the TIPNR proper-name index (English versification); unnamed individuals curated by hand.", citations: [{source_id: bhs-haggai, locator: "Haggai 2", witness_id: mt-haggai-bhs}]}

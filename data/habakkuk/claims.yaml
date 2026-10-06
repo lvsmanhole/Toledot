@@ -1,0 +1,4 @@
+schema_version: 1
+record_type: claims
+records:
+  - {id: habakkuk-hab1-habakkuk-mt-attested, subject_id: habakkuk-hab1, predicate: attested_in_passage, value: {kind: attestation, status: "named in Habakkuk"}, evidence_type: explicit_text, witness_id: mt-habakkuk-bhs, confidence: A, citations: [{source_id: bhs-habakkuk, locator: "Habakkuk 1:1; 3:1", witness_id: mt-habakkuk-bhs}]}

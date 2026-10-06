@@ -1,0 +1,7 @@
+schema_version: 1
+record_type: passages
+records:
+  - {id: haggai-1-mt, work_id: haggai, witness_id: mt-haggai-bhs, locator: "Haggai 1", versification: english, citations: [{source_id: bhs-haggai, locator: "Haggai 1", witness_id: mt-haggai-bhs}]}
+  - {id: haggai-1-lxx, work_id: haggai, witness_id: lxx-haggai-rahlfs-hanhart, locator: "Haggai 1", corresponds_to: "Haggai 1", citations: [{source_id: rahlfs-hanhart-2006, locator: "Haggai 1", witness_id: lxx-haggai-rahlfs-hanhart}]}
+  - {id: haggai-2-mt, work_id: haggai, witness_id: mt-haggai-bhs, locator: "Haggai 2", versification: english, citations: [{source_id: bhs-haggai, locator: "Haggai 2", witness_id: mt-haggai-bhs}]}
+  - {id: haggai-2-lxx, work_id: haggai, witness_id: lxx-haggai-rahlfs-hanhart, locator: "Haggai 2", corresponds_to: "Haggai 2", citations: [{source_id: rahlfs-hanhart-2006, locator: "Haggai 2", witness_id: lxx-haggai-rahlfs-hanhart}]}

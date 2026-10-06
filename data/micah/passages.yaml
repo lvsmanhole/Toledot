@@ -1,0 +1,17 @@
+schema_version: 1
+record_type: passages
+records:
+  - {id: micah-1-mt, work_id: micah, witness_id: mt-micah-bhs, locator: "Micah 1", versification: english, citations: [{source_id: bhs-micah, locator: "Micah 1", witness_id: mt-micah-bhs}]}
+  - {id: micah-1-lxx, work_id: micah, witness_id: lxx-micah-rahlfs-hanhart, locator: "Micah 1", corresponds_to: "Micah 1", citations: [{source_id: rahlfs-hanhart-2006, locator: "Micah 1", witness_id: lxx-micah-rahlfs-hanhart}]}
+  - {id: micah-2-mt, work_id: micah, witness_id: mt-micah-bhs, locator: "Micah 2", versification: english, citations: [{source_id: bhs-micah, locator: "Micah 2", witness_id: mt-micah-bhs}]}
+  - {id: micah-2-lxx, work_id: micah, witness_id: lxx-micah-rahlfs-hanhart, locator: "Micah 2", corresponds_to: "Micah 2", citations: [{source_id: rahlfs-hanhart-2006, locator: "Micah 2", witness_id: lxx-micah-rahlfs-hanhart}]}
+  - {id: micah-3-mt, work_id: micah, witness_id: mt-micah-bhs, locator: "Micah 3", versification: english, citations: [{source_id: bhs-micah, locator: "Micah 3", witness_id: mt-micah-bhs}]}
+  - {id: micah-3-lxx, work_id: micah, witness_id: lxx-micah-rahlfs-hanhart, locator: "Micah 3", corresponds_to: "Micah 3", citations: [{source_id: rahlfs-hanhart-2006, locator: "Micah 3", witness_id: lxx-micah-rahlfs-hanhart}]}
+  - {id: micah-4-mt, work_id: micah, witness_id: mt-micah-bhs, locator: "Micah 4", versification: english, citations: [{source_id: bhs-micah, locator: "Micah 4", witness_id: mt-micah-bhs}]}
+  - {id: micah-4-lxx, work_id: micah, witness_id: lxx-micah-rahlfs-hanhart, locator: "Micah 4", corresponds_to: "Micah 4", citations: [{source_id: rahlfs-hanhart-2006, locator: "Micah 4", witness_id: lxx-micah-rahlfs-hanhart}]}
+  - {id: micah-5-mt, work_id: micah, witness_id: mt-micah-bhs, locator: "Micah 5", versification: english, citations: [{source_id: bhs-micah, locator: "Micah 5", witness_id: mt-micah-bhs}]}
+  - {id: micah-5-lxx, work_id: micah, witness_id: lxx-micah-rahlfs-hanhart, locator: "Micah 5", corresponds_to: "Micah 5", citations: [{source_id: rahlfs-hanhart-2006, locator: "Micah 5", witness_id: lxx-micah-rahlfs-hanhart}]}
+  - {id: micah-6-mt, work_id: micah, witness_id: mt-micah-bhs, locator: "Micah 6", versification: english, citations: [{source_id: bhs-micah, locator: "Micah 6", witness_id: mt-micah-bhs}]}
+  - {id: micah-6-lxx, work_id: micah, witness_id: lxx-micah-rahlfs-hanhart, locator: "Micah 6", corresponds_to: "Micah 6", citations: [{source_id: rahlfs-hanhart-2006, locator: "Micah 6", witness_id: lxx-micah-rahlfs-hanhart}]}
+  - {id: micah-7-mt, work_id: micah, witness_id: mt-micah-bhs, locator: "Micah 7", versification: english, citations: [{source_id: bhs-micah, locator: "Micah 7", witness_id: mt-micah-bhs}]}
+  - {id: micah-7-lxx, work_id: micah, witness_id: lxx-micah-rahlfs-hanhart, locator: "Micah 7", corresponds_to: "Micah 7", citations: [{source_id: rahlfs-hanhart-2006, locator: "Micah 7", witness_id: lxx-micah-rahlfs-hanhart}]}

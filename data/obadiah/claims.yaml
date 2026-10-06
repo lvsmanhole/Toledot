@@ -1,0 +1,4 @@
+schema_version: 1
+record_type: claims
+records:
+  - {id: obadiah-oba1-obadiah-mt-attested, subject_id: obadiah-oba1, predicate: attested_in_passage, value: {kind: attestation, status: "named in Obadiah"}, evidence_type: explicit_text, witness_id: mt-obadiah-bhs, confidence: A, citations: [{source_id: bhs-obadiah, locator: "Obadiah 1:1", witness_id: mt-obadiah-bhs}]}

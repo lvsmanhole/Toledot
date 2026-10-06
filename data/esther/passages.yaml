@@ -1,0 +1,23 @@
+schema_version: 1
+record_type: passages
+records:
+  - {id: esther-1-mt, work_id: esther, witness_id: mt-esther-bhs, locator: "Esther 1", versification: english, citations: [{source_id: bhs-esther, locator: "Esther 1", witness_id: mt-esther-bhs}]}
+  - {id: esther-1-lxx, work_id: esther, witness_id: lxx-esther-rahlfs-hanhart, locator: "Esther 1", corresponds_to: "Esther 1", citations: [{source_id: rahlfs-hanhart-2006, locator: "Esther 1", witness_id: lxx-esther-rahlfs-hanhart}]}
+  - {id: esther-2-mt, work_id: esther, witness_id: mt-esther-bhs, locator: "Esther 2", versification: english, citations: [{source_id: bhs-esther, locator: "Esther 2", witness_id: mt-esther-bhs}]}
+  - {id: esther-2-lxx, work_id: esther, witness_id: lxx-esther-rahlfs-hanhart, locator: "Esther 2", corresponds_to: "Esther 2", citations: [{source_id: rahlfs-hanhart-2006, locator: "Esther 2", witness_id: lxx-esther-rahlfs-hanhart}]}
+  - {id: esther-3-mt, work_id: esther, witness_id: mt-esther-bhs, locator: "Esther 3", versification: english, citations: [{source_id: bhs-esther, locator: "Esther 3", witness_id: mt-esther-bhs}]}
+  - {id: esther-3-lxx, work_id: esther, witness_id: lxx-esther-rahlfs-hanhart, locator: "Esther 3", corresponds_to: "Esther 3", citations: [{source_id: rahlfs-hanhart-2006, locator: "Esther 3", witness_id: lxx-esther-rahlfs-hanhart}]}
+  - {id: esther-4-mt, work_id: esther, witness_id: mt-esther-bhs, locator: "Esther 4", versification: english, citations: [{source_id: bhs-esther, locator: "Esther 4", witness_id: mt-esther-bhs}]}
+  - {id: esther-4-lxx, work_id: esther, witness_id: lxx-esther-rahlfs-hanhart, locator: "Esther 4", corresponds_to: "Esther 4", citations: [{source_id: rahlfs-hanhart-2006, locator: "Esther 4", witness_id: lxx-esther-rahlfs-hanhart}]}
+  - {id: esther-5-mt, work_id: esther, witness_id: mt-esther-bhs, locator: "Esther 5", versification: english, citations: [{source_id: bhs-esther, locator: "Esther 5", witness_id: mt-esther-bhs}]}
+  - {id: esther-5-lxx, work_id: esther, witness_id: lxx-esther-rahlfs-hanhart, locator: "Esther 5", corresponds_to: "Esther 5", citations: [{source_id: rahlfs-hanhart-2006, locator: "Esther 5", witness_id: lxx-esther-rahlfs-hanhart}]}
+  - {id: esther-6-mt, work_id: esther, witness_id: mt-esther-bhs, locator: "Esther 6", versification: english, citations: [{source_id: bhs-esther, locator: "Esther 6", witness_id: mt-esther-bhs}]}
+  - {id: esther-6-lxx, work_id: esther, witness_id: lxx-esther-rahlfs-hanhart, locator: "Esther 6", corresponds_to: "Esther 6", citations: [{source_id: rahlfs-hanhart-2006, locator: "Esther 6", witness_id: lxx-esther-rahlfs-hanhart}]}
+  - {id: esther-7-mt, work_id: esther, witness_id: mt-esther-bhs, locator: "Esther 7", versification: english, citations: [{source_id: bhs-esther, locator: "Esther 7", witness_id: mt-esther-bhs}]}
+  - {id: esther-7-lxx, work_id: esther, witness_id: lxx-esther-rahlfs-hanhart, locator: "Esther 7", corresponds_to: "Esther 7", citations: [{source_id: rahlfs-hanhart-2006, locator: "Esther 7", witness_id: lxx-esther-rahlfs-hanhart}]}
+  - {id: esther-8-mt, work_id: esther, witness_id: mt-esther-bhs, locator: "Esther 8", versification: english, citations: [{source_id: bhs-esther, locator: "Esther 8", witness_id: mt-esther-bhs}]}
+  - {id: esther-8-lxx, work_id: esther, witness_id: lxx-esther-rahlfs-hanhart, locator: "Esther 8", corresponds_to: "Esther 8", citations: [{source_id: rahlfs-hanhart-2006, locator: "Esther 8", witness_id: lxx-esther-rahlfs-hanhart}]}
+  - {id: esther-9-mt, work_id: esther, witness_id: mt-esther-bhs, locator: "Esther 9", versification: english, citations: [{source_id: bhs-esther, locator: "Esther 9", witness_id: mt-esther-bhs}]}
+  - {id: esther-9-lxx, work_id: esther, witness_id: lxx-esther-rahlfs-hanhart, locator: "Esther 9", corresponds_to: "Esther 9", citations: [{source_id: rahlfs-hanhart-2006, locator: "Esther 9", witness_id: lxx-esther-rahlfs-hanhart}]}
+  - {id: esther-10-mt, work_id: esther, witness_id: mt-esther-bhs, locator: "Esther 10", versification: english, citations: [{source_id: bhs-esther, locator: "Esther 10", witness_id: mt-esther-bhs}]}
+  - {id: esther-10-lxx, work_id: esther, witness_id: lxx-esther-rahlfs-hanhart, locator: "Esther 10", corresponds_to: "Esther 10", citations: [{source_id: rahlfs-hanhart-2006, locator: "Esther 10", witness_id: lxx-esther-rahlfs-hanhart}]}

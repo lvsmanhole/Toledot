@@ -1,0 +1,4 @@
+schema_version: 1
+record_type: claims
+records:
+  - {id: david-ecclesiastes-mt-attested, subject_id: david, predicate: attested_in_passage, value: {kind: attestation, status: "named in Ecclesiastes"}, evidence_type: explicit_text, witness_id: mt-ecclesiastes-bhs, confidence: A, citations: [{source_id: bhs-ecclesiastes, locator: "Ecclesiastes 1:1", witness_id: mt-ecclesiastes-bhs}]}

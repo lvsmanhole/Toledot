@@ -1,0 +1,11 @@
+schema_version: 1
+record_type: passages
+records:
+  - {id: jonah-1-mt, work_id: jonah, witness_id: mt-jonah-bhs, locator: "Jonah 1", versification: english, citations: [{source_id: bhs-jonah, locator: "Jonah 1", witness_id: mt-jonah-bhs}]}
+  - {id: jonah-1-lxx, work_id: jonah, witness_id: lxx-jonah-rahlfs-hanhart, locator: "Jonah 1", corresponds_to: "Jonah 1", citations: [{source_id: rahlfs-hanhart-2006, locator: "Jonah 1", witness_id: lxx-jonah-rahlfs-hanhart}]}
+  - {id: jonah-2-mt, work_id: jonah, witness_id: mt-jonah-bhs, locator: "Jonah 2", versification: english, citations: [{source_id: bhs-jonah, locator: "Jonah 2", witness_id: mt-jonah-bhs}]}
+  - {id: jonah-2-lxx, work_id: jonah, witness_id: lxx-jonah-rahlfs-hanhart, locator: "Jonah 2", corresponds_to: "Jonah 2", citations: [{source_id: rahlfs-hanhart-2006, locator: "Jonah 2", witness_id: lxx-jonah-rahlfs-hanhart}]}
+  - {id: jonah-3-mt, work_id: jonah, witness_id: mt-jonah-bhs, locator: "Jonah 3", versification: english, citations: [{source_id: bhs-jonah, locator: "Jonah 3", witness_id: mt-jonah-bhs}]}
+  - {id: jonah-3-lxx, work_id: jonah, witness_id: lxx-jonah-rahlfs-hanhart, locator: "Jonah 3", corresponds_to: "Jonah 3", citations: [{source_id: rahlfs-hanhart-2006, locator: "Jonah 3", witness_id: lxx-jonah-rahlfs-hanhart}]}
+  - {id: jonah-4-mt, work_id: jonah, witness_id: mt-jonah-bhs, locator: "Jonah 4", versification: english, citations: [{source_id: bhs-jonah, locator: "Jonah 4", witness_id: mt-jonah-bhs}]}
+  - {id: jonah-4-lxx, work_id: jonah, witness_id: lxx-jonah-rahlfs-hanhart, locator: "Jonah 4", corresponds_to: "Jonah 4", citations: [{source_id: rahlfs-hanhart-2006, locator: "Jonah 4", witness_id: lxx-jonah-rahlfs-hanhart}]}

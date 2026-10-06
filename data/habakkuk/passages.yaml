@@ -1,0 +1,9 @@
+schema_version: 1
+record_type: passages
+records:
+  - {id: habakkuk-1-mt, work_id: habakkuk, witness_id: mt-habakkuk-bhs, locator: "Habakkuk 1", versification: english, citations: [{source_id: bhs-habakkuk, locator: "Habakkuk 1", witness_id: mt-habakkuk-bhs}]}
+  - {id: habakkuk-1-lxx, work_id: habakkuk, witness_id: lxx-habakkuk-rahlfs-hanhart, locator: "Habakkuk 1", corresponds_to: "Habakkuk 1", citations: [{source_id: rahlfs-hanhart-2006, locator: "Habakkuk 1", witness_id: lxx-habakkuk-rahlfs-hanhart}]}
+  - {id: habakkuk-2-mt, work_id: habakkuk, witness_id: mt-habakkuk-bhs, locator: "Habakkuk 2", versification: english, citations: [{source_id: bhs-habakkuk, locator: "Habakkuk 2", witness_id: mt-habakkuk-bhs}]}
+  - {id: habakkuk-2-lxx, work_id: habakkuk, witness_id: lxx-habakkuk-rahlfs-hanhart, locator: "Habakkuk 2", corresponds_to: "Habakkuk 2", citations: [{source_id: rahlfs-hanhart-2006, locator: "Habakkuk 2", witness_id: lxx-habakkuk-rahlfs-hanhart}]}
+  - {id: habakkuk-3-mt, work_id: habakkuk, witness_id: mt-habakkuk-bhs, locator: "Habakkuk 3", versification: english, citations: [{source_id: bhs-habakkuk, locator: "Habakkuk 3", witness_id: mt-habakkuk-bhs}]}
+  - {id: habakkuk-3-lxx, work_id: habakkuk, witness_id: lxx-habakkuk-rahlfs-hanhart, locator: "Habakkuk 3", corresponds_to: "Habakkuk 3", citations: [{source_id: rahlfs-hanhart-2006, locator: "Habakkuk 3", witness_id: lxx-habakkuk-rahlfs-hanhart}]}

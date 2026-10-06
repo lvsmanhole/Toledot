@@ -1,0 +1,4 @@
+schema_version: 1
+record_type: events
+records:
+  - {id: malachi-1-4-malachi-s-disputations, event_type: prophecy, name: "Malachi's disputations", participants: [{entity_id: elijah-1ki17, role: named participant}, {entity_id: malachi-mal1, role: named participant}, {entity_id: moses, role: named participant}], date_claim_ids: [], citations: [{source_id: bhs-malachi, locator: "Malachi 1-4", witness_id: mt-malachi-bhs}, {source_id: rahlfs-hanhart-2006, locator: "Malachi (corresponding to Malachi 1-4)", witness_id: lxx-malachi-rahlfs-hanhart}]}

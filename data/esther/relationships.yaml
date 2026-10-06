@@ -1,0 +1,20 @@
+schema_version: 1
+record_type: relationships
+records:
+  - {id: ahasuerus-spouse-vashti, relationship_type: spouse, subject_id: ahasuerus, object_id: vashti, claim_ids: [], citations: [{source_id: bhs-esther, locator: "Esther 1:9", witness_id: mt-esther-bhs}]}
+  - {id: haman-spouse-zeresh, relationship_type: spouse, subject_id: haman, object_id: zeresh, claim_ids: [], citations: [{source_id: bhs-esther, locator: "Esther 5:10", witness_id: mt-esther-bhs}]}
+  - {id: haman-parent-adalia, relationship_type: parent, subject_id: haman, object_id: adalia, claim_ids: [], citations: [{source_id: bhs-esther, locator: "Esther 9:8", witness_id: mt-esther-bhs}]}
+  - {id: haman-parent-aridai, relationship_type: parent, subject_id: haman, object_id: aridai, claim_ids: [], citations: [{source_id: bhs-esther, locator: "Esther 9:9", witness_id: mt-esther-bhs}]}
+  - {id: haman-parent-aridatha, relationship_type: parent, subject_id: haman, object_id: aridatha, claim_ids: [], citations: [{source_id: bhs-esther, locator: "Esther 9:8", witness_id: mt-esther-bhs}]}
+  - {id: haman-parent-arisai, relationship_type: parent, subject_id: haman, object_id: arisai, claim_ids: [], citations: [{source_id: bhs-esther, locator: "Esther 9:9", witness_id: mt-esther-bhs}]}
+  - {id: haman-parent-aspatha, relationship_type: parent, subject_id: haman, object_id: aspatha, claim_ids: [], citations: [{source_id: bhs-esther, locator: "Esther 9:7", witness_id: mt-esther-bhs}]}
+  - {id: haman-parent-dalphon, relationship_type: parent, subject_id: haman, object_id: dalphon, claim_ids: [], citations: [{source_id: bhs-esther, locator: "Esther 9:7", witness_id: mt-esther-bhs}]}
+  - {id: abihail-est2-parent-esther-est2, relationship_type: parent, subject_id: abihail-est2, object_id: esther-est2, claim_ids: [], citations: [{source_id: bhs-esther, locator: "Esther 2:15", witness_id: mt-esther-bhs}]}
+  - {id: hammedatha-parent-haman, relationship_type: parent, subject_id: hammedatha, object_id: haman, claim_ids: [], citations: [{source_id: bhs-esther, locator: "Esther 3:1", witness_id: mt-esther-bhs}]}
+  - {id: shimei-est2-parent-jair-est2, relationship_type: parent, subject_id: shimei-est2, object_id: jair-est2, claim_ids: [], citations: [{source_id: bhs-esther, locator: "Esther 2:5", witness_id: mt-esther-bhs}]}
+  - {id: jair-est2-parent-mordecai-est2, relationship_type: parent, subject_id: jair-est2, object_id: mordecai-est2, claim_ids: [], citations: [{source_id: bhs-esther, locator: "Esther 2:5", witness_id: mt-esther-bhs}]}
+  - {id: haman-parent-parmashta, relationship_type: parent, subject_id: haman, object_id: parmashta, claim_ids: [], citations: [{source_id: bhs-esther, locator: "Esther 9:9", witness_id: mt-esther-bhs}]}
+  - {id: haman-parent-parshandatha, relationship_type: parent, subject_id: haman, object_id: parshandatha, claim_ids: [], citations: [{source_id: bhs-esther, locator: "Esther 9:7", witness_id: mt-esther-bhs}]}
+  - {id: haman-parent-poratha, relationship_type: parent, subject_id: haman, object_id: poratha, claim_ids: [], citations: [{source_id: bhs-esther, locator: "Esther 9:8", witness_id: mt-esther-bhs}]}
+  - {id: kish-est2-parent-shimei-est2, relationship_type: parent, subject_id: kish-est2, object_id: shimei-est2, claim_ids: [], citations: [{source_id: bhs-esther, locator: "Esther 2:5", witness_id: mt-esther-bhs}]}
+  - {id: haman-parent-vaizatha, relationship_type: parent, subject_id: haman, object_id: vaizatha, claim_ids: [], citations: [{source_id: bhs-esther, locator: "Esther 9:9", witness_id: mt-esther-bhs}]}

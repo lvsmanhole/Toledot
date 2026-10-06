@@ -1,0 +1,5 @@
+schema_version: 1
+record_type: relationships
+records:
+  - {id: nebuchadnezzar-parent-belshazzar, relationship_type: parent, subject_id: nebuchadnezzar, object_id: belshazzar, claim_ids: [], citations: [{source_id: bhs-daniel, locator: "Daniel 5:2", witness_id: mt-daniel-bhs}]}
+  - {id: ahasuerus-dan9-parent-darius-dan5, relationship_type: parent, subject_id: ahasuerus-dan9, object_id: darius-dan5, claim_ids: [], citations: [{source_id: bhs-daniel, locator: "Daniel 5:31", witness_id: mt-daniel-bhs}]}

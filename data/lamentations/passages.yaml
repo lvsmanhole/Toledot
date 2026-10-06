@@ -1,0 +1,13 @@
+schema_version: 1
+record_type: passages
+records:
+  - {id: lamentations-1-mt, work_id: lamentations, witness_id: mt-lamentations-bhs, locator: "Lamentations 1", versification: english, citations: [{source_id: bhs-lamentations, locator: "Lamentations 1", witness_id: mt-lamentations-bhs}]}
+  - {id: lamentations-1-lxx, work_id: lamentations, witness_id: lxx-lamentations-rahlfs-hanhart, locator: "Lamentations 1", corresponds_to: "Lamentations 1", citations: [{source_id: rahlfs-hanhart-2006, locator: "Lamentations 1", witness_id: lxx-lamentations-rahlfs-hanhart}]}
+  - {id: lamentations-2-mt, work_id: lamentations, witness_id: mt-lamentations-bhs, locator: "Lamentations 2", versification: english, citations: [{source_id: bhs-lamentations, locator: "Lamentations 2", witness_id: mt-lamentations-bhs}]}
+  - {id: lamentations-2-lxx, work_id: lamentations, witness_id: lxx-lamentations-rahlfs-hanhart, locator: "Lamentations 2", corresponds_to: "Lamentations 2", citations: [{source_id: rahlfs-hanhart-2006, locator: "Lamentations 2", witness_id: lxx-lamentations-rahlfs-hanhart}]}
+  - {id: lamentations-3-mt, work_id: lamentations, witness_id: mt-lamentations-bhs, locator: "Lamentations 3", versification: english, citations: [{source_id: bhs-lamentations, locator: "Lamentations 3", witness_id: mt-lamentations-bhs}]}
+  - {id: lamentations-3-lxx, work_id: lamentations, witness_id: lxx-lamentations-rahlfs-hanhart, locator: "Lamentations 3", corresponds_to: "Lamentations 3", citations: [{source_id: rahlfs-hanhart-2006, locator: "Lamentations 3", witness_id: lxx-lamentations-rahlfs-hanhart}]}
+  - {id: lamentations-4-mt, work_id: lamentations, witness_id: mt-lamentations-bhs, locator: "Lamentations 4", versification: english, citations: [{source_id: bhs-lamentations, locator: "Lamentations 4", witness_id: mt-lamentations-bhs}]}
+  - {id: lamentations-4-lxx, work_id: lamentations, witness_id: lxx-lamentations-rahlfs-hanhart, locator: "Lamentations 4", corresponds_to: "Lamentations 4", citations: [{source_id: rahlfs-hanhart-2006, locator: "Lamentations 4", witness_id: lxx-lamentations-rahlfs-hanhart}]}
+  - {id: lamentations-5-mt, work_id: lamentations, witness_id: mt-lamentations-bhs, locator: "Lamentations 5", versification: english, citations: [{source_id: bhs-lamentations, locator: "Lamentations 5", witness_id: mt-lamentations-bhs}]}
+  - {id: lamentations-5-lxx, work_id: lamentations, witness_id: lxx-lamentations-rahlfs-hanhart, locator: "Lamentations 5", corresponds_to: "Lamentations 5", citations: [{source_id: rahlfs-hanhart-2006, locator: "Lamentations 5", witness_id: lxx-lamentations-rahlfs-hanhart}]}

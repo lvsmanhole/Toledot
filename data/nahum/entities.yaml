@@ -1,0 +1,4 @@
+schema_version: 1
+record_type: entities
+records:
+  - {id: nahum-nam1, entity_type: human, primary_name: "Nahum", classification: named_person, identity_status: named, aliases: [], gender: male, description: "Old Testament prophet, author of the Book of Nahum.", tipnr_id: "Nahum@Nam.1.1", citations: [{source_id: bhs-nahum, locator: "Nahum 1:1", witness_id: mt-nahum-bhs}, {source_id: tipnr-stepbible, locator: "Nahum@Nam.1.1"}]}

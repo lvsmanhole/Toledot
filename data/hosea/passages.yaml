@@ -1,0 +1,31 @@
+schema_version: 1
+record_type: passages
+records:
+  - {id: hosea-1-mt, work_id: hosea, witness_id: mt-hosea-bhs, locator: "Hosea 1", versification: english, citations: [{source_id: bhs-hosea, locator: "Hosea 1", witness_id: mt-hosea-bhs}]}
+  - {id: hosea-1-lxx, work_id: hosea, witness_id: lxx-hosea-rahlfs-hanhart, locator: "Hosea 1", corresponds_to: "Hosea 1", citations: [{source_id: rahlfs-hanhart-2006, locator: "Hosea 1", witness_id: lxx-hosea-rahlfs-hanhart}]}
+  - {id: hosea-2-mt, work_id: hosea, witness_id: mt-hosea-bhs, locator: "Hosea 2", versification: english, citations: [{source_id: bhs-hosea, locator: "Hosea 2", witness_id: mt-hosea-bhs}]}
+  - {id: hosea-2-lxx, work_id: hosea, witness_id: lxx-hosea-rahlfs-hanhart, locator: "Hosea 2", corresponds_to: "Hosea 2", citations: [{source_id: rahlfs-hanhart-2006, locator: "Hosea 2", witness_id: lxx-hosea-rahlfs-hanhart}]}
+  - {id: hosea-3-mt, work_id: hosea, witness_id: mt-hosea-bhs, locator: "Hosea 3", versification: english, citations: [{source_id: bhs-hosea, locator: "Hosea 3", witness_id: mt-hosea-bhs}]}
+  - {id: hosea-3-lxx, work_id: hosea, witness_id: lxx-hosea-rahlfs-hanhart, locator: "Hosea 3", corresponds_to: "Hosea 3", citations: [{source_id: rahlfs-hanhart-2006, locator: "Hosea 3", witness_id: lxx-hosea-rahlfs-hanhart}]}
+  - {id: hosea-4-mt, work_id: hosea, witness_id: mt-hosea-bhs, locator: "Hosea 4", versification: english, citations: [{source_id: bhs-hosea, locator: "Hosea 4", witness_id: mt-hosea-bhs}]}
+  - {id: hosea-4-lxx, work_id: hosea, witness_id: lxx-hosea-rahlfs-hanhart, locator: "Hosea 4", corresponds_to: "Hosea 4", citations: [{source_id: rahlfs-hanhart-2006, locator: "Hosea 4", witness_id: lxx-hosea-rahlfs-hanhart}]}
+  - {id: hosea-5-mt, work_id: hosea, witness_id: mt-hosea-bhs, locator: "Hosea 5", versification: english, citations: [{source_id: bhs-hosea, locator: "Hosea 5", witness_id: mt-hosea-bhs}]}
+  - {id: hosea-5-lxx, work_id: hosea, witness_id: lxx-hosea-rahlfs-hanhart, locator: "Hosea 5", corresponds_to: "Hosea 5", citations: [{source_id: rahlfs-hanhart-2006, locator: "Hosea 5", witness_id: lxx-hosea-rahlfs-hanhart}]}
+  - {id: hosea-6-mt, work_id: hosea, witness_id: mt-hosea-bhs, locator: "Hosea 6", versification: english, citations: [{source_id: bhs-hosea, locator: "Hosea 6", witness_id: mt-hosea-bhs}]}
+  - {id: hosea-6-lxx, work_id: hosea, witness_id: lxx-hosea-rahlfs-hanhart, locator: "Hosea 6", corresponds_to: "Hosea 6", citations: [{source_id: rahlfs-hanhart-2006, locator: "Hosea 6", witness_id: lxx-hosea-rahlfs-hanhart}]}
+  - {id: hosea-7-mt, work_id: hosea, witness_id: mt-hosea-bhs, locator: "Hosea 7", versification: english, citations: [{source_id: bhs-hosea, locator: "Hosea 7", witness_id: mt-hosea-bhs}]}
+  - {id: hosea-7-lxx, work_id: hosea, witness_id: lxx-hosea-rahlfs-hanhart, locator: "Hosea 7", corresponds_to: "Hosea 7", citations: [{source_id: rahlfs-hanhart-2006, locator: "Hosea 7", witness_id: lxx-hosea-rahlfs-hanhart}]}
+  - {id: hosea-8-mt, work_id: hosea, witness_id: mt-hosea-bhs, locator: "Hosea 8", versification: english, citations: [{source_id: bhs-hosea, locator: "Hosea 8", witness_id: mt-hosea-bhs}]}
+  - {id: hosea-8-lxx, work_id: hosea, witness_id: lxx-hosea-rahlfs-hanhart, locator: "Hosea 8", corresponds_to: "Hosea 8", citations: [{source_id: rahlfs-hanhart-2006, locator: "Hosea 8", witness_id: lxx-hosea-rahlfs-hanhart}]}
+  - {id: hosea-9-mt, work_id: hosea, witness_id: mt-hosea-bhs, locator: "Hosea 9", versification: english, citations: [{source_id: bhs-hosea, locator: "Hosea 9", witness_id: mt-hosea-bhs}]}
+  - {id: hosea-9-lxx, work_id: hosea, witness_id: lxx-hosea-rahlfs-hanhart, locator: "Hosea 9", corresponds_to: "Hosea 9", citations: [{source_id: rahlfs-hanhart-2006, locator: "Hosea 9", witness_id: lxx-hosea-rahlfs-hanhart}]}
+  - {id: hosea-10-mt, work_id: hosea, witness_id: mt-hosea-bhs, locator: "Hosea 10", versification: english, citations: [{source_id: bhs-hosea, locator: "Hosea 10", witness_id: mt-hosea-bhs}]}
+  - {id: hosea-10-lxx, work_id: hosea, witness_id: lxx-hosea-rahlfs-hanhart, locator: "Hosea 10", corresponds_to: "Hosea 10", citations: [{source_id: rahlfs-hanhart-2006, locator: "Hosea 10", witness_id: lxx-hosea-rahlfs-hanhart}]}
+  - {id: hosea-11-mt, work_id: hosea, witness_id: mt-hosea-bhs, locator: "Hosea 11", versification: english, citations: [{source_id: bhs-hosea, locator: "Hosea 11", witness_id: mt-hosea-bhs}]}
+  - {id: hosea-11-lxx, work_id: hosea, witness_id: lxx-hosea-rahlfs-hanhart, locator: "Hosea 11", corresponds_to: "Hosea 11", citations: [{source_id: rahlfs-hanhart-2006, locator: "Hosea 11", witness_id: lxx-hosea-rahlfs-hanhart}]}
+  - {id: hosea-12-mt, work_id: hosea, witness_id: mt-hosea-bhs, locator: "Hosea 12", versification: english, citations: [{source_id: bhs-hosea, locator: "Hosea 12", witness_id: mt-hosea-bhs}]}
+  - {id: hosea-12-lxx, work_id: hosea, witness_id: lxx-hosea-rahlfs-hanhart, locator: "Hosea 12", corresponds_to: "Hosea 12", citations: [{source_id: rahlfs-hanhart-2006, locator: "Hosea 12", witness_id: lxx-hosea-rahlfs-hanhart}]}
+  - {id: hosea-13-mt, work_id: hosea, witness_id: mt-hosea-bhs, locator: "Hosea 13", versification: english, citations: [{source_id: bhs-hosea, locator: "Hosea 13", witness_id: mt-hosea-bhs}]}
+  - {id: hosea-13-lxx, work_id: hosea, witness_id: lxx-hosea-rahlfs-hanhart, locator: "Hosea 13", corresponds_to: "Hosea 13", citations: [{source_id: rahlfs-hanhart-2006, locator: "Hosea 13", witness_id: lxx-hosea-rahlfs-hanhart}]}
+  - {id: hosea-14-mt, work_id: hosea, witness_id: mt-hosea-bhs, locator: "Hosea 14", versification: english, citations: [{source_id: bhs-hosea, locator: "Hosea 14", witness_id: mt-hosea-bhs}]}
+  - {id: hosea-14-lxx, work_id: hosea, witness_id: lxx-hosea-rahlfs-hanhart, locator: "Hosea 14", corresponds_to: "Hosea 14", citations: [{source_id: rahlfs-hanhart-2006, locator: "Hosea 14", witness_id: lxx-hosea-rahlfs-hanhart}]}

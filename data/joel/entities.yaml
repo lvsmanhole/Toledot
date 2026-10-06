@@ -1,0 +1,5 @@
+schema_version: 1
+record_type: entities
+records:
+  - {id: joel-jol1, entity_type: human, primary_name: "Joel", classification: named_person, identity_status: named, aliases: [], gender: male, description: "A prophet of Judah and the author of the Book of Joel", tipnr_id: "Joel@Jol.1.1-Act", citations: [{source_id: bhs-joel, locator: "Joel 1:1", witness_id: mt-joel-bhs}, {source_id: tipnr-stepbible, locator: "Joel@Jol.1.1-Act"}]}
+  - {id: pethuel, entity_type: human, primary_name: "Pethuel", classification: named_person, identity_status: named, aliases: [], gender: male, description: "Father of the prophet Joel", tipnr_id: "Pethuel@Jol.1.1", citations: [{source_id: bhs-joel, locator: "Joel 1:1", witness_id: mt-joel-bhs}, {source_id: tipnr-stepbible, locator: "Pethuel@Jol.1.1"}]}

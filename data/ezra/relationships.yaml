@@ -1,0 +1,26 @@
+schema_version: 1
+record_type: relationships
+records:
+  - {id: darius-ezr4-parent-ahasuerus, relationship_type: parent, subject_id: darius-ezr4, object_id: ahasuerus, claim_ids: [], citations: [{source_id: bhs-ezra, locator: "Ezra 4:6", witness_id: mt-ezra-bhs}]}
+  - {id: jonathan-ezr8-parent-ebed-ezr8, relationship_type: parent, subject_id: jonathan-ezr8, object_id: ebed-ezr8, claim_ids: [], citations: [{source_id: bhs-ezra, locator: "Ezra 8:6", witness_id: mt-ezra-bhs}]}
+  - {id: phinehas-ezr8-parent-eleazar-ezr8, relationship_type: parent, subject_id: phinehas-ezr8, object_id: eleazar-ezr8, claim_ids: [], citations: [{source_id: bhs-ezra, locator: "Ezra 8:33", witness_id: mt-ezra-bhs}]}
+  - {id: zerahiah-ezr8-parent-eliehoenai-ezr8, relationship_type: parent, subject_id: zerahiah-ezr8, object_id: eliehoenai-ezr8, claim_ids: [], citations: [{source_id: bhs-ezra, locator: "Ezra 8:4", witness_id: mt-ezra-bhs}]}
+  - {id: seraiah-2ki25-ancestor-of-ezra-ezr7, relationship_type: ancestor, subject_id: seraiah-2ki25, object_id: ezra-ezr7, claim_ids: [], interpretation_note: "The text calls this person a son (or daughter) of the ancestor, but the narrative setting places the birth more than 60 years after the ancestor's death or last appearance, so the link is recorded as descent, not parenthood.", citations: [{source_id: bhs-ezra, locator: "Ezra 7:1", witness_id: mt-ezra-bhs}]}
+  - {id: ater-ezr2-parent-hezekiah-ezr2, relationship_type: parent, subject_id: ater-ezr2, object_id: hezekiah-ezr2, claim_ids: [], citations: [{source_id: bhs-ezra, locator: "Ezra 2:16", witness_id: mt-ezra-bhs}]}
+  - {id: tikvah-ezr10-parent-jahzeiah, relationship_type: parent, subject_id: tikvah-ezr10, object_id: jahzeiah, claim_ids: [], citations: [{source_id: bhs-ezra, locator: "Ezra 10:15", witness_id: mt-ezra-bhs}]}
+  - {id: eliashib-ezr10-6-parent-jehohanan-ezr10-6, relationship_type: parent, subject_id: eliashib-ezr10-6, object_id: jehohanan-ezr10-6, claim_ids: [], citations: [{source_id: bhs-ezra, locator: "Ezra 10:6", witness_id: mt-ezra-bhs}]}
+  - {id: athaliah-ezr8-parent-jeshaiah-ezr8-7, relationship_type: parent, subject_id: athaliah-ezr8, object_id: jeshaiah-ezr8-7, claim_ids: [], citations: [{source_id: bhs-ezra, locator: "Ezra 8:7", witness_id: mt-ezra-bhs}]}
+  - {id: jozadak-parent-jeshua-1ch24, relationship_type: parent, subject_id: jozadak, object_id: jeshua-1ch24, claim_ids: [], citations: [{source_id: bhs-ezra, locator: "Ezra 10:18", witness_id: mt-ezra-bhs}]}
+  - {id: pahath-moab-ezr2-parent-jeshua-ezr2-6, relationship_type: parent, subject_id: pahath-moab-ezr2, object_id: jeshua-ezr2-6, claim_ids: [], citations: [{source_id: bhs-ezra, locator: "Ezra 2:6", witness_id: mt-ezra-bhs}]}
+  - {id: pahath-moab-ezr2-parent-joab-ezr2, relationship_type: parent, subject_id: pahath-moab-ezr2, object_id: joab-ezr2, claim_ids: [], citations: [{source_id: bhs-ezra, locator: "Ezra 2:6", witness_id: mt-ezra-bhs}]}
+  - {id: hakkatan-parent-johanan-ezr8, relationship_type: parent, subject_id: hakkatan, object_id: johanan-ezr8, claim_ids: [], citations: [{source_id: bhs-ezra, locator: "Ezra 8:12", witness_id: mt-ezra-bhs}]}
+  - {id: asahel-ezr10-parent-jonathan-ezr10, relationship_type: parent, subject_id: asahel-ezr10, object_id: jonathan-ezr10, claim_ids: [], citations: [{source_id: bhs-ezra, locator: "Ezra 10:15", witness_id: mt-ezra-bhs}]}
+  - {id: jehozadak-parent-joshua-ezr2, relationship_type: parent, subject_id: jehozadak, object_id: joshua-ezr2, claim_ids: [], citations: [{source_id: bhs-ezra, locator: "Ezra 3:2", witness_id: mt-ezra-bhs}]}
+  - {id: jeshua-ezr8-parent-jozabad-ezr8, relationship_type: parent, subject_id: jeshua-ezr8, object_id: jozabad-ezr8, claim_ids: [], citations: [{source_id: bhs-ezra, locator: "Ezra 8:33", witness_id: mt-ezra-bhs}]}
+  - {id: uriah-ezr8-parent-meremoth-ezr8, relationship_type: parent, subject_id: uriah-ezr8, object_id: meremoth-ezr8, claim_ids: [], citations: [{source_id: bhs-ezra, locator: "Ezra 8:33", witness_id: mt-ezra-bhs}]}
+  - {id: binnui-ezr8-parent-noadiah-ezr8, relationship_type: parent, subject_id: binnui-ezr8, object_id: noadiah-ezr8, claim_ids: [], citations: [{source_id: bhs-ezra, locator: "Ezra 8:33", witness_id: mt-ezra-bhs}]}
+  - {id: jehiel-ezr8-parent-obadiah-ezr8, relationship_type: parent, subject_id: jehiel-ezr8, object_id: obadiah-ezr8, claim_ids: [], citations: [{source_id: bhs-ezra, locator: "Ezra 8:9", witness_id: mt-ezra-bhs}]}
+  - {id: jehiel-ezr10-parent-shecaniah-ezr10, relationship_type: parent, subject_id: jehiel-ezr10, object_id: shecaniah-ezr10, claim_ids: [], citations: [{source_id: bhs-ezra, locator: "Ezra 10:2", witness_id: mt-ezra-bhs}]}
+  - {id: josiphiah-parent-shelomith-ezr8, relationship_type: parent, subject_id: josiphiah, object_id: shelomith-ezr8, claim_ids: [], citations: [{source_id: bhs-ezra, locator: "Ezra 8:10", witness_id: mt-ezra-bhs}]}
+  - {id: michael-ezr8-parent-zebadiah-ezr8, relationship_type: parent, subject_id: michael-ezr8, object_id: zebadiah-ezr8, claim_ids: [], citations: [{source_id: bhs-ezra, locator: "Ezra 8:8", witness_id: mt-ezra-bhs}]}
+  - {id: bebai-ezr8-parent-zechariah-ezr8, relationship_type: parent, subject_id: bebai-ezr8, object_id: zechariah-ezr8, claim_ids: [], citations: [{source_id: bhs-ezra, locator: "Ezra 8:11", witness_id: mt-ezra-bhs}]}
