@@ -1,6 +1,6 @@
 # Bible Timeline data foundation
 
-This repository is the evidence-aware data pipeline for an immersive horizontal Bible chronology. The authored corpus covers every chapter from Genesis to Revelation (about 3,500 people) in the Masoretic and Septuagint traditions, with Geʽez witnesses for the Octateuch (Genesis–Ruth); it preserves textual variants instead of hiding them behind a single unexplained date. Every chapter's person inventory is cross-checked against the TIPNR proper-name index and guarded by regression tests (see `tools/ot_census/README.md`). Septuagint presence outside the Pentateuch is recorded at book level (grade C), and Geʽez name spellings are not yet verified reading by reading. The Septuagint deuterocanon, 1 Enoch, and Jubilees have a person census from public-domain translations (claims at confidence B); Meqabyan, Tegsats, Josippon, 4 Baruch, and the Ascension of Isaiah are book-level entries pending a citable edition. The New Testament (Matthew–Revelation, against NA28) has a person census with Gospel-parallel events and Herodian/Roman anchors. The immersive website is the remaining phase.
+This repository is the evidence-aware data pipeline for an immersive horizontal Bible chronology. The authored corpus covers every chapter from Genesis to Revelation (about 3,500 people) in the Masoretic and Septuagint traditions, with Geʽez witnesses for the Octateuch (Genesis–Ruth); it preserves textual variants instead of hiding them behind a single unexplained date. Every chapter's person inventory is cross-checked against the TIPNR proper-name index and guarded by regression tests (see `tools/ot_census/README.md`). Septuagint presence outside the Pentateuch is recorded at book level (grade C), and Geʽez name spellings are not yet verified reading by reading. The Septuagint deuterocanon, 1 Enoch, and Jubilees have a person census from public-domain translations (claims at confidence B); Meqabyan, Tegsats, Josippon, 4 Baruch, and the Ascension of Isaiah are book-level entries pending a citable edition. The New Testament (Matthew–Revelation, against NA28) has a person census with Gospel-parallel events and Herodian/Roman anchors. The `site/` folder holds the timeline website (Toledot) that reads a bundle generated from this data.
 
 ## Install and verify
 
@@ -20,6 +20,29 @@ py -3.11 -m bible_timeline report --output generated/reports
 ```
 
 The installed `bible-timeline` command accepts the same subcommands. `validate --strict` fails on semantic errors. Warnings remain reportable but nonfatal unless `--warnings-as-errors` is supplied.
+
+## Website
+
+`site/` is a static, dependency-free website (ES modules, canvas rendering). Generate its data bundle, then serve the folder over HTTP:
+
+```powershell
+py -3.11 -m bible_timeline site            # writes site/data/core.json and details.json
+py -3.11 -m http.server 8765 -d site       # open http://127.0.0.1:8765/
+node --test site/tests/layout.test.mjs     # unit tests for the layout helpers
+```
+
+`core.json` (about 0.8 MB) holds books and chapters, people with display years and grades, events, and family links. `details.json` (about 3.5 MB) holds claims, citations, witnesses, and sources, and loads after first paint. Display years are astronomical (1 BCE = 0). Every event says how its year was obtained: `dated_claim` (an explicit or anchored date), `participants` (within the years its participants are alive together, the youngest taken as an adult), or `chapter`. Lifespans resolved at grade E are drawn dashed and labelled as editorial estimates; synchronized lifespans are solid.
+
+The site offers:
+
+- a pan/zoom timeline (drag, Ctrl+scroll or pinch, and the keyboard: arrows, `+`/`-`, `0`, `[`/`]` to step through people, Enter for details);
+- book and chapter focus;
+- canon filters (Protestant, Rahlfs–Hanhart, Ethiopian), and a filter for text-anchored dates only;
+- search across names, aliases and descriptions;
+- person and event panels with claims, witnesses and family;
+- a Gospel-parallels table, a list view, and a method page.
+
+Selection and filters live in the URL hash, so every view can be linked. `site/data/` is generated and not committed.
 
 ## Authoritative and generated files
 

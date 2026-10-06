@@ -14,7 +14,7 @@ Workspace root:
 
 `C:\Users\tailo\Downloads\DFS\NFL Data\NFL 2025\tools\archive\Projects\Bible Project`
 
-This is currently a Python evidence-data pipeline, not a website. Authored source records are YAML under `data/`; schemas are under `schemas/`; the Python package is under `src/bible_timeline`; tests are under `tests/`; generated JSON/SQLite artifacts and audits are under `generated/`. README has install/verification/build commands. The roadmap is `docs/superpowers/plans/2026-10-05-genesis-to-revelation-roadmap.md`.
+This is a Python evidence-data pipeline plus a static website in `site/` (see README "Website"). Authored source records are YAML under `data/`; schemas are under `schemas/`; the Python package is under `src/bible_timeline`; tests are under `tests/`; generated JSON/SQLite artifacts and audits are under `generated/`. README has install/verification/build commands. The roadmap is `docs/superpowers/plans/2026-10-05-genesis-to-revelation-roadmap.md`.
 
 Canonical validation commands (Python 3.11):
 
@@ -88,12 +88,10 @@ git diff --check
 
 ## Immediate next work
 
-1. **The website (Phase E).** Build it as a consumer of `generated/`:
-   - a horizontal pan/zoom timeline with book navigation and search;
-   - detail panels for people and events;
-   - provenance by witness, with a visible distinction between grade-E windows and text-anchored dates;
-   - Gospel-parallel views;
-   - accessibility (keyboard, reduced motion, mobile).
+1. **Website follow-ups (Phase E is built: `site/`, data from `bible_timeline site`):**
+   - an evidence-supported versus reference-year overlap view;
+   - a chronology-model switcher once a second model exists;
+   - review of TIPNR "persons" that are angels (Michael, Gabriel), which currently draw as lifespans.
 2. **Data hardening as the site exposes needs:**
    - Greek and Geʽez name forms;
    - LXX verse-level presence;

@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Toledot — People of the Bible in Time</title>
+  <meta name="description" content="An evidence-aware timeline of every named and uniquely identifiable person in the Bible, Genesis to Revelation, with the deuterocanon and Ethiopian canon.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap">
+  <link rel="stylesheet" href="css/app.css">
+  <script type="module" src="js/main.js"></script>
+</head>
+<body>
+  <a class="skip" href="#timeline">Skip to timeline</a>
+  <header class="masthead">
+    <button class="icon-btn nav-toggle" id="nav-toggle" aria-controls="books" aria-expanded="false" title="Books">
+      <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M3 5h14M3 10h14M3 15h14"/></svg><span class="sr-only">Books</span>
+    </button>
+    <a class="brand" href="#/" aria-label="Toledot home">
+      <span class="brand-initial" aria-hidden="true">T</span><span class="brand-word">oledot</span>
+      <span class="brand-sub">people of the Bible, in time</span>
+    </a>
+    <div class="search" id="search">
+      <label class="sr-only" for="search-input">Search people</label>
+      <svg class="search-glyph" viewBox="0 0 20 20" aria-hidden="true"><circle cx="8.5" cy="8.5" r="5.5"/><path d="m13 13 4 4"/></svg>
+      <input id="search-input" type="search" placeholder="Search 3,500 people…" autocomplete="off" spellcheck="false"
+             role="combobox" aria-expanded="false" aria-controls="search-results" aria-autocomplete="list">
+      <kbd class="search-key" aria-hidden="true">/</kbd>
+      <ul id="search-results" role="listbox" aria-label="Matching people" hidden></ul>
+    </div>
+    <nav class="views" aria-label="Views">
+      <a href="#/" data-view="timeline">Timeline</a>
+      <a href="#/list" data-view="list">List</a>
+      <a href="#/parallels" data-view="parallels">Gospel parallels</a>
+      <a href="#/about" data-view="about">Method</a>
+    </nav>
+    <button class="icon-btn" id="theme-toggle" title="Colour theme">
+      <svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="6"/><path d="M10 4a6 6 0 0 1 0 12z" class="fill"/></svg>
+      <span class="sr-only">Toggle colour theme</span>
+    </button>
+  </header>
+
+  <div class="layout">
+    <aside class="books" id="books" aria-label="Books and filters">
+      <div class="filters">
+        <label class="field">
+          <span>Canon</span>
+          <select id="canon-select">
+            <option value="all">All books in the dataset</option>
+            <option value="protestant-66">Protestant · 66 books</option>
+            <option value="septuagint-rahlfs-hanhart">Septuagint · Rahlfs–Hanhart</option>
+            <option value="ethiopian-official-81">Ethiopian Orthodox · 81</option>
+          </select>
+        </label>
+        <label class="check">
+          <input type="checkbox" id="anchored-only">
+          <span>Only text-anchored dates</span>
+        </label>
+      </div>
+      <div class="book-list" id="book-list"></div>
+    </aside>
+
+    <main class="main" id="main">
+      <div class="focusbar" id="focusbar" hidden>
+        <span class="focus-label" id="focus-label"></span>
+        <button class="text-btn" id="focus-clear">Clear focus</button>
+      </div>
+
+      <section class="view view-timeline" id="view-timeline" aria-label="Timeline">
+        <canvas id="timeline" tabindex="0" role="application" aria-roledescription="timeline"
+                aria-label="Timeline of people" aria-describedby="timeline-help"></canvas>
+        <p class="sr-only" id="timeline-help">Arrow keys pan, plus and minus zoom, 0 fits everything.
+          Right and left bracket step through the people in view; Enter opens details. The List view shows the same people as a table.</p>
+        <div class="zoom" role="group" aria-label="Zoom">
+          <button class="icon-btn" id="zoom-in" title="Zoom in (+)"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 4v12M4 10h12"/></svg><span class="sr-only">Zoom in</span></button>
+          <button class="icon-btn" id="zoom-out" title="Zoom out (−)"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h12"/></svg><span class="sr-only">Zoom out</span></button>
+          <button class="icon-btn" id="zoom-fit" title="Fit all (0)"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M3 7V3h4M13 3h4v4M17 13v4h-4M7 17H3v-4"/></svg><span class="sr-only">Fit all</span></button>
+        </div>
+        <div class="legend" aria-label="Legend">
+          <span class="lg"><i class="lg-bar"></i>Dates synchronized with the text</span>
+          <span class="lg"><i class="lg-dash"></i>Editorial estimate (grade E)</span>
+          <span class="lg"><i class="lg-diamond is-filled"></i>Dated event</span>
+          <span class="lg"><i class="lg-diamond"></i>Placed event</span>
+          <span class="lg-hint">Drag to pan · Ctrl + scroll to zoom</span>
+          <span class="status" id="status"></span>
+        </div>
+        <div class="loading-state" id="loading">
+          <span class="loading-initial" aria-hidden="true">T</span>
+          <p>Gathering the generations…</p>
+        </div>
+      </section>
+
+      <section class="view view-list" id="view-list" aria-label="People list" hidden>
+        <div class="list-head">
+          <h2>People <span class="muted" id="list-count"></span></h2>
+          <p class="muted">The same people shown on the timeline, with the current canon, date and book filters, ordered by estimated birth.</p>
+        </div>
+        <table class="people-table">
+          <thead><tr><th scope="col">Name</th><th scope="col">Years</th><th scope="col">Dating</th><th scope="col">Description</th><th scope="col">First named in</th></tr></thead>
+          <tbody id="list-body"></tbody>
+        </table>
+        <button class="text-btn more" id="list-more" hidden>Show more</button>
+      </section>
+
+      <section class="view view-parallels" id="view-parallels" aria-label="Gospel parallels" hidden>
+        <div class="list-head">
+          <h2>Gospel parallels <span class="muted" id="parallels-count"></span></h2>
+          <p class="muted">Events narrated in more than one Gospel, with each Gospel's passage (NA28 versification). Choose an event for its people and citations.</p>
+        </div>
+        <div id="parallels-body"></div>
+      </section>
+
+      <section class="view view-about" id="view-about" aria-label="Method and sources" hidden>
+        <div class="prose" id="about-body"></div>
+      </section>
+    </main>
+
+    <aside class="panel" id="panel" aria-labelledby="panel-title" hidden>
+      <div class="panel-bar">
+        <button class="icon-btn" id="panel-close" title="Close (Esc)"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="m5 5 10 10M15 5 5 15"/></svg><span class="sr-only">Close details</span></button>
+      </div>
+      <div class="panel-body" id="panel-body"></div>
+    </aside>
+  </div>
+
+  <div class="tooltip" id="tooltip" hidden></div>
+  <div class="sr-only" id="live" aria-live="polite"></div>
+  <noscript><p class="noscript">This timeline needs JavaScript. The underlying data is published as JSON in the project repository.</p></noscript>
+</body>
+</html>

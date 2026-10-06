@@ -8,3 +8,5 @@ dist/
 generated/
 .superpowers/sdd/
 
+site/data/
+.gstack/

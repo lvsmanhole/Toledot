@@ -10,6 +10,7 @@ from .chronology import resolve_model
 from .loader import StructuralValidationError, load_dataset
 from .publish import publish_artifacts
 from .reports import write_reports
+from .site import write_site_bundle
 from .validation import validate_dataset
 
 
@@ -33,6 +34,10 @@ def _parser() -> argparse.ArgumentParser:
     report = subparsers.add_parser("report", help="write audit reports")
     report.add_argument("--output", type=Path, required=True)
     report.add_argument("--model", default="hybrid_reference")
+
+    site = subparsers.add_parser("site", help="write the website data bundle")
+    site.add_argument("--output", type=Path, default=PROJECT_ROOT / "site" / "data")
+    site.add_argument("--model", default="hybrid_reference")
     return parser
 
 
@@ -64,6 +69,9 @@ def main(argv: Sequence[str] | None = None) -> int:
     if args.command == "build":
         manifest = publish_artifacts(dataset, resolution, args.output)
         print(f"built {len(manifest.artifacts) + 1} artifacts in {args.output}")
+    elif args.command == "site":
+        write_site_bundle(dataset, resolution, args.output)
+        print(f"wrote site bundle in {args.output}")
     else:
         write_reports(dataset, resolution, args.output)
         print(f"wrote 4 reports in {args.output}")

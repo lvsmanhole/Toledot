@@ -99,12 +99,13 @@
 
 ### Phase E — Immersive website
 
-- [ ] Define the frontend architecture against final published data contracts.
-- [ ] Build a polished, responsive horizontal timeline with smooth pan/zoom, book navigation, chronology/model and canon filters, witness/provenance inspection, search, and person/event detail panels.
-- [ ] Distinguish evidence-supported overlap from reference-year overlap and visually mark grade-E estimates.
-- [ ] Add accessible keyboard/touch navigation, reduced-motion behavior, mobile layout, and user-guided discovery.
-- [ ] Test with representative dense regimes: Genesis genealogies, Kings/Chronicles overlap, Gospel parallel events, and Revelation symbolic/human layers.
-- [ ] Build and verify deployment artifacts and document contributor/source workflow.
+- [x] Define the frontend architecture against final published data contracts (`bible_timeline site` writes `site/data/core.json` + lazy `details.json`; static ES-module site in `site/`, canvas timeline, no build step).
+- [x] Build a responsive horizontal timeline with pan/zoom, book and chapter navigation, canon filters, witness/provenance inspection, search, and person/event detail panels. Only one chronology model (`hybrid_reference`) exists, so there is no model switcher yet.
+- [x] Visually mark grade-E estimates (dashed lives, open event diamonds, explicit basis text) and offer a text-anchored-only filter.
+- [ ] Distinguish evidence-supported overlap from reference-year overlap in the UI (the overlap API exists; no comparison view yet).
+- [x] Accessible keyboard/touch navigation (canvas keyboard stepping with live announcements, list view as the non-visual equivalent, combobox search), reduced-motion behavior, mobile drawer and bottom-sheet layout.
+- [x] Checked in a headless browser: Genesis genealogies, Genesis 22 focus, 2 Kings (anchored), Gospel parallels, Revelation, mobile, dark theme; no console errors.
+- [x] Document the build and serve workflow (README "Website"). Deployment is any static host serving `site/` after `bible_timeline site`.
 
 ## Slice acceptance checklist
 
