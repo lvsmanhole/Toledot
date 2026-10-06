@@ -1,0 +1,8 @@
+schema_version: 1
+record_type: events
+records:
+  - &ev {id: numbers-21-25-base-event, event_type: narrative, name: Moab plains events in Numbers 21-25, participants: [{entity_id: moses, role: leader}, {entity_id: israelites-exodus, role: community}], date_claim_ids: [], citations: [{source_id: rahlfs-hanhart-2006, locator: "Numbers 21-25", witness_id: lxx-numbers-rahlfs-hanhart}, {source_id: dillmann-octateuch-1853, locator: "Numeri 21-25", witness_id: geez-numbers-dillmann}, {source_id: bhs-numbers, locator: "Numbers 21-25", witness_id: mt-numbers-bhs}]}
+  - {<<: *ev, id: sihon-defeated, name: Israel defeats Sihon king of the Amorites, event_type: battle, participants: [{entity_id: moses, role: leader}, {entity_id: sihon-numbers, role: defeated king}, {entity_id: israelites-exodus, role: combatants}]}
+  - {<<: *ev, id: og-defeated, name: Israel defeats Og king of Bashan, event_type: battle, participants: [{entity_id: moses, role: leader}, {entity_id: og-numbers, role: defeated king}, {entity_id: israelites-exodus, role: combatants}]}
+  - {<<: *ev, id: balaam-and-balak-oracles, name: Balaam summoned by Balak and gives oracles over Israel, participants: [{entity_id: balaam-numbers, role: seer}, {entity_id: balak-numbers, role: Moabite king}, {entity_id: israelites-exodus, role: subject of oracles}]}
+  - {<<: *ev, id: phinehas-at-peor, name: Phinehas intervenes during the Peor crisis, event_type: crisis, participants: [{entity_id: phinehas, role: priest who intervenes}, {entity_id: zimri-numbers, role: Israelite man killed}, {entity_id: cozbi-numbers, role: Midianite woman killed}, {entity_id: israelites-exodus, role: community affected}]}

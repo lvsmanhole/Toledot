@@ -371,7 +371,7 @@ records:
   - {<<: *g36parent, id: shobal-parent-shepho, subject_id: shobal-horite, object_id: shepho-shobal}
   - {<<: *g36parent, id: shobal-parent-onam, subject_id: shobal-horite, object_id: onam-shobal}
   - {<<: *g36parent, id: zibeon-parent-aiah, subject_id: zibeon-horite, object_id: aiah-zibeon}
-  - {<<: *g36parent, id: anah-parent-dishon, subject_id: anah-horite, object_id: dishon-horite}
+  - {<<: *g36parent, id: anah-parent-dishon, subject_id: anah-horite, object_id: dishon-anah}
   - {<<: *g36parent, id: dishon-parent-hemdan, subject_id: dishon-horite, object_id: hemdan-dishon}
   - {<<: *g36parent, id: dishon-parent-eshban, subject_id: dishon-horite, object_id: eshban-dishon}
   - {<<: *g36parent, id: dishon-parent-ithran, subject_id: dishon-horite, object_id: ithran-dishon}

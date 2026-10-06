@@ -1,0 +1,8 @@
+schema_version: 1
+record_type: inventory_units
+records:
+  - &u {id: inv-num-21, work_id: numbers, locator: "Numbers 21", reviewed: true, passage_ids: [num-21-lxx, num-21-geez, num-21-mt], identified_entity_ids: [moses, aaron, israelites-exodus, sihon-numbers, og-numbers, king-of-arad, former-king-of-moab], event_ids: [sihon-defeated, og-defeated], no_individuals: false, citations: [{source_id: rahlfs-hanhart-2006, locator: "Numbers 21", witness_id: lxx-numbers-rahlfs-hanhart}, {source_id: dillmann-octateuch-1853, locator: "Numeri 21", witness_id: geez-numbers-dillmann}, {source_id: bhs-numbers, locator: "Numbers 21", witness_id: mt-numbers-bhs}]}
+  - {<<: *u, id: inv-num-22, locator: "Numbers 22", passage_ids: [num-22-lxx, num-22-geez, num-22-mt], identified_entity_ids: [moses, israelites-exodus, balaam-numbers, balak-numbers, zippor-balak, beor-balaam], event_ids: [balaam-and-balak-oracles]}
+  - {<<: *u, id: inv-num-23, locator: "Numbers 23", passage_ids: [num-23-lxx, num-23-geez, num-23-mt], identified_entity_ids: [balaam-numbers, balak-numbers, israelites-exodus], event_ids: [balaam-and-balak-oracles]}
+  - {<<: *u, id: inv-num-24, locator: "Numbers 24", passage_ids: [num-24-lxx, num-24-geez, num-24-mt], identified_entity_ids: [balaam-numbers, balak-numbers, israelites-exodus, beor-balaam], event_ids: [balaam-and-balak-oracles]}
+  - {<<: *u, id: inv-num-25, locator: "Numbers 25", passage_ids: [num-25-lxx, num-25-geez, num-25-mt], identified_entity_ids: [aaron, eleazar-aaron, phinehas, israelites-exodus, zimri-numbers, cozbi-numbers, moses, salu-simeon, zur-midian], event_ids: [phinehas-at-peor]}

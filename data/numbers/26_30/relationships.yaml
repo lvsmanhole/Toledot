@@ -1,0 +1,9 @@
+schema_version: 1
+record_type: relationships
+records:
+  - &parent {id: hepher-parent-zelophehad, relationship_type: parent, subject_id: hepher-zelophehad, object_id: zelophehad-numbers, claim_ids: [], citations: [{source_id: rahlfs-hanhart-2006, locator: "Numbers 26:33; 27:1", witness_id: lxx-numbers-rahlfs-hanhart}, {source_id: dillmann-octateuch-1853, locator: "Numeri 26:33; 27:1", witness_id: geez-numbers-dillmann}, {source_id: bhs-numbers, locator: "Numbers 26:33; 27:1", witness_id: mt-numbers-bhs}]}
+  - {<<: *parent, id: zelophehad-parent-mahlah, subject_id: zelophehad-numbers, object_id: mahlah-numbers}
+  - {<<: *parent, id: zelophehad-parent-noah, subject_id: zelophehad-numbers, object_id: noah-zelophehad}
+  - {<<: *parent, id: zelophehad-parent-hoglah, subject_id: zelophehad-numbers, object_id: hoglah-numbers}
+  - {<<: *parent, id: zelophehad-parent-milcah, subject_id: zelophehad-numbers, object_id: milcah-zelophehad}
+  - {<<: *parent, id: zelophehad-parent-tirzah, subject_id: zelophehad-numbers, object_id: tirzah-numbers}

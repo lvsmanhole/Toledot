@@ -41,12 +41,21 @@
   - [x] Leviticus 1–10: offerings, priestly service, Aaronide consecration, and deaths of Nadab and Abihu.
   - [x] Leviticus 11–16: purity rules and Day of Atonement instructions reviewed.
   - [x] Leviticus 17–27: blood and holiness laws, festivals, land/Jubilee rules, blasphemy case, vows, and tithes reviewed.
-- [ ] Numbers 1–36: census lists, wilderness generation, named and unnamed persons, tribal/family relations, age/death claims.
+- [x] Numbers 1–36: census lists, wilderness generation, named and uniquely identifiable unnamed persons, tribal/family relations, age/death claims. Person-level regression tests (`tests/test_numbers_census_regressions.py`) fail if a reviewed name drops out of a chapter inventory.
   - [x] Numbers 1–4: first census and camp order, 12 named tribal officers and fathers, Levitical family census, transport assignments, explicit 603,550 total, and LXX/MT Levite-service age difference.
   - [x] Numbers 5–10: camp purity/restitution, Nazirite vow, Aaronic blessing, tribal offerings, Levite consecration, Passover/cloud, trumpet signals, march order, Hobab, and Sinai departure date.
   - [x] Numbers 11–15: elders, Eldad/Medad, Miriam, scout mission and Caleb, wilderness sentence, and Numbers 15 instructions; undated lifespans are clearly grade-E windows.
   - [x] Numbers 16–20: Korah's rebellion (distinct from Esau's Korah), Aaron's staff, priestly duties, red-heifer purification, Meribah, and Miriam/Aaron's deaths.
+  - [x] Numbers 21–25: Transjordan conflicts, Sihon and Og, Balaam and Balak, Moab plains oracles, and the Peor crisis.
+  - [x] Numbers 26–30: second census, Zelophehad's daughters and inheritance petition, Joshua's succession, festival offerings, and vow instructions.
+  - [x] Numbers 31–36: Midian campaign/Balaam's death, Transjordan allotments, Aaron's relative death date and age, land/city instructions, and Zelophehad inheritance sequel.
+  - [x] Completeness review (2026-10-06): the twelve spies and their fathers (Num 13); Peleth and Eliab of Reuben (Num 16); the king of Arad and the former king of Moab (Num 21); Beor (Num 22, 24, 31); Salu and Zur as Cozbi's father (Num 25); the full second-census clan list with Gilead's and Ephraim's clans (Num 26); Nun; the Numbers 34 fathers' lifespans; unnamed but unique individuals (Num 11:27, 12:1, 15:32-36, 20:14). Aaron was removed from Numbers 11 and 28–29, where the text does not name him.
+  - [x] Numbers 26 vs Genesis 46 spelling variants (Nemuel/Jemuel, Zerah/Zohar, Zephon/Ziphion, Ozni/Ezbon, Arod/Arodi, Puvah/Puah, Shuham/Hushim, Ahiram/Ehi, Shephupham/Muppim, Hupham/Huppim) kept as aliases with grade-C editorial identity claims; conflicting genealogies (Ard/Naaman under Bela vs Benjamin; Jochebed "daughter of Levi") are recorded as claims, not merged parent links.
+  - [ ] Open: Septuagint/Geʽez locators for the Numbers 26 clan list are chapter-level because the Greek order and verse numbers differ; the Septuagint omission of Becher (Num 26:35) and the LXX addition of Eleazar in Num 36:1 need checking against the printed editions; Agag in Balaam's oracle (Num 24:7) is not yet modeled.
 - [ ] Deuteronomy 1–34: speeches, named/unnamed people, Moses' age and death, variant witnesses.
+
+- [ ] Corpus-wide: Geʽez claims cite Dillmann locators but spellings have not been checked reading by reading; add verified Geʽez name forms before presenting them in the UI.
+- [x] Corpus-wide integrity guards (2026-10-06): no alias may leak between differently named people (fixed "Roubin" on all of Jacob's sons); every parent must be at least 12 and alive at a child's display birth (62 Genesis/Exodus/Numbers placements re-chained by disclosed 30-year editorial generations); the two Horite Dishons (Gen 36:21, 36:25) are now distinct.
 
 ### Phase B — Settlement and united/divided monarchy
 

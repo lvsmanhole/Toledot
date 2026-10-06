@@ -1,0 +1,28 @@
+schema_version: 1
+record_type: entities
+records:
+  - &king {id: evi-midian, primary_name: Evi, entity_type: human, classification: named_person, identity_status: named, aliases: [], gender: male, citations: [{source_id: rahlfs-hanhart-2006, locator: "Numbers 31:8", witness_id: lxx-numbers-rahlfs-hanhart}, {source_id: dillmann-octateuch-1853, locator: "Numeri 31:8", witness_id: geez-numbers-dillmann}, {source_id: bhs-numbers, locator: "Numbers 31:8", witness_id: mt-numbers-bhs}]}
+  - {<<: *king, id: rekem-midian, primary_name: Rekem}
+  - {<<: *king, id: zur-midian, primary_name: Zur}
+  - {<<: *king, id: hur-midian, primary_name: Hur}
+  - {<<: *king, id: reba-midian, primary_name: Reba}
+  - &land_leader {id: shemuel-land-allotment, primary_name: Shemuel, entity_type: human, classification: named_person, identity_status: named, aliases: [Salamiël (LXX)], gender: male, citations: [{source_id: rahlfs-hanhart-2006, locator: "Numbers 34:20", witness_id: lxx-numbers-rahlfs-hanhart}, {source_id: dillmann-octateuch-1853, locator: "Numeri 34:20", witness_id: geez-numbers-dillmann}, {source_id: bhs-numbers, locator: "Numbers 34:20", witness_id: mt-numbers-bhs}]}
+  - {<<: *land_leader, id: elidad-land-allotment, primary_name: Elidad, aliases: [Eldad (LXX)]}
+  - {<<: *land_leader, id: bukki-land-allotment, primary_name: Bukki, aliases: [Bakchir (LXX)]}
+  - {<<: *land_leader, id: hanniel-land-allotment, primary_name: Hanniel, aliases: [Aniel (LXX)]}
+  - {<<: *land_leader, id: kemuel-land-allotment, primary_name: Kemuel, aliases: [Kamouel (LXX)]}
+  - {<<: *land_leader, id: elizaphan-land-allotment, primary_name: Elizaphan, aliases: [Elizaphan (LXX)]}
+  - {<<: *land_leader, id: paltiel-land-allotment, primary_name: Paltiel, aliases: [Paltiel (LXX)]}
+  - {<<: *land_leader, id: ahihud-land-allotment, primary_name: Ahihud, aliases: [Achior (LXX)]}
+  - {<<: *land_leader, id: pedahel-land-allotment, primary_name: Pedahel, aliases: [Phadael (LXX)]}
+  - {<<: *land_leader, id: ammihud-simeon, primary_name: Ammihud, aliases: [Emioud (LXX)]}
+  - {<<: *land_leader, id: kislon-land, primary_name: Kislon, aliases: [Chaslon (LXX)]}
+  - {<<: *land_leader, id: jogli-land, primary_name: Jogli, aliases: [Egli (LXX)]}
+  - {<<: *land_leader, id: ephod-land, primary_name: Ephod, aliases: [Ouphi (LXX)]}
+  - {<<: *land_leader, id: shiphtan-land, primary_name: Shiphtan, aliases: [Sabatha (LXX)]}
+  - {<<: *land_leader, id: parnach-land, primary_name: Parnach, aliases: [Pharnach (LXX)]}
+  - {<<: *land_leader, id: azzan-land, primary_name: Azzan, aliases: [Oza (LXX)]}
+  - {<<: *land_leader, id: shelomi-land, primary_name: Shelomi, aliases: [Selemi (LXX)]}
+  - {<<: *land_leader, id: ammihud-naphtali, primary_name: Ammihud, aliases: [Benaamioud (LXX)]}
+  - {id: jair-manasseh, primary_name: Jair, entity_type: human, classification: named_person, identity_status: named, aliases: [], gender: male, citations: [{source_id: rahlfs-hanhart-2006, locator: "Numbers 32:41", witness_id: lxx-numbers-rahlfs-hanhart}, {source_id: dillmann-octateuch-1853, locator: "Numeri 32:41", witness_id: geez-numbers-dillmann}, {source_id: bhs-numbers, locator: "Numbers 32:41", witness_id: mt-numbers-bhs}]}
+  - {id: nobah-gilead, primary_name: Nobah, entity_type: human, classification: named_person, identity_status: named, aliases: [], gender: male, citations: [{source_id: rahlfs-hanhart-2006, locator: "Numbers 32:42", witness_id: lxx-numbers-rahlfs-hanhart}, {source_id: dillmann-octateuch-1853, locator: "Numeri 32:42", witness_id: geez-numbers-dillmann}, {source_id: bhs-numbers, locator: "Numbers 32:42", witness_id: mt-numbers-bhs}]}

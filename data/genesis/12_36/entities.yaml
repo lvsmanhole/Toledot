@@ -341,9 +341,11 @@ records:
   - <<: *jacob_child
     id: simeon
     primary_name: Simeon
+    aliases: [Symeon]
   - <<: *jacob_child
     id: levi
     primary_name: Levi
+    aliases: [Leui]
   - <<: *jacob_child
     id: judah
     primary_name: Judah
@@ -351,31 +353,40 @@ records:
   - <<: *jacob_child
     id: dan
     primary_name: Dan
+    aliases: [Dan]
   - <<: *jacob_child
     id: naphtali
     primary_name: Naphtali
+    aliases: [Nephthali]
   - <<: *jacob_child
     id: gad
     primary_name: Gad
+    aliases: [Gad]
   - <<: *jacob_child
     id: asher
     primary_name: Asher
+    aliases: [Aser]
   - <<: *jacob_child
     id: issachar
     primary_name: Issachar
+    aliases: [Issachar]
   - <<: *jacob_child
     id: zebulun
     primary_name: Zebulun
+    aliases: [Zaboulon]
   - <<: *jacob_child
     id: dinah
     primary_name: Dinah
+    aliases: [Dina]
     gender: female
   - <<: *jacob_child
     id: joseph
     primary_name: Joseph
+    aliases: [Ioseph]
   - <<: *jacob_child
     id: benjamin
     primary_name: Benjamin
+    aliases: [Beniamin]
   - <<: *human
     id: hamor
     primary_name: Hamor
@@ -476,6 +487,7 @@ records:
   - {<<: *g36person, id: zibeon-horite, primary_name: Zibeon}
   - {<<: *g36person, id: anah-horite, primary_name: Anah}
   - {<<: *g36person, id: dishon-horite, primary_name: Dishon}
+  - {<<: *g36person, id: dishon-anah, primary_name: Dishon son of Anah, aliases: [Dishon], description: "Son of Anah the Horite (Genesis 36:25); kept distinct from Dishon son of Seir (Genesis 36:21)."}
   - {<<: *g36person, id: ezer-horite, primary_name: Ezer}
   - {<<: *g36person, id: dishan-horite, primary_name: Dishan}
   - {<<: *g36person, id: hori-lotan, primary_name: Hori}

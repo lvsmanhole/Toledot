@@ -1,0 +1,4 @@
+schema_version: 1
+record_type: relationships
+records:
+  - {id: zippor-parent-balak, relationship_type: parent, subject_id: zippor-balak, object_id: balak-numbers, claim_ids: [zippor-attested-lxx, zippor-attested-geez, zippor-attested-mt], citations: [{source_id: rahlfs-hanhart-2006, locator: "Numbers 22:2", witness_id: lxx-numbers-rahlfs-hanhart}, {source_id: dillmann-octateuch-1853, locator: "Numeri 22:2", witness_id: geez-numbers-dillmann}, {source_id: bhs-numbers, locator: "Numbers 22:2", witness_id: mt-numbers-bhs}]}

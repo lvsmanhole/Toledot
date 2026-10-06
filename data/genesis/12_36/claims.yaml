@@ -407,6 +407,7 @@ records:
   - {<<: *g36att, id: zibeon-horite-attested, subject_id: zibeon-horite}
   - {<<: *g36att, id: anah-horite-attested, subject_id: anah-horite}
   - {<<: *g36att, id: dishon-horite-attested, subject_id: dishon-horite}
+  - {<<: *g36att, id: dishon-anah-attested, subject_id: dishon-anah}
   - {<<: *g36att, id: ezer-horite-attested, subject_id: ezer-horite}
   - {<<: *g36att, id: dishan-horite-attested, subject_id: dishan-horite}
   - {<<: *g36att, id: hori-lotan-attested, subject_id: hori-lotan}

@@ -206,6 +206,183 @@ records:
       - {id: numbers-abiram-death, operation: literal, year: {era: BCE, year: 1450}}
       - {id: numbers-on-birth, operation: literal, year: {era: BCE, year: 1510}}
       - {id: numbers-on-death, operation: literal, year: {era: BCE, year: 1450}}
+      - {id: numbers-sihon-birth, operation: literal, year: {era: BCE, year: 1480}}
+      - {id: numbers-sihon-death, operation: literal, year: {era: BCE, year: 1400}}
+      - {id: numbers-og-birth, operation: literal, year: {era: BCE, year: 1480}}
+      - {id: numbers-og-death, operation: literal, year: {era: BCE, year: 1400}}
+      - {id: numbers-balaam-birth, operation: literal, year: {era: BCE, year: 1500}}
+      - {id: numbers-balaam-death, operation: literal, year: {era: BCE, year: 1410}}
+      - {id: numbers-midian-king-birth, operation: literal, year: {era: BCE, year: 1480}}
+      - {id: numbers-midian-king-death, operation: literal, year: {era: BCE, year: 1410}}
+      - {id: numbers-balak-birth, operation: literal, year: {era: BCE, year: 1460}}
+      - {id: numbers-balak-death, operation: literal, year: {era: BCE, year: 1380}}
+      - {id: numbers-zippor-birth, operation: literal, year: {era: BCE, year: 1500}}
+      - {id: numbers-zippor-death, operation: literal, year: {era: BCE, year: 1400}}
+      - {id: numbers-zimri-birth, operation: literal, year: {era: BCE, year: 1480}}
+      - {id: numbers-zimri-death, operation: literal, year: {era: BCE, year: 1410}}
+      - {id: numbers-cozbi-birth, operation: literal, year: {era: BCE, year: 1480}}
+      - {id: numbers-cozbi-death, operation: literal, year: {era: BCE, year: 1410}}
+      - {id: numbers-hepher-birth, operation: literal, year: {era: BCE, year: 1590}}
+      - {id: numbers-hepher-death, operation: literal, year: {era: BCE, year: 1510}}
+      - {id: numbers-zelophehad-birth, operation: literal, year: {era: BCE, year: 1540}}
+      - {id: numbers-zelophehad-death, operation: literal, year: {era: BCE, year: 1470}}
+      - {id: numbers-daughters-birth, operation: literal, year: {era: BCE, year: 1500}}
+      - {id: numbers-daughters-death, operation: literal, year: {era: BCE, year: 1400}}
+      - {id: gen-abida-birth, operation: offset_years, input_id: abraham-descendant-birth, offset_years: 30}
+      - {id: gen-abida-death, operation: offset_years, input_id: gen-abida-birth, offset_years: 200}
+      - {id: gen-amalek-birth, operation: offset_years, input_id: jacob-children-birth, offset_years: 30}
+      - {id: gen-amalek-death, operation: offset_years, input_id: gen-amalek-birth, offset_years: 200}
+      - {id: gen-anah-horite-birth, operation: offset_years, input_id: genesis36-display-birth, offset_years: 30}
+      - {id: gen-anah-horite-death, operation: offset_years, input_id: gen-anah-horite-birth, offset_years: 300}
+      - {id: gen-bethuel-birth, operation: offset_years, input_id: nahor-brother-birth, offset_years: 30}
+      - {id: gen-bethuel-death, operation: offset_years, input_id: gen-bethuel-birth, offset_years: 200}
+      - {id: gen-dedan-jokshan-birth, operation: offset_years, input_id: abraham-descendant-birth, offset_years: 30}
+      - {id: gen-dedan-jokshan-death, operation: offset_years, input_id: gen-dedan-jokshan-birth, offset_years: 200}
+      - {id: gen-dishan-horite-birth, operation: offset_years, input_id: genesis36-display-birth, offset_years: 30}
+      - {id: gen-dishan-horite-death, operation: offset_years, input_id: gen-dishan-horite-birth, offset_years: 300}
+      - {id: gen-dishon-horite-birth, operation: offset_years, input_id: genesis36-display-birth, offset_years: 30}
+      - {id: gen-dishon-horite-death, operation: offset_years, input_id: gen-dishon-horite-birth, offset_years: 300}
+      - {id: gen-eldaah-birth, operation: offset_years, input_id: abraham-descendant-birth, offset_years: 30}
+      - {id: gen-eldaah-death, operation: offset_years, input_id: gen-eldaah-birth, offset_years: 200}
+      - {id: gen-enoch-cain-birth, operation: offset_years, input_id: cainite-line-birth, offset_years: 30}
+      - {id: gen-enoch-cain-death, operation: offset_years, input_id: gen-enoch-cain-birth, offset_years: 900}
+      - {id: gen-ephah-birth, operation: offset_years, input_id: abraham-descendant-birth, offset_years: 30}
+      - {id: gen-ephah-death, operation: offset_years, input_id: gen-ephah-birth, offset_years: 200}
+      - {id: gen-epher-birth, operation: offset_years, input_id: abraham-descendant-birth, offset_years: 30}
+      - {id: gen-epher-death, operation: offset_years, input_id: gen-epher-birth, offset_years: 200}
+      - {id: gen-ephraim-birth, operation: offset_years, input_id: joseph-birth, offset_years: 36}
+      - {id: gen-ephraim-death, operation: offset_years, input_id: gen-ephraim-birth, offset_years: 200}
+      - {id: gen-ezer-horite-birth, operation: offset_years, input_id: genesis36-display-birth, offset_years: 30}
+      - {id: gen-ezer-horite-death, operation: offset_years, input_id: gen-ezer-horite-birth, offset_years: 300}
+      - {id: gen-gatam-birth, operation: offset_years, input_id: jacob-children-birth, offset_years: 30}
+      - {id: gen-gatam-death, operation: offset_years, input_id: gen-gatam-birth, offset_years: 200}
+      - {id: gen-gershom-birth, operation: offset_years, input_id: exodus-zipporah-birth, offset_years: 30}
+      - {id: gen-gershom-death, operation: offset_years, input_id: gen-gershom-birth, offset_years: 88}
+      - {id: gen-hanoch-midian-birth, operation: offset_years, input_id: abraham-descendant-birth, offset_years: 30}
+      - {id: gen-hanoch-midian-death, operation: offset_years, input_id: gen-hanoch-midian-birth, offset_years: 200}
+      - {id: gen-iscah-birth, operation: offset_years, input_id: haran-birth, offset_years: 30}
+      - {id: gen-iscah-death, operation: offset_years, input_id: gen-iscah-birth, offset_years: 200}
+      - {id: gen-joktan-birth, operation: offset_years, input_id: eber-birth, offset_years: 30}
+      - {id: gen-joktan-death, operation: offset_years, input_id: gen-joktan-birth, offset_years: 200}
+      - {id: gen-kenaz-esau-birth, operation: offset_years, input_id: jacob-children-birth, offset_years: 30}
+      - {id: gen-kenaz-esau-death, operation: offset_years, input_id: gen-kenaz-esau-birth, offset_years: 200}
+      - {id: gen-lotan-horite-birth, operation: offset_years, input_id: genesis36-display-birth, offset_years: 30}
+      - {id: gen-lotan-horite-death, operation: offset_years, input_id: gen-lotan-horite-birth, offset_years: 300}
+      - {id: gen-asenath-birth, operation: offset_years, input_id: joseph-birth, offset_years: 10}
+      - {id: gen-asenath-death, operation: offset_years, input_id: gen-asenath-birth, offset_years: 200}
+      - {id: gen-manasseh-birth, operation: offset_years, input_id: joseph-birth, offset_years: 35}
+      - {id: gen-manasseh-death, operation: offset_years, input_id: gen-manasseh-birth, offset_years: 200}
+      - {id: gen-mizzah-birth, operation: offset_years, input_id: jacob-children-birth, offset_years: 30}
+      - {id: gen-mizzah-death, operation: offset_years, input_id: gen-mizzah-birth, offset_years: 200}
+      - {id: gen-moses-son-circumcised-birth, operation: offset_years, input_id: exodus-zipporah-birth, offset_years: 30}
+      - {id: gen-moses-son-circumcised-death, operation: offset_years, input_id: gen-moses-son-circumcised-birth, offset_years: 100}
+      - {id: gen-nahath-birth, operation: offset_years, input_id: jacob-children-birth, offset_years: 30}
+      - {id: gen-nahath-death, operation: offset_years, input_id: gen-nahath-birth, offset_years: 200}
+      - {id: gen-omar-birth, operation: offset_years, input_id: jacob-children-birth, offset_years: 30}
+      - {id: gen-omar-death, operation: offset_years, input_id: gen-omar-birth, offset_years: 200}
+      - {id: gen-perez-birth, operation: offset_years, input_id: joseph-cycle-adult-birth, offset_years: 30}
+      - {id: gen-perez-death, operation: offset_years, input_id: gen-perez-birth, offset_years: 200}
+      - {id: gen-shammah-birth, operation: offset_years, input_id: jacob-children-birth, offset_years: 30}
+      - {id: gen-shammah-death, operation: offset_years, input_id: gen-shammah-birth, offset_years: 200}
+      - {id: gen-sheba-jokshan-birth, operation: offset_years, input_id: abraham-descendant-birth, offset_years: 30}
+      - {id: gen-sheba-jokshan-death, operation: offset_years, input_id: gen-sheba-jokshan-birth, offset_years: 200}
+      - {id: gen-shobal-horite-birth, operation: offset_years, input_id: genesis36-display-birth, offset_years: 30}
+      - {id: gen-shobal-horite-death, operation: offset_years, input_id: gen-shobal-horite-birth, offset_years: 300}
+      - {id: gen-teman-birth, operation: offset_years, input_id: jacob-children-birth, offset_years: 30}
+      - {id: gen-teman-death, operation: offset_years, input_id: gen-teman-birth, offset_years: 200}
+      - {id: gen-uri-bezalel-birth, operation: offset_years, input_id: exodus-artisan-parent-birth, offset_years: 30}
+      - {id: gen-uri-bezalel-death, operation: offset_years, input_id: gen-uri-bezalel-birth, offset_years: 100}
+      - {id: gen-zepho-birth, operation: offset_years, input_id: jacob-children-birth, offset_years: 30}
+      - {id: gen-zepho-death, operation: offset_years, input_id: gen-zepho-birth, offset_years: 200}
+      - {id: gen-zerah-esau-birth, operation: offset_years, input_id: jacob-children-birth, offset_years: 30}
+      - {id: gen-zerah-esau-death, operation: offset_years, input_id: gen-zerah-esau-birth, offset_years: 200}
+      - {id: gen-zerah-judah-birth, operation: offset_years, input_id: joseph-cycle-adult-birth, offset_years: 30}
+      - {id: gen-zerah-judah-death, operation: offset_years, input_id: gen-zerah-judah-birth, offset_years: 200}
+      - {id: gen-zibeon-horite-birth, operation: offset_years, input_id: genesis36-display-birth, offset_years: 30}
+      - {id: gen-zibeon-horite-death, operation: offset_years, input_id: gen-zibeon-horite-birth, offset_years: 300}
+      - {id: gen-aiah-zibeon-birth, operation: offset_years, input_id: gen-zibeon-horite-birth, offset_years: 30}
+      - {id: gen-aiah-zibeon-death, operation: offset_years, input_id: gen-aiah-zibeon-birth, offset_years: 300}
+      - {id: gen-akan-ezer-birth, operation: offset_years, input_id: gen-ezer-horite-birth, offset_years: 30}
+      - {id: gen-akan-ezer-death, operation: offset_years, input_id: gen-akan-ezer-birth, offset_years: 300}
+      - {id: gen-alvan-shobal-birth, operation: offset_years, input_id: gen-shobal-horite-birth, offset_years: 30}
+      - {id: gen-alvan-shobal-death, operation: offset_years, input_id: gen-alvan-shobal-birth, offset_years: 300}
+      - {id: gen-aran-dishan-birth, operation: offset_years, input_id: gen-dishan-horite-birth, offset_years: 30}
+      - {id: gen-aran-dishan-death, operation: offset_years, input_id: gen-aran-dishan-birth, offset_years: 300}
+      - {id: gen-bilhan-ezer-birth, operation: offset_years, input_id: gen-ezer-horite-birth, offset_years: 30}
+      - {id: gen-bilhan-ezer-death, operation: offset_years, input_id: gen-bilhan-ezer-birth, offset_years: 300}
+      - {id: gen-cheran-dishon-birth, operation: offset_years, input_id: gen-dishon-horite-birth, offset_years: 30}
+      - {id: gen-cheran-dishon-death, operation: offset_years, input_id: gen-cheran-dishon-birth, offset_years: 300}
+      - {id: gen-dishon-anah-birth, operation: offset_years, input_id: gen-anah-horite-birth, offset_years: 30}
+      - {id: gen-dishon-anah-death, operation: offset_years, input_id: gen-dishon-anah-birth, offset_years: 300}
+      - {id: gen-ebal-shobal-birth, operation: offset_years, input_id: gen-shobal-horite-birth, offset_years: 30}
+      - {id: gen-ebal-shobal-death, operation: offset_years, input_id: gen-ebal-shobal-birth, offset_years: 300}
+      - {id: gen-eshban-dishon-birth, operation: offset_years, input_id: gen-dishon-horite-birth, offset_years: 30}
+      - {id: gen-eshban-dishon-death, operation: offset_years, input_id: gen-eshban-dishon-birth, offset_years: 300}
+      - {id: gen-hemam-lotan-birth, operation: offset_years, input_id: gen-lotan-horite-birth, offset_years: 30}
+      - {id: gen-hemam-lotan-death, operation: offset_years, input_id: gen-hemam-lotan-birth, offset_years: 300}
+      - {id: gen-hemdan-dishon-birth, operation: offset_years, input_id: gen-dishon-horite-birth, offset_years: 30}
+      - {id: gen-hemdan-dishon-death, operation: offset_years, input_id: gen-hemdan-dishon-birth, offset_years: 300}
+      - {id: gen-hori-lotan-birth, operation: offset_years, input_id: gen-lotan-horite-birth, offset_years: 30}
+      - {id: gen-hori-lotan-death, operation: offset_years, input_id: gen-hori-lotan-birth, offset_years: 300}
+      - {id: gen-irad-birth, operation: offset_years, input_id: gen-enoch-cain-birth, offset_years: 30}
+      - {id: gen-irad-death, operation: offset_years, input_id: gen-irad-birth, offset_years: 900}
+      - {id: gen-ithran-dishon-birth, operation: offset_years, input_id: gen-dishon-horite-birth, offset_years: 30}
+      - {id: gen-ithran-dishon-death, operation: offset_years, input_id: gen-ithran-dishon-birth, offset_years: 300}
+      - {id: gen-machir-birth, operation: offset_years, input_id: gen-manasseh-birth, offset_years: 30}
+      - {id: gen-machir-death, operation: offset_years, input_id: gen-machir-birth, offset_years: 200}
+      - {id: gen-manahath-shobal-birth, operation: offset_years, input_id: gen-shobal-horite-birth, offset_years: 30}
+      - {id: gen-manahath-shobal-death, operation: offset_years, input_id: gen-manahath-shobal-birth, offset_years: 300}
+      - {id: gen-onam-shobal-birth, operation: offset_years, input_id: gen-shobal-horite-birth, offset_years: 30}
+      - {id: gen-onam-shobal-death, operation: offset_years, input_id: gen-onam-shobal-birth, offset_years: 300}
+      - {id: gen-shepho-shobal-birth, operation: offset_years, input_id: gen-shobal-horite-birth, offset_years: 30}
+      - {id: gen-shepho-shobal-death, operation: offset_years, input_id: gen-shepho-shobal-birth, offset_years: 300}
+      - {id: gen-uz-dishan-birth, operation: offset_years, input_id: gen-dishan-horite-birth, offset_years: 30}
+      - {id: gen-uz-dishan-death, operation: offset_years, input_id: gen-uz-dishan-birth, offset_years: 300}
+      - {id: gen-zaavan-ezer-birth, operation: offset_years, input_id: gen-ezer-horite-birth, offset_years: 30}
+      - {id: gen-zaavan-ezer-death, operation: offset_years, input_id: gen-zaavan-ezer-birth, offset_years: 300}
+      - {id: gen-mehujael-birth, operation: offset_years, input_id: gen-irad-birth, offset_years: 30}
+      - {id: gen-mehujael-death, operation: offset_years, input_id: gen-mehujael-birth, offset_years: 900}
+      - {id: gen-methushael-birth, operation: offset_years, input_id: gen-mehujael-birth, offset_years: 30}
+      - {id: gen-methushael-death, operation: offset_years, input_id: gen-methushael-birth, offset_years: 900}
+      - {id: gen-lamech-cain-birth, operation: offset_years, input_id: gen-methushael-birth, offset_years: 30}
+      - {id: gen-lamech-cain-death, operation: offset_years, input_id: gen-lamech-cain-birth, offset_years: 900}
+      - {id: gen-jabal-birth, operation: offset_years, input_id: gen-lamech-cain-birth, offset_years: 30}
+      - {id: gen-jabal-death, operation: offset_years, input_id: gen-jabal-birth, offset_years: 900}
+      - {id: gen-jubal-birth, operation: offset_years, input_id: gen-lamech-cain-birth, offset_years: 30}
+      - {id: gen-jubal-death, operation: offset_years, input_id: gen-jubal-birth, offset_years: 900}
+      - {id: gen-naamah-birth, operation: offset_years, input_id: gen-lamech-cain-birth, offset_years: 30}
+      - {id: gen-naamah-death, operation: offset_years, input_id: gen-naamah-birth, offset_years: 900}
+      - {id: gen-tubal-cain-birth, operation: offset_years, input_id: gen-lamech-cain-birth, offset_years: 30}
+      - {id: gen-tubal-cain-death, operation: offset_years, input_id: gen-tubal-cain-birth, offset_years: 900}
+      - {id: numbers-eliab-reuben-birth, operation: literal, year: {era: BCE, year: 1560}}
+      - {id: numbers-eliab-reuben-death, operation: literal, year: {era: BCE, year: 1480}}
+      - {id: numbers-gilead-birth, operation: offset_years, input_id: gen-machir-birth, offset_years: 30}
+      - {id: numbers-gilead-death, operation: offset_years, input_id: numbers-gilead-birth, offset_years: 200}
+      - {id: numbers-shuthelah-ephraim-birth, operation: offset_years, input_id: gen-ephraim-birth, offset_years: 30}
+      - {id: numbers-shuthelah-ephraim-death, operation: offset_years, input_id: numbers-shuthelah-ephraim-birth, offset_years: 100}
+      - {id: numbers-tahan-ephraim-birth, operation: offset_years, input_id: gen-ephraim-birth, offset_years: 30}
+      - {id: numbers-tahan-ephraim-death, operation: offset_years, input_id: numbers-tahan-ephraim-birth, offset_years: 100}
+      - {id: numbers-becher-ephraim-birth, operation: offset_years, input_id: gen-ephraim-birth, offset_years: 30}
+      - {id: numbers-becher-ephraim-death, operation: offset_years, input_id: numbers-becher-ephraim-birth, offset_years: 100}
+      - {id: numbers-eran-birth, operation: offset_years, input_id: numbers-shuthelah-ephraim-birth, offset_years: 30}
+      - {id: numbers-eran-death, operation: offset_years, input_id: numbers-eran-birth, offset_years: 100}
+      - {id: numbers-beor-birth, operation: literal, year: {era: BCE, year: 1560}}
+      - {id: numbers-beor-death, operation: literal, year: {era: BCE, year: 1460}}
+      - {id: numbers-salu-birth, operation: literal, year: {era: BCE, year: 1540}}
+      - {id: numbers-salu-death, operation: literal, year: {era: BCE, year: 1450}}
+      - {id: numbers-nun-birth, operation: literal, year: {era: BCE, year: 1560}}
+      - {id: numbers-nun-death, operation: literal, year: {era: BCE, year: 1460}}
+      - {id: numbers-former-moab-king-birth, operation: literal, year: {era: BCE, year: 1540}}
+      - {id: numbers-former-moab-king-death, operation: literal, year: {era: BCE, year: 1440}}
+      - {id: numbers-allotment-parent-birth, operation: literal, year: {era: BCE, year: 1560}}
+      - {id: numbers-allotment-parent-death, operation: literal, year: {era: BCE, year: 1470}}
+      - {id: numbers-spy-plague-death, operation: literal, year: {era: BCE, year: 1449}}
+      - {id: gen-cozbi-numbers-birth, operation: offset_years, input_id: numbers-midian-king-birth, offset_years: 30}
+      - {id: gen-heber-asher-birth, operation: offset_years, input_id: migration-descendant-birth, offset_years: 30}
+      - {id: gen-heber-asher-death, operation: offset_years, input_id: gen-heber-asher-birth, offset_years: 200}
+      - {id: gen-malchiel-birth, operation: offset_years, input_id: migration-descendant-birth, offset_years: 30}
+      - {id: gen-malchiel-death, operation: offset_years, input_id: gen-malchiel-birth, offset_years: 200}
+      - {id: numbers-wood-gatherer-death, operation: literal, year: {era: BCE, year: 1430}}
     resolutions:
       - &core {entity_id: adam, birth_derivation_id: adam-birth, death_derivation_id: adam-death, life_basis: synchronized, confidence_grade: D, evidence_claim_ids: [lxx-early-adam-anchor, adam-lifespan-lxx], alternative_claim_ids: [mt-early-adam-anchor, sp-early-adam-anchor], explanation: "Civil years use the declared LXX display anchor; lifespan is explicit in Genesis 5."}
       - <<: *core
@@ -329,37 +506,67 @@ records:
         entity_id: abel
         death_derivation_id: abel-death
         evidence_claim_ids: [abel-attested]
-      - &cainite_est {entity_id: enoch-cain, birth_derivation_id: cainite-line-birth, death_derivation_id: cainite-line-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [enoch-cain-attested], alternative_claim_ids: [], explanation: "Grade-E shared window for Cain's undated genealogy; it is a visualization convention, not a textual age."}
+      - &cainite_est {entity_id: enoch-cain, birth_derivation_id: gen-enoch-cain-birth, death_derivation_id: gen-enoch-cain-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [enoch-cain-attested], alternative_claim_ids: [], explanation: "Grade-E shared window for Cain's undated genealogy; it is a visualization convention, not a textual age. Display birth is chained one editorial 30-year generation after Cain's wife's display birth so the parent-child order stays plausible; the offset is not textual."}
       - <<: *cainite_est
         entity_id: irad
         evidence_claim_ids: [irad-attested]
+        birth_derivation_id: gen-irad-birth
+        death_derivation_id: gen-irad-death
+        explanation: "Grade-E shared window for Cain's undated genealogy; it is a visualization convention, not a textual age. Display birth is chained one editorial 30-year generation after Enoch's display birth so the parent-child order stays plausible; the offset is not textual."
       - <<: *cainite_est
         entity_id: mehujael
         evidence_claim_ids: [mehujael-attested]
+        birth_derivation_id: gen-mehujael-birth
+        death_derivation_id: gen-mehujael-death
+        explanation: "Grade-E shared window for Cain's undated genealogy; it is a visualization convention, not a textual age. Display birth is chained one editorial 30-year generation after Irad's display birth so the parent-child order stays plausible; the offset is not textual."
       - <<: *cainite_est
         entity_id: methushael
         evidence_claim_ids: [methushael-attested]
+        birth_derivation_id: gen-methushael-birth
+        death_derivation_id: gen-methushael-death
+        explanation: "Grade-E shared window for Cain's undated genealogy; it is a visualization convention, not a textual age. Display birth is chained one editorial 30-year generation after Mehujael's display birth so the parent-child order stays plausible; the offset is not textual."
       - <<: *cainite_est
         entity_id: lamech-cain
         evidence_claim_ids: [lamech-cain-attested]
+        birth_derivation_id: gen-lamech-cain-birth
+        death_derivation_id: gen-lamech-cain-death
+        explanation: "Grade-E shared window for Cain's undated genealogy; it is a visualization convention, not a textual age. Display birth is chained one editorial 30-year generation after Methushael's display birth so the parent-child order stays plausible; the offset is not textual."
       - <<: *cainite_est
         entity_id: adah
         evidence_claim_ids: [adah-attested]
+        birth_derivation_id: cainite-line-birth
+        death_derivation_id: cainite-line-death
+        explanation: "Grade-E shared window for Cain's undated genealogy; it is a visualization convention, not a textual age."
       - <<: *cainite_est
         entity_id: zillah
         evidence_claim_ids: [zillah-attested]
+        birth_derivation_id: cainite-line-birth
+        death_derivation_id: cainite-line-death
+        explanation: "Grade-E shared window for Cain's undated genealogy; it is a visualization convention, not a textual age."
       - <<: *cainite_est
         entity_id: jabal
         evidence_claim_ids: [jabal-attested]
+        birth_derivation_id: gen-jabal-birth
+        death_derivation_id: gen-jabal-death
+        explanation: "Grade-E shared window for Cain's undated genealogy; it is a visualization convention, not a textual age. Display birth is chained one editorial 30-year generation after Lamech's display birth so the parent-child order stays plausible; the offset is not textual."
       - <<: *cainite_est
         entity_id: jubal
         evidence_claim_ids: [jubal-attested]
+        birth_derivation_id: gen-jubal-birth
+        death_derivation_id: gen-jubal-death
+        explanation: "Grade-E shared window for Cain's undated genealogy; it is a visualization convention, not a textual age. Display birth is chained one editorial 30-year generation after Lamech's display birth so the parent-child order stays plausible; the offset is not textual."
       - <<: *cainite_est
         entity_id: tubal-cain
         evidence_claim_ids: [tubal-cain-attested]
+        birth_derivation_id: gen-tubal-cain-birth
+        death_derivation_id: gen-tubal-cain-death
+        explanation: "Grade-E shared window for Cain's undated genealogy; it is a visualization convention, not a textual age. Display birth is chained one editorial 30-year generation after Lamech's display birth so the parent-child order stays plausible; the offset is not textual."
       - <<: *cainite_est
         entity_id: naamah
         evidence_claim_ids: [naamah-attested]
+        birth_derivation_id: gen-naamah-birth
+        death_derivation_id: gen-naamah-death
+        explanation: "Grade-E shared window for Cain's undated genealogy; it is a visualization convention, not a textual age. Display birth is chained one editorial 30-year generation after Lamech's display birth so the parent-child order stays plausible; the offset is not textual."
       - {entity_id: cain-wife, birth_derivation_id: cainite-line-birth, death_derivation_id: cainite-line-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [cain-wife-attested], alternative_claim_ids: [], explanation: "Display-only overlap window; Genesis gives no age or calendar dates for Cain's unnamed wife."}
       - &flood_est {entity_id: noah-wife, birth_derivation_id: flood-household-birth, death_derivation_id: flood-household-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [noah-wife-attested], alternative_claim_ids: [], explanation: "Grade-E window synchronized to Noah's household; the person is textually distinct but numerically undated."}
       - <<: *flood_est
@@ -478,6 +685,9 @@ records:
       - <<: *nation2
         entity_id: joktan
         evidence_claim_ids: [joktan-attested]
+        birth_derivation_id: gen-joktan-birth
+        death_derivation_id: gen-joktan-death
+        explanation: "Grade-E generational window for an eponymous ancestor in Genesis 10; no lifespan number is supplied. Display birth is chained one editorial 30-year generation after Eber's display birth so the parent-child order stays plausible; the offset is not textual."
       - &nation3 {entity_id: sheba-raamah, birth_derivation_id: nations-generation-3-birth, death_derivation_id: nations-generation-3-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [sheba-raamah-attested], alternative_claim_ids: [], explanation: "Grade-E generational window for an eponymous ancestor in Genesis 10; no lifespan number is supplied."}
       - <<: *nation3
         entity_id: dedan-raamah
@@ -562,12 +772,12 @@ records:
         explanation: "Grade-E display window; Genesis identifies Milcah but does not give her lifespan."
       - <<: *terah_est
         entity_id: iscah
-        birth_derivation_id: iscah-birth
-        death_derivation_id: iscah-death
+        birth_derivation_id: gen-iscah-birth
+        death_derivation_id: gen-iscah-death
         life_basis: editorial_estimate
         confidence_grade: E
         evidence_claim_ids: [iscah-attested]
-        explanation: "Grade-E display window; Genesis identifies Iscah but does not give her lifespan."
+        explanation: "Grade-E display window; Genesis identifies Iscah but does not give her lifespan. Display birth is chained one editorial 30-year generation after Haran's display birth so the parent-child order stays plausible; the offset is not textual."
       - {entity_id: ishmael, birth_derivation_id: ishmael-birth, death_derivation_id: ishmael-death, life_basis: synchronized, confidence_grade: D, evidence_claim_ids: [abram-age-at-ishmael-birth, ishmael-lifespan-lxx], alternative_claim_ids: [], explanation: "Birth and lifespan follow explicit Genesis 16:16 and 25:17 values on the reference anchor."}
       - {entity_id: isaac, birth_derivation_id: isaac-birth, death_derivation_id: isaac-death, life_basis: synchronized, confidence_grade: D, evidence_claim_ids: [abram-age-at-isaac-birth, isaac-lifespan-lxx], alternative_claim_ids: [], explanation: "Birth and lifespan follow explicit Genesis 21:5 and 35:28 values on the reference anchor."}
       - &twins_est {entity_id: esau, birth_derivation_id: twins-birth, death_derivation_id: twins-editorial-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [isaac-age-at-twins-birth, esau-attested], alternative_claim_ids: [], explanation: "The shared twin birth is calculated from Genesis 25:26; the display endpoint is grade E because Genesis does not state a death age."}
@@ -721,24 +931,45 @@ records:
       - <<: *desc_est
         entity_id: sheba-jokshan
         evidence_claim_ids: [sheba-jokshan-attested]
+        birth_derivation_id: gen-sheba-jokshan-birth
+        death_derivation_id: gen-sheba-jokshan-death
+        explanation: "Grade-E descendant-generation window; no numerical lifespan is supplied. Display birth is chained one editorial 30-year generation after Jokshan's display birth so the parent-child order stays plausible; the offset is not textual."
       - <<: *desc_est
         entity_id: dedan-jokshan
         evidence_claim_ids: [dedan-jokshan-attested]
+        birth_derivation_id: gen-dedan-jokshan-birth
+        death_derivation_id: gen-dedan-jokshan-death
+        explanation: "Grade-E descendant-generation window; no numerical lifespan is supplied. Display birth is chained one editorial 30-year generation after Jokshan's display birth so the parent-child order stays plausible; the offset is not textual."
       - <<: *desc_est
         entity_id: ephah
         evidence_claim_ids: [ephah-attested]
+        birth_derivation_id: gen-ephah-birth
+        death_derivation_id: gen-ephah-death
+        explanation: "Grade-E descendant-generation window; no numerical lifespan is supplied. Display birth is chained one editorial 30-year generation after Midian's display birth so the parent-child order stays plausible; the offset is not textual."
       - <<: *desc_est
         entity_id: epher
         evidence_claim_ids: [epher-attested]
+        birth_derivation_id: gen-epher-birth
+        death_derivation_id: gen-epher-death
+        explanation: "Grade-E descendant-generation window; no numerical lifespan is supplied. Display birth is chained one editorial 30-year generation after Midian's display birth so the parent-child order stays plausible; the offset is not textual."
       - <<: *desc_est
         entity_id: hanoch-midian
         evidence_claim_ids: [hanoch-midian-attested]
+        birth_derivation_id: gen-hanoch-midian-birth
+        death_derivation_id: gen-hanoch-midian-death
+        explanation: "Grade-E descendant-generation window; no numerical lifespan is supplied. Display birth is chained one editorial 30-year generation after Midian's display birth so the parent-child order stays plausible; the offset is not textual."
       - <<: *desc_est
         entity_id: abida
         evidence_claim_ids: [abida-attested]
+        birth_derivation_id: gen-abida-birth
+        death_derivation_id: gen-abida-death
+        explanation: "Grade-E descendant-generation window; no numerical lifespan is supplied. Display birth is chained one editorial 30-year generation after Midian's display birth so the parent-child order stays plausible; the offset is not textual."
       - <<: *desc_est
         entity_id: eldaah
         evidence_claim_ids: [eldaah-attested]
+        birth_derivation_id: gen-eldaah-birth
+        death_derivation_id: gen-eldaah-death
+        explanation: "Grade-E descendant-generation window; no numerical lifespan is supplied. Display birth is chained one editorial 30-year generation after Midian's display birth so the parent-child order stays plausible; the offset is not textual."
       - <<: *desc_est
         entity_id: nebaioth
         evidence_claim_ids: [nebaioth-attested]
@@ -798,9 +1029,10 @@ records:
         evidence_claim_ids: [jidlaph-attested]
       - <<: *desc_est
         entity_id: bethuel
-        birth_derivation_id: bethuel-generation-birth
-        death_derivation_id: bethuel-generation-death
+        birth_derivation_id: gen-bethuel-birth
+        death_derivation_id: gen-bethuel-death
         evidence_claim_ids: [bethuel-attested]
+        explanation: "Grade-E descendant-generation window; no numerical lifespan is supplied. Display birth is chained one editorial 30-year generation after Nahor's display birth so the parent-child order stays plausible; the offset is not textual."
       - <<: *desc_est
         entity_id: reumah
         evidence_claim_ids: [reumah-attested]
@@ -913,41 +1145,77 @@ records:
       - <<: *children_est
         entity_id: amalek
         evidence_claim_ids: [amalek-attested]
+        birth_derivation_id: gen-amalek-birth
+        death_derivation_id: gen-amalek-death
+        explanation: "Grade-E child-generation window; birth order is evidenced but exact birth and death years are not stated in this slice. Display birth is chained one editorial 30-year generation after Eliphaz's display birth so the parent-child order stays plausible; the offset is not textual."
       - <<: *children_est
         entity_id: teman
         evidence_claim_ids: [teman-attested]
+        birth_derivation_id: gen-teman-birth
+        death_derivation_id: gen-teman-death
+        explanation: "Grade-E child-generation window; birth order is evidenced but exact birth and death years are not stated in this slice. Display birth is chained one editorial 30-year generation after Eliphaz's display birth so the parent-child order stays plausible; the offset is not textual."
       - <<: *children_est
         entity_id: omar
         evidence_claim_ids: [omar-attested]
+        birth_derivation_id: gen-omar-birth
+        death_derivation_id: gen-omar-death
+        explanation: "Grade-E child-generation window; birth order is evidenced but exact birth and death years are not stated in this slice. Display birth is chained one editorial 30-year generation after Eliphaz's display birth so the parent-child order stays plausible; the offset is not textual."
       - <<: *children_est
         entity_id: zepho
         evidence_claim_ids: [zepho-attested]
+        birth_derivation_id: gen-zepho-birth
+        death_derivation_id: gen-zepho-death
+        explanation: "Grade-E child-generation window; birth order is evidenced but exact birth and death years are not stated in this slice. Display birth is chained one editorial 30-year generation after Eliphaz's display birth so the parent-child order stays plausible; the offset is not textual."
       - <<: *children_est
         entity_id: gatam
         evidence_claim_ids: [gatam-attested]
+        birth_derivation_id: gen-gatam-birth
+        death_derivation_id: gen-gatam-death
+        explanation: "Grade-E child-generation window; birth order is evidenced but exact birth and death years are not stated in this slice. Display birth is chained one editorial 30-year generation after Eliphaz's display birth so the parent-child order stays plausible; the offset is not textual."
       - <<: *children_est
         entity_id: kenaz-esau
         evidence_claim_ids: [kenaz-esau-attested]
+        birth_derivation_id: gen-kenaz-esau-birth
+        death_derivation_id: gen-kenaz-esau-death
+        explanation: "Grade-E child-generation window; birth order is evidenced but exact birth and death years are not stated in this slice. Display birth is chained one editorial 30-year generation after Eliphaz's display birth so the parent-child order stays plausible; the offset is not textual."
       - <<: *children_est
         entity_id: nahath
         evidence_claim_ids: [nahath-attested]
+        birth_derivation_id: gen-nahath-birth
+        death_derivation_id: gen-nahath-death
+        explanation: "Grade-E child-generation window; birth order is evidenced but exact birth and death years are not stated in this slice. Display birth is chained one editorial 30-year generation after Reuel's display birth so the parent-child order stays plausible; the offset is not textual."
       - <<: *children_est
         entity_id: zerah-esau
         evidence_claim_ids: [zerah-esau-attested]
+        birth_derivation_id: gen-zerah-esau-birth
+        death_derivation_id: gen-zerah-esau-death
+        explanation: "Grade-E child-generation window; birth order is evidenced but exact birth and death years are not stated in this slice. Display birth is chained one editorial 30-year generation after Reuel's display birth so the parent-child order stays plausible; the offset is not textual."
       - <<: *children_est
         entity_id: shammah
         evidence_claim_ids: [shammah-attested]
+        birth_derivation_id: gen-shammah-birth
+        death_derivation_id: gen-shammah-death
+        explanation: "Grade-E child-generation window; birth order is evidenced but exact birth and death years are not stated in this slice. Display birth is chained one editorial 30-year generation after Reuel's display birth so the parent-child order stays plausible; the offset is not textual."
       - <<: *children_est
         entity_id: mizzah
         evidence_claim_ids: [mizzah-attested]
+        birth_derivation_id: gen-mizzah-birth
+        death_derivation_id: gen-mizzah-death
+        explanation: "Grade-E child-generation window; birth order is evidenced but exact birth and death years are not stated in this slice. Display birth is chained one editorial 30-year generation after Reuel's display birth so the parent-child order stays plausible; the offset is not textual."
       - &cycle_est {entity_id: tamar, birth_derivation_id: joseph-cycle-adult-birth, death_derivation_id: joseph-cycle-adult-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [tamar-attested], alternative_claim_ids: [], explanation: "Grade-E Joseph-cycle window; the person is textually attested but Genesis supplies no complete numeric lifespan."}
       - {entity_id: tamar-midwife, birth_derivation_id: joseph-cycle-adult-birth, death_derivation_id: joseph-cycle-adult-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [tamar-midwife-attested], alternative_claim_ids: [], explanation: "Display-only Joseph-cycle window; Genesis gives no age or calendar dates for the unnamed midwife."}
       - <<: *cycle_est
         entity_id: perez
         evidence_claim_ids: [perez-attested]
+        birth_derivation_id: gen-perez-birth
+        death_derivation_id: gen-perez-death
+        explanation: "Grade-E Joseph-cycle window; the person is textually attested but Genesis supplies no complete numeric lifespan. Display birth is chained one editorial 30-year generation after Tamar's display birth so the parent-child order stays plausible; the offset is not textual."
       - <<: *cycle_est
         entity_id: zerah-judah
         evidence_claim_ids: [zerah-judah-attested]
+        birth_derivation_id: gen-zerah-judah-birth
+        death_derivation_id: gen-zerah-judah-death
+        explanation: "Grade-E Joseph-cycle window; the person is textually attested but Genesis supplies no complete numeric lifespan. Display birth is chained one editorial 30-year generation after Tamar's display birth so the parent-child order stays plausible; the offset is not textual."
       - <<: *cycle_est
         entity_id: hirah
         evidence_claim_ids: [hirah-attested]
@@ -993,15 +1261,27 @@ records:
       - <<: *cycle_est
         entity_id: asenath
         evidence_claim_ids: [asenath-attested]
+        birth_derivation_id: gen-asenath-birth
+        death_derivation_id: gen-asenath-death
+        explanation: "Grade-E Joseph-cycle window; Genesis 41:45-50 gives Asenath's marriage to Joseph (then about 30) and the births of Manasseh and Ephraim, but no age. Her display birth is set ten editorial years after Joseph's; the offset is not textual."
       - <<: *cycle_est
         entity_id: manasseh
         evidence_claim_ids: [manasseh-attested]
+        birth_derivation_id: gen-manasseh-birth
+        death_derivation_id: gen-manasseh-death
+        explanation: "Grade-E Joseph-cycle window; the person is textually attested but Genesis supplies no complete numeric lifespan. Display birth is placed in Joseph's 35th year: Genesis 41:46-50 puts the birth before the famine, i.e. after Joseph was 30 and within the seven years of plenty. The exact year inside that window is editorial."
       - <<: *cycle_est
         entity_id: ephraim
         evidence_claim_ids: [ephraim-attested]
+        birth_derivation_id: gen-ephraim-birth
+        death_derivation_id: gen-ephraim-death
+        explanation: "Grade-E Joseph-cycle window; the person is textually attested but Genesis supplies no complete numeric lifespan. Display birth is placed in Joseph's 36th year: Genesis 41:46-52 puts the birth after Manasseh's and before the famine, while Joseph was 30-37. The exact year inside that window is editorial."
       - <<: *cycle_est
         entity_id: machir
         evidence_claim_ids: [machir-attested]
+        birth_derivation_id: gen-machir-birth
+        death_derivation_id: gen-machir-death
+        explanation: "Grade-E Joseph-cycle window; the person is textually attested but Genesis supplies no complete numeric lifespan. Display birth is chained one editorial 30-year generation after Manasseh's display birth so the parent-child order stays plausible; the offset is not textual."
       - &migrant_est {entity_id: hanoch-reuben, birth_derivation_id: migration-descendant-birth, death_derivation_id: migration-descendant-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [hanoch-reuben-attested], alternative_claim_ids: [], explanation: "Grade-E migration-generation window; Genesis 46 names the person but gives no complete numeric lifespan."}
       - <<: *migrant_est
         entity_id: pallu
@@ -1105,9 +1385,15 @@ records:
       - <<: *migrant_est
         entity_id: heber-asher
         evidence_claim_ids: [heber-asher-attested]
+        birth_derivation_id: gen-heber-asher-birth
+        death_derivation_id: gen-heber-asher-death
+        explanation: "Grade-E migration-generation window; Genesis 46 names the person but gives no complete numeric lifespan. Display birth is chained one editorial 30-year generation after Beriah's display birth so the parent-child order stays plausible; the offset is not textual."
       - <<: *migrant_est
         entity_id: malchiel
         evidence_claim_ids: [malchiel-attested]
+        birth_derivation_id: gen-malchiel-birth
+        death_derivation_id: gen-malchiel-death
+        explanation: "Grade-E migration-generation window; Genesis 46 names the person but gives no complete numeric lifespan. Display birth is chained one editorial 30-year generation after Beriah's display birth so the parent-child order stays plausible; the offset is not textual."
       - <<: *migrant_est
         entity_id: hushim
         evidence_claim_ids: [hushim-attested]
@@ -1173,10 +1459,29 @@ records:
       - {<<: *exodus_low_confidence, entity_id: dathan-numbers, birth_derivation_id: numbers-dathan-birth, death_derivation_id: numbers-dathan-death, evidence_claim_ids: [dathan-attested-lxx, dathan-attested-geez, dathan-attested-mt], explanation: "Grade-E display window. The text narrates Dathan's death in the wilderness rebellion but gives no birth year; the BCE window is only an illustrative placement."}
       - {<<: *exodus_low_confidence, entity_id: abiram-numbers, birth_derivation_id: numbers-abiram-birth, death_derivation_id: numbers-abiram-death, evidence_claim_ids: [abiram-attested-lxx, abiram-attested-geez, abiram-attested-mt], explanation: "Grade-E display window. The text narrates Abiram's death in the wilderness rebellion but gives no birth year; the BCE window is only an illustrative placement."}
       - {<<: *exodus_low_confidence, entity_id: on-numbers, birth_derivation_id: numbers-on-birth, death_derivation_id: numbers-on-death, evidence_claim_ids: [on-attested-lxx, on-attested-geez, on-attested-mt], explanation: "Grade-E display window for a named participant; Numbers 16 names On in the initial gathering but does not state his later fate or lifespan."}
+      - {<<: *exodus_low_confidence, entity_id: sihon-numbers, birth_derivation_id: numbers-sihon-birth, death_derivation_id: numbers-sihon-death, evidence_claim_ids: [sihon-attested-lxx, sihon-attested-geez, sihon-attested-mt], explanation: "Grade-E display window for a king named in the wilderness campaign; the text gives no lifespan or absolute date."}
+      - {<<: *exodus_low_confidence, entity_id: og-numbers, birth_derivation_id: numbers-og-birth, death_derivation_id: numbers-og-death, evidence_claim_ids: [og-attested-lxx, og-attested-geez, og-attested-mt], explanation: "Grade-E display window for Og; the campaign narrative reports his defeat but supplies no lifespan dates."}
+      - {<<: *exodus_low_confidence, entity_id: balaam-numbers, birth_derivation_id: numbers-balaam-birth, death_derivation_id: numbers-balaam-death, evidence_claim_ids: [balaam-attested-lxx, balaam-attested-geez, balaam-attested-mt, balaam-death-numbers31-lxx, balaam-death-numbers31-geez, balaam-death-numbers31-mt], explanation: "Grade-E display birth estimate; death is explicitly narrated in Numbers 31, but no absolute calendar year is stated. The selected end-year is illustrative."}
+      - {<<: *exodus_low_confidence, entity_id: balak-numbers, birth_derivation_id: numbers-balak-birth, death_derivation_id: numbers-balak-death, evidence_claim_ids: [balak-attested-lxx, balak-attested-geez, balak-attested-mt], explanation: "Grade-E display window for Balak; Numbers identifies him as king but gives no lifespan dates."}
+      - {<<: *exodus_low_confidence, entity_id: zippor-balak, birth_derivation_id: numbers-zippor-birth, death_derivation_id: numbers-zippor-death, evidence_claim_ids: [zippor-attested-lxx, zippor-attested-geez, zippor-attested-mt], explanation: "Grade-E display window for Balak's named father; no lifespan is supplied."}
+      - {<<: *exodus_low_confidence, entity_id: zimri-numbers, birth_derivation_id: numbers-zimri-birth, death_derivation_id: numbers-zimri-death, evidence_claim_ids: [zimri-attested-lxx, zimri-attested-geez, zimri-attested-mt], explanation: "Grade-E display window. The death at Peor is narrated (Numbers 25:8, 14-15) and placed in the fortieth wilderness year before the Midian campaign; no birth or absolute date is given."}
+      - {<<: *exodus_low_confidence, entity_id: cozbi-numbers, birth_derivation_id: gen-cozbi-numbers-birth, death_derivation_id: numbers-cozbi-death, evidence_claim_ids: [cozbi-attested-lxx, cozbi-attested-geez, cozbi-attested-mt], explanation: "Grade-E display window. The death at Peor is narrated (Numbers 25:8, 14-15) and placed in the fortieth wilderness year before the Midian campaign; no birth or absolute date is given. Display birth is chained one editorial 30-year generation after Zur's display birth so the parent-child order stays plausible; the offset is not textual."}
+      - {<<: *exodus_low_confidence, entity_id: evi-midian, birth_derivation_id: numbers-midian-king-birth, death_derivation_id: numbers-midian-king-death, evidence_claim_ids: [evi-attested-lxx, evi-attested-geez, evi-attested-mt], explanation: "Grade-E lifespan window for a named Midianite king. Numbers gives his death in the campaign, but no birth year or absolute campaign date."}
+      - {<<: *exodus_low_confidence, entity_id: rekem-midian, birth_derivation_id: numbers-midian-king-birth, death_derivation_id: numbers-midian-king-death, evidence_claim_ids: [rekem-attested-lxx, rekem-attested-geez, rekem-attested-mt], explanation: "Grade-E lifespan window for a named Midianite king. Numbers gives his death in the campaign, but no birth year or absolute campaign date."}
+      - {<<: *exodus_low_confidence, entity_id: zur-midian, birth_derivation_id: numbers-midian-king-birth, death_derivation_id: numbers-midian-king-death, evidence_claim_ids: [zur-midian-attested-lxx, zur-midian-attested-geez, zur-midian-attested-mt], explanation: "Grade-E lifespan window for a named Midianite king. Numbers gives his death in the campaign, but no birth year or absolute campaign date."}
+      - {<<: *exodus_low_confidence, entity_id: hur-midian, birth_derivation_id: numbers-midian-king-birth, death_derivation_id: numbers-midian-king-death, evidence_claim_ids: [hur-midian-attested-lxx, hur-midian-attested-geez, hur-midian-attested-mt], explanation: "Grade-E lifespan window for a named Midianite king. Numbers gives his death in the campaign, but no birth year or absolute campaign date."}
+      - {<<: *exodus_low_confidence, entity_id: reba-midian, birth_derivation_id: numbers-midian-king-birth, death_derivation_id: numbers-midian-king-death, evidence_claim_ids: [reba-attested-lxx, reba-attested-geez, reba-attested-mt], explanation: "Grade-E lifespan window for a named Midianite king. Numbers gives his death in the campaign, but no birth year or absolute campaign date."}
+      - {<<: *exodus_low_confidence, entity_id: hepher-zelophehad, birth_derivation_id: numbers-hepher-birth, death_derivation_id: numbers-hepher-death, evidence_claim_ids: [hepher-attested], explanation: "Grade-E display window for Zelophehad's named father; no lifespan dates are stated."}
+      - {<<: *exodus_low_confidence, entity_id: zelophehad-numbers, birth_derivation_id: numbers-zelophehad-birth, death_derivation_id: numbers-zelophehad-death, evidence_claim_ids: [zelophehad-attested], explanation: "Grade-E display window; the text says Zelophehad died in the wilderness but supplies no birth or absolute death year."}
+      - {<<: *exodus_low_confidence, entity_id: mahlah-numbers, birth_derivation_id: numbers-daughters-birth, death_derivation_id: numbers-daughters-death, evidence_claim_ids: [mahlah-attested], explanation: "Grade-E display window for a named daughter; Numbers gives her petition and family but no lifespan."}
+      - {<<: *exodus_low_confidence, entity_id: noah-zelophehad, birth_derivation_id: numbers-daughters-birth, death_derivation_id: numbers-daughters-death, evidence_claim_ids: [noah-zelophehad-attested], explanation: "Grade-E display window for a named daughter; Numbers gives her petition and family but no lifespan."}
+      - {<<: *exodus_low_confidence, entity_id: hoglah-numbers, birth_derivation_id: numbers-daughters-birth, death_derivation_id: numbers-daughters-death, evidence_claim_ids: [hoglah-attested], explanation: "Grade-E display window for a named daughter; Numbers gives her petition and family but no lifespan."}
+      - {<<: *exodus_low_confidence, entity_id: milcah-zelophehad, birth_derivation_id: numbers-daughters-birth, death_derivation_id: numbers-daughters-death, evidence_claim_ids: [milcah-zelophehad-attested], explanation: "Grade-E display window for a named daughter; Numbers gives her petition and family but no lifespan."}
+      - {<<: *exodus_low_confidence, entity_id: tirzah-numbers, birth_derivation_id: numbers-daughters-birth, death_derivation_id: numbers-daughters-death, evidence_claim_ids: [tirzah-attested], explanation: "Grade-E display window for a named daughter; Numbers gives her petition and family but no lifespan."}
       - {<<: *exodus_low_confidence, entity_id: zipporah, birth_derivation_id: exodus-zipporah-birth, death_derivation_id: exodus-zipporah-death, evidence_claim_ids: [zipporah-attested-lxx], explanation: "Grade-E display window for Zipporah; the narrative establishes family and events but no ages or calendar dates."}
-      - {<<: *exodus_low_confidence, entity_id: gershom, birth_derivation_id: exodus-gershom-birth, death_derivation_id: exodus-gershom-death, evidence_claim_ids: [gershom-attested-lxx], explanation: "Grade-E display window; the name is attested, but no lifespan is supplied."}
+      - {<<: *exodus_low_confidence, entity_id: gershom, birth_derivation_id: gen-gershom-birth, death_derivation_id: gen-gershom-death, evidence_claim_ids: [gershom-attested-lxx], explanation: "Grade-E display window; the name is attested, but no lifespan is supplied. Display birth is chained one editorial 30-year generation after Zipporah's display birth so the parent-child order stays plausible; the offset is not textual."}
       - {<<: *exodus_low_confidence, entity_id: eliezer-moses, birth_derivation_id: exodus-eliezer-birth, death_derivation_id: exodus-eliezer-death, evidence_claim_ids: [eliezer-moses-attested-lxx], explanation: "Grade-E display window; a named son of Moses, but no lifespan is supplied."}
-      - {<<: *exodus_low_confidence, entity_id: moses-son-circumcised, birth_derivation_id: exodus-unnamed-son-birth, death_derivation_id: exodus-unnamed-son-death, evidence_claim_ids: [moses-son-circumcised-attested-lxx], explanation: "Grade-E display window for the unnamed son in Exodus 4. The text does not identify which named son this is, so no identity merge is made."}
+      - {<<: *exodus_low_confidence, entity_id: moses-son-circumcised, birth_derivation_id: gen-moses-son-circumcised-birth, death_derivation_id: gen-moses-son-circumcised-death, evidence_claim_ids: [moses-son-circumcised-attested-lxx], explanation: "Grade-E display window for the unnamed son in Exodus 4. The text does not identify which named son this is, so no identity merge is made. Display birth is chained one editorial 30-year generation after Zipporah's display birth so the parent-child order stays plausible; the offset is not textual."}
       - {<<: *exodus_low_confidence, entity_id: egyptian-taskmaster-exodus, birth_derivation_id: exodus-egyptian-birth, death_derivation_id: exodus-egyptian-death, evidence_claim_ids: [egyptian-taskmaster-exodus-attested-lxx], explanation: "Grade-E display window for an unnamed Egyptian who is killed; the text gives no age or calendar date."}
       - {<<: *exodus_low_confidence, entity_id: hebrew-man-confronts-moses, birth_derivation_id: exodus-hebrew-man-birth, death_derivation_id: exodus-hebrew-man-death, evidence_claim_ids: [hebrew-man-confronts-moses-attested-lxx], explanation: "Grade-E display window for an unnamed Hebrew individual; no lifespan data is supplied."}
       - {<<: *exodus_low_confidence, entity_id: hebrew-man-fellow-fighter, birth_derivation_id: exodus-hebrew-man-birth, death_derivation_id: exodus-hebrew-man-death, evidence_claim_ids: [hebrew-man-fellow-fighter-attested-lxx], explanation: "Grade-E display window for an unnamed Hebrew individual; no lifespan data is supplied."}
@@ -1200,30 +1505,31 @@ records:
       - {<<: *exodus_low_confidence, entity_id: eleazar-wife, birth_derivation_id: exodus-eleazar-wife-birth, death_derivation_id: exodus-eleazar-wife-death, evidence_claim_ids: [eleazar-wife-attested-lxx], explanation: "Grade-E display window for an unnamed woman; her father and son are named, but she is not."}
       - {<<: *exodus_low_confidence, entity_id: phinehas, birth_derivation_id: exodus-phinehas-birth, death_derivation_id: exodus-phinehas-death, evidence_claim_ids: [phinehas-attested-lxx], explanation: "Grade-E window for Phinehas, named as the son of Eleazar and his unnamed wife."}
       - &g36est {entity_id: seir-horite, birth_derivation_id: genesis36-display-birth, death_derivation_id: genesis36-display-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [seir-horite-attested], alternative_claim_ids: [], explanation: "Provisional grade-E display window for an undated Genesis 36 person; the text supplies genealogy, not calendar years or lifespan."}
-      - {<<: *g36est, entity_id: lotan-horite, evidence_claim_ids: [lotan-horite-attested]}
-      - {<<: *g36est, entity_id: shobal-horite, evidence_claim_ids: [shobal-horite-attested]}
-      - {<<: *g36est, entity_id: zibeon-horite, evidence_claim_ids: [zibeon-horite-attested]}
-      - {<<: *g36est, entity_id: anah-horite, evidence_claim_ids: [anah-horite-attested]}
-      - {<<: *g36est, entity_id: dishon-horite, evidence_claim_ids: [dishon-horite-attested]}
-      - {<<: *g36est, entity_id: ezer-horite, evidence_claim_ids: [ezer-horite-attested]}
-      - {<<: *g36est, entity_id: dishan-horite, evidence_claim_ids: [dishan-horite-attested]}
-      - {<<: *g36est, entity_id: hori-lotan, evidence_claim_ids: [hori-lotan-attested]}
-      - {<<: *g36est, entity_id: hemam-lotan, evidence_claim_ids: [hemam-lotan-attested]}
-      - {<<: *g36est, entity_id: alvan-shobal, evidence_claim_ids: [alvan-shobal-attested]}
-      - {<<: *g36est, entity_id: manahath-shobal, evidence_claim_ids: [manahath-shobal-attested]}
-      - {<<: *g36est, entity_id: ebal-shobal, evidence_claim_ids: [ebal-shobal-attested]}
-      - {<<: *g36est, entity_id: shepho-shobal, evidence_claim_ids: [shepho-shobal-attested]}
-      - {<<: *g36est, entity_id: onam-shobal, evidence_claim_ids: [onam-shobal-attested]}
-      - {<<: *g36est, entity_id: aiah-zibeon, evidence_claim_ids: [aiah-zibeon-attested]}
-      - {<<: *g36est, entity_id: hemdan-dishon, evidence_claim_ids: [hemdan-dishon-attested]}
-      - {<<: *g36est, entity_id: eshban-dishon, evidence_claim_ids: [eshban-dishon-attested]}
-      - {<<: *g36est, entity_id: ithran-dishon, evidence_claim_ids: [ithran-dishon-attested]}
-      - {<<: *g36est, entity_id: cheran-dishon, evidence_claim_ids: [cheran-dishon-attested]}
-      - {<<: *g36est, entity_id: bilhan-ezer, evidence_claim_ids: [bilhan-ezer-attested]}
-      - {<<: *g36est, entity_id: zaavan-ezer, evidence_claim_ids: [zaavan-ezer-attested]}
-      - {<<: *g36est, entity_id: akan-ezer, evidence_claim_ids: [akan-ezer-attested]}
-      - {<<: *g36est, entity_id: uz-dishan, evidence_claim_ids: [uz-dishan-attested]}
-      - {<<: *g36est, entity_id: aran-dishan, evidence_claim_ids: [aran-dishan-attested]}
+      - {<<: *g36est, entity_id: lotan-horite, explanation: "Provisional grade-E display window for an undated Genesis 36 person; the text supplies genealogy, not calendar years or lifespan. Display birth is chained one editorial 30-year generation after Seir's display birth so the parent-child order stays plausible; the offset is not textual.", death_derivation_id: gen-lotan-horite-death, birth_derivation_id: gen-lotan-horite-birth, evidence_claim_ids: [lotan-horite-attested]}
+      - {<<: *g36est, entity_id: shobal-horite, explanation: "Provisional grade-E display window for an undated Genesis 36 person; the text supplies genealogy, not calendar years or lifespan. Display birth is chained one editorial 30-year generation after Seir's display birth so the parent-child order stays plausible; the offset is not textual.", death_derivation_id: gen-shobal-horite-death, birth_derivation_id: gen-shobal-horite-birth, evidence_claim_ids: [shobal-horite-attested]}
+      - {<<: *g36est, entity_id: zibeon-horite, explanation: "Provisional grade-E display window for an undated Genesis 36 person; the text supplies genealogy, not calendar years or lifespan. Display birth is chained one editorial 30-year generation after Seir's display birth so the parent-child order stays plausible; the offset is not textual.", death_derivation_id: gen-zibeon-horite-death, birth_derivation_id: gen-zibeon-horite-birth, evidence_claim_ids: [zibeon-horite-attested]}
+      - {<<: *g36est, entity_id: anah-horite, explanation: "Provisional grade-E display window for an undated Genesis 36 person; the text supplies genealogy, not calendar years or lifespan. Display birth is chained one editorial 30-year generation after Seir's display birth so the parent-child order stays plausible; the offset is not textual.", death_derivation_id: gen-anah-horite-death, birth_derivation_id: gen-anah-horite-birth, evidence_claim_ids: [anah-horite-attested]}
+      - {<<: *g36est, entity_id: dishon-horite, explanation: "Provisional grade-E display window for an undated Genesis 36 person; the text supplies genealogy, not calendar years or lifespan. Display birth is chained one editorial 30-year generation after Seir's display birth so the parent-child order stays plausible; the offset is not textual.", death_derivation_id: gen-dishon-horite-death, birth_derivation_id: gen-dishon-horite-birth, evidence_claim_ids: [dishon-horite-attested]}
+      - {<<: *g36est, entity_id: dishon-anah, explanation: "Provisional grade-E display window for an undated Genesis 36 person; the text supplies genealogy, not calendar years or lifespan. Display birth is chained one editorial 30-year generation after Anah's display birth so the parent-child order stays plausible; the offset is not textual.", death_derivation_id: gen-dishon-anah-death, birth_derivation_id: gen-dishon-anah-birth, evidence_claim_ids: [dishon-anah-attested]}
+      - {<<: *g36est, entity_id: ezer-horite, explanation: "Provisional grade-E display window for an undated Genesis 36 person; the text supplies genealogy, not calendar years or lifespan. Display birth is chained one editorial 30-year generation after Seir's display birth so the parent-child order stays plausible; the offset is not textual.", death_derivation_id: gen-ezer-horite-death, birth_derivation_id: gen-ezer-horite-birth, evidence_claim_ids: [ezer-horite-attested]}
+      - {<<: *g36est, entity_id: dishan-horite, explanation: "Provisional grade-E display window for an undated Genesis 36 person; the text supplies genealogy, not calendar years or lifespan. Display birth is chained one editorial 30-year generation after Seir's display birth so the parent-child order stays plausible; the offset is not textual.", death_derivation_id: gen-dishan-horite-death, birth_derivation_id: gen-dishan-horite-birth, evidence_claim_ids: [dishan-horite-attested]}
+      - {<<: *g36est, entity_id: hori-lotan, explanation: "Provisional grade-E display window for an undated Genesis 36 person; the text supplies genealogy, not calendar years or lifespan. Display birth is chained one editorial 30-year generation after Lotan's display birth so the parent-child order stays plausible; the offset is not textual.", death_derivation_id: gen-hori-lotan-death, birth_derivation_id: gen-hori-lotan-birth, evidence_claim_ids: [hori-lotan-attested]}
+      - {<<: *g36est, entity_id: hemam-lotan, explanation: "Provisional grade-E display window for an undated Genesis 36 person; the text supplies genealogy, not calendar years or lifespan. Display birth is chained one editorial 30-year generation after Lotan's display birth so the parent-child order stays plausible; the offset is not textual.", death_derivation_id: gen-hemam-lotan-death, birth_derivation_id: gen-hemam-lotan-birth, evidence_claim_ids: [hemam-lotan-attested]}
+      - {<<: *g36est, entity_id: alvan-shobal, explanation: "Provisional grade-E display window for an undated Genesis 36 person; the text supplies genealogy, not calendar years or lifespan. Display birth is chained one editorial 30-year generation after Shobal's display birth so the parent-child order stays plausible; the offset is not textual.", death_derivation_id: gen-alvan-shobal-death, birth_derivation_id: gen-alvan-shobal-birth, evidence_claim_ids: [alvan-shobal-attested]}
+      - {<<: *g36est, entity_id: manahath-shobal, explanation: "Provisional grade-E display window for an undated Genesis 36 person; the text supplies genealogy, not calendar years or lifespan. Display birth is chained one editorial 30-year generation after Shobal's display birth so the parent-child order stays plausible; the offset is not textual.", death_derivation_id: gen-manahath-shobal-death, birth_derivation_id: gen-manahath-shobal-birth, evidence_claim_ids: [manahath-shobal-attested]}
+      - {<<: *g36est, entity_id: ebal-shobal, explanation: "Provisional grade-E display window for an undated Genesis 36 person; the text supplies genealogy, not calendar years or lifespan. Display birth is chained one editorial 30-year generation after Shobal's display birth so the parent-child order stays plausible; the offset is not textual.", death_derivation_id: gen-ebal-shobal-death, birth_derivation_id: gen-ebal-shobal-birth, evidence_claim_ids: [ebal-shobal-attested]}
+      - {<<: *g36est, entity_id: shepho-shobal, explanation: "Provisional grade-E display window for an undated Genesis 36 person; the text supplies genealogy, not calendar years or lifespan. Display birth is chained one editorial 30-year generation after Shobal's display birth so the parent-child order stays plausible; the offset is not textual.", death_derivation_id: gen-shepho-shobal-death, birth_derivation_id: gen-shepho-shobal-birth, evidence_claim_ids: [shepho-shobal-attested]}
+      - {<<: *g36est, entity_id: onam-shobal, explanation: "Provisional grade-E display window for an undated Genesis 36 person; the text supplies genealogy, not calendar years or lifespan. Display birth is chained one editorial 30-year generation after Shobal's display birth so the parent-child order stays plausible; the offset is not textual.", death_derivation_id: gen-onam-shobal-death, birth_derivation_id: gen-onam-shobal-birth, evidence_claim_ids: [onam-shobal-attested]}
+      - {<<: *g36est, entity_id: aiah-zibeon, explanation: "Provisional grade-E display window for an undated Genesis 36 person; the text supplies genealogy, not calendar years or lifespan. Display birth is chained one editorial 30-year generation after Zibeon's display birth so the parent-child order stays plausible; the offset is not textual.", death_derivation_id: gen-aiah-zibeon-death, birth_derivation_id: gen-aiah-zibeon-birth, evidence_claim_ids: [aiah-zibeon-attested]}
+      - {<<: *g36est, entity_id: hemdan-dishon, explanation: "Provisional grade-E display window for an undated Genesis 36 person; the text supplies genealogy, not calendar years or lifespan. Display birth is chained one editorial 30-year generation after Dishon's display birth so the parent-child order stays plausible; the offset is not textual.", death_derivation_id: gen-hemdan-dishon-death, birth_derivation_id: gen-hemdan-dishon-birth, evidence_claim_ids: [hemdan-dishon-attested]}
+      - {<<: *g36est, entity_id: eshban-dishon, explanation: "Provisional grade-E display window for an undated Genesis 36 person; the text supplies genealogy, not calendar years or lifespan. Display birth is chained one editorial 30-year generation after Dishon's display birth so the parent-child order stays plausible; the offset is not textual.", death_derivation_id: gen-eshban-dishon-death, birth_derivation_id: gen-eshban-dishon-birth, evidence_claim_ids: [eshban-dishon-attested]}
+      - {<<: *g36est, entity_id: ithran-dishon, explanation: "Provisional grade-E display window for an undated Genesis 36 person; the text supplies genealogy, not calendar years or lifespan. Display birth is chained one editorial 30-year generation after Dishon's display birth so the parent-child order stays plausible; the offset is not textual.", death_derivation_id: gen-ithran-dishon-death, birth_derivation_id: gen-ithran-dishon-birth, evidence_claim_ids: [ithran-dishon-attested]}
+      - {<<: *g36est, entity_id: cheran-dishon, explanation: "Provisional grade-E display window for an undated Genesis 36 person; the text supplies genealogy, not calendar years or lifespan. Display birth is chained one editorial 30-year generation after Dishon's display birth so the parent-child order stays plausible; the offset is not textual.", death_derivation_id: gen-cheran-dishon-death, birth_derivation_id: gen-cheran-dishon-birth, evidence_claim_ids: [cheran-dishon-attested]}
+      - {<<: *g36est, entity_id: bilhan-ezer, explanation: "Provisional grade-E display window for an undated Genesis 36 person; the text supplies genealogy, not calendar years or lifespan. Display birth is chained one editorial 30-year generation after Ezer's display birth so the parent-child order stays plausible; the offset is not textual.", death_derivation_id: gen-bilhan-ezer-death, birth_derivation_id: gen-bilhan-ezer-birth, evidence_claim_ids: [bilhan-ezer-attested]}
+      - {<<: *g36est, entity_id: zaavan-ezer, explanation: "Provisional grade-E display window for an undated Genesis 36 person; the text supplies genealogy, not calendar years or lifespan. Display birth is chained one editorial 30-year generation after Ezer's display birth so the parent-child order stays plausible; the offset is not textual.", death_derivation_id: gen-zaavan-ezer-death, birth_derivation_id: gen-zaavan-ezer-birth, evidence_claim_ids: [zaavan-ezer-attested]}
+      - {<<: *g36est, entity_id: akan-ezer, explanation: "Provisional grade-E display window for an undated Genesis 36 person; the text supplies genealogy, not calendar years or lifespan. Display birth is chained one editorial 30-year generation after Ezer's display birth so the parent-child order stays plausible; the offset is not textual.", death_derivation_id: gen-akan-ezer-death, birth_derivation_id: gen-akan-ezer-birth, evidence_claim_ids: [akan-ezer-attested]}
+      - {<<: *g36est, entity_id: uz-dishan, explanation: "Provisional grade-E display window for an undated Genesis 36 person; the text supplies genealogy, not calendar years or lifespan. Display birth is chained one editorial 30-year generation after Dishan's display birth so the parent-child order stays plausible; the offset is not textual.", death_derivation_id: gen-uz-dishan-death, birth_derivation_id: gen-uz-dishan-birth, evidence_claim_ids: [uz-dishan-attested]}
+      - {<<: *g36est, entity_id: aran-dishan, explanation: "Provisional grade-E display window for an undated Genesis 36 person; the text supplies genealogy, not calendar years or lifespan. Display birth is chained one editorial 30-year generation after Dishan's display birth so the parent-child order stays plausible; the offset is not textual.", death_derivation_id: gen-aran-dishan-death, birth_derivation_id: gen-aran-dishan-birth, evidence_claim_ids: [aran-dishan-attested]}
       - {<<: *g36est, entity_id: bela-edom, evidence_claim_ids: [bela-edom-attested]}
       - {<<: *g36est, entity_id: beor-edom, evidence_claim_ids: [beor-edom-attested]}
       - {<<: *g36est, entity_id: jobab-edom, evidence_claim_ids: [jobab-edom-attested]}
@@ -1252,7 +1558,7 @@ records:
       - {<<: *exodus_low_confidence, entity_id: pharaoh-firstborn-exodus, birth_derivation_id: exodus-pharaoh-son-birth, death_derivation_id: exodus-pharaoh-son-death, evidence_claim_ids: [pharaoh-firstborn-exodus-attested-lxx], explanation: "Illustrative window ending at the death narrated in Exodus 12. Birth year and age at death are unknown; this is an episode marker, not a recovered actual lifespan."}
       - {<<: *exodus_low_confidence, entity_id: bezalel, birth_derivation_id: exodus-artisan-birth, death_derivation_id: exodus-artisan-death, evidence_claim_ids: [bezalel-attested-lxx], explanation: "Grade-E display window around Bezalel's sanctuary service; Exodus identifies his lineage and craft appointment but gives no birth, death, or age data."}
       - {<<: *exodus_low_confidence, entity_id: oholiab, birth_derivation_id: exodus-artisan-birth, death_derivation_id: exodus-artisan-death, evidence_claim_ids: [oholiab-attested-lxx], explanation: "Grade-E display window around Oholiab's sanctuary service; no lifespan or calendar dates are supplied."}
-      - {<<: *exodus_low_confidence, entity_id: uri-bezalel, birth_derivation_id: exodus-artisan-parent-birth, death_derivation_id: exodus-artisan-parent-death, evidence_claim_ids: [uri-bezalel-attested-lxx], explanation: "Grade-E parent-generation display window; Exodus identifies Uri only as Bezalel's father, not by an age or date."}
+      - {<<: *exodus_low_confidence, entity_id: uri-bezalel, birth_derivation_id: gen-uri-bezalel-birth, death_derivation_id: gen-uri-bezalel-death, evidence_claim_ids: [uri-bezalel-attested-lxx], explanation: "Grade-E parent-generation display window; Exodus identifies Uri only as Bezalel's father, not by an age or date. Display birth is chained one editorial 30-year generation after Hur in Bezalel's genealogy's display birth so the parent-child order stays plausible; the offset is not textual."}
       - {<<: *exodus_low_confidence, entity_id: ahisamach, birth_derivation_id: exodus-artisan-parent-birth, death_derivation_id: exodus-artisan-parent-death, evidence_claim_ids: [ahisamach-attested-lxx], explanation: "Grade-E parent-generation display window; Exodus identifies Ahisamach as Oholiab's father but supplies no lifespan."}
       - {<<: *exodus_low_confidence, entity_id: hur-ancestor-bezalel, birth_derivation_id: exodus-artisan-parent-birth, death_derivation_id: exodus-artisan-parent-death, evidence_claim_ids: [hur-ancestor-bezalel-attested-lxx], explanation: "Grade-E parent-generation window for the Hur named in Bezalel's lineage. Kept separate from Hur at Rephidim pending an explicit identity link; their possible match is recorded as unresolved."}
       - {<<: *exodus_low_confidence, entity_id: shelomith-leviticus, birth_derivation_id: leviticus-case-mother-birth, death_derivation_id: leviticus-case-mother-death, evidence_claim_ids: [shelomith-attested-leviticus-lxx], explanation: "Grade-E illustrative window for Shelomith, named as the mother in Leviticus 24; no age, lifespan, or calendar year is given."}
@@ -1290,3 +1596,65 @@ records:
       - {<<: *exodus_low_confidence, entity_id: lael, birth_derivation_id: numbers-levite-parent-birth, death_derivation_id: numbers-levite-parent-death, evidence_claim_ids: [lael-attested-lxx, lael-attested-geez, lael-attested-mt], explanation: "Grade-E generational display window for Lael, named as the father of Eliasaph the Gershonite; no lifespan is supplied."}
       - {<<: *exodus_low_confidence, entity_id: zuriel-merari, birth_derivation_id: numbers-levite-head-birth, death_derivation_id: numbers-levite-head-death, evidence_claim_ids: [zuriel-merari-attested-lxx, zuriel-merari-attested-geez, zuriel-merari-attested-mt], explanation: "Grade-E display window for Zuriel, named as the Merarite clan leader at the census; no lifespan is stated."}
       - {<<: *exodus_low_confidence, entity_id: abihail-merari, birth_derivation_id: numbers-levite-parent-birth, death_derivation_id: numbers-levite-parent-death, evidence_claim_ids: [abihail-merari-attested-lxx, abihail-merari-attested-geez, abihail-merari-attested-mt], explanation: "Grade-E generational display window for Abihail, named as Zuriel's father; no lifespan is supplied."}
+      - {<<: *exodus_low_confidence, entity_id: jair-manasseh, birth_derivation_id: numbers-officer-birth, death_derivation_id: numbers-officer-death, evidence_claim_ids: [jair-attested-lxx, jair-attested-geez, jair-attested-mt], explanation: "Grade-E display window for Jair around the Transjordan settlement; Numbers gives his actions but no age, lifespan, or absolute year."}
+      - {<<: *exodus_low_confidence, entity_id: nobah-gilead, birth_derivation_id: numbers-officer-birth, death_derivation_id: numbers-officer-death, evidence_claim_ids: [nobah-attested-lxx, nobah-attested-geez, nobah-attested-mt], explanation: "Grade-E display window for Nobah around the Transjordan settlement; no age or lifespan is stated."}
+      - {<<: *exodus_low_confidence, entity_id: shemuel-land-allotment, birth_derivation_id: numbers-officer-birth, death_derivation_id: numbers-officer-death, evidence_claim_ids: [shemuel-land-attested-lxx, shemuel-land-attested-geez, shemuel-land-attested-mt], explanation: "Grade-E episode-centered window for the Simeonite land-allotment representative. Appointment is explicit; lifespan and absolute dates are not."}
+      - {<<: *exodus_low_confidence, entity_id: elidad-land-allotment, birth_derivation_id: numbers-officer-birth, death_derivation_id: numbers-officer-death, evidence_claim_ids: [elidad-land-attested-lxx, elidad-land-attested-geez, elidad-land-attested-mt], explanation: "Grade-E episode-centered window; LXX Eldad here is the Benjaminite allotment representative, distinct from Eldad of Numbers 11."}
+      - {<<: *exodus_low_confidence, entity_id: bukki-land-allotment, birth_derivation_id: numbers-officer-birth, death_derivation_id: numbers-officer-death, evidence_claim_ids: [bukki-land-attested-lxx, bukki-land-attested-geez, bukki-land-attested-mt], explanation: "Grade-E episode-centered window for the Danite representative; no lifespan is supplied."}
+      - {<<: *exodus_low_confidence, entity_id: hanniel-land-allotment, birth_derivation_id: numbers-officer-birth, death_derivation_id: numbers-officer-death, evidence_claim_ids: [hanniel-land-attested-lxx, hanniel-land-attested-geez, hanniel-land-attested-mt], explanation: "Grade-E episode-centered window for the Manassite representative; no lifespan is supplied."}
+      - {<<: *exodus_low_confidence, entity_id: kemuel-land-allotment, birth_derivation_id: numbers-officer-birth, death_derivation_id: numbers-officer-death, evidence_claim_ids: [kemuel-land-attested-lxx, kemuel-land-attested-geez, kemuel-land-attested-mt], explanation: "Grade-E episode-centered window for the Ephraimite representative; kept distinct from Kemuel named in Genesis 22."}
+      - {<<: *exodus_low_confidence, entity_id: elizaphan-land-allotment, birth_derivation_id: numbers-officer-birth, death_derivation_id: numbers-officer-death, evidence_claim_ids: [elizaphan-land-attested-lxx, elizaphan-land-attested-geez, elizaphan-land-attested-mt], explanation: "Grade-E episode-centered window for the Zebulunite representative; no lifespan is supplied."}
+      - {<<: *exodus_low_confidence, entity_id: paltiel-land-allotment, birth_derivation_id: numbers-officer-birth, death_derivation_id: numbers-officer-death, evidence_claim_ids: [paltiel-land-attested-lxx, paltiel-land-attested-geez, paltiel-land-attested-mt], explanation: "Grade-E episode-centered window for the Issacharite representative; no lifespan is supplied."}
+      - {<<: *exodus_low_confidence, entity_id: ahihud-land-allotment, birth_derivation_id: numbers-officer-birth, death_derivation_id: numbers-officer-death, evidence_claim_ids: [ahihud-land-attested-lxx, ahihud-land-attested-geez, ahihud-land-attested-mt], explanation: "Grade-E episode-centered window for the Asherite representative; no lifespan is supplied."}
+      - {<<: *exodus_low_confidence, entity_id: pedahel-land-allotment, birth_derivation_id: numbers-officer-birth, death_derivation_id: numbers-officer-death, evidence_claim_ids: [pedahel-land-attested-lxx, pedahel-land-attested-geez, pedahel-land-attested-mt], explanation: "Grade-E episode-centered window for the Naphtalite representative; no lifespan is supplied."}
+      - {<<: *exodus_low_confidence, entity_id: eliab-reuben, birth_derivation_id: numbers-eliab-reuben-birth, death_derivation_id: numbers-eliab-reuben-death, evidence_claim_ids: [eliab-reuben-attested-lxx, eliab-reuben-attested-geez, eliab-reuben-attested-mt], explanation: "Grade-E generational window between Pallu and Eliab's sons Dathan and Abiram; no age or lifespan is stated."}
+      - {<<: *exodus_low_confidence, entity_id: nemuel-reuben, birth_derivation_id: numbers-dathan-birth, death_derivation_id: numbers-officer-death, evidence_claim_ids: [nemuel-reuben-attested-lxx, nemuel-reuben-attested-geez, nemuel-reuben-attested-mt], explanation: "Grade-E window sharing his brother Dathan's display birth; Numbers 26 names him but gives no fate or lifespan."}
+      - {<<: *exodus_low_confidence, entity_id: gilead-manasseh, birth_derivation_id: numbers-gilead-birth, death_derivation_id: numbers-gilead-death, evidence_claim_ids: [gilead-manasseh-attested-lxx, gilead-manasseh-attested-geez, gilead-manasseh-attested-mt], explanation: "Grade-E window chained one editorial 30-year generation after Machir. The wide 200-year span is an uncertainty band bridging the compressed genealogy to his son Hepher's wilderness-era window, not a claimed lifespan."}
+      - {<<: *exodus_low_confidence, entity_id: iezer-gilead, birth_derivation_id: numbers-hepher-birth, death_derivation_id: numbers-hepher-death, evidence_claim_ids: [iezer-gilead-attested-lxx, iezer-gilead-attested-geez, iezer-gilead-attested-mt], explanation: "Grade-E window sharing his brother Hepher's display window; Numbers 26 names him only as a clan founder."}
+      - {<<: *exodus_low_confidence, entity_id: helek-gilead, birth_derivation_id: numbers-hepher-birth, death_derivation_id: numbers-hepher-death, evidence_claim_ids: [helek-gilead-attested-lxx, helek-gilead-attested-geez, helek-gilead-attested-mt], explanation: "Grade-E window sharing his brother Hepher's display window; Numbers 26 names him only as a clan founder."}
+      - {<<: *exodus_low_confidence, entity_id: asriel-gilead, birth_derivation_id: numbers-hepher-birth, death_derivation_id: numbers-hepher-death, evidence_claim_ids: [asriel-gilead-attested-lxx, asriel-gilead-attested-geez, asriel-gilead-attested-mt], explanation: "Grade-E window sharing his brother Hepher's display window; Numbers 26 names him only as a clan founder."}
+      - {<<: *exodus_low_confidence, entity_id: shechem-gilead, birth_derivation_id: numbers-hepher-birth, death_derivation_id: numbers-hepher-death, evidence_claim_ids: [shechem-gilead-attested-lxx, shechem-gilead-attested-geez, shechem-gilead-attested-mt], explanation: "Grade-E window sharing his brother Hepher's display window; Numbers 26 names him only as a clan founder."}
+      - {<<: *exodus_low_confidence, entity_id: shemida-gilead, birth_derivation_id: numbers-hepher-birth, death_derivation_id: numbers-hepher-death, evidence_claim_ids: [shemida-gilead-attested-lxx, shemida-gilead-attested-geez, shemida-gilead-attested-mt], explanation: "Grade-E window sharing his brother Hepher's display window; Numbers 26 names him only as a clan founder."}
+      - {<<: *exodus_low_confidence, entity_id: shuthelah-ephraim, birth_derivation_id: numbers-shuthelah-ephraim-birth, death_derivation_id: numbers-shuthelah-ephraim-death, evidence_claim_ids: [shuthelah-ephraim-attested-lxx, shuthelah-ephraim-attested-geez, shuthelah-ephraim-attested-mt], explanation: "Grade-E window chained one editorial 30-year generation after Ephraim; Numbers 26 names him only as a clan founder."}
+      - {<<: *exodus_low_confidence, entity_id: tahan-ephraim, birth_derivation_id: numbers-tahan-ephraim-birth, death_derivation_id: numbers-tahan-ephraim-death, evidence_claim_ids: [tahan-ephraim-attested-lxx, tahan-ephraim-attested-geez, tahan-ephraim-attested-mt], explanation: "Grade-E window chained one editorial 30-year generation after Ephraim; Numbers 26 names him only as a clan founder."}
+      - {<<: *exodus_low_confidence, entity_id: becher-ephraim, birth_derivation_id: numbers-becher-ephraim-birth, death_derivation_id: numbers-becher-ephraim-death, evidence_claim_ids: [becher-ephraim-attested-mt], explanation: "Grade-E window chained one editorial 30-year generation after Ephraim; attested as an Ephraimite clan only in the Masoretic list."}
+      - {<<: *exodus_low_confidence, entity_id: eran-shuthelah, birth_derivation_id: numbers-eran-birth, death_derivation_id: numbers-eran-death, evidence_claim_ids: [eran-shuthelah-attested-lxx, eran-shuthelah-attested-geez, eran-shuthelah-attested-mt], explanation: "Grade-E window chained one editorial 30-year generation after Shuthelah; no lifespan is stated."}
+      - {<<: *exodus_low_confidence, entity_id: beor-balaam, birth_derivation_id: numbers-beor-birth, death_derivation_id: numbers-beor-death, evidence_claim_ids: [beor-balaam-attested-lxx, beor-balaam-attested-geez, beor-balaam-attested-mt], explanation: "Grade-E parent-generation window for Balaam's named father; no age or lifespan is supplied."}
+      - {<<: *exodus_low_confidence, entity_id: salu-simeon, birth_derivation_id: numbers-salu-birth, death_derivation_id: numbers-salu-death, evidence_claim_ids: [salu-simeon-attested-lxx, salu-simeon-attested-geez, salu-simeon-attested-mt], explanation: "Grade-E parent-generation window for Zimri's named father; no age or lifespan is supplied."}
+      - {<<: *exodus_low_confidence, entity_id: nun-ephraim, birth_derivation_id: numbers-nun-birth, death_derivation_id: numbers-nun-death, evidence_claim_ids: [nun-ephraim-attested-lxx, nun-ephraim-attested-geez, nun-ephraim-attested-mt], explanation: "Grade-E parent-generation window for Joshua's father; Numbers names him only in Joshua's patronymic."}
+      - {<<: *exodus_low_confidence, entity_id: king-of-arad, birth_derivation_id: numbers-sihon-birth, death_derivation_id: numbers-sihon-death, evidence_claim_ids: [king-of-arad-attested-lxx, king-of-arad-attested-geez, king-of-arad-attested-mt], explanation: "Grade-E display window for an unnamed king in the fortieth-year campaign; the text gives no lifespan or fate for him personally."}
+      - {<<: *exodus_low_confidence, entity_id: former-king-of-moab, birth_derivation_id: numbers-former-moab-king-birth, death_derivation_id: numbers-former-moab-king-death, evidence_claim_ids: [former-king-of-moab-attested-lxx, former-king-of-moab-attested-geez, former-king-of-moab-attested-mt], explanation: "Grade-E window placed before Sihon's conquest, which Numbers 21:26 reports as already past; no lifespan is given."}
+      - {<<: *exodus_low_confidence, entity_id: ammihud-simeon, birth_derivation_id: numbers-allotment-parent-birth, death_derivation_id: numbers-allotment-parent-death, evidence_claim_ids: [ammihud-simeon-attested-lxx, ammihud-simeon-attested-geez, ammihud-simeon-attested-mt], explanation: "Grade-E parent-generation window for a father named only in a Numbers 34 patronymic; no lifespan is supplied."}
+      - {<<: *exodus_low_confidence, entity_id: kislon-land, birth_derivation_id: numbers-allotment-parent-birth, death_derivation_id: numbers-allotment-parent-death, evidence_claim_ids: [kislon-land-attested-lxx, kislon-land-attested-geez, kislon-land-attested-mt], explanation: "Grade-E parent-generation window for a father named only in a Numbers 34 patronymic; no lifespan is supplied."}
+      - {<<: *exodus_low_confidence, entity_id: jogli-land, birth_derivation_id: numbers-allotment-parent-birth, death_derivation_id: numbers-allotment-parent-death, evidence_claim_ids: [jogli-land-attested-lxx, jogli-land-attested-geez, jogli-land-attested-mt], explanation: "Grade-E parent-generation window for a father named only in a Numbers 34 patronymic; no lifespan is supplied."}
+      - {<<: *exodus_low_confidence, entity_id: ephod-land, birth_derivation_id: numbers-allotment-parent-birth, death_derivation_id: numbers-allotment-parent-death, evidence_claim_ids: [ephod-land-attested-lxx, ephod-land-attested-geez, ephod-land-attested-mt], explanation: "Grade-E parent-generation window for a father named only in a Numbers 34 patronymic; no lifespan is supplied."}
+      - {<<: *exodus_low_confidence, entity_id: shiphtan-land, birth_derivation_id: numbers-allotment-parent-birth, death_derivation_id: numbers-allotment-parent-death, evidence_claim_ids: [shiphtan-land-attested-lxx, shiphtan-land-attested-geez, shiphtan-land-attested-mt], explanation: "Grade-E parent-generation window for a father named only in a Numbers 34 patronymic; no lifespan is supplied."}
+      - {<<: *exodus_low_confidence, entity_id: parnach-land, birth_derivation_id: numbers-allotment-parent-birth, death_derivation_id: numbers-allotment-parent-death, evidence_claim_ids: [parnach-land-attested-lxx, parnach-land-attested-geez, parnach-land-attested-mt], explanation: "Grade-E parent-generation window for a father named only in a Numbers 34 patronymic; no lifespan is supplied."}
+      - {<<: *exodus_low_confidence, entity_id: azzan-land, birth_derivation_id: numbers-allotment-parent-birth, death_derivation_id: numbers-allotment-parent-death, evidence_claim_ids: [azzan-land-attested-lxx, azzan-land-attested-geez, azzan-land-attested-mt], explanation: "Grade-E parent-generation window for a father named only in a Numbers 34 patronymic; no lifespan is supplied."}
+      - {<<: *exodus_low_confidence, entity_id: shelomi-land, birth_derivation_id: numbers-allotment-parent-birth, death_derivation_id: numbers-allotment-parent-death, evidence_claim_ids: [shelomi-land-attested-lxx, shelomi-land-attested-geez, shelomi-land-attested-mt], explanation: "Grade-E parent-generation window for a father named only in a Numbers 34 patronymic; no lifespan is supplied."}
+      - {<<: *exodus_low_confidence, entity_id: ammihud-naphtali, birth_derivation_id: numbers-allotment-parent-birth, death_derivation_id: numbers-allotment-parent-death, evidence_claim_ids: [ammihud-naphtali-attested-lxx, ammihud-naphtali-attested-geez, ammihud-naphtali-attested-mt], explanation: "Grade-E parent-generation window for a father named only in a Numbers 34 patronymic; no lifespan is supplied."}
+      - {<<: *exodus_low_confidence, entity_id: shammua-spy, birth_derivation_id: numbers-officer-birth, death_derivation_id: numbers-spy-plague-death, evidence_claim_ids: [shammua-spy-attested-lxx, shammua-spy-attested-geez, shammua-spy-attested-mt], explanation: "Grade-E birth window; the death is narrated (plague after the spies' report, Numbers 14:37) and placed in the second wilderness year, but no age or absolute calendar year is stated."}
+      - {<<: *exodus_low_confidence, entity_id: zaccur-reuben, birth_derivation_id: numbers-allotment-parent-birth, death_derivation_id: numbers-allotment-parent-death, evidence_claim_ids: [zaccur-reuben-attested-lxx, zaccur-reuben-attested-geez, zaccur-reuben-attested-mt], explanation: "Grade-E parent-generation window for a father named only in a Numbers 13 patronymic; no lifespan is supplied."}
+      - {<<: *exodus_low_confidence, entity_id: shaphat-spy, birth_derivation_id: numbers-officer-birth, death_derivation_id: numbers-spy-plague-death, evidence_claim_ids: [shaphat-spy-attested-lxx, shaphat-spy-attested-geez, shaphat-spy-attested-mt], explanation: "Grade-E birth window; the death is narrated (plague after the spies' report, Numbers 14:37) and placed in the second wilderness year, but no age or absolute calendar year is stated."}
+      - {<<: *exodus_low_confidence, entity_id: hori-simeon, birth_derivation_id: numbers-allotment-parent-birth, death_derivation_id: numbers-allotment-parent-death, evidence_claim_ids: [hori-simeon-attested-lxx, hori-simeon-attested-geez, hori-simeon-attested-mt], explanation: "Grade-E parent-generation window for a father named only in a Numbers 13 patronymic; no lifespan is supplied."}
+      - {<<: *exodus_low_confidence, entity_id: igal-spy, birth_derivation_id: numbers-officer-birth, death_derivation_id: numbers-spy-plague-death, evidence_claim_ids: [igal-spy-attested-lxx, igal-spy-attested-geez, igal-spy-attested-mt], explanation: "Grade-E birth window; the death is narrated (plague after the spies' report, Numbers 14:37) and placed in the second wilderness year, but no age or absolute calendar year is stated."}
+      - {<<: *exodus_low_confidence, entity_id: joseph-issachar, birth_derivation_id: numbers-allotment-parent-birth, death_derivation_id: numbers-allotment-parent-death, evidence_claim_ids: [joseph-issachar-attested-lxx, joseph-issachar-attested-geez, joseph-issachar-attested-mt], explanation: "Grade-E parent-generation window for a father named only in a Numbers 13 patronymic; no lifespan is supplied."}
+      - {<<: *exodus_low_confidence, entity_id: palti-spy, birth_derivation_id: numbers-officer-birth, death_derivation_id: numbers-spy-plague-death, evidence_claim_ids: [palti-spy-attested-lxx, palti-spy-attested-geez, palti-spy-attested-mt], explanation: "Grade-E birth window; the death is narrated (plague after the spies' report, Numbers 14:37) and placed in the second wilderness year, but no age or absolute calendar year is stated."}
+      - {<<: *exodus_low_confidence, entity_id: raphu-benjamin, birth_derivation_id: numbers-allotment-parent-birth, death_derivation_id: numbers-allotment-parent-death, evidence_claim_ids: [raphu-benjamin-attested-lxx, raphu-benjamin-attested-geez, raphu-benjamin-attested-mt], explanation: "Grade-E parent-generation window for a father named only in a Numbers 13 patronymic; no lifespan is supplied."}
+      - {<<: *exodus_low_confidence, entity_id: gaddiel-spy, birth_derivation_id: numbers-officer-birth, death_derivation_id: numbers-spy-plague-death, evidence_claim_ids: [gaddiel-spy-attested-lxx, gaddiel-spy-attested-geez, gaddiel-spy-attested-mt], explanation: "Grade-E birth window; the death is narrated (plague after the spies' report, Numbers 14:37) and placed in the second wilderness year, but no age or absolute calendar year is stated."}
+      - {<<: *exodus_low_confidence, entity_id: sodi-zebulun, birth_derivation_id: numbers-allotment-parent-birth, death_derivation_id: numbers-allotment-parent-death, evidence_claim_ids: [sodi-zebulun-attested-lxx, sodi-zebulun-attested-geez, sodi-zebulun-attested-mt], explanation: "Grade-E parent-generation window for a father named only in a Numbers 13 patronymic; no lifespan is supplied."}
+      - {<<: *exodus_low_confidence, entity_id: gaddi-spy, birth_derivation_id: numbers-officer-birth, death_derivation_id: numbers-spy-plague-death, evidence_claim_ids: [gaddi-spy-attested-lxx, gaddi-spy-attested-geez, gaddi-spy-attested-mt], explanation: "Grade-E birth window; the death is narrated (plague after the spies' report, Numbers 14:37) and placed in the second wilderness year, but no age or absolute calendar year is stated."}
+      - {<<: *exodus_low_confidence, entity_id: susi-manasseh, birth_derivation_id: numbers-allotment-parent-birth, death_derivation_id: numbers-allotment-parent-death, evidence_claim_ids: [susi-manasseh-attested-lxx, susi-manasseh-attested-geez, susi-manasseh-attested-mt], explanation: "Grade-E parent-generation window for a father named only in a Numbers 13 patronymic; no lifespan is supplied."}
+      - {<<: *exodus_low_confidence, entity_id: ammiel-spy, birth_derivation_id: numbers-officer-birth, death_derivation_id: numbers-spy-plague-death, evidence_claim_ids: [ammiel-spy-attested-lxx, ammiel-spy-attested-geez, ammiel-spy-attested-mt], explanation: "Grade-E birth window; the death is narrated (plague after the spies' report, Numbers 14:37) and placed in the second wilderness year, but no age or absolute calendar year is stated."}
+      - {<<: *exodus_low_confidence, entity_id: gemalli-dan, birth_derivation_id: numbers-allotment-parent-birth, death_derivation_id: numbers-allotment-parent-death, evidence_claim_ids: [gemalli-dan-attested-lxx, gemalli-dan-attested-geez, gemalli-dan-attested-mt], explanation: "Grade-E parent-generation window for a father named only in a Numbers 13 patronymic; no lifespan is supplied."}
+      - {<<: *exodus_low_confidence, entity_id: sethur-spy, birth_derivation_id: numbers-officer-birth, death_derivation_id: numbers-spy-plague-death, evidence_claim_ids: [sethur-spy-attested-lxx, sethur-spy-attested-geez, sethur-spy-attested-mt], explanation: "Grade-E birth window; the death is narrated (plague after the spies' report, Numbers 14:37) and placed in the second wilderness year, but no age or absolute calendar year is stated."}
+      - {<<: *exodus_low_confidence, entity_id: michael-asher, birth_derivation_id: numbers-allotment-parent-birth, death_derivation_id: numbers-allotment-parent-death, evidence_claim_ids: [michael-asher-attested-lxx, michael-asher-attested-geez, michael-asher-attested-mt], explanation: "Grade-E parent-generation window for a father named only in a Numbers 13 patronymic; no lifespan is supplied."}
+      - {<<: *exodus_low_confidence, entity_id: nahbi-spy, birth_derivation_id: numbers-officer-birth, death_derivation_id: numbers-spy-plague-death, evidence_claim_ids: [nahbi-spy-attested-lxx, nahbi-spy-attested-geez, nahbi-spy-attested-mt], explanation: "Grade-E birth window; the death is narrated (plague after the spies' report, Numbers 14:37) and placed in the second wilderness year, but no age or absolute calendar year is stated."}
+      - {<<: *exodus_low_confidence, entity_id: vophsi-naphtali, birth_derivation_id: numbers-allotment-parent-birth, death_derivation_id: numbers-allotment-parent-death, evidence_claim_ids: [vophsi-naphtali-attested-lxx, vophsi-naphtali-attested-geez, vophsi-naphtali-attested-mt], explanation: "Grade-E parent-generation window for a father named only in a Numbers 13 patronymic; no lifespan is supplied."}
+      - {<<: *exodus_low_confidence, entity_id: geuel-spy, birth_derivation_id: numbers-officer-birth, death_derivation_id: numbers-spy-plague-death, evidence_claim_ids: [geuel-spy-attested-lxx, geuel-spy-attested-geez, geuel-spy-attested-mt], explanation: "Grade-E birth window; the death is narrated (plague after the spies' report, Numbers 14:37) and placed in the second wilderness year, but no age or absolute calendar year is stated."}
+      - {<<: *exodus_low_confidence, entity_id: machi-gad, birth_derivation_id: numbers-allotment-parent-birth, death_derivation_id: numbers-allotment-parent-death, evidence_claim_ids: [machi-gad-attested-lxx, machi-gad-attested-geez, machi-gad-attested-mt], explanation: "Grade-E parent-generation window for a father named only in a Numbers 13 patronymic; no lifespan is supplied."}
+      - {<<: *exodus_low_confidence, entity_id: peleth-reuben, birth_derivation_id: numbers-allotment-parent-birth, death_derivation_id: numbers-allotment-parent-death, evidence_claim_ids: [peleth-reuben-attested-lxx, peleth-reuben-attested-geez, peleth-reuben-attested-mt], explanation: "Grade-E parent-generation window for a father named only in a patronymic; no lifespan is supplied."}
+      - {<<: *exodus_low_confidence, entity_id: cushite-wife-moses, birth_derivation_id: numbers-officer-birth, death_derivation_id: numbers-officer-death, evidence_claim_ids: [cushite-wife-moses-attested-lxx, cushite-wife-moses-attested-geez, cushite-wife-moses-attested-mt], explanation: "Grade-E display window for an unnamed but uniquely identified woman; no age, lifespan, or date of marriage is given."}
+      - {<<: *exodus_low_confidence, entity_id: young-man-reporting-eldad, birth_derivation_id: numbers-officer-birth, death_derivation_id: numbers-officer-death, evidence_claim_ids: [young-man-reporting-eldad-attested-lxx, young-man-reporting-eldad-attested-geez, young-man-reporting-eldad-attested-mt], explanation: "Grade-E display window for an unnamed individual known from one episode; no lifespan is given."}
+      - {<<: *exodus_low_confidence, entity_id: sabbath-wood-gatherer, birth_derivation_id: numbers-officer-birth, death_derivation_id: numbers-wood-gatherer-death, evidence_claim_ids: [sabbath-wood-gatherer-attested-lxx, sabbath-wood-gatherer-attested-geez, sabbath-wood-gatherer-attested-mt], explanation: "Grade-E window. The execution is narrated, but only as 'while Israel was in the wilderness'; the death year is an illustrative placement inside the wilderness period."}
+      - {<<: *exodus_low_confidence, entity_id: king-of-edom-numbers, birth_derivation_id: numbers-sihon-birth, death_derivation_id: numbers-sihon-death, evidence_claim_ids: [king-of-edom-numbers-attested-lxx, king-of-edom-numbers-attested-geez, king-of-edom-numbers-attested-mt], explanation: "Grade-E display window for an unnamed king in the fortieth-year itinerary; no lifespan is given."}

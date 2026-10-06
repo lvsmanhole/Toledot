@@ -1,0 +1,10 @@
+schema_version: 1
+record_type: claims
+records:
+  - &z {id: zelophehad-attested, subject_id: zelophehad-numbers, predicate: attested_in_passage, value: {kind: attestation, status: named Manassite with five daughters}, evidence_type: explicit_text, witness_id: lxx-numbers-rahlfs-hanhart, confidence: A, citations: [{source_id: rahlfs-hanhart-2006, locator: "Numbers 26:33; 27:1-11", witness_id: lxx-numbers-rahlfs-hanhart}, {source_id: dillmann-octateuch-1853, locator: "Numeri 26:33; 27:1-11", witness_id: geez-numbers-dillmann}, {source_id: bhs-numbers, locator: "Numbers 26:33; 27:1-11", witness_id: mt-numbers-bhs}]}
+  - {<<: *z, id: hepher-attested, subject_id: hepher-zelophehad, value: {kind: attestation, status: named father of Zelophehad}}
+  - {<<: *z, id: mahlah-attested, subject_id: mahlah-numbers, value: {kind: attestation, status: named daughter of Zelophehad}}
+  - {<<: *z, id: noah-zelophehad-attested, subject_id: noah-zelophehad, value: {kind: attestation, status: named daughter of Zelophehad}}
+  - {<<: *z, id: hoglah-attested, subject_id: hoglah-numbers, value: {kind: attestation, status: named daughter of Zelophehad}}
+  - {<<: *z, id: milcah-zelophehad-attested, subject_id: milcah-zelophehad, value: {kind: attestation, status: named daughter of Zelophehad}}
+  - {<<: *z, id: tirzah-attested, subject_id: tirzah-numbers, value: {kind: attestation, status: named daughter of Zelophehad}}
