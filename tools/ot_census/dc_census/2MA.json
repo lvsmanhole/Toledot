@@ -1,0 +1,2408 @@
+{
+ "book": "2MA",
+ "people": [
+  {
+   "name": "Abraham",
+   "existing_id": "abram",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Patriarch named in the covenant formula of the opening letter.",
+   "refs": [
+    "1:2"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Isaac",
+   "existing_id": "isaac",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Patriarch named in the covenant formula of the opening letter.",
+   "refs": [
+    "1:2"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Jacob",
+   "existing_id": "jacob",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Patriarch named in the covenant formula of the opening letter.",
+   "refs": [
+    "1:2"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Demetrius",
+   "existing_id": null,
+   "new_id": "demetrius-ii-nicator",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Seleucid king in whose reign (year 169) an earlier letter to the Jews of Egypt was written.",
+   "refs": [
+    "1:7"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "1:7 is dated to Seleucid year 169 (c. 143 BCE), which falls in the reign of Demetrius II, not Demetrius I of ch. 14. Kept separate from demetrius-i-soter."
+  },
+  {
+   "name": "Jason",
+   "existing_id": null,
+   "new_id": "jason-high-priest",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [
+    "the vile Jason"
+   ],
+   "description": "Brother of Onias who bought the high priesthood from Antiochus IV, hellenized Jerusalem, was outbid by Menelaus and died in exile.",
+   "refs": [
+    "1:7",
+    "4:7",
+    "4:10",
+    "4:13",
+    "4:19",
+    "4:22",
+    "4:23",
+    "4:24",
+    "4:26",
+    "5:5",
+    "5:6",
+    "5:7",
+    "5:8",
+    "5:9",
+    "5:10"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "1:7 'Jason and his company revolted from the holy land' is traditionally taken as this Jason; included here. Brother of Onias (4:7, 4:26) but no parent is named in 2MA. Same new_id used in 4MA."
+  },
+  {
+   "name": "Judas",
+   "existing_id": null,
+   "new_id": "judas-maccabeus",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [
+    "Maccabaeus",
+    "Judas Maccabaeus"
+   ],
+   "description": "Jewish resistance leader who purified the temple and defeated Nicanor, Timotheus, Gorgias and others.",
+   "refs": [
+    "1:10",
+    "2:14",
+    "2:19",
+    "5:27",
+    "8:1",
+    "8:5",
+    "8:12",
+    "8:16",
+    "8:18",
+    "8:21",
+    "8:22",
+    "10:1",
+    "10:16",
+    "10:19",
+    "10:21",
+    "10:22",
+    "10:25",
+    "10:30",
+    "10:33",
+    "10:35",
+    "11:6",
+    "11:7",
+    "11:15",
+    "12:5",
+    "12:6",
+    "12:11",
+    "12:12",
+    "12:14",
+    "12:15",
+    "12:19",
+    "12:20",
+    "12:21",
+    "12:22",
+    "12:23",
+    "12:26",
+    "12:36",
+    "12:38",
+    "12:39",
+    "12:42",
+    "12:43",
+    "13:1",
+    "13:10",
+    "13:12",
+    "13:14",
+    "13:15",
+    "13:17",
+    "13:20",
+    "13:22",
+    "13:24",
+    "14:1",
+    "14:6",
+    "14:10",
+    "14:11",
+    "14:13",
+    "14:14",
+    "14:17",
+    "14:18",
+    "14:22",
+    "14:24",
+    "14:25",
+    "14:26",
+    "14:27",
+    "14:30",
+    "14:31",
+    "14:33",
+    "15:1",
+    "15:6",
+    "15:7",
+    "15:11",
+    "15:15",
+    "15:17",
+    "15:21",
+    "15:26",
+    "15:30"
+   ],
+   "parents": [],
+   "spouses": [
+    {
+     "ref_name": "Wife of Judas Maccabeus",
+     "verse": "14:25"
+    }
+   ],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "The 'Judas' of the letter in 1:10 (and 2:14) is usually taken as Judas Maccabeus, though the letter's date has led some to propose another Judas; merged here. His brothers Simon, Joseph and Jonathan are named in 8:22; his father is not named in 2MA. Reviewer: reconcile id with the 1MA census."
+  },
+  {
+   "name": "Aristobulus",
+   "existing_id": null,
+   "new_id": "aristobulus-teacher-of-ptolemy",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Teacher of King Ptolemy, of priestly descent, addressee of the second prefatory letter.",
+   "refs": [
+    "1:10"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Traditionally identified with the Jewish philosopher Aristobulus of Alexandria."
+  },
+  {
+   "name": "Ptolemy",
+   "existing_id": null,
+   "new_id": "ptolemy-vi-philometor",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [
+    "King Ptolemy",
+    "Philometor",
+    "Ptolemy Philometor"
+   ],
+   "description": "Ptolemaic king of Egypt, whose enthronement Apollonius attended and to whom Philip fled.",
+   "refs": [
+    "1:10",
+    "4:21",
+    "9:29",
+    "10:13"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "1:10 'King Ptolemy' (pupil of Aristobulus) is traditionally Ptolemy VI Philometor; merged with the named Philometor of 4:21, 9:29, 10:13. Same new_id used in 4MA 4:22."
+  },
+  {
+   "name": "Antiochus",
+   "existing_id": null,
+   "new_id": "antiochus-iv-epiphanes",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [
+    "Antiochus Epiphanes",
+    "Epiphanes"
+   ],
+   "description": "Seleucid king who persecuted the Jews, profaned the temple, and died in agony after retreating from Persia.",
+   "refs": [
+    "1:13",
+    "1:14",
+    "1:15",
+    "1:16",
+    "2:20",
+    "4:7",
+    "4:9",
+    "4:10",
+    "4:18",
+    "4:21",
+    "4:22",
+    "4:30",
+    "4:31",
+    "4:36",
+    "4:37",
+    "4:38",
+    "5:1",
+    "5:5",
+    "5:11",
+    "5:15",
+    "5:17",
+    "5:21",
+    "5:22",
+    "6:1",
+    "7:1",
+    "7:3",
+    "7:4",
+    "7:12",
+    "7:16",
+    "7:24",
+    "7:25",
+    "7:39",
+    "9:1",
+    "9:2",
+    "9:3",
+    "9:4",
+    "9:5",
+    "9:7",
+    "9:12",
+    "9:13",
+    "9:18",
+    "9:19",
+    "9:28",
+    "9:29",
+    "10:9",
+    "10:10",
+    "10:13",
+    "11:23",
+    "11:24",
+    "13:9"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "The prefatory letter (1:13-16) reports an Antiochus killed in the temple of Nanaea; it is traditionally read as Antiochus IV despite conflicting with ch. 9's account of his death (some scholars suggest Antiochus III or VII). Merged here with that caveat. His father (9:23 'my father', not named) is not recorded. In 4MA 4:15 he is called son of Seleucus. Same new_id used in 4MA."
+  },
+  {
+   "name": "Nehemiah",
+   "existing_id": "nehemiah-neh1",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Legend of Nehemiah rekindling the altar fire and founding a library.",
+   "refs": [
+    "1:18",
+    "1:20",
+    "1:21",
+    "1:23",
+    "1:31",
+    "1:33",
+    "1:36",
+    "2:13"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "The governor Nehemiah of the book of Nehemiah; 2MA attributes temple and altar building to him."
+  },
+  {
+   "name": "Jonathan",
+   "existing_id": null,
+   "new_id": "jonathan-priest-2ma1",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Priest who led the prayer at Nehemiah's sacrifice of the rekindled fire.",
+   "refs": [
+    "1:23"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Distinct from Jonathan brother of Judas (8:22)."
+  },
+  {
+   "name": "Moses",
+   "existing_id": "moses",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Lawgiver cited as precedent and author of the law.",
+   "refs": [
+    "1:29",
+    "2:4",
+    "2:8",
+    "2:10",
+    "2:11",
+    "7:6",
+    "7:30"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Jeremiah",
+   "existing_id": "jeremiah-2ch35",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [
+    "the prophet"
+   ],
+   "description": "Prophet who in legend hid the tabernacle, ark and altar of incense, and appears in Judas' dream giving him a gold sword.",
+   "refs": [
+    "2:1",
+    "2:2",
+    "2:4",
+    "2:5",
+    "2:7",
+    "15:13",
+    "15:14",
+    "15:15",
+    "15:16"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Solomon",
+   "existing_id": "solomon",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "King cited for his temple-dedication prayer and eight-day feast.",
+   "refs": [
+    "2:8",
+    "2:9",
+    "2:10",
+    "2:12"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "David",
+   "existing_id": "david",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "King whose writings Nehemiah collected.",
+   "refs": [
+    "2:13"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Jason of Cyrene",
+   "existing_id": null,
+   "new_id": "jason-of-cyrene",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Author of a five-volume history that 2 Maccabees abridges.",
+   "refs": [
+    "2:23"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Distinct from Jason the high priest."
+  },
+  {
+   "name": "Antiochus Eupator",
+   "existing_id": null,
+   "new_id": "antiochus-v-eupator",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [
+    "Eupator",
+    "Antiochus"
+   ],
+   "description": "Son and successor of Antiochus IV who campaigned against Judea with Lysias and was later killed by Demetrius.",
+   "refs": [
+    "2:20",
+    "9:25",
+    "9:29",
+    "10:10",
+    "10:11",
+    "10:13",
+    "11:22",
+    "11:27",
+    "13:1",
+    "13:2",
+    "13:3",
+    "13:4",
+    "13:9",
+    "13:15",
+    "13:18",
+    "13:22",
+    "13:23",
+    "13:24",
+    "13:25",
+    "13:26",
+    "14:2"
+   ],
+   "parents": [
+    {
+     "ref_name": "Antiochus",
+     "verse": "2:20"
+    },
+    {
+     "ref_name": "Antiochus",
+     "verse": "9:25"
+    }
+   ],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Antiochus IV calls him 'my son Antiochus' (9:25); 'Eupator his son' (2:20). 'Antiochus' in 11:22, 11:27, 13:3, 13:4 and 14:2 refers to him."
+  },
+  {
+   "name": "Onias",
+   "existing_id": null,
+   "new_id": "onias-iii",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [
+    "the high priest"
+   ],
+   "description": "Pious high priest during Heliodorus' visit, supplanted by his brother Jason and murdered by Andronicus at Daphne.",
+   "refs": [
+    "3:1",
+    "3:5",
+    "3:9",
+    "3:10",
+    "3:16",
+    "3:21",
+    "3:31",
+    "3:32",
+    "3:33",
+    "3:35",
+    "4:1",
+    "4:2",
+    "4:4",
+    "4:5",
+    "4:7",
+    "4:33",
+    "4:34",
+    "4:36",
+    "4:38",
+    "15:12",
+    "15:14"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Conventionally Onias III. Brother of Jason (4:7). Father not named in 2MA. Appears posthumously in Judas' dream (15:12-14). Same new_id used in 4MA."
+  },
+  {
+   "name": "Seleucus",
+   "existing_id": null,
+   "new_id": "seleucus-iv-philopator",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [
+    "King Seleucus"
+   ],
+   "description": "Seleucid king who funded the temple sacrifices and sent Heliodorus to seize the treasury.",
+   "refs": [
+    "3:3",
+    "4:7",
+    "5:18",
+    "14:1"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Seleucus IV. Father of Demetrius I (14:1). Same new_id used in 4MA."
+  },
+  {
+   "name": "Simon",
+   "existing_id": null,
+   "new_id": "simon-temple-guardian",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Benjamite guardian of the temple who informed against the treasury and slandered Onias; brother of Menelaus.",
+   "refs": [
+    "3:4",
+    "3:11",
+    "4:1",
+    "4:3",
+    "4:4",
+    "4:6",
+    "4:23"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "'Of the tribe of Benjamin' (3:4); some Latin/Armenian witnesses read 'Bilgah' (a priestly course). Brother of Menelaus (4:23). Same new_id used in 4MA 4:1-5. Distinct from Simon brother of Judas."
+  },
+  {
+   "name": "Apollonius of Tarsus",
+   "existing_id": null,
+   "new_id": "apollonius-of-tarsus",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Governor of Coelesyria and Phoenicia to whom Simon reported the temple treasury.",
+   "refs": [
+    "3:5",
+    "3:7"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Greek manuscripts read 'Apollonius son of Thraseas'; WEB renders 'of Tarsus'. Possibly the same as Apollonius son of Menestheus (4:4), who holds the same governorship, but the patronymics differ, so kept separate. 4MA 4:2-14 retells this episode with Apollonius himself entering the temple; mapped to this id in 4MA."
+  },
+  {
+   "name": "Heliodorus",
+   "existing_id": null,
+   "new_id": "heliodorus",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Chancellor of Seleucus IV, struck down when trying to seize the temple treasury.",
+   "refs": [
+    "3:7",
+    "3:8",
+    "3:9",
+    "3:13",
+    "3:23",
+    "3:25",
+    "3:27",
+    "3:31",
+    "3:32",
+    "3:33",
+    "3:35",
+    "3:37",
+    "3:40",
+    "4:1",
+    "5:18"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Hyrcanus",
+   "existing_id": null,
+   "new_id": "hyrcanus-son-of-tobias",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Wealthy man whose money was deposited in the temple treasury.",
+   "refs": [
+    "3:11"
+   ],
+   "parents": [
+    {
+     "ref_name": "Tobias",
+     "verse": "3:11"
+    }
+   ],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Tobias",
+   "existing_id": null,
+   "new_id": "tobias-father-of-hyrcanus",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Father of Hyrcanus.",
+   "refs": [
+    "3:11"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Head of the Tobiad family; not identified with Tobiah the Ammonite of Nehemiah (centuries earlier) or with Tobias of the book of Tobit."
+  },
+  {
+   "name": "Apollonius son of Menestheus",
+   "existing_id": null,
+   "new_id": "apollonius-son-of-menestheus",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Governor of Coelesyria and Phoenicia, sent to Egypt for Philometor's enthronement.",
+   "refs": [
+    "4:4",
+    "4:21"
+   ],
+   "parents": [
+    {
+     "ref_name": "Menestheus",
+     "verse": "4:4"
+    },
+    {
+     "ref_name": "Menestheus",
+     "verse": "4:21"
+    }
+   ],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "See identity_note on Apollonius of Tarsus."
+  },
+  {
+   "name": "Menestheus",
+   "existing_id": null,
+   "new_id": "menestheus",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Father of Apollonius.",
+   "refs": [
+    "4:4",
+    "4:21"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "John the father of Eupolemus",
+   "existing_id": null,
+   "new_id": "john-father-of-eupolemus",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Father of Eupolemus, who obtained royal privileges for the Jews.",
+   "refs": [
+    "4:11"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Eupolemus",
+   "existing_id": null,
+   "new_id": "eupolemus",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Envoy to the Romans to establish friendship and alliance.",
+   "refs": [
+    "4:11"
+   ],
+   "parents": [
+    {
+     "ref_name": "John the father of Eupolemus",
+     "verse": "4:11"
+    }
+   ],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Menelaus",
+   "existing_id": null,
+   "new_id": "menelaus-high-priest",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Brother of Simon who outbid Jason for the high priesthood, stole temple vessels and was executed at Beroea.",
+   "refs": [
+    "4:23",
+    "4:24",
+    "4:25",
+    "4:27",
+    "4:29",
+    "4:32",
+    "4:34",
+    "4:39",
+    "4:43",
+    "4:45",
+    "4:47",
+    "4:50",
+    "5:5",
+    "5:15",
+    "5:23",
+    "11:29",
+    "11:32",
+    "13:3",
+    "13:4",
+    "13:7"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Brother of Simon the temple guardian (4:23) and of Lysimachus (4:29)."
+  },
+  {
+   "name": "Sostratus",
+   "existing_id": null,
+   "new_id": "sostratus",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Commander of the Jerusalem citadel responsible for collecting revenues.",
+   "refs": [
+    "4:27",
+    "4:28",
+    "4:29"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Lysimachus",
+   "existing_id": null,
+   "new_id": "lysimachus-brother-of-menelaus",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Brother and deputy of Menelaus, killed by a mob after temple sacrileges.",
+   "refs": [
+    "4:29",
+    "4:39",
+    "4:40",
+    "4:41",
+    "4:42"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Crates",
+   "existing_id": null,
+   "new_id": "crates",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Commander over the Cyprians, left as deputy by Sostratus.",
+   "refs": [
+    "4:29"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Antiochis",
+   "existing_id": null,
+   "new_id": "antiochis-concubine",
+   "gender": "female",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Concubine of Antiochus IV to whom Tarsus and Mallus were given.",
+   "refs": [
+    "4:30"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Andronicus",
+   "existing_id": null,
+   "new_id": "andronicus-deputy-2ma4",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "High-ranking deputy of Antiochus IV who murdered Onias and was executed for it.",
+   "refs": [
+    "4:31",
+    "4:32",
+    "4:34",
+    "4:36",
+    "4:38"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Executed in 4:38, so distinct from Andronicus the governor at Gerizim (5:23)."
+  },
+  {
+   "name": "Hauran",
+   "existing_id": null,
+   "new_id": "hauran-2ma4",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Aged man who led Lysimachus' armed force.",
+   "refs": [
+    "4:40"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Personal name (some translations 'Auranus'); not the region Hauran."
+  },
+  {
+   "name": "Ptolemy son of Dorymenes",
+   "existing_id": null,
+   "new_id": "ptolemy-son-of-dorymenes",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Seleucid official bribed by Menelaus; later governor of Coelesyria and Phoenicia who sent Nicanor and Gorgias.",
+   "refs": [
+    "4:45",
+    "4:46",
+    "6:8",
+    "8:8",
+    "8:9"
+   ],
+   "parents": [
+    {
+     "ref_name": "Dorymenes",
+     "verse": "4:45"
+    }
+   ],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "6:8 ('by the suggestion of Ptolemy') and 8:8-9 ('Ptolemy, the governor of Coelesyria and Phoenicia') are assigned here because 1 Macc 3:38 names Ptolemy son of Dorymenes as this governor; the identification is inferential. Kept separate from Ptolemy Macron (10:12), though some scholars equate them."
+  },
+  {
+   "name": "Dorymenes",
+   "existing_id": null,
+   "new_id": "dorymenes",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Father of Ptolemy.",
+   "refs": [
+    "4:45"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Aretas",
+   "existing_id": null,
+   "new_id": "aretas-arabian-prince",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Prince of the Arabians at whose court Jason was imprisoned.",
+   "refs": [
+    "5:8"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Philip the Phrygian",
+   "existing_id": null,
+   "new_id": "philip-the-phrygian",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Phrygian governor left in Jerusalem by Antiochus IV, who burned Sabbath-keepers in caves.",
+   "refs": [
+    "5:22",
+    "6:11",
+    "8:8"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Andronicus",
+   "existing_id": null,
+   "new_id": "andronicus-gerizim",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Governor left at Gerizim by Antiochus IV.",
+   "refs": [
+    "5:23"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Distinct from the Andronicus executed in 4:38."
+  },
+  {
+   "name": "Apollonius",
+   "existing_id": null,
+   "new_id": "apollonius-mysarch",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "'Lord of pollutions' sent with 22,000 men who massacred Jerusalemites on the Sabbath.",
+   "refs": [
+    "5:24",
+    "5:25",
+    "5:26"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Greek 'Mysarch' (commander of Mysian troops) Apollonius; distinct from the governors of chs. 3-4 and from Apollonius son of Gennaeus (12:2)."
+  },
+  {
+   "name": "An old man of Athens",
+   "existing_id": null,
+   "new_id": "old-man-of-athens",
+   "gender": "male",
+   "unnamed": true,
+   "aliases": [],
+   "description": "Athenian sent by the king to compel the Jews to abandon their laws.",
+   "refs": [
+    "6:1"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Some read 'Geron the Athenian' as a proper name; WEB treats it as 'an old man'."
+  },
+  {
+   "name": "Eleazar",
+   "existing_id": null,
+   "new_id": "eleazar-martyr",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [
+    "the man of ninety years"
+   ],
+   "description": "Aged principal scribe who chose death rather than eat swine's flesh.",
+   "refs": [
+    "6:18",
+    "6:19",
+    "6:21",
+    "6:23",
+    "6:24",
+    "6:28",
+    "6:30",
+    "6:31"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [
+    {
+     "what": "age at death",
+     "years": 90,
+     "verse": "6:24"
+    }
+   ],
+   "identity_note": "Merged with the Eleazar of 4 Maccabees 5-7 (same martyrdom; 4MA calls him a priest and lawyer); same new_id used in 4MA. Distinct from the priest Eleazar of 3MA 6 and from Eleazar of 2MA 8:23."
+  },
+  {
+   "name": "Mother of the seven brothers",
+   "existing_id": null,
+   "new_id": "mother-of-seven-brothers",
+   "gender": "female",
+   "unnamed": true,
+   "aliases": [],
+   "description": "Mother who encouraged her seven sons to die rather than break the law, and died last.",
+   "refs": [
+    "7:1",
+    "7:4",
+    "7:5",
+    "7:20",
+    "7:21",
+    "7:22",
+    "7:25",
+    "7:26",
+    "7:27",
+    "7:28",
+    "7:29",
+    "7:41"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Same individual across 2MA (ch. 7) and 4MA (chs. 8-18); same new_id used in both files. The brothers are unnamed but each is individually distinguishable by his order of martyrdom."
+  },
+  {
+   "name": "First of the seven brothers",
+   "existing_id": null,
+   "new_id": "seven-brothers-son-1",
+   "gender": "male",
+   "unnamed": true,
+   "aliases": [],
+   "description": "Spokesman of the brothers; tongue cut out and fried in a pan.",
+   "refs": [
+    "7:1",
+    "7:2",
+    "7:4",
+    "7:5",
+    "7:7"
+   ],
+   "parents": [
+    {
+     "ref_name": "Mother of the seven brothers",
+     "verse": "7:1"
+    }
+   ],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Same individual across 2MA (ch. 7) and 4MA (chs. 8-18); same new_id used in both files. The brothers are unnamed but each is individually distinguishable by his order of martyrdom."
+  },
+  {
+   "name": "Second of the seven brothers",
+   "existing_id": null,
+   "new_id": "seven-brothers-son-2",
+   "gender": "male",
+   "unnamed": true,
+   "aliases": [],
+   "description": "Scalped; affirmed the resurrection before dying.",
+   "refs": [
+    "7:1",
+    "7:7",
+    "7:8",
+    "7:9"
+   ],
+   "parents": [
+    {
+     "ref_name": "Mother of the seven brothers",
+     "verse": "7:1"
+    }
+   ],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Same individual across 2MA (ch. 7) and 4MA (chs. 8-18); same new_id used in both files. The brothers are unnamed but each is individually distinguishable by his order of martyrdom."
+  },
+  {
+   "name": "Third of the seven brothers",
+   "existing_id": null,
+   "new_id": "seven-brothers-son-3",
+   "gender": "male",
+   "unnamed": true,
+   "aliases": [],
+   "description": "Offered his tongue and hands, hoping to receive them back from heaven.",
+   "refs": [
+    "7:1",
+    "7:10",
+    "7:11",
+    "7:12"
+   ],
+   "parents": [
+    {
+     "ref_name": "Mother of the seven brothers",
+     "verse": "7:1"
+    }
+   ],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Same individual across 2MA (ch. 7) and 4MA (chs. 8-18); same new_id used in both files. The brothers are unnamed but each is individually distinguishable by his order of martyrdom."
+  },
+  {
+   "name": "Fourth of the seven brothers",
+   "existing_id": null,
+   "new_id": "seven-brothers-son-4",
+   "gender": "male",
+   "unnamed": true,
+   "aliases": [],
+   "description": "Tortured in the same way; denied a resurrection to life for the king.",
+   "refs": [
+    "7:1",
+    "7:13",
+    "7:14"
+   ],
+   "parents": [
+    {
+     "ref_name": "Mother of the seven brothers",
+     "verse": "7:1"
+    }
+   ],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Same individual across 2MA (ch. 7) and 4MA (chs. 8-18); same new_id used in both files. The brothers are unnamed but each is individually distinguishable by his order of martyrdom."
+  },
+  {
+   "name": "Fifth of the seven brothers",
+   "existing_id": null,
+   "new_id": "seven-brothers-son-5",
+   "gender": "male",
+   "unnamed": true,
+   "aliases": [],
+   "description": "Warned the king that God would torture him and his descendants.",
+   "refs": [
+    "7:1",
+    "7:15",
+    "7:16",
+    "7:17"
+   ],
+   "parents": [
+    {
+     "ref_name": "Mother of the seven brothers",
+     "verse": "7:1"
+    }
+   ],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Same individual across 2MA (ch. 7) and 4MA (chs. 8-18); same new_id used in both files. The brothers are unnamed but each is individually distinguishable by his order of martyrdom."
+  },
+  {
+   "name": "Sixth of the seven brothers",
+   "existing_id": null,
+   "new_id": "seven-brothers-son-6",
+   "gender": "male",
+   "unnamed": true,
+   "aliases": [],
+   "description": "Confessed that the Jews suffered for their own sins.",
+   "refs": [
+    "7:1",
+    "7:18",
+    "7:19"
+   ],
+   "parents": [
+    {
+     "ref_name": "Mother of the seven brothers",
+     "verse": "7:1"
+    }
+   ],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Same individual across 2MA (ch. 7) and 4MA (chs. 8-18); same new_id used in both files. The brothers are unnamed but each is individually distinguishable by his order of martyrdom."
+  },
+  {
+   "name": "Seventh (youngest) of the seven brothers",
+   "existing_id": null,
+   "new_id": "seven-brothers-son-7",
+   "gender": "male",
+   "unnamed": true,
+   "aliases": [],
+   "description": "Youngest son, who refused the king's offers and was treated worst of all.",
+   "refs": [
+    "7:1",
+    "7:24",
+    "7:25",
+    "7:26",
+    "7:27",
+    "7:29",
+    "7:30",
+    "7:37",
+    "7:38",
+    "7:39",
+    "7:40"
+   ],
+   "parents": [
+    {
+     "ref_name": "Mother of the seven brothers",
+     "verse": "7:1"
+    },
+    {
+     "ref_name": "Mother of the seven brothers",
+     "verse": "7:25"
+    }
+   ],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Same individual across 2MA (ch. 7) and 4MA (chs. 8-18); same new_id used in both files. The brothers are unnamed but each is individually distinguishable by his order of martyrdom."
+  },
+  {
+   "name": "Simon",
+   "existing_id": null,
+   "new_id": "simon-maccabeus",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Brother of Judas, a division commander.",
+   "refs": [
+    "8:22",
+    "10:19",
+    "10:20",
+    "14:17"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Brother of Judas (8:22, 14:17). 10:19-20 Simon is presumed the same. Reviewer: reconcile id with the 1MA census (Simon Thassi)."
+  },
+  {
+   "name": "Joseph",
+   "existing_id": null,
+   "new_id": "joseph-brother-of-judas-2ma",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Brother of Judas named as a division commander.",
+   "refs": [
+    "8:22",
+    "10:19"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "2MA names Simon, Joseph and Jonathan as Judas' brothers; 1 Macc 2:2-5 lists John (Gaddi) instead of Joseph. Possibly a scribal substitution for John, but kept as a separate entry. Distinct from the patriarch Joseph."
+  },
+  {
+   "name": "Jonathan",
+   "existing_id": null,
+   "new_id": "jonathan-maccabeus",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Brother of Judas, a division commander.",
+   "refs": [
+    "8:22"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Reviewer: reconcile id with the 1MA census (Jonathan Apphus)."
+  },
+  {
+   "name": "Eleazer",
+   "existing_id": null,
+   "new_id": "eleazar-2ma8",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Read the sacred book aloud and led the first band against Nicanor.",
+   "refs": [
+    "8:23"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Probably Eleazar (Avaran) brother of Judas (1 Macc 2:5), but 2MA does not call him a brother and the Greek text is uncertain here (some witnesses read 'Esdris'). Kept separate; distinct from Eleazar the martyr."
+  },
+  {
+   "name": "Nicanor son of Patroclus",
+   "existing_id": null,
+   "new_id": "nicanor-son-of-patroclus",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "One of the king's chief friends, sent to destroy Judea and sell its people; defeated and fled to Antioch.",
+   "refs": [
+    "8:9",
+    "8:10",
+    "8:11",
+    "8:12",
+    "8:14",
+    "8:23",
+    "8:24",
+    "8:34",
+    "8:35",
+    "8:36",
+    "9:3"
+   ],
+   "parents": [
+    {
+     "ref_name": "Patroclus",
+     "verse": "8:9"
+    }
+   ],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Possibly the same as Nicanor the governor of Judea (14:12ff.); both are called 'thrice-accursed' (8:34, 15:3), and commentators often equate them, but 14:12 introduces him afresh as master of the elephants, so kept separate. Distinct from Nicanor governor of Cyprus (12:2)."
+  },
+  {
+   "name": "Patroclus",
+   "existing_id": null,
+   "new_id": "patroclus",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Father of Nicanor.",
+   "refs": [
+    "8:9"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Gorgias",
+   "existing_id": null,
+   "new_id": "gorgias",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Experienced captain, later governor of Idumaea, who fought Judas.",
+   "refs": [
+    "8:9",
+    "10:14",
+    "12:32",
+    "12:33",
+    "12:35",
+    "12:37"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Timotheus",
+   "existing_id": null,
+   "new_id": "timotheus-2ma-a",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Enemy commander defeated by Judas, killed hiding in a cistern at Gazara.",
+   "refs": [
+    "8:30",
+    "8:32",
+    "9:3",
+    "10:24",
+    "10:32",
+    "10:37"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Killed in 10:37, yet a Timotheus is active again in ch. 12; treated as two entries (timotheus-2ma-b for ch. 12). 2MA is not strictly chronological, so they may be the same person narrated out of order."
+  },
+  {
+   "name": "Bacchides",
+   "existing_id": null,
+   "new_id": "bacchides-2ma8",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Commander whose forces were defeated with those of Timotheus.",
+   "refs": [
+    "8:30"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Possibly the Bacchides of 1 Macc 7, but not clearly identified here."
+  },
+  {
+   "name": "The phylarch of Timotheus' forces",
+   "existing_id": null,
+   "new_id": "phylarch-of-timotheus",
+   "gender": "male",
+   "unnamed": true,
+   "aliases": [],
+   "description": "Unholy commander of Timotheus' forces killed by the Jews.",
+   "refs": [
+    "8:32"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Callisthenes",
+   "existing_id": null,
+   "new_id": "callisthenes",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Man who had set the sacred gates on fire, burned in a little house.",
+   "refs": [
+    "8:33"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Sennacherib",
+   "existing_id": "sennacherib",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Assyrian king whose army of 185,000 perished.",
+   "refs": [
+    "8:19",
+    "15:22"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Philip",
+   "existing_id": null,
+   "new_id": "philip-foster-brother-of-antiochus-iv",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Foster brother of Antiochus IV who took his body home, fled to Egypt, and later became chancellor at Antioch.",
+   "refs": [
+    "9:29",
+    "13:23"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "9:29 and 13:23 merged as the same Philip (cf. 1 Macc 6:14-15, 55-56). Distinct from Philip the Phrygian."
+  },
+  {
+   "name": "Lysias",
+   "existing_id": null,
+   "new_id": "lysias",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Guardian, kinsman and chancellor of Antiochus V; fought Judas and negotiated peace; killed by Demetrius.",
+   "refs": [
+    "10:11",
+    "11:1",
+    "11:12",
+    "11:13",
+    "11:15",
+    "11:16",
+    "11:22",
+    "11:35",
+    "12:1",
+    "13:2",
+    "13:4",
+    "13:26",
+    "14:2"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Called the king's 'brother' in a royal letter (11:22) as a court title."
+  },
+  {
+   "name": "Ptolemy Macron",
+   "existing_id": null,
+   "new_id": "ptolemy-macron",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [
+    "Macron"
+   ],
+   "description": "Former Ptolemaic governor of Cyprus who dealt justly with the Jews and took poison when accused.",
+   "refs": [
+    "10:12",
+    "10:13"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Kept separate from Ptolemy son of Dorymenes."
+  },
+  {
+   "name": "Zacchaeus",
+   "existing_id": null,
+   "new_id": "zacchaeus-2ma",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Commander left with Simon and Joseph to besiege the Idumaean towers.",
+   "refs": [
+    "10:19"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Chaereas",
+   "existing_id": null,
+   "new_id": "chaereas",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Commander of Gazara and brother of Timotheus, killed there.",
+   "refs": [
+    "10:32",
+    "10:37"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Apollophanes",
+   "existing_id": null,
+   "new_id": "apollophanes",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Killed with Timotheus and Chaereas at Gazara.",
+   "refs": [
+    "10:37"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "John",
+   "existing_id": null,
+   "new_id": "john-envoy-2ma11",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Jewish envoy to Lysias.",
+   "refs": [
+    "11:17"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Some identify him with John (Gaddi) brother of Judas; not stated."
+  },
+  {
+   "name": "Absalom",
+   "existing_id": null,
+   "new_id": "absalom-envoy-2ma11",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Jewish envoy to Lysias.",
+   "refs": [
+    "11:17"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Not David's son Absalom. Possibly the Absalom named as a father in 1 Macc 11:70, 13:11; not stated."
+  },
+  {
+   "name": "Quintus Memmius",
+   "existing_id": null,
+   "new_id": "quintus-memmius",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Roman ambassador who wrote to the Jews.",
+   "refs": [
+    "11:34"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Titus Manius",
+   "existing_id": null,
+   "new_id": "titus-manius",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Roman ambassador who wrote to the Jews.",
+   "refs": [
+    "11:34"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Timotheus",
+   "existing_id": null,
+   "new_id": "timotheus-2ma-b",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "District governor who harassed the Jews, was routed by Judas and released on a promise to return hostages.",
+   "refs": [
+    "12:2",
+    "12:10",
+    "12:18",
+    "12:19",
+    "12:20",
+    "12:21",
+    "12:24"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "See identity_note on timotheus-2ma-a."
+  },
+  {
+   "name": "Apollonius son of Gennaeus",
+   "existing_id": null,
+   "new_id": "apollonius-son-of-gennaeus",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "District governor who would not let the Jews live in peace.",
+   "refs": [
+    "12:2"
+   ],
+   "parents": [
+    {
+     "ref_name": "Gennaeus",
+     "verse": "12:2"
+    }
+   ],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Gennaeus",
+   "existing_id": null,
+   "new_id": "gennaeus",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Father of Apollonius.",
+   "refs": [
+    "12:2"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Hieronymus",
+   "existing_id": null,
+   "new_id": "hieronymus",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "District governor hostile to the Jews.",
+   "refs": [
+    "12:2"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Demophon",
+   "existing_id": null,
+   "new_id": "demophon",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "District governor hostile to the Jews.",
+   "refs": [
+    "12:2"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Nicanor",
+   "existing_id": null,
+   "new_id": "nicanor-governor-of-cyprus",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Governor (commander) of the Cyprians hostile to the Jews.",
+   "refs": [
+    "12:2"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Distinct from the other Nicanors in 2MA."
+  },
+  {
+   "name": "Joshua",
+   "existing_id": "joshua-exodus",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Leader in whose time Jericho fell.",
+   "refs": [
+    "12:15"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Dositheus",
+   "existing_id": null,
+   "new_id": "dositheus-captain-2ma12",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Captain under Judas who destroyed Timotheus' garrison.",
+   "refs": [
+    "12:19",
+    "12:24"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Distinct from Dositheus of Bacenor's company (12:35) and Dositheus of 3MA."
+  },
+  {
+   "name": "Sosipater",
+   "existing_id": null,
+   "new_id": "sosipater-2ma",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Captain under Judas who destroyed Timotheus' garrison.",
+   "refs": [
+    "12:19",
+    "12:24"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Dositheus",
+   "existing_id": null,
+   "new_id": "dositheus-of-bacenor",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Horseman of Bacenor's company who nearly captured Gorgias.",
+   "refs": [
+    "12:35"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Bacenor",
+   "existing_id": null,
+   "new_id": "bacenor",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Leader of a company in Judas' army.",
+   "refs": [
+    "12:35"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Esdris",
+   "existing_id": null,
+   "new_id": "esdris",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Leader of a Jewish force wearied in the battle against Gorgias.",
+   "refs": [
+    "12:36"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Rhodocus",
+   "existing_id": null,
+   "new_id": "rhodocus",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Jewish soldier who betrayed secrets to the enemy and was imprisoned.",
+   "refs": [
+    "13:21"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Hegemonides",
+   "existing_id": null,
+   "new_id": "hegemonides",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Left by Antiochus V as governor from Ptolemais to the Gerrenians.",
+   "refs": [
+    "13:24"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Demetrius",
+   "existing_id": null,
+   "new_id": "demetrius-i-soter",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Son of Seleucus who seized the throne, killed Antiochus V and Lysias, and sent Nicanor against Judas.",
+   "refs": [
+    "14:1",
+    "14:4",
+    "14:5",
+    "14:11",
+    "14:26",
+    "14:27"
+   ],
+   "parents": [
+    {
+     "ref_name": "Seleucus",
+     "verse": "14:1"
+    }
+   ],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Alcimus",
+   "existing_id": null,
+   "new_id": "alcimus",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Former high priest who denounced Judas to Demetrius.",
+   "refs": [
+    "14:3",
+    "14:4",
+    "14:5",
+    "14:13",
+    "14:26",
+    "14:27"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Nicanor",
+   "existing_id": null,
+   "new_id": "nicanor-governor-of-judea",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [
+    "the thrice-accursed wretch"
+   ],
+   "description": "Former master of the elephants made governor of Judea by Demetrius; befriended then hunted Judas and was killed in battle.",
+   "refs": [
+    "14:12",
+    "14:14",
+    "14:15",
+    "14:16",
+    "14:17",
+    "14:18",
+    "14:19",
+    "14:23",
+    "14:24",
+    "14:25",
+    "14:26",
+    "14:27",
+    "14:28",
+    "14:29",
+    "14:30",
+    "14:31",
+    "14:33",
+    "14:37",
+    "14:39",
+    "15:1",
+    "15:3",
+    "15:5",
+    "15:6",
+    "15:25",
+    "15:28",
+    "15:30",
+    "15:32",
+    "15:33",
+    "15:35",
+    "15:37"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "See identity_note on nicanor-son-of-patroclus. The festival of 13 Adar commemorates his defeat (15:36)."
+  },
+  {
+   "name": "Posidonius",
+   "existing_id": null,
+   "new_id": "posidonius",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Envoy sent by Nicanor to make pledges of friendship.",
+   "refs": [
+    "14:19"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Theodotus",
+   "existing_id": null,
+   "new_id": "theodotus-envoy-2ma14",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Envoy sent by Nicanor to make pledges of friendship.",
+   "refs": [
+    "14:19"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Distinct from Theodotus of 3MA 1:2."
+  },
+  {
+   "name": "Mattathias",
+   "existing_id": null,
+   "new_id": "mattathias-envoy-2ma14",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Envoy sent by Nicanor to make pledges of friendship.",
+   "refs": [
+    "14:19"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Not Mattathias the father of Judas."
+  },
+  {
+   "name": "Wife of Judas Maccabeus",
+   "existing_id": null,
+   "new_id": "wife-of-judas-maccabeus",
+   "gender": "female",
+   "unnamed": true,
+   "aliases": [],
+   "description": "Woman Judas married at Nicanor's urging.",
+   "refs": [
+    "14:25"
+   ],
+   "parents": [],
+   "spouses": [
+    {
+     "ref_name": "Judas",
+     "verse": "14:25"
+    }
+   ],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Razis",
+   "existing_id": null,
+   "new_id": "razis",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [
+    "Father of the Jews"
+   ],
+   "description": "Respected elder of Jerusalem who killed himself rather than be seized by Nicanor's soldiers.",
+   "refs": [
+    "14:37",
+    "14:38",
+    "14:41",
+    "14:43",
+    "14:45",
+    "14:46"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Hezekiah",
+   "existing_id": "hezekiah-2ki16",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "King of Judah in whose time an angel destroyed Sennacherib's army.",
+   "refs": [
+    "15:22"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Mordecai",
+   "existing_id": "mordecai-est2",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Named in 'the day of Mordecai' (Purim, 14 Adar).",
+   "refs": [
+    "15:36"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  }
+ ],
+ "excluded_names": {
+  "Jerusalem": "place",
+  "Judea": "place",
+  "Egypt": "place",
+  "Chislev": "month",
+  "Persia": "place",
+  "Persians": "people",
+  "Nanaea": "deity",
+  "Israel": "nation (people of Israel), not the patriarch",
+  "Nephthai": "substance name",
+  "Cyrene": "place",
+  "Asia": "place",
+  "Benjamin": "tribe (Simon 'of the tribe of Benjamin')",
+  "Tarsus": "place",
+  "Coelesyria": "region",
+  "Phoenicia": "region",
+  "Sovereign": "divine title",
+  "Antioch": "place",
+  "Romans": "people",
+  "Tyre": "place",
+  "Antiochians": "people (citizenship designation)",
+  "Hercules": "deity",
+  "Joppa": "place",
+  "Ammonites": "people",
+  "Cyprians": "people",
+  "Mallus": "place",
+  "Daphne": "place",
+  "Cilicia": "place",
+  "Scythians": "people",
+  "Tyrians": "people",
+  "Arabians": "people",
+  "Lacedaemonians": "people",
+  "Phrygian": "ethnic adjective (Philip the Phrygian)",
+  "Gerizim": "place",
+  "Athens": "place",
+  "Olympian": "divine epithet",
+  "Zeus": "deity",
+  "Protector": "divine epithet",
+  "Dionysia": "festival",
+  "Dionysus": "deity",
+  "Jewish": "adjective",
+  "Babylon": "place",
+  "Gauls": "people",
+  "Macedonians": "people",
+  "Persepolis": "place",
+  "Ecbatana": "place",
+  "All-seeing": "divine title",
+  "Cyprus": "place",
+  "Idumaeans": "people",
+  "Gazara": "place",
+  "Bethsuron": "place",
+  "Dioscorinthius": "month",
+  "Xanthicus": "month",
+  "Manius": "part of Titus Manius",
+  "Judge": "divine title",
+  "Jamnia": "place",
+  "Jamnites": "people",
+  "Caspin": "place",
+  "Jericho": "place",
+  "Charax": "place",
+  "Tubieni": "people",
+  "Carnion": "place",
+  "Atergatis": "deity",
+  "Ephron": "place (city, 12:27), not the Hittite Ephron",
+  "Scythopolis": "place",
+  "Scythopolitans": "people",
+  "Idumaea": "place",
+  "Thracian": "ethnic adjective",
+  "Marisa": "place",
+  "Adullam": "place",
+  "Beroea": "place",
+  "Modin": "place",
+  "Bethsura": "place",
+  "Ptolemais": "place",
+  "Gerrenians": "people",
+  "Tripolis": "place",
+  "Hasidaeans": "group",
+  "Lessau": "place",
+  "Samaria": "place",
+  "Nevertheless": "not a name",
+  "As": "not a name",
+  "Adar": "month",
+  "Syrian": "language adjective",
+  "Maccabaeus": "epithet of Judas (see judas-maccabeus)",
+  "Epiphanes": "epithet of Antiochus IV",
+  "Eupator": "epithet of Antiochus V",
+  "Philometor": "epithet of Ptolemy VI",
+  "Memmius": "part of Quintus Memmius",
+  "Titus": "part of Titus Manius (not the NT Titus)",
+  "Eleazer": "variant spelling; see eleazar-2ma8",
+  "Timotheus": "see timotheus-2ma-a / timotheus-2ma-b"
+ },
+ "notes": "Chapters 1:1-2:18 are two prefatory letters; 1:13-16 gives a death of Antiochus that conflicts with ch. 9. Unnamed 'king of Persia' (1:20, 1:33-35) who commissioned Nehemiah is not recorded (not named). 'The king' in chs. 4-7, 9 is Antiochus IV and in 13 Antiochus V; refs for these include the clearest 'king' verses, not every pronoun. Group/minor unnamed figures skipped: priests of Nanaea (1:13-16), Heliodorus' angelic attackers (3:25-26, angels), the three senate envoys (4:44), two circumcising mothers (6:10), Antiochus' charioteer (9:4), the five heavenly horsemen (10:29), the horseman in white (11:8). Seven brothers are recorded individually (each is distinguishable by order of death in ch. 7) and share ids with 4MA. Shared ids with 4MA: eleazar-martyr, mother-of-seven-brothers, seven-brothers-son-1..7, antiochus-iv-epiphanes, onias-iii, jason-high-priest, seleucus-iv-philopator, simon-temple-guardian, apollonius-of-tarsus, ptolemy-vi-philometor. Reviewer: reconcile judas-maccabeus, simon-maccabeus, jonathan-maccabeus, lysias, gorgias, nicanor-*, timotheus-*, alcimus, demetrius-i-soter, antiochus-iv-epiphanes, antiochus-v-eupator, philip-foster-brother-of-antiochus-iv, ptolemy-son-of-dorymenes, bacchides-2ma8 with the 1MA census ids.",
+ "dated_events": [
+  {
+   "verse": "1:7",
+   "seleucid_year": 169,
+   "month": null,
+   "day": null,
+   "event": "Earlier letter of the Jews of Judea to the Jews of Egypt, written in the reign of Demetrius (II).",
+   "people": [
+    "demetrius-ii-nicator",
+    "jason-high-priest"
+   ]
+  },
+  {
+   "verse": "1:9",
+   "seleucid_year": 188,
+   "month": "Chislev",
+   "day": null,
+   "event": "Date of the first prefatory letter urging the Egyptian Jews to keep the feast of tabernacles in Chislev (Hanukkah).",
+   "people": [],
+   "note": "The year 188 stands at the end of 1:9 in WEB; some editions attach it to the start of 1:10 (dating the second letter instead)."
+  },
+  {
+   "verse": "1:18",
+   "seleucid_year": null,
+   "month": "Chislev",
+   "day": 25,
+   "event": "Purification of the temple to be celebrated (stated in the second prefatory letter).",
+   "people": [
+    "nehemiah-neh1"
+   ]
+  },
+  {
+   "verse": "10:5",
+   "seleucid_year": null,
+   "month": "Chislev",
+   "day": 25,
+   "event": "Sanctuary cleansed by Judas on the same day it had been profaned.",
+   "people": [
+    "judas-maccabeus"
+   ]
+  },
+  {
+   "verse": "11:21",
+   "seleucid_year": 148,
+   "month": "Dioscorinthius",
+   "day": 24,
+   "event": "Letter of Lysias to the Jews after Judas' victory at Bethsuron.",
+   "people": [
+    "lysias",
+    "john-envoy-2ma11",
+    "absalom-envoy-2ma11"
+   ]
+  },
+  {
+   "verse": "11:30",
+   "seleucid_year": 148,
+   "month": "Xanthicus",
+   "day": 30,
+   "event": "Deadline for Jews to return home under amnesty in the king's letter.",
+   "people": [
+    "antiochus-v-eupator",
+    "menelaus-high-priest"
+   ],
+   "note": "Year taken from the letter's own date in 11:33."
+  },
+  {
+   "verse": "11:33",
+   "seleucid_year": 148,
+   "month": "Xanthicus",
+   "day": 15,
+   "event": "Letter of King Antiochus (V) to the Jewish senate granting amnesty, carried by Menelaus.",
+   "people": [
+    "antiochus-v-eupator",
+    "menelaus-high-priest"
+   ],
+   "note": "Historically this letter is often assigned to Antiochus IV (c. 164 BCE); the text places it under Eupator's reign."
+  },
+  {
+   "verse": "11:38",
+   "seleucid_year": 148,
+   "month": "Xanthicus",
+   "day": 15,
+   "event": "Letter of the Roman ambassadors Quintus Memmius and Titus Manius to the Jews.",
+   "people": [
+    "quintus-memmius",
+    "titus-manius",
+    "lysias"
+   ]
+  },
+  {
+   "verse": "13:1",
+   "seleucid_year": 149,
+   "month": null,
+   "day": null,
+   "event": "News that Antiochus Eupator was invading Judea with Lysias.",
+   "people": [
+    "judas-maccabeus",
+    "antiochus-v-eupator",
+    "lysias"
+   ]
+  },
+  {
+   "verse": "14:4",
+   "seleucid_year": 151,
+   "month": null,
+   "day": null,
+   "event": "Alcimus comes to King Demetrius (I) with a gold crown ('about' the 151st year).",
+   "people": [
+    "alcimus",
+    "demetrius-i-soter"
+   ],
+   "note": "Text says 'in about the one hundred fifty-first year'."
+  },
+  {
+   "verse": "15:36",
+   "seleucid_year": null,
+   "month": "Adar",
+   "day": 13,
+   "event": "Day of Nicanor's defeat decreed as an annual festival, the day before the day of Mordecai.",
+   "people": [
+    "judas-maccabeus",
+    "nicanor-governor-of-judea",
+    "mordecai-est2"
+   ]
+  }
+ ]
+}

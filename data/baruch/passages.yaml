@@ -1,0 +1,13 @@
+schema_version: 1
+record_type: passages
+records:
+  - {id: baruch-1-census, work_id: baruch, witness_id: web-baruch, locator: "Baruch 1", citations: [{source_id: world-english-bible, locator: "Baruch 1", witness_id: web-baruch}]}
+  - {id: baruch-1-lxx, work_id: baruch, witness_id: lxx-baruch-rahlfs-hanhart, locator: "Baruch 1", correspondence_note: "Chapter correspondence with the Greek edition is assumed, not checked.", citations: [{source_id: rahlfs-hanhart-2006, locator: "Baruch 1", witness_id: lxx-baruch-rahlfs-hanhart}]}
+  - {id: baruch-2-census, work_id: baruch, witness_id: web-baruch, locator: "Baruch 2", citations: [{source_id: world-english-bible, locator: "Baruch 2", witness_id: web-baruch}]}
+  - {id: baruch-2-lxx, work_id: baruch, witness_id: lxx-baruch-rahlfs-hanhart, locator: "Baruch 2", correspondence_note: "Chapter correspondence with the Greek edition is assumed, not checked.", citations: [{source_id: rahlfs-hanhart-2006, locator: "Baruch 2", witness_id: lxx-baruch-rahlfs-hanhart}]}
+  - {id: baruch-3-census, work_id: baruch, witness_id: web-baruch, locator: "Baruch 3", citations: [{source_id: world-english-bible, locator: "Baruch 3", witness_id: web-baruch}]}
+  - {id: baruch-3-lxx, work_id: baruch, witness_id: lxx-baruch-rahlfs-hanhart, locator: "Baruch 3", correspondence_note: "Chapter correspondence with the Greek edition is assumed, not checked.", citations: [{source_id: rahlfs-hanhart-2006, locator: "Baruch 3", witness_id: lxx-baruch-rahlfs-hanhart}]}
+  - {id: baruch-4-census, work_id: baruch, witness_id: web-baruch, locator: "Baruch 4", citations: [{source_id: world-english-bible, locator: "Baruch 4", witness_id: web-baruch}]}
+  - {id: baruch-4-lxx, work_id: baruch, witness_id: lxx-baruch-rahlfs-hanhart, locator: "Baruch 4", correspondence_note: "Chapter correspondence with the Greek edition is assumed, not checked.", citations: [{source_id: rahlfs-hanhart-2006, locator: "Baruch 4", witness_id: lxx-baruch-rahlfs-hanhart}]}
+  - {id: baruch-5-census, work_id: baruch, witness_id: web-baruch, locator: "Baruch 5", citations: [{source_id: world-english-bible, locator: "Baruch 5", witness_id: web-baruch}]}
+  - {id: baruch-5-lxx, work_id: baruch, witness_id: lxx-baruch-rahlfs-hanhart, locator: "Baruch 5", correspondence_note: "Chapter correspondence with the Greek edition is assumed, not checked.", citations: [{source_id: rahlfs-hanhart-2006, locator: "Baruch 5", witness_id: lxx-baruch-rahlfs-hanhart}]}

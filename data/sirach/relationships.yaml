@@ -1,0 +1,5 @@
+schema_version: 1
+record_type: relationships
+records:
+  - {id: onias-father-of-simon-sir-parent-simon-son-of-onias-high-priest, relationship_type: parent, subject_id: onias-father-of-simon-sir, object_id: simon-son-of-onias-high-priest, claim_ids: [], citations: [{source_id: world-english-bible, locator: "Sirach 50:1", witness_id: web-sirach}]}
+  - {id: sirach-father-of-jesus-parent-jesus-son-of-sirach, relationship_type: parent, subject_id: sirach-father-of-jesus, object_id: jesus-son-of-sirach, claim_ids: [], citations: [{source_id: world-english-bible, locator: "Sirach 50:27", witness_id: web-sirach}]}

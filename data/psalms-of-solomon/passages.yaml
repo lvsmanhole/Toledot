@@ -1,0 +1,4 @@
+schema_version: 1
+record_type: passages
+records:
+  - {id: psalms-of-solomon-book-review, work_id: psalms-of-solomon, witness_id: book-review-psalms-of-solomon, locator: "Psalms of Solomon", citations: [{source_id: rahlfs-hanhart-2006, locator: "Psalms of Solomon", witness_id: book-review-psalms-of-solomon}]}

@@ -1,0 +1,4 @@
+schema_version: 1
+record_type: passages
+records:
+  - {id: tegsats-book-review, work_id: tegsats, witness_id: book-review-tegsats, locator: "Tegsats", citations: [{source_id: ethiopic-edition-pending, locator: "Tegsats", witness_id: book-review-tegsats}]}

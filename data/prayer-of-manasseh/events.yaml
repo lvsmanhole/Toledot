@@ -1,0 +1,4 @@
+schema_version: 1
+record_type: events
+records:
+  - {id: prayer-of-manasseh-narrative, event_type: book_narrative, name: "Prayer of Manasseh", participants: [{entity_id: manasseh-2ki20, role: named participant}, {entity_id: abram, role: named participant}, {entity_id: isaac, role: named participant}, {entity_id: jacob, role: named participant}], date_claim_ids: [], citations: [{source_id: world-english-bible, locator: "Prayer of Manasseh", witness_id: web-prayer-of-manasseh}]}

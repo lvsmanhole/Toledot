@@ -1,0 +1,8 @@
+schema_version: 1
+record_type: relationships
+records:
+  - {id: zedekiah-son-of-hasadiah-bar-parent-mahseiah, relationship_type: parent, subject_id: zedekiah-son-of-hasadiah-bar, object_id: mahseiah, claim_ids: [], citations: [{source_id: world-english-bible, locator: "Baruch 1:1", witness_id: web-baruch}]}
+  - {id: hasadiah-ancestor-of-baruch-parent-zedekiah-son-of-hasadiah-bar, relationship_type: parent, subject_id: hasadiah-ancestor-of-baruch, object_id: zedekiah-son-of-hasadiah-bar, claim_ids: [], citations: [{source_id: world-english-bible, locator: "Baruch 1:1", witness_id: web-baruch}]}
+  - {id: hilkiah-ancestor-of-baruch-parent-hasadiah-ancestor-of-baruch, relationship_type: parent, subject_id: hilkiah-ancestor-of-baruch, object_id: hasadiah-ancestor-of-baruch, claim_ids: [], citations: [{source_id: world-english-bible, locator: "Baruch 1:1", witness_id: web-baruch}]}
+  - {id: hilkiah-father-of-joakim-bar-parent-joakim-high-priest-bar, relationship_type: parent, subject_id: hilkiah-father-of-joakim-bar, object_id: joakim-high-priest-bar, claim_ids: [], citations: [{source_id: world-english-bible, locator: "Baruch 1:7", witness_id: web-baruch}]}
+  - {id: shallum-grandfather-of-joakim-bar-parent-hilkiah-father-of-joakim-bar, relationship_type: parent, subject_id: shallum-grandfather-of-joakim-bar, object_id: hilkiah-father-of-joakim-bar, claim_ids: [], citations: [{source_id: world-english-bible, locator: "Baruch 1:7", witness_id: web-baruch}]}

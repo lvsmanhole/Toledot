@@ -1,0 +1,5 @@
+schema_version: 1
+record_type: passages
+records:
+  - {id: letter-of-jeremiah-6-census, work_id: letter-of-jeremiah, witness_id: web-letter-of-jeremiah, locator: "Letter of Jeremiah 6", citations: [{source_id: world-english-bible, locator: "Letter of Jeremiah 6", witness_id: web-letter-of-jeremiah}]}
+  - {id: letter-of-jeremiah-6-lxx, work_id: letter-of-jeremiah, witness_id: lxx-letter-of-jeremiah-rahlfs-hanhart, locator: "Letter of Jeremiah 6", correspondence_note: "Chapter correspondence with the Greek edition is assumed, not checked.", citations: [{source_id: rahlfs-hanhart-2006, locator: "Letter of Jeremiah 6", witness_id: lxx-letter-of-jeremiah-rahlfs-hanhart}]}

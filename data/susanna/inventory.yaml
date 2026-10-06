@@ -1,0 +1,4 @@
+schema_version: 1
+record_type: inventory_units
+records:
+  - {id: inv-susanna-13, work_id: susanna, locator: "Susanna 13", reviewed: true, passage_ids: [susanna-13-census, susanna-13-lxx], identified_entity_ids: [daniel-ezk14, elder-judge-susanna-1, elder-judge-susanna-2, hilkiah-father-of-susanna, joakim-husband-of-susanna, moses, mother-of-susanna, susanna-person], event_ids: [susanna-narrative], no_individuals: false, review_basis: "Person census from a public-domain translation, checked verse by verse by a census pass; see the work's witness notes.", citations: [{source_id: world-english-bible, locator: "Susanna 13", witness_id: web-susanna}]}

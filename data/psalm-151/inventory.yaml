@@ -1,0 +1,4 @@
+schema_version: 1
+record_type: inventory_units
+records:
+  - {id: inv-psalm-151-1, work_id: psalm-151, locator: "Psalm 151 1", reviewed: true, passage_ids: [psalm-151-1-census, psalm-151-1-lxx], identified_entity_ids: [david, goliath, jesse], event_ids: [psalm-151-narrative], no_individuals: false, review_basis: "Person census from a public-domain translation, checked verse by verse by a census pass; see the work's witness notes.", citations: [{source_id: world-english-bible, locator: "Psalm 151 1", witness_id: web-psalm-151}]}

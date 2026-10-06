@@ -1,0 +1,4 @@
+schema_version: 1
+record_type: events
+records:
+  - {id: psalm-151-narrative, event_type: book_narrative, name: "Psalm 151", participants: [{entity_id: david, role: named participant}, {entity_id: goliath, role: named participant}, {entity_id: jesse, role: named participant}], date_claim_ids: [], citations: [{source_id: world-english-bible, locator: "Psalm 151", witness_id: web-psalm-151}]}

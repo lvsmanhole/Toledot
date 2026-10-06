@@ -1,0 +1,5 @@
+schema_version: 1
+record_type: passages
+records:
+  - {id: prayer-of-azariah-3-census, work_id: prayer-of-azariah, witness_id: web-prayer-of-azariah, locator: "Prayer of Azariah 3", citations: [{source_id: world-english-bible, locator: "Prayer of Azariah 3", witness_id: web-prayer-of-azariah}]}
+  - {id: prayer-of-azariah-3-lxx, work_id: prayer-of-azariah, witness_id: lxx-prayer-of-azariah-rahlfs-hanhart, locator: "Prayer of Azariah 3", correspondence_note: "Chapter correspondence with the Greek edition is assumed, not checked.", citations: [{source_id: rahlfs-hanhart-2006, locator: "Prayer of Azariah 3", witness_id: lxx-prayer-of-azariah-rahlfs-hanhart}]}

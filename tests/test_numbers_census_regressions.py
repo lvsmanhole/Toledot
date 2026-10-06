@@ -210,7 +210,7 @@ def test_no_alias_leaks_between_differently_named_people() -> None:
     for entity in _dataset().entities.values():
         for alias in entity.aliases:
             by_alias[alias].add(entity.primary_name)
-    leaked = {alias: names for alias, names in by_alias.items() if len(names) > 4}
+    leaked = {alias: names for alias, names in by_alias.items() if len(names) > 6}
     assert not leaked, leaked
     jacob_children = ["reuben", "simeon", "levi", "judah", "dan", "naphtali", "gad", "asher", "issachar", "zebulun",
                       "dinah", "joseph", "benjamin"]

@@ -1,0 +1,1064 @@
+{
+  "book": "SIR",
+  "people": [
+    {
+      "name": "Jesus",
+      "existing_id": null,
+      "new_id": "jesus-son-of-sirach",
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [
+        "Jesus the son of Sirach Eleazar"
+      ],
+      "description": "Author of the book, a teacher of wisdom from Jerusalem.",
+      "refs": [
+        "50:27"
+      ],
+      "parents": [
+        {
+          "ref_name": "Sirach",
+          "verse": "50:27"
+        }
+      ],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": "WEB 50:27 reads 'I Jesus, the son of Sirach Eleazar, of Jerusalem'. Parent link to Sirach is from this verse; how Eleazar fits (Sirach's own second name, Sirach's father, or an ancestor) is unclear in the Greek. The Hebrew (MS B) gives a longer chain (Simeon son of Jeshua son of Eleazar ben Sira). The first-person speaker of ch. 51 is presumably the same man but is not named there. The grandson-translator and the 'grandfather' wording come from the Greek prologue, which is absent from this WEB VPL file."
+    },
+    {
+      "name": "Sirach",
+      "existing_id": null,
+      "new_id": "sirach-father-of-jesus",
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "Father (or family name) of Jesus, the author of the book.",
+      "refs": [
+        "50:27"
+      ],
+      "parents": [],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": "'Sirach' may be a family name rather than the literal father; kept as the stated parent per 50:27. Not linked to Eleazar because the relation is not stated unambiguously."
+    },
+    {
+      "name": "Eleazar",
+      "existing_id": null,
+      "new_id": "eleazar-sirach",
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "Name attached to Sirach in the author's self-designation; exact relationship unclear.",
+      "refs": [
+        "50:27"
+      ],
+      "parents": [],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": "Greek 'son of Sirach Eleazar' is ambiguous: Eleazar may be Sirach's father (task brief reads 'son of Sirach son of Eleazar'), an ancestor, or a second name of Sirach. No parent link asserted; reviewer may merge as an alias of Sirach or link as Sirach's father."
+    },
+    {
+      "name": "Simon",
+      "existing_id": null,
+      "new_id": "simon-son-of-onias-high-priest",
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "High priest, son of Onias, praised for repairing and fortifying the temple and city (usually identified as Simon II).",
+      "refs": [
+        "50:1",
+        "50:2",
+        "50:3",
+        "50:4",
+        "50:5",
+        "50:6",
+        "50:7",
+        "50:8",
+        "50:9",
+        "50:10",
+        "50:11",
+        "50:12",
+        "50:13",
+        "50:14",
+        "50:15",
+        "50:16",
+        "50:17",
+        "50:18",
+        "50:19",
+        "50:20",
+        "50:21"
+      ],
+      "parents": [
+        {
+          "ref_name": "Onias",
+          "verse": "50:1"
+        }
+      ],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": "Usually identified as Simon II (high priest c. 219-196 BC); not an existing entity."
+    },
+    {
+      "name": "Onias",
+      "existing_id": null,
+      "new_id": "onias-father-of-simon-sir",
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "Father of Simon the high priest.",
+      "refs": [
+        "50:1"
+      ],
+      "parents": [],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": "Usually identified as Onias II; may need merging with an Onias entry from the Maccabees census if one is created (the Onias of 1MA 12 / 2MA 3-4 are other individuals)."
+    },
+    {
+      "name": "Enoch",
+      "existing_id": "enoch-seth",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "Pleased the Lord and was taken up.",
+      "refs": [
+        "44:16",
+        "49:14"
+      ],
+      "parents": [],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": "Taken-up Enoch = son of Jared (Gen 5), not Cain's son."
+    },
+    {
+      "name": "Noah",
+      "existing_id": "noah",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "Found righteous; preserved a remnant through the flood.",
+      "refs": [
+        "44:17",
+        "44:18"
+      ],
+      "parents": [],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": null
+    },
+    {
+      "name": "Abraham",
+      "existing_id": "abram",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "Father of a multitude of nations, kept the covenant.",
+      "refs": [
+        "44:19",
+        "44:20",
+        "44:21",
+        "44:22"
+      ],
+      "parents": [],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": null
+    },
+    {
+      "name": "Isaac",
+      "existing_id": "isaac",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "Received the covenant assurance for Abraham's sake.",
+      "refs": [
+        "44:22"
+      ],
+      "parents": [
+        {
+          "ref_name": "Abraham",
+          "verse": "44:22"
+        }
+      ],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": null
+    },
+    {
+      "name": "Jacob",
+      "existing_id": "jacob",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "Received the blessing; his portions divided among twelve tribes.",
+      "refs": [
+        "44:23"
+      ],
+      "parents": [],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": "Other 'Jacob' and all 'Israel' occurrences (23:12, 24:8, 24:23, 36:11, 45:5, 45:17, 46:14, 47:22, 48:10, 49:10; 17:17, 36:12, 37:25 etc.) denote the people and are not counted."
+    },
+    {
+      "name": "Moses",
+      "existing_id": "moses",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "Man loved by God and men who received the law face to face.",
+      "refs": [
+        "24:23",
+        "45:1",
+        "45:2",
+        "45:3",
+        "45:4",
+        "45:5",
+        "45:6",
+        "45:15",
+        "46:1",
+        "46:7"
+      ],
+      "parents": [],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": null
+    },
+    {
+      "name": "Aaron",
+      "existing_id": "aaron",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "Brother of Moses of the tribe of Levi, given the everlasting priesthood.",
+      "refs": [
+        "36:17",
+        "45:6",
+        "45:7",
+        "45:8",
+        "45:9",
+        "45:10",
+        "45:11",
+        "45:12",
+        "45:13",
+        "45:14",
+        "45:15",
+        "45:16",
+        "45:17",
+        "45:18",
+        "45:19",
+        "45:20",
+        "45:21",
+        "45:22",
+        "45:25",
+        "50:13",
+        "50:16"
+      ],
+      "parents": [],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": "Aaron is Moses' brother (45:6). 36:17 ('blessing of Aaron'), 50:13 and 50:16 ('sons of Aaron') name him as ancestor of the priesthood."
+    },
+    {
+      "name": "Dathan",
+      "existing_id": "dathan-numbers",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "Conspired against Aaron in the wilderness.",
+      "refs": [
+        "45:18"
+      ],
+      "parents": [],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": null
+    },
+    {
+      "name": "Abiram",
+      "existing_id": "abiram-numbers",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "Conspired with Dathan against Aaron in the wilderness.",
+      "refs": [
+        "45:18"
+      ],
+      "parents": [],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": null
+    },
+    {
+      "name": "Korah",
+      "existing_id": "korah-levite",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "Leader of the congregation that rose against Aaron.",
+      "refs": [
+        "45:18"
+      ],
+      "parents": [],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": null
+    },
+    {
+      "name": "Phinehas",
+      "existing_id": "phinehas",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "Zealous priest, third in glory, given a covenant of peace.",
+      "refs": [
+        "45:23",
+        "45:24"
+      ],
+      "parents": [
+        {
+          "ref_name": "Eleazar (son of Aaron)",
+          "verse": "45:23"
+        }
+      ],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": null
+    },
+    {
+      "name": "Eleazar (son of Aaron)",
+      "existing_id": "eleazar-aaron",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "Father of Phinehas.",
+      "refs": [
+        "45:23"
+      ],
+      "parents": [],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": "Text says only 'Phinehas the son of Eleazar'; this is Aaron's son. WEB name form is 'Eleazar'; suffix added to distinguish from eleazar-sirach."
+    },
+    {
+      "name": "Joshua",
+      "existing_id": "joshua-exodus",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "Son of Nun, successor of Moses, valiant in war.",
+      "refs": [
+        "46:1",
+        "46:2",
+        "46:3",
+        "46:4",
+        "46:5",
+        "46:6",
+        "46:7",
+        "46:8"
+      ],
+      "parents": [
+        {
+          "ref_name": "Nun",
+          "verse": "46:1"
+        }
+      ],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": null
+    },
+    {
+      "name": "Nun",
+      "existing_id": "nun-ephraim",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "Father of Joshua.",
+      "refs": [
+        "46:1"
+      ],
+      "parents": [],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": null
+    },
+    {
+      "name": "Caleb",
+      "existing_id": "caleb-numbers",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "Son of Jephunneh who with Joshua withstood the people and entered the hill country.",
+      "refs": [
+        "46:7",
+        "46:8",
+        "46:9"
+      ],
+      "parents": [
+        {
+          "ref_name": "Jephunneh",
+          "verse": "46:7"
+        }
+      ],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": null
+    },
+    {
+      "name": "Jephunneh",
+      "existing_id": "jephunneh-numbers",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "Father of Caleb.",
+      "refs": [
+        "46:7"
+      ],
+      "parents": [],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": null
+    },
+    {
+      "name": "Samuel",
+      "existing_id": "samuel",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "Prophet of the Lord who established a kingdom, judged, and prophesied after death.",
+      "refs": [
+        "46:13",
+        "46:14",
+        "46:15",
+        "46:16",
+        "46:17",
+        "46:18",
+        "46:19",
+        "46:20"
+      ],
+      "parents": [],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": null
+    },
+    {
+      "name": "the king (Saul)",
+      "existing_id": "saul",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": true,
+      "aliases": [],
+      "description": "King anointed by Samuel, to whom Samuel showed his end after death.",
+      "refs": [
+        "46:19",
+        "46:20"
+      ],
+      "parents": [],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": "Not named; 'his anointed' (46:19) and 'the king' to whom Samuel prophesied after death (46:20, cf. 1 Sam 28) can only be Saul."
+    },
+    {
+      "name": "Nathan",
+      "existing_id": "nathan-2sa7",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "Prophet in the days of David.",
+      "refs": [
+        "47:1"
+      ],
+      "parents": [],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": null
+    },
+    {
+      "name": "David",
+      "existing_id": "david",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "Son of Jesse, king who killed Goliath and set singers before the altar.",
+      "refs": [
+        "45:25",
+        "47:1",
+        "47:2",
+        "47:3",
+        "47:4",
+        "47:5",
+        "47:6",
+        "47:7",
+        "47:8",
+        "47:9",
+        "47:10",
+        "47:11",
+        "47:22",
+        "48:15",
+        "48:22",
+        "49:4"
+      ],
+      "parents": [
+        {
+          "ref_name": "Jesse",
+          "verse": "45:25"
+        }
+      ],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": null
+    },
+    {
+      "name": "Jesse",
+      "existing_id": "jesse",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "Father of David.",
+      "refs": [
+        "45:25"
+      ],
+      "parents": [],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": null
+    },
+    {
+      "name": "Goliath",
+      "existing_id": "goliath",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "Boasting giant killed by David with a sling stone.",
+      "refs": [
+        "47:4",
+        "47:5"
+      ],
+      "parents": [],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": null
+    },
+    {
+      "name": "Solomon",
+      "existing_id": "solomon",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "Wise son of David who reigned in peace and built the sanctuary but bowed to women.",
+      "refs": [
+        "47:12",
+        "47:13",
+        "47:14",
+        "47:15",
+        "47:16",
+        "47:17",
+        "47:18",
+        "47:19",
+        "47:20",
+        "47:21",
+        "47:22",
+        "47:23"
+      ],
+      "parents": [
+        {
+          "ref_name": "David",
+          "verse": "47:12"
+        }
+      ],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": "47:12 'After him a wise son rose up' (David's son), named in 47:13."
+    },
+    {
+      "name": "Rehoboam",
+      "existing_id": "rehoboam",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "Solomon's offspring whose counsel made the people revolt.",
+      "refs": [
+        "47:23"
+      ],
+      "parents": [
+        {
+          "ref_name": "Solomon",
+          "verse": "47:23"
+        }
+      ],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": null
+    },
+    {
+      "name": "Jeroboam",
+      "existing_id": "jeroboam-1ki11",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "Son of Nebat, who made Israel sin.",
+      "refs": [
+        "47:23"
+      ],
+      "parents": [
+        {
+          "ref_name": "Nebat",
+          "verse": "47:23"
+        }
+      ],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": "Son of Nebat = first king of the northern kingdom, not Jeroboam II."
+    },
+    {
+      "name": "Nebat",
+      "existing_id": "nebat",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "Father of Jeroboam.",
+      "refs": [
+        "47:23"
+      ],
+      "parents": [],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": null
+    },
+    {
+      "name": "Elijah",
+      "existing_id": "elijah-1ki17",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "Fiery prophet who shut the heavens and was taken up in a whirlwind.",
+      "refs": [
+        "48:1",
+        "48:2",
+        "48:3",
+        "48:4",
+        "48:5",
+        "48:6",
+        "48:7",
+        "48:8",
+        "48:9",
+        "48:10",
+        "48:11",
+        "48:12"
+      ],
+      "parents": [],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": null
+    },
+    {
+      "name": "Elisha",
+      "existing_id": "elisha",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "Filled with Elijah's spirit; his body prophesied after burial.",
+      "refs": [
+        "48:12",
+        "48:13",
+        "48:14"
+      ],
+      "parents": [],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": "48:8 'prophets to succeed after you' alludes to Elisha's anointing but is plural; not counted as a ref."
+    },
+    {
+      "name": "Hezekiah",
+      "existing_id": "hezekiah-2ki16",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "King who fortified Jerusalem and dug a water tunnel; did what pleased the Lord.",
+      "refs": [
+        "48:17",
+        "48:18",
+        "48:22",
+        "48:23",
+        "49:4"
+      ],
+      "parents": [],
+      "spouses": [],
+      "descent_note": "48:22 calls David 'his ancestor'; distant ancestor, not a parent.",
+      "explicit_ages": [],
+      "identity_note": "48:23 'the king' whose life was prolonged = Hezekiah."
+    },
+    {
+      "name": "Sennacherib",
+      "existing_id": "sennacherib",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "Assyrian king who invaded in Hezekiah's days.",
+      "refs": [
+        "48:18"
+      ],
+      "parents": [],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": null
+    },
+    {
+      "name": "Rabshakeh",
+      "existing_id": "rabshakeh",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "Envoy sent by Sennacherib against Zion.",
+      "refs": [
+        "48:18"
+      ],
+      "parents": [],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": "Rabshakeh is a title in Kings/Isaiah; the existing entity treats it as a person, so mapped."
+    },
+    {
+      "name": "Isaiah",
+      "existing_id": "isaiah-2ki19",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "Prophet through whom Jerusalem was delivered and who foresaw the end of time.",
+      "refs": [
+        "48:20",
+        "48:22",
+        "48:23",
+        "48:24",
+        "48:25"
+      ],
+      "parents": [],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": null
+    },
+    {
+      "name": "Josiah",
+      "existing_id": "josiah-1ki13",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "Reforming king whose memory is sweet.",
+      "refs": [
+        "49:1",
+        "49:2",
+        "49:3",
+        "49:4"
+      ],
+      "parents": [],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": null
+    },
+    {
+      "name": "Jeremiah",
+      "existing_id": "jeremiah-2ch35",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "Prophet sanctified in the womb, mistreated by the kings.",
+      "refs": [
+        "49:6",
+        "49:7"
+      ],
+      "parents": [],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": null
+    },
+    {
+      "name": "Ezekiel",
+      "existing_id": "ezekiel-ezk1",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "Saw the vision of glory on the chariot of the cherubim.",
+      "refs": [
+        "49:8",
+        "49:9"
+      ],
+      "parents": [],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": null
+    },
+    {
+      "name": "Zerubbabel",
+      "existing_id": "zerubbabel-1ch3",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "Post-exilic leader likened to a signet ring.",
+      "refs": [
+        "49:11",
+        "49:12"
+      ],
+      "parents": [],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": null
+    },
+    {
+      "name": "Jesus",
+      "existing_id": "joshua-ezr2",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [
+        "Jesus the son of Josedek"
+      ],
+      "description": "Son of Josedek, who with Zerubbabel built the house.",
+      "refs": [
+        "49:12"
+      ],
+      "parents": [
+        {
+          "ref_name": "Josedek",
+          "verse": "49:12"
+        }
+      ],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": "Greek 'Jesus son of Josedek' = Joshua/Jeshua son of Jehozadak the post-exilic high priest (Hag 1:1, Ezra 3:2). joshua-ezr2 ('High priest during the rebuilding') chosen; jeshua-ezr2 (Levite) and jeshua-neh3 are different people. Two entries named 'Jesus' in this file: use existing_id to disambiguate."
+    },
+    {
+      "name": "Josedek",
+      "existing_id": "jehozadak",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "Father of Jesus (Joshua) the high priest.",
+      "refs": [
+        "49:12"
+      ],
+      "parents": [],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": "Mapped to jehozadak (father of Joshua the high priest), not jozadak (Ezra 10 entry)."
+    },
+    {
+      "name": "Nehemiah",
+      "existing_id": "nehemiah-neh1",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "Raised up the fallen walls and gates of Jerusalem.",
+      "refs": [
+        "49:13"
+      ],
+      "parents": [],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": null
+    },
+    {
+      "name": "Joseph",
+      "existing_id": "joseph",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "Leader of his kindred whose bones were cared for.",
+      "refs": [
+        "49:15"
+      ],
+      "parents": [],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": null
+    },
+    {
+      "name": "Shem",
+      "existing_id": "shem",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "Honored among men.",
+      "refs": [
+        "49:16"
+      ],
+      "parents": [],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": null
+    },
+    {
+      "name": "Seth",
+      "existing_id": "seth",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "Honored among men.",
+      "refs": [
+        "49:16"
+      ],
+      "parents": [],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": null
+    },
+    {
+      "name": "Adam",
+      "existing_id": "adam",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "First man, created from dust, above every living thing.",
+      "refs": [
+        "33:10",
+        "40:1",
+        "49:16"
+      ],
+      "parents": [],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": null
+    },
+    {
+      "name": "Lot",
+      "existing_id": "lot",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "Abraham's nephew, whose neighbors (Sodom) the Lord did not spare.",
+      "refs": [
+        "16:8"
+      ],
+      "parents": [],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": null
+    }
+  ],
+  "excluded_names": {
+    "Assyrians": "people",
+    "Euphrates": "place",
+    "Everlasting": "not a name (sentence start 44:18)",
+    "Gihon": "place",
+    "Great": "not a name",
+    "Hermon": "place",
+    "Horeb": "place",
+    "Israel": "people/nation (no verse refers to the patriarch as an individual)",
+    "Jericho": "place",
+    "Jerusalem": "place",
+    "Jordan": "place",
+    "Judah": "tribe/kingdom (45:25, 49:4)",
+    "Levi": "tribe (45:6 'tribe of Levi')",
+    "Ephraim": "northern kingdom (47:21, 47:23)",
+    "Lebanon": "place",
+    "Maker": "title of God",
+    "Master": "title of God",
+    "Mercy": "common noun",
+    "Ophir": "place (gold of Ophir)",
+    "People": "common noun",
+    "Philistines": "people",
+    "Pishon": "place",
+    "Put": "verb",
+    "River": "place",
+    "Samaria": "place",
+    "Savior": "title of God",
+    "Shechem": "city/its inhabitants (50:26)",
+    "Sinai": "place",
+    "Terror": "common noun",
+    "Thummim": "priestly object",
+    "Urim": "priestly object",
+    "Tigris": "place",
+    "Tyrians": "people",
+    "Water": "common noun",
+    "Zion": "place",
+    "Jacob (as people)": "collective use in 23:12, 24:8, 24:23, 36:11, 45:5, 45:17, 46:14, 47:22, 48:10, 49:10"
+  },
+  "notes": "No prologue in this WEB VPL file: SIR begins at 1:1 and there is no 0:x or 'Prologue' line (none in the .xml/.sql either; 'grandfather' does not occur). The translator's prologue (grandson of Jesus, who came to Egypt in the 38th year of Euergetes) therefore cannot be cited, so the unnamed grandson-translator is NOT entered as a person; add him only if a source text with the prologue is used. 'The judges, every one by his name' (46:11) and 'the twelve prophets' (49:10) are collective references, recorded here only as notes, not as people. Job: the WEB (Greek) 49:9 reads 'he remembered the enemies in rainstorm' with no mention of Job (the Hebrew mentions Job), so Job is not included. No Ptolemy appears in the WEB text of SIR. Unnamed allusions not entered: 25:24 'the beginning of sin came from a woman' (Eve, but generic); 48:5 the dead man raised by Elijah (widow's son); 48:6 and 48:8 plural kings/prophets; 16:7 giants; 16:10 600,000 footmen; 50:13,16 sons of Aaron (collective). Two entries have WEB name 'Jesus' (author 50:27 and son of Josedek 49:12); disambiguated by new_id/existing_id. 'Eleazar (son of Aaron)' carries a parenthetical to separate it from eleazar-sirach. Refs for Moses, Aaron, Joshua, Samuel, David, Solomon, Elijah and Simon include contiguous verses of their eulogies where they are the clear subject by pronoun."
+}

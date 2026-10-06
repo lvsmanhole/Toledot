@@ -1,0 +1,5 @@
+schema_version: 1
+record_type: passages
+records:
+  - {id: prayer-of-manasseh-1-census, work_id: prayer-of-manasseh, witness_id: web-prayer-of-manasseh, locator: "Prayer of Manasseh 1", citations: [{source_id: world-english-bible, locator: "Prayer of Manasseh 1", witness_id: web-prayer-of-manasseh}]}
+  - {id: prayer-of-manasseh-1-lxx, work_id: prayer-of-manasseh, witness_id: lxx-prayer-of-manasseh-rahlfs-hanhart, locator: "Prayer of Manasseh 1", correspondence_note: "Chapter correspondence with the Greek edition is assumed, not checked.", citations: [{source_id: rahlfs-hanhart-2006, locator: "Prayer of Manasseh 1", witness_id: lxx-prayer-of-manasseh-rahlfs-hanhart}]}

@@ -1,0 +1,1540 @@
+{
+  "book": "4ES",
+  "sections": {
+    "4-ezra": "3:1-14:48",
+    "5-ezra": "1:1-2:48",
+    "6-ezra": "15:1-16:78"
+  },
+  "people": [
+    {
+      "name": "Esdras",
+      "existing_id": "ezra-ezr7",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [
+        "Salathiel",
+        "Ezra"
+      ],
+      "description": "Priest-scribe and seer; narrator of the visions in Babylon and recipient of the 5 Ezra oracles.",
+      "refs": [
+        "1:1",
+        "2:10",
+        "2:33",
+        "2:42",
+        "3:1",
+        "6:10",
+        "7:2",
+        "7:25",
+        "8:2",
+        "8:19",
+        "14:1",
+        "14:38"
+      ],
+      "parents": [],
+      "spouses": [],
+      "descent_note": "1:1 calls him 'son of Saraias' (Seraiah, the high priest executed in 586 BCE, cf. Ezra 7:1); Seraiah is a distant ancestor, not the literal father, so no parent is listed.",
+      "explicit_ages": [],
+      "identity_note": "3:1 'I Salathiel, also called Esdras' identifies the 4 Ezra visionary with Ezra the scribe; this Salathiel is NOT Shealtiel the father of Zerubbabel (shealtiel-1ch3, also aliased Salathiel). The setting 'thirtieth year after the ruin of the city' in Babylon (3:1) is pseudepigraphic and conflicts with Ezra's 5th-century date. 1:3 places him as a captive in Media under Artaxerxes. 8:19 and 14:9 speak of his being 'taken up'.",
+      "sections": [
+        "4-ezra",
+        "5-ezra"
+      ]
+    },
+    {
+      "name": "Saraias",
+      "existing_id": "seraiah-2ki25",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [
+        "Seraiah"
+      ],
+      "description": "Named as Ezra's father/ancestor at the head of the priestly genealogy.",
+      "refs": [
+        "1:1"
+      ],
+      "parents": [
+        {
+          "ref_name": "Azaraias",
+          "verse": "1:1"
+        }
+      ],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": "Same position as Seraiah in Ezra 7:1.",
+      "sections": [
+        "5-ezra"
+      ]
+    },
+    {
+      "name": "Azaraias",
+      "existing_id": "azariah-1ch6-13",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [
+        "Azariah"
+      ],
+      "description": "Priestly ancestor of Ezra, son of Helkias.",
+      "refs": [
+        "1:1"
+      ],
+      "parents": [
+        {
+          "ref_name": "Helkias",
+          "verse": "1:1"
+        }
+      ],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": "Azariah of Ezra 7:1.",
+      "sections": [
+        "5-ezra"
+      ]
+    },
+    {
+      "name": "Helkias",
+      "existing_id": "hilkiah-2ki22",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [
+        "Hilkiah"
+      ],
+      "description": "High priest in the ancestry of Ezra.",
+      "refs": [
+        "1:1"
+      ],
+      "parents": [
+        {
+          "ref_name": "Salemas",
+          "verse": "1:1"
+        }
+      ],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": "Hilkiah of Ezra 7:1 / 1 Chr 6:13.",
+      "sections": [
+        "5-ezra"
+      ]
+    },
+    {
+      "name": "Salemas",
+      "existing_id": "shallum-1ch6",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [
+        "Shallum"
+      ],
+      "description": "Priestly ancestor of Ezra, son of Sadoc.",
+      "refs": [
+        "1:1"
+      ],
+      "parents": [
+        {
+          "ref_name": "Sadoc",
+          "verse": "1:1"
+        }
+      ],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": "Shallum of Ezra 7:2.",
+      "sections": [
+        "5-ezra"
+      ]
+    },
+    {
+      "name": "Sadoc",
+      "existing_id": "zadok-1ch6",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [
+        "Zadok"
+      ],
+      "description": "Priestly ancestor of Ezra, son of Ahitob.",
+      "refs": [
+        "1:1"
+      ],
+      "parents": [
+        {
+          "ref_name": "Ahitob",
+          "verse": "1:1"
+        }
+      ],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": "Zadok of Ezra 7:2 (the later Zadok of 1 Chr 6:12, not David's priest).",
+      "sections": [
+        "5-ezra"
+      ]
+    },
+    {
+      "name": "Ahitob",
+      "existing_id": "ahitub-1ch6",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [
+        "Ahitub"
+      ],
+      "description": "Priestly ancestor of Ezra.",
+      "refs": [
+        "1:1"
+      ],
+      "parents": [],
+      "spouses": [],
+      "descent_note": "1:1-2 makes him 'son of Achias, son of Phinees, son of Heli', inserting Eli's house (cf. 1 Sam 14:3) into the Zadokite line of Ezra 7:2-3; this is a genealogical conflation, so no parent is listed.",
+      "explicit_ages": [],
+      "identity_note": "Positionally Ahitub of Ezra 7:2 (father of Zadok).",
+      "sections": [
+        "5-ezra"
+      ]
+    },
+    {
+      "name": "Achias",
+      "existing_id": null,
+      "new_id": "achias-4es",
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "Figure in Ezra's genealogy in 5 Ezra, called son of Phinees son of Heli.",
+      "refs": [
+        "1:2"
+      ],
+      "parents": [
+        {
+          "ref_name": "Phinees (son of Heli)",
+          "verse": "1:2"
+        }
+      ],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": "Absent from Ezra 7. Likely echoes Ahijah son of Ahitub son of Phinehas son of Eli (1 Sam 14:3; existing ahimelech-1sa14 carries alias Ahijah), but there he is Phinehas's grandson, so identity is not clear enough to merge.",
+      "sections": [
+        "5-ezra"
+      ]
+    },
+    {
+      "name": "Phinees (son of Heli)",
+      "existing_id": "phinehas-1sa1",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [
+        "Phinees",
+        "Phinehas"
+      ],
+      "description": "Son of Heli (Eli) in the inserted section of the genealogy.",
+      "refs": [
+        "1:2"
+      ],
+      "parents": [
+        {
+          "ref_name": "Heli",
+          "verse": "1:2"
+        }
+      ],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": "First 'Phinees' in 1:2; 'son of Heli' identifies him with Phinehas son of Eli (1 Sam 1:3).",
+      "sections": [
+        "5-ezra"
+      ]
+    },
+    {
+      "name": "Heli",
+      "existing_id": "eli",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [
+        "Eli"
+      ],
+      "description": "Eli the priest, placed in the genealogy as son of Amarias.",
+      "refs": [
+        "1:2"
+      ],
+      "parents": [],
+      "spouses": [],
+      "descent_note": "1:2 calls him 'son of Amarias'; Amariah of Ezra 7:3 is a much later Zadokite and Eli's father is never named in the Hebrew Bible, so this is a conflation, not a parent link.",
+      "explicit_ages": [],
+      "identity_note": "Heli = Eli the priest of Shiloh (Greek form); identity inferred from 'Phinees son of Heli'.",
+      "sections": [
+        "5-ezra"
+      ]
+    },
+    {
+      "name": "Amarias",
+      "existing_id": "amariah-1ch6",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [
+        "Amariah"
+      ],
+      "description": "Priestly ancestor of Ezra, son of Aziei.",
+      "refs": [
+        "1:2"
+      ],
+      "parents": [
+        {
+          "ref_name": "Aziei",
+          "verse": "1:2"
+        }
+      ],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": "Amariah of Ezra 7:3.",
+      "sections": [
+        "5-ezra"
+      ]
+    },
+    {
+      "name": "Aziei",
+      "existing_id": "azariah-1ch6",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [
+        "Azariah"
+      ],
+      "description": "Priestly ancestor of Ezra.",
+      "refs": [
+        "1:2"
+      ],
+      "parents": [],
+      "spouses": [],
+      "descent_note": "1:2 'son of Marimoth' follows Ezra 7:3, which skips several generations listed in 1 Chr 6:7-10; Meraioth is a distant ancestor, so no parent is listed.",
+      "explicit_ages": [],
+      "identity_note": "Aziei stands where Ezra 7:3 has Azariah (son of Meraioth, father of Amariah); mapped positionally.",
+      "sections": [
+        "5-ezra"
+      ]
+    },
+    {
+      "name": "Marimoth",
+      "existing_id": "meraioth",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [
+        "Meraioth"
+      ],
+      "description": "Priestly ancestor of Ezra, son of Arna.",
+      "refs": [
+        "1:2"
+      ],
+      "parents": [
+        {
+          "ref_name": "Arna",
+          "verse": "1:2"
+        }
+      ],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": "Meraioth of Ezra 7:3.",
+      "sections": [
+        "5-ezra"
+      ]
+    },
+    {
+      "name": "Arna",
+      "existing_id": "zerahiah-1ch6",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [
+        "Zerahiah"
+      ],
+      "description": "Priestly ancestor of Ezra, son of Ozias.",
+      "refs": [
+        "1:2"
+      ],
+      "parents": [
+        {
+          "ref_name": "Ozias",
+          "verse": "1:2"
+        }
+      ],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": "Arna stands exactly where Ezra 7:4 has Zerahiah (son of Uzzi, father of Meraioth); mapped positionally, the name form is corrupt.",
+      "sections": [
+        "5-ezra"
+      ]
+    },
+    {
+      "name": "Ozias",
+      "existing_id": "uzzi-1ch6",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [
+        "Uzzi"
+      ],
+      "description": "Priestly ancestor of Ezra, son of Borith.",
+      "refs": [
+        "1:2"
+      ],
+      "parents": [
+        {
+          "ref_name": "Borith",
+          "verse": "1:2"
+        }
+      ],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": "Uzzi of Ezra 7:4 (not King Uzziah despite the form Ozias).",
+      "sections": [
+        "5-ezra"
+      ]
+    },
+    {
+      "name": "Borith",
+      "existing_id": "bukki-1ch6",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [
+        "Bukki"
+      ],
+      "description": "Priestly ancestor of Ezra, son of Abissei.",
+      "refs": [
+        "1:2"
+      ],
+      "parents": [
+        {
+          "ref_name": "Abissei",
+          "verse": "1:2"
+        }
+      ],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": "Bukki of Ezra 7:4; mapped positionally.",
+      "sections": [
+        "5-ezra"
+      ]
+    },
+    {
+      "name": "Abissei",
+      "existing_id": "abishua-1ch6",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [
+        "Abishua"
+      ],
+      "description": "Priestly ancestor of Ezra, son of Phinees.",
+      "refs": [
+        "1:2"
+      ],
+      "parents": [
+        {
+          "ref_name": "Phinees (son of Eleazar)",
+          "verse": "1:2"
+        }
+      ],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": "Abishua of Ezra 7:5.",
+      "sections": [
+        "5-ezra"
+      ]
+    },
+    {
+      "name": "Phinees (son of Eleazar)",
+      "existing_id": "phinehas",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [
+        "Phinees",
+        "Phinehas"
+      ],
+      "description": "Phinehas son of Eleazar, grandson of Aaron.",
+      "refs": [
+        "1:2"
+      ],
+      "parents": [
+        {
+          "ref_name": "Eleazar",
+          "verse": "1:2"
+        }
+      ],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": "Second 'Phinees' in 1:2.",
+      "sections": [
+        "5-ezra"
+      ]
+    },
+    {
+      "name": "Eleazar",
+      "existing_id": "eleazar-aaron",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "Son of Aaron in the priestly genealogy.",
+      "refs": [
+        "1:2"
+      ],
+      "parents": [
+        {
+          "ref_name": "Aaron",
+          "verse": "1:3"
+        }
+      ],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": null,
+      "sections": [
+        "5-ezra"
+      ]
+    },
+    {
+      "name": "Aaron",
+      "existing_id": "aaron",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "First priest; head of Ezra's genealogy and named as Israel's priest in the exodus.",
+      "refs": [
+        "1:3",
+        "1:13"
+      ],
+      "parents": [],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": null,
+      "sections": [
+        "5-ezra"
+      ]
+    },
+    {
+      "name": "Artaxerxes",
+      "existing_id": "artaxerxes",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "King of the Persians in whose reign Ezra was captive in Media.",
+      "refs": [
+        "1:3"
+      ],
+      "parents": [],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": "Assumed to be the Artaxerxes of Ezra 7.",
+      "sections": [
+        "5-ezra"
+      ]
+    },
+    {
+      "name": "Pharoah",
+      "existing_id": "pharaoh-exodus-second",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [
+        "Pharaoh"
+      ],
+      "description": "King of Egypt struck down with his army at the exodus.",
+      "refs": [
+        "1:10"
+      ],
+      "parents": [],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": "Pharaoh of the sea crossing; existing data splits the exodus pharaohs and this maps to the later (exodus) one.",
+      "sections": [
+        "5-ezra"
+      ]
+    },
+    {
+      "name": "Moses",
+      "existing_id": "moses",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "Leader of the exodus; recalled as intercessor and recipient of revelation at Sinai.",
+      "refs": [
+        "1:13",
+        "7:106",
+        "7:129",
+        "14:3",
+        "14:4",
+        "14:5"
+      ],
+      "parents": [],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": "14:4-5 refer to him by pronoun only.",
+      "sections": [
+        "4-ezra",
+        "5-ezra"
+      ]
+    },
+    {
+      "name": "Abraham",
+      "existing_id": "abram",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "Patriarch chosen by God; recalled as interceding for Sodom.",
+      "refs": [
+        "1:39",
+        "3:13",
+        "3:15",
+        "6:8",
+        "7:106"
+      ],
+      "parents": [],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": "3:15 refers to him by pronoun.",
+      "sections": [
+        "4-ezra",
+        "5-ezra"
+      ]
+    },
+    {
+      "name": "Isaac",
+      "existing_id": "isaac",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "Son of Abraham, father of Jacob and Esau.",
+      "refs": [
+        "1:39",
+        "3:15",
+        "6:8"
+      ],
+      "parents": [
+        {
+          "ref_name": "Abraham",
+          "verse": "3:15"
+        }
+      ],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": null,
+      "sections": [
+        "4-ezra",
+        "5-ezra"
+      ]
+    },
+    {
+      "name": "Jacob",
+      "existing_id": "jacob",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "Patriarch, son of Isaac, chosen over Esau.",
+      "refs": [
+        "1:39",
+        "3:15",
+        "3:16",
+        "6:8",
+        "6:9"
+      ],
+      "parents": [
+        {
+          "ref_name": "Isaac",
+          "verse": "3:15"
+        }
+      ],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": "Uses of 'Jacob'/'Israel' for the nation (1:24, 3:19, 3:32, 5:35, 8:16, 9:30, 12:46) are not counted as person refs.",
+      "sections": [
+        "4-ezra",
+        "5-ezra"
+      ]
+    },
+    {
+      "name": "Esau",
+      "existing_id": "esau",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "Isaac's son, rejected in favour of Jacob; symbol of the end of the age.",
+      "refs": [
+        "3:15",
+        "3:16",
+        "6:8",
+        "6:9"
+      ],
+      "parents": [
+        {
+          "ref_name": "Isaac",
+          "verse": "3:15"
+        }
+      ],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": null,
+      "sections": [
+        "4-ezra"
+      ]
+    },
+    {
+      "name": "Oseas",
+      "existing_id": "hosea-hos1",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [
+        "Hosea"
+      ],
+      "description": "Minor prophet listed among leaders of the coming people.",
+      "refs": [
+        "1:39"
+      ],
+      "parents": [],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": null,
+      "sections": [
+        "5-ezra"
+      ]
+    },
+    {
+      "name": "Amos",
+      "existing_id": "amos-amo1",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "Minor prophet in the list of leaders.",
+      "refs": [
+        "1:39"
+      ],
+      "parents": [],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": null,
+      "sections": [
+        "5-ezra"
+      ]
+    },
+    {
+      "name": "Micheas",
+      "existing_id": "micah-jer26",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [
+        "Micah"
+      ],
+      "description": "Minor prophet in the list of leaders.",
+      "refs": [
+        "1:39"
+      ],
+      "parents": [],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": null,
+      "sections": [
+        "5-ezra"
+      ]
+    },
+    {
+      "name": "Joel",
+      "existing_id": "joel-jol1",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "Minor prophet in the list of leaders.",
+      "refs": [
+        "1:39"
+      ],
+      "parents": [],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": null,
+      "sections": [
+        "5-ezra"
+      ]
+    },
+    {
+      "name": "Abdias",
+      "existing_id": "obadiah-oba1",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [
+        "Obadiah"
+      ],
+      "description": "Minor prophet in the list of leaders.",
+      "refs": [
+        "1:39"
+      ],
+      "parents": [],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": null,
+      "sections": [
+        "5-ezra"
+      ]
+    },
+    {
+      "name": "Jonas",
+      "existing_id": "jonah-2ki14",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [
+        "Jonah"
+      ],
+      "description": "Minor prophet in the list of leaders.",
+      "refs": [
+        "1:39"
+      ],
+      "parents": [],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": null,
+      "sections": [
+        "5-ezra"
+      ]
+    },
+    {
+      "name": "Nahum",
+      "existing_id": "nahum-nam1",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "Minor prophet in the list of leaders.",
+      "refs": [
+        "1:40"
+      ],
+      "parents": [],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": null,
+      "sections": [
+        "5-ezra"
+      ]
+    },
+    {
+      "name": "Abacuc",
+      "existing_id": "habakkuk-hab1",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [
+        "Habakkuk"
+      ],
+      "description": "Minor prophet in the list of leaders.",
+      "refs": [
+        "1:40"
+      ],
+      "parents": [],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": null,
+      "sections": [
+        "5-ezra"
+      ]
+    },
+    {
+      "name": "Sophonias",
+      "existing_id": "zephaniah-zep1",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [
+        "Zephaniah"
+      ],
+      "description": "Minor prophet in the list of leaders.",
+      "refs": [
+        "1:40"
+      ],
+      "parents": [],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": null,
+      "sections": [
+        "5-ezra"
+      ]
+    },
+    {
+      "name": "Aggaeus",
+      "existing_id": "haggai-ezr5",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [
+        "Haggai"
+      ],
+      "description": "Minor prophet in the list of leaders.",
+      "refs": [
+        "1:40"
+      ],
+      "parents": [],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": null,
+      "sections": [
+        "5-ezra"
+      ]
+    },
+    {
+      "name": "Zachary",
+      "existing_id": "zechariah-ezr5",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [
+        "Zechariah"
+      ],
+      "description": "Minor prophet in the list of leaders.",
+      "refs": [
+        "1:40"
+      ],
+      "parents": [],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": null,
+      "sections": [
+        "5-ezra"
+      ]
+    },
+    {
+      "name": "Malachy",
+      "existing_id": "malachi-mal1",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [
+        "Malachi"
+      ],
+      "description": "Minor prophet, 'also called the Lord's messenger'.",
+      "refs": [
+        "1:40"
+      ],
+      "parents": [],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": null,
+      "sections": [
+        "5-ezra"
+      ]
+    },
+    {
+      "name": "Esaias",
+      "existing_id": "isaiah-2ki19",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [
+        "Isaiah"
+      ],
+      "description": "Prophet promised as a helper to the mother of the children.",
+      "refs": [
+        "2:18"
+      ],
+      "parents": [],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": null,
+      "sections": [
+        "5-ezra"
+      ]
+    },
+    {
+      "name": "Jeremy",
+      "existing_id": "jeremiah-2ch35",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [
+        "Jeremiah"
+      ],
+      "description": "Prophet promised alongside Esaias.",
+      "refs": [
+        "2:18"
+      ],
+      "parents": [],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": null,
+      "sections": [
+        "5-ezra"
+      ]
+    },
+    {
+      "name": "Adam",
+      "existing_id": "adam",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "First man, whose transgression brought death on his descendants.",
+      "refs": [
+        "3:5",
+        "3:10",
+        "3:21",
+        "3:26",
+        "4:30",
+        "6:54",
+        "6:56",
+        "7:11",
+        "7:70",
+        "7:116",
+        "7:118"
+      ],
+      "parents": [],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": null,
+      "sections": [
+        "4-ezra"
+      ]
+    },
+    {
+      "name": "Noah",
+      "existing_id": "noah",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "Survivor of the flood with his household.",
+      "refs": [
+        "3:11"
+      ],
+      "parents": [],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": null,
+      "sections": [
+        "4-ezra"
+      ]
+    },
+    {
+      "name": "David",
+      "existing_id": "david",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "King commanded to build a city; intercessor for the plague; ancestor of the anointed one.",
+      "refs": [
+        "3:23",
+        "7:108",
+        "12:32"
+      ],
+      "parents": [],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": null,
+      "sections": [
+        "4-ezra"
+      ]
+    },
+    {
+      "name": "Phaltiel",
+      "existing_id": null,
+      "new_id": "phaltiel-4es",
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "Captain of the people who urged Ezra to eat and not abandon the exiles.",
+      "refs": [
+        "5:16",
+        "5:19"
+      ],
+      "parents": [],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": "Only in 4 Ezra 5:16-19 (5:19 by pronoun); unrelated to Palti/Paltiel of Samuel or Numbers.",
+      "sections": [
+        "4-ezra"
+      ]
+    },
+    {
+      "name": "Joshua",
+      "existing_id": "joshua-exodus",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "Moses' successor, interceding for Israel in the days of Achan.",
+      "refs": [
+        "7:107"
+      ],
+      "parents": [],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": null,
+      "sections": [
+        "4-ezra"
+      ]
+    },
+    {
+      "name": "Achan",
+      "existing_id": "achan",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "Israelite whose sin occasioned Joshua's intercession.",
+      "refs": [
+        "7:107"
+      ],
+      "parents": [],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": null,
+      "sections": [
+        "4-ezra"
+      ]
+    },
+    {
+      "name": "Samuel",
+      "existing_id": "samuel",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "Prophet who prayed in the days of Saul.",
+      "refs": [
+        "7:108"
+      ],
+      "parents": [],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": null,
+      "sections": [
+        "4-ezra"
+      ]
+    },
+    {
+      "name": "Saul",
+      "existing_id": "saul",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "First king of Israel.",
+      "refs": [
+        "7:108"
+      ],
+      "parents": [],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": null,
+      "sections": [
+        "4-ezra"
+      ]
+    },
+    {
+      "name": "Solomon",
+      "existing_id": "solomon",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "King who prayed for worshippers and built the city and its offerings.",
+      "refs": [
+        "7:108",
+        "10:46"
+      ],
+      "parents": [],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": null,
+      "sections": [
+        "4-ezra"
+      ]
+    },
+    {
+      "name": "Elijah",
+      "existing_id": "elijah-1ki17",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "Prophet who prayed for rain and for the dead.",
+      "refs": [
+        "7:109"
+      ],
+      "parents": [],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": null,
+      "sections": [
+        "4-ezra"
+      ]
+    },
+    {
+      "name": "Hezekiah",
+      "existing_id": "hezekiah-2ki16",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "King of Judah who prayed in the days of Sennacherib.",
+      "refs": [
+        "7:110"
+      ],
+      "parents": [],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": null,
+      "sections": [
+        "4-ezra"
+      ]
+    },
+    {
+      "name": "Sennacherib",
+      "existing_id": "sennacherib",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "Assyrian king in Hezekiah's day.",
+      "refs": [
+        "7:110"
+      ],
+      "parents": [],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": null,
+      "sections": [
+        "4-ezra"
+      ]
+    },
+    {
+      "name": "Daniel",
+      "existing_id": "daniel-ezk14",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "Seer whose fourth-kingdom vision the eagle vision reinterprets; called Ezra's 'brother'.",
+      "refs": [
+        "12:11"
+      ],
+      "parents": [],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": "'your brother Daniel' = fellow seer, not a sibling.",
+      "sections": [
+        "4-ezra"
+      ]
+    },
+    {
+      "name": "Jesus",
+      "existing_id": "jesus",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [
+        "Christ",
+        "Son of God",
+        "my Son",
+        "the anointed one"
+      ],
+      "description": "Messianic Son of God of the visions.",
+      "refs": [
+        "2:47",
+        "7:28",
+        "7:29",
+        "12:32",
+        "13:32",
+        "13:37",
+        "13:52",
+        "14:9"
+      ],
+      "parents": [],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": "Prophetic/visionary references only. 7:28 'my son Jesus' and 7:29 'my son Christ' follow the Latin tradition (other versions read 'my son the Messiah'); 2:47 identifies the crowning young man as the Son of God (5 Ezra, Christian). 12:32 is the anointed one 'out of the seed of David' (bracketed WEB text). The symbolic lion (11:37, 12:31) and man from the sea (13:3, 13:25) stand for him and are excluded as symbols. Reviewer may prefer to drop these as non-historical refs.",
+      "sections": [
+        "4-ezra",
+        "5-ezra"
+      ]
+    },
+    {
+      "name": "Osea",
+      "existing_id": "hoshea-2ki15",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [
+        "Hoshea"
+      ],
+      "description": "King of Israel when the ten tribes were exiled.",
+      "refs": [
+        "13:40"
+      ],
+      "parents": [],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": null,
+      "sections": [
+        "4-ezra"
+      ]
+    },
+    {
+      "name": "Salmananser",
+      "existing_id": "shalmaneser",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [
+        "Shalmaneser"
+      ],
+      "description": "King of the Assyrians who deported the ten tribes.",
+      "refs": [
+        "13:40"
+      ],
+      "parents": [],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": null,
+      "sections": [
+        "4-ezra"
+      ]
+    },
+    {
+      "name": "Sarea",
+      "existing_id": null,
+      "new_id": "sarea-scribe-4es",
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "One of the five swift scribes who wrote the 94 books at Ezra's dictation over forty days.",
+      "refs": [
+        "14:24",
+        "14:37",
+        "14:42"
+      ],
+      "parents": [],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": "Named only at 14:24, then 'the five men' (14:37, 14:42); gender from 'five men'.",
+      "sections": [
+        "4-ezra"
+      ]
+    },
+    {
+      "name": "Dabria",
+      "existing_id": null,
+      "new_id": "dabria-scribe-4es",
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "One of the five swift scribes who wrote the 94 books at Ezra's dictation over forty days.",
+      "refs": [
+        "14:24",
+        "14:37",
+        "14:42"
+      ],
+      "parents": [],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": "Named only at 14:24, then 'the five men' (14:37, 14:42); gender from 'five men'.",
+      "sections": [
+        "4-ezra"
+      ]
+    },
+    {
+      "name": "Selemia",
+      "existing_id": null,
+      "new_id": "selemia-scribe-4es",
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "One of the five swift scribes who wrote the 94 books at Ezra's dictation over forty days.",
+      "refs": [
+        "14:24",
+        "14:37",
+        "14:42"
+      ],
+      "parents": [],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": "Named only at 14:24, then 'the five men' (14:37, 14:42); gender from 'five men'.",
+      "sections": [
+        "4-ezra"
+      ]
+    },
+    {
+      "name": "Ethanus",
+      "existing_id": null,
+      "new_id": "ethanus-scribe-4es",
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "One of the five swift scribes who wrote the 94 books at Ezra's dictation over forty days.",
+      "refs": [
+        "14:24",
+        "14:37",
+        "14:42"
+      ],
+      "parents": [],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": "Named only at 14:24, then 'the five men' (14:37, 14:42); gender from 'five men'.",
+      "sections": [
+        "4-ezra"
+      ]
+    },
+    {
+      "name": "Asiel",
+      "existing_id": null,
+      "new_id": "asiel-scribe-4es",
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "One of the five swift scribes who wrote the 94 books at Ezra's dictation over forty days.",
+      "refs": [
+        "14:24",
+        "14:37",
+        "14:42"
+      ],
+      "parents": [],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": "Named only at 14:24, then 'the five men' (14:37, 14:42); gender from 'five men'.",
+      "sections": [
+        "4-ezra"
+      ]
+    }
+  ],
+  "excluded_names": {
+    "Uriel": "angel",
+    "Jeremiel": "angel (archangel, 4:36)",
+    "Behemoth": "creature",
+    "Leviathan": "creature",
+    "Israel": "people/nation (never used for Jacob personally in this book)",
+    "Judah": "people/nation (1:24 addresses the nation)",
+    "Levi": "tribe (1:3 tribe of Levi)",
+    "Christ": "merged into Jesus entry",
+    "Salathiel": "merged into Esdras (ezra-ezr7) as alias",
+    "Esdras": "person (see Esdras entry)",
+    "Phinees": "two persons, see the two Phinees entries",
+    "Egypt": "place",
+    "Egyptians": "people",
+    "Canaanites": "people",
+    "Pherezites": "people",
+    "Philistines": "people",
+    "Medes": "people",
+    "Persians": "people",
+    "Assyrians": "people",
+    "Carmonians": "people",
+    "Sodomite": "adjective (Sodomite sea)",
+    "Arabia": "place",
+    "Asia": "place (personified)",
+    "Assur": "place/nation",
+    "Babylon": "place (personified in 15-16)",
+    "Euphrates": "place",
+    "Gehenna": "place",
+    "Gomorrah": "place",
+    "Sodom": "place",
+    "Horeb": "place",
+    "Sinai": "place",
+    "Jerusalem": "place",
+    "Zion": "place (personified as mother/woman)",
+    "Tyre": "place",
+    "Sidon": "place",
+    "Syria": "place",
+    "Libanus": "place",
+    "Ardat": "place (field, 9:26)",
+    "Arzareth": "place (13:45)",
+    "Salt": "not a name (salt waters)",
+    "River": "place (Euphrates)",
+    "Mount": "not a name (Mount Zion/Sinai/Horeb)",
+    "Great": "not a name",
+    "Son": "title (Son of God / my Son) - see Jesus entry",
+    "Put": "not a name (verb)",
+    "Just": "not a name",
+    "Look": "not a name",
+    "Choose": "not a name",
+    "Believe": "not a name",
+    "Aren’t": "not a name",
+    "mourning woman (9:38-10:27)": "symbolic (interpreted as Zion, 10:44)",
+    "mourning woman's husband and son (9:43-10:1)": "symbolic (son = city/temple of Jerusalem, 10:46-48)",
+    "mother of the children (2:2-2:30)": "symbolic (personified Jerusalem/church)",
+    "young man of high stature (2:43)": "symbolic visionary figure, identified as the Son of God (2:47; ref counted under Jesus)",
+    "eagle with wings and heads (11-12)": "symbolic (fourth kingdom and its kings)",
+    "lion (11:37, 12:31)": "symbolic (the anointed one)",
+    "man from the sea (13:3-13:52)": "symbolic (my Son)",
+    "Ezra's mother (5:35)": "rhetorical mention only, not an actor",
+    "the angel (2:44-48)": "angel",
+    "ten tribes (13:40)": "people"
+  },
+  "notes": "Verse ranges checked against the WEB text: ch1 has 40 verses, ch2 48, ch14 ends at 14:48, ch15 has 63, ch16 78. Ch7 has 140 verses (includes the 'missing fragment' 7:36-105, so numbering follows the long form). Each person has a 'sections' list derived from refs. 6 Ezra (15-16) names no humans (only nations/places such as Babylon, Asia, Egypt, Arabia, Carmonians). The 5 Ezra 1:1-3 genealogy matches Ezra 7:1-5 position-for-position except for an inserted 'Achias, Phinees, Heli' (Eli's house) between Ahitob and Amarias; corrupt forms Aziei (=Azariah), Arna (=Zerahiah), Borith (=Bukki), Ozias (=Uzzi) were mapped positionally. Parent links are given only where they agree with 1 Chr 6; telescoped or conflated links are explained in descent_note (Esdras-Saraias, Ahitob-Achias, Heli-Amarias, Aziei-Marimoth). The narrator 'I' is Ezra throughout 3-14; only verses naming him are listed. The 5 Ezra prophets list (1:39-40) is mapped to the canonical prophets. The Jesus entry contains prophetic/visionary refs only; the reviewer may decide whether to keep them. Bracketed WEB text at 12:32 and 13:3 is supplied from versions."
+}

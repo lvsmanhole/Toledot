@@ -1,0 +1,7 @@
+schema_version: 1
+record_type: relationships
+records:
+  - {id: betenos-parent-noah, relationship_type: parent, subject_id: betenos, object_id: noah, claim_ids: [], citations: [{source_id: charles-enoch-1917, locator: "1 Enoch 106:1", witness_id: charles-1-enoch-translation}]}
+  - {id: edni-enoch-wife-spouse-enoch-seth, relationship_type: spouse, subject_id: edni-enoch-wife, object_id: enoch-seth, claim_ids: [], citations: [{source_id: charles-enoch-1917, locator: "1 Enoch 85:3", witness_id: charles-1-enoch-translation}]}
+  - {id: edni-enoch-wife-parent-methuselah, relationship_type: parent, subject_id: edni-enoch-wife, object_id: methuselah, claim_ids: [], citations: [{source_id: charles-enoch-1917, locator: "1 Enoch 85:3", witness_id: charles-1-enoch-translation}]}
+  - {id: betenos-spouse-lamech-seth, relationship_type: spouse, subject_id: betenos, object_id: lamech-seth, claim_ids: [], citations: [{source_id: charles-enoch-1917, locator: "1 Enoch 106:1", witness_id: charles-1-enoch-translation}]}

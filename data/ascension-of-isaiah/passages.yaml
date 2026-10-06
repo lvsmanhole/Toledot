@@ -1,0 +1,4 @@
+schema_version: 1
+record_type: passages
+records:
+  - {id: ascension-of-isaiah-book-review, work_id: ascension-of-isaiah, witness_id: book-review-ascension-of-isaiah, locator: "Ascension of Isaiah", citations: [{source_id: ethiopic-edition-pending, locator: "Ascension of Isaiah", witness_id: book-review-ascension-of-isaiah}]}

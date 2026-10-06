@@ -1,0 +1,19 @@
+schema_version: 1
+record_type: relationships
+records:
+  - {id: tobiel-parent-tobit-person, relationship_type: parent, subject_id: tobiel, object_id: tobit-person, claim_ids: [], citations: [{source_id: world-english-bible, locator: "Tobit 1:1", witness_id: web-tobit}]}
+  - {id: anna-tobit-spouse-tobit-person, relationship_type: spouse, subject_id: anna-tobit, object_id: tobit-person, claim_ids: [], citations: [{source_id: world-english-bible, locator: "Tobit 1:9", witness_id: web-tobit}]}
+  - {id: ananiel-tobit-parent-tobiel, relationship_type: parent, subject_id: ananiel-tobit, object_id: tobiel, claim_ids: [], citations: [{source_id: world-english-bible, locator: "Tobit 1:1", witness_id: web-tobit}]}
+  - {id: deborah-tobit-parent-tobiel, relationship_type: parent, subject_id: deborah-tobit, object_id: tobiel, claim_ids: [], citations: [{source_id: world-english-bible, locator: "Tobit 1:8", witness_id: web-tobit}]}
+  - {id: aduel-tobit-parent-ananiel-tobit, relationship_type: parent, subject_id: aduel-tobit, object_id: ananiel-tobit, claim_ids: [], citations: [{source_id: world-english-bible, locator: "Tobit 1:1", witness_id: web-tobit}]}
+  - {id: gabael-of-rages-parent-aduel-tobit, relationship_type: parent, subject_id: gabael-of-rages, object_id: aduel-tobit, claim_ids: [], citations: [{source_id: world-english-bible, locator: "Tobit 1:1", witness_id: web-tobit}]}
+  - {id: tobit-person-parent-tobias-son-of-tobit, relationship_type: parent, subject_id: tobit-person, object_id: tobias-son-of-tobit, claim_ids: [], citations: [{source_id: world-english-bible, locator: "Tobit 1:9", witness_id: web-tobit}]}
+  - {id: anna-tobit-parent-tobias-son-of-tobit, relationship_type: parent, subject_id: anna-tobit, object_id: tobias-son-of-tobit, claim_ids: [], citations: [{source_id: world-english-bible, locator: "Tobit 1:9", witness_id: web-tobit}]}
+  - {id: sarah-daughter-of-raguel-spouse-tobias-son-of-tobit, relationship_type: spouse, subject_id: sarah-daughter-of-raguel, object_id: tobias-son-of-tobit, claim_ids: [], citations: [{source_id: world-english-bible, locator: "Tobit 7:13", witness_id: web-tobit}]}
+  - {id: raguel-tobit-parent-sarah-daughter-of-raguel, relationship_type: parent, subject_id: raguel-tobit, object_id: sarah-daughter-of-raguel, claim_ids: [], citations: [{source_id: world-english-bible, locator: "Tobit 3:7", witness_id: web-tobit}]}
+  - {id: edna-tobit-parent-sarah-daughter-of-raguel, relationship_type: parent, subject_id: edna-tobit, object_id: sarah-daughter-of-raguel, claim_ids: [], citations: [{source_id: world-english-bible, locator: "Tobit 10:12", witness_id: web-tobit}]}
+  - {id: edna-tobit-spouse-raguel-tobit, relationship_type: spouse, subject_id: edna-tobit, object_id: raguel-tobit, claim_ids: [], citations: [{source_id: world-english-bible, locator: "Tobit 7:2", witness_id: web-tobit}]}
+  - {id: gabrias-parent-gabael-of-rages, relationship_type: parent, subject_id: gabrias, object_id: gabael-of-rages, claim_ids: [], citations: [{source_id: world-english-bible, locator: "Tobit 4:20", witness_id: web-tobit}]}
+  - {id: anael-tobit-parent-achiacharus, relationship_type: parent, subject_id: anael-tobit, object_id: achiacharus, claim_ids: [], citations: [{source_id: world-english-bible, locator: "Tobit 1:21", witness_id: web-tobit}]}
+  - {id: shemaiah-tobit-parent-ananias-son-of-shemaiah, relationship_type: parent, subject_id: shemaiah-tobit, object_id: ananias-son-of-shemaiah, claim_ids: [], citations: [{source_id: world-english-bible, locator: "Tobit 5:13", witness_id: web-tobit}]}
+  - {id: shemaiah-tobit-parent-jathan-tobit, relationship_type: parent, subject_id: shemaiah-tobit, object_id: jathan-tobit, claim_ids: [], citations: [{source_id: world-english-bible, locator: "Tobit 5:13", witness_id: web-tobit}]}

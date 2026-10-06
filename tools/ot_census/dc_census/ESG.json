@@ -1,0 +1,446 @@
+{
+  "book": "ESG",
+  "addition_sections": [
+    {
+      "work": "additions-to-esther",
+      "ranges": [
+        "1:1-1:1",
+        "3:13-3:13",
+        "4:18-4:47",
+        "5:1-5:2",
+        "8:13-8:13",
+        "10:4-10:14"
+      ]
+    }
+  ],
+  "people": [
+    {
+      "name": "Mordecai",
+      "existing_id": "mordecai-est2",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "Benjamite Jew at the Persian court who dreams of the two serpents and prays for Israel.",
+      "refs": [
+        "1:1",
+        "4:18",
+        "8:13",
+        "10:4"
+      ],
+      "parents": [
+        {
+          "ref_name": "Jair",
+          "verse": "1:1",
+          "existing_id": "jair-est2"
+        }
+      ],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": "4:18 ('He prayed') identifies Mordecai by context of 4:17; 10:7 ('Haman and me') is Mordecai speaking. Genealogy in 1:1 repeats Hebrew Esther 2:5 (Jair, Shimei, Kish)."
+    },
+    {
+      "name": "Jair",
+      "existing_id": "jair-est2",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "Father of Mordecai.",
+      "refs": [
+        "1:1"
+      ],
+      "parents": [
+        {
+          "ref_name": "Shimei",
+          "verse": "1:1",
+          "existing_id": "shimei-est2"
+        }
+      ],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": null
+    },
+    {
+      "name": "Shimei",
+      "existing_id": "shimei-est2",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "Benjamite ancestor of Mordecai.",
+      "refs": [
+        "1:1"
+      ],
+      "parents": [
+        {
+          "ref_name": "Kish",
+          "verse": "1:1",
+          "existing_id": "kish-est2"
+        }
+      ],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": "Chain mirrors Hebrew Esther 2:5; whether Shimei/Kish are immediate or remote ancestors is debated; existing ids shimei-est2 / kish-est2 used exactly as for Hebrew Esther."
+    },
+    {
+      "name": "Kish",
+      "existing_id": "kish-est2",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "Benjamite ancestor of Mordecai.",
+      "refs": [
+        "1:1"
+      ],
+      "parents": [],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": null
+    },
+    {
+      "name": "Esther",
+      "existing_id": "esther-est2",
+      "new_id": null,
+      "gender": "female",
+      "unnamed": false,
+      "aliases": [],
+      "description": "Jewish queen who prays for deliverance and approaches the king.",
+      "refs": [
+        "4:29",
+        "5:1",
+        "8:13",
+        "10:6"
+      ],
+      "parents": [],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": "Her prayer runs 4:29-4:47. Her father is named Aminadab in Greek 2:7/2:15/9:29 (not addition text; = Abihail of Hebrew Esther), so not recorded here."
+    },
+    {
+      "name": "Ahasuerus",
+      "existing_id": "ahasuerus",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [
+        "Artaxerxes (LXX Greek)"
+      ],
+      "description": "Persian king who issues the decrees of Additions B and E.",
+      "refs": [
+        "1:1",
+        "3:13",
+        "5:1",
+        "8:13",
+        "10:6"
+      ],
+      "parents": [],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": "The LXX Greek of Esther (incl. the additions) calls the king Artaxerxes; this WEB text renders him 'Ahasuerus' throughout, including inside the bracketed additions. Same king as in Hebrew Esther, so mapped to existing id 'ahasuerus'. In 5:1 and 10:6 he is 'the king' within addition text."
+    },
+    {
+      "name": "Haman",
+      "existing_id": "haman",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "Royal favourite whose plot against the Jews is described in the decrees and Mordecai's dream.",
+      "refs": [
+        "1:1",
+        "3:13",
+        "4:22",
+        "4:45",
+        "8:13",
+        "10:7"
+      ],
+      "parents": [
+        {
+          "ref_name": "Hammedatha",
+          "verse": "1:1",
+          "existing_id": "hammedatha"
+        }
+      ],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": "Called 'the Bougean' in 1:1 and 'a Macedonian ... alien from the blood of the Persians' in 8:13 (Addition E); parentage restated in 8:13."
+    },
+    {
+      "name": "Hammedatha",
+      "existing_id": "hammedatha",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "Father of Haman.",
+      "refs": [
+        "1:1",
+        "8:13"
+      ],
+      "parents": [],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": null
+    },
+    {
+      "name": "Nebuchadnezzar",
+      "existing_id": "nebuchadnezzar",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "King of Babylon who carried Mordecai's people captive.",
+      "refs": [
+        "1:1"
+      ],
+      "parents": [],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": null
+    },
+    {
+      "name": "Jeconiah",
+      "existing_id": "jehoiachin",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "King of Judea taken captive to Babylon.",
+      "refs": [
+        "1:1"
+      ],
+      "parents": [],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": null
+    },
+    {
+      "name": "Gabatha",
+      "existing_id": null,
+      "new_id": "gabatha-chamberlain-esg",
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "Royal chamberlain and eunuch who plotted against the king and was exposed by Mordecai.",
+      "refs": [
+        "1:1"
+      ],
+      "parents": [],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": "Addition A's plot parallels Hebrew Esther 2:21-23 (Bigthan and Teresh); Gabatha is probably the Greek form of Bigthan(a), but the Greek book presents Addition A as an earlier, separate episode (and repeats the plot at 2:21-23 with unnamed chamberlains), so not mapped to 'bigthan'. Reviewer may merge."
+    },
+    {
+      "name": "Tharrha",
+      "existing_id": null,
+      "new_id": "tharrha-chamberlain-esg",
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "Royal chamberlain and eunuch who plotted against the king with Gabatha.",
+      "refs": [
+        "1:1"
+      ],
+      "parents": [],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": "Probably = Teresh of Hebrew Esther 2:21 (existing id 'teresh'); not mapped for the same reason as Gabatha. A Tharrha also appears among the seven chamberlains in Greek 1:10 (not addition text)."
+    },
+    {
+      "name": "Abraham",
+      "existing_id": "abram",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "Patriarch invoked in the prayers ('God of Abraham').",
+      "refs": [
+        "4:25",
+        "4:46"
+      ],
+      "parents": [],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": null
+    },
+    {
+      "name": "Ptolemeus",
+      "existing_id": null,
+      "new_id": "ptolemy-king-esg-colophon",
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "Ptolemaic king in whose fourth year the Greek Esther was brought to Egypt.",
+      "refs": [
+        "10:14"
+      ],
+      "parents": [],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": "Which Ptolemy (VIII, XII or XIV) is debated. 'Ptolemeus and Cleopatra' reign jointly; no spouse link recorded because the text does not state their relation."
+    },
+    {
+      "name": "Cleopatra",
+      "existing_id": null,
+      "new_id": "cleopatra-queen-esg-colophon",
+      "gender": "female",
+      "unnamed": false,
+      "aliases": [],
+      "description": "Ptolemaic queen co-reigning with Ptolemy in the colophon's date.",
+      "refs": [
+        "10:14"
+      ],
+      "parents": [],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": null
+    },
+    {
+      "name": "Dositheus",
+      "existing_id": null,
+      "new_id": "dositheus-priest-esg",
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "Self-described priest and Levite who brought the Purim letter to Egypt.",
+      "refs": [
+        "10:14"
+      ],
+      "parents": [],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": null
+    },
+    {
+      "name": "Ptolemeus",
+      "existing_id": null,
+      "new_id": "ptolemy-son-of-dositheus",
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "Son of Dositheus who accompanied him with the Purim letter.",
+      "refs": [
+        "10:14"
+      ],
+      "parents": [
+        {
+          "ref_name": "Dositheus",
+          "verse": "10:14",
+          "new_id": "dositheus-priest-esg"
+        }
+      ],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": null
+    },
+    {
+      "name": "Lysimachus",
+      "existing_id": null,
+      "new_id": "lysimachus-translator-esg",
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "Man in Jerusalem said to have translated the Purim letter.",
+      "refs": [
+        "10:14"
+      ],
+      "parents": [
+        {
+          "ref_name": "Ptolemeus",
+          "verse": "10:14",
+          "new_id": "ptolemy-father-of-lysimachus"
+        }
+      ],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": null
+    },
+    {
+      "name": "Ptolemeus",
+      "existing_id": null,
+      "new_id": "ptolemy-father-of-lysimachus",
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "Father of Lysimachus the translator.",
+      "refs": [
+        "10:14"
+      ],
+      "parents": [],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": "Not the king; the text gives no sign he is the son of Dositheus, so kept separate."
+    }
+  ],
+  "excluded_names": {
+    "Nisan": "month",
+    "Adar": "month",
+    "Susa": "place",
+    "Babylon": "place",
+    "Jerusalem": "place",
+    "Judea": "place",
+    "India": "place",
+    "Ethiopia": "place",
+    "Egypt": "place (4:26)",
+    "Persians": "people",
+    "Medes": "people",
+    "Macedonian": "gentilic epithet of Haman",
+    "Macedonians": "people",
+    "Israel": "the nation",
+    "Benjamin": "tribe (1:1 'tribe of Benjamin')",
+    "Bougean": "gentilic epithet of Haman",
+    "Bugaean": "gentilic epithet (non-addition 3:1, 9:10)",
+    "Purim": "festival",
+    "Levite": "title of Dositheus",
+    "Put": "verb, not a name",
+    "Overseer": "divine epithet",
+    "Preserver": "divine epithet",
+    "Draw": "word in a quotation",
+    "Vashti": "outside additions (Greek ch.1 parallels Hebrew)",
+    "Memucan": "outside additions",
+    "Bazan": "outside additions (1:10 chamberlain)",
+    "Baraze": "outside additions",
+    "Zatholtha": "outside additions",
+    "Abataza": "outside additions",
+    "Tharaba": "outside additions",
+    "Arkesaeus": "outside additions (1:14)",
+    "Sarsathaeus": "outside additions",
+    "Malisear": "outside additions",
+    "Jairus": "outside additions (2:5 = Jair)",
+    "Aminadab": "outside additions (Esther's father, 2:7/2:15/9:29)",
+    "Hegai": "outside additions",
+    "Hathach": "outside additions",
+    "Zeresh": "outside additions",
+    "Bugathan": "outside additions (7:9)",
+    "Pharsannes": "outside additions (sons of Haman, 9:7-9)",
+    "Delphon": "outside additions",
+    "Phasga": "outside additions",
+    "Barea": "outside additions",
+    "Sarbaca": "outside additions",
+    "Ruphaeus": "outside additions",
+    "Arsaeus": "outside additions",
+    "Zabuthaeus": "outside additions"
+  },
+  "notes": "WEB ESG is a translation of the full Greek Esther in 10 chapters, with the additions merged into the Hebrew chapter/verse frame (not the Vulgate 10:4-16:24 numbering). Addition limits: A = bracketed first part of 1:1 (Mordecai's dream and the eunuchs' plot; the text after ']' is Hebrew 1:1); B = bracketed second part of 3:13 (Ahasuerus's decree against the Jews); C = 4:18-4:47, bracketed (prayer of Mordecai 4:18-27, narrative 4:28, prayer of Esther 4:29-47); D = 5:1-5:2 (expanded Greek account of Esther before the king; NOT bracketed in WEB and blended with Hebrew 5:1-2 content); E = bracketed part of 8:13 (decree rehabilitating the Jews); F = 10:4-10:14, bracketed (interpretation of the dream, 10:4-13, and colophon, 10:14). Verses 4:6, 9:5 and 9:30 are absent from the WEB numbering. Verses 1:1, 3:13 and 8:13 contain both addition and Hebrew-parallel text; the refs there point to names inside the bracketed part. Esther's two maids (5:1) are not recorded as individuals. King name: LXX 'Artaxerxes', WEB 'Ahasuerus'; mapped to existing 'ahasuerus'. Parent links whose names repeat (three different Ptolemies) carry a 'new_id' field to disambiguate."
+}

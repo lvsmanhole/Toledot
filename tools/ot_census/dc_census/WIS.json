@@ -1,0 +1,15 @@
+{
+  "book": "WIS",
+  "people": [],
+  "excluded_names": {
+    "Power": "divine attribute",
+    "Justice": "personification",
+    "Sovereign": "divine title",
+    "Red": "Red Sea (place)",
+    "Taking": "word",
+    "Maker": "divine title",
+    "Savior": "divine title",
+    "Egyptians": "people"
+  },
+  "notes": "Wisdom names no human individual, so the people list is empty. Unnamed allusions a reviewer may wish to map (deliberately NOT recorded because the book anonymises them): the speaker = Solomon (7:1-9:18, esp. 9:7-8 'chose me to be king ... build a sanctuary'); Wis 10: 'first formed father of the world' = Adam (10:1), 'unrighteous man ... killed his brother' = Cain (10:3), righteous man saved by wood = Noah (10:4), righteous man and his child = Abraham (10:5), righteous man fleeing the five cities = Lot (10:6), 'pillar of salt' = Lot's wife (10:7), fugitive from a brother's wrath = Jacob (10:10-12), righteous man sold = Joseph (10:13-14), 'servant of the Lord' / 'holy prophet' = Moses (10:16, 11:1), 'blameless man' with incense stopping the plague = Aaron (18:21-25, cf. Num 16:46-48). Pharaoh appears only as 'terrible kings' (10:16)."
+}

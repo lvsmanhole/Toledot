@@ -1,0 +1,4 @@
+schema_version: 1
+record_type: passages
+records:
+  - {id: josippon-book-review, work_id: josippon, witness_id: book-review-josippon, locator: "Josippon", citations: [{source_id: ethiopic-edition-pending, locator: "Josippon", witness_id: book-review-josippon}]}

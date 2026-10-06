@@ -1,0 +1,4 @@
+schema_version: 1
+record_type: inventory_units
+records:
+  - {id: inv-psalms-of-solomon-book, work_id: psalms-of-solomon, locator: "Psalms of Solomon", reviewed: false, passage_ids: [psalms-of-solomon-book-review], identified_entity_ids: [], event_ids: [], no_individuals: false, review_basis: "Book-level canon entry only. Person extraction is pending a citable edition or public-domain translation; no people are asserted.", citations: [{source_id: rahlfs-hanhart-2006, locator: "Psalms of Solomon"}]}

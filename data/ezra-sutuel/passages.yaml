@@ -1,0 +1,15 @@
+schema_version: 1
+record_type: passages
+records:
+  - {id: ezra-sutuel-3-census, work_id: ezra-sutuel, witness_id: web-ezra-sutuel, locator: "4 Ezra (Ezra Sutuel) 3", citations: [{source_id: world-english-bible, locator: "4 Ezra (Ezra Sutuel) 3", witness_id: web-ezra-sutuel}]}
+  - {id: ezra-sutuel-4-census, work_id: ezra-sutuel, witness_id: web-ezra-sutuel, locator: "4 Ezra (Ezra Sutuel) 4", citations: [{source_id: world-english-bible, locator: "4 Ezra (Ezra Sutuel) 4", witness_id: web-ezra-sutuel}]}
+  - {id: ezra-sutuel-5-census, work_id: ezra-sutuel, witness_id: web-ezra-sutuel, locator: "4 Ezra (Ezra Sutuel) 5", citations: [{source_id: world-english-bible, locator: "4 Ezra (Ezra Sutuel) 5", witness_id: web-ezra-sutuel}]}
+  - {id: ezra-sutuel-6-census, work_id: ezra-sutuel, witness_id: web-ezra-sutuel, locator: "4 Ezra (Ezra Sutuel) 6", citations: [{source_id: world-english-bible, locator: "4 Ezra (Ezra Sutuel) 6", witness_id: web-ezra-sutuel}]}
+  - {id: ezra-sutuel-7-census, work_id: ezra-sutuel, witness_id: web-ezra-sutuel, locator: "4 Ezra (Ezra Sutuel) 7", citations: [{source_id: world-english-bible, locator: "4 Ezra (Ezra Sutuel) 7", witness_id: web-ezra-sutuel}]}
+  - {id: ezra-sutuel-8-census, work_id: ezra-sutuel, witness_id: web-ezra-sutuel, locator: "4 Ezra (Ezra Sutuel) 8", citations: [{source_id: world-english-bible, locator: "4 Ezra (Ezra Sutuel) 8", witness_id: web-ezra-sutuel}]}
+  - {id: ezra-sutuel-9-census, work_id: ezra-sutuel, witness_id: web-ezra-sutuel, locator: "4 Ezra (Ezra Sutuel) 9", citations: [{source_id: world-english-bible, locator: "4 Ezra (Ezra Sutuel) 9", witness_id: web-ezra-sutuel}]}
+  - {id: ezra-sutuel-10-census, work_id: ezra-sutuel, witness_id: web-ezra-sutuel, locator: "4 Ezra (Ezra Sutuel) 10", citations: [{source_id: world-english-bible, locator: "4 Ezra (Ezra Sutuel) 10", witness_id: web-ezra-sutuel}]}
+  - {id: ezra-sutuel-11-census, work_id: ezra-sutuel, witness_id: web-ezra-sutuel, locator: "4 Ezra (Ezra Sutuel) 11", citations: [{source_id: world-english-bible, locator: "4 Ezra (Ezra Sutuel) 11", witness_id: web-ezra-sutuel}]}
+  - {id: ezra-sutuel-12-census, work_id: ezra-sutuel, witness_id: web-ezra-sutuel, locator: "4 Ezra (Ezra Sutuel) 12", citations: [{source_id: world-english-bible, locator: "4 Ezra (Ezra Sutuel) 12", witness_id: web-ezra-sutuel}]}
+  - {id: ezra-sutuel-13-census, work_id: ezra-sutuel, witness_id: web-ezra-sutuel, locator: "4 Ezra (Ezra Sutuel) 13", citations: [{source_id: world-english-bible, locator: "4 Ezra (Ezra Sutuel) 13", witness_id: web-ezra-sutuel}]}
+  - {id: ezra-sutuel-14-census, work_id: ezra-sutuel, witness_id: web-ezra-sutuel, locator: "4 Ezra (Ezra Sutuel) 14", citations: [{source_id: world-english-bible, locator: "4 Ezra (Ezra Sutuel) 14", witness_id: web-ezra-sutuel}]}

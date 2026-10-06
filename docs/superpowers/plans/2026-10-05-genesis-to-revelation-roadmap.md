@@ -72,13 +72,18 @@
 - Census method (2026-10-06): every chapter of Joshua–Malachi is inventoried and cross-checked against the TIPNR proper-name index (STEPBible, CC BY 4.0), with hand-curated unnamed individuals, regnal data, dated events, and index corrections. The same pass added missing Pentateuch people (e.g. Aram son of Kemuel, Korah's sons, Beeri and Elon the Hittites). Tooling and policies: `tools/ot_census/README.md`. A committed snapshot (`tests/fixtures/chapter_people_snapshot.json`) fails the suite if any chapter loses a person.
 - Open (Phase B/C): Septuagint and Geʽez presence beyond the Octateuch is book-level and grade C; no Geʽez edition has been selected for Samuel–Malachi; verse-level Greek name forms are not yet recorded.
 
-### Phase C — Exile, restoration, wisdom, and prophets
+### Phase C — Exile, restoration, wisdom, and prophets (complete apart from the open items below)
 
 - [x] Ezra, Nehemiah, Esther: people, court/census lists, dated events (Greek Additions to Esther remain with the deuterocanonical works below).
 - [x] Job, Psalms, Proverbs, Ecclesiastes, Song: named individuals (including superscription names) inventoried; Job's era is editorial; the Greek Job 42:16 numbers are recorded as a grade-C variant.
 - [x] Isaiah through Malachi: prophetic lifespan windows, kings and synchronisms, named/unnamed courts and audiences. Greek Jeremiah/Psalms chapter correspondences are recorded on the Septuagint passages.
-- [ ] Tobit, Judith, Wisdom, Sirach, Baruch, Greek Ezra and other Septuagint/Ethiopic works: add canon-specific witnesses and claims under their actual textual status.
-- [ ] Ethiopic broader-canon sentinels (including Enoch, Jubilees, and Meqabyan): book-level source/canon review before person extraction.
+- [x] Tobit, Judith, Wisdom, Sirach, Baruch, Greek Ezra and other Septuagint/Ethiopic works: add canon-specific witnesses and claims under their actual textual status.
+  - [x] Person census (2026-10-06) for Tobit, Judith, Wisdom, Sirach, Baruch, Letter of Jeremiah, 1–4 Maccabees, 1 Esdras, 4 Ezra (Ezra Sutuel), Additions to Esther, Prayer of Azariah, Susanna, Bel and the Dragon, Prayer of Manasseh, and Psalm 151. About 920 people (345 new); 185 dated statements, including Seleucid-era dates converted at grade C.
+  - [x] Claims cite the public-domain World English Bible as a translation witness (confidence B); Septuagint chapter correspondence is assumed, not checked.
+  - [ ] Open: verify names and numbering against Rahlfs–Hanhart (Tobit recensions GI/GII; Greek Esther/Daniel addition numbering); select a Geʽez edition for the Ethiopic forms.
+- [x] Ethiopic broader-canon sentinels (including Enoch, Jubilees, and Meqabyan): book-level source/canon review before person extraction.
+  - [x] 1 Enoch and Jubilees: person census from R. H. Charles's public-domain translations, including Jubilees' named wives and 126 jubilee/week/year dates (kept as alternative chronology claims, not display drivers).
+  - [ ] Meqabyan 1–3, Tegsats, Josippon, 4 Baruch, Ascension of Isaiah (plus Odes and Psalms of Solomon): book-level entries only; person extraction awaits a citable edition or public-domain translation.
 
 ### Phase D — New Testament and Revelation
 

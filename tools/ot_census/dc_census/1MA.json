@@ -1,0 +1,3087 @@
+{
+ "book": "1MA",
+ "people": [
+  {
+   "name": "Simeon",
+   "existing_id": null,
+   "new_id": "simeon-grandfather-of-mattathias",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Grandfather of the priest Mattathias of Modin; named only in his genealogy.",
+   "refs": [
+    "2:1"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "John",
+   "existing_id": null,
+   "new_id": "john-father-of-mattathias",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Father of the priest Mattathias of Modin.",
+   "refs": [
+    "2:1"
+   ],
+   "parents": [
+    {
+     "ref_name": "Simeon",
+     "ref_id": "simeon-grandfather-of-mattathias",
+     "verse": "2:1"
+    }
+   ],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Distinct from Mattathias' son John Gaddis, Simon's son John (Hyrcanus) and John father of Eupolemus."
+  },
+  {
+   "name": "Mattathias",
+   "existing_id": null,
+   "new_id": "mattathias-hasmonean",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Priest of the course of Joarib living at Modin who killed an apostate and a royal officer and began the revolt; died in year 146 and was buried at Modin.",
+   "refs": [
+    "2:1",
+    "2:14",
+    "2:16",
+    "2:17",
+    "2:19",
+    "2:24",
+    "2:27",
+    "2:39",
+    "2:45",
+    "2:49",
+    "2:69",
+    "2:70",
+    "3:1",
+    "3:2",
+    "13:3",
+    "13:27",
+    "13:28",
+    "14:29",
+    "16:2"
+   ],
+   "parents": [
+    {
+     "ref_name": "John",
+     "ref_id": "john-father-of-mattathias",
+     "verse": "2:1"
+    }
+   ],
+   "spouses": [
+    {
+     "ref_name": "mother of Simon (wife of Mattathias)",
+     "ref_id": "mattathias-wife-1ma",
+     "verse": "13:28"
+    }
+   ],
+   "descent_note": "'Of the sons of Joarib' (2:1; 14:29) names his priestly course/ancestral house (Jehoiarib), not his father.",
+   "explicit_ages": [],
+   "identity_note": null,
+   "death_verse": "2:70"
+  },
+  {
+   "name": "mother of Simon (wife of Mattathias)",
+   "existing_id": null,
+   "new_id": "mattathias-wife-1ma",
+   "gender": "female",
+   "unnamed": true,
+   "aliases": [],
+   "description": "Mother of Simon (and wife of Mattathias), for whom Simon set up one of the seven pyramids at Modin.",
+   "refs": [
+    "13:28"
+   ],
+   "parents": [],
+   "spouses": [
+    {
+     "ref_name": "Mattathias",
+     "ref_id": "mattathias-hasmonean",
+     "verse": "13:28"
+    }
+   ],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Only 'his mother' in Simon's monument; that she was Mattathias' wife is inferred from 'his father, his mother' in the same verse. Not explicitly said to be mother of all five brothers."
+  },
+  {
+   "name": "John",
+   "existing_id": null,
+   "new_id": "john-gaddis",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [
+    "Gaddis"
+   ],
+   "description": "Eldest son of Mattathias, surnamed Gaddis; seized and (by implication) killed by the sons of Jambri from Medaba while escorting baggage to the Nabataeans.",
+   "refs": [
+    "2:2",
+    "9:35",
+    "9:36",
+    "9:38",
+    "9:42",
+    "13:28"
+   ],
+   "parents": [
+    {
+     "ref_name": "Mattathias",
+     "ref_id": "mattathias-hasmonean",
+     "verse": "2:2"
+    }
+   ],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "9:35 'his brother' and 9:38/9:42 'John their brother' identify him with John Gaddis. His death is implied by 9:42 ('avenged the blood of their brother'), not narrated explicitly.",
+   "death_verse": "9:36"
+  },
+  {
+   "name": "Simon",
+   "existing_id": null,
+   "new_id": "simon-thassi",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [
+    "Thassi"
+   ],
+   "description": "Son of Mattathias called Thassi; succeeded Jonathan as leader, became high priest and ethnarch, took the Jerusalem citadel, and was murdered at Dok near Jericho by his son-in-law Ptolemy son of Abubus.",
+   "refs": [
+    "2:3",
+    "2:65",
+    "5:17",
+    "5:20",
+    "5:21",
+    "5:55",
+    "9:19",
+    "9:33",
+    "9:37",
+    "9:62",
+    "9:65",
+    "9:67",
+    "10:74",
+    "10:82",
+    "11:59",
+    "11:64",
+    "11:65",
+    "12:33",
+    "12:38",
+    "13:1",
+    "13:3",
+    "13:8",
+    "13:13",
+    "13:14",
+    "13:17",
+    "13:20",
+    "13:25",
+    "13:27",
+    "13:28",
+    "13:33",
+    "13:34",
+    "13:36",
+    "13:42",
+    "13:43",
+    "13:45",
+    "13:47",
+    "13:50",
+    "13:52",
+    "13:53",
+    "14:4",
+    "14:17",
+    "14:20",
+    "14:23",
+    "14:24",
+    "14:25",
+    "14:27",
+    "14:29",
+    "14:32",
+    "14:35",
+    "14:40",
+    "14:41",
+    "14:46",
+    "14:47",
+    "14:49",
+    "15:1",
+    "15:2",
+    "15:17",
+    "15:21",
+    "15:24",
+    "15:26",
+    "15:32",
+    "15:33",
+    "15:36",
+    "16:1",
+    "16:2",
+    "16:3",
+    "16:12",
+    "16:13",
+    "16:14",
+    "16:15",
+    "16:16"
+   ],
+   "parents": [
+    {
+     "ref_name": "Mattathias",
+     "ref_id": "mattathias-hasmonean",
+     "verse": "2:3"
+    },
+    {
+     "ref_name": "mother of Simon (wife of Mattathias)",
+     "ref_id": "mattathias-wife-1ma",
+     "verse": "13:28"
+    }
+   ],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null,
+   "death_verse": "16:16"
+  },
+  {
+   "name": "Judas",
+   "existing_id": null,
+   "new_id": "judas-maccabeus",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [
+    "Maccabaeus",
+    "Judas Maccabaeus"
+   ],
+   "description": "Third son of Mattathias, called Maccabaeus; military leader of the revolt who rededicated the temple, defeated Nicanor, sought a Roman alliance, and fell in battle against Bacchides at Elasa.",
+   "refs": [
+    "2:4",
+    "2:66",
+    "3:1",
+    "3:11",
+    "3:12",
+    "3:13",
+    "3:14",
+    "3:16",
+    "3:17",
+    "3:18",
+    "3:23",
+    "3:25",
+    "3:26",
+    "3:42",
+    "3:55",
+    "3:58",
+    "4:3",
+    "4:5",
+    "4:6",
+    "4:8",
+    "4:13",
+    "4:16",
+    "4:19",
+    "4:21",
+    "4:23",
+    "4:29",
+    "4:35",
+    "4:36",
+    "4:41",
+    "4:59",
+    "4:61",
+    "5:3",
+    "5:10",
+    "5:16",
+    "5:17",
+    "5:20",
+    "5:24",
+    "5:28",
+    "5:31",
+    "5:34",
+    "5:38",
+    "5:39",
+    "5:40",
+    "5:42",
+    "5:44",
+    "5:45",
+    "5:48",
+    "5:49",
+    "5:53",
+    "5:55",
+    "5:61",
+    "5:63",
+    "5:65",
+    "5:68",
+    "6:19",
+    "6:32",
+    "6:42",
+    "7:6",
+    "7:10",
+    "7:23",
+    "7:25",
+    "7:27",
+    "7:29",
+    "7:30",
+    "7:31",
+    "7:35",
+    "7:40",
+    "8:1",
+    "8:9",
+    "8:15",
+    "8:17",
+    "8:20",
+    "9:5",
+    "9:7",
+    "9:10",
+    "9:13",
+    "9:14",
+    "9:16",
+    "9:18",
+    "9:19",
+    "9:20",
+    "9:22",
+    "9:23",
+    "9:26",
+    "9:28",
+    "9:29",
+    "9:31",
+    "13:8",
+    "14:18"
+   ],
+   "parents": [
+    {
+     "ref_name": "Mattathias",
+     "ref_id": "mattathias-hasmonean",
+     "verse": "2:4"
+    }
+   ],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null,
+   "death_verse": "9:18"
+  },
+  {
+   "name": "Eleazar",
+   "existing_id": null,
+   "new_id": "eleazar-avaran",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [
+    "Avaran"
+   ],
+   "description": "Son of Mattathias called Avaran; killed when the war elephant he stabbed at Beth-zechariah fell on him.",
+   "refs": [
+    "2:5",
+    "6:43",
+    "6:44",
+    "6:45",
+    "6:46",
+    "13:28"
+   ],
+   "parents": [
+    {
+     "ref_name": "Mattathias",
+     "ref_id": "mattathias-hasmonean",
+     "verse": "2:5"
+    }
+   ],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Distinct from Eleazar father of the envoy Jason (8:17).",
+   "death_verse": "6:46"
+  },
+  {
+   "name": "Jonathan",
+   "existing_id": null,
+   "new_id": "jonathan-apphus",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [
+    "Apphus"
+   ],
+   "description": "Youngest son of Mattathias called Apphus; succeeded Judas, was made high priest by Alexander Balas, was seized by Trypho at Ptolemais and killed at Bascama; buried at Modin.",
+   "refs": [
+    "2:5",
+    "5:17",
+    "5:24",
+    "5:55",
+    "9:19",
+    "9:28",
+    "9:31",
+    "9:33",
+    "9:35",
+    "9:37",
+    "9:44",
+    "9:47",
+    "9:48",
+    "9:58",
+    "9:60",
+    "9:61",
+    "9:62",
+    "9:65",
+    "9:70",
+    "9:73",
+    "10:3",
+    "10:7",
+    "10:9",
+    "10:10",
+    "10:15",
+    "10:18",
+    "10:21",
+    "10:46",
+    "10:59",
+    "10:62",
+    "10:66",
+    "10:69",
+    "10:74",
+    "10:76",
+    "10:80",
+    "10:81",
+    "10:84",
+    "10:86",
+    "10:87",
+    "10:88",
+    "11:5",
+    "11:6",
+    "11:7",
+    "11:20",
+    "11:21",
+    "11:22",
+    "11:23",
+    "11:28",
+    "11:29",
+    "11:30",
+    "11:37",
+    "11:41",
+    "11:42",
+    "11:44",
+    "11:53",
+    "11:57",
+    "11:60",
+    "11:62",
+    "11:63",
+    "11:67",
+    "11:69",
+    "11:71",
+    "11:74",
+    "12:1",
+    "12:3",
+    "12:5",
+    "12:6",
+    "12:24",
+    "12:27",
+    "12:28",
+    "12:29",
+    "12:30",
+    "12:31",
+    "12:35",
+    "12:40",
+    "12:41",
+    "12:44",
+    "12:48",
+    "12:49",
+    "12:50",
+    "12:52",
+    "13:8",
+    "13:12",
+    "13:14",
+    "13:15",
+    "13:19",
+    "13:23",
+    "13:25",
+    "13:28",
+    "14:16",
+    "14:18",
+    "14:30"
+   ],
+   "parents": [
+    {
+     "ref_name": "Mattathias",
+     "ref_id": "mattathias-hasmonean",
+     "verse": "2:5"
+    }
+   ],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Distinct from Jonathan son of Saul (4:30) and Jonathan son of Absalom (13:11). 13:16-19 mentions two of his sons sent as hostages (unnamed group, not entered).",
+   "death_verse": "13:23"
+  },
+  {
+   "name": "John",
+   "existing_id": null,
+   "new_id": "john-hyrcanus",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Son of Simon, made commander of the forces at Gazara; defeated Cendebaeus, escaped Ptolemy son of Abubus' plot, and succeeded his father as high priest.",
+   "refs": [
+    "13:53",
+    "16:1",
+    "16:2",
+    "16:3",
+    "16:9",
+    "16:19",
+    "16:21",
+    "16:22",
+    "16:23",
+    "16:24"
+   ],
+   "parents": [
+    {
+     "ref_name": "Simon",
+     "ref_id": "simon-thassi",
+     "verse": "13:53"
+    }
+   ],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Known historically as John Hyrcanus I; the surname does not occur in the WEB text of 1 Maccabees. Distinct from John Gaddis, his uncle."
+  },
+  {
+   "name": "Judas",
+   "existing_id": null,
+   "new_id": "judas-son-of-simon",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Son of Simon who fought beside his brother John against Cendebaeus and was wounded; murdered with his father at Dok.",
+   "refs": [
+    "16:2",
+    "16:3",
+    "16:9",
+    "16:14",
+    "16:16"
+   ],
+   "parents": [
+    {
+     "ref_name": "Simon",
+     "ref_id": "simon-thassi",
+     "verse": "16:2"
+    }
+   ],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Distinct from his uncle Judas Maccabaeus and Judas son of Chalphi.",
+   "death_verse": "16:16"
+  },
+  {
+   "name": "Mattathias",
+   "existing_id": null,
+   "new_id": "mattathias-son-of-simon",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Son of Simon, murdered with his father and brother at the banquet in Dok near Jericho.",
+   "refs": [
+    "16:14",
+    "16:16"
+   ],
+   "parents": [
+    {
+     "ref_name": "Simon",
+     "ref_id": "simon-thassi",
+     "verse": "16:14"
+    }
+   ],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Distinct from his grandfather Mattathias and from Mattathias son of Absalom.",
+   "death_verse": "16:16"
+  },
+  {
+   "name": "daughter of Simon (wife of Ptolemy son of Abubus)",
+   "existing_id": null,
+   "new_id": "simon-daughter-1ma",
+   "gender": "female",
+   "unnamed": true,
+   "aliases": [],
+   "description": "Simon's daughter, implied by the statement that Ptolemy son of Abubus was the high priest's son-in-law.",
+   "refs": [
+    "16:12"
+   ],
+   "parents": [
+    {
+     "ref_name": "Simon",
+     "ref_id": "simon-thassi",
+     "verse": "16:12"
+    }
+   ],
+   "spouses": [
+    {
+     "ref_name": "Ptolemy",
+     "ref_id": "ptolemy-son-of-abubus",
+     "verse": "16:12"
+    }
+   ],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Not mentioned directly; inferred only from 'son-in-law' in 16:12."
+  },
+  {
+   "name": "Philip",
+   "existing_id": null,
+   "new_id": "philip-ii-macedon",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Father of Alexander the Macedonian (Philip II of Macedon).",
+   "refs": [
+    "1:1",
+    "6:2"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Distinct from Philip king of Chittim defeated by Rome (8:5, Philip V) and Philip the friend of Antiochus IV (6:14)."
+  },
+  {
+   "name": "Alexander",
+   "existing_id": null,
+   "new_id": "alexander-the-great",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [
+    "Alexander the Macedonian"
+   ],
+   "description": "Alexander the Macedonian, son of Philip, who defeated Darius, ruled over Greece and the east, divided his kingdom among his servants, and died after reigning twelve years.",
+   "refs": [
+    "1:1",
+    "1:2",
+    "1:3",
+    "1:4",
+    "1:5",
+    "1:6",
+    "1:7",
+    "6:2"
+   ],
+   "parents": [
+    {
+     "ref_name": "Philip",
+     "ref_id": "philip-ii-macedon",
+     "verse": "1:1"
+    }
+   ],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [
+    {
+     "what": "reign",
+     "years": 12,
+     "verse": "1:7"
+    }
+   ],
+   "identity_note": "Distinct from Alexander Epiphanes (Balas) of chapters 10-11.",
+   "death_verse": "1:7"
+  },
+  {
+   "name": "Darius",
+   "existing_id": null,
+   "new_id": "darius-iii",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "King of the Persians and Medes defeated by Alexander (Darius III).",
+   "refs": [
+    "1:1"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Not the Darius of Ezra/Haggai or Daniel; new person."
+  },
+  {
+   "name": "Antiochus",
+   "existing_id": null,
+   "new_id": "antiochus-iii",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [
+    "Antiochus the great king of Asia"
+   ],
+   "description": "Seleucid king, father of Antiochus Epiphanes; 'the great king of Asia' who was defeated and captured by the Romans and made tributary.",
+   "refs": [
+    "1:10",
+    "8:6",
+    "8:7"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "1:10 'Antiochus the king' (father of Epiphanes) and 8:6 'Antiochus the great king of Asia' are both Antiochus III the Great; merged on historical grounds."
+  },
+  {
+   "name": "Seleucus",
+   "existing_id": null,
+   "new_id": "seleucus-iv",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Father of Demetrius I (Seleucus IV Philopator).",
+   "refs": [
+    "7:1"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Antiochus Epiphanes",
+   "existing_id": null,
+   "new_id": "antiochus-iv-epiphanes",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [
+    "Antiochus",
+    "King Antiochus"
+   ],
+   "description": "Seleucid king, son of Antiochus, formerly a hostage at Rome; invaded Egypt, plundered the temple and enforced the apostasy; died in Persia in year 149.",
+   "refs": [
+    "1:10",
+    "1:16",
+    "1:20",
+    "1:41",
+    "3:27",
+    "3:33",
+    "6:1",
+    "6:8",
+    "6:15",
+    "6:16",
+    "6:23",
+    "6:55",
+    "10:1"
+   ],
+   "parents": [
+    {
+     "ref_name": "Antiochus",
+     "ref_id": "antiochus-iii",
+     "verse": "1:10"
+    }
+   ],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Also referred to as 'the king' throughout chapters 1-6 (only key verses listed). 6:23 'your father' (addressing Antiochus V) and 10:1 (father of Alexander Epiphanes) included.",
+   "death_verse": "6:16"
+  },
+  {
+   "name": "Antiochus",
+   "existing_id": null,
+   "new_id": "antiochus-v-eupator",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [
+    "Eupator"
+   ],
+   "description": "Son of Antiochus Epiphanes, raised by Lysias and crowned as Eupator; besieged the sanctuary, then was killed with Lysias by the army when Demetrius took the throne.",
+   "refs": [
+    "3:33",
+    "6:15",
+    "6:17",
+    "6:28",
+    "6:55",
+    "6:62",
+    "7:2",
+    "7:3",
+    "7:4"
+   ],
+   "parents": [
+    {
+     "ref_name": "Antiochus Epiphanes",
+     "ref_id": "antiochus-iv-epiphanes",
+     "verse": "3:33"
+    }
+   ],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null,
+   "death_verse": "7:4"
+  },
+  {
+   "name": "Lysias",
+   "existing_id": null,
+   "new_id": "lysias",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Nobleman of royal lineage left in charge of the kingdom and of young Antiochus; campaigned against Judas and became regent for Eupator; killed by the army under Demetrius.",
+   "refs": [
+    "3:32",
+    "3:34",
+    "3:38",
+    "4:26",
+    "4:27",
+    "4:34",
+    "4:35",
+    "6:6",
+    "6:17",
+    "6:55",
+    "6:57",
+    "7:2",
+    "7:4"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null,
+   "death_verse": "7:4"
+  },
+  {
+   "name": "Philip",
+   "existing_id": null,
+   "new_id": "philip-friend-of-antiochus-iv",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "One of Antiochus Epiphanes' friends, appointed over the kingdom and guardian of his son; returned to seize Antioch and was defeated there by Lysias and the king.",
+   "refs": [
+    "6:14",
+    "6:15",
+    "6:55",
+    "6:56",
+    "6:63"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Distinct from Philip II (father of Alexander) and Philip V (8:5). His fate after 6:63 is not stated."
+  },
+  {
+   "name": "Demetrius",
+   "existing_id": null,
+   "new_id": "demetrius-i-soter",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [
+    "King Demetrius"
+   ],
+   "description": "Son of Seleucus who came from Rome and took the throne in year 151, sent Bacchides, Alcimus and Nicanor against Judea, and fell in battle against Alexander Epiphanes.",
+   "refs": [
+    "7:1",
+    "7:4",
+    "7:8",
+    "7:9",
+    "7:26",
+    "8:31",
+    "9:1",
+    "10:2",
+    "10:3",
+    "10:15",
+    "10:22",
+    "10:25",
+    "10:46",
+    "10:48",
+    "10:49",
+    "10:50",
+    "10:52",
+    "10:67",
+    "15:1"
+   ],
+   "parents": [
+    {
+     "ref_name": "Seleucus",
+     "ref_id": "seleucus-iv",
+     "verse": "7:1"
+    }
+   ],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Distinct from his son Demetrius II (from 10:67 on). 15:1 names him as father of Antiochus VII.",
+   "death_verse": "10:50"
+  },
+  {
+   "name": "Alexander Epiphanes",
+   "existing_id": null,
+   "new_id": "alexander-balas",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [
+    "Alexander",
+    "King Alexander"
+   ],
+   "description": "Claimant styled son of Antiochus who seized Ptolemais in year 160, defeated Demetrius I, married Cleopatra daughter of Ptolemy, made Jonathan high priest, and was beheaded in Arabia by Zabdiel.",
+   "refs": [
+    "10:1",
+    "10:4",
+    "10:15",
+    "10:16",
+    "10:18",
+    "10:23",
+    "10:47",
+    "10:48",
+    "10:49",
+    "10:51",
+    "10:58",
+    "10:59",
+    "10:68",
+    "10:88",
+    "10:89",
+    "11:1",
+    "11:2",
+    "11:8",
+    "11:9",
+    "11:10",
+    "11:12",
+    "11:14",
+    "11:15",
+    "11:16",
+    "11:17",
+    "11:39"
+   ],
+   "parents": [
+    {
+     "ref_name": "Antiochus Epiphanes",
+     "ref_id": "antiochus-iv-epiphanes",
+     "verse": "10:1"
+    }
+   ],
+   "spouses": [
+    {
+     "ref_name": "Cleopatra",
+     "ref_id": "cleopatra-thea",
+     "verse": "10:58"
+    }
+   ],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Historically Alexander Balas; the text calls him 'son of Antiochus' (10:1), a claim historians doubt. Distinct from Alexander the Great.",
+   "death_verse": "11:17"
+  },
+  {
+   "name": "Demetrius",
+   "existing_id": null,
+   "new_id": "demetrius-ii-nicator",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [
+    "King Demetrius",
+    "Demetrius, son of Demetrius"
+   ],
+   "description": "Son of Demetrius I who came from Crete in year 165, became king in year 167 after Ptolemy's intervention, alienated Jonathan, later recognised Simon, and was captured by Arsaces in Media.",
+   "refs": [
+    "10:67",
+    "10:69",
+    "11:9",
+    "11:12",
+    "11:19",
+    "11:22",
+    "11:26",
+    "11:29",
+    "11:30",
+    "11:32",
+    "11:38",
+    "11:39",
+    "11:40",
+    "11:41",
+    "11:42",
+    "11:52",
+    "11:53",
+    "11:55",
+    "11:63",
+    "12:24",
+    "12:34",
+    "13:34",
+    "13:35",
+    "13:36",
+    "14:1",
+    "14:2",
+    "14:3",
+    "14:38",
+    "15:22"
+   ],
+   "parents": [
+    {
+     "ref_name": "Demetrius",
+     "ref_id": "demetrius-i-soter",
+     "verse": "10:67"
+    }
+   ],
+   "spouses": [
+    {
+     "ref_name": "Cleopatra",
+     "ref_id": "cleopatra-thea",
+     "verse": "11:12"
+    }
+   ],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Distinct from his father Demetrius I. 'Demetrius' princes' (11:63; 12:24) included."
+  },
+  {
+   "name": "Antiochus",
+   "existing_id": null,
+   "new_id": "antiochus-vi-dionysus",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [
+    "the young child Antiochus",
+    "King Antiochus"
+   ],
+   "description": "Young child of Alexander Epiphanes raised by Imalcue the Arabian, set on the throne by Trypho, and later treacherously killed by him.",
+   "refs": [
+    "11:39",
+    "11:54",
+    "11:57",
+    "11:58",
+    "11:59",
+    "12:39",
+    "13:31"
+   ],
+   "parents": [
+    {
+     "ref_name": "Alexander Epiphanes",
+     "ref_id": "alexander-balas",
+     "verse": "11:39"
+    }
+   ],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null,
+   "death_verse": "13:31"
+  },
+  {
+   "name": "Tryphon",
+   "existing_id": null,
+   "new_id": "trypho",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [
+    "Trypho"
+   ],
+   "description": "Former partisan of Alexander who championed the boy Antiochus, captured and killed Jonathan, murdered Antiochus VI and reigned in his place, and was besieged at Dor by Antiochus VII before fleeing to Orthosia.",
+   "refs": [
+    "11:39",
+    "11:54",
+    "11:56",
+    "12:39",
+    "12:40",
+    "12:42",
+    "12:43",
+    "12:44",
+    "12:49",
+    "13:1",
+    "13:12",
+    "13:14",
+    "13:19",
+    "13:20",
+    "13:21",
+    "13:22",
+    "13:23",
+    "13:24",
+    "13:31",
+    "13:32",
+    "13:34",
+    "14:1",
+    "15:10",
+    "15:11",
+    "15:25",
+    "15:37",
+    "15:39"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Antiochus",
+   "existing_id": null,
+   "new_id": "antiochus-vii-sidetes",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [
+    "King Antiochus"
+   ],
+   "description": "Son of Demetrius who wrote to Simon granting privileges, returned in year 174, besieged Trypho at Dor, then broke with Simon and sent Cendebaeus against Judea.",
+   "refs": [
+    "15:1",
+    "15:2",
+    "15:10",
+    "15:11",
+    "15:13",
+    "15:25",
+    "15:27",
+    "15:28",
+    "15:36",
+    "15:38",
+    "15:39"
+   ],
+   "parents": [
+    {
+     "ref_name": "Demetrius",
+     "ref_id": "demetrius-i-soter",
+     "verse": "15:1"
+    }
+   ],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Historically Antiochus VII Sidetes, son of Demetrius I. 16:18 'the king' to whom Ptolemy son of Abubus wrote is presumably also he but is not listed."
+  },
+  {
+   "name": "Ptolemy",
+   "existing_id": null,
+   "new_id": "ptolemy-vi-philometor",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [
+    "Ptolemy king of Egypt",
+    "King Ptolemy"
+   ],
+   "description": "King of Egypt defeated by Antiochus Epiphanes; later gave his daughter Cleopatra to Alexander, then to Demetrius II, took Antioch and the crown of Asia, and died three days after Alexander's death.",
+   "refs": [
+    "1:18",
+    "10:51",
+    "10:55",
+    "10:57",
+    "10:58",
+    "11:1",
+    "11:2",
+    "11:8",
+    "11:9",
+    "11:10",
+    "11:12",
+    "11:13",
+    "11:15",
+    "11:16",
+    "11:17",
+    "11:18"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "1:18 and 10:51-11:18 are both Ptolemy VI Philometor historically (reigned c. 180-145 BC); merged. Distinct from the King Ptolemy addressed by Lucius (15:16) and from Ptolemy son of Dorymenes / son of Abubus.",
+   "death_verse": "11:18"
+  },
+  {
+   "name": "Cleopatra",
+   "existing_id": null,
+   "new_id": "cleopatra-thea",
+   "gender": "female",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Daughter of King Ptolemy, married to Alexander Epiphanes at Ptolemais and then given by her father to Demetrius II.",
+   "refs": [
+    "10:57",
+    "10:58",
+    "11:9",
+    "11:10",
+    "11:12"
+   ],
+   "parents": [
+    {
+     "ref_name": "Ptolemy",
+     "ref_id": "ptolemy-vi-philometor",
+     "verse": "10:57"
+    }
+   ],
+   "spouses": [
+    {
+     "ref_name": "Alexander Epiphanes",
+     "ref_id": "alexander-balas",
+     "verse": "10:58"
+    },
+    {
+     "ref_name": "Demetrius",
+     "ref_id": "demetrius-ii-nicator",
+     "verse": "11:12"
+    }
+   ],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Ptolemy",
+   "existing_id": null,
+   "new_id": "ptolemy-viii-1ma",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [
+    "King Ptolemy"
+   ],
+   "description": "King of Egypt to whom the Roman consul Lucius addressed his letter on behalf of the Jews.",
+   "refs": [
+    "15:16"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Historically Ptolemy VIII Euergetes II (c. 139 BC); distinct from Ptolemy VI who died at 11:18."
+  },
+  {
+   "name": "Dorymenes",
+   "existing_id": null,
+   "new_id": "dorymenes",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Father of Ptolemy, one of the generals chosen by Lysias.",
+   "refs": [
+    "3:38"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Ptolemy",
+   "existing_id": null,
+   "new_id": "ptolemy-son-of-dorymenes",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Son of Dorymenes, one of the king's friends chosen by Lysias with Nicanor and Gorgias to invade Judea.",
+   "refs": [
+    "3:38"
+   ],
+   "parents": [
+    {
+     "ref_name": "Dorymenes",
+     "ref_id": "dorymenes",
+     "verse": "3:38"
+    }
+   ],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Abubus",
+   "existing_id": null,
+   "new_id": "abubus",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Father of Ptolemy the governor of the plain of Jericho.",
+   "refs": [
+    "16:11",
+    "16:15"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Ptolemy",
+   "existing_id": null,
+   "new_id": "ptolemy-son-of-abubus",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [
+    "the son of Abubus"
+   ],
+   "description": "Governor of the plain of Jericho and son-in-law of Simon, who murdered Simon and two of his sons at a banquet in Dok and tried to kill John.",
+   "refs": [
+    "16:11",
+    "16:12",
+    "16:13",
+    "16:15",
+    "16:16",
+    "16:18",
+    "16:19",
+    "16:21"
+   ],
+   "parents": [
+    {
+     "ref_name": "Abubus",
+     "ref_id": "abubus",
+     "verse": "16:11"
+    }
+   ],
+   "spouses": [
+    {
+     "ref_name": "daughter of Simon (wife of Ptolemy son of Abubus)",
+     "ref_id": "simon-daughter-1ma",
+     "verse": "16:12"
+    }
+   ],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "chief collector of tribute",
+   "existing_id": null,
+   "new_id": "tribute-collector-1ma1",
+   "gender": "male",
+   "unnamed": true,
+   "aliases": [],
+   "description": "Royal tax official sent by Antiochus IV two years after the temple plunder, who attacked Jerusalem treacherously.",
+   "refs": [
+    "1:29",
+    "1:30",
+    "1:31"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Unnamed in 1 Maccabees; 2 Maccabees 5:24 names an Apollonius for a similar mission, but no merge is made here."
+  },
+  {
+   "name": "Jew who sacrificed at Modin",
+   "existing_id": null,
+   "new_id": "apostate-jew-modin",
+   "gender": "male",
+   "unnamed": true,
+   "aliases": [],
+   "description": "Jew who came forward to sacrifice on the pagan altar at Modin and was killed by Mattathias.",
+   "refs": [
+    "2:23",
+    "2:24"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null,
+   "death_verse": "2:24"
+  },
+  {
+   "name": "king's officer at Modin",
+   "existing_id": null,
+   "new_id": "kings-officer-modin",
+   "gender": "male",
+   "unnamed": true,
+   "aliases": [],
+   "description": "Royal officer compelling sacrifice at Modin, killed by Mattathias.",
+   "refs": [
+    "2:25"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null,
+   "death_verse": "2:25"
+  },
+  {
+   "name": "Apollonius",
+   "existing_id": null,
+   "new_id": "apollonius-samaria-1ma3",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Commander who led Gentile forces from Samaria against Israel and was killed by Judas, who took his sword.",
+   "refs": [
+    "3:10",
+    "3:11",
+    "3:12"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Distinct from Apollonius governor of Coelesyria under Demetrius II (10:69-79), about 20 years later.",
+   "death_verse": "3:11"
+  },
+  {
+   "name": "Seron",
+   "existing_id": null,
+   "new_id": "seron",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Commander of the army of Syria defeated by Judas at the ascent of Beth-horon.",
+   "refs": [
+    "3:13",
+    "3:14",
+    "3:23"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Nicanor",
+   "existing_id": null,
+   "new_id": "nicanor-1ma",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "One of the king's friends sent against Judea; later sent by Demetrius I, threatened the temple, and fell at Adasa on 13 Adar, where his head and hand were displayed.",
+   "refs": [
+    "3:38",
+    "7:26",
+    "7:27",
+    "7:28",
+    "7:31",
+    "7:32",
+    "7:33",
+    "7:35",
+    "7:39",
+    "7:43",
+    "7:44",
+    "7:47",
+    "9:1"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "3:38 (under Lysias) and 7:26 (under Demetrius I) are taken as the same man, as is usual; the text does not state it explicitly.",
+   "death_verse": "7:43"
+  },
+  {
+   "name": "Gorgias",
+   "existing_id": null,
+   "new_id": "gorgias",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "One of the king's friends; led the night raid against Judas near Emmaus and later defeated Joseph and Azarias at Jamnia.",
+   "refs": [
+    "3:38",
+    "4:1",
+    "4:5",
+    "4:18",
+    "5:59"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Bacchides",
+   "existing_id": null,
+   "new_id": "bacchides",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Friend of Demetrius I and ruler beyond the river who installed Alcimus, defeated and killed Judas at Elasa, fortified Judea, and finally made peace with Jonathan.",
+   "refs": [
+    "7:8",
+    "7:12",
+    "7:19",
+    "7:20",
+    "9:1",
+    "9:12",
+    "9:14",
+    "9:25",
+    "9:26",
+    "9:29",
+    "9:32",
+    "9:34",
+    "9:43",
+    "9:47",
+    "9:49",
+    "9:57",
+    "9:58",
+    "9:63",
+    "9:68",
+    "9:71",
+    "9:72",
+    "10:12"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Alcimus",
+   "existing_id": null,
+   "new_id": "alcimus",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Leader of the Hellenizing party made high priest by Demetrius I; a priest of Aaron's line who killed sixty Hasidaeans and died of a paralytic stroke while demolishing the inner court wall.",
+   "refs": [
+    "7:5",
+    "7:9",
+    "7:12",
+    "7:14",
+    "7:20",
+    "7:21",
+    "7:23",
+    "7:25",
+    "9:1",
+    "9:54",
+    "9:55",
+    "9:56",
+    "9:57"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "7:14 calls him 'a priest of the seed of Aaron'.",
+   "death_verse": "9:56"
+  },
+  {
+   "name": "Timotheus",
+   "existing_id": null,
+   "new_id": "timotheus-1ma",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [
+    "Timothy"
+   ],
+   "description": "Leader of the Ammonite force and of the Gentile army in Gilead, defeated by Judas.",
+   "refs": [
+    "5:6",
+    "5:11",
+    "5:34",
+    "5:37",
+    "5:40"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "5:6 (Ammon) and 5:11-40 (Gilead) are treated as one man; 1 Maccabees has no other Timothy. Possible distinctions from the Timothy/Timotheus figures of 2 Maccabees are left for cross-book review."
+  },
+  {
+   "name": "Apollonius",
+   "existing_id": null,
+   "new_id": "apollonius-coelesyria",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Governor of Coelesyria for Demetrius II who challenged Jonathan and was defeated near Azotus.",
+   "refs": [
+    "10:69",
+    "10:70",
+    "10:74",
+    "10:75",
+    "10:77",
+    "10:79"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Distinct from the Apollonius killed by Judas in 3:11."
+  },
+  {
+   "name": "Lasthenes",
+   "existing_id": null,
+   "new_id": "lasthenes",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Official addressed by Demetrius II as 'kinsman' and 'father' in the letter confirming Jewish privileges.",
+   "refs": [
+    "11:31",
+    "11:32"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "'Father' in 11:32 is a court honorific, not kinship; no parent link made."
+  },
+  {
+   "name": "Athenobius",
+   "existing_id": null,
+   "new_id": "athenobius",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Friend of Antiochus VII sent to Jerusalem to demand Joppa, Gazara and the citadel from Simon.",
+   "refs": [
+    "15:28",
+    "15:32",
+    "15:35",
+    "15:36"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Cendebaeus",
+   "existing_id": null,
+   "new_id": "cendebaeus",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Commander of the sea coast for Antiochus VII who fortified Kidron and raided Judea; routed by John and Judas son of Simon.",
+   "refs": [
+    "15:38",
+    "15:40",
+    "16:1",
+    "16:4",
+    "16:8",
+    "16:9"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Zabdiel",
+   "existing_id": null,
+   "new_id": "zabdiel-arabian",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Arabian who beheaded the fugitive Alexander and sent his head to Ptolemy.",
+   "refs": [
+    "11:17"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Imalcue",
+   "existing_id": null,
+   "new_id": "imalcue",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Arabian who was raising Alexander's young son Antiochus.",
+   "refs": [
+    "11:39"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Odomera",
+   "existing_id": null,
+   "new_id": "odomera",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Leader struck down with his kindred by Jonathan during Bacchides' siege of Bethbasi.",
+   "refs": [
+    "9:66"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Zacharias",
+   "existing_id": null,
+   "new_id": "zacharias-father-of-joseph-1ma",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Father of Joseph, one of the commanders left in Judea.",
+   "refs": [
+    "5:18",
+    "5:56"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Joseph",
+   "existing_id": null,
+   "new_id": "joseph-son-of-zacharias",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Son of Zacharias, left with Azarias to guard Judea; disobeyed orders, attacked Jamnia and was defeated by Gorgias.",
+   "refs": [
+    "5:18",
+    "5:56",
+    "5:60"
+   ],
+   "parents": [
+    {
+     "ref_name": "Zacharias",
+     "ref_id": "zacharias-father-of-joseph-1ma",
+     "verse": "5:18"
+    }
+   ],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Distinct from the patriarch Joseph (2:53)."
+  },
+  {
+   "name": "Azarias",
+   "existing_id": null,
+   "new_id": "azarias-1ma",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [
+    "Azariah"
+   ],
+   "description": "Commander left with Joseph son of Zacharias in Judea, defeated at Jamnia.",
+   "refs": [
+    "5:18",
+    "5:56",
+    "5:60"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Distinct from Azariah companion of Daniel (2:59)."
+  },
+  {
+   "name": "Accos",
+   "existing_id": null,
+   "new_id": "accos",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Grandfather of the envoy Eupolemus.",
+   "refs": [
+    "8:17"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Possibly of the priestly house of Hakkoz (Ezra 2:61), but not mapped."
+  },
+  {
+   "name": "John",
+   "existing_id": null,
+   "new_id": "john-father-of-eupolemus",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Son of Accos and father of the envoy Eupolemus.",
+   "refs": [
+    "8:17"
+   ],
+   "parents": [
+    {
+     "ref_name": "Accos",
+     "ref_id": "accos",
+     "verse": "8:17"
+    }
+   ],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Eupolemus",
+   "existing_id": null,
+   "new_id": "eupolemus",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Envoy chosen by Judas and sent to Rome to establish friendship and alliance.",
+   "refs": [
+    "8:17"
+   ],
+   "parents": [
+    {
+     "ref_name": "John",
+     "ref_id": "john-father-of-eupolemus",
+     "verse": "8:17"
+    }
+   ],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Eleazar",
+   "existing_id": null,
+   "new_id": "eleazar-father-of-jason",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Father of the envoy Jason.",
+   "refs": [
+    "8:17"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Distinct from Eleazar Avaran."
+  },
+  {
+   "name": "Jason",
+   "existing_id": null,
+   "new_id": "jason-son-of-eleazar",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Envoy sent by Judas to Rome with Eupolemus.",
+   "refs": [
+    "8:17"
+   ],
+   "parents": [
+    {
+     "ref_name": "Eleazar",
+     "ref_id": "eleazar-father-of-jason",
+     "verse": "8:17"
+    }
+   ],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Possibly the father of the envoy Antipater (12:16), but the text does not say so; kept separate."
+  },
+  {
+   "name": "Antiochus",
+   "existing_id": null,
+   "new_id": "antiochus-father-of-numenius",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Father of the envoy Numenius.",
+   "refs": [
+    "12:16",
+    "14:22"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "A Jew, not one of the Seleucid kings."
+  },
+  {
+   "name": "Numenius",
+   "existing_id": null,
+   "new_id": "numenius",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Envoy sent by Jonathan to Rome and Sparta, later by Simon to Rome with a gold shield.",
+   "refs": [
+    "12:16",
+    "14:22",
+    "14:24",
+    "15:15"
+   ],
+   "parents": [
+    {
+     "ref_name": "Antiochus",
+     "ref_id": "antiochus-father-of-numenius",
+     "verse": "12:16"
+    }
+   ],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Jason",
+   "existing_id": null,
+   "new_id": "jason-father-of-antipater",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Father of the envoy Antipater.",
+   "refs": [
+    "12:16",
+    "14:22"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Possibly identical with Jason son of Eleazar (8:17); not merged."
+  },
+  {
+   "name": "Antipater",
+   "existing_id": null,
+   "new_id": "antipater-son-of-jason",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Envoy sent with Numenius to Rome and Sparta.",
+   "refs": [
+    "12:16",
+    "14:22"
+   ],
+   "parents": [
+    {
+     "ref_name": "Jason",
+     "ref_id": "jason-father-of-antipater",
+     "verse": "12:16"
+    }
+   ],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Absalom",
+   "existing_id": null,
+   "new_id": "absalom-1ma",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Father of Mattathias and of Jonathan, officers under the Hasmoneans.",
+   "refs": [
+    "11:70",
+    "13:11"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "11:70 and 13:11 both say 'son of Absalom'; treated as the same father (so the two officers would be brothers), but the text does not confirm this. Not King David's son."
+  },
+  {
+   "name": "Mattathias",
+   "existing_id": null,
+   "new_id": "mattathias-son-of-absalom",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Captain who stood firm with Jonathan at the battle of Hazor.",
+   "refs": [
+    "11:70"
+   ],
+   "parents": [
+    {
+     "ref_name": "Absalom",
+     "ref_id": "absalom-1ma",
+     "verse": "11:70"
+    }
+   ],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Chalphi",
+   "existing_id": null,
+   "new_id": "chalphi",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Father of Judas, one of Jonathan's captains.",
+   "refs": [
+    "11:70"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Judas",
+   "existing_id": null,
+   "new_id": "judas-son-of-chalphi",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Captain who stood firm with Jonathan at the battle of Hazor.",
+   "refs": [
+    "11:70"
+   ],
+   "parents": [
+    {
+     "ref_name": "Chalphi",
+     "ref_id": "chalphi",
+     "verse": "11:70"
+    }
+   ],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Jonathan",
+   "existing_id": null,
+   "new_id": "jonathan-son-of-absalom",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Commander sent by Simon with an army to take Joppa.",
+   "refs": [
+    "13:11"
+   ],
+   "parents": [
+    {
+     "ref_name": "Absalom",
+     "ref_id": "absalom-1ma",
+     "verse": "13:11"
+    }
+   ],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Onias",
+   "existing_id": null,
+   "new_id": "onias-i",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Earlier high priest who received a letter of kinship from Arius king of the Spartans.",
+   "refs": [
+    "12:7",
+    "12:8",
+    "12:19",
+    "12:20"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Historically Onias I (c. 300 BC) if Arius is Areus I; some identify Onias III. Kept as one person."
+  },
+  {
+   "name": "Arius",
+   "existing_id": null,
+   "new_id": "arius-sparta",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [
+    "Areus"
+   ],
+   "description": "King of the Spartans who wrote to the high priest Onias claiming kinship with the Jews.",
+   "refs": [
+    "12:7",
+    "12:20"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Historically Areus I of Sparta (309-265 BC)."
+  },
+  {
+   "name": "Philip",
+   "existing_id": null,
+   "new_id": "philip-v-macedon",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Macedonian king defeated by the Romans (Philip V).",
+   "refs": [
+    "8:5"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Perseus",
+   "existing_id": null,
+   "new_id": "perseus-macedon",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "King of Chittim (Macedonia) defeated by the Romans.",
+   "refs": [
+    "8:5"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Eumenes",
+   "existing_id": null,
+   "new_id": "eumenes-ii",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "King who received territories taken by Rome from Antiochus (Eumenes II of Pergamum).",
+   "refs": [
+    "8:8"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Arsaces",
+   "existing_id": null,
+   "new_id": "arsaces-parthia",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "King of Persia and Media who captured Demetrius II.",
+   "refs": [
+    "14:2",
+    "14:3",
+    "15:22"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Dynastic name of the Parthian kings; historically Mithridates I."
+  },
+  {
+   "name": "prince of Arsaces",
+   "existing_id": null,
+   "new_id": "arsaces-prince-1ma14",
+   "gender": "male",
+   "unnamed": true,
+   "aliases": [],
+   "description": "One of Arsaces' princes, sent to capture Demetrius II alive.",
+   "refs": [
+    "14:2",
+    "14:3"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Lucius",
+   "existing_id": null,
+   "new_id": "lucius-consul",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Consul of the Romans who wrote to kings and states in favour of the Jews.",
+   "refs": [
+    "15:16"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Historically probably Lucius Caecilius Metellus or Lucius Calpurnius Piso (c. 139 BC)."
+  },
+  {
+   "name": "Attalus",
+   "existing_id": null,
+   "new_id": "attalus-ii",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "King (Attalus II of Pergamum) to whom the Roman letter was also sent.",
+   "refs": [
+    "15:22"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Arathes",
+   "existing_id": null,
+   "new_id": "ariarathes-v",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [
+    "Ariarathes"
+   ],
+   "description": "King (Ariarathes V of Cappadocia) to whom the Roman letter was also sent.",
+   "refs": [
+    "15:22"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "bride from Nadabath",
+   "existing_id": null,
+   "new_id": "bride-nadabath-1ma9",
+   "gender": "female",
+   "unnamed": true,
+   "aliases": [],
+   "description": "Daughter of a great noble of Canaan brought from Nadabath to marry among the sons of Jambri; her wedding procession was ambushed by Jonathan and Simon.",
+   "refs": [
+    "9:37"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "bridegroom of the sons of Jambri",
+   "existing_id": null,
+   "new_id": "bridegroom-jambri-1ma9",
+   "gender": "male",
+   "unnamed": true,
+   "aliases": [],
+   "description": "Bridegroom who came out with his friends to meet the bridal procession and was attacked in the ambush avenging John.",
+   "refs": [
+    "9:39"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Abraham",
+   "existing_id": "abram",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Patriarch cited as found faithful in temptation; ancestor claimed by Spartans and Jews.",
+   "refs": [
+    "2:52",
+    "12:21"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Joseph",
+   "existing_id": "joseph",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Patriarch who kept the commandment and became lord of Egypt.",
+   "refs": [
+    "2:53"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Phinehas",
+   "existing_id": "phinehas",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Priest whose zeal against Zimri is the model for Mattathias.",
+   "refs": [
+    "2:26",
+    "2:54"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Zimri",
+   "existing_id": "zimri-numbers",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Simeonite son of Salu killed by Phinehas.",
+   "refs": [
+    "2:26"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Salu",
+   "existing_id": "salu-simeon",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Father of Zimri.",
+   "refs": [
+    "2:26"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Joshua",
+   "existing_id": "joshua-exodus",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Became a judge in Israel.",
+   "refs": [
+    "2:55"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Caleb",
+   "existing_id": "caleb-numbers",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Received an inheritance for his testimony.",
+   "refs": [
+    "2:56"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "David",
+   "existing_id": "david",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "King praised for mercy and for defeating the Philistine giant.",
+   "refs": [
+    "2:57",
+    "4:30"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "'City of David' (1:33; 2:31; 7:32; 14:36) is a place name and is not counted."
+  },
+  {
+   "name": "Elijah",
+   "existing_id": "elijah-1ki17",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Prophet taken up into heaven for zeal.",
+   "refs": [
+    "2:58"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Hananiah",
+   "existing_id": "hananiah-dan1",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Companion of Daniel saved from the flame.",
+   "refs": [
+    "2:59"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Azariah",
+   "existing_id": "azariah-dan1",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Companion of Daniel saved from the flame.",
+   "refs": [
+    "2:59"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Mishael",
+   "existing_id": "mishael-dan1",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Companion of Daniel saved from the flame.",
+   "refs": [
+    "2:59"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Daniel",
+   "existing_id": "daniel-ezk14",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Delivered from the lions.",
+   "refs": [
+    "2:60"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Pharaoh",
+   "existing_id": "pharaoh-exodus-second",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Pharaoh who pursued Israel to the Red Sea.",
+   "refs": [
+    "4:9"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "the mighty warrior (Goliath)",
+   "existing_id": "goliath",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": true,
+   "aliases": [],
+   "description": "Philistine champion defeated by David, alluded to in Judas' prayer.",
+   "refs": [
+    "4:30"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Saul",
+   "existing_id": "saul",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Father of Jonathan.",
+   "refs": [
+    "4:30"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Jonathan son of Saul",
+   "existing_id": "jonathan-1sa13",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Delivered the Philistine army into Israel's hands with his armor bearer.",
+   "refs": [
+    "4:30"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Distinct from Jonathan Apphus and Jonathan son of Absalom."
+  },
+  {
+   "name": "Jonathan's armor bearer",
+   "existing_id": "jonathan-armor-bearer",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": true,
+   "aliases": [],
+   "description": "Armor bearer of Jonathan son of Saul.",
+   "refs": [
+    "4:30"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Aaron",
+   "existing_id": "aaron",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Ancestor of the priest Alcimus ('of the seed of Aaron').",
+   "refs": [
+    "7:14"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Joarib",
+   "existing_id": "jehoiarib",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Priestly ancestor/course from which Mattathias' family descended.",
+   "refs": [
+    "2:1",
+    "14:29"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Joarib = Jehoiarib, head of the first priestly course (1 Chr 24:7); used here as ancestral house name."
+  },
+  {
+   "name": "king whose envoys blasphemed (Sennacherib)",
+   "existing_id": "sennacherib",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": true,
+   "aliases": [],
+   "description": "Assyrian king whose army was struck by the angel (185,000), alluded to in Judas' prayer.",
+   "refs": [
+    "7:41"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Not named in the verse; the 185,000 figure identifies 2 Kings 19:35."
+  }
+ ],
+ "dated_events": [
+  {
+   "verse": "1:10",
+   "seleucid_year": 137,
+   "month": null,
+   "day": null,
+   "event": "Antiochus Epiphanes begins to reign",
+   "people": [
+    "antiochus-iv-epiphanes"
+   ]
+  },
+  {
+   "verse": "1:20",
+   "seleucid_year": 143,
+   "month": null,
+   "day": null,
+   "event": "Antiochus returns from Egypt and plunders the Jerusalem temple",
+   "people": [
+    "antiochus-iv-epiphanes"
+   ]
+  },
+  {
+   "verse": "1:54",
+   "seleucid_year": 145,
+   "month": 9,
+   "day": 15,
+   "event": "Abomination of desolation set up on the altar",
+   "people": [
+    "antiochus-iv-epiphanes"
+   ],
+   "month_name": "Chislev",
+   "note": "Text gives 'Chislev'; month number 9 per 4:52."
+  },
+  {
+   "verse": "1:59",
+   "seleucid_year": 145,
+   "month": null,
+   "day": 25,
+   "event": "First pagan sacrifice on the idol altar",
+   "people": [],
+   "note": "Text gives only 'the twenty-fifth day of the month'; context implies Chislev of year 145 (cf. 4:54). Year inferred from 1:54."
+  },
+  {
+   "verse": "2:70",
+   "seleucid_year": 146,
+   "month": null,
+   "day": null,
+   "event": "Death and burial of Mattathias at Modin",
+   "people": [
+    "mattathias-hasmonean"
+   ]
+  },
+  {
+   "verse": "3:37",
+   "seleucid_year": 147,
+   "month": null,
+   "day": null,
+   "event": "Antiochus leaves Antioch for Persia, leaving Lysias in charge",
+   "people": [
+    "antiochus-iv-epiphanes",
+    "lysias"
+   ]
+  },
+  {
+   "verse": "4:52",
+   "seleucid_year": 148,
+   "month": 9,
+   "day": 25,
+   "event": "Rededication of the altar and temple by Judas",
+   "people": [
+    "judas-maccabeus"
+   ],
+   "month_name": "Chislev"
+  },
+  {
+   "verse": "4:59",
+   "seleucid_year": null,
+   "month": 9,
+   "day": 25,
+   "event": "Annual eight-day feast of dedication ordained",
+   "people": [
+    "judas-maccabeus"
+   ],
+   "month_name": "Chislev",
+   "note": "Recurring festival from 25 Chislev; year not restated."
+  },
+  {
+   "verse": "6:16",
+   "seleucid_year": 149,
+   "month": null,
+   "day": null,
+   "event": "Death of Antiochus Epiphanes in Persia",
+   "people": [
+    "antiochus-iv-epiphanes"
+   ]
+  },
+  {
+   "verse": "6:20",
+   "seleucid_year": 150,
+   "month": null,
+   "day": null,
+   "event": "Judas besieges the Jerusalem citadel",
+   "people": [
+    "judas-maccabeus"
+   ]
+  },
+  {
+   "verse": "7:1",
+   "seleucid_year": 151,
+   "month": null,
+   "day": null,
+   "event": "Demetrius son of Seleucus comes from Rome and begins to reign",
+   "people": [
+    "demetrius-i-soter",
+    "seleucus-iv"
+   ]
+  },
+  {
+   "verse": "7:43",
+   "seleucid_year": null,
+   "month": 12,
+   "day": 13,
+   "event": "Battle of Adasa; Nicanor killed",
+   "people": [
+    "nicanor-1ma",
+    "judas-maccabeus"
+   ],
+   "month_name": "Adar",
+   "note": "Year not stated in the text; month number 12 = Adar (conventional)."
+  },
+  {
+   "verse": "7:49",
+   "seleucid_year": null,
+   "month": 12,
+   "day": 13,
+   "event": "Annual Nicanor's Day ordained",
+   "people": [],
+   "month_name": "Adar",
+   "note": "Recurring festival."
+  },
+  {
+   "verse": "9:3",
+   "seleucid_year": 152,
+   "month": 1,
+   "day": null,
+   "event": "Bacchides and Alcimus encamp against Jerusalem",
+   "people": [
+    "bacchides",
+    "alcimus"
+   ]
+  },
+  {
+   "verse": "9:54",
+   "seleucid_year": 153,
+   "month": 2,
+   "day": null,
+   "event": "Alcimus orders the inner court wall pulled down and is stricken",
+   "people": [
+    "alcimus"
+   ]
+  },
+  {
+   "verse": "10:1",
+   "seleucid_year": 160,
+   "month": null,
+   "day": null,
+   "event": "Alexander Epiphanes seizes Ptolemais and reigns",
+   "people": [
+    "alexander-balas"
+   ]
+  },
+  {
+   "verse": "10:21",
+   "seleucid_year": 160,
+   "month": 7,
+   "day": null,
+   "event": "Jonathan puts on the high-priestly garments at the feast of tabernacles",
+   "people": [
+    "jonathan-apphus"
+   ]
+  },
+  {
+   "verse": "10:57",
+   "seleucid_year": 162,
+   "month": null,
+   "day": null,
+   "event": "Ptolemy brings Cleopatra to Ptolemais; wedding to Alexander",
+   "people": [
+    "ptolemy-vi-philometor",
+    "cleopatra-thea",
+    "alexander-balas"
+   ]
+  },
+  {
+   "verse": "10:67",
+   "seleucid_year": 165,
+   "month": null,
+   "day": null,
+   "event": "Demetrius son of Demetrius comes from Crete",
+   "people": [
+    "demetrius-ii-nicator"
+   ]
+  },
+  {
+   "verse": "11:19",
+   "seleucid_year": 167,
+   "month": null,
+   "day": null,
+   "event": "Demetrius II becomes king",
+   "people": [
+    "demetrius-ii-nicator"
+   ]
+  },
+  {
+   "verse": "13:41",
+   "seleucid_year": 170,
+   "month": null,
+   "day": null,
+   "event": "The yoke of the Gentiles removed from Israel",
+   "people": [
+    "simon-thassi"
+   ]
+  },
+  {
+   "verse": "13:42",
+   "seleucid_year": null,
+   "month": null,
+   "day": null,
+   "event": "Contracts dated 'first year of Simon, the great high priest'",
+   "people": [
+    "simon-thassi"
+   ],
+   "note": "Regnal year 1 of Simon = Seleucid year 170 (13:41)."
+  },
+  {
+   "verse": "13:51",
+   "seleucid_year": 171,
+   "month": 2,
+   "day": 23,
+   "event": "Simon enters the Jerusalem citadel",
+   "people": [
+    "simon-thassi"
+   ]
+  },
+  {
+   "verse": "14:1",
+   "seleucid_year": 172,
+   "month": null,
+   "day": null,
+   "event": "Demetrius II goes to Media and is captured by Arsaces",
+   "people": [
+    "demetrius-ii-nicator",
+    "arsaces-parthia"
+   ]
+  },
+  {
+   "verse": "14:27",
+   "seleucid_year": 172,
+   "month": 6,
+   "day": 18,
+   "event": "Decree honouring Simon proclaimed at Asaramel",
+   "people": [
+    "simon-thassi"
+   ],
+   "month_name": "Elul",
+   "note": "Also 'the third year of Simon the high priest'; month number 6 = Elul (conventional)."
+  },
+  {
+   "verse": "15:10",
+   "seleucid_year": 174,
+   "month": null,
+   "day": null,
+   "event": "Antiochus VII enters his ancestral land; Trypho deserted",
+   "people": [
+    "antiochus-vii-sidetes",
+    "trypho"
+   ]
+  },
+  {
+   "verse": "16:14",
+   "seleucid_year": 177,
+   "month": 11,
+   "day": null,
+   "event": "Simon goes down to Jericho, where he and his sons are murdered",
+   "people": [
+    "simon-thassi",
+    "mattathias-son-of-simon",
+    "judas-son-of-simon",
+    "ptolemy-son-of-abubus"
+   ],
+   "month_name": "Sebat"
+  }
+ ],
+ "excluded_names": {
+  "Israel": "nation/people",
+  "Jerusalem": "place",
+  "Judea": "place",
+  "Judah": "land/people",
+  "Ptolemais": "place",
+  "Egypt": "place",
+  "Gazara": "place",
+  "Bethsura": "place",
+  "Rome": "place",
+  "Azotus": "place",
+  "Galilee": "place",
+  "Joppa": "place",
+  "Gilead": "place",
+  "Spartans": "people",
+  "Modin": "place",
+  "Zion": "place",
+  "Jordan": "river",
+  "Antioch": "place",
+  "Romans": "people",
+  "Samaria": "place",
+  "Philistines": "people",
+  "Persia": "place",
+  "Idumaea": "place",
+  "Asia": "place",
+  "Jacob": "used of the nation ('house/race of Jacob'), not the patriarch as an individual",
+  "Syria": "place",
+  "Bethhoron": "place",
+  "Emmaus": "place",
+  "Jamnia": "place",
+  "Media": "place",
+  "Sabbaths": "observance",
+  "Chislev": "month",
+  "Mizpeh": "place",
+  "Bethshan": "place",
+  "Jericho": "place",
+  "Ascalon": "place",
+  "Gaza": "place",
+  "Dor": "place",
+  "Kidron": "place",
+  "Macedonian": "gentilic",
+  "Chittim": "place",
+  "Epiphanes": "epithet (Antiochus IV / Alexander Balas)",
+  "Great": "part of 'Great Plain'",
+  "Avaran": "surname of Eleazar",
+  "Hasidaeans": "group",
+  "Euphrates": "river",
+  "Esau": "used of the Edomites ('children of Esau')",
+  "Tyre": "place",
+  "Nabathaeans": "people",
+  "Bosora": "place",
+  "Bosor": "place",
+  "Casphor": "place",
+  "Maked": "place",
+  "Carnaim": "place",
+  "Arabians": "people",
+  "Bethzacharias": "place",
+  "Adasa": "place",
+  "Adar": "month",
+  "Jambri": "clan name ('children of Jambri'); no individual Jambri acts",
+  "Bethbasi": "place",
+  "Eleutherus": "river",
+  "Arabian": "gentilic",
+  "Damascus": "place",
+  "Kedesh": "place",
+  "Adida": "place",
+  "Persians": "people",
+  "Medes": "people",
+  "Greece": "place",
+  "Gaddis": "surname of John",
+  "Thassi": "surname of Simon",
+  "Apphus": "surname of Jonathan",
+  "Nazarites": "group",
+  "Red": "Red Sea",
+  "Savior": "title of God",
+  "Akrabattine": "place",
+  "Baean": "clan name ('children of Baean')",
+  "Ammon": "people/place",
+  "Jazer": "place",
+  "Dathema": "place",
+  "Tubias": "place ('land of Tubias')",
+  "People": "common noun",
+  "Sidon": "place",
+  "Arbatta": "place",
+  "Alema": "place",
+  "Raphon": "place",
+  "Ephron": "place (city in Gilead)",
+  "Hebron": "place",
+  "Elymais": "place",
+  "Babylon": "place",
+  "To": "extraction artifact",
+  "I’m": "extraction artifact",
+  "Eupator": "epithet of Antiochus V",
+  "Indian": "gentilic (elephant drivers, not unique)",
+  "Bezeth": "place",
+  "Capharsalama": "place",
+  "Syrian": "gentilic",
+  "Gauls": "people",
+  "Spain": "place",
+  "India": "place",
+  "Lydia": "place",
+  "Jewish": "gentilic",
+  "Gilgal": "place",
+  "Mesaloth": "place",
+  "Arbela": "place",
+  "Berea": "place",
+  "Elasa": "place",
+  "Tekoah": "place",
+  "Asphar": "place (pool)",
+  "Medaba": "place",
+  "Canaan": "place",
+  "Nadabath": "place",
+  "Bethel": "place",
+  "Timnath": "place",
+  "Pharathon": "place",
+  "Tephon": "place",
+  "Phasiron": "clan name ('children of Phasiron')",
+  "Michmash": "place",
+  "Mount": "part of place names",
+  "Crete": "place",
+  "Coelesyria": "place",
+  "Beth-dagon": "place (temple)",
+  "Ekron": "place",
+  "Selucia": "place",
+  "Cilicia": "place",
+  "Arabia": "place",
+  "Judeans": "people",
+  "Aphaerema": "place",
+  "Lydda": "place",
+  "Ramathaim": "place",
+  "Ladder": "place ('Ladder of Tyre')",
+  "Gennesareth": "place",
+  "Hazor": "place",
+  "Hamath": "place",
+  "Zabadaeans": "people",
+  "Chaphenatha": "place (wall section)",
+  "Plain": "place",
+  "Adora": "place",
+  "Bascama": "place",
+  "Sparta": "place",
+  "Elul": "month",
+  "Asaramel": "place/assembly",
+  "Sampsames": "place/state in the Roman circular list",
+  "Delos": "place",
+  "Myndos": "place",
+  "Sicyon": "place",
+  "Caria": "place",
+  "Samos": "place",
+  "Pamphylia": "place",
+  "Lycia": "place",
+  "Halicarnassus": "place",
+  "Rhodes": "place",
+  "Phaselis": "place",
+  "Cos": "place",
+  "Side": "place",
+  "Aradus": "place",
+  "Gortyna": "place",
+  "Cnidus": "place",
+  "Cyprus": "place",
+  "Cyrene": "place",
+  "Orthosia": "place",
+  "Sebat": "month",
+  "Dok": "place (fortress)",
+  "Dagon": "deity"
+ },
+ "notes": "Seleucid-era years are as stated in the text (era begins 312/311 BC; 1 Maccabees' Judean reckoning is often taken from spring 311 BC). Namesakes separated: Antiochus x6 (III, IV Epiphanes, V Eupator, VI, VII Sidetes, father of Numenius); Demetrius x2 (I Soter, II Nicator); Alexander x2 (the Great, Balas); Ptolemy x4 (VI Philometor incl. 1:18 and 10:51-11:18, VIII at 15:16, son of Dorymenes, son of Abubus); Philip x3 (II, V, friend of Antiochus IV); Apollonius x2 (Samaria 3:10, Coelesyria 10:69); John x4 (father of Mattathias, Gaddis, father of Eupolemus, Hyrcanus); Judas x3 (Maccabaeus, son of Chalphi, son of Simon); Jonathan x2 of this era (Apphus, son of Absalom) plus Jonathan son of Saul; Mattathias x3 (patriarch, son of Absalom, son of Simon); Simon x1 (Thassi) plus Simeon the grandfather; Joseph x2 (patriarch, son of Zacharias); Eleazar x2; Jason x2 (possibly the same, not merged); Azariah x2 (Daniel's companion, Azarias the commander); only one Timothy in this book. Nicanor of 3:38 and of ch.7 merged (usual identification). Ptolemy VI of 1:18 merged with the king of 10:51-11:18 on historical grounds. Unnamed groups not entered: Jonathan's two sons sent as hostages (13:16), Alexander's servants (1:6), the Roman 'general' (8:10), messengers (6:5; 16:21), the noble father of the bride (9:37). 'The king' is used without a name in many verses; refs list named verses plus clear pronoun/title references only where identification is certain. Parent/spouse objects carry ref_id in addition to ref_name because names repeat. dated_events month numbers follow the text where given (4:52 ninth month = Chislev; 16:14 eleventh month = Sebat) and conventional numbering otherwise (Adar 12, Elul 6); month_name records the text's month name. Death verses: Alexander 1:7, apostate and officer at Modin 2:24-25, Mattathias 2:70, Apollonius 3:11, Eleazar 6:46, Antiochus IV 6:16, Antiochus V & Lysias 7:4, Nicanor 7:43, Judas 9:18, John Gaddis 9:36 (implied), Alcimus 9:56, Demetrius I 10:50, Alexander Balas 11:17, Ptolemy VI 11:18, Jonathan 13:23, Antiochus VI 13:31, Simon and sons Mattathias and Judas 16:16."
+}

@@ -1,0 +1,4 @@
+schema_version: 1
+record_type: inventory_units
+records:
+  - {id: inv-prayer-of-manasseh-1, work_id: prayer-of-manasseh, locator: "Prayer of Manasseh 1", reviewed: true, passage_ids: [prayer-of-manasseh-1-census, prayer-of-manasseh-1-lxx], identified_entity_ids: [abram, isaac, jacob, manasseh-2ki20], event_ids: [prayer-of-manasseh-narrative], no_individuals: false, review_basis: "Person census from a public-domain translation, checked verse by verse by a census pass; see the work's witness notes.", citations: [{source_id: world-english-bible, locator: "Prayer of Manasseh 1", witness_id: web-prayer-of-manasseh}]}

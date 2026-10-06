@@ -1,0 +1,515 @@
+{
+  "book": "DNG",
+  "addition_sections": [
+    {
+      "work": "prayer-of-azariah",
+      "ranges": [
+        "3:24-3:90"
+      ]
+    },
+    {
+      "work": "susanna",
+      "ranges": [
+        "13:1-13:64"
+      ]
+    },
+    {
+      "work": "bel-and-dragon",
+      "ranges": [
+        "14:1-14:42"
+      ]
+    }
+  ],
+  "people": [
+    {
+      "name": "Azarias",
+      "existing_id": "azariah-dan1",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [
+        "Azariah"
+      ],
+      "description": "One of the three young men in the furnace, who prays the Prayer of Azariah.",
+      "refs": [
+        "3:25",
+        "3:49",
+        "3:88"
+      ],
+      "parents": [],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": "Same as Abednego of Daniel 1-3."
+    },
+    {
+      "name": "Hananiah",
+      "existing_id": "hananiah-dan1",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "One of the three young men in the furnace.",
+      "refs": [
+        "3:88"
+      ],
+      "parents": [],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": "= Shadrach."
+    },
+    {
+      "name": "Mishael",
+      "existing_id": "mishael-dan1",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "One of the three young men in the furnace.",
+      "refs": [
+        "3:88"
+      ],
+      "parents": [],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": "= Meshach."
+    },
+    {
+      "name": "Abraham",
+      "existing_id": "abram",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "Patriarch invoked in Azariah's prayer.",
+      "refs": [
+        "3:35"
+      ],
+      "parents": [],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": null
+    },
+    {
+      "name": "Isaac",
+      "existing_id": "isaac",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "Patriarch invoked in Azariah's prayer.",
+      "refs": [
+        "3:35"
+      ],
+      "parents": [],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": null
+    },
+    {
+      "name": "Israel",
+      "existing_id": "jacob",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "Patriarch Jacob, invoked as 'Israel your holy one' in Azariah's prayer.",
+      "refs": [
+        "3:35"
+      ],
+      "parents": [],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": "In 3:35 'Israel' is listed with Abraham and Isaac as a recipient of the promise, so the patriarch is meant; other uses of 'Israel' in 3:24-90 (e.g. 3:83) are the nation and are excluded."
+    },
+    {
+      "name": "Susanna",
+      "existing_id": null,
+      "new_id": "susanna",
+      "gender": "female",
+      "unnamed": false,
+      "aliases": [],
+      "description": "Virtuous Jewish wife in Babylon falsely accused by two elders and vindicated by Daniel.",
+      "refs": [
+        "13:2",
+        "13:7",
+        "13:22",
+        "13:24",
+        "13:27",
+        "13:28",
+        "13:29",
+        "13:31",
+        "13:42",
+        "13:63"
+      ],
+      "parents": [
+        {
+          "ref_name": "Helkias",
+          "verse": "13:2",
+          "new_id": "hilkiah-father-of-susanna"
+        },
+        {
+          "ref_name": "Susanna's mother",
+          "verse": "13:63",
+          "new_id": "mother-of-susanna"
+        }
+      ],
+      "spouses": [
+        {
+          "ref_name": "Joakim",
+          "verse": "13:2",
+          "new_id": "joakim-husband-of-susanna"
+        }
+      ],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": null
+    },
+    {
+      "name": "Joakim",
+      "existing_id": null,
+      "new_id": "joakim-husband-of-susanna",
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "Wealthy Jew of Babylon, husband of Susanna.",
+      "refs": [
+        "13:1",
+        "13:4",
+        "13:6",
+        "13:28",
+        "13:29",
+        "13:63"
+      ],
+      "parents": [],
+      "spouses": [
+        {
+          "ref_name": "Susanna",
+          "verse": "13:2",
+          "new_id": "susanna"
+        }
+      ],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": "Not King Jehoiakim/Jehoiachin nor the high priest Joakim of Baruch 1:7; a private man of the exile."
+    },
+    {
+      "name": "Helkias",
+      "existing_id": null,
+      "new_id": "hilkiah-father-of-susanna",
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [
+        "Hilkiah"
+      ],
+      "description": "Father of Susanna.",
+      "refs": [
+        "13:2",
+        "13:29",
+        "13:63"
+      ],
+      "parents": [],
+      "spouses": [
+        {
+          "ref_name": "Susanna's mother",
+          "verse": "13:63",
+          "new_id": "mother-of-susanna"
+        }
+      ],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": "Greek form of Hilkiah; nothing links him to any Hebrew-Bible Hilkiah."
+    },
+    {
+      "name": "Susanna's mother",
+      "existing_id": null,
+      "new_id": "mother-of-susanna",
+      "gender": "female",
+      "unnamed": true,
+      "aliases": [],
+      "description": "Unnamed mother of Susanna, wife of Helkias.",
+      "refs": [
+        "13:30",
+        "13:63"
+      ],
+      "parents": [],
+      "spouses": [
+        {
+          "ref_name": "Helkias",
+          "verse": "13:63",
+          "new_id": "hilkiah-father-of-susanna"
+        }
+      ],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": null
+    },
+    {
+      "name": "First elder (mastick tree)",
+      "existing_id": null,
+      "new_id": "elder-judge-susanna-1",
+      "gender": "male",
+      "unnamed": true,
+      "aliases": [],
+      "description": "One of the two lecherous elder-judges; questioned first by Daniel, he names a mastick tree.",
+      "refs": [
+        "13:5",
+        "13:8",
+        "13:16",
+        "13:19",
+        "13:24",
+        "13:28",
+        "13:34",
+        "13:36",
+        "13:41",
+        "13:61",
+        "13:62",
+        "13:52",
+        "13:53",
+        "13:54",
+        "13:55"
+      ],
+      "parents": [],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": "The two elders are never named; refs before 13:52 (and 13:61-62) refer to both jointly. 13:50 'the elders' are the assembly's elders, not these two. Executed 13:62."
+    },
+    {
+      "name": "Second elder (evergreen oak)",
+      "existing_id": null,
+      "new_id": "elder-judge-susanna-2",
+      "gender": "male",
+      "unnamed": true,
+      "aliases": [],
+      "description": "The other lecherous elder-judge; questioned second by Daniel, he names an evergreen oak.",
+      "refs": [
+        "13:5",
+        "13:8",
+        "13:16",
+        "13:19",
+        "13:24",
+        "13:28",
+        "13:34",
+        "13:36",
+        "13:41",
+        "13:61",
+        "13:62",
+        "13:56",
+        "13:57",
+        "13:58",
+        "13:59"
+      ],
+      "parents": [],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": "Called 'seed of Canaan, and not of Judah' (13:56) as an insult, not a genealogy."
+    },
+    {
+      "name": "Daniel",
+      "existing_id": "daniel-ezk14",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "Jewish sage in Babylon who exposes the elders, the priests of Bel and the dragon.",
+      "refs": [
+        "13:45",
+        "13:51",
+        "13:55",
+        "13:59",
+        "13:61",
+        "13:64",
+        "14:2",
+        "14:4",
+        "14:7",
+        "14:9",
+        "14:10",
+        "14:12",
+        "14:14",
+        "14:16",
+        "14:17",
+        "14:19",
+        "14:22",
+        "14:24",
+        "14:25",
+        "14:27",
+        "14:29",
+        "14:30",
+        "14:32",
+        "14:34",
+        "14:37",
+        "14:38",
+        "14:39",
+        "14:40",
+        "14:41"
+      ],
+      "parents": [],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": "In Susanna he is 'a young youth' (13:45); identified with the prophet Daniel by tradition and by the book's placement. The lions' den in 14:31-42 is a doublet of Daniel 6."
+    },
+    {
+      "name": "Moses",
+      "existing_id": "moses",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "Lawgiver, cited in 'the law of Moses'.",
+      "refs": [
+        "13:3",
+        "13:62"
+      ],
+      "parents": [],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": null
+    },
+    {
+      "name": "Astyages",
+      "existing_id": null,
+      "new_id": "astyages",
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "King (of the Medes) whose death preceded Cyrus's reign.",
+      "refs": [
+        "14:1"
+      ],
+      "parents": [],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": "Historical last Median king; not elsewhere in the Bible."
+    },
+    {
+      "name": "Cyrus",
+      "existing_id": "cyrus",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "Persian king who befriends Daniel and is persuaded against Bel and the dragon.",
+      "refs": [
+        "14:1",
+        "14:2",
+        "14:4",
+        "14:6",
+        "14:7",
+        "14:8",
+        "14:9",
+        "14:10",
+        "14:11",
+        "14:14",
+        "14:16",
+        "14:17",
+        "14:18",
+        "14:19",
+        "14:20",
+        "14:22",
+        "14:24",
+        "14:26",
+        "14:28",
+        "14:29",
+        "14:30",
+        "14:40",
+        "14:41"
+      ],
+      "parents": [],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": "Named only in 14:1; 'the king' throughout ch.14 is Cyrus (the Old Greek text leaves the king unnamed; Theodotion/WEB names Cyrus). Reviewer may restrict refs to 14:1."
+    },
+    {
+      "name": "Habakkuk",
+      "existing_id": "habakkuk-hab1",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "Prophet in Judea carried by an angel to feed Daniel in the lions' den.",
+      "refs": [
+        "14:33",
+        "14:34",
+        "14:35",
+        "14:37",
+        "14:39"
+      ],
+      "parents": [],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": "Mapped to the canonical prophet ('the prophet Habakkuk', 14:33). The Old Greek superscription 'son of Jesus of the tribe of Levi' is not in the WEB text. Chronological tension: canonical Habakkuk is c. 600 BCE while this episode is under Cyrus."
+    }
+  ],
+  "excluded_names": {
+    "Jehoiakim": "outside additions",
+    "Nebuchadnezzar": "outside additions (not named in 3:24-90; only 'an unjust king' 3:32)",
+    "Ashpenaz": "outside additions",
+    "Belteshazzar": "outside additions",
+    "Shadrach": "outside additions (3:1-23 and 3:91-97 are Hebrew-parallel)",
+    "Meshach": "outside additions",
+    "Abednego": "outside additions",
+    "Arioch": "outside additions",
+    "Belshazzar": "outside additions",
+    "Darius": "outside additions",
+    "Ahasuerus": "outside additions",
+    "Jeremiah": "outside additions",
+    "Hananiah (ch.1-2)": "outside additions; only 3:88 counted",
+    "Mishael (ch.1-2)": "outside additions; only 3:88 counted",
+    "Michael": "angel, outside additions",
+    "Gabriel": "angel, outside additions",
+    "Judah": "people/tribe (13:56-57 'not of Judah', 'daughter of Judah')",
+    "Israel": "the nation (except 3:35, mapped to Jacob)",
+    "Canaan": "insult 'seed of Canaan' (13:56)",
+    "Edom": "nation",
+    "Moab": "nation",
+    "Babylon": "place",
+    "Jerusalem": "place",
+    "Shinar": "place",
+    "Dura": "place",
+    "Chaldeans": "people",
+    "Chaldean": "people",
+    "Syrian": "language",
+    "Medes": "people",
+    "Mede": "people",
+    "Persians": "people",
+    "Persian": "gentilic",
+    "Babylonians": "people",
+    "Susa": "place",
+    "Elam": "place",
+    "Ulai": "river",
+    "Media": "place",
+    "Persia": "place",
+    "Greece": "place",
+    "Hiddekel": "river",
+    "Uphaz": "place",
+    "Kittim": "place",
+    "Ammon": "nation",
+    "Libyans": "people",
+    "Ethiopians": "people",
+    "Egypt": "place",
+    "Jewry": "place (Judea)",
+    "Bel": "idol/deity",
+    "Yahweh": "deity",
+    "Ancient": "divine title (Ancient of Days)",
+    "Anointed": "title",
+    "Put": "verb",
+    "Peace": "word",
+    "Cut": "verb",
+    "Arise": "verb",
+    "Great": "word",
+    "Azarias": "merged into the Azariah entry"
+  },
+  "notes": "WEB DNG numbers Greek Daniel as 14 chapters. Prayer of Azariah and Song of the Three = 3:24-3:90 (67 Greek-only verses inserted between Hebrew 3:23 and 3:24; WEB 3:91-97 = Hebrew 3:24-30). Within it: narrative 3:24-25, Azariah's prayer 3:26-45, narrative 3:46-51, Song of the Three Young Men 3:52-90. Susanna = ch.13 (13:1-64), Bel and the Dragon = ch.14 (14:1-42). WEB follows the Theodotion form with Susanna as ch.13 after Daniel 12. People in 1:1-3:23 and 3:91-12:13 are Hebrew-parallel and intentionally not recorded. Unnamed group members (Susanna's two maids and children, the servants, the 70 priests of Bel and their families, the Babylonian conspirators) are not recorded as individuals. Doubtful: Daniel of Susanna = canonical Daniel (traditional); Habakkuk = canonical prophet (anachronism under Cyrus); Cyrus refs include the 'the king' verses of ch.14."
+}

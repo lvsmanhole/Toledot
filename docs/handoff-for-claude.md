@@ -26,28 +26,54 @@ py -3.11 -m bible_timeline report --output generated/reports
 git diff --check
 ```
 
-## State at handoff (updated 2026-10-06)
+## State at handoff (updated 2026-10-06, Old Testament complete)
 
-- Genesis 1–50, Exodus 1–40, Leviticus 1–27, Numbers 1–36, and Deuteronomy 1–34 have chapter-level evidence across Septuagint, Geʽez, and Masoretic witness IDs.
-- Numbers has had a person-level completeness review: the twelve spies and fathers, the full Numbers 26 clan list, the Numbers 34 representatives and fathers, Beor, Salu, Peleth, Nun, and uniquely identifiable unnamed people (Num 11:27, 12:1, 15:32-36, 20:14, 21:1, 21:26). New review records live in `data/numbers/review/`, and the Genesis 46 parent links for Gad, Asher, and Benjamin in `data/genesis/37_50/gen46_*.yaml`.
-- `tests/test_numbers_census_regressions.py` asserts the reviewed people per chapter, per-witness attestation, and two dataset-wide guards: no alias leaks, and no parent who is under 12 or already dead at a child's display birth.
-- Fixed inherited bugs: Reuben's alias "Roubin" had leaked to all of Jacob's children through a YAML anchor; Dishon son of Seir and Dishon son of Anah had been merged; 62 parent/child pairs shared a grade-E bucket year (re-chained with disclosed 30-year editorial generations); Manasseh/Ephraim/Asenath now follow Genesis 41:46-52; Zimri/Cozbi die in the fortieth year, before the Midian campaign; Aaron was removed from Numbers 11 and 28–29.
-- Deuteronomy 1–34 is in `data/deuteronomy/` with `tests/test_deuteronomy_data.py`: dated address (1:3), Moses at 120, Moserah vs Hor, Hoshea at 32:44, Anak's family.
-- Verification at handoff: full suite green, strict validation 0/0, build and reports regenerated.
+- **Hebrew-canon Old Testament (Genesis–Malachi):** every chapter is inventoried, with Masoretic and Septuagint passages and Geʽez for Genesis–Ruth.
+  - The person census is cross-checked against the TIPNR proper-name index (STEPBible, CC BY 4.0), giving about 2,900 people.
+  - Unnamed individuals, regnal data, dated events and index corrections are curated by hand.
+  - Tooling and policies are in `tools/ot_census/README.md`.
+- **Septuagint deuterocanon:** Tobit, Judith, Wisdom, Sirach, Baruch, the Letter of Jeremiah, 1–4 Maccabees, 1 Esdras, the Greek additions to Esther and Daniel, the Prayer of Manasseh and Psalm 151.
+- **Ethiopic books with a census:** 4 Ezra (Ezra Sutuel), 1 Enoch and Jubilees. The person census comes from public-domain translations (World English Bible; R. H. Charles), giving about 920 people.
+- **Ethiopic books with book-level entries only:** Meqabyan 1–3, Tegsats, Josippon, 4 Baruch, Ascension of Isaiah, Odes and Psalms of Solomon. No people are asserted for them.
+- **Chronology:**
+  - Kings carry Masoretic accession ages and reign lengths (grade A) within synchronized BCE reigns (grade C).
+  - Maccabean dates are Seleucid-era text claims, converted to display years at grade C.
+  - Everything without an explicit datum is a grade-E display window. Parents are at least 20 years older than their children and alive at their births; lives cap at 100 years unless an age is stated.
+  - Jubilees' anno-mundi dates are kept as alternative claims.
+- **Guards:**
+  - `tests/fixtures/chapter_people_snapshot.json` fails the suite if any chapter loses a person.
+  - Dataset-wide tests check alias leaks, parent/child plausibility and that every human has a lifespan.
+- **Performance:** YAML is parsed with libyaml, and the test session caches loaded datasets (`tests/conftest.py`). The full suite runs in a few minutes.
 
 ## Known open items
 
-- Geʽez claims cite Dillmann locators, but name spellings have not been verified reading by reading. Do not show Geʽez spellings in the UI until they are.
-- Numbers 26 LXX/Geʽez locators are chapter-level (the Greek clan list is ordered and numbered differently). The LXX omission of Becher (26:35) and the LXX "and before Eleazar the priest" in 36:1 still need checking against Rahlfs–Hanhart.
-- Genesis 36:26: the sons of Dishon remain attached to Dishon son of Seir; 1 Chronicles 1:41 places them under Anah's son. Revisit when Chronicles is modeled.
-- Agag in Balaam's oracle (Num 24:7) is not modeled; decide whether it is a person or a dynastic title.
-- Exodus and Leviticus have not had the same person-by-person audit as Numbers. Run the same kind of chapter-person regression test there.
+- **Septuagint and Geʽez coverage:**
+  - Outside the Pentateuch, Septuagint presence for prominent people is book-level and grade C. Verse-level Greek name forms are not recorded.
+  - No Geʽez edition is selected for Samuel–Malachi, and Geʽez spellings are unverified everywhere.
+- **Deuterocanon checks:**
+  - Names and numbering are checked only against an English translation.
+  - Still to verify against Rahlfs–Hanhart: the Tobit recension (GI or GII), the Greek Esther/Daniel addition ranges, and Baruch/Letter of Jeremiah chapter numbering.
+- **Index-driven decisions to review:**
+  - 62 "?"-flagged TIPNR parent links were skipped.
+  - 28 links whose two people are never named in the same chapter were skipped. Most are inferences (for example Nahash as Jesse's wife); Isaiah 8:3 is the curated exception.
+- **Eponyms:** Jacob/Israel, the tribal patriarchs and clan founders are not inventoried outside the Pentateuch except in genealogies. A few genuine retrospective personal mentions (for example Hosea 12:3 on Jacob) are therefore missing.
+- **Identities kept apart deliberately; revisit if better evidence appears:**
+  - Sheshbazzar (separate in 1 Esdras; merged with Zerubbabel in the Ezra data).
+  - The two Dishons (Gen 36); Phicol (Gen 21/26).
+  - Nebuchadnezzar in Judith and Tobit (literary figures).
+  - Gabatha and Tharrha (Greek Esther).
+- **Textual tensions surfaced, not resolved:**
+  - Elishama (Num 1:10) as Joshua's grandfather (1 Chr 7:26-27).
+  - Salmon → Boaz (Ruth 4:21), recorded as descent.
+  - Judith's genealogy, recorded as descent from Shelumiel.
+  - Jochebed "daughter of Levi".
+- **Agag in Balaam's oracle (Num 24:7):** now a TIPNR person. Check whether a dynastic-title reading is preferable.
 
 ## Immediate next work
 
-1. Joshua (Joshua dies at 110, Josh 24:29; Caleb is 40 at the spy mission and 85 at Hebron, Josh 14:7,10), then continue in canon order through the historical books, wisdom/prophets, deuterocanonical and Ethiopic broader-canon books, New Testament, and Revelation. For each book, add a chapter-person regression test like the Numbers one.
-2. Give extra care to synchronized kings and Chronicles: separate rulers/namesakes unless evidence supports a merge; retain regnal/accession conventions and textual variants; surface uncertainty and overlap.
-3. Once coverage is broad and coherent, build the horizontal timeline UI as a consumer of the generated artifacts.
+1. **New Testament.** Start with the Gospels. TIPNR covers New Testament people too: reuse `tools/ot_census` (bridge, generator) with New Testament books and a curated chronology (Herods, procurators, high priests, Roman emperors). Preserve the Synoptic parallels and chronology differences.
+2. **Revelation.** Keep the historical, visionary and symbolic layers separate.
+3. **The website.** Build it as a consumer of `generated/` (Phase E of the roadmap).
 
 ## Evidence model rules to preserve
 

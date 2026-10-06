@@ -1,0 +1,964 @@
+{
+  "book": "TOB",
+  "people": [
+    {
+      "name": "Tobit",
+      "existing_id": null,
+      "new_id": "tobit",
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "Naphtalite exile in Nineveh, known for almsgiving and burying the dead; father of Tobias.",
+      "refs": [
+        "1:1",
+        "1:3",
+        "1:8",
+        "1:9",
+        "1:20",
+        "1:21",
+        "1:22",
+        "2:1",
+        "2:10",
+        "2:11",
+        "3:17",
+        "4:1",
+        "4:20",
+        "5:10",
+        "5:11",
+        "5:17",
+        "5:20",
+        "7:2",
+        "7:4",
+        "7:7",
+        "10:1",
+        "10:6",
+        "10:12",
+        "11:6",
+        "11:10",
+        "11:11",
+        "11:16",
+        "11:17",
+        "12:1",
+        "12:4",
+        "13:1",
+        "14:1",
+        "14:2",
+        "14:11",
+        "14:12",
+        "14:13"
+      ],
+      "parents": [
+        {
+          "ref_name": "Tobiel",
+          "verse": "1:1"
+        }
+      ],
+      "spouses": [
+        {
+          "ref_name": "Anna",
+          "verse": "1:9"
+        }
+      ],
+      "descent_note": null,
+      "explicit_ages": [
+        {
+          "what": "age when he lost his sight",
+          "years": 58,
+          "verse": "14:2"
+        },
+        {
+          "what": "lifespan",
+          "years": 158,
+          "verse": "14:11"
+        }
+      ],
+      "identity_note": "14:2 also says his sight returned after eight years. Called \"brother\"/\"cousin\" of Raguel (7:2, 7:4); Raguel is \"kinsman\" of Tobias (6:10)."
+    },
+    {
+      "name": "Tobiel",
+      "existing_id": null,
+      "new_id": "tobiel",
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "Tobit's father, of the tribe of Naphtali.",
+      "refs": [
+        "1:1",
+        "1:8"
+      ],
+      "parents": [
+        {
+          "ref_name": "Ananiel",
+          "verse": "1:1"
+        },
+        {
+          "ref_name": "Deborah",
+          "verse": "1:8"
+        }
+      ],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": "1:8 calls Deborah \"my father's mother\" and says Tobit was orphaned by his father."
+    },
+    {
+      "name": "Deborah",
+      "existing_id": null,
+      "new_id": "deborah-tobit",
+      "gender": "female",
+      "unnamed": false,
+      "aliases": [],
+      "description": "Tobit's paternal grandmother, who taught him the tithe laws.",
+      "refs": [
+        "1:8"
+      ],
+      "parents": [],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": "Mother of Tobiel per 1:8 (\"my father's mother\"); her husband is not named (presumably Ananiel, but not stated)."
+    },
+    {
+      "name": "Ananiel",
+      "existing_id": null,
+      "new_id": "ananiel-tobit",
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "Tobit's grandfather in the Naphtalite genealogy.",
+      "refs": [
+        "1:1"
+      ],
+      "parents": [
+        {
+          "ref_name": "Aduel",
+          "verse": "1:1"
+        }
+      ],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": null
+    },
+    {
+      "name": "Aduel",
+      "existing_id": null,
+      "new_id": "aduel-tobit",
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "Tobit's great-grandfather in the Naphtalite genealogy.",
+      "refs": [
+        "1:1"
+      ],
+      "parents": [
+        {
+          "ref_name": "Gabael",
+          "verse": "1:1"
+        }
+      ],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": null
+    },
+    {
+      "name": "Gabael",
+      "existing_id": null,
+      "new_id": "gabael-ancestor-tobit",
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "Ancestor of Tobit, father of Aduel.",
+      "refs": [
+        "1:1"
+      ],
+      "parents": [],
+      "spouses": [],
+      "descent_note": "Text continues \"of the seed of Asiel\", i.e. a descendant of Asiel; the number of intervening generations is not stated, so Asiel is not listed as parent.",
+      "explicit_ages": [],
+      "identity_note": "Different person from Gabael of Rages (Tobit 1:14 etc.), who is a contemporary of Tobit."
+    },
+    {
+      "name": "Asiel",
+      "existing_id": "jahzeel",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "Naphtalite clan ancestor of Tobit.",
+      "refs": [
+        "1:1"
+      ],
+      "parents": [],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": "Tobit 1:1 \"of the seed of Asiel, of the tribe of Naphtali\". Asiel is the LXX form of Jahzeel son of Naphtali (Gen 46:24 LXX Asiel). Mapping is probable but rests on the Greek spelling; reviewer should confirm."
+    },
+    {
+      "name": "Anna",
+      "existing_id": null,
+      "new_id": "anna-tobit",
+      "gender": "female",
+      "unnamed": false,
+      "aliases": [],
+      "description": "Wife of Tobit and mother of Tobias; a weaver.",
+      "refs": [
+        "1:9",
+        "1:20",
+        "2:1",
+        "2:11",
+        "2:12",
+        "2:14",
+        "4:3",
+        "5:17",
+        "10:4",
+        "10:7",
+        "11:5",
+        "11:6",
+        "11:9",
+        "14:10",
+        "14:12"
+      ],
+      "parents": [],
+      "spouses": [
+        {
+          "ref_name": "Tobit",
+          "verse": "1:9"
+        }
+      ],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": null
+    },
+    {
+      "name": "Tobias",
+      "existing_id": null,
+      "new_id": "tobias-son-of-tobit",
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "Son of Tobit who travels to Media, marries Sarah, and cures his father.",
+      "refs": [
+        "1:9",
+        "1:20",
+        "2:1",
+        "2:2",
+        "3:17",
+        "4:2",
+        "5:1",
+        "5:7",
+        "5:8",
+        "5:16",
+        "6:14",
+        "6:17",
+        "7:5",
+        "7:8",
+        "7:9",
+        "7:11",
+        "7:13",
+        "8:1",
+        "8:4",
+        "8:5",
+        "9:1",
+        "9:6",
+        "10:7",
+        "10:9",
+        "10:12",
+        "11:1",
+        "11:2",
+        "11:7",
+        "11:10",
+        "11:11",
+        "11:13",
+        "11:15",
+        "11:19",
+        "12:1",
+        "14:3",
+        "14:11",
+        "14:12",
+        "14:13",
+        "14:14"
+      ],
+      "parents": [
+        {
+          "ref_name": "Tobit",
+          "verse": "1:9"
+        },
+        {
+          "ref_name": "Anna",
+          "verse": "1:9"
+        }
+      ],
+      "spouses": [
+        {
+          "ref_name": "Sarah",
+          "verse": "7:13"
+        }
+      ],
+      "descent_note": null,
+      "explicit_ages": [
+        {
+          "what": "lifespan",
+          "years": 127,
+          "verse": "14:14"
+        }
+      ],
+      "identity_note": "Tobias and Sarah had six sons (14:3), unnamed. 14:15 says he lived to hear of the destruction of Nineveh."
+    },
+    {
+      "name": "Sarah",
+      "existing_id": null,
+      "new_id": "sarah-daughter-of-raguel",
+      "gender": "female",
+      "unnamed": false,
+      "aliases": [],
+      "description": "Only daughter of Raguel of Ecbatana, troubled by the demon Asmodaeus; wife of Tobias.",
+      "refs": [
+        "3:7",
+        "3:8",
+        "3:10",
+        "3:11",
+        "3:15",
+        "3:17",
+        "6:10",
+        "6:11",
+        "6:12",
+        "6:13",
+        "6:15",
+        "6:17",
+        "7:1",
+        "7:8",
+        "7:10",
+        "7:11",
+        "7:12",
+        "7:13",
+        "7:17",
+        "8:4",
+        "8:7",
+        "8:8",
+        "10:10",
+        "10:11",
+        "10:12",
+        "11:3",
+        "11:17",
+        "12:12",
+        "12:14",
+        "14:12"
+      ],
+      "parents": [
+        {
+          "ref_name": "Raguel",
+          "verse": "3:7"
+        },
+        {
+          "ref_name": "Edna",
+          "verse": "10:12"
+        }
+      ],
+      "spouses": [
+        {
+          "ref_name": "Tobias",
+          "verse": "7:13"
+        }
+      ],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": "Previously given to seven husbands, all unnamed, killed by Asmodaeus (3:8, 7:11)."
+    },
+    {
+      "name": "Raguel",
+      "existing_id": null,
+      "new_id": "raguel-tobit",
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "Kinsman of Tobit in Ecbatana, father of Sarah and father-in-law of Tobias.",
+      "refs": [
+        "3:7",
+        "3:10",
+        "3:15",
+        "3:17",
+        "6:10",
+        "6:12",
+        "7:1",
+        "7:2",
+        "7:3",
+        "7:6",
+        "7:9",
+        "7:12",
+        "7:16",
+        "8:9",
+        "8:11",
+        "8:15",
+        "8:20",
+        "9:3",
+        "10:7",
+        "10:8",
+        "10:10",
+        "11:1",
+        "14:12",
+        "14:13"
+      ],
+      "parents": [],
+      "spouses": [
+        {
+          "ref_name": "Edna",
+          "verse": "7:2"
+        }
+      ],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": "Calls Tobit \"my cousin\" (7:2) and \"our brother\" (7:4); not the Raguel/Reuel of Exodus."
+    },
+    {
+      "name": "Edna",
+      "existing_id": null,
+      "new_id": "edna-tobit",
+      "gender": "female",
+      "unnamed": false,
+      "aliases": [],
+      "description": "Wife of Raguel and mother of Sarah.",
+      "refs": [
+        "7:2",
+        "7:8",
+        "7:14",
+        "7:16",
+        "7:17",
+        "8:12",
+        "10:12",
+        "11:1",
+        "14:13"
+      ],
+      "parents": [],
+      "spouses": [
+        {
+          "ref_name": "Raguel",
+          "verse": "7:2"
+        }
+      ],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": null
+    },
+    {
+      "name": "Gabael",
+      "existing_id": null,
+      "new_id": "gabael-of-rages",
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "Kinsman in Rages of Media with whom Tobit deposited ten talents of silver.",
+      "refs": [
+        "1:14",
+        "4:1",
+        "4:20",
+        "5:6",
+        "9:2",
+        "9:5",
+        "9:6",
+        "10:2"
+      ],
+      "parents": [
+        {
+          "ref_name": "Gabrias",
+          "verse": "4:20"
+        }
+      ],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": "1:14 calls him \"the brother of Gabrias\" while 4:20 calls him \"the son of Gabrias\"; the WEB text is internally inconsistent here (Greek recensions differ). Parent link taken from 4:20 only; reviewer may wish to drop it."
+    },
+    {
+      "name": "Gabrias",
+      "existing_id": null,
+      "new_id": "gabrias",
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "Relative (father per 4:20, brother per 1:14) of Gabael of Rages.",
+      "refs": [
+        "1:14",
+        "4:20"
+      ],
+      "parents": [],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": null
+    },
+    {
+      "name": "Enemessar",
+      "existing_id": "shalmaneser",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "King of Assyria who deported Tobit; Tobit served as his purchasing agent.",
+      "refs": [
+        "1:2",
+        "1:13",
+        "1:15",
+        "1:16"
+      ],
+      "parents": [],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": "Enemessar is the Greek (LXX) form of Shalmaneser, the Assyrian king of the Israelite deportation (2 Kgs 17). Tobit 1:15 says \"Sennacherib his son\" succeeded him; historically Sennacherib was the son of Sargon II, so that filiation is NOT recorded as a parent link on the existing ids."
+    },
+    {
+      "name": "Sennacherib",
+      "existing_id": "sennacherib",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "King of Assyria who killed exiles and sought Tobit; murdered by two of his sons.",
+      "refs": [
+        "1:15",
+        "1:18",
+        "1:19",
+        "1:21"
+      ],
+      "parents": [],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": "Tobit 1:15 calls him son of Enemessar (Shalmaneser); deliberately not recorded as a parent link (historically son of Sargon II). His murder by two unnamed sons (1:21) matches 2 Kgs 19:37."
+    },
+    {
+      "name": "Sarchedonus",
+      "existing_id": "esarhaddon",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "Son and successor of Sennacherib who appointed Achiacharus over his accounts.",
+      "refs": [
+        "1:21",
+        "1:22"
+      ],
+      "parents": [
+        {
+          "ref_name": "Sennacherib",
+          "verse": "1:21",
+          "existing_id": "sennacherib"
+        }
+      ],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": "Sarchedonus is the Greek form of Esarhaddon (cf. 2 Kgs 19:37 \"Esarhaddon his son reigned in his place\")."
+    },
+    {
+      "name": "Achiacharus",
+      "existing_id": null,
+      "new_id": "achiacharus",
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [
+        "Manasses"
+      ],
+      "description": "Tobit's nephew, chief officer of Sarchedonus, who supported Tobit; the Ahiqar of the Aramaic wisdom tale.",
+      "refs": [
+        "1:21",
+        "1:22",
+        "2:10",
+        "11:18",
+        "14:10"
+      ],
+      "parents": [
+        {
+          "ref_name": "Anael",
+          "verse": "1:21"
+        }
+      ],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": "Son of Tobit's brother Anael (1:21-22). \"Manasses\" in 14:10 (\"Manasses gave alms, and escaped the snare of death which he set for him\") is widely taken as a scribal corruption for Achiacharus (Sinaiticus reads Ahikar there); treated as an alias, not a separate person. Reviewer should confirm."
+    },
+    {
+      "name": "Anael",
+      "existing_id": null,
+      "new_id": "anael-tobit",
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "Tobit's brother, father of Achiacharus.",
+      "refs": [
+        "1:21"
+      ],
+      "parents": [],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": "\"my brother Anael\" (1:21); parentage not stated, so no parent link to Tobiel is recorded."
+    },
+    {
+      "name": "Nasbas",
+      "existing_id": null,
+      "new_id": "nasbas",
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "Nephew who came with Achiacharus to Tobias' wedding feast.",
+      "refs": [
+        "11:18"
+      ],
+      "parents": [],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": "11:18 \"Achiacharus and Nasbas his brother's son came\" is ambiguous (\"his\" may be Achiacharus or Tobit); no parent link recorded."
+    },
+    {
+      "name": "Aman",
+      "existing_id": null,
+      "new_id": "aman-tobit",
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "Man raised by Achiacharus who betrayed him and perished in his own snare.",
+      "refs": [
+        "14:10"
+      ],
+      "parents": [],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": "Not Haman of Esther: this is the treacherous adopted son/nephew of Ahiqar (Nadin/Nadab in other versions). Text: \"Aman ... Achiacharus who nourished him\" (14:10)."
+    },
+    {
+      "name": "Ananias",
+      "existing_id": null,
+      "new_id": "ananias-son-of-shemaiah",
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "Israelite kinsman known to Tobit, whose son Raphael claimed to be.",
+      "refs": [
+        "5:12",
+        "5:13"
+      ],
+      "parents": [
+        {
+          "ref_name": "Shemaiah",
+          "verse": "5:13"
+        }
+      ],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": "Raphael, disguised, calls himself \"Azarias, the son of Ananias the great\" (5:12); Azarias is the angel's assumed name and is excluded, but Ananias himself is treated by Tobit as a real kinsman (5:13)."
+    },
+    {
+      "name": "Jathan",
+      "existing_id": null,
+      "new_id": "jathan-tobit",
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "Son of Shemaiah, brother of Ananias, a pilgrim companion of Tobit.",
+      "refs": [
+        "5:13"
+      ],
+      "parents": [
+        {
+          "ref_name": "Shemaiah",
+          "verse": "5:13"
+        }
+      ],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": null
+    },
+    {
+      "name": "Shemaiah",
+      "existing_id": null,
+      "new_id": "shemaiah-tobit",
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "Kinsman called \"the great\", father of Ananias and Jathan.",
+      "refs": [
+        "5:13"
+      ],
+      "parents": [],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": "Not identified with any Hebrew-Bible Shemaiah."
+    },
+    {
+      "name": "the Ninevite informer",
+      "existing_id": null,
+      "new_id": "ninevite-informer-tobit",
+      "gender": "male",
+      "unnamed": true,
+      "aliases": [],
+      "description": "Man of Nineveh who reported to the king that Tobit was burying the dead.",
+      "refs": [
+        "1:19"
+      ],
+      "parents": [],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": null
+    },
+    {
+      "name": "Raguel's maidservant",
+      "existing_id": null,
+      "new_id": "raguel-maidservant-tobit",
+      "gender": "female",
+      "unnamed": true,
+      "aliases": [],
+      "description": "Maidservant sent by Edna to see whether Tobias had survived the wedding night.",
+      "refs": [
+        "8:12",
+        "8:13",
+        "8:14"
+      ],
+      "parents": [],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": null
+    },
+    {
+      "name": "Amos",
+      "existing_id": "amos-amo1",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "Prophet whose words Tobit recalls (Amos 8:10).",
+      "refs": [
+        "2:6"
+      ],
+      "parents": [],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": null
+    },
+    {
+      "name": "Noah",
+      "existing_id": "noah",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "Patriarch cited as having married within his kindred.",
+      "refs": [
+        "4:12"
+      ],
+      "parents": [],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": null
+    },
+    {
+      "name": "Abraham",
+      "existing_id": "abram",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "Patriarch cited as having married within his kindred.",
+      "refs": [
+        "4:12"
+      ],
+      "parents": [],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": null
+    },
+    {
+      "name": "Isaac",
+      "existing_id": "isaac",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "Patriarch cited as having married within his kindred.",
+      "refs": [
+        "4:12"
+      ],
+      "parents": [],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": null
+    },
+    {
+      "name": "Jacob",
+      "existing_id": "jacob",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "Patriarch cited as having married within his kindred.",
+      "refs": [
+        "4:12"
+      ],
+      "parents": [],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": null
+    },
+    {
+      "name": "Moses",
+      "existing_id": "moses",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "Lawgiver; \"the law of Moses\" invoked for Sarah's marriage.",
+      "refs": [
+        "6:12",
+        "7:13"
+      ],
+      "parents": [],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": null
+    },
+    {
+      "name": "Adam",
+      "existing_id": "adam",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "First man, invoked in Tobias' wedding-night prayer.",
+      "refs": [
+        "8:6"
+      ],
+      "parents": [],
+      "spouses": [
+        {
+          "ref_name": "Eve",
+          "verse": "8:6",
+          "existing_id": "eve"
+        }
+      ],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": null
+    },
+    {
+      "name": "Eve",
+      "existing_id": "eve",
+      "new_id": null,
+      "gender": "female",
+      "unnamed": false,
+      "aliases": [],
+      "description": "First woman, invoked in Tobias' wedding-night prayer.",
+      "refs": [
+        "8:6"
+      ],
+      "parents": [],
+      "spouses": [
+        {
+          "ref_name": "Adam",
+          "verse": "8:6",
+          "existing_id": "adam"
+        }
+      ],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": null
+    },
+    {
+      "name": "Jonah",
+      "existing_id": "jonah-2ki14",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "Prophet whose oracle against Nineveh Tobit believes.",
+      "refs": [
+        "14:4",
+        "14:8"
+      ],
+      "parents": [],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": null
+    },
+    {
+      "name": "Nebuchadnezzar",
+      "existing_id": null,
+      "new_id": "nebuchadnezzar-tobit",
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "King credited, with Ahasuerus, with the destruction of Nineveh.",
+      "refs": [
+        "14:15"
+      ],
+      "parents": [],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": "Historically Nineveh fell (612 BC) to Nabopolassar of Babylon and Cyaxares of Media; the book names Nebuchadnezzar (Nabopolassar's son). Not mapped to the existing nebuchadnezzar id because the text's referent is historically confused; reviewer may merge if the project prefers name-based mapping."
+    },
+    {
+      "name": "Ahasuerus",
+      "existing_id": null,
+      "new_id": "ahasuerus-tobit",
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "King credited, with Nebuchadnezzar, with the destruction of Nineveh.",
+      "refs": [
+        "14:15"
+      ],
+      "parents": [],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": "Not the Ahasuerus (Xerxes) of Esther; usually understood as Cyaxares of Media. Possibly the same Median figure as ahasuerus-dan9, but not asserted."
+    }
+  ],
+  "excluded_names": {
+    "Naphtali": "tribe (1:1,1:4,1:5,7:3 tribe/sons of Naphtali); also part of place name Kedesh Naphtali (1:2)",
+    "Assyrians": "people",
+    "Thisbe": "place",
+    "Kedesh": "place",
+    "Galilee": "place",
+    "Asher": "tribe territory (1:2 \"above Asher\")",
+    "Nineveh": "place",
+    "Ninevah": "place (spelling variant 1:17)",
+    "Ninevites": "people (the single informer of 1:19 is entered as an unnamed person)",
+    "Israel": "nation/land",
+    "Jerusalem": "place",
+    "Baal": "deity",
+    "Aaron": "\"the priests the sons of Aaron\" (1:6) denotes the priestly class, not the person",
+    "Levi": "\"the sons of Levi\" (1:7) denotes the Levites as a group",
+    "Media": "place",
+    "Rages": "place",
+    "Judea": "place",
+    "Ararat": "place (mountains)",
+    "Elymais": "place",
+    "Ecbatana": "place",
+    "Asmodaeus": "demon",
+    "Raphael": "angel",
+    "Azarias": "assumed name of the angel Raphael (5:12, 6:6, 6:13, 7:8, 9:2); not a human",
+    "Tigris": "river",
+    "Egypt": "place",
+    "Ophir": "place"
+  },
+  "notes": "Text read in full (244 verses). Gabael is two people: Tobit's ancestor (1:1) and the trustee at Rages (1:14 ff.). WEB 1:14 \"brother of Gabrias\" vs 4:20 \"son of Gabrias\" conflict. Enemessar=Shalmaneser, Sarchedonus=Esarhaddon mapped; the stated succession \"Sennacherib his son\" (1:15) is historically wrong and is not recorded as a parent link. \"Manasses\" (14:10) treated as alias of Achiacharus. Ananias/Jathan/Shemaiah are real kinsmen in the story even though \"Azarias son of Ananias\" is the angel's cover identity. Unnamed groups skipped: Sarah's seven previous husbands (3:8), Sennacherib's two murderous sons (1:21; = Adrammelech and Sharezer of 2 Kgs 19:37), Tobias' six sons (14:3), servants. Tobit refs include named verses plus key narrative self-references; pronoun-only verses are not exhaustively listed. Nebuchadnezzar and Ahasuerus (14:15) kept as new ids (historically Nabopolassar and Cyaxares took Nineveh). Tobit (Naphtalite) and Raguel are kin, and Tobias is Sarah's nearest kinsman (6:11), but no common ancestor is named."
+}

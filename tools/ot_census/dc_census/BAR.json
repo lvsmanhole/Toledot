@@ -1,0 +1,470 @@
+{
+  "book": "BAR",
+  "people": [
+    {
+      "name": "Baruch",
+      "existing_id": "baruch-jer32",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "Scribe who wrote the book in Babylon and read it to the exiles.",
+      "refs": [
+        "1:1",
+        "1:3"
+      ],
+      "parents": [
+        {
+          "ref_name": "Nerias",
+          "verse": "1:1",
+          "existing_id": "neriah"
+        }
+      ],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": "Baruch son of Neriah son of Mahseiah matches Jeremiah 32:12; Baruch 1:1 extends the line three generations further."
+    },
+    {
+      "name": "Nerias",
+      "existing_id": "neriah",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [
+        "Neriah"
+      ],
+      "description": "Father of Baruch.",
+      "refs": [
+        "1:1"
+      ],
+      "parents": [
+        {
+          "ref_name": "Maaseas",
+          "verse": "1:1",
+          "existing_id": "mahseiah"
+        }
+      ],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": null
+    },
+    {
+      "name": "Maaseas",
+      "existing_id": "mahseiah",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [
+        "Mahseiah",
+        "Maaseiah"
+      ],
+      "description": "Grandfather of Baruch.",
+      "refs": [
+        "1:1"
+      ],
+      "parents": [
+        {
+          "ref_name": "Sedekias",
+          "verse": "1:1",
+          "new_id": "zedekiah-son-of-hasadiah-bar"
+        }
+      ],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": "= Mahseiah of Jeremiah 32:12 / 51:59."
+    },
+    {
+      "name": "Sedekias",
+      "existing_id": null,
+      "new_id": "zedekiah-son-of-hasadiah-bar",
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [
+        "Zedekiah"
+      ],
+      "description": "Great-grandfather of Baruch, son of Asadias.",
+      "refs": [
+        "1:1"
+      ],
+      "parents": [
+        {
+          "ref_name": "Asadias",
+          "verse": "1:1",
+          "new_id": "hasadiah-ancestor-of-baruch"
+        }
+      ],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": "Distinct from King Sedekias son of Josias (1:8)."
+    },
+    {
+      "name": "Asadias",
+      "existing_id": null,
+      "new_id": "hasadiah-ancestor-of-baruch",
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [
+        "Hasadiah"
+      ],
+      "description": "Ancestor of Baruch, son of Helkias.",
+      "refs": [
+        "1:1"
+      ],
+      "parents": [
+        {
+          "ref_name": "Helkias",
+          "verse": "1:1",
+          "new_id": "hilkiah-ancestor-of-baruch"
+        }
+      ],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": "Not the existing 'hasadiah' (a post-exilic descendant of Jehoiachin, 1 Chr 3:20)."
+    },
+    {
+      "name": "Helkias",
+      "existing_id": null,
+      "new_id": "hilkiah-ancestor-of-baruch",
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [
+        "Hilkiah"
+      ],
+      "description": "Earliest named ancestor of Baruch.",
+      "refs": [
+        "1:1"
+      ],
+      "parents": [],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": "Not identifiable with any Hebrew-Bible Hilkiah; distinct from Helkias father of the high priest Joakim (1:7)."
+    },
+    {
+      "name": "Jechonias",
+      "existing_id": "jehoiachin",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [
+        "Jeconiah"
+      ],
+      "description": "Exiled king of Judah who heard Baruch's reading in Babylon.",
+      "refs": [
+        "1:3",
+        "1:9"
+      ],
+      "parents": [
+        {
+          "ref_name": "Joakim",
+          "verse": "1:3",
+          "existing_id": "jehoiakim"
+        }
+      ],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": null
+    },
+    {
+      "name": "Joakim",
+      "existing_id": "jehoiakim",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "King of Judah, father of Jechonias.",
+      "refs": [
+        "1:3"
+      ],
+      "parents": [],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": null
+    },
+    {
+      "name": "Joakim",
+      "existing_id": null,
+      "new_id": "joakim-high-priest-bar",
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [
+        "Jehoiakim"
+      ],
+      "description": "High priest in Jerusalem to whom the exiles sent money.",
+      "refs": [
+        "1:7"
+      ],
+      "parents": [
+        {
+          "ref_name": "Helkias",
+          "verse": "1:7",
+          "new_id": "hilkiah-father-of-joakim-bar"
+        }
+      ],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": "Absent from the Hebrew Bible's high-priest lists (Seraiah was high priest at the fall, 2 Ki 25:18); unrelated to Joiakim son of Jeshua (Neh 12:10)."
+    },
+    {
+      "name": "Helkias",
+      "existing_id": null,
+      "new_id": "hilkiah-father-of-joakim-bar",
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [
+        "Hilkiah"
+      ],
+      "description": "Father of the high priest Joakim, son of Salom.",
+      "refs": [
+        "1:7"
+      ],
+      "parents": [
+        {
+          "ref_name": "Salom",
+          "verse": "1:7",
+          "new_id": "shallum-grandfather-of-joakim-bar"
+        }
+      ],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": "'Hilkiah son of Shallum' matches the high priest Hilkiah son of Shallum (existing 'hilkiah-2ki22', 1 Chr 6:13), but that genealogy gives him no son Joakim; possible identity flagged, not mapped."
+    },
+    {
+      "name": "Salom",
+      "existing_id": null,
+      "new_id": "shallum-grandfather-of-joakim-bar",
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [
+        "Shallum"
+      ],
+      "description": "Grandfather of the high priest Joakim.",
+      "refs": [
+        "1:7"
+      ],
+      "parents": [],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": "Possibly = Shallum the high priest (existing 'shallum-1ch6'); not mapped, see the Helkias (1:7) note."
+    },
+    {
+      "name": "Sedekias",
+      "existing_id": "zedekiah-2ki24",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [
+        "Zedekiah"
+      ],
+      "description": "King of Judah who had silver temple vessels made.",
+      "refs": [
+        "1:8"
+      ],
+      "parents": [
+        {
+          "ref_name": "Josias",
+          "verse": "1:8",
+          "existing_id": "josiah-1ki13"
+        }
+      ],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": null
+    },
+    {
+      "name": "Josias",
+      "existing_id": "josiah-1ki13",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [
+        "Josiah"
+      ],
+      "description": "King of Judah, father of Sedekias.",
+      "refs": [
+        "1:8"
+      ],
+      "parents": [],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": null
+    },
+    {
+      "name": "Nabuchodonosor",
+      "existing_id": "nebuchadnezzar",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [
+        "Nebuchadnezzar"
+      ],
+      "description": "King of Babylon who exiled Jechonias.",
+      "refs": [
+        "1:9",
+        "1:11",
+        "1:12",
+        "6:1",
+        "6:2"
+      ],
+      "parents": [],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": "6:1 'the king of the Babylonians' is named in 6:2."
+    },
+    {
+      "name": "Baltasar",
+      "existing_id": "belshazzar",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [
+        "Belshazzar"
+      ],
+      "description": "Son of Nabuchodonosor for whose life the exiles are to pray.",
+      "refs": [
+        "1:11",
+        "1:12"
+      ],
+      "parents": [
+        {
+          "ref_name": "Nabuchodonosor",
+          "verse": "1:11",
+          "existing_id": "nebuchadnezzar"
+        }
+      ],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": "The text calls him Nebuchadnezzar's son (as Daniel 5 does); historically he was son of Nabonidus, as the existing 'belshazzar' description says. Parent link recorded as stated; reviewer may treat it as dynastic."
+    },
+    {
+      "name": "Moses",
+      "existing_id": "moses",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "Lawgiver through whom the curse and the law were given.",
+      "refs": [
+        "1:20",
+        "2:2",
+        "2:28"
+      ],
+      "parents": [],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": null
+    },
+    {
+      "name": "Abraham",
+      "existing_id": "abram",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "Patriarch to whom the land was promised.",
+      "refs": [
+        "2:34"
+      ],
+      "parents": [],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": null
+    },
+    {
+      "name": "Isaac",
+      "existing_id": "isaac",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "Patriarch to whom the land was promised.",
+      "refs": [
+        "2:34"
+      ],
+      "parents": [],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": null
+    },
+    {
+      "name": "Jacob",
+      "existing_id": "jacob",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "Patriarch to whom the land was promised.",
+      "refs": [
+        "2:34"
+      ],
+      "parents": [],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": "'Jacob' in 3:36 and 4:2 denotes the people and is not counted."
+    },
+    {
+      "name": "Jeremy",
+      "existing_id": "jeremiah-2ch35",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [
+        "Jeremiah"
+      ],
+      "description": "Prophet credited with the letter to the exiles (Letter of Jeremiah, ch.6).",
+      "refs": [
+        "6:1"
+      ],
+      "parents": [],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": null
+    }
+  ],
+  "excluded_names": {
+    "Babylon": "place",
+    "Chaldeans": "people",
+    "Jerusalem": "place",
+    "Judah": "kingdom/people",
+    "Sud": "river",
+    "Sivan": "month",
+    "Egypt": "place",
+    "Israel": "the nation",
+    "Canaan": "place",
+    "Teman": "place/people",
+    "Agar": "eponym for a people ('sons of Agar' 3:23), not the person Hagar",
+    "Merran": "place",
+    "Zion": "place",
+    "Babylonians": "people",
+    "Bel": "idol",
+    "Everlasting": "divine title",
+    "Savior": "divine title",
+    "Righteous": "word",
+    "Peace": "word",
+    "Godly": "word",
+    "Glory": "word",
+    "Bow": "verb",
+    "Put": "verb",
+    "Jacob (3:36, 4:2)": "the nation"
+  },
+  "notes": "Baruch 1:1 genealogy: Baruch < Nerias < Maaseas < Sedekias < Asadias < Helkias, recorded as a parent chain; Baruch/Nerias/Maaseas mapped to existing baruch-jer32 / neriah / mahseiah (Jer 32:12). Ch.1 has two different Helkias, two Sedekias and two Joakims; parent links carry 'new_id' or 'existing_id' to disambiguate. Chapter 6 = Letter of Jeremiah (6:1-73); only Jeremy and Nabuchodonosor are named people there. Oddities: 1:2 'fifth year' after the burning of Jerusalem with Baruch in Babylon (Jeremiah 43 places him in Egypt); 1:8 has vessels made by Sedekias returned after Jechonias's exile; 1:11 Baltasar as son of Nebuchadnezzar."
+}

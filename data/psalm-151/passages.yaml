@@ -1,0 +1,5 @@
+schema_version: 1
+record_type: passages
+records:
+  - {id: psalm-151-1-census, work_id: psalm-151, witness_id: web-psalm-151, locator: "Psalm 151 1", citations: [{source_id: world-english-bible, locator: "Psalm 151 1", witness_id: web-psalm-151}]}
+  - {id: psalm-151-1-lxx, work_id: psalm-151, witness_id: lxx-psalm-151-rahlfs-hanhart, locator: "Psalm 151 1", correspondence_note: "Chapter correspondence with the Greek edition is assumed, not checked.", citations: [{source_id: rahlfs-hanhart-2006, locator: "Psalm 151 1", witness_id: lxx-psalm-151-rahlfs-hanhart}]}

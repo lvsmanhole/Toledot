@@ -1,0 +1,4 @@
+schema_version: 1
+record_type: events
+records:
+  - {id: wisdom-of-solomon-narrative, event_type: book_narrative, name: "Wisdom of Solomon", participants: [], date_claim_ids: [], citations: [{source_id: world-english-bible, locator: "Wisdom of Solomon", witness_id: web-wisdom-of-solomon}]}

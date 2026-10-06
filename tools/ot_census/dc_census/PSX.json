@@ -1,0 +1,77 @@
+{
+  "book": "PSX",
+  "people": [
+    {
+      "name": "David",
+      "existing_id": "david",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "Youngest son who tended sheep, was anointed and killed Goliath; speaker of the psalm.",
+      "refs": [
+        "1:1",
+        "1:2",
+        "1:3",
+        "1:4",
+        "1:5",
+        "1:6",
+        "1:7"
+      ],
+      "parents": [
+        {
+          "ref_name": "David's father",
+          "verse": "1:1",
+          "existing_id": "jesse"
+        }
+      ],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": "Named in the superscription (1:1); speaks in the first person through 1:7."
+    },
+    {
+      "name": "David's father",
+      "existing_id": "jesse",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": true,
+      "aliases": [],
+      "description": "David's father, whose sheep David tended (Jesse, not named here).",
+      "refs": [
+        "1:1",
+        "1:4"
+      ],
+      "parents": [],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": "'my father's house' / 'my father's sheep'; Jesse is not named but the identity is unambiguous."
+    },
+    {
+      "name": "Goliath",
+      "existing_id": "goliath",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "Philistine champion beheaded by David.",
+      "refs": [
+        "1:1",
+        "1:6",
+        "1:7"
+      ],
+      "parents": [],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": "Named in 1:1; 'the Philistine' in 1:6-7."
+    }
+  ],
+  "excluded_names": {
+    "Psalm": "word in superscription",
+    "Philistine": "= Goliath (1:6), merged",
+    "Israel": "the nation"
+  },
+  "notes": "7 verses. David's brothers (1:1, 1:5) are an unnamed group and are not recorded. The superscription is part of 1:1."
+}

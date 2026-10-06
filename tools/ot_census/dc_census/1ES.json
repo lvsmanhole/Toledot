@@ -1,0 +1,7422 @@
+{
+ "book": "1ES",
+ "people": [
+  {
+   "name": "Josias",
+   "existing_id": "josiah-1ki13",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "King of Judah who held the great Passover and died after the battle at Megiddo.",
+   "refs": [
+    "1:1",
+    "1:7",
+    "1:18",
+    "1:21",
+    "1:22",
+    "1:23",
+    "1:25",
+    "1:28",
+    "1:29",
+    "1:31",
+    "1:32",
+    "1:33",
+    "1:34"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Solomon",
+   "existing_id": "solomon",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "King of Israel, son of David, builder of the temple; ancestor-figure of 'Solomon's servants'.",
+   "refs": [
+    "1:3",
+    "1:5",
+    "5:33",
+    "5:35"
+   ],
+   "parents": [
+    {
+     "ref_name": "David",
+     "verse": "1:3",
+     "existing_id": "david"
+    }
+   ],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "David",
+   "existing_id": "david",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "King of Israel; his ordinances for the Levites and singers are cited.",
+   "refs": [
+    "1:3",
+    "1:5",
+    "1:15",
+    "5:5",
+    "5:60",
+    "8:29",
+    "8:49"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Moses",
+   "existing_id": "moses",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Lawgiver whose book and commandments are cited.",
+   "refs": [
+    "1:6",
+    "1:11",
+    "5:49",
+    "7:6",
+    "7:9",
+    "8:3",
+    "9:39"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Aaron",
+   "existing_id": "aaron",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "First chief priest, ancestor of the priests and of Esdras.",
+   "refs": [
+    "1:13",
+    "1:14",
+    "5:5",
+    "8:2"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Helkias",
+   "existing_id": "hilkiah-2ki22",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "High priest under Josias, a ruler of the temple at the Passover; also an ancestor of Esdras.",
+   "refs": [
+    "1:8",
+    "8:1"
+   ],
+   "parents": [
+    {
+     "ref_name": "Salem",
+     "verse": "8:1",
+     "existing_id": "shallum-1ch6"
+    }
+   ],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "1:8 parallels 2 Chr 35:8 (Hilkiah); 8:1 parallels Ezra 7:1 (Hilkiah). Both treated as the same high priest, as in the project."
+  },
+  {
+   "name": "Zacharias",
+   "existing_id": "zechariah-2ch35",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "A ruler of the temple who gave Passover offerings under Josias.",
+   "refs": [
+    "1:8"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Esyelus",
+   "existing_id": "jehiel-2ch35",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "A ruler of the temple who gave Passover offerings under Josias.",
+   "refs": [
+    "1:8"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Parallel position: Jehiel (2 Chr 35:8)."
+  },
+  {
+   "name": "Jeconias",
+   "existing_id": "conaniah",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Levite captain over thousands who gave Passover animals under Josias.",
+   "refs": [
+    "1:9"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Parallel 2 Chr 35:9 Conaniah. Not the king Jeconiah/Jehoiachin."
+  },
+  {
+   "name": "Samaias",
+   "existing_id": "shemaiah-2ch35",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Levite captain who gave Passover animals under Josias; brother of Nathanael.",
+   "refs": [
+    "1:9"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Nathanael",
+   "existing_id": "nethanel-2ch35",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Levite captain, brother of Samaias, at Josias' Passover.",
+   "refs": [
+    "1:9"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Sabias",
+   "existing_id": "hashabiah-2ch35",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Levite captain at Josias' Passover.",
+   "refs": [
+    "1:9"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Parallel 2 Chr 35:9 Hashabiah."
+  },
+  {
+   "name": "Ochielus",
+   "existing_id": "jeiel-2ch35",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Levite captain at Josias' Passover.",
+   "refs": [
+    "1:9"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Parallel 2 Chr 35:9 Jeiel."
+  },
+  {
+   "name": "Joram",
+   "existing_id": "jozabad-2ch35",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Levite captain at Josias' Passover.",
+   "refs": [
+    "1:9"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Doubtful: positional parallel is Jozabad (2 Chr 35:9); the name differs."
+  },
+  {
+   "name": "Asaph",
+   "existing_id": "asaph-1ch6",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "David's chief musician; the temple singers are 'the sons of Asaph'.",
+   "refs": [
+    "1:15",
+    "5:27",
+    "5:59"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Zacharias",
+   "existing_id": "heman-1ch6",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Named with Asaph and Eddinus as the singers' ancestral leaders appointed by David.",
+   "refs": [
+    "1:15"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Doubtful: in the parallel 2 Chr 35:15 the trio is Asaph, Heman and Jeduthun; 1 Esdras has Zacharias in Heman's position."
+  },
+  {
+   "name": "Eddinus",
+   "existing_id": "jeduthun-1ch6",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Musician 'who represented the king', named with Asaph.",
+   "refs": [
+    "1:15"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Parallel 2 Chr 35:15 Jeduthun 'the king's seer'."
+  },
+  {
+   "name": "Samuel",
+   "existing_id": "samuel",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Prophet; no such Passover had been kept since his time.",
+   "refs": [
+    "1:20"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Pharaoh",
+   "existing_id": "neco",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "King of Egypt who fought Josias at Megiddo, deposed Joachaz and installed Joakim.",
+   "refs": [
+    "1:25",
+    "1:26",
+    "1:35",
+    "1:37"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Unnamed beyond 'Pharaoh the king of Egypt'; parallel 2 Chr 35:20-36:4 names him Neco."
+  },
+  {
+   "name": "Jeremy",
+   "existing_id": "jeremiah-2ch35",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "The prophet whose warnings went unheeded and who lamented Josias.",
+   "refs": [
+    "1:28",
+    "1:32",
+    "1:47",
+    "1:57",
+    "2:1"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Joachaz",
+   "existing_id": "jehoahaz-2ki23",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [
+    "Zarakes"
+   ],
+   "description": "Son of Josias, king for three months before the king of Egypt deposed him.",
+   "refs": [
+    "1:34",
+    "1:38"
+   ],
+   "parents": [
+    {
+     "ref_name": "Josias",
+     "verse": "1:34",
+     "existing_id": "josiah-1ki13"
+    }
+   ],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [
+    {
+     "what": "age at accession",
+     "years": 23,
+     "verse": "1:34"
+    }
+   ],
+   "identity_note": "'Zarakes' (1:38), the brother whom Joakim 'brought up out of Egypt', stands where 2 Chr 36:4 has Jehoahaz carried to Egypt; merged here by parallel position, but doubtful (Greek Zarakes may reflect a different name)."
+  },
+  {
+   "name": "Joakim",
+   "existing_id": "jehoiakim",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Son of Josias made king by the king of Egypt; bound and taken to Babylon by Nabuchodonosor.",
+   "refs": [
+    "1:37",
+    "1:38",
+    "1:39",
+    "1:40",
+    "1:43"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [
+    {
+     "what": "age at accession",
+     "years": 25,
+     "verse": "1:39"
+    }
+   ],
+   "identity_note": "Brother of Joachaz (1:37). Not the same as the Joakim of 1:43b (his son) or Joakim son of Zorobabel (5:5)."
+  },
+  {
+   "name": "Joakim",
+   "existing_id": "jehoiachin",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Son of Joakim; reigned three months and ten days before being brought to Babylon.",
+   "refs": [
+    "1:43",
+    "1:44",
+    "1:45"
+   ],
+   "parents": [
+    {
+     "ref_name": "Joakim",
+     "verse": "1:43",
+     "existing_id": "jehoiakim"
+    }
+   ],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [
+    {
+     "what": "age at accession",
+     "years": 18,
+     "verse": "1:43"
+    }
+   ],
+   "identity_note": "1 Esdras calls Jehoiachin 'Joakim' like his father; parallel 2 Chr 36:9 (Jehoiachin, age 8; 2 Kgs 24:8 age 18)."
+  },
+  {
+   "name": "Nabuchodonosor",
+   "existing_id": "nebuchadnezzar",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "King of Babylon who deported the kings of Judah, took the temple vessels, and destroyed Jerusalem.",
+   "refs": [
+    "1:40",
+    "1:41",
+    "1:45",
+    "1:48",
+    "2:10",
+    "5:7",
+    "6:15",
+    "6:18",
+    "6:26"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Sedekias",
+   "existing_id": "zedekiah-2ki24",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Last king of Judea, made king by Nabuchodonosor; reigned eleven years and rebelled.",
+   "refs": [
+    "1:46",
+    "1:47",
+    "1:48"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [
+    {
+     "what": "age at accession",
+     "years": 21,
+     "verse": "1:46"
+    }
+   ],
+   "identity_note": null
+  },
+  {
+   "name": "Cyrus",
+   "existing_id": "cyrus",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "King of the Persians who decreed the return and the rebuilding of the temple.",
+   "refs": [
+    "2:1",
+    "2:2",
+    "2:3",
+    "2:10",
+    "2:11",
+    "4:44",
+    "4:57",
+    "5:55",
+    "5:71",
+    "5:73",
+    "6:17",
+    "6:18",
+    "6:22",
+    "6:24",
+    "6:25",
+    "7:4"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Mithradates",
+   "existing_id": "mithredath-ezr1",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Treasurer of Cyrus who handed over the temple vessels to Sanabassar.",
+   "refs": [
+    "2:11"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Sanabassar",
+   "existing_id": null,
+   "new_id": "sheshbazzar-1es",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [
+    "Sanabassarus"
+   ],
+   "description": "Governor of Judea who received the temple vessels from Cyrus and laid the temple's foundations.",
+   "refs": [
+    "2:12",
+    "2:15",
+    "6:18",
+    "6:20"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Greek form of Sheshbazzar (Ezra 1:8, 5:14-16). The project index has no separate Sheshbazzar: it lists 'Sheshbazzar' as an alias of zerubbabel-1ch3. 1 Esdras 6:18 names Zorobabel and Sanabassarus as two people, so a separate entry is proposed; reviewer should decide whether to merge."
+  },
+  {
+   "name": "Artaxerxes",
+   "existing_id": "artaxerxes",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "King of the Persians who halted the rebuilding of Jerusalem and later commissioned Esdras.",
+   "refs": [
+    "2:16",
+    "2:17",
+    "2:25",
+    "2:30",
+    "7:4",
+    "8:1",
+    "8:6",
+    "8:8",
+    "8:9",
+    "8:19",
+    "8:28"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Ch. 2 parallels Ezra 4:7-23; ch. 8 parallels Ezra 7-8. The project has a single 'artaxerxes'."
+  },
+  {
+   "name": "Belemus",
+   "existing_id": "bishlam",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Official in Samaria who wrote against the Jews to Artaxerxes.",
+   "refs": [
+    "2:16"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Parallel Ezra 4:7 Bishlam."
+  },
+  {
+   "name": "Mithradates",
+   "existing_id": "mithredath-ezr4",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Official in Samaria who wrote against the Jews to Artaxerxes.",
+   "refs": [
+    "2:16"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Parallel Ezra 4:7 Mithredath."
+  },
+  {
+   "name": "Tabellius",
+   "existing_id": "tabeel",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Official in Samaria who wrote against the Jews to Artaxerxes.",
+   "refs": [
+    "2:16"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Parallel Ezra 4:7 Tabeel."
+  },
+  {
+   "name": "Rathumus",
+   "existing_id": "rehum-ezr4",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "The 'recorder' who led the complaint to Artaxerxes and stopped the building.",
+   "refs": [
+    "2:16",
+    "2:17",
+    "2:25",
+    "2:30"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Parallel Ezra 4:8-9, 17, 23 Rehum."
+  },
+  {
+   "name": "Beeltethmus",
+   "existing_id": null,
+   "new_id": "beeltethmus-1es",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Official named with Rathumus in the correspondence with Artaxerxes.",
+   "refs": [
+    "2:16",
+    "2:25"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Probably arose from the Aramaic title be'el te'em ('commander, chancellor') given to Rehum in Ezra 4:8-9, 17, but 1 Esdras treats it as a separate person. Kept separate; may not be a real individual."
+  },
+  {
+   "name": "Samellius",
+   "existing_id": "shimshai",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "The scribe who joined Rathumus in writing against Jerusalem.",
+   "refs": [
+    "2:16",
+    "2:17",
+    "2:25",
+    "2:30"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Parallel Ezra 4:8-9 Shimshai the scribe."
+  },
+  {
+   "name": "Darius",
+   "existing_id": "darius-ezr4",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "King of the Persians; held the feast and the bodyguards' contest and authorized the temple's completion.",
+   "refs": [
+    "2:30",
+    "3:1",
+    "3:3",
+    "3:5",
+    "3:7",
+    "3:8",
+    "3:13",
+    "4:28",
+    "4:29",
+    "4:30",
+    "4:31",
+    "4:42",
+    "4:47",
+    "5:2",
+    "5:6",
+    "5:73",
+    "6:1",
+    "6:6",
+    "6:7",
+    "6:8",
+    "6:23",
+    "6:34",
+    "7:1",
+    "7:4",
+    "7:5"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Darius I (cf. Ezra 4:24-6:15). Refs include 'the king' verses in ch. 3-4 that clearly mean him."
+  },
+  {
+   "name": "first bodyguard",
+   "existing_id": null,
+   "new_id": "first-bodyguard-darius-1es",
+   "gender": "male",
+   "unnamed": true,
+   "aliases": [],
+   "description": "Young man of Darius' bodyguard who argued that wine is strongest.",
+   "refs": [
+    "3:4",
+    "3:10",
+    "3:17",
+    "3:18",
+    "3:24"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "second bodyguard",
+   "existing_id": null,
+   "new_id": "second-bodyguard-darius-1es",
+   "gender": "male",
+   "unnamed": true,
+   "aliases": [],
+   "description": "Young man of Darius' bodyguard who argued that the king is strongest.",
+   "refs": [
+    "3:4",
+    "3:11",
+    "4:1",
+    "4:12"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Apame",
+   "existing_id": null,
+   "new_id": "apame-1es",
+   "gender": "female",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Concubine of King Darius, daughter of Barticus, whose power over the king Zorobabel cites.",
+   "refs": [
+    "4:29",
+    "4:30",
+    "4:31"
+   ],
+   "parents": [
+    {
+     "ref_name": "Barticus",
+     "verse": "4:29",
+     "new_id": "barticus-1es"
+    }
+   ],
+   "spouses": [
+    {
+     "ref_name": "Darius",
+     "verse": "4:29",
+     "existing_id": "darius-ezr4"
+    }
+   ],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Described as 'the king's concubine'; listed under spouses for that reason."
+  },
+  {
+   "name": "Barticus",
+   "existing_id": null,
+   "new_id": "barticus-1es",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "'The illustrious' father of Apame, Darius' concubine.",
+   "refs": [
+    "4:29"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Spelled 'Barticus' in this WEB text (other English versions: Bartacus)."
+  },
+  {
+   "name": "Zorobabel",
+   "existing_id": "zerubbabel-1ch3",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Third bodyguard who won Darius' contest with 'truth is strongest', then led the return and rebuilt the temple as governor.",
+   "refs": [
+    "3:12",
+    "4:13",
+    "4:42",
+    "4:58",
+    "4:61",
+    "5:5",
+    "5:8",
+    "5:48",
+    "5:56",
+    "5:68",
+    "5:70",
+    "6:2",
+    "6:18",
+    "6:27",
+    "6:29"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": "Called 'son of Salathiel' (5:5, 5:48, 5:56, 6:2), 'of the house of David, of the lineage of Phares' (5:5). 1 Chr 3:19 makes Zerubbabel son of Pedaiah and grandson of Shealtiel, so Salathiel is not listed as parent.",
+   "explicit_ages": [],
+   "identity_note": "Identified as the third bodyguard in 4:13. Note the project lists Sheshbazzar as an alias of this id; 1 Esdras distinguishes Sanabassar (see that entry)."
+  },
+  {
+   "name": "Salathiel",
+   "existing_id": "shealtiel-1ch3",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Ancestor (named as father) of Zorobabel.",
+   "refs": [
+    "5:5",
+    "5:48",
+    "5:56",
+    "6:2"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Jesus",
+   "existing_id": "joshua-ezr2",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "High priest, son of Josedek, who led the return with Zorobabel and rebuilt the altar and temple.",
+   "refs": [
+    "5:5",
+    "5:8",
+    "5:48",
+    "5:56",
+    "5:68",
+    "5:70",
+    "6:2",
+    "9:19"
+   ],
+   "parents": [
+    {
+     "ref_name": "Josedek",
+     "verse": "5:5",
+     "existing_id": "jehozadak"
+    }
+   ],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Jeshua/Joshua the high priest. At 9:19 (parallel Ezra 10:18) the project codes the clan head as jeshua-1ch24 and his father as 'jozadak'; here treated as the same high priest."
+  },
+  {
+   "name": "Josedek",
+   "existing_id": "jehozadak",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Father of Jesus the high priest; son of Saraias.",
+   "refs": [
+    "5:5",
+    "5:48",
+    "5:56",
+    "6:2",
+    "9:19"
+   ],
+   "parents": [
+    {
+     "ref_name": "Saraias",
+     "verse": "5:5",
+     "existing_id": "seraiah-2ki25"
+    }
+   ],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Saraias",
+   "existing_id": "seraiah-2ki25",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Priest, father of Josedek and grandfather of Jesus the high priest.",
+   "refs": [
+    "5:5"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Phinees",
+   "existing_id": "phinehas",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Grandson of Aaron; ancestor of the priestly families and of Esdras.",
+   "refs": [
+    "5:5",
+    "8:2",
+    "8:29"
+   ],
+   "parents": [
+    {
+     "ref_name": "Eleazar",
+     "verse": "8:2",
+     "existing_id": "eleazar-aaron"
+    }
+   ],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Phares",
+   "existing_id": "perez",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Son of Judah; Zorobabel's line is traced to him.",
+   "refs": [
+    "5:5"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Joakim",
+   "existing_id": null,
+   "new_id": "joakim-son-of-zorobabel-1es",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Named in 5:5 as son of Zorobabel among those who went up.",
+   "refs": [
+    "5:5"
+   ],
+   "parents": [
+    {
+     "ref_name": "Zorobabel",
+     "verse": "5:5",
+     "existing_id": "zerubbabel-1ch3"
+    }
+   ],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "No parallel. Not found among Zerubbabel's sons in 1 Chr 3:19-20. Possibly a corruption of Joiakim son of Jeshua (Neh 12:10, id joiakim); kept separate."
+  },
+  {
+   "name": "Nehemias",
+   "existing_id": "nehemiah-ezr2",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "One of the leaders who returned with Zorobabel; forbade the unregistered priests from the holy things.",
+   "refs": [
+    "5:8",
+    "5:40"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Parallel Ezra 2:2 / Neh 7:7 Nehemiah (not Nehemiah son of Hacaliah)."
+  },
+  {
+   "name": "Zaraias",
+   "existing_id": "seraiah-ezr2",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Leader who returned with Zorobabel.",
+   "refs": [
+    "5:8"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Parallel Ezra 2:2 Seraiah (Neh 7:7 Azariah)."
+  },
+  {
+   "name": "Resaias",
+   "existing_id": "reelaiah",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Leader who returned with Zorobabel.",
+   "refs": [
+    "5:8"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Parallel Ezra 2:2 Reelaiah (Neh 7:7 Raamiah)."
+  },
+  {
+   "name": "Eneneus",
+   "existing_id": "nahamani",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Leader who returned with Zorobabel.",
+   "refs": [
+    "5:8"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Parallel Neh 7:7 Nahamani (absent from Ezra 2:2)."
+  },
+  {
+   "name": "Mardocheus",
+   "existing_id": "mordecai-ezr2",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Leader who returned with Zorobabel.",
+   "refs": [
+    "5:8"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Parallel Ezra 2:2 Mordecai; not Mordecai of Esther."
+  },
+  {
+   "name": "Beelsarus",
+   "existing_id": "bilshan",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Leader who returned with Zorobabel.",
+   "refs": [
+    "5:8"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Parallel Ezra 2:2 Bilshan."
+  },
+  {
+   "name": "Aspharsus",
+   "existing_id": "mispar",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Leader who returned with Zorobabel.",
+   "refs": [
+    "5:8"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Parallel Ezra 2:2 Mispar / Neh 7:7 Mispereth."
+  },
+  {
+   "name": "Reelias",
+   "existing_id": "bigvai-ezr2-2",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Leader who returned with Zorobabel.",
+   "refs": [
+    "5:8"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Doubtful: positional parallel is Bigvai (Ezra 2:2); the name resembles Reelaiah, who already corresponds to Resaias."
+  },
+  {
+   "name": "Roimus",
+   "existing_id": "rehum-ezr2",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Leader who returned with Zorobabel.",
+   "refs": [
+    "5:8"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Parallel Ezra 2:2 Rehum / Neh 7:7 Nehum."
+  },
+  {
+   "name": "Baana",
+   "existing_id": "baanah-ezr2",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Leader who returned with Zorobabel.",
+   "refs": [
+    "5:8"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Phoros",
+   "existing_id": "parosh-ezr2",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Ancestor of a returning lay clan (2,172 in 5:9); some descendants had foreign wives.",
+   "refs": [
+    "5:9",
+    "9:26"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Parallel Ezra 2:3 and 10:25 Parosh. 8:30 is coded separately to parosh-ezr8, following the project's split."
+  },
+  {
+   "name": "Saphat",
+   "existing_id": "shephatiah-ezr2",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [
+    "Saphatias"
+   ],
+   "description": "Ancestor of a returning clan.",
+   "refs": [
+    "5:9",
+    "8:34"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Ezra 2:4 / 8:8 Shephatiah."
+  },
+  {
+   "name": "Ares",
+   "existing_id": "arah-ezr2",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Ancestor of a returning clan.",
+   "refs": [
+    "5:10"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Parallel Ezra 2:5 Arah."
+  },
+  {
+   "name": "Phaath Moab",
+   "existing_id": "pahath-moab-ezr2",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Ancestor of a large returning clan.",
+   "refs": [
+    "5:11",
+    "8:31"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Jesus",
+   "existing_id": "jeshua-ezr2-6",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Sub-clan ancestor within Phaath Moab.",
+   "refs": [
+    "5:11"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Parallel Ezra 2:6 Jeshua."
+  },
+  {
+   "name": "Joab",
+   "existing_id": "joab-ezr2",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Sub-clan ancestor within Phaath Moab.",
+   "refs": [
+    "5:11"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Parallel Ezra 2:6 Joab."
+  },
+  {
+   "name": "Elam",
+   "existing_id": "elam-ezr2",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [
+    "Ela"
+   ],
+   "description": "Ancestor of a returning clan; some descendants had foreign wives.",
+   "refs": [
+    "5:12",
+    "8:33",
+    "9:27"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Ela (9:27) parallels Ezra 10:26 'sons of Elam'."
+  },
+  {
+   "name": "Zathui",
+   "existing_id": "zattu-ezr2",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [
+    "Zathoes",
+    "Zamoth"
+   ],
+   "description": "Ancestor of a returning clan.",
+   "refs": [
+    "5:12",
+    "8:32",
+    "9:28"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Zathoes (8:32) matches LXX Ezra 8:5 (MT lacks Zattu there); Zamoth (9:28) parallels Ezra 10:27 Zattu."
+  },
+  {
+   "name": "Chorbe",
+   "existing_id": "zaccai",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Ancestor of a returning clan.",
+   "refs": [
+    "5:12"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Doubtful: positional parallel Ezra 2:9 Zaccai; the name and number (705 vs 760) differ."
+  },
+  {
+   "name": "Bani",
+   "existing_id": "bani-ezr2",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [
+    "Banias",
+    "Mani"
+   ],
+   "description": "Ancestor of a returning clan; some descendants had foreign wives.",
+   "refs": [
+    "5:12",
+    "8:36",
+    "9:30"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Banias (8:36) parallels LXX Ezra 8:10; Mani (9:30) parallels Ezra 10:29 'sons of Bani'."
+  },
+  {
+   "name": "Bebai",
+   "existing_id": "bebai-ezr2",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [
+    "Babi"
+   ],
+   "description": "Ancestor of a returning clan.",
+   "refs": [
+    "5:13",
+    "8:37",
+    "9:29"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "'Babi' (8:37) is the clan; the father 'Bebai' in the same verse is a separate entry (bebai-ezr8)."
+  },
+  {
+   "name": "Astad",
+   "existing_id": "azgad-ezr2",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [
+    "Azgad",
+    "Astath"
+   ],
+   "description": "Ancestor of a returning clan.",
+   "refs": [
+    "5:13",
+    "8:38"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "8:38 gives both 'Azgad' and 'Astath', a doublet of the same name."
+  },
+  {
+   "name": "Adonikam",
+   "existing_id": "adonikam",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Ancestor of a returning clan.",
+   "refs": [
+    "5:14",
+    "8:39"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Bagoi",
+   "existing_id": "bigvai-ezr2",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [
+    "Bago"
+   ],
+   "description": "Ancestor of a returning clan.",
+   "refs": [
+    "5:14",
+    "8:40"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Adinu",
+   "existing_id": "adin-ezr2",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [
+    "Adin"
+   ],
+   "description": "Ancestor of a returning clan.",
+   "refs": [
+    "5:14",
+    "8:32"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Ater",
+   "existing_id": "ater-ezr2",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Ancestor of a returning clan (sons of Ater, of Ezekias).",
+   "refs": [
+    "5:15"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Ezekias",
+   "existing_id": "hezekiah-ezr2",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Sub-clan ancestor within Ater.",
+   "refs": [
+    "5:15"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Kilan",
+   "existing_id": null,
+   "new_id": "kilan-1es",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Ancestor of a returning clan (with Azetas, 67).",
+   "refs": [
+    "5:15"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "No Ezra/Nehemiah parallel."
+  },
+  {
+   "name": "Azetas",
+   "existing_id": null,
+   "new_id": "azetas-1es",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Ancestor of a returning clan (with Kilan, 67).",
+   "refs": [
+    "5:15"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "No Ezra/Nehemiah parallel."
+  },
+  {
+   "name": "Azaru",
+   "existing_id": null,
+   "new_id": "azaru-1es",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Ancestor of a returning clan (432).",
+   "refs": [
+    "5:15"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "No Ezra/Nehemiah parallel (cf. Azzur, Neh 10:17)."
+  },
+  {
+   "name": "Annis",
+   "existing_id": null,
+   "new_id": "annis-1es",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Ancestor of a returning clan (101).",
+   "refs": [
+    "5:16"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "No Ezra/Nehemiah parallel."
+  },
+  {
+   "name": "Arom",
+   "existing_id": "hashum-ezr2",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [
+    "Asom"
+   ],
+   "description": "Ancestor of a returning clan; some descendants had foreign wives.",
+   "refs": [
+    "5:16",
+    "9:33"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Arom (5:16) is doubtful: it stands where Neh 7:22 has Hashum (just before Bezai). Asom (9:33) clearly parallels Ezra 10:33 Hashum."
+  },
+  {
+   "name": "Bassai",
+   "existing_id": "bezai-ezr2",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Ancestor of a returning clan (323).",
+   "refs": [
+    "5:16"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Parallel Ezra 2:17 Bezai (323)."
+  },
+  {
+   "name": "Arsiphurith",
+   "existing_id": "jorah",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Ancestor of a returning clan (112).",
+   "refs": [
+    "5:16"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Doubtful: parallel position and number (112) match Ezra 2:18 Jorah / Neh 7:24 Hariph; name differs."
+  },
+  {
+   "name": "Jeddu",
+   "existing_id": "jedaiah-1ch24",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Ancestor of a returning priestly house.",
+   "refs": [
+    "5:24"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": "'Son of Jesus' (5:24) reflects Ezra 2:36 'of the house of Jeshua'; not a literal parent.",
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Jesus",
+   "existing_id": "jeshua-1ch24",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Priestly house ancestor named with Jeddu.",
+   "refs": [
+    "5:24"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Parallel Ezra 2:36 'house of Jeshua'."
+  },
+  {
+   "name": "Sanasib",
+   "existing_id": null,
+   "new_id": "sanasib-1es",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Priestly ancestor among whose sons the house of Jeddu is counted.",
+   "refs": [
+    "5:24"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "No parallel in Ezra 2:36 / Neh 7:39 (possibly related to Eliashib); kept separate."
+  },
+  {
+   "name": "Emmeruth",
+   "existing_id": "immer-1ch24",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [
+    "Emmer"
+   ],
+   "description": "Ancestor of a returning priestly house; some descendants had foreign wives.",
+   "refs": [
+    "5:24",
+    "9:21"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Phassurus",
+   "existing_id": "pashhur-1ch9",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [
+    "Phaisur"
+   ],
+   "description": "Ancestor of a returning priestly house; some descendants had foreign wives.",
+   "refs": [
+    "5:25",
+    "9:22"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Charme",
+   "existing_id": "harim-1ch24",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Ancestor of a returning priestly house (1,017).",
+   "refs": [
+    "5:25"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Parallel Ezra 2:39 Harim."
+  },
+  {
+   "name": "Jesus",
+   "existing_id": "jeshua-ezr2",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Levite leader with Kadmiel who oversaw the temple work and taught the law.",
+   "refs": [
+    "5:26",
+    "5:58",
+    "9:48"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Levite Jeshua (Ezra 2:40, 3:9; Neh 8:7). The 'sons of Jesus' in 5:58 are his."
+  },
+  {
+   "name": "Kadmiel",
+   "existing_id": "kadmiel",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Levite leader, 'brother' of Jesus the Levite.",
+   "refs": [
+    "5:26",
+    "5:58"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Bannas",
+   "existing_id": null,
+   "new_id": "bannas-1es",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Levite clan ancestor named with Jesus, Kadmiel and Sudias.",
+   "refs": [
+    "5:26"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "No exact parallel in Ezra 2:40 (perhaps Bani/Binnui)."
+  },
+  {
+   "name": "Sudias",
+   "existing_id": "hodaviah-ezr2",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [
+    "Joda"
+   ],
+   "description": "Levite clan ancestor whose sons helped lead the temple work.",
+   "refs": [
+    "5:26",
+    "5:58"
+   ],
+   "parents": [
+    {
+     "ref_name": "Iliadun",
+     "verse": "5:58",
+     "new_id": "iliadun-1es"
+    }
+   ],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Doubtful. Sudias (5:26) stands where Ezra 2:40 has Hodaviah; Joda (5:58, 'son of Iliadun') stands where Ezra 3:9 has 'the sons of Judah' (= Hodaviah; project id has alias Judah). Both merged into hodaviah-ezr2 by parallel position; the parent link to Iliadun is unique to 1 Esdras."
+  },
+  {
+   "name": "Salum",
+   "existing_id": "shallum-1ch9",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Ancestor of returning gatekeepers.",
+   "refs": [
+    "5:28"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Atar",
+   "existing_id": "ater-ezr2-42",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Ancestor of returning gatekeepers.",
+   "refs": [
+    "5:28"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Tolman",
+   "existing_id": "talmon",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Ancestor of returning gatekeepers.",
+   "refs": [
+    "5:28"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Dacubi",
+   "existing_id": "akkub-1ch9",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Ancestor of returning gatekeepers.",
+   "refs": [
+    "5:28"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Parallel Ezra 2:42 Akkub."
+  },
+  {
+   "name": "Ateta",
+   "existing_id": "hatita",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Ancestor of returning gatekeepers.",
+   "refs": [
+    "5:28"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Sabi",
+   "existing_id": "shobai",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Ancestor of returning gatekeepers.",
+   "refs": [
+    "5:28"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Esau",
+   "existing_id": "ziha-ezr2",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Ancestor of a family of returning temple servants.",
+   "refs": [
+    "5:29"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Doubtful: positional parallel Ezra 2:43 Ziha. Not Esau son of Isaac."
+  },
+  {
+   "name": "Asipha",
+   "existing_id": "hasupha",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Ancestor of a family of returning temple servants.",
+   "refs": [
+    "5:29"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Tabaoth",
+   "existing_id": "tabbaoth",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Ancestor of a family of returning temple servants.",
+   "refs": [
+    "5:29"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Keras",
+   "existing_id": "keros",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Ancestor of a family of returning temple servants.",
+   "refs": [
+    "5:29"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Sua",
+   "existing_id": "siaha",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Ancestor of a family of returning temple servants.",
+   "refs": [
+    "5:29"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Phaleas",
+   "existing_id": "padon",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Ancestor of a family of returning temple servants.",
+   "refs": [
+    "5:29"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Doubtful: positional parallel Ezra 2:44 Padon."
+  },
+  {
+   "name": "Labana",
+   "existing_id": "lebanah",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Ancestor of a family of returning temple servants.",
+   "refs": [
+    "5:29"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Aggaba",
+   "existing_id": "hagabah",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Ancestor of a family of returning temple servants.",
+   "refs": [
+    "5:29"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Acud",
+   "existing_id": "akkub-ezr2",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Ancestor of a family of returning temple servants.",
+   "refs": [
+    "5:30"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Parallel Ezra 2:45 Akkub (temple servant)."
+  },
+  {
+   "name": "Uta",
+   "existing_id": null,
+   "new_id": "uta-1es",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Ancestor of a family of returning temple servants.",
+   "refs": [
+    "5:30"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "No parallel in Ezra 2 / Neh 7."
+  },
+  {
+   "name": "Ketab",
+   "existing_id": null,
+   "new_id": "ketab-1es",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Ancestor of a family of returning temple servants.",
+   "refs": [
+    "5:30"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "No parallel in Ezra 2 / Neh 7."
+  },
+  {
+   "name": "Accaba",
+   "existing_id": "hagab",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Ancestor of a family of returning temple servants.",
+   "refs": [
+    "5:30"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Doubtful: positional parallel Ezra 2:46 Hagab."
+  },
+  {
+   "name": "Subai",
+   "existing_id": "shalmai",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Ancestor of a family of returning temple servants.",
+   "refs": [
+    "5:30"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Doubtful: positional parallel Ezra 2:46 Shamlai."
+  },
+  {
+   "name": "Anan",
+   "existing_id": "hanan-ezr2",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Ancestor of a family of returning temple servants.",
+   "refs": [
+    "5:30"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Cathua",
+   "existing_id": null,
+   "new_id": "cathua-1es",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Ancestor of a family of returning temple servants.",
+   "refs": [
+    "5:30"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "No parallel in Ezra 2 / Neh 7."
+  },
+  {
+   "name": "Geddur",
+   "existing_id": "giddel-ezr2",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Ancestor of a family of returning temple servants.",
+   "refs": [
+    "5:30"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Parallel Ezra 2:47 Giddel (Gahar is missing in 1 Esdras)."
+  },
+  {
+   "name": "Jairus",
+   "existing_id": "reaiah-ezr2",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Ancestor of a family of returning temple servants.",
+   "refs": [
+    "5:31"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Doubtful: positional parallel Ezra 2:47 Reaiah."
+  },
+  {
+   "name": "Daisan",
+   "existing_id": "rezin-ezr2",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Ancestor of a family of returning temple servants.",
+   "refs": [
+    "5:31"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Parallel Ezra 2:48 Rezin."
+  },
+  {
+   "name": "Noeba",
+   "existing_id": "nekoda-ezr2",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Ancestor of a family of returning temple servants.",
+   "refs": [
+    "5:31"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Doubtful: positional parallel Ezra 2:48 Nekoda."
+  },
+  {
+   "name": "Chaseba",
+   "existing_id": null,
+   "new_id": "chaseba-1es",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Ancestor of a family of returning temple servants.",
+   "refs": [
+    "5:31"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "No parallel in Ezra 2 / Neh 7."
+  },
+  {
+   "name": "Gazera",
+   "existing_id": "gazzam",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Ancestor of a family of returning temple servants.",
+   "refs": [
+    "5:31"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Ozias",
+   "existing_id": "uzza-ezr2",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Ancestor of a family of returning temple servants.",
+   "refs": [
+    "5:31"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Parallel Ezra 2:49 Uzza."
+  },
+  {
+   "name": "Phinoe",
+   "existing_id": "paseah-ezr2",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Ancestor of a family of returning temple servants.",
+   "refs": [
+    "5:31"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Doubtful: positional parallel Ezra 2:49 Paseah."
+  },
+  {
+   "name": "Asara",
+   "existing_id": null,
+   "new_id": "asara-1es",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Ancestor of a family of returning temple servants.",
+   "refs": [
+    "5:31"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "No parallel in Ezra 2 / Neh 7."
+  },
+  {
+   "name": "Basthai",
+   "existing_id": "besai",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Ancestor of a family of returning temple servants.",
+   "refs": [
+    "5:31"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Asana",
+   "existing_id": "asnah",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Ancestor of a family of returning temple servants.",
+   "refs": [
+    "5:31"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Acub",
+   "existing_id": "bakbuk",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Ancestor of a family of returning temple servants.",
+   "refs": [
+    "5:31"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Doubtful: positional parallel Ezra 2:51 Bakbuk."
+  },
+  {
+   "name": "Achipha",
+   "existing_id": "hakupha",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Ancestor of a family of returning temple servants.",
+   "refs": [
+    "5:31"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Asur",
+   "existing_id": "harhur",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Ancestor of a family of returning temple servants.",
+   "refs": [
+    "5:31"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Doubtful: positional parallel Ezra 2:51 Harhur."
+  },
+  {
+   "name": "Pharakim",
+   "existing_id": null,
+   "new_id": "pharakim-1es",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Ancestor of a family of returning temple servants.",
+   "refs": [
+    "5:31"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "No parallel in Ezra 2 / Neh 7."
+  },
+  {
+   "name": "Basaloth",
+   "existing_id": "bazluth",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Ancestor of a family of returning temple servants.",
+   "refs": [
+    "5:31"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Meedda",
+   "existing_id": "mehida",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Ancestor of a family of returning temple servants.",
+   "refs": [
+    "5:32"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Cutha",
+   "existing_id": null,
+   "new_id": "cutha-1es",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Ancestor of a family of returning temple servants.",
+   "refs": [
+    "5:32"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "No parallel in Ezra 2 / Neh 7."
+  },
+  {
+   "name": "Charea",
+   "existing_id": "harsha",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Ancestor of a family of returning temple servants.",
+   "refs": [
+    "5:32"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Barchus",
+   "existing_id": "barkos",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Ancestor of a family of returning temple servants.",
+   "refs": [
+    "5:32"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Serar",
+   "existing_id": "sisera-ezr2",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Ancestor of a family of returning temple servants.",
+   "refs": [
+    "5:32"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Thomei",
+   "existing_id": "temah",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Ancestor of a family of returning temple servants.",
+   "refs": [
+    "5:32"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Nasi",
+   "existing_id": "neziah",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Ancestor of a family of returning temple servants.",
+   "refs": [
+    "5:32"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Atipha",
+   "existing_id": "hatipha",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Ancestor of a family of returning temple servants.",
+   "refs": [
+    "5:32"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Assaphioth",
+   "existing_id": "sophereth",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Ancestor of a family of 'the servants of Solomon' who returned.",
+   "refs": [
+    "5:33"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Doubtful: parallel Ezra 2:55 Hassophereth (Sotai, listed first in Ezra, has no counterpart)."
+  },
+  {
+   "name": "Pharida",
+   "existing_id": "peruda",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Ancestor of a family of 'the servants of Solomon' who returned.",
+   "refs": [
+    "5:33"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Jeeli",
+   "existing_id": "jaalah",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Ancestor of a family of 'the servants of Solomon' who returned.",
+   "refs": [
+    "5:33"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Lozon",
+   "existing_id": "darkon",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Ancestor of a family of 'the servants of Solomon' who returned.",
+   "refs": [
+    "5:33"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Doubtful: positional parallel Ezra 2:56 Darkon."
+  },
+  {
+   "name": "Isdael",
+   "existing_id": "giddel-ezr2-56",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Ancestor of a family of 'the servants of Solomon' who returned.",
+   "refs": [
+    "5:33"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Doubtful: positional parallel Ezra 2:56 Giddel."
+  },
+  {
+   "name": "Saphuthi",
+   "existing_id": "shephatiah-ezr2-57",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Ancestor of a family of 'the servants of Solomon' who returned.",
+   "refs": [
+    "5:33"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Agia",
+   "existing_id": "hattil",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Ancestor of a family of 'the servants of Solomon' who returned.",
+   "refs": [
+    "5:34"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Doubtful: positional parallel Ezra 2:57 Hattil."
+  },
+  {
+   "name": "Phacareth",
+   "existing_id": "pochereth-hazzebaim",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [
+    "Sabie"
+   ],
+   "description": "Ancestor of a family of 'the servants of Solomon' who returned.",
+   "refs": [
+    "5:34"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Phacareth + Sabie together render Pochereth-hazzebaim (Ezra 2:57); the WEB punctuation splits them into two 'sons of'."
+  },
+  {
+   "name": "Sarothie",
+   "existing_id": null,
+   "new_id": "sarothie-1es",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Ancestor of a family of 'the servants of Solomon' who returned.",
+   "refs": [
+    "5:34"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "No parallel in Ezra 2 / Neh 7."
+  },
+  {
+   "name": "Masias",
+   "existing_id": null,
+   "new_id": "masias-1es",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Ancestor of a family of 'the servants of Solomon' who returned.",
+   "refs": [
+    "5:34"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "No parallel in Ezra 2 / Neh 7."
+  },
+  {
+   "name": "Gas",
+   "existing_id": null,
+   "new_id": "gas-1es",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Ancestor of a family of 'the servants of Solomon' who returned.",
+   "refs": [
+    "5:34"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "No parallel in Ezra 2 / Neh 7."
+  },
+  {
+   "name": "Addus",
+   "existing_id": null,
+   "new_id": "addus-1es",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Ancestor of a family of 'the servants of Solomon' who returned.",
+   "refs": [
+    "5:34"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "No parallel in Ezra 2 / Neh 7."
+  },
+  {
+   "name": "Subas",
+   "existing_id": null,
+   "new_id": "subas-1es",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Ancestor of a family of 'the servants of Solomon' who returned.",
+   "refs": [
+    "5:34"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "No parallel in Ezra 2 / Neh 7."
+  },
+  {
+   "name": "Apherra",
+   "existing_id": null,
+   "new_id": "apherra-1es",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Ancestor of a family of 'the servants of Solomon' who returned.",
+   "refs": [
+    "5:34"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "No parallel in Ezra 2 / Neh 7."
+  },
+  {
+   "name": "Barodis",
+   "existing_id": null,
+   "new_id": "barodis-1es",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Ancestor of a family of 'the servants of Solomon' who returned.",
+   "refs": [
+    "5:34"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "No parallel in Ezra 2 / Neh 7."
+  },
+  {
+   "name": "Saphat",
+   "existing_id": null,
+   "new_id": "saphat-solomons-servant-1es",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Ancestor of a family of 'the servants of Solomon' who returned.",
+   "refs": [
+    "5:34"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "No parallel in Ezra 2 / Neh 7; distinct from the lay clan Saphat of 5:9."
+  },
+  {
+   "name": "Allon",
+   "existing_id": "ami",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Ancestor of a family of 'the servants of Solomon' who returned.",
+   "refs": [
+    "5:34"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Doubtful: positional parallel Ezra 2:57 Ami / Neh 7:59 Amon."
+  },
+  {
+   "name": "Charaathalan",
+   "existing_id": null,
+   "new_id": "charaathalan-1es",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Named as leading the returnees who could not prove their Israelite descent.",
+   "refs": [
+    "5:36"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Corresponds to the place names Cherub and Addan (Ezra 2:59); 1 Esdras presents it as a leader. Questionable as a real individual."
+  },
+  {
+   "name": "Dalan",
+   "existing_id": "delaiah-ezr2",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Ancestor of returnees who could not show their lineage.",
+   "refs": [
+    "5:37"
+   ],
+   "parents": [
+    {
+     "ref_name": "Ban",
+     "verse": "5:37",
+     "new_id": "ban-1es"
+    }
+   ],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Parallel Ezra 2:60 Delaiah. Ezra lists Delaiah, Tobiah and Nekoda as separate clans; 'son of Ban' is unique to 1 Esdras."
+  },
+  {
+   "name": "Ban",
+   "existing_id": null,
+   "new_id": "ban-1es",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Named as father of Dalan.",
+   "refs": [
+    "5:37"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Stands where Ezra 2:60 has Tobiah; kept separate."
+  },
+  {
+   "name": "Nekodan",
+   "existing_id": "nekoda-ezr2-60",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Ancestor of returnees who could not show their lineage.",
+   "refs": [
+    "5:37"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Obdia",
+   "existing_id": "habaiah",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Ancestor of a priestly family excluded for lack of records.",
+   "refs": [
+    "5:38"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Doubtful: parallel Ezra 2:61 Habaiah / Neh 7:63 Hobaiah."
+  },
+  {
+   "name": "Akkos",
+   "existing_id": "hakkoz-ezr2",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Ancestor of a priestly family excluded for lack of records.",
+   "refs": [
+    "5:38"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Jaddus",
+   "existing_id": "barzillai-ezr2",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Priest who married Augia, daughter of Zorzelleus, and took his father-in-law's name.",
+   "refs": [
+    "5:38"
+   ],
+   "parents": [],
+   "spouses": [
+    {
+     "ref_name": "Augia",
+     "verse": "5:38",
+     "new_id": "augia-1es"
+    }
+   ],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Parallel Ezra 2:61 / Neh 7:63, where this priest is called by the adopted name Barzillai; 1 Esdras gives his own name Jaddus."
+  },
+  {
+   "name": "Augia",
+   "existing_id": null,
+   "new_id": "augia-1es",
+   "gender": "female",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Daughter of Zorzelleus, wife of the priest Jaddus.",
+   "refs": [
+    "5:38"
+   ],
+   "parents": [
+    {
+     "ref_name": "Zorzelleus",
+     "verse": "5:38",
+     "existing_id": "barzillai-2sa17"
+    }
+   ],
+   "spouses": [
+    {
+     "ref_name": "Jaddus",
+     "verse": "5:38",
+     "existing_id": "barzillai-ezr2"
+    }
+   ],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Named only in 1 Esdras; Ezra 2:61 says 'one of the daughters of Barzillai the Gileadite' (descent rather than literal daughter is likely)."
+  },
+  {
+   "name": "Zorzelleus",
+   "existing_id": "barzillai-2sa17",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Ancestor (Barzillai the Gileadite) after whom the priest Jaddus was named.",
+   "refs": [
+    "5:38"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Parallel Barzillai the Gileadite (Ezra 2:61). Augia is probably a descendant rather than a literal daughter of David's contemporary."
+  },
+  {
+   "name": "Attharias",
+   "existing_id": null,
+   "new_id": "attharias-1es",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Named with Nehemias as ruling that the unregistered priests must not eat the holy things.",
+   "refs": [
+    "5:40"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "From the Persian title Tirshatha ('the governor', Ezra 2:63 / Neh 7:65). The governor there is unnamed (Zerubbabel or Sheshbazzar are usual guesses); 1 Esdras makes it a personal name. Kept separate."
+  },
+  {
+   "name": "Emadabun",
+   "existing_id": null,
+   "new_id": "emadabun-1es",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Levite whose sons helped lead the temple work.",
+   "refs": [
+    "5:58"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Probably corresponds to Henadad (Ezra 3:9); not mapped because Iliadun also resembles Henadad."
+  },
+  {
+   "name": "Iliadun",
+   "existing_id": null,
+   "new_id": "iliadun-1es",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Named as father of Joda, a Levite.",
+   "refs": [
+    "5:58"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Possibly Henadad (Ezra 3:9); kept separate."
+  },
+  {
+   "name": "Asbasareth",
+   "existing_id": "esarhaddon",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "King of the Assyrians who settled the adversaries in the land.",
+   "refs": [
+    "5:69"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Parallel Ezra 4:2 Esarhaddon."
+  },
+  {
+   "name": "Aggaeus",
+   "existing_id": "haggai-ezr5",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Prophet who urged the rebuilding of the temple.",
+   "refs": [
+    "6:1",
+    "7:3"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Zacharius",
+   "existing_id": "zechariah-ezr5",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [
+    "Zacharias"
+   ],
+   "description": "Prophet, 'son of Addo', who urged the rebuilding of the temple.",
+   "refs": [
+    "6:1",
+    "7:3"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": "'Son of Addo' (6:1): Zech 1:1 makes Zechariah son of Berechiah and grandson of Iddo, so Addo is not listed as parent.",
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Addo",
+   "existing_id": "iddo-ezr5",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Ancestor of the prophet Zacharius.",
+   "refs": [
+    "6:1"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Sisinnes",
+   "existing_id": "tattenai",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Governor of Syria and Phoenicia who questioned the rebuilding and reported to Darius.",
+   "refs": [
+    "6:3",
+    "6:7",
+    "6:27",
+    "7:1"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Parallel Ezra 5:3-6:13 Tattenai."
+  },
+  {
+   "name": "Sathrabuzanes",
+   "existing_id": "shethar-bozenai",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Official with Sisinnes who questioned the rebuilding.",
+   "refs": [
+    "6:3",
+    "6:7",
+    "6:27",
+    "7:1"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Esdras",
+   "existing_id": "ezra-ezr7",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Priest and scribe of the law who led a second return under Artaxerxes and enforced the dissolution of foreign marriages.",
+   "refs": [
+    "8:1",
+    "8:3",
+    "8:7",
+    "8:8",
+    "8:9",
+    "8:19",
+    "8:23",
+    "8:25",
+    "8:91",
+    "8:92",
+    "8:96",
+    "9:1",
+    "9:7",
+    "9:16",
+    "9:39",
+    "9:40",
+    "9:42",
+    "9:45",
+    "9:46",
+    "9:49"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": "Called 'son of Azaraias, son of Zechrias, son of Helkias ... son of Aaron' (8:1-2), a telescoped priestly genealogy (cf. Ezra 7:1-5, where Ezra is 'son of' Seraiah, killed in 586 BC). Azaraias not listed as literal parent.",
+   "explicit_ages": [],
+   "identity_note": "Called 'chief priest' in 9:40, 9:49."
+  },
+  {
+   "name": "Azaraias",
+   "existing_id": "azariah-1ch6-13",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Ancestor of Esdras, named as his father in 8:1.",
+   "refs": [
+    "8:1"
+   ],
+   "parents": [
+    {
+     "ref_name": "Zechrias",
+     "verse": "8:1",
+     "new_id": "zechrias-1es"
+    }
+   ],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Doubtful. Ezra 7:1 reads 'Ezra son of Seraiah, son of Azariah, son of Hilkiah'; this WEB text has 'Azaraias, son of Zechrias, son of Helkias' (other Greek witnesses: Saraias, Ezerias, Helkias). Mapped by name to Azariah son of Hilkiah; the 'son of Zechrias' link conflicts with 1 Chr 6:13."
+  },
+  {
+   "name": "Zechrias",
+   "existing_id": null,
+   "new_id": "zechrias-1es",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Named in Esdras' genealogy between Azaraias and Helkias.",
+   "refs": [
+    "8:1"
+   ],
+   "parents": [
+    {
+     "ref_name": "Helkias",
+     "verse": "8:1",
+     "existing_id": "hilkiah-2ki22"
+    }
+   ],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "No counterpart in Ezra 7:1 or 1 Chr 6:13; probably a textual corruption. Kept separate."
+  },
+  {
+   "name": "Salem",
+   "existing_id": "shallum-1ch6",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "High-priestly ancestor of Esdras.",
+   "refs": [
+    "8:1"
+   ],
+   "parents": [
+    {
+     "ref_name": "Sadduk",
+     "verse": "8:2",
+     "existing_id": "zadok-1ch6"
+    }
+   ],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Sadduk",
+   "existing_id": "zadok-1ch6",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "High-priestly ancestor of Esdras.",
+   "refs": [
+    "8:2"
+   ],
+   "parents": [
+    {
+     "ref_name": "Ahitob",
+     "verse": "8:2",
+     "existing_id": "ahitub-1ch6"
+    }
+   ],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Ahitob",
+   "existing_id": "ahitub-1ch6",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "High-priestly ancestor of Esdras.",
+   "refs": [
+    "8:2"
+   ],
+   "parents": [
+    {
+     "ref_name": "Amarias",
+     "verse": "8:2",
+     "existing_id": "amariah-1ch6"
+    }
+   ],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Amarias",
+   "existing_id": "amariah-1ch6",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "High-priestly ancestor of Esdras.",
+   "refs": [
+    "8:2"
+   ],
+   "parents": [
+    {
+     "ref_name": "Ozias",
+     "verse": "8:2",
+     "existing_id": "azariah-1ch6"
+    }
+   ],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Ozias",
+   "existing_id": "azariah-1ch6",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "High-priestly ancestor of Esdras.",
+   "refs": [
+    "8:2"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": "'Son of Memeroth' (8:2) follows the telescoped Ezra 7:3; 1 Chr 6:7-10 places several generations between Meraioth and this Azariah.",
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Memeroth",
+   "existing_id": "meraioth",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Priestly ancestor of Esdras.",
+   "refs": [
+    "8:2"
+   ],
+   "parents": [
+    {
+     "ref_name": "Zaraias",
+     "verse": "8:2",
+     "existing_id": "zerahiah-1ch6"
+    }
+   ],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Zaraias",
+   "existing_id": "zerahiah-1ch6",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Priestly ancestor of Esdras.",
+   "refs": [
+    "8:2"
+   ],
+   "parents": [
+    {
+     "ref_name": "Savias",
+     "verse": "8:2",
+     "existing_id": "uzzi-1ch6"
+    }
+   ],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Savias",
+   "existing_id": "uzzi-1ch6",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Priestly ancestor of Esdras.",
+   "refs": [
+    "8:2"
+   ],
+   "parents": [
+    {
+     "ref_name": "Boccas",
+     "verse": "8:2",
+     "existing_id": "bukki-1ch6"
+    }
+   ],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Parallel Ezra 7:4 Uzzi."
+  },
+  {
+   "name": "Boccas",
+   "existing_id": "bukki-1ch6",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Priestly ancestor of Esdras.",
+   "refs": [
+    "8:2"
+   ],
+   "parents": [
+    {
+     "ref_name": "Abisne",
+     "verse": "8:2",
+     "existing_id": "abishua-1ch6"
+    }
+   ],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Abisne",
+   "existing_id": "abishua-1ch6",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Priestly ancestor of Esdras.",
+   "refs": [
+    "8:2"
+   ],
+   "parents": [
+    {
+     "ref_name": "Phinees",
+     "verse": "8:2",
+     "existing_id": "phinehas"
+    }
+   ],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Eleazar",
+   "existing_id": "eleazar-aaron",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Son of Aaron, priestly ancestor of Esdras.",
+   "refs": [
+    "8:2"
+   ],
+   "parents": [
+    {
+     "ref_name": "Aaron",
+     "verse": "8:2",
+     "existing_id": "aaron"
+    }
+   ],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Gerson",
+   "existing_id": "gershom-ezr8",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Priestly head of the sons of Phinees who returned with Esdras.",
+   "refs": [
+    "8:29"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Ithamar",
+   "existing_id": "ithamar",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Son of Aaron; ancestor of a priestly house.",
+   "refs": [
+    "8:29"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Gamael",
+   "existing_id": "daniel-ezr8",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Priestly head of the sons of Ithamar who returned with Esdras.",
+   "refs": [
+    "8:29"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Doubtful name: parallel Ezra 8:2 has Daniel in the same position."
+  },
+  {
+   "name": "Attus",
+   "existing_id": "hattush-ezr8",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Davidic head who returned with Esdras.",
+   "refs": [
+    "8:29"
+   ],
+   "parents": [
+    {
+     "ref_name": "Sechenias",
+     "verse": "8:29",
+     "existing_id": "shecaniah-ezr8"
+    }
+   ],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Parallel Ezra 8:2-3 Hattush. 1 Esdras reads 'Attus the son of Sechenias', attaching Ezra 8:3a's Shecaniah to him; 1 Chr 3:22 makes Hattush a son of Shemaiah son of Shecaniah."
+  },
+  {
+   "name": "Sechenias",
+   "existing_id": "shecaniah-ezr8",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Named as father of Attus.",
+   "refs": [
+    "8:29"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Doubtful: parallel Ezra 8:3 'of the sons of Shecaniah' (project id shecaniah-ezr8). Possibly the Davidic Shecaniah (shecaniah-1ch3)."
+  },
+  {
+   "name": "Phoros",
+   "existing_id": "parosh-ezr8",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Clan ancestor of Zacharais, who returned with Esdras.",
+   "refs": [
+    "8:30"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Same clan as Phoros of 5:9, but the project codes Ezra 8:3 Parosh as a separate id (parosh-ezr8); followed here."
+  },
+  {
+   "name": "Zacharais",
+   "existing_id": "zechariah-ezr8-3",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Head of the sons of Phoros (150 men) who returned with Esdras.",
+   "refs": [
+    "8:30"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Eliaonias",
+   "existing_id": "eliehoenai-ezr8",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Head of the sons of Phaath Moab (200 men) who returned with Esdras.",
+   "refs": [
+    "8:31"
+   ],
+   "parents": [
+    {
+     "ref_name": "Zaraias",
+     "verse": "8:31",
+     "existing_id": "zerahiah-ezr8"
+    }
+   ],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Zaraias",
+   "existing_id": "zerahiah-ezr8",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Father of Eliaonias.",
+   "refs": [
+    "8:31"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Sechenias",
+   "existing_id": "shecaniah-ezr8-5",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Head of the sons of Zathoes (300 men) who returned with Esdras.",
+   "refs": [
+    "8:32"
+   ],
+   "parents": [
+    {
+     "ref_name": "Jezelus",
+     "verse": "8:32",
+     "existing_id": "jahaziel-ezr8"
+    }
+   ],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Jezelus",
+   "existing_id": "jahaziel-ezr8",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Father of Sechenias of the sons of Zathoes.",
+   "refs": [
+    "8:32"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "'Jezelus' also appears isolated in 8:35 after Jehiel; that occurrence looks like a textual doublet and is not counted."
+  },
+  {
+   "name": "Obeth",
+   "existing_id": "ebed-ezr8",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Head of the sons of Adin (250 men) who returned with Esdras.",
+   "refs": [
+    "8:32"
+   ],
+   "parents": [
+    {
+     "ref_name": "Jonathan",
+     "verse": "8:32",
+     "existing_id": "jonathan-ezr8"
+    }
+   ],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Jonathan",
+   "existing_id": "jonathan-ezr8",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Father of Obeth.",
+   "refs": [
+    "8:32"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Jesias",
+   "existing_id": "jeshaiah-ezr8-7",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Head of the sons of Elam (70 men) who returned with Esdras.",
+   "refs": [
+    "8:33"
+   ],
+   "parents": [
+    {
+     "ref_name": "Gotholias",
+     "verse": "8:33",
+     "existing_id": "athaliah-ezr8"
+    }
+   ],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Gotholias",
+   "existing_id": "athaliah-ezr8",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Father of Jesias.",
+   "refs": [
+    "8:33"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Zaraias",
+   "existing_id": "zebadiah-ezr8",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Head of the sons of Saphatias (70 men) who returned with Esdras.",
+   "refs": [
+    "8:34"
+   ],
+   "parents": [
+    {
+     "ref_name": "Michael",
+     "verse": "8:34",
+     "existing_id": "michael-ezr8"
+    }
+   ],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Doubtful name: parallel Ezra 8:8 Zebadiah son of Michael."
+  },
+  {
+   "name": "Michael",
+   "existing_id": "michael-ezr8",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Father of Zaraias of the sons of Saphatias.",
+   "refs": [
+    "8:34"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Joab",
+   "existing_id": "joab-ezr8",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Clan ancestor of Abadias' group.",
+   "refs": [
+    "8:35"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Project codes Ezra 8:9 Joab separately from Ezra 2:6 Joab; followed here."
+  },
+  {
+   "name": "Abadias",
+   "existing_id": "obadiah-ezr8",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Head of the sons of Joab (212 men) who returned with Esdras.",
+   "refs": [
+    "8:35"
+   ],
+   "parents": [
+    {
+     "ref_name": "Jehiel",
+     "verse": "8:35",
+     "existing_id": "jehiel-ezr8"
+    }
+   ],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Jehiel",
+   "existing_id": "jehiel-ezr8",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Father of Abadias.",
+   "refs": [
+    "8:35"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Salimoth",
+   "existing_id": "shelomith-ezr8",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Head of the sons of Banias (160 men) who returned with Esdras.",
+   "refs": [
+    "8:36"
+   ],
+   "parents": [
+    {
+     "ref_name": "Josaphias",
+     "verse": "8:36",
+     "existing_id": "josiphiah"
+    }
+   ],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Josaphias",
+   "existing_id": "josiphiah",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Father of Salimoth.",
+   "refs": [
+    "8:36"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Zacharias",
+   "existing_id": "zechariah-ezr8",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Head of the sons of Babi (28 men) who returned with Esdras.",
+   "refs": [
+    "8:37"
+   ],
+   "parents": [
+    {
+     "ref_name": "Bebai",
+     "verse": "8:37",
+     "existing_id": "bebai-ezr8"
+    }
+   ],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Bebai",
+   "existing_id": "bebai-ezr8",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Father of Zacharias of the sons of Babi.",
+   "refs": [
+    "8:37"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Joannes",
+   "existing_id": "johanan-ezr8",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Head of the sons of Azgad (110 men) who returned with Esdras.",
+   "refs": [
+    "8:38"
+   ],
+   "parents": [
+    {
+     "ref_name": "Hakkatan",
+     "verse": "8:38",
+     "existing_id": "hakkatan"
+    }
+   ],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Hakkatan",
+   "existing_id": "hakkatan",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [
+    "Akatan"
+   ],
+   "description": "Father of Joannes.",
+   "refs": [
+    "8:38"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "'Hakkatan Akatan' is a doublet of one name."
+  },
+  {
+   "name": "Eliphalat",
+   "existing_id": "eliphelet-ezr8",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Head among the last sons of Adonikam who returned with Esdras.",
+   "refs": [
+    "8:39"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Jeuel",
+   "existing_id": "jeuel-ezr8",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Head among the last sons of Adonikam who returned with Esdras.",
+   "refs": [
+    "8:39"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Samaias",
+   "existing_id": "shemaiah-ezr8",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Head among the last sons of Adonikam who returned with Esdras.",
+   "refs": [
+    "8:39"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Uthi",
+   "existing_id": "uthai-ezr8",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Head of the sons of Bago (70 men) who returned with Esdras.",
+   "refs": [
+    "8:40"
+   ],
+   "parents": [
+    {
+     "ref_name": "Istalcurus",
+     "verse": "8:40",
+     "existing_id": "zaccur-ezr8"
+    }
+   ],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Istalcurus",
+   "existing_id": "zaccur-ezr8",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Named as father of Uthi.",
+   "refs": [
+    "8:40"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Doubtful: Ezra 8:14 has 'Uthai and Zabbud (Zaccur)' as two men; 1 Esdras makes Istalcurus Uthi's father."
+  },
+  {
+   "name": "Eleazar",
+   "existing_id": "eliezer-ezr8",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Leader sent by Esdras to fetch Levites.",
+   "refs": [
+    "8:43"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Iduel",
+   "existing_id": "ariel-ezr8",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Leader sent by Esdras to fetch Levites.",
+   "refs": [
+    "8:43"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Doubtful: positional parallel Ezra 8:16 Ariel."
+  },
+  {
+   "name": "Maasmas",
+   "existing_id": null,
+   "new_id": "maasmas-1es",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Leader sent by Esdras to fetch Levites.",
+   "refs": [
+    "8:43"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Stands where Ezra 8:16 has Shemaiah, but Samaias appears separately in 8:44; kept separate."
+  },
+  {
+   "name": "Elnathan",
+   "existing_id": "elnathan-ezr8",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Leader sent by Esdras to fetch Levites.",
+   "refs": [
+    "8:44"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Samaias",
+   "existing_id": "shemaiah-ezr8-16",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Leader sent by Esdras to fetch Levites.",
+   "refs": [
+    "8:44"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Parallel Ezra 8:16 Shemaiah (order differs)."
+  },
+  {
+   "name": "Joribus",
+   "existing_id": "jarib-ezr8",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Leader sent by Esdras to fetch Levites.",
+   "refs": [
+    "8:44"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Ezra 8:16 has both Jarib and Joiarib; mapped to Jarib."
+  },
+  {
+   "name": "Nathan",
+   "existing_id": "nathan-ezr8",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Leader sent by Esdras to fetch Levites.",
+   "refs": [
+    "8:44"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Ennatan",
+   "existing_id": "elnathan-ezr8-16",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Leader sent by Esdras to fetch Levites.",
+   "refs": [
+    "8:44"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Second Elnathan of Ezra 8:16."
+  },
+  {
+   "name": "Zacharias",
+   "existing_id": "zechariah-ezr8-16",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Leader sent by Esdras to fetch Levites.",
+   "refs": [
+    "8:44"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Mosollamus",
+   "existing_id": "meshullam-ezr8",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Leader sent by Esdras to fetch Levites.",
+   "refs": [
+    "8:44"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Loddeus",
+   "existing_id": "iddo-ezr8",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Captain at the place of the treasury from whom Esdras requested ministers.",
+   "refs": [
+    "8:45",
+    "8:46"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Parallel Ezra 8:17 Iddo at Casiphia."
+  },
+  {
+   "name": "Mooli",
+   "existing_id": "mahli-numbers",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Levite ancestor ('son of Levi') of Asebebias' group.",
+   "refs": [
+    "8:47"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": "'Son of Levi, son of Israel' (8:47): Mahli was son of Merari son of Levi (Exod 6:19); not literal parent.",
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Levi",
+   "existing_id": "levi",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Son of Israel, ancestor of the Levites.",
+   "refs": [
+    "8:47"
+   ],
+   "parents": [
+    {
+     "ref_name": "Israel",
+     "verse": "8:47",
+     "existing_id": "jacob"
+    }
+   ],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Israel",
+   "existing_id": "jacob",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Patriarch Jacob/Israel, named in a genealogy.",
+   "refs": [
+    "8:47"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Asebebias",
+   "existing_id": "sherebiah-ezr8",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [
+    "Eserebias",
+    "Sarabias"
+   ],
+   "description": "Levite who came with his sons and kindred (18); one of twelve chief priests entrusted with the treasure; taught the law.",
+   "refs": [
+    "8:47",
+    "8:54",
+    "9:48"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Asebebias (8:47) = Ezra 8:18 Sherebiah; Eserebias (8:54) = Ezra 8:24 Sherebiah; Sarabias (9:48) = Neh 8:7 Sherebiah (project uses the same id)."
+  },
+  {
+   "name": "Asebias",
+   "existing_id": "hashabiah-ezr8",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [
+    "Assamias"
+   ],
+   "description": "Levite who came with Esdras; one of the twelve entrusted with the treasure.",
+   "refs": [
+    "8:48",
+    "8:54"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Asebias (8:48) = Ezra 8:19 Hashabiah; Assamias (8:54) = Ezra 8:24 Hashabiah."
+  },
+  {
+   "name": "Annuus",
+   "existing_id": null,
+   "new_id": "annuus-1es",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Levite who came with Esdras.",
+   "refs": [
+    "8:48"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "No counterpart in Ezra 8:19."
+  },
+  {
+   "name": "Osaias",
+   "existing_id": "jeshaiah-ezr8",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Levite who came with Esdras.",
+   "refs": [
+    "8:48"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Parallel Ezra 8:19 Jeshaiah. 'His brother' (8:48) refers to Asebias or Annuus."
+  },
+  {
+   "name": "Chanuneus",
+   "existing_id": null,
+   "new_id": "chanuneus-1es",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Levite ancestor of Asebias, Annuus and Osaias.",
+   "refs": [
+    "8:48"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Stands where Ezra 8:19 has 'the sons of Merari'; name differs, kept separate."
+  },
+  {
+   "name": "Marmoth",
+   "existing_id": "meremoth-ezr8",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Priest who received the silver and gold in Jerusalem.",
+   "refs": [
+    "8:62"
+   ],
+   "parents": [
+    {
+     "ref_name": "Urias",
+     "verse": "8:62",
+     "existing_id": "uriah-ezr8"
+    }
+   ],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Urias",
+   "existing_id": "uriah-ezr8",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Father of the priest Marmoth.",
+   "refs": [
+    "8:62"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Eleazar",
+   "existing_id": "eleazar-ezr8",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Priest, son of Phinees, who received the treasure with Marmoth.",
+   "refs": [
+    "8:63"
+   ],
+   "parents": [
+    {
+     "ref_name": "Phinees",
+     "verse": "8:63",
+     "existing_id": "phinehas-ezr8"
+    }
+   ],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Phinees",
+   "existing_id": "phinehas-ezr8",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Father of Eleazar the priest of Esdras' time.",
+   "refs": [
+    "8:63"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Josabdus",
+   "existing_id": "jozabad-ezr8",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Levite who received the treasure.",
+   "refs": [
+    "8:63"
+   ],
+   "parents": [
+    {
+     "ref_name": "Jesus",
+     "verse": "8:63",
+     "existing_id": "jeshua-ezr8"
+    }
+   ],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Jesus",
+   "existing_id": "jeshua-ezr8",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Father of the Levite Josabdus.",
+   "refs": [
+    "8:63"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Moeth",
+   "existing_id": "noadiah-ezr8",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Levite who received the treasure.",
+   "refs": [
+    "8:63"
+   ],
+   "parents": [
+    {
+     "ref_name": "Sabannus",
+     "verse": "8:63",
+     "existing_id": "binnui-ezr8"
+    }
+   ],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Doubtful name: parallel Ezra 8:33 Noadiah son of Binnui."
+  },
+  {
+   "name": "Sabannus",
+   "existing_id": "binnui-ezr8",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Father of the Levite Moeth.",
+   "refs": [
+    "8:63"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Parallel Ezra 8:33 Binnui."
+  },
+  {
+   "name": "Jechonias",
+   "existing_id": "shecaniah-ezr10",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Israelite who confessed the sin of foreign marriages and urged an oath to put away foreign wives.",
+   "refs": [
+    "8:92"
+   ],
+   "parents": [
+    {
+     "ref_name": "Jeelus",
+     "verse": "8:92",
+     "existing_id": "jehiel-ezr10"
+    }
+   ],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Parallel Ezra 10:2 Shecaniah son of Jehiel."
+  },
+  {
+   "name": "Jeelus",
+   "existing_id": "jehiel-ezr10",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Father of Jechonias.",
+   "refs": [
+    "8:92"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Jonas",
+   "existing_id": "jehohanan-ezr10-6",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Son of Eliasib, in whose temple chamber Esdras fasted.",
+   "refs": [
+    "9:1"
+   ],
+   "parents": [
+    {
+     "ref_name": "Eliasib",
+     "verse": "9:1",
+     "existing_id": "eliashib-ezr10-6"
+    }
+   ],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Eliasib",
+   "existing_id": "eliashib-ezr10-6",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Father of Jonas.",
+   "refs": [
+    "9:1"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Jonathan",
+   "existing_id": "jonathan-ezr10",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Took charge of the foreign-marriage inquiry.",
+   "refs": [
+    "9:14"
+   ],
+   "parents": [
+    {
+     "ref_name": "Azael",
+     "verse": "9:14",
+     "existing_id": "asahel-ezr10"
+    }
+   ],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Ezra 10:15 says Jonathan and Jahzeiah 'stood up against this'; 1 Esdras says they 'took the matter on themselves'."
+  },
+  {
+   "name": "Azael",
+   "existing_id": "asahel-ezr10",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Father of Jonathan.",
+   "refs": [
+    "9:14"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Ezekias",
+   "existing_id": "jahzeiah",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Took charge of the foreign-marriage inquiry with Jonathan.",
+   "refs": [
+    "9:14"
+   ],
+   "parents": [
+    {
+     "ref_name": "Thocanus",
+     "verse": "9:14",
+     "existing_id": "tikvah-ezr10"
+    }
+   ],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Parallel Ezra 10:15 Jahzeiah son of Tikvah."
+  },
+  {
+   "name": "Thocanus",
+   "existing_id": "tikvah-ezr10",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Father of Ezekias.",
+   "refs": [
+    "9:14"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Mosollamus",
+   "existing_id": "meshullam-ezr10",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Judge in the foreign-marriage inquiry.",
+   "refs": [
+    "9:14"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Levis",
+   "existing_id": null,
+   "new_id": "levis-1es",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Named as a judge in the foreign-marriage inquiry.",
+   "refs": [
+    "9:14"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Ezra 10:15 reads 'Shabbethai the Levite'; 1 Esdras turns 'the Levite' into a person Levis. Probably not a real individual."
+  },
+  {
+   "name": "Sabbateus",
+   "existing_id": "shabbethai-ezr10",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Judge in the foreign-marriage inquiry.",
+   "refs": [
+    "9:14"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Mathelas",
+   "existing_id": "maaseiah-ezr10",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Priest of the sons of Jesus son of Josedek who had married a foreign wife and agreed to put her away.",
+   "refs": [
+    "9:19"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Parallel Ezra 10:18 Maaseiah."
+  },
+  {
+   "name": "Eleazar",
+   "existing_id": "eliezer-ezr10",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Priest of the sons of Jesus son of Josedek who had married a foreign wife and agreed to put her away.",
+   "refs": [
+    "9:19"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Parallel Ezra 10:18 Eliezer."
+  },
+  {
+   "name": "Joribus",
+   "existing_id": "jarib-ezr10",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Priest of the sons of Jesus son of Josedek who had married a foreign wife and agreed to put her away.",
+   "refs": [
+    "9:19"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Joadanus",
+   "existing_id": "gedaliah-ezr10",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Priest of the sons of Jesus son of Josedek who had married a foreign wife and agreed to put her away.",
+   "refs": [
+    "9:19"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Doubtful name: positional parallel Ezra 10:18 Gedaliah."
+  },
+  {
+   "name": "Ananias",
+   "existing_id": "hanani-ezr10",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Priest of the sons of Emmer who had married a foreign wife and agreed to put her away.",
+   "refs": [
+    "9:21"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Parallel Ezra 10:20 Hanani."
+  },
+  {
+   "name": "Zabdeus",
+   "existing_id": "zebadiah-ezr10",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Priest of the sons of Emmer who had married a foreign wife and agreed to put her away.",
+   "refs": [
+    "9:21"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Manes",
+   "existing_id": "maaseiah-ezr10-21",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Priest who had married a foreign wife and agreed to put her away.",
+   "refs": [
+    "9:21"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "1 Esdras drops the heading 'sons of Harim' (Ezra 10:21) and Elijah; Manes = Maaseiah by position. Doubtful."
+  },
+  {
+   "name": "Sameus",
+   "existing_id": "shemaiah-ezr10",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Priest who had married a foreign wife and agreed to put her away.",
+   "refs": [
+    "9:21"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Parallel Ezra 10:21 Shemaiah."
+  },
+  {
+   "name": "Hiereel",
+   "existing_id": "jehiel-ezr10-21",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Priest who had married a foreign wife and agreed to put her away.",
+   "refs": [
+    "9:21"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Parallel Ezra 10:21 Jehiel."
+  },
+  {
+   "name": "Azarias",
+   "existing_id": "uzziah-ezr10",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Priest who had married a foreign wife and agreed to put her away.",
+   "refs": [
+    "9:21"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Parallel Ezra 10:21 Uzziah (Azariah/Uzziah variation)."
+  },
+  {
+   "name": "Elionas",
+   "existing_id": "elioenai-ezr10",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Priest of the sons of Phaisur who had married a foreign wife and agreed to put her away.",
+   "refs": [
+    "9:22"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Massias",
+   "existing_id": "maaseiah-ezr10-22",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Priest of the sons of Phaisur who had married a foreign wife and agreed to put her away.",
+   "refs": [
+    "9:22"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Ishmael",
+   "existing_id": "ishmael-ezr10",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Priest of the sons of Phaisur who had married a foreign wife and agreed to put her away.",
+   "refs": [
+    "9:22"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Nathanael",
+   "existing_id": "nethanel-ezr10",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Priest of the sons of Phaisur who had married a foreign wife and agreed to put her away.",
+   "refs": [
+    "9:22"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Ocidelus",
+   "existing_id": "jozabad-ezr10",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Priest of the sons of Phaisur who had married a foreign wife and agreed to put her away.",
+   "refs": [
+    "9:22"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Doubtful name: positional parallel Ezra 10:22 Jozabad."
+  },
+  {
+   "name": "Saloas",
+   "existing_id": "elasah-ezr10",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Priest of the sons of Phaisur who had married a foreign wife and agreed to put her away.",
+   "refs": [
+    "9:22"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Doubtful name: positional parallel Ezra 10:22 Elasah."
+  },
+  {
+   "name": "Jozabdus",
+   "existing_id": "jozabad-ezr10-23",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Levite who had married a foreign wife and agreed to put her away.",
+   "refs": [
+    "9:23"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Semeis",
+   "existing_id": "shimei-ezr10",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Levite who had married a foreign wife and agreed to put her away.",
+   "refs": [
+    "9:23"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Colius",
+   "existing_id": "kelaiah",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [
+    "Calitas"
+   ],
+   "description": "Levite who had married a foreign wife and agreed to put her away.",
+   "refs": [
+    "9:23"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Parallel Ezra 10:23 Kelaiah 'also called Kelita'. The project keeps kelita (Neh 8:7) separate; the Calitas of 9:48 is mapped there."
+  },
+  {
+   "name": "Patheus",
+   "existing_id": "pethahiah-ezr10",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Levite who had married a foreign wife and agreed to put her away.",
+   "refs": [
+    "9:23"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Judas",
+   "existing_id": "judah-ezr10",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Levite who had married a foreign wife and agreed to put her away.",
+   "refs": [
+    "9:23"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Jonas",
+   "existing_id": "eliezer-ezr10-23",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Levite who had married a foreign wife and agreed to put her away.",
+   "refs": [
+    "9:23"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Doubtful name: positional parallel Ezra 10:23 Eliezer."
+  },
+  {
+   "name": "Eliasibus",
+   "existing_id": "eliashib-ezr10",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Temple singer who had married a foreign wife and agreed to put her away.",
+   "refs": [
+    "9:24"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Bacchurus",
+   "existing_id": null,
+   "new_id": "bacchurus-1es",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Temple singer who had married a foreign wife and agreed to put her away.",
+   "refs": [
+    "9:24"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "No counterpart in Ezra 10:24 (which lists one singer)."
+  },
+  {
+   "name": "Sallumus",
+   "existing_id": "shallum-ezr10",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Gatekeeper who had married a foreign wife and agreed to put her away.",
+   "refs": [
+    "9:25"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Tolbanes",
+   "existing_id": "telem",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Gatekeeper who had married a foreign wife and agreed to put her away.",
+   "refs": [
+    "9:25"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Doubtful name: positional parallel Ezra 10:24 Telem."
+  },
+  {
+   "name": "Hiermas",
+   "existing_id": "ramiah",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Israelite of the sons of Phoros who had married a foreign wife and agreed to put her away.",
+   "refs": [
+    "9:26"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Parallel Ezra 10:25 Ramiah."
+  },
+  {
+   "name": "Ieddias",
+   "existing_id": "izziah",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Israelite of the sons of Phoros who had married a foreign wife and agreed to put her away.",
+   "refs": [
+    "9:26"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Melchias",
+   "existing_id": "malchijah-ezr10",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Israelite of the sons of Phoros who had married a foreign wife and agreed to put her away.",
+   "refs": [
+    "9:26"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Maelus",
+   "existing_id": "mijamin-ezr10",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Israelite of the sons of Phoros who had married a foreign wife and agreed to put her away.",
+   "refs": [
+    "9:26"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Parallel Ezra 10:25 Mijamin."
+  },
+  {
+   "name": "Eleazar",
+   "existing_id": "eleazar-ezr10",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Israelite of the sons of Phoros who had married a foreign wife and agreed to put her away.",
+   "refs": [
+    "9:26"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Asibas",
+   "existing_id": "malchijah-ezr10-25",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Israelite of the sons of Phoros who had married a foreign wife and agreed to put her away.",
+   "refs": [
+    "9:26"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Parallel: second Malchijah of Ezra 10:25 (LXX Hashabiah; the project id carries alias Hashabiah)."
+  },
+  {
+   "name": "Banneas",
+   "existing_id": "benaiah-ezr10",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Israelite of the sons of Phoros who had married a foreign wife and agreed to put her away.",
+   "refs": [
+    "9:26"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Matthanias",
+   "existing_id": "mattaniah-ezr10",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Israelite of the sons of Ela who had married a foreign wife and agreed to put her away.",
+   "refs": [
+    "9:27"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Zacharias",
+   "existing_id": "zechariah-ezr10",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Israelite of the sons of Ela who had married a foreign wife and agreed to put her away.",
+   "refs": [
+    "9:27"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Jezrielus",
+   "existing_id": "jehiel-ezr10-26",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Israelite of the sons of Ela who had married a foreign wife and agreed to put her away.",
+   "refs": [
+    "9:27"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Oabdius",
+   "existing_id": "abdi-ezr10",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Israelite of the sons of Ela who had married a foreign wife and agreed to put her away.",
+   "refs": [
+    "9:27"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Hieremoth",
+   "existing_id": "jeremoth-ezr10",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Israelite of the sons of Ela who had married a foreign wife and agreed to put her away.",
+   "refs": [
+    "9:27"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Aedias",
+   "existing_id": "elijah-ezr10-26",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Israelite of the sons of Ela who had married a foreign wife and agreed to put her away.",
+   "refs": [
+    "9:27"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Doubtful name: positional parallel Ezra 10:26 Elijah."
+  },
+  {
+   "name": "Eliadas",
+   "existing_id": "elioenai-ezr10-27",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Israelite of the sons of Zamoth who had married a foreign wife and agreed to put her away.",
+   "refs": [
+    "9:28"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Parallel Ezra 10:27 Elioenai."
+  },
+  {
+   "name": "Eliasimus",
+   "existing_id": "eliashib-ezr10-27",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Israelite of the sons of Zamoth who had married a foreign wife and agreed to put her away.",
+   "refs": [
+    "9:28"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Othonias",
+   "existing_id": "mattaniah-ezr10-27",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Israelite of the sons of Zamoth who had married a foreign wife and agreed to put her away.",
+   "refs": [
+    "9:28"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Doubtful name: positional parallel Ezra 10:27 Mattaniah."
+  },
+  {
+   "name": "Jarimoth",
+   "existing_id": "jeremoth-ezr10-27",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Israelite of the sons of Zamoth who had married a foreign wife and agreed to put her away.",
+   "refs": [
+    "9:28"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Sabathus",
+   "existing_id": "zabad-ezr10",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Israelite of the sons of Zamoth who had married a foreign wife and agreed to put her away.",
+   "refs": [
+    "9:28"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Doubtful name: positional parallel Ezra 10:27 Zabad."
+  },
+  {
+   "name": "Zardeus",
+   "existing_id": "aziza",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Israelite of the sons of Zamoth who had married a foreign wife and agreed to put her away.",
+   "refs": [
+    "9:28"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Doubtful name: positional parallel Ezra 10:27 Aziza."
+  },
+  {
+   "name": "Joannes",
+   "existing_id": "jehohanan-ezr10",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Israelite of the sons of Bebai who had married a foreign wife and agreed to put her away.",
+   "refs": [
+    "9:29"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Ananias",
+   "existing_id": "hananiah-ezr10",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Israelite of the sons of Bebai who had married a foreign wife and agreed to put her away.",
+   "refs": [
+    "9:29"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Jozabdus",
+   "existing_id": "zabbai-ezr10",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Israelite of the sons of Bebai who had married a foreign wife and agreed to put her away.",
+   "refs": [
+    "9:29"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Doubtful name: positional parallel Ezra 10:28 Zabbai."
+  },
+  {
+   "name": "Ematheis",
+   "existing_id": "athlai",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Israelite of the sons of Bebai who had married a foreign wife and agreed to put her away.",
+   "refs": [
+    "9:29"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Doubtful name: positional parallel Ezra 10:28 Athlai."
+  },
+  {
+   "name": "Olamus",
+   "existing_id": "meshullam-ezr10-29",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Israelite of the sons of Mani who had married a foreign wife and agreed to put her away.",
+   "refs": [
+    "9:30"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Parallel Ezra 10:29 Meshullam."
+  },
+  {
+   "name": "Mamuchus",
+   "existing_id": "malluch-ezr10",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Israelite of the sons of Mani who had married a foreign wife and agreed to put her away.",
+   "refs": [
+    "9:30"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Jedeus",
+   "existing_id": "adaiah-ezr10",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Israelite of the sons of Mani who had married a foreign wife and agreed to put her away.",
+   "refs": [
+    "9:30"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Parallel Ezra 10:29 Adaiah."
+  },
+  {
+   "name": "Jasubas",
+   "existing_id": "jashub-ezr10",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Israelite of the sons of Mani who had married a foreign wife and agreed to put her away.",
+   "refs": [
+    "9:30"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Jasaelus",
+   "existing_id": "sheal",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Israelite of the sons of Mani who had married a foreign wife and agreed to put her away.",
+   "refs": [
+    "9:30"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Doubtful name: positional parallel Ezra 10:29 Sheal."
+  },
+  {
+   "name": "Hieremoth",
+   "existing_id": "jeremoth-ezr10-29",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Israelite of the sons of Mani who had married a foreign wife and agreed to put her away.",
+   "refs": [
+    "9:30"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Naathus",
+   "existing_id": "adna-ezr10",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Israelite of the sons of Addi who had married a foreign wife and agreed to put her away.",
+   "refs": [
+    "9:31"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Parallel Ezra 10:30 Adna (sons of Pahath-moab)."
+  },
+  {
+   "name": "Moossias",
+   "existing_id": "chelal",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Israelite of the sons of Addi who had married a foreign wife and agreed to put her away.",
+   "refs": [
+    "9:31"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Doubtful: positional parallel Ezra 10:30 Chelal (name resembles Maaseiah)."
+  },
+  {
+   "name": "Laccunus",
+   "existing_id": "benaiah-ezr10-30",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Israelite of the sons of Addi who had married a foreign wife and agreed to put her away.",
+   "refs": [
+    "9:31"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Doubtful: positional parallel Ezra 10:30 Benaiah."
+  },
+  {
+   "name": "Naidus",
+   "existing_id": "maaseiah-ezr10-30",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Israelite of the sons of Addi who had married a foreign wife and agreed to put her away.",
+   "refs": [
+    "9:31"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Doubtful: positional parallel Ezra 10:30 Maaseiah."
+  },
+  {
+   "name": "Matthanias",
+   "existing_id": "mattaniah-ezr10-30",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Israelite of the sons of Addi who had married a foreign wife and agreed to put her away.",
+   "refs": [
+    "9:31"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Sesthel",
+   "existing_id": "bezalel-ezr10",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Israelite of the sons of Addi who had married a foreign wife and agreed to put her away.",
+   "refs": [
+    "9:31"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Parallel Ezra 10:30 Bezalel."
+  },
+  {
+   "name": "Balnuus",
+   "existing_id": "binnui-ezr10",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Israelite of the sons of Addi who had married a foreign wife and agreed to put her away.",
+   "refs": [
+    "9:31"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Parallel Ezra 10:30 Binnui."
+  },
+  {
+   "name": "Manasseas",
+   "existing_id": "manasseh-ezr10",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Israelite of the sons of Addi who had married a foreign wife and agreed to put her away.",
+   "refs": [
+    "9:31"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Elionas",
+   "existing_id": "eliezer-ezr10-31",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Israelite of the sons of Annas who had married a foreign wife and agreed to put her away.",
+   "refs": [
+    "9:32"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Doubtful name: positional parallel Ezra 10:31 Eliezer."
+  },
+  {
+   "name": "Aseas",
+   "existing_id": "isshijah",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Israelite of the sons of Annas who had married a foreign wife and agreed to put her away.",
+   "refs": [
+    "9:32"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Parallel Ezra 10:31 Isshijah."
+  },
+  {
+   "name": "Melchias",
+   "existing_id": "malchijah-ezr10-31",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Israelite of the sons of Annas who had married a foreign wife and agreed to put her away.",
+   "refs": [
+    "9:32"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Sabbeus",
+   "existing_id": "shemaiah-ezr10-31",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Israelite of the sons of Annas who had married a foreign wife and agreed to put her away.",
+   "refs": [
+    "9:32"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Doubtful name: positional parallel Ezra 10:31 Shemaiah."
+  },
+  {
+   "name": "Simon Chosameus",
+   "existing_id": "shimeon",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Israelite of the sons of Annas who had married a foreign wife and agreed to put her away.",
+   "refs": [
+    "9:32"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Parallel Ezra 10:31 Shimeon; 'Chosameus' may be a corrupt clan name (Hashum?). Benjamin, Malluch, Shemariah (10:32) have no counterparts."
+  },
+  {
+   "name": "Maltanneus",
+   "existing_id": "mattenai-ezr10",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Israelite of the sons of Asom who had married a foreign wife and agreed to put her away.",
+   "refs": [
+    "9:33"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Mattathias",
+   "existing_id": "mattattah",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Israelite of the sons of Asom who had married a foreign wife and agreed to put her away.",
+   "refs": [
+    "9:33"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Sabanneus",
+   "existing_id": "zabad-ezr10-33",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Israelite of the sons of Asom who had married a foreign wife and agreed to put her away.",
+   "refs": [
+    "9:33"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Doubtful: Ezra 10:33 Zabad."
+  },
+  {
+   "name": "Eliphalat",
+   "existing_id": "eliphelet-ezr10",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Israelite of the sons of Asom who had married a foreign wife and agreed to put her away.",
+   "refs": [
+    "9:33"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Manasses",
+   "existing_id": "manasseh-ezr10-33",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Israelite of the sons of Asom who had married a foreign wife and agreed to put her away.",
+   "refs": [
+    "9:33"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Semei",
+   "existing_id": "shimei-ezr10-33",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Israelite of the sons of Asom who had married a foreign wife and agreed to put her away.",
+   "refs": [
+    "9:33"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Jeremias",
+   "existing_id": null,
+   "new_id": "jeremias-son-of-baani-1es",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Israelite of the sons of Baani who had married a foreign wife and agreed to put her away.",
+   "refs": [
+    "9:34"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "No clear counterpart in Ezra 10:34-42."
+  },
+  {
+   "name": "Momdis",
+   "existing_id": "maadai",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Israelite of the sons of Baani who had married a foreign wife and agreed to put her away.",
+   "refs": [
+    "9:34"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Parallel Ezra 10:34 Maadai (by name). Doubtful."
+  },
+  {
+   "name": "Ismaerus",
+   "existing_id": "amram-ezr10",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Israelite of the sons of Baani who had married a foreign wife and agreed to put her away.",
+   "refs": [
+    "9:34"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Doubtful: Ezra 10:34 Amram by order."
+  },
+  {
+   "name": "Juel",
+   "existing_id": "uel",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Israelite of the sons of Baani who had married a foreign wife and agreed to put her away.",
+   "refs": [
+    "9:34"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Parallel Ezra 10:34 Uel."
+  },
+  {
+   "name": "Mamdai",
+   "existing_id": null,
+   "new_id": "mamdai-1es",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Israelite of the sons of Baani who had married a foreign wife and agreed to put her away.",
+   "refs": [
+    "9:34"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "No clear counterpart (possibly a doublet of Maadai)."
+  },
+  {
+   "name": "Pedias",
+   "existing_id": "bedeiah",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Israelite of the sons of Baani who had married a foreign wife and agreed to put her away.",
+   "refs": [
+    "9:34"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Parallel Ezra 10:35 Bedeiah."
+  },
+  {
+   "name": "Anos",
+   "existing_id": "vaniah",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Israelite of the sons of Baani who had married a foreign wife and agreed to put her away.",
+   "refs": [
+    "9:34"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Doubtful: Ezra 10:36 Vaniah."
+  },
+  {
+   "name": "Carabasion",
+   "existing_id": null,
+   "new_id": "carabasion-1es",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Israelite of the sons of Baani who had married a foreign wife and agreed to put her away.",
+   "refs": [
+    "9:34"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "No clear counterpart (Cheluhi or Meremoth?)."
+  },
+  {
+   "name": "Enasibus",
+   "existing_id": "eliashib-ezr10-36",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Israelite of the sons of Baani who had married a foreign wife and agreed to put her away.",
+   "refs": [
+    "9:34"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Doubtful: Ezra 10:36 Eliashib."
+  },
+  {
+   "name": "Mamnitamenus",
+   "existing_id": null,
+   "new_id": "mamnitamenus-1es",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Israelite of the sons of Baani who had married a foreign wife and agreed to put her away.",
+   "refs": [
+    "9:34"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Appears to conflate Mattaniah and Mattenai (Ezra 10:37); kept separate."
+  },
+  {
+   "name": "Eliasis",
+   "existing_id": "jaasu",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Israelite of the sons of Baani who had married a foreign wife and agreed to put her away.",
+   "refs": [
+    "9:34"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Doubtful: Ezra 10:37 Jaasu."
+  },
+  {
+   "name": "Bannus",
+   "existing_id": "bani-ezr10-38",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Israelite of the sons of Baani who had married a foreign wife and agreed to put her away.",
+   "refs": [
+    "9:34"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Parallel Ezra 10:38 Bani."
+  },
+  {
+   "name": "Eliali",
+   "existing_id": "binnui-ezr10-38",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Israelite of the sons of Baani who had married a foreign wife and agreed to put her away.",
+   "refs": [
+    "9:34"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Doubtful: Ezra 10:38 Binnui."
+  },
+  {
+   "name": "Someis",
+   "existing_id": "shimei-ezr10-38",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Israelite of the sons of Baani who had married a foreign wife and agreed to put her away.",
+   "refs": [
+    "9:34"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Selemias",
+   "existing_id": "shelemiah-ezr10",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Israelite of the sons of Baani who had married a foreign wife and agreed to put her away.",
+   "refs": [
+    "9:34"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Nathanias",
+   "existing_id": "nathan-ezr10",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Israelite of the sons of Baani who had married a foreign wife and agreed to put her away.",
+   "refs": [
+    "9:34"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Doubtful: Ezra 10:39 Nathan."
+  },
+  {
+   "name": "Sesis",
+   "existing_id": "shashai",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Israelite of the sons of Ezora who had married a foreign wife and agreed to put her away.",
+   "refs": [
+    "9:34"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Parallel Ezra 10:40 Shashai (sons of Bani in Ezra)."
+  },
+  {
+   "name": "Ezril",
+   "existing_id": null,
+   "new_id": "ezril-1es",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Israelite of the sons of Ezora who had married a foreign wife and agreed to put her away.",
+   "refs": [
+    "9:34"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Sharai or Azarel (Ezra 10:40-41); kept separate."
+  },
+  {
+   "name": "Azaelus",
+   "existing_id": "azarel-ezr10",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Israelite of the sons of Ezora who had married a foreign wife and agreed to put her away.",
+   "refs": [
+    "9:34"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Parallel Ezra 10:41 Azarel. Doubtful."
+  },
+  {
+   "name": "Samatus",
+   "existing_id": null,
+   "new_id": "samatus-1es",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Israelite of the sons of Ezora who had married a foreign wife and agreed to put her away.",
+   "refs": [
+    "9:34"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Shemariah or Shelemiah (Ezra 10:41)?; kept separate."
+  },
+  {
+   "name": "Zambri",
+   "existing_id": null,
+   "new_id": "zambri-1es",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Israelite of the sons of Ezora who had married a foreign wife and agreed to put her away.",
+   "refs": [
+    "9:34"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "No clear counterpart (Amariah?)."
+  },
+  {
+   "name": "Josephus",
+   "existing_id": "joseph-ezr10",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Israelite of the sons of Ezora who had married a foreign wife and agreed to put her away.",
+   "refs": [
+    "9:34"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Parallel Ezra 10:42 Joseph."
+  },
+  {
+   "name": "Mazitias",
+   "existing_id": "mattithiah-ezr10",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Israelite of the sons of Nooma who had married a foreign wife and agreed to put her away.",
+   "refs": [
+    "9:35"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Parallel Ezra 10:43 Mattithiah."
+  },
+  {
+   "name": "Zabadeas",
+   "existing_id": "zabad-ezr10-43",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Israelite of the sons of Nooma who had married a foreign wife and agreed to put her away.",
+   "refs": [
+    "9:35"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Edos",
+   "existing_id": "jaddai",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Israelite of the sons of Nooma who had married a foreign wife and agreed to put her away.",
+   "refs": [
+    "9:35"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Parallel Ezra 10:43 Iddo/Jaddai."
+  },
+  {
+   "name": "Juel",
+   "existing_id": "joel-ezr10",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Israelite of the sons of Nooma who had married a foreign wife and agreed to put her away.",
+   "refs": [
+    "9:35"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Parallel Ezra 10:43 Joel."
+  },
+  {
+   "name": "Banaias",
+   "existing_id": "benaiah-ezr10-43",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Israelite of the sons of Nooma who had married a foreign wife and agreed to put her away.",
+   "refs": [
+    "9:35"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Addi",
+   "existing_id": null,
+   "new_id": "addi-1es",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Ancestor of a lay family some of whose members had foreign wives.",
+   "refs": [
+    "9:31"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Stands where Ezra 10:30 has Pahath-moab (rendered 'Phaath Moab' elsewhere in 1 Esdras); kept separate."
+  },
+  {
+   "name": "Annas",
+   "existing_id": null,
+   "new_id": "annas-1es",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Ancestor of a lay family some of whose members had foreign wives.",
+   "refs": [
+    "9:32"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Stands where Ezra 10:31 has Harim; kept separate."
+  },
+  {
+   "name": "Baani",
+   "existing_id": "bani-ezr10",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Ancestor of a lay family some of whose members had foreign wives.",
+   "refs": [
+    "9:34"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Parallel Ezra 10:34 'sons of Bani' (project id bani-ezr10)."
+  },
+  {
+   "name": "Ezora",
+   "existing_id": null,
+   "new_id": "ezora-1es",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Ancestor of a lay family some of whose members had foreign wives.",
+   "refs": [
+    "9:34"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Unique to 1 Esdras; its members correspond to the end of the Bani list (Ezra 10:40-42), perhaps from Machnadebai."
+  },
+  {
+   "name": "Nooma",
+   "existing_id": null,
+   "new_id": "nooma-1es",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Ancestor of a lay family some of whose members had foreign wives.",
+   "refs": [
+    "9:35"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Stands where Ezra 10:43 has Nebo, which the project treats as a place; kept as a new clan ancestor."
+  },
+  {
+   "name": "Mattathias",
+   "existing_id": "mattithiah-neh8",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Stood at Esdras' right hand at the reading of the law.",
+   "refs": [
+    "9:43"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Sammus",
+   "existing_id": "shema-neh8",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Stood at Esdras' right hand at the reading of the law.",
+   "refs": [
+    "9:43"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Ananias",
+   "existing_id": "anaiah-neh8",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Stood at Esdras' right hand at the reading of the law.",
+   "refs": [
+    "9:43"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Parallel Neh 8:4 Anaiah."
+  },
+  {
+   "name": "Azarias",
+   "existing_id": null,
+   "new_id": "azarias-reading-1es",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Stood at Esdras' right hand at the reading of the law.",
+   "refs": [
+    "9:43"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "No counterpart in Neh 8:4."
+  },
+  {
+   "name": "Urias",
+   "existing_id": "uriah-neh8",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Stood at Esdras' right hand at the reading of the law.",
+   "refs": [
+    "9:43"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Ezekias",
+   "existing_id": "hilkiah-neh8",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Stood at Esdras' right hand at the reading of the law.",
+   "refs": [
+    "9:43"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Doubtful name: positional parallel Neh 8:4 Hilkiah."
+  },
+  {
+   "name": "Baalsamus",
+   "existing_id": "maaseiah-neh8",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Stood at Esdras' right hand at the reading of the law.",
+   "refs": [
+    "9:43"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Doubtful name: positional parallel Neh 8:4 Maaseiah."
+  },
+  {
+   "name": "Phaldeus",
+   "existing_id": "pedaiah-neh8",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Stood at Esdras' left hand at the reading of the law.",
+   "refs": [
+    "9:44"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Misael",
+   "existing_id": "mishael-neh8",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Stood at Esdras' left hand at the reading of the law.",
+   "refs": [
+    "9:44"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Melchias",
+   "existing_id": "malchijah-neh8",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Stood at Esdras' left hand at the reading of the law.",
+   "refs": [
+    "9:44"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Lothasubus",
+   "existing_id": "hashum-neh8",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Stood at Esdras' left hand at the reading of the law.",
+   "refs": [
+    "9:44"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Doubtful name: positional parallel Neh 8:4 Hashum."
+  },
+  {
+   "name": "Nabarias",
+   "existing_id": "hashbaddanah",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Stood at Esdras' left hand at the reading of the law.",
+   "refs": [
+    "9:44"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Doubtful name: positional parallel Neh 8:4 Hashbaddanah."
+  },
+  {
+   "name": "Zacharias",
+   "existing_id": "zechariah-neh8",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Stood at Esdras' left hand at the reading of the law.",
+   "refs": [
+    "9:44"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Annus",
+   "existing_id": "bani-neh8",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Levite who taught and explained the law to the people.",
+   "refs": [
+    "9:48"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Doubtful name: positional parallel Neh 8:7 Bani."
+  },
+  {
+   "name": "Iadinus",
+   "existing_id": "jamin-neh8",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Levite who taught and explained the law to the people.",
+   "refs": [
+    "9:48"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Jacubus",
+   "existing_id": "akkub-neh8",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Levite who taught and explained the law to the people.",
+   "refs": [
+    "9:48"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Sabateus",
+   "existing_id": "shabbethai-neh8",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Levite who taught and explained the law to the people.",
+   "refs": [
+    "9:48"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Auteas",
+   "existing_id": "hodiah-neh8",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Levite who taught and explained the law to the people.",
+   "refs": [
+    "9:48"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Maiannas",
+   "existing_id": "maaseiah-neh8-7",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Levite who taught and explained the law to the people.",
+   "refs": [
+    "9:48"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Calitas",
+   "existing_id": "kelita",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Levite who taught and explained the law to the people.",
+   "refs": [
+    "9:48"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Azarias",
+   "existing_id": "azariah-neh8",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Levite who taught and explained the law to the people.",
+   "refs": [
+    "9:48"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Jozabdus",
+   "existing_id": "jozabad-neh8",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Levite who taught and explained the law to the people.",
+   "refs": [
+    "9:48"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Ananias",
+   "existing_id": "hanan-neh8",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Levite who taught and explained the law to the people.",
+   "refs": [
+    "9:48"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Parallel Neh 8:7 Hanan."
+  },
+  {
+   "name": "Phalias",
+   "existing_id": "pelaiah-neh8",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Levite who taught and explained the law to the people.",
+   "refs": [
+    "9:48"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Attharates",
+   "existing_id": "nehemiah-neh1",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Official who told the people the day was holy and not for mourning.",
+   "refs": [
+    "9:49"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Doubtful: from the title Tirshatha ('governor'). Parallel Neh 8:9 'Nehemiah, who was the governor'; 1 Esdras never names Nehemiah here and treats the title as a name."
+  }
+ ],
+ "excluded_names": {
+  "Anathoth": "place",
+  "Babylon": "place",
+  "Babylonia": "place",
+  "Carchemish": "place",
+  "Coelesyria": "place",
+  "Egypt": "place",
+  "Ekbatana": "place",
+  "Ethiopia": "place",
+  "Euphrates": "place",
+  "India": "place",
+  "Jerusalem": "place",
+  "Joppa": "place",
+  "Judea": "place",
+  "Libanus": "place",
+  "Media": "place",
+  "Megiddo": "place",
+  "Persia": "place",
+  "Phoenicia": "place",
+  "Samaria": "place",
+  "Sidon": "place",
+  "Syria": "place",
+  "Tyre": "place",
+  "Zion": "place",
+  "Assyria": "place",
+  "Beroth": "place (town of returnees, 5:17-23; cf. Ezra 2:21-35)",
+  "Bethasmoth": "place (town of returnees, 5:17-23; cf. Ezra 2:21-35)",
+  "Bethlomon": "place (town of returnees, 5:17-23; cf. Ezra 2:21-35)",
+  "Betolion": "place (town of returnees, 5:17-23; cf. Ezra 2:21-35)",
+  "Caphira": "place (town of returnees, 5:17-23; cf. Ezra 2:21-35)",
+  "Kariathiarius": "place (town of returnees, 5:17-23; cf. Ezra 2:21-35)",
+  "Kirama": "place (town of returnees, 5:17-23; cf. Ezra 2:21-35)",
+  "Gabbe": "place (town of returnees, 5:17-23; cf. Ezra 2:21-35)",
+  "Macalon": "place (town of returnees, 5:17-23; cf. Ezra 2:21-35)",
+  "Netophas": "place (town of returnees, 5:17-23; cf. Ezra 2:21-35)",
+  "Jerechu": "place (town of returnees, 5:17-23; cf. Ezra 2:21-35)",
+  "Calamolalus": "place (town of returnees, 5:17-23; cf. Ezra 2:21-35)",
+  "Onus": "place (town of returnees, 5:17-23; cf. Ezra 2:21-35)",
+  "Sanaas": "place (town of returnees, 5:17-23; cf. Ezra 2:21-35)",
+  "Baiterus": "place: 'sons of Baiterus' (5:17) stands where Ezra 2:20 / Neh 7:25 has Gibbar/Gibeon; the project has no person entity there",
+  "Niphis": "place: 'sons of Niphis' (5:21) = Magbish (Ezra 2:30, same count 156); no person entity in the project",
+  "Chadiasai": "people/place group (5:20)",
+  "Ammidioi": "people/place group (5:20)",
+  "Thermeleth": "place (Tel Melah, Ezra 2:59)",
+  "Thelersas": "place (Tel Harsha, Ezra 2:59)",
+  "Allar": "place: in 5:36 it stands for Addan/Immer of Ezra 2:59 (could be read as a co-leader, but the parallel is a place)",
+  "Theras": "river (8:41, 8:61)",
+  "Maani": "people group: 'sons of Maani' (5:31) = Meunim (Ezra 2:50), treated as a people in the project",
+  "Naphisi": "people group: 'sons of Naphisi' (5:31) = Nephisim (Ezra 2:50), treated as a people in the project",
+  "Assyrians": "people",
+  "Canaanites": "people",
+  "Chaldeans": "people",
+  "Edomites": "people",
+  "Egyptians": "people",
+  "Hittites": "people",
+  "Jebusites": "people",
+  "Moabites": "people",
+  "Pherezites": "people",
+  "Persians": "people",
+  "Judeans": "people",
+  "Benjamin": "tribe",
+  "Judah": "tribe / kingdom",
+  "Israel": "nation (except 8:47 'son of Israel' = Jacob, which is included)",
+  "Levite": "class",
+  "Levitical": "adjective",
+  "Adar": "month",
+  "Nisan": "month",
+  "Sabbaths": "day",
+  "Urim": "object",
+  "Thummim": "object",
+  "By": "not a name (sentence-initial word)",
+  "Great": "not a name (sentence-initial word)",
+  "Immediately": "not a name (sentence-initial word)",
+  "Lifting": "not a name (sentence-initial word)",
+  "Jezelus (8:35)": "the isolated 'Jezelus' after 'Abadias son of Jehiel' in 8:35 looks like a textual doublet; not counted (Jezelus of 8:32 is included)"
+ },
+ "dated_events": [
+  {
+   "verse": "1:1; 1:22",
+   "regnal_year": 18,
+   "king": "Josias",
+   "king_id": "josiah-1ki13",
+   "month": 1,
+   "day": 14,
+   "event": "Josias keeps the Passover in Jerusalem",
+   "people": [
+    "josiah-1ki13"
+   ]
+  },
+  {
+   "verse": "2:1",
+   "regnal_year": 1,
+   "king": "Cyrus",
+   "king_id": "cyrus",
+   "month": null,
+   "day": null,
+   "event": "Cyrus proclaims the return and the rebuilding of the temple",
+   "people": [
+    "cyrus",
+    "jeremiah-2ch35"
+   ]
+  },
+  {
+   "verse": "2:30",
+   "regnal_year": 2,
+   "king": "Darius",
+   "king_id": "darius-ezr4",
+   "month": null,
+   "day": null,
+   "event": "Temple building halted by Rathumus and Samellius until the second year of Darius (terminus)",
+   "people": [
+    "artaxerxes",
+    "rehum-ezr4",
+    "shimshai",
+    "darius-ezr4"
+   ]
+  },
+  {
+   "verse": "5:6",
+   "regnal_year": 2,
+   "king": "Darius",
+   "king_id": "darius-ezr4",
+   "month": 1,
+   "day": null,
+   "event": "Zorobabel 'spoke wise words before Darius' (the bodyguards' contest) in the month Nisan; the return under Zorobabel follows",
+   "people": [
+    "zerubbabel-1ch3",
+    "darius-ezr4"
+   ]
+  },
+  {
+   "verse": "5:47; 5:53",
+   "regnal_year": null,
+   "king": null,
+   "king_id": null,
+   "month": 7,
+   "day": 1,
+   "event": "Returnees assemble in the seventh month; sacrifices begin on its new moon",
+   "people": [
+    "joshua-ezr2",
+    "zerubbabel-1ch3"
+   ]
+  },
+  {
+   "verse": "5:56-57",
+   "regnal_year": null,
+   "king": null,
+   "king_id": null,
+   "month": 2,
+   "day": 1,
+   "event": "Temple foundation laid on the new moon of the second month, in the second year after the return",
+   "people": [
+    "zerubbabel-1ch3",
+    "joshua-ezr2"
+   ],
+   "note": "relative date: second year after arrival"
+  },
+  {
+   "verse": "6:1",
+   "regnal_year": 2,
+   "king": "Darius",
+   "king_id": "darius-ezr4",
+   "month": null,
+   "day": null,
+   "event": "Aggaeus and Zacharius prophesy; Zorobabel and Jesus resume building",
+   "people": [
+    "haggai-ezr5",
+    "zechariah-ezr5",
+    "zerubbabel-1ch3",
+    "joshua-ezr2"
+   ]
+  },
+  {
+   "verse": "6:17; 6:24",
+   "regnal_year": 1,
+   "king": "Cyrus",
+   "king_id": "cyrus",
+   "month": null,
+   "day": null,
+   "event": "Cyrus' decree to rebuild the temple (as cited in the elders' reply and the Ekbatana scroll)",
+   "people": [
+    "cyrus"
+   ]
+  },
+  {
+   "verse": "7:5",
+   "regnal_year": 6,
+   "king": "Darius",
+   "king_id": "darius-ezr4",
+   "month": 12,
+   "day": 23,
+   "event": "Temple finished on the 23rd of Adar",
+   "people": [
+    "darius-ezr4"
+   ]
+  },
+  {
+   "verse": "7:10",
+   "regnal_year": null,
+   "king": null,
+   "king_id": null,
+   "month": 1,
+   "day": 14,
+   "event": "Returned exiles keep the Passover after the dedication",
+   "people": []
+  },
+  {
+   "verse": "8:6",
+   "regnal_year": 7,
+   "king": "Artaxerxes",
+   "king_id": "artaxerxes",
+   "month": 1,
+   "day": 1,
+   "event": "Esdras' company leaves Babylon on the new moon of the first month",
+   "people": [
+    "ezra-ezr7",
+    "artaxerxes"
+   ]
+  },
+  {
+   "verse": "8:6",
+   "regnal_year": 7,
+   "king": "Artaxerxes",
+   "king_id": "artaxerxes",
+   "month": 5,
+   "day": null,
+   "event": "Esdras arrives in Jerusalem in the fifth month",
+   "people": [
+    "ezra-ezr7",
+    "artaxerxes"
+   ]
+  },
+  {
+   "verse": "8:61",
+   "regnal_year": 7,
+   "king": "Artaxerxes",
+   "king_id": "artaxerxes",
+   "month": 1,
+   "day": 12,
+   "event": "Departure from the river Theras on the 12th of the first month",
+   "people": [
+    "ezra-ezr7"
+   ],
+   "note": "year from the 8:6 context"
+  },
+  {
+   "verse": "9:5",
+   "regnal_year": null,
+   "king": null,
+   "king_id": null,
+   "month": 9,
+   "day": 20,
+   "event": "Assembly of Judah and Benjamin in Jerusalem over the foreign marriages",
+   "people": [
+    "ezra-ezr7"
+   ]
+  },
+  {
+   "verse": "9:16",
+   "regnal_year": null,
+   "king": null,
+   "king_id": null,
+   "month": 10,
+   "day": 1,
+   "event": "Examination of the foreign-marriage cases begins",
+   "people": [
+    "ezra-ezr7"
+   ]
+  },
+  {
+   "verse": "9:17",
+   "regnal_year": null,
+   "king": null,
+   "king_id": null,
+   "month": 1,
+   "day": 1,
+   "event": "Foreign-marriage cases concluded (following year)",
+   "people": [
+    "ezra-ezr7"
+   ]
+  },
+  {
+   "verse": "9:37; 9:40",
+   "regnal_year": null,
+   "king": null,
+   "king_id": null,
+   "month": 7,
+   "day": 1,
+   "event": "Esdras reads the law to the assembly on the new moon of the seventh month",
+   "people": [
+    "ezra-ezr7",
+    "nehemiah-neh1"
+   ]
+  }
+ ],
+ "notes": "Method: every name was mapped by aligning 1 Esdras with its Hebrew parallels in the same WEB file (1:1-58 = 2 Chr 35:1-36:21; 2:1-15 = Ezra 1; 2:16-30 = Ezra 4:7-24; 3:1-5:6 unique; 5:7-73 = Ezra 2:1-4:5 / Neh 7:6-73; 6:1-7:15 = Ezra 5-6; 8:1-9:36 = Ezra 7-10; 9:37-55 = Neh 7:73-8:12). The project's verse-level claims (data/*/claims.yaml) were used to pick the exact existing id at each parallel verse. Where a list aligns one-to-one with Ezra/Nehemiah, corrupt Greek names were mapped by position and flagged 'Doubtful' in identity_note. Where the order breaks down (9:21 Harim, 9:34 Baani/Ezora), names were mapped only on name similarity, and unmatched names became new entries.\nProject-structure issues for the reviewer: (1) the index has no separate Sheshbazzar (it is an alias of zerubbabel-1ch3), but 1 Esd 6:18 distinguishes Zorobabel and Sanabassarus, so new_id sheshbazzar-1es is proposed. (2) The project splits Parosh (parosh-ezr2 / parosh-ezr8), Joab (joab-ezr2 / joab-ezr8), Bebai, Kelaiah/Kelita and Shabbethai (ezr10 / neh8). These splits are followed, so some same-name 1 Esdras entries map to different ids. (3) Jesus son of Josedek at 9:19 is mapped to joshua-ezr2/jehozadak, although the project codes Ezra 10:18 as jeshua-1ch24/jozadak. (4) Sudias (5:26) and Joda (5:58) are merged into hodaviah-ezr2.\nText oddities: 1:43 calls Jehoiachin 'Joakim' like his father; 1:38 'Zarakes' is merged with Joachaz (doubtful); 4:29 spells Barticus; 5:5 makes Joakim a son of Zorobabel (no parallel); 5:24 Jeddu 'son of Jesus' reflects 'house of Jeshua'; the 8:1 genealogy in this text reads Azaraias son of Zechrias (Ezra 7:1: Seraiah son of Azariah); 8:35 has a stray 'Jezelus'; 8:38 'Astath' and 'Akatan' are doublets of Azgad and Hakkatan; 5:34 'Phacareth, Sabie' = Pochereth-hazzebaim. Beeltethmus (2:16), Levis (9:14), Attharias (5:40), Attharates (9:49) and Charaathalan (5:36) come from titles, a class word or place names that 1 Esdras reads as personal names; they are kept (Attharates mapped to Nehemiah), but each is flagged.\nScope: clan eponyms in 5:9-35, 8:29-40 and 9:19-35 are treated as persons because the project indexes the Ezra 2/8/10 eponyms as persons. Town names in 5:17-23 and Meunim/Nephisim are excluded, consistent with the project. Unnamed individuals included: the first and second bodyguards of Darius (the third is Zorobabel, 4:13). 'Pharaoh' (Neco) is included by title.\nReign lengths stated: Joachaz 3 months (1:35), Jehoiachin 3 months 10 days (1:44), Sedekias 11 years (1:46); ages at accession are in explicit_ages.\ndated_events: month numbers use the 1st month = Nisan reckoning; regnal_year is null where the text gives only month/day."
+}

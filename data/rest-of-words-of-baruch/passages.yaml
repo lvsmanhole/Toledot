@@ -1,0 +1,4 @@
+schema_version: 1
+record_type: passages
+records:
+  - {id: rest-of-words-of-baruch-book-review, work_id: rest-of-words-of-baruch, witness_id: book-review-rest-of-words-of-baruch, locator: "Rest of the Words of Baruch", citations: [{source_id: ethiopic-edition-pending, locator: "Rest of the Words of Baruch", witness_id: book-review-rest-of-words-of-baruch}]}

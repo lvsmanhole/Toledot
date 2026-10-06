@@ -1,0 +1,12 @@
+schema_version: 1
+record_type: relationships
+records:
+  - {id: barticus-1es-parent-apame-1es, relationship_type: parent, subject_id: barticus-1es, object_id: apame-1es, claim_ids: [], citations: [{source_id: world-english-bible, locator: "1 Esdras 4:29", witness_id: web-1-esdras}]}
+  - {id: apame-1es-spouse-darius-ezr4, relationship_type: spouse, subject_id: apame-1es, object_id: darius-ezr4, claim_ids: [], citations: [{source_id: world-english-bible, locator: "1 Esdras 4:29", witness_id: web-1-esdras}]}
+  - {id: zerubbabel-1ch3-parent-joakim-son-of-zorobabel-1es, relationship_type: parent, subject_id: zerubbabel-1ch3, object_id: joakim-son-of-zorobabel-1es, claim_ids: [], citations: [{source_id: world-english-bible, locator: "1 Esdras 5:5", witness_id: web-1-esdras}]}
+  - {id: iliadun-1es-parent-hodaviah-ezr2, relationship_type: parent, subject_id: iliadun-1es, object_id: hodaviah-ezr2, claim_ids: [], citations: [{source_id: world-english-bible, locator: "1 Esdras 5:58", witness_id: web-1-esdras}]}
+  - {id: ban-1es-parent-delaiah-ezr2, relationship_type: parent, subject_id: ban-1es, object_id: delaiah-ezr2, claim_ids: [], citations: [{source_id: world-english-bible, locator: "1 Esdras 5:37", witness_id: web-1-esdras}]}
+  - {id: augia-1es-spouse-barzillai-ezr2, relationship_type: spouse, subject_id: augia-1es, object_id: barzillai-ezr2, claim_ids: [], citations: [{source_id: world-english-bible, locator: "1 Esdras 5:38", witness_id: web-1-esdras}]}
+  - {id: shecaniah-ezr8-parent-hattush-ezr8, relationship_type: parent, subject_id: shecaniah-ezr8, object_id: hattush-ezr8, claim_ids: [], citations: [{source_id: world-english-bible, locator: "1 Esdras 8:29", witness_id: web-1-esdras}]}
+  - {id: jahaziel-ezr8-parent-shecaniah-ezr8-5, relationship_type: parent, subject_id: jahaziel-ezr8, object_id: shecaniah-ezr8-5, claim_ids: [], citations: [{source_id: world-english-bible, locator: "1 Esdras 8:32", witness_id: web-1-esdras}]}
+  - {id: zaccur-ezr8-parent-uthai-ezr8, relationship_type: parent, subject_id: zaccur-ezr8, object_id: uthai-ezr8, claim_ids: [], citations: [{source_id: world-english-bible, locator: "1 Esdras 8:40", witness_id: web-1-esdras}]}

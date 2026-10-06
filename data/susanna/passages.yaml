@@ -1,0 +1,5 @@
+schema_version: 1
+record_type: passages
+records:
+  - {id: susanna-13-census, work_id: susanna, witness_id: web-susanna, locator: "Susanna 13", citations: [{source_id: world-english-bible, locator: "Susanna 13", witness_id: web-susanna}]}
+  - {id: susanna-13-lxx, work_id: susanna, witness_id: lxx-susanna-rahlfs-hanhart, locator: "Susanna 13", correspondence_note: "Chapter correspondence with the Greek edition is assumed, not checked.", citations: [{source_id: rahlfs-hanhart-2006, locator: "Susanna 13", witness_id: lxx-susanna-rahlfs-hanhart}]}

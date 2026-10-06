@@ -1,0 +1,5 @@
+schema_version: 1
+record_type: relationships
+records:
+  - {id: dositheus-priest-esg-parent-ptolemy-son-of-dositheus, relationship_type: parent, subject_id: dositheus-priest-esg, object_id: ptolemy-son-of-dositheus, claim_ids: [], citations: [{source_id: world-english-bible, locator: "Additions to Esther 10:14", witness_id: web-additions-to-esther}]}
+  - {id: ptolemy-father-of-lysimachus-parent-lysimachus-translator-esg, relationship_type: parent, subject_id: ptolemy-father-of-lysimachus, object_id: lysimachus-translator-esg, claim_ids: [], citations: [{source_id: world-english-bible, locator: "Additions to Esther 10:14", witness_id: web-additions-to-esther}]}

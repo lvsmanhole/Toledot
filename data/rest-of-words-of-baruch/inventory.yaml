@@ -1,0 +1,4 @@
+schema_version: 1
+record_type: inventory_units
+records:
+  - {id: inv-rest-of-words-of-baruch-book, work_id: rest-of-words-of-baruch, locator: "Rest of the Words of Baruch", reviewed: false, passage_ids: [rest-of-words-of-baruch-book-review], identified_entity_ids: [], event_ids: [], no_individuals: false, review_basis: "Book-level canon entry only. Person extraction is pending a citable edition or public-domain translation; no people are asserted.", citations: [{source_id: ethiopic-edition-pending, locator: "Rest of the Words of Baruch"}]}

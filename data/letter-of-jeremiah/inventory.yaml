@@ -1,0 +1,4 @@
+schema_version: 1
+record_type: inventory_units
+records:
+  - {id: inv-letter-of-jeremiah-6, work_id: letter-of-jeremiah, locator: "Letter of Jeremiah 6", reviewed: true, passage_ids: [letter-of-jeremiah-6-census, letter-of-jeremiah-6-lxx], identified_entity_ids: [jeremiah-2ch35, nebuchadnezzar], event_ids: [letter-of-jeremiah-narrative], no_individuals: false, review_basis: "Person census from a public-domain translation, checked verse by verse by a census pass; see the work's witness notes.", citations: [{source_id: world-english-bible, locator: "Letter of Jeremiah 6", witness_id: web-letter-of-jeremiah}]}

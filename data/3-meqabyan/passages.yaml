@@ -1,0 +1,4 @@
+schema_version: 1
+record_type: passages
+records:
+  - {id: 3-meqabyan-book-review, work_id: 3-meqabyan, witness_id: book-review-3-meqabyan, locator: "3 Meqabyan", citations: [{source_id: ethiopic-edition-pending, locator: "3 Meqabyan", witness_id: book-review-3-meqabyan}]}

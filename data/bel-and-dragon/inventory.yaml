@@ -1,0 +1,4 @@
+schema_version: 1
+record_type: inventory_units
+records:
+  - {id: inv-bel-and-dragon-14, work_id: bel-and-dragon, locator: "Bel and the Dragon 14", reviewed: true, passage_ids: [bel-and-dragon-14-census, bel-and-dragon-14-lxx], identified_entity_ids: [astyages, cyrus, daniel-ezk14, habakkuk-hab1], event_ids: [bel-and-dragon-narrative], no_individuals: false, review_basis: "Person census from a public-domain translation, checked verse by verse by a census pass; see the work's witness notes.", citations: [{source_id: world-english-bible, locator: "Bel and the Dragon 14", witness_id: web-bel-and-dragon}]}

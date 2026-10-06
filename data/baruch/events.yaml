@@ -1,0 +1,4 @@
+schema_version: 1
+record_type: events
+records:
+  - {id: baruch-narrative, event_type: book_narrative, name: "Baruch", participants: [{entity_id: moses, role: named participant}, {entity_id: nebuchadnezzar, role: named participant}, {entity_id: baruch-jer32, role: named participant}, {entity_id: belshazzar, role: named participant}, {entity_id: jehoiachin, role: named participant}, {entity_id: abram, role: named participant}, {entity_id: hasadiah-ancestor-of-baruch, role: named participant}, {entity_id: hilkiah-ancestor-of-baruch, role: named participant}], date_claim_ids: [], citations: [{source_id: world-english-bible, locator: "Baruch", witness_id: web-baruch}]}

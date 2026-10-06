@@ -1,0 +1,4 @@
+schema_version: 1
+record_type: events
+records:
+  - {id: 4-maccabees-narrative, event_type: book_narrative, name: "4 Maccabees", participants: [{entity_id: mother-of-seven-brothers, role: named participant}, {entity_id: antiochus-iv-epiphanes, role: named participant}, {entity_id: eleazar-martyr, role: named participant}, {entity_id: abram, role: named participant}, {entity_id: father-of-seven-brothers, role: named participant}, {entity_id: seven-brothers-son-1, role: named participant}, {entity_id: seven-brothers-son-7, role: named participant}, {entity_id: apollonius-of-tarsus, role: named participant}], date_claim_ids: [], citations: [{source_id: world-english-bible, locator: "4 Maccabees", witness_id: web-4-maccabees}]}

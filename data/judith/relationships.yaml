@@ -1,0 +1,20 @@
+schema_version: 1
+record_type: relationships
+records:
+  - {id: merari-jdt-parent-judith-person, relationship_type: parent, subject_id: merari-jdt, object_id: judith-person, claim_ids: [], citations: [{source_id: world-english-bible, locator: "Judith 8:1", witness_id: web-judith}]}
+  - {id: judith-person-spouse-manasses-husband-of-judith, relationship_type: spouse, subject_id: judith-person, object_id: manasses-husband-of-judith, claim_ids: [], citations: [{source_id: world-english-bible, locator: "Judith 8:2", witness_id: web-judith}]}
+  - {id: ox-jdt-parent-merari-jdt, relationship_type: parent, subject_id: ox-jdt, object_id: merari-jdt, claim_ids: [], citations: [{source_id: world-english-bible, locator: "Judith 8:1", witness_id: web-judith}]}
+  - {id: joseph-jdt-parent-ox-jdt, relationship_type: parent, subject_id: joseph-jdt, object_id: ox-jdt, claim_ids: [], citations: [{source_id: world-english-bible, locator: "Judith 8:1", witness_id: web-judith}]}
+  - {id: oziel-jdt-parent-joseph-jdt, relationship_type: parent, subject_id: oziel-jdt, object_id: joseph-jdt, claim_ids: [], citations: [{source_id: world-english-bible, locator: "Judith 8:1", witness_id: web-judith}]}
+  - {id: elkiah-jdt-parent-oziel-jdt, relationship_type: parent, subject_id: elkiah-jdt, object_id: oziel-jdt, claim_ids: [], citations: [{source_id: world-english-bible, locator: "Judith 8:1", witness_id: web-judith}]}
+  - {id: ananias-jdt-parent-elkiah-jdt, relationship_type: parent, subject_id: ananias-jdt, object_id: elkiah-jdt, claim_ids: [], citations: [{source_id: world-english-bible, locator: "Judith 8:1", witness_id: web-judith}]}
+  - {id: gideon-jdt-parent-ananias-jdt, relationship_type: parent, subject_id: gideon-jdt, object_id: ananias-jdt, claim_ids: [], citations: [{source_id: world-english-bible, locator: "Judith 8:1", witness_id: web-judith}]}
+  - {id: raphaim-jdt-parent-gideon-jdt, relationship_type: parent, subject_id: raphaim-jdt, object_id: gideon-jdt, claim_ids: [], citations: [{source_id: world-english-bible, locator: "Judith 8:1", witness_id: web-judith}]}
+  - {id: ahitub-jdt-parent-raphaim-jdt, relationship_type: parent, subject_id: ahitub-jdt, object_id: raphaim-jdt, claim_ids: [], citations: [{source_id: world-english-bible, locator: "Judith 8:1", witness_id: web-judith}]}
+  - {id: elihu-jdt-parent-ahitub-jdt, relationship_type: parent, subject_id: elihu-jdt, object_id: ahitub-jdt, claim_ids: [], citations: [{source_id: world-english-bible, locator: "Judith 8:1", witness_id: web-judith}]}
+  - {id: eliab-jdt-parent-elihu-jdt, relationship_type: parent, subject_id: eliab-jdt, object_id: elihu-jdt, claim_ids: [], citations: [{source_id: world-english-bible, locator: "Judith 8:1", witness_id: web-judith}]}
+  - {id: nathanael-jdt-parent-eliab-jdt, relationship_type: parent, subject_id: nathanael-jdt, object_id: eliab-jdt, claim_ids: [], citations: [{source_id: world-english-bible, locator: "Judith 8:1", witness_id: web-judith}]}
+  - {id: shelumiel-ancestor-of-nathanael-jdt, relationship_type: ancestor, subject_id: shelumiel, object_id: nathanael-jdt, claim_ids: [], interpretation_note: "Judith 8:1 continues the genealogy back to Salamiel son of Salasadai, the Simeonite leader of Numbers 1:6; the span of about five centuries in one step shows literary descent, not parenthood.", citations: [{source_id: world-english-bible, locator: "Judith 8:1", witness_id: web-judith}]}
+  - {id: micah-father-of-ozias-parent-ozias-of-bethulia, relationship_type: parent, subject_id: micah-father-of-ozias, object_id: ozias-of-bethulia, claim_ids: [], citations: [{source_id: world-english-bible, locator: "Judith 6:15", witness_id: web-judith}]}
+  - {id: gothoniel-parent-chabris, relationship_type: parent, subject_id: gothoniel, object_id: chabris, claim_ids: [], citations: [{source_id: world-english-bible, locator: "Judith 6:15", witness_id: web-judith}]}
+  - {id: melchiel-jdt-parent-charmis, relationship_type: parent, subject_id: melchiel-jdt, object_id: charmis, claim_ids: [], citations: [{source_id: world-english-bible, locator: "Judith 6:15", witness_id: web-judith}]}

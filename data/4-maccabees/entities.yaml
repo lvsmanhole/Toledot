@@ -1,0 +1,4 @@
+schema_version: 1
+record_type: entities
+records:
+  - {id: father-of-seven-brothers, entity_type: human, primary_name: "Father of the seven brothers", classification: unnamed_person, identity_status: unnamed_unique, aliases: [], gender: male, description: "Husband of the mother, who taught the sons the law and the prophets and died before the persecution.", identity_note: "Mentioned only in 4MA (the mother's speech, 18:7-19; also 10:2).", citations: [{source_id: world-english-bible, locator: "4 Maccabees 10:2", witness_id: web-4-maccabees}]}

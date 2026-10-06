@@ -1,0 +1,4 @@
+schema_version: 1
+record_type: events
+records:
+  - {id: prayer-of-azariah-narrative, event_type: book_narrative, name: "Prayer of Azariah", participants: [{entity_id: azariah-dan1, role: named participant}, {entity_id: abram, role: named participant}, {entity_id: hananiah-dan1, role: named participant}, {entity_id: isaac, role: named participant}, {entity_id: jacob, role: named participant}, {entity_id: mishael-dan1, role: named participant}], date_claim_ids: [], citations: [{source_id: world-english-bible, locator: "Prayer of Azariah", witness_id: web-prayer-of-azariah}]}

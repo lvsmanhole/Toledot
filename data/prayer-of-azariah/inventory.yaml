@@ -1,0 +1,4 @@
+schema_version: 1
+record_type: inventory_units
+records:
+  - {id: inv-prayer-of-azariah-3, work_id: prayer-of-azariah, locator: "Prayer of Azariah 3", reviewed: true, passage_ids: [prayer-of-azariah-3-census, prayer-of-azariah-3-lxx], identified_entity_ids: [abram, azariah-dan1, hananiah-dan1, isaac, jacob, mishael-dan1], event_ids: [prayer-of-azariah-narrative], no_individuals: false, review_basis: "Person census from a public-domain translation, checked verse by verse by a census pass; see the work's witness notes.", citations: [{source_id: world-english-bible, locator: "Prayer of Azariah 3", witness_id: web-prayer-of-azariah}]}

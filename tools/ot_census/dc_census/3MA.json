@@ -1,0 +1,475 @@
+{
+ "book": "3MA",
+ "people": [
+  {
+   "name": "Philopater",
+   "existing_id": null,
+   "new_id": "ptolemy-iv-philopator",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [
+    "Ptolemy",
+    "Ptolemy Philopater",
+    "Ptolemy Philopator",
+    "Philopator",
+    "the king"
+   ],
+   "description": "Ptolemaic king who defeated Antiochus at Raphia, tried to enter the temple, and persecuted then released the Jews of Egypt.",
+   "refs": [
+    "1:1",
+    "1:2",
+    "1:3",
+    "1:6",
+    "1:9",
+    "1:10",
+    "1:12",
+    "1:15",
+    "1:26",
+    "2:21",
+    "2:22",
+    "2:24",
+    "3:1",
+    "3:11",
+    "3:12",
+    "4:11",
+    "4:12",
+    "4:16",
+    "4:19",
+    "5:1",
+    "5:11",
+    "5:12",
+    "5:16",
+    "5:18",
+    "5:20",
+    "5:27",
+    "5:30",
+    "5:42",
+    "5:47",
+    "6:16",
+    "6:20",
+    "6:22",
+    "6:23",
+    "6:30",
+    "6:33",
+    "6:41",
+    "7:1",
+    "7:12"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Ptolemy IV Philopator. Arsinoe is called his sister (1:1); no parents or spouse are stated in 3MA."
+  },
+  {
+   "name": "Antiochus",
+   "existing_id": null,
+   "new_id": "antiochus-iii-the-great",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Seleucid king defeated by Ptolemy IV at Raphia.",
+   "refs": [
+    "1:1",
+    "1:4"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Historically Antiochus III; distinct from Antiochus IV of 2/4MA."
+  },
+  {
+   "name": "Arsinoe",
+   "existing_id": null,
+   "new_id": "arsinoe-iii",
+   "gender": "female",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Sister of Ptolemy IV who rallied the troops at Raphia with promises of gold.",
+   "refs": [
+    "1:1",
+    "1:4"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "3MA calls her his sister (1:1); historically Arsinoe III was also his wife, but the text does not say so, so no spouse is recorded."
+  },
+  {
+   "name": "Theodotus",
+   "existing_id": null,
+   "new_id": "theodotus-3ma",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Officer who tried to assassinate Ptolemy in his tent before Raphia.",
+   "refs": [
+    "1:2"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Distinct from Theodotus of 2MA 14:19."
+  },
+  {
+   "name": "Dositheus",
+   "existing_id": null,
+   "new_id": "dositheus-son-of-drimulus",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Apostate Jew who saved Ptolemy by placing a substitute in his tent.",
+   "refs": [
+    "1:3"
+   ],
+   "parents": [
+    {
+     "ref_name": "Drimulus",
+     "verse": "1:3"
+    }
+   ],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "'Called the son of Drimulus'. Distinct from the Dositheuses of 2MA 12."
+  },
+  {
+   "name": "Drimulus",
+   "existing_id": null,
+   "new_id": "drimulus",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Father of Dositheus.",
+   "refs": [
+    "1:3"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "The obscure man in Ptolemy's tent",
+   "existing_id": null,
+   "new_id": "ptolemy-iv-tent-substitute",
+   "gender": "male",
+   "unnamed": true,
+   "aliases": [],
+   "description": "Obscure person placed in Ptolemy's bed who was killed in his stead.",
+   "refs": [
+    "1:3"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Simon",
+   "existing_id": null,
+   "new_id": "simon-ii-high-priest",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "High priest who prayed against Ptolemy's intrusion into the sanctuary.",
+   "refs": [
+    "2:1"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Historically Simon II (c. 219-196 BCE), probably the Simon son of Onias praised in Sirach 50:1; reviewer should reconcile with the SIR census id. Distinct from the Simons of 2MA."
+  },
+  {
+   "name": "Pharaoh",
+   "existing_id": "pharaoh-exodus-second",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Pharaoh of the exodus, drowned in the sea with his chariots.",
+   "refs": [
+    "2:6",
+    "2:7",
+    "6:4"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Mapped to the pharaoh of the plagues and Red Sea crossing."
+  },
+  {
+   "name": "Hermon",
+   "existing_id": null,
+   "new_id": "hermon-elephant-master",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [
+    "the master of the elephants"
+   ],
+   "description": "Keeper of the king's elephants ordered to drug them for the execution of the Jews.",
+   "refs": [
+    "5:1",
+    "5:4",
+    "5:10",
+    "5:18",
+    "5:19",
+    "5:23",
+    "5:26",
+    "5:29",
+    "5:30",
+    "5:33",
+    "5:37",
+    "5:45",
+    "5:46"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Personal name here, not Mount Hermon."
+  },
+  {
+   "name": "Phalaris",
+   "existing_id": null,
+   "new_id": "phalaris",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Notoriously cruel tyrant (of Acragas) to whom the king is compared.",
+   "refs": [
+    "5:20",
+    "5:42"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Historical non-biblical figure mentioned only by comparison."
+  },
+  {
+   "name": "Eleazar",
+   "existing_id": null,
+   "new_id": "eleazar-priest-3ma",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Aged, illustrious priest of the country whose prayer preceded the deliverance at the hippodrome.",
+   "refs": [
+    "6:1",
+    "6:16"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Different person from Eleazar the martyr of 2MA 6/4MA (different setting: Egypt under Ptolemy IV)."
+  },
+  {
+   "name": "Abraham",
+   "existing_id": "abram",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Patriarch; the Jews are called his seed.",
+   "refs": [
+    "6:3"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Jacob",
+   "existing_id": "jacob",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Patriarch; the Jews are called his children and race.",
+   "refs": [
+    "6:3",
+    "6:13"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Sennacherim",
+   "existing_id": "sennacherib",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [
+    "Sennacherib"
+   ],
+   "description": "Assyrian king who threatened Jerusalem.",
+   "refs": [
+    "6:5"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Hananiah (one of the three friends)",
+   "existing_id": "hananiah-dan1",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": true,
+   "aliases": [],
+   "description": "One of the three friends delivered from the furnace.",
+   "refs": [
+    "6:6"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "'The three friends in the land of Babylon' clearly denotes Daniel's companions; unnamed here."
+  },
+  {
+   "name": "Mishael (one of the three friends)",
+   "existing_id": "mishael-dan1",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": true,
+   "aliases": [],
+   "description": "One of the three friends delivered from the furnace.",
+   "refs": [
+    "6:6"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "As above."
+  },
+  {
+   "name": "Azariah (one of the three friends)",
+   "existing_id": "azariah-dan1",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": true,
+   "aliases": [],
+   "description": "One of the three friends delivered from the furnace.",
+   "refs": [
+    "6:6"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "As above."
+  },
+  {
+   "name": "Daniel",
+   "existing_id": "daniel-ezk14",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Delivered from the lions.",
+   "refs": [
+    "6:7"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Jonah",
+   "existing_id": "jonah-2ki14",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Delivered from the sea monster.",
+   "refs": [
+    "6:8"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  }
+ ],
+ "excluded_names": {
+  "Philopator": "see ptolemy-iv-philopator",
+  "Ptolemy": "see ptolemy-iv-philopator",
+  "Raphia": "place",
+  "Jerusalem": "place",
+  "Greatest": "divine title",
+  "Ruler": "divine title",
+  "Sodomites": "people",
+  "Israel": "nation",
+  "Majesty": "divine title",
+  "Egypt": "place",
+  "Dionysus": "deity",
+  "Alexandrians": "people",
+  "Alexandria": "place",
+  "Jewish": "adjective",
+  "Asiatic": "adjective",
+  "Coele-": "region (Coele-Syria)",
+  "Syria": "place",
+  "Phoenicia": "place",
+  "Schedia": "place",
+  "Providence": "divine title",
+  "Judea": "place",
+  "Assyrians": "people",
+  "Babylon": "place",
+  "All-powerful": "divine title",
+  "Eternal": "divine title",
+  "Savior": "divine title",
+  "Pachon": "month (Egyptian)",
+  "Epiphi": "month (Egyptian)",
+  "Scythian": "people adjective",
+  "Ptolemais": "place",
+  "Redeemer": "divine title"
+ },
+ "notes": "Setting: Ptolemy IV Philopator after Raphia (217 BCE). 'The king' throughout = Ptolemy IV; refs list a representative set. Skipped unnamed minor figures: the person who sent the banquet invitations (5:14), the king's financier (6:30), the two angels (6:18, not human). 'Israel' (nation) excluded. No explicit ages. Egyptian-month dates from 6:38 recorded in dated_events (no years). Eleazar here is a different priest from the martyr Eleazar (eleazar-martyr) of 2MA/4MA.",
+ "dated_events": [
+  {
+   "verse": "6:38",
+   "seleucid_year": null,
+   "month": "Pachon",
+   "day": 25,
+   "event": "Registration of the Jews begins (runs to 4 Epiphi, forty days).",
+   "people": [
+    "ptolemy-iv-philopator"
+   ],
+   "note": "Egyptian calendar; no year given."
+  },
+  {
+   "verse": "6:38",
+   "seleucid_year": null,
+   "month": "Epiphi",
+   "day": 5,
+   "event": "Measures for the destruction of the Jews last from 5 to 7 Epiphi.",
+   "people": [
+    "ptolemy-iv-philopator",
+    "hermon-elephant-master"
+   ],
+   "note": "Egyptian calendar; no year given."
+  }
+ ]
+}

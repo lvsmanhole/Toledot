@@ -1,0 +1,628 @@
+{
+  "book": "ENO",
+  "source": {
+    "translation": "R. H. Charles, The Book of Enoch (SPCK, London, 1917; Translations of Early Documents), with introduction by W. O. E. Oesterley",
+    "url": "https://sacred-texts.com/bib/boe/index.htm",
+    "retrieved_via": "https://web.archive.org/web/2023id_/https://sacred-texts.com/bib/boe/boe.txt.gz (sacred-texts.com blocked automated fetch with a Cloudflare challenge)"
+  },
+  "people": [
+    {
+      "name": "Enoch",
+      "existing_id": "enoch-seth",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "Seventh from Adam, son of Jared; the seer and scribe of righteousness who receives the visions and instructs Methuselah.",
+      "refs": [
+        "1:1",
+        "1:2",
+        "12:1",
+        "12:3",
+        "12:4",
+        "13:1",
+        "14:24",
+        "15:1",
+        "19:3",
+        "21:5",
+        "21:9",
+        "25:1",
+        "32:6",
+        "37:1",
+        "39:2",
+        "60:1",
+        "60:8",
+        "65:2",
+        "65:5",
+        "65:9",
+        "66:3",
+        "67:4",
+        "68:1",
+        "69:29",
+        "70:1",
+        "70:2",
+        "71:13",
+        "76:14",
+        "79:1",
+        "80:1",
+        "81:1",
+        "82:1",
+        "83:1",
+        "83:2",
+        "83:3",
+        "83:6",
+        "83:10",
+        "85:1",
+        "85:2",
+        "85:3",
+        "91:1",
+        "91:3",
+        "92:1",
+        "93:1",
+        "93:3",
+        "106:7",
+        "106:8",
+        "106:10",
+        "106:13",
+        "107:2",
+        "107:3",
+        "108:1"
+      ],
+      "parents": [
+        {
+          "ref_name": "Jared",
+          "existing_id": "jared",
+          "verse": "37:1"
+        }
+      ],
+      "spouses": [
+        {
+          "ref_name": "Edna",
+          "new_id": "edni-enoch-wife",
+          "verse": "85:3"
+        }
+      ],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": "Speaks in the first person through most of the book; refs are limited to verses naming him or identifying him unambiguously (e.g. addressing \"my son Methuselah\", \"my grandfather\" in Noah's speech). 37:1 gives his descent Enoch-Jared-Mahalalel-Cainan-Enos-Seth-Adam; 60:8 and 93:3 call him the seventh from Adam / born the seventh in the first week. 70:1-2 his final translation."
+    },
+    {
+      "name": "Edna",
+      "existing_id": null,
+      "new_id": "edni-enoch-wife",
+      "gender": "female",
+      "unnamed": false,
+      "aliases": [
+        "Ednî (Jubilees 4:20)"
+      ],
+      "description": "Wife of Enoch and mother of Methuselah.",
+      "refs": [
+        "83:2",
+        "85:3"
+      ],
+      "parents": [],
+      "spouses": [
+        {
+          "ref_name": "Enoch",
+          "existing_id": "enoch-seth",
+          "verse": "85:3"
+        }
+      ],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": "85:3 \"Before I took thy mother Edna\" (Enoch to Methuselah); 83:2 \"before I took thy mother\". Same person as Ednî daughter of Dânêl in Jubilees 4:20; the new_id matches the one used in JUB.json."
+    },
+    {
+      "name": "Methuselah",
+      "existing_id": "methuselah",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "Son of Enoch and Edna, to whom Enoch entrusts his books; father of Lamech.",
+      "refs": [
+        "76:14",
+        "79:1",
+        "81:5",
+        "82:1",
+        "83:1",
+        "83:2",
+        "83:3",
+        "83:10",
+        "85:1",
+        "85:2",
+        "85:3",
+        "91:1",
+        "91:2",
+        "106:1",
+        "106:4",
+        "106:8",
+        "106:10",
+        "107:2",
+        "107:3",
+        "108:1"
+      ],
+      "parents": [
+        {
+          "ref_name": "Enoch",
+          "existing_id": "enoch-seth",
+          "verse": "76:14"
+        },
+        {
+          "ref_name": "Edna",
+          "new_id": "edni-enoch-wife",
+          "verse": "85:3"
+        }
+      ],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": "91:1-2 mentions his (unnamed) brothers, the sons of Edna."
+    },
+    {
+      "name": "Lamech",
+      "existing_id": "lamech-seth",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "Son of Methuselah; father of Noah, who feared his newborn son was of angelic origin.",
+      "refs": [
+        "10:1",
+        "106:1",
+        "106:4",
+        "106:5",
+        "106:10",
+        "106:12",
+        "106:18",
+        "107:2"
+      ],
+      "parents": [
+        {
+          "ref_name": "Methuselah",
+          "existing_id": "methuselah",
+          "verse": "106:1"
+        }
+      ],
+      "spouses": [
+        {
+          "ref_name": "Wife of Lamech",
+          "new_id": "betenos",
+          "verse": "106:1"
+        }
+      ],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": null
+    },
+    {
+      "name": "Wife of Lamech",
+      "existing_id": null,
+      "new_id": "betenos",
+      "gender": "female",
+      "unnamed": true,
+      "aliases": [],
+      "description": "Wife whom Methuselah took for Lamech; mother of Noah.",
+      "refs": [
+        "106:1"
+      ],
+      "parents": [],
+      "spouses": [
+        {
+          "ref_name": "Lamech",
+          "existing_id": "lamech-seth",
+          "verse": "106:1"
+        }
+      ],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": "Unnamed in 1 Enoch; Jubilees 4:28 names Lamech's wife Bêtênôs - the new_id \"betenos\" matches JUB.json."
+    },
+    {
+      "name": "Noah",
+      "existing_id": "noah",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "Son of Lamech, born with radiant appearance; warned of the deluge and preserved with his three sons.",
+      "refs": [
+        "10:1",
+        "10:2",
+        "60:8",
+        "65:1",
+        "65:2",
+        "65:5",
+        "65:9",
+        "65:11",
+        "67:1",
+        "67:4",
+        "68:1",
+        "106:1",
+        "106:2",
+        "106:3",
+        "106:5",
+        "106:10",
+        "106:11",
+        "106:12",
+        "106:16",
+        "106:18",
+        "107:2",
+        "107:3"
+      ],
+      "parents": [
+        {
+          "ref_name": "Lamech",
+          "existing_id": "lamech-seth",
+          "verse": "106:1"
+        },
+        {
+          "ref_name": "Wife of Lamech",
+          "new_id": "betenos",
+          "verse": "106:1"
+        }
+      ],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": "Chs. 60 and 65-68 belong to the \"Book of Noah\" fragments in which Noah speaks in the first person (60:8, 65:5-68:1 \"my grandfather Enoch\"); Charles regards \"Enoch\" in 60:1 as an error for Noah. 106:16 his \"three children\" are unnamed."
+    },
+    {
+      "name": "Midwife at Noah's birth",
+      "existing_id": null,
+      "new_id": "midwife-at-noahs-birth",
+      "gender": "female",
+      "unnamed": true,
+      "aliases": [],
+      "description": "Midwife in whose hands the newborn Noah arose and spoke.",
+      "refs": [
+        "106:3",
+        "106:11"
+      ],
+      "parents": [],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": null
+    },
+    {
+      "name": "Jared",
+      "existing_id": "jared",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "Father of Enoch, in whose days the Watchers descended on Mount Hermon.",
+      "refs": [
+        "6:6",
+        "37:1",
+        "106:13"
+      ],
+      "parents": [
+        {
+          "ref_name": "Mahalalel",
+          "existing_id": "mahalalel",
+          "verse": "37:1"
+        }
+      ],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": null
+    },
+    {
+      "name": "Mahalalel",
+      "existing_id": "mahalalel",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "Grandfather of Enoch, in whose house Enoch had his first dream-vision of the deluge.",
+      "refs": [
+        "37:1",
+        "83:3",
+        "83:6",
+        "83:7",
+        "83:8",
+        "83:9"
+      ],
+      "parents": [
+        {
+          "ref_name": "Cainan",
+          "existing_id": "kenan",
+          "verse": "37:1"
+        }
+      ],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": "83:3-9: Enoch, before his marriage, sleeps in his grandfather Mahalalel's house; Mahalalel interprets the vision."
+    },
+    {
+      "name": "Cainan",
+      "existing_id": "kenan",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [
+        "Kenan"
+      ],
+      "description": "Ancestor of Enoch, son of Enos (pre-flood Kenan).",
+      "refs": [
+        "37:1"
+      ],
+      "parents": [
+        {
+          "ref_name": "Enos",
+          "existing_id": "enosh",
+          "verse": "37:1"
+        }
+      ],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": null
+    },
+    {
+      "name": "Enos",
+      "existing_id": "enosh",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [
+        "Enosh"
+      ],
+      "description": "Son of Seth, ancestor of Enoch.",
+      "refs": [
+        "37:1"
+      ],
+      "parents": [
+        {
+          "ref_name": "Seth",
+          "existing_id": "seth",
+          "verse": "37:1"
+        }
+      ],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": null
+    },
+    {
+      "name": "Seth",
+      "existing_id": "seth",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "Son of Adam, ancestor of Enoch.",
+      "refs": [
+        "37:1"
+      ],
+      "parents": [
+        {
+          "ref_name": "Adam",
+          "existing_id": "adam",
+          "verse": "37:1"
+        }
+      ],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": null
+    },
+    {
+      "name": "Adam",
+      "existing_id": "adam",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "The first man whom the Lord of Spirits created.",
+      "refs": [
+        "32:6",
+        "37:1",
+        "60:8"
+      ],
+      "parents": [],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": "32:6 Raphael tells Enoch that \"thy father old (in years) and thy aged mother\" ate of the tree of wisdom and were driven from the garden - Adam and Eve as Enoch's first ancestors. In the Animal Apocalypse (85:3ff.) Adam appears symbolically as the white bull; such symbolic refs are not counted."
+    },
+    {
+      "name": "Eve",
+      "existing_id": "eve",
+      "new_id": null,
+      "gender": "female",
+      "unnamed": false,
+      "aliases": [],
+      "description": "The first woman, whom the Watcher Gadreel led astray.",
+      "refs": [
+        "32:6",
+        "69:6"
+      ],
+      "parents": [],
+      "spouses": [
+        {
+          "ref_name": "Adam",
+          "existing_id": "adam",
+          "verse": "32:6"
+        }
+      ],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": "Named only at 69:6. 32:6 \"thy aged mother\" (see Adam)."
+    },
+    {
+      "name": "Cain",
+      "existing_id": "cain",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "Brother and slayer of Abel.",
+      "refs": [
+        "22:7"
+      ],
+      "parents": [],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": null
+    },
+    {
+      "name": "Abel",
+      "existing_id": "abel",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "Slain by his brother Cain; his spirit in Sheol pleads against Cain's seed.",
+      "refs": [
+        "22:7"
+      ],
+      "parents": [],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": null
+    }
+  ],
+  "dated_events": [
+    {
+      "verse": "60:1",
+      "jubilee": null,
+      "week": null,
+      "year": 500,
+      "anno_mundi_if_computable": null,
+      "event": "Vision of the quaking of the heaven of heavens: \"In the year five hundred, in the seventh month, on the fourteenth day of the month in the life of +Enoch+\"",
+      "people": [
+        "enoch-seth",
+        "noah"
+      ],
+      "note": "Year of a person's life, not a jubilee date. Charles marks \"Enoch\" as corrupt (+...+); this section belongs to the Book of Noah and the year 500 fits Noah (cf. Gen 5:32). Not convertible to A.M. without assuming Noah's birth year."
+    },
+    {
+      "verse": "93:3",
+      "jubilee": null,
+      "week": 1,
+      "year": null,
+      "anno_mundi_if_computable": null,
+      "event": "Enoch: \"I was born the seventh in the first week\" (Apocalypse of Weeks)",
+      "people": [
+        "enoch-seth"
+      ],
+      "note": "\"Week\" here is one of the ten world-weeks of the Apocalypse of Weeks (93:3-10, 91:12-17), not a seven-year week of years; \"seventh\" is his generation from Adam."
+    }
+  ],
+  "excluded_names": {
+    "Watchers": "fallen angels",
+    "Semjaza": "angel (leader of the Watchers)",
+    "Semiazaz": "angel",
+    "Samjaza": "angel",
+    "Azazel": "angel",
+    "Michael": "archangel",
+    "Uriel": "archangel",
+    "Raphael": "archangel",
+    "Gabriel": "archangel",
+    "Phanuel": "archangel",
+    "Raguel": "archangel",
+    "Saraqael": "archangel",
+    "Remiel": "archangel",
+    "Zotiel": "angel",
+    "Arakiba": "Watcher (6:7)",
+    "Rameel": "Watcher",
+    "Kokabiel": "Watcher",
+    "Kokabel": "Watcher",
+    "Tamiel": "Watcher",
+    "Ramiel": "Watcher",
+    "Danel": "Watcher (6:7) - not the Danel father of Edni in Jubilees",
+    "Ezeqeel": "Watcher",
+    "Baraqijal": "Watcher (6:7, 8:3) - not the human Barakiel of Jubilees",
+    "Baraqel": "Watcher (69:2)",
+    "Asael": "Watcher",
+    "Armaros": "Watcher",
+    "Batarel": "Watcher",
+    "Ananel": "Watcher",
+    "Zaqiel": "Watcher",
+    "Samsapeel": "Watcher",
+    "Satarel": "Watcher",
+    "Turel": "Watcher",
+    "Jomjael": "Watcher",
+    "Sariel": "Watcher",
+    "Araqiel": "Watcher",
+    "Shamsiel": "Watcher",
+    "Artaqifa": "Watcher",
+    "Armen": "Watcher",
+    "Turael": "Watcher",
+    "Rumjal": "Watcher",
+    "Danjal": "Watcher",
+    "Neqael": "Watcher",
+    "Batarjal": "Watcher",
+    "Busasejal": "Watcher",
+    "Hananel": "Watcher",
+    "Simapesiel": "Watcher",
+    "Jetrel": "Watcher",
+    "Tumael": "Watcher",
+    "Rumael": "Watcher",
+    "Jeqon": "Satan/fallen angel",
+    "Asbeel": "fallen angel",
+    "Gadreel": "fallen angel",
+    "Penemue": "fallen angel",
+    "Kasdeja": "fallen angel",
+    "Kasbeel": "angel (Biqa)",
+    "Biqa": "angel",
+    "Akae": "secret name/oath",
+    "Tabaa'et": "\"son of the serpent\" (demonic)",
+    "Satan": "adversary",
+    "Satans": "adversaries",
+    "Milki'el": "angelic leader of a season (82:13-20)",
+    "Hel'emmelek": "angelic leader of a season",
+    "Mel'ejal": "angelic leader",
+    "Narel": "angelic leader",
+    "Adnar'el": "angelic leader",
+    "Ijasusa'el": "angelic leader",
+    "Elome'el": "angelic leader",
+    "Melkejal": "angelic leader",
+    "Tam'aini": "name of the sun (82:15)",
+    "Berka'el": "angelic leader",
+    "Zelebs'el": "angelic leader",
+    "Hilujaseph": "angelic leader",
+    "Gida'ijal": "angelic leader",
+    "Ke'el": "angelic leader",
+    "He'el": "angelic leader",
+    "Asfa'el": "angelic leader",
+    "Orjares": "name of the sun (78:1)",
+    "Tomas": "name of the sun",
+    "Asonja": "name of the moon (78:2)",
+    "Ebla": "name of the moon",
+    "Benase": "name of the moon",
+    "Erae": "name of the moon",
+    "Behemoth": "mythical beast",
+    "Leviathan": "mythical beast",
+    "Son of Man / Elect One / Anointed / Messiah": "heavenly messianic figure, not entered as a historical person (71:14 is read by some as identifying him with Enoch)",
+    "Head of Days": "God",
+    "Lord of Spirits": "God",
+    "Hermon": "mountain",
+    "Dudael": "place",
+    "Duidain": "place",
+    "Abelsjail": "place",
+    "Seneser": "place",
+    "Lebanon": "place",
+    "Dan": "place (13:7)",
+    "Sheol": "underworld",
+    "Tartarus": "underworld",
+    "Jerusalem": "city",
+    "Sinai": "mountain",
+    "Erythraean": "sea",
+    "Parthians": "people",
+    "Medes": "people",
+    "Israel": "people",
+    "Gentiles": "peoples",
+    "Animal Apocalypse figures (chs. 85-90)": "Adam, Eve, Cain, Abel, Seth, Noah and his sons, the patriarchs, Moses, etc. appear only as symbolic animals (bulls, sheep, rams) and are not named; not counted as refs",
+    "Methuselah's brothers": "unnamed group (91:1-2)",
+    "Noah's three children": "unnamed group (106:16, 89:1-9)"
+  },
+  "notes": "Source: R. H. Charles, The Book of Enoch (SPCK, 1917; Translations of Early Documents), sacred-texts.com /bib/boe/. sacred-texts.com returned a Cloudflare challenge to curl, so the site's own plain-text edition (boe.txt.gz) was fetched from the Internet Archive's capture of https://sacred-texts.com/bib/boe/boe.txt.gz and saved under dl/charles/boe/ (the chapter HTML pages were only partly retrievable because of rate limiting). Chapter:verse follows Charles's numbering as printed; Charles transposes text (91:12-17 is printed after ch. 93; ch. 92 precedes 91:1-11), and the refs use the printed chapter/verse labels. Editorial section headings were stripped before parsing. A few verse numbers are absent from the scan and those verses are merged into the previous one (e.g. 10:7, 10:14, 10:16, 14:10, 16:3, 18:6, 22:4, 60:5, 60:16, 76:13, 82:14, 91:14, 93:2, 100:2, 106:17). 5:5-9 contains Charles's sub-lettered verses (6a, 7c...) merged into 5:5. Only humans are entered. All Watchers, archangels and other angelic/demonic names are excluded; the Animal Apocalypse (85-90) is symbolic and its figures are not counted. Cross-book ids: Edna (85:3) uses new_id edni-enoch-wife and Lamech's unnamed wife (106:1) uses new_id betenos, matching JUB.json, where Jubilees names them (Ednî 4:20; Bêtênôs 4:28). 1 Enoch gives no jubilee/week/year dates for people; the only numeric dating is 60:1 (year 500 of a patriarch's life, text corrupt) and the world-week of Enoch's birth (93:3). No explicit ages are stated."
+}

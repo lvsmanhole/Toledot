@@ -1,0 +1,1015 @@
+{
+  "book": "JDT",
+  "people": [
+    {
+      "name": "Judith",
+      "existing_id": null,
+      "new_id": "judith",
+      "gender": "female",
+      "unnamed": false,
+      "aliases": [],
+      "description": "Simeonite widow of Bethulia who beheaded Holofernes and delivered Israel.",
+      "refs": [
+        "8:1",
+        "8:4",
+        "8:5",
+        "8:7",
+        "8:9",
+        "8:32",
+        "9:1",
+        "9:2",
+        "9:4",
+        "10:2",
+        "10:3",
+        "10:4",
+        "10:10",
+        "10:23",
+        "11:5",
+        "12:2",
+        "12:3",
+        "12:4",
+        "12:14",
+        "12:16",
+        "12:18",
+        "13:2",
+        "13:3",
+        "13:4",
+        "13:6",
+        "13:7",
+        "13:8",
+        "13:9",
+        "13:10",
+        "13:11",
+        "13:15",
+        "13:18",
+        "14:1",
+        "14:5",
+        "14:7",
+        "14:8",
+        "14:14",
+        "14:17",
+        "15:8",
+        "15:11",
+        "16:1",
+        "16:2",
+        "16:7",
+        "16:19",
+        "16:20",
+        "16:21",
+        "16:22",
+        "16:23",
+        "16:24",
+        "16:25"
+      ],
+      "parents": [
+        {
+          "ref_name": "Merari",
+          "verse": "8:1"
+        }
+      ],
+      "spouses": [
+        {
+          "ref_name": "Manasses",
+          "verse": "8:2"
+        }
+      ],
+      "descent_note": null,
+      "explicit_ages": [
+        {
+          "what": "lifespan",
+          "years": 105,
+          "verse": "16:23"
+        }
+      ],
+      "identity_note": "Widowed three years and four months at the start of the story (8:4). Calls Simeon \"my father\" (9:2), i.e. Simeonite ancestry."
+    },
+    {
+      "name": "Merari",
+      "existing_id": null,
+      "new_id": "merari-jdt",
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "Judith's father, son of Ox.",
+      "refs": [
+        "8:1",
+        "16:7"
+      ],
+      "parents": [
+        {
+          "ref_name": "Ox",
+          "verse": "8:1"
+        }
+      ],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": "Not Merari son of Levi."
+    },
+    {
+      "name": "Ox",
+      "existing_id": null,
+      "new_id": "ox-jdt",
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "Ancestor of Judith in her genealogy (8:1), son of Joseph.",
+      "refs": [
+        "8:1"
+      ],
+      "parents": [
+        {
+          "ref_name": "Joseph",
+          "verse": "8:1"
+        }
+      ],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": null
+    },
+    {
+      "name": "Joseph",
+      "existing_id": null,
+      "new_id": "joseph-jdt",
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "Ancestor of Judith in her genealogy (8:1), son of Oziel.",
+      "refs": [
+        "8:1"
+      ],
+      "parents": [
+        {
+          "ref_name": "Oziel",
+          "verse": "8:1"
+        }
+      ],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": "Not Joseph son of Jacob."
+    },
+    {
+      "name": "Oziel",
+      "existing_id": null,
+      "new_id": "oziel-jdt",
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "Ancestor of Judith in her genealogy (8:1), son of Elkiah.",
+      "refs": [
+        "8:1"
+      ],
+      "parents": [
+        {
+          "ref_name": "Elkiah",
+          "verse": "8:1"
+        }
+      ],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": null
+    },
+    {
+      "name": "Elkiah",
+      "existing_id": null,
+      "new_id": "elkiah-jdt",
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "Ancestor of Judith in her genealogy (8:1), son of Ananias.",
+      "refs": [
+        "8:1"
+      ],
+      "parents": [
+        {
+          "ref_name": "Ananias",
+          "verse": "8:1"
+        }
+      ],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": null
+    },
+    {
+      "name": "Ananias",
+      "existing_id": null,
+      "new_id": "ananias-jdt",
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "Ancestor of Judith in her genealogy (8:1), son of Gideon.",
+      "refs": [
+        "8:1"
+      ],
+      "parents": [
+        {
+          "ref_name": "Gideon",
+          "verse": "8:1"
+        }
+      ],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": "Different from Ananias of Tobit."
+    },
+    {
+      "name": "Gideon",
+      "existing_id": null,
+      "new_id": "gideon-jdt",
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "Ancestor of Judith in her genealogy (8:1), son of Raphaim.",
+      "refs": [
+        "8:1"
+      ],
+      "parents": [
+        {
+          "ref_name": "Raphaim",
+          "verse": "8:1"
+        }
+      ],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": "Not Gideon the judge (a Manassite)."
+    },
+    {
+      "name": "Raphaim",
+      "existing_id": null,
+      "new_id": "raphaim-jdt",
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "Ancestor of Judith in her genealogy (8:1), son of Ahitub.",
+      "refs": [
+        "8:1"
+      ],
+      "parents": [
+        {
+          "ref_name": "Ahitub",
+          "verse": "8:1"
+        }
+      ],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": null
+    },
+    {
+      "name": "Ahitub",
+      "existing_id": null,
+      "new_id": "ahitub-jdt",
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "Ancestor of Judith in her genealogy (8:1), son of Elihu.",
+      "refs": [
+        "8:1"
+      ],
+      "parents": [
+        {
+          "ref_name": "Elihu",
+          "verse": "8:1"
+        }
+      ],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": "Not any of the priestly Ahitubs."
+    },
+    {
+      "name": "Elihu",
+      "existing_id": null,
+      "new_id": "elihu-jdt",
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "Ancestor of Judith in her genealogy (8:1), son of Eliab.",
+      "refs": [
+        "8:1"
+      ],
+      "parents": [
+        {
+          "ref_name": "Eliab",
+          "verse": "8:1"
+        }
+      ],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": null
+    },
+    {
+      "name": "Eliab",
+      "existing_id": null,
+      "new_id": "eliab-jdt",
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "Ancestor of Judith in her genealogy (8:1), son of Nathanael.",
+      "refs": [
+        "8:1"
+      ],
+      "parents": [
+        {
+          "ref_name": "Nathanael",
+          "verse": "8:1"
+        }
+      ],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": "Not identified with Eliab son of Helon (Zebulun)."
+    },
+    {
+      "name": "Nathanael",
+      "existing_id": null,
+      "new_id": "nathanael-jdt",
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "Ancestor of Judith in her genealogy (8:1), son of Salamiel.",
+      "refs": [
+        "8:1"
+      ],
+      "parents": [
+        {
+          "ref_name": "Salamiel",
+          "verse": "8:1",
+          "existing_id": "shelumiel"
+        }
+      ],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": "Not identified with Nethanel son of Zuar (Issachar)."
+    },
+    {
+      "name": "Salamiel",
+      "existing_id": "shelumiel",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "Ancestor of Judith, father of Nathanael in her genealogy.",
+      "refs": [
+        "8:1"
+      ],
+      "parents": [
+        {
+          "ref_name": "Salasadai",
+          "verse": "8:1",
+          "existing_id": "zurishaddai"
+        }
+      ],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": "\"Salamiel son of Salasadai\" matches Shelumiel son of Zurishaddai, the Simeonite chief of Num 1:6 (LXX Salamiel son of Sourisadai), and Judith is Simeonite (9:2); entity_index already lists Salamiel as an LXX alias of shelumiel. Mapped, but the generation count from the Mosaic era to Judith (14) is literary, not chronological."
+    },
+    {
+      "name": "Salasadai",
+      "existing_id": "zurishaddai",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "Earliest named ancestor of Judith, father of Salamiel.",
+      "refs": [
+        "8:1"
+      ],
+      "parents": [],
+      "spouses": [],
+      "descent_note": "\"son of Israel\" (8:1) means descendant of Jacob/Israel (through Simeon), not a literal son; Israel is not listed as parent.",
+      "explicit_ages": [],
+      "identity_note": "Salasadai = Zurishaddai (LXX Sourisadai/Sarasadai), father of Shelumiel (Num 1:6)."
+    },
+    {
+      "name": "Manasses",
+      "existing_id": null,
+      "new_id": "manasses-husband-of-judith",
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "Judith's husband, of her tribe and family, who died of sunstroke at the barley harvest.",
+      "refs": [
+        "8:2",
+        "8:3",
+        "8:7",
+        "10:3",
+        "16:22",
+        "16:23",
+        "16:24"
+      ],
+      "parents": [],
+      "spouses": [
+        {
+          "ref_name": "Judith",
+          "verse": "8:2"
+        }
+      ],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": null
+    },
+    {
+      "name": "Nebuchadnezzar",
+      "existing_id": null,
+      "new_id": "nebuchadnezzar-judith",
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "\"King of the Assyrians\" reigning in Nineveh who defeats Arphaxad and sends Holofernes west.",
+      "refs": [
+        "1:1",
+        "1:5",
+        "1:7",
+        "1:11",
+        "1:12",
+        "2:1",
+        "2:4",
+        "2:5",
+        "2:12",
+        "2:13",
+        "2:19",
+        "3:2",
+        "3:8",
+        "4:1",
+        "6:2",
+        "6:4",
+        "11:1",
+        "11:4",
+        "11:7",
+        "11:23",
+        "12:13",
+        "14:18"
+      ],
+      "parents": [],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": "Literary figure: Judith makes Nebuchadnezzar king of Assyria at Nineveh, after the return from exile (4:3, 5:19), and demands worship as a god (3:8, 6:2). This combination fits no historical reign (the Babylonian Nebuchadnezzar II never ruled from Nineveh, which had fallen in 612 BC, and he predates the return). Kept as a separate person rather than mapped to the existing nebuchadnezzar id so that the book's fictional dates (years 12-18) are not attached to Nebuchadnezzar II."
+    },
+    {
+      "name": "Arphaxad",
+      "existing_id": null,
+      "new_id": "arphaxad-king-of-medes",
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "King of the Medes in Ecbatana, defeated and killed by Nebuchadnezzar.",
+      "refs": [
+        "1:1",
+        "1:2",
+        "1:5",
+        "1:13",
+        "1:15"
+      ],
+      "parents": [],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": "Unrelated to Arpachshad son of Shem; no historical Median king of this name is known (sometimes linked to Deioces or Phraortes)."
+    },
+    {
+      "name": "Arioch",
+      "existing_id": null,
+      "new_id": "arioch-king-of-elymaeans",
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "King of the Elymaeans, an ally in the war against Arphaxad.",
+      "refs": [
+        "1:6"
+      ],
+      "parents": [],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": "Not Arioch of Gen 14 or Arioch of Daniel 2. The WEB says \"the plain of Arioch the king of the Elymaeans\" (1:6)."
+    },
+    {
+      "name": "Holofernes",
+      "existing_id": null,
+      "new_id": "holofernes",
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "Chief captain of Nebuchadnezzar's army, beheaded by Judith.",
+      "refs": [
+        "2:4",
+        "2:5",
+        "2:14",
+        "3:5",
+        "3:6",
+        "3:8",
+        "3:9",
+        "3:10",
+        "4:1",
+        "5:1",
+        "5:22",
+        "5:24",
+        "6:1",
+        "6:10",
+        "6:17",
+        "7:1",
+        "7:6",
+        "7:16",
+        "7:26",
+        "10:13",
+        "10:17",
+        "10:18",
+        "10:20",
+        "10:21",
+        "11:1",
+        "11:20",
+        "11:22",
+        "12:1",
+        "12:3",
+        "12:4",
+        "12:5",
+        "12:6",
+        "12:7",
+        "12:10",
+        "12:12",
+        "12:13",
+        "12:15",
+        "12:16",
+        "12:17",
+        "12:20",
+        "13:2",
+        "13:6",
+        "13:9",
+        "13:15",
+        "13:18",
+        "14:3",
+        "14:6",
+        "14:11",
+        "14:13",
+        "14:14",
+        "14:15",
+        "14:18",
+        "15:11",
+        "16:7",
+        "16:9",
+        "16:19"
+      ],
+      "parents": [],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": null
+    },
+    {
+      "name": "Achior",
+      "existing_id": null,
+      "new_id": "achior",
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "Leader of the Ammonites who warned Holofernes about Israel's God and later was circumcised and joined Israel.",
+      "refs": [
+        "5:5",
+        "5:22",
+        "6:1",
+        "6:2",
+        "6:5",
+        "6:10",
+        "6:13",
+        "6:16",
+        "6:20",
+        "11:9",
+        "14:5",
+        "14:6",
+        "14:10"
+      ],
+      "parents": [],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": "Called \"the Ammonite\" (14:5) and \"hireling of Ammon\" (6:5)."
+    },
+    {
+      "name": "Bagoas",
+      "existing_id": null,
+      "new_id": "bagoas-jdt",
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "Eunuch in charge of Holofernes' household who found him dead.",
+      "refs": [
+        "12:11",
+        "12:13",
+        "12:15",
+        "13:1",
+        "13:3",
+        "14:13",
+        "14:14",
+        "14:15",
+        "14:16",
+        "14:17"
+      ],
+      "parents": [],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": null
+    },
+    {
+      "name": "Ozias",
+      "existing_id": null,
+      "new_id": "ozias-of-bethulia",
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "Chief ruler (governor) of Bethulia, of the tribe of Simeon.",
+      "refs": [
+        "6:15",
+        "6:16",
+        "6:21",
+        "7:23",
+        "7:30",
+        "8:9",
+        "8:10",
+        "8:11",
+        "8:28",
+        "8:35",
+        "10:6",
+        "13:18",
+        "14:6",
+        "15:4"
+      ],
+      "parents": [
+        {
+          "ref_name": "Micah",
+          "verse": "6:15"
+        }
+      ],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": "Ozias = Uzziah; not King Uzziah of Judah."
+    },
+    {
+      "name": "Micah",
+      "existing_id": null,
+      "new_id": "micah-father-of-ozias",
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "Simeonite father of Ozias, ruler of Bethulia.",
+      "refs": [
+        "6:15"
+      ],
+      "parents": [],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": "Not the prophet Micah or any other Hebrew-Bible Micah."
+    },
+    {
+      "name": "Chabris",
+      "existing_id": null,
+      "new_id": "chabris",
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "One of the rulers (elders) of Bethulia.",
+      "refs": [
+        "6:15",
+        "8:10",
+        "10:6"
+      ],
+      "parents": [
+        {
+          "ref_name": "Gothoniel",
+          "verse": "6:15"
+        }
+      ],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": null
+    },
+    {
+      "name": "Gothoniel",
+      "existing_id": null,
+      "new_id": "gothoniel",
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "Father of Chabris, ruler of Bethulia.",
+      "refs": [
+        "6:15"
+      ],
+      "parents": [],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": "Gothoniel is the Greek form of Othniel, but this is not Othniel the judge."
+    },
+    {
+      "name": "Charmis",
+      "existing_id": null,
+      "new_id": "charmis",
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "One of the rulers (elders) of Bethulia.",
+      "refs": [
+        "6:15",
+        "8:10",
+        "10:6"
+      ],
+      "parents": [
+        {
+          "ref_name": "Melchiel",
+          "verse": "6:15"
+        }
+      ],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": null
+    },
+    {
+      "name": "Melchiel",
+      "existing_id": null,
+      "new_id": "melchiel-jdt",
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "Father of Charmis, ruler of Bethulia.",
+      "refs": [
+        "6:15"
+      ],
+      "parents": [],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": null
+    },
+    {
+      "name": "Joakim",
+      "existing_id": null,
+      "new_id": "joakim-high-priest-jdt",
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "High priest in Jerusalem who organised the defence and later honored Judith.",
+      "refs": [
+        "4:6",
+        "4:8",
+        "4:14",
+        "15:8"
+      ],
+      "parents": [],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": "Possibly intended as Joiakim son of Jeshua (Neh 12:10, 26), since the story is set just after the return (4:3), but the book is not historically anchored and the name was common among priests (cf. Baruch 1:7 Joakim son of Hilkiah); not mapped to existing joiakim."
+    },
+    {
+      "name": "Judith's maid",
+      "existing_id": null,
+      "new_id": "judith-maid",
+      "gender": "female",
+      "unnamed": true,
+      "aliases": [],
+      "description": "Maid in charge of Judith's household who accompanied her to Holofernes' camp; freed before Judith died.",
+      "refs": [
+        "8:10",
+        "8:33",
+        "10:2",
+        "10:5",
+        "10:10",
+        "10:17",
+        "12:15",
+        "12:19",
+        "13:3",
+        "13:9",
+        "13:10",
+        "16:23"
+      ],
+      "parents": [],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": null
+    },
+    {
+      "name": "the king of Egypt",
+      "existing_id": "pharaoh-exodus",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": true,
+      "aliases": [],
+      "description": "Pharaoh who enslaved Israel in brickmaking, recalled in Achior's speech.",
+      "refs": [
+        "5:11"
+      ],
+      "parents": [],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": null
+    },
+    {
+      "name": "Abraham",
+      "existing_id": "abram",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "Patriarch whom God tested, recalled by Judith.",
+      "refs": [
+        "8:26"
+      ],
+      "parents": [],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": null
+    },
+    {
+      "name": "Isaac",
+      "existing_id": "isaac",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "Patriarch whom God tested, recalled by Judith.",
+      "refs": [
+        "8:26"
+      ],
+      "parents": [],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": null
+    },
+    {
+      "name": "Jacob",
+      "existing_id": "jacob",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [
+        "Israel"
+      ],
+      "description": "Patriarch who served Laban in Mesopotamia; ultimate ancestor in Judith's genealogy.",
+      "refs": [
+        "8:1",
+        "8:26"
+      ],
+      "parents": [],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": "Of the 50 \"Israel\" occurrences, only 8:1 (\"the son of Israel\") is the person; the rest are the nation."
+    },
+    {
+      "name": "Laban",
+      "existing_id": "laban",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "Jacob's maternal uncle whose sheep Jacob kept.",
+      "refs": [
+        "8:26"
+      ],
+      "parents": [],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": "8:26 \"Laban his mother's brother\" - uncle relation, not parent/spouse."
+    },
+    {
+      "name": "Simeon",
+      "existing_id": "simeon",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "Son of Jacob who avenged the defilement of his sister (Gen 34), invoked by Judith as \"my father\".",
+      "refs": [
+        "9:2"
+      ],
+      "parents": [],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": "6:15 \"tribe of Simeon\" is the tribe and is not counted."
+    }
+  ],
+  "excluded_names": {
+    "Assyrians": "people",
+    "Nineveh": "place",
+    "Medes": "people",
+    "Ecbatana": "place",
+    "Ragau": "place",
+    "Euphrates": "river",
+    "Tigris": "river",
+    "Hydaspes": "river",
+    "Elymaeans": "people",
+    "Chelod": "people (\"sons of Chelod\")",
+    "Persia": "place",
+    "Cilicia": "place",
+    "Damascus": "place",
+    "Libanus": "place",
+    "Antilibanus": "place",
+    "Carmel": "place",
+    "Gilead": "place",
+    "Galilee": "place",
+    "Esdraelon": "place",
+    "Samaria": "place",
+    "Jordan": "river",
+    "Jerusalem": "place",
+    "Betane": "place",
+    "Chellus": "place",
+    "Kadesh": "place",
+    "Egypt": "place",
+    "Tahpanhes": "place",
+    "Rameses": "place",
+    "Goshen": "place",
+    "Tanis": "place",
+    "Memphis": "place",
+    "Ethiopia": "place",
+    "Syria": "place",
+    "Moab": "people/place",
+    "Ammon": "people",
+    "Judea": "place",
+    "Asshur": "Assyria/Assyrians (incl. personified nation in 16:4)",
+    "Bectileth": "place",
+    "Upper": "part of place name Upper Cilicia",
+    "Put": "people/place",
+    "Lud": "people/place",
+    "Rasses": "people",
+    "Ishmael": "people (\"children of Ishmael\")",
+    "Chellians": "people",
+    "Mesopotamia": "place",
+    "Arbonai": "river",
+    "Japheth": "territory (\"borders of Japheth\")",
+    "Arabia": "place",
+    "Midian": "people (\"children of Midian\")",
+    "Sidon": "place",
+    "Tyre": "place",
+    "Sur": "place",
+    "Ocina": "place",
+    "Jemnaan": "place",
+    "Azotus": "place",
+    "Ascalon": "place",
+    "Dotaea": "place",
+    "Geba": "place",
+    "Scythopolis": "place",
+    "Israel": "nation (except 8:1, mapped to Jacob)",
+    "Konae": "place",
+    "Beth-horon": "place",
+    "Belmaim": "place",
+    "Jericho": "place",
+    "Choba": "place",
+    "Aesora": "place",
+    "Salem": "place",
+    "Bethulia": "place",
+    "Betomesthaim": "place",
+    "Dothaim": "place",
+    "Canaan": "land/people (\"sons of Canaan\")",
+    "Chaldeans": "people",
+    "Egyptians": "people",
+    "Red": "part of \"Red sea\"",
+    "Sinai": "place",
+    "Kadesh-": "place (Kadesh-Barnea)",
+    "Barnea": "place",
+    "Amorites": "people",
+    "Heshbon": "place",
+    "Canaanite": "people",
+    "Perizzite": "people",
+    "Jebusite": "people",
+    "Shechemite": "people",
+    "Girgashites": "people",
+    "Ephraim": "\"mercenaries of Ephraim\" (6:2), a people/region (textual oddity)",
+    "Cyamon": "place",
+    "Esau": "people (\"children of Esau\" = Edomites)",
+    "Ekrebel": "place",
+    "Chusi": "place",
+    "Mochmur": "brook",
+    "Balamon": "place",
+    "Sabbaths": "days",
+    "Zion": "place",
+    "Ammonite": "gentilic adjective (Achior the Ammonite, counted under Achior)",
+    "Judah": "people (\"every tent of Judah\")",
+    "Betomasthaim": "place",
+    "Bebai": "place",
+    "Chobai": "place",
+    "Chola": "place",
+    "Titans": "mythological beings",
+    "Persians": "people"
+  },
+  "notes": "Text read in full (339 verses). Judith's genealogy (8:1) is recorded as a parent chain Merari<-Ox<-Joseph<-Oziel<-Elkiah<-Ananias<-Gideon<-Raphaim<-Ahitub<-Elihu<-Eliab<-Nathanael<-Salamiel(shelumiel)<-Salasadai(zurishaddai); \"son of Israel\" treated as distant descent from Jacob. The book's Nebuchadnezzar (\"king of the Assyrians in Nineveh\") is kept as a separate literary figure (nebuchadnezzar-judith), as are Arphaxad and Joakim. Ozias/Chabris/Charmis are Bethulia's rulers with stated fathers (6:15). The anonymous \"king of Egypt\" of 5:11 is mapped to pharaoh-exodus. Unnamed but skipped as non-unique/groups: Holofernes' servants and guards, the hundred escorts, the elders. Holofernes refs include named verses plus key descriptive references."
+}

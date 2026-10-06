@@ -1,0 +1,976 @@
+{
+ "book": "4MA",
+ "people": [
+  {
+   "name": "Eleazar",
+   "existing_id": null,
+   "new_id": "eleazar-martyr",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [
+    "father Eleazar",
+    "an aged priest"
+   ],
+   "description": "Aged priest and lawyer who was flogged and burned rather than eat swine's flesh.",
+   "refs": [
+    "1:8",
+    "5:4",
+    "5:14",
+    "6:1",
+    "6:2",
+    "6:5",
+    "6:10",
+    "6:14",
+    "6:16",
+    "6:26",
+    "6:30",
+    "7:1",
+    "7:5",
+    "7:6",
+    "7:10",
+    "7:12",
+    "9:5",
+    "9:6",
+    "16:15",
+    "16:17",
+    "17:9",
+    "17:13"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": "Called 'the descendant of Aaron' (7:12): priestly descent, not a parent.",
+   "explicit_ages": [],
+   "identity_note": "Same martyr as Eleazar of 2MA 6:18-31 (2MA calls him a scribe aged 90); same new_id used in 2MA. No age is stated in 4MA. Distinct from Eleazar the priest of 3MA."
+  },
+  {
+   "name": "Mother of the seven brothers",
+   "existing_id": null,
+   "new_id": "mother-of-seven-brothers",
+   "gender": "female",
+   "unnamed": true,
+   "aliases": [],
+   "description": "Aged mother who urged her seven sons to die for the law and threw herself on the pyre.",
+   "refs": [
+    "1:8",
+    "1:10",
+    "8:2",
+    "8:3",
+    "8:19",
+    "12:6",
+    "12:7",
+    "14:11",
+    "14:12",
+    "14:20",
+    "15:1",
+    "15:2",
+    "15:6",
+    "15:11",
+    "15:14",
+    "15:16",
+    "15:24",
+    "15:28",
+    "15:29",
+    "16:1",
+    "16:5",
+    "16:6",
+    "16:13",
+    "16:14",
+    "16:15",
+    "16:24",
+    "17:1",
+    "17:2",
+    "17:4",
+    "17:7",
+    "17:9",
+    "17:13",
+    "18:7",
+    "18:8",
+    "18:9",
+    "18:20",
+    "18:23"
+   ],
+   "parents": [],
+   "spouses": [
+    {
+     "ref_name": "Father of the seven brothers",
+     "verse": "18:8"
+    }
+   ],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Same individual across 2MA (ch. 7) and 4MA (chs. 8-18); same new_id used in both files. The brothers are unnamed but each is individually distinguishable by his order of martyrdom. 17:1 reports she threw herself on the pile; 2MA 7:41 simply says she died."
+  },
+  {
+   "name": "Father of the seven brothers",
+   "existing_id": null,
+   "new_id": "father-of-seven-brothers",
+   "gender": "male",
+   "unnamed": true,
+   "aliases": [],
+   "description": "Husband of the mother, who taught the sons the law and the prophets and died before the persecution.",
+   "refs": [
+    "10:2",
+    "18:8",
+    "18:9",
+    "18:10",
+    "18:11",
+    "18:12",
+    "18:13",
+    "18:14",
+    "18:15",
+    "18:16",
+    "18:17",
+    "18:18"
+   ],
+   "parents": [],
+   "spouses": [
+    {
+     "ref_name": "Mother of the seven brothers",
+     "verse": "18:8"
+    }
+   ],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Mentioned only in 4MA (the mother's speech, 18:7-19; also 10:2)."
+  },
+  {
+   "name": "First of the seven brothers",
+   "existing_id": null,
+   "new_id": "seven-brothers-son-1",
+   "gender": "male",
+   "unnamed": true,
+   "aliases": [],
+   "description": "Oldest brother, broken on the wheel and burned.",
+   "refs": [
+    "9:11",
+    "9:12",
+    "9:13",
+    "9:14",
+    "9:15",
+    "9:17",
+    "9:21",
+    "9:22",
+    "9:23",
+    "9:25",
+    "15:18"
+   ],
+   "parents": [
+    {
+     "ref_name": "Mother of the seven brothers",
+     "verse": "8:2"
+    },
+    {
+     "ref_name": "Father of the seven brothers",
+     "verse": "10:2"
+    }
+   ],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Same individual across 2MA (ch. 7) and 4MA (chs. 8-18); same new_id used in both files. The brothers are unnamed but each is individually distinguishable by his order of martyrdom."
+  },
+  {
+   "name": "Second of the seven brothers",
+   "existing_id": null,
+   "new_id": "seven-brothers-son-2",
+   "gender": "male",
+   "unnamed": true,
+   "aliases": [],
+   "description": "Second brother, flayed with iron gauntlets.",
+   "refs": [
+    "9:26",
+    "9:27",
+    "9:28",
+    "9:29",
+    "9:30",
+    "15:18"
+   ],
+   "parents": [
+    {
+     "ref_name": "Mother of the seven brothers",
+     "verse": "8:2"
+    },
+    {
+     "ref_name": "Father of the seven brothers",
+     "verse": "10:2"
+    }
+   ],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Same individual across 2MA (ch. 7) and 4MA (chs. 8-18); same new_id used in both files. The brothers are unnamed but each is individually distinguishable by his order of martyrdom."
+  },
+  {
+   "name": "Third of the seven brothers",
+   "existing_id": null,
+   "new_id": "seven-brothers-son-3",
+   "gender": "male",
+   "unnamed": true,
+   "aliases": [],
+   "description": "Third brother, dismembered and broken on the wheel.",
+   "refs": [
+    "10:1",
+    "10:2",
+    "10:5",
+    "10:9",
+    "10:12",
+    "15:18"
+   ],
+   "parents": [
+    {
+     "ref_name": "Mother of the seven brothers",
+     "verse": "8:2"
+    },
+    {
+     "ref_name": "Father of the seven brothers",
+     "verse": "10:2"
+    }
+   ],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Same individual across 2MA (ch. 7) and 4MA (chs. 8-18); same new_id used in both files. The brothers are unnamed but each is individually distinguishable by his order of martyrdom."
+  },
+  {
+   "name": "Fourth of the seven brothers",
+   "existing_id": null,
+   "new_id": "seven-brothers-son-4",
+   "gender": "male",
+   "unnamed": true,
+   "aliases": [],
+   "description": "Fourth brother, whose tongue was cut out.",
+   "refs": [
+    "10:12",
+    "10:14",
+    "10:16",
+    "10:17",
+    "10:18"
+   ],
+   "parents": [
+    {
+     "ref_name": "Mother of the seven brothers",
+     "verse": "8:2"
+    },
+    {
+     "ref_name": "Father of the seven brothers",
+     "verse": "10:2"
+    }
+   ],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Same individual across 2MA (ch. 7) and 4MA (chs. 8-18); same new_id used in both files. The brothers are unnamed but each is individually distinguishable by his order of martyrdom."
+  },
+  {
+   "name": "Fifth of the seven brothers",
+   "existing_id": null,
+   "new_id": "seven-brothers-son-5",
+   "gender": "male",
+   "unnamed": true,
+   "aliases": [],
+   "description": "Fifth brother, who volunteered and was bent on the wheel.",
+   "refs": [
+    "11:1",
+    "11:2",
+    "11:9",
+    "11:10",
+    "11:11",
+    "11:13"
+   ],
+   "parents": [
+    {
+     "ref_name": "Mother of the seven brothers",
+     "verse": "8:2"
+    },
+    {
+     "ref_name": "Father of the seven brothers",
+     "verse": "10:2"
+    }
+   ],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Same individual across 2MA (ch. 7) and 4MA (chs. 8-18); same new_id used in both files. The brothers are unnamed but each is individually distinguishable by his order of martyrdom."
+  },
+  {
+   "name": "Sixth of the seven brothers",
+   "existing_id": null,
+   "new_id": "seven-brothers-son-6",
+   "gender": "male",
+   "unnamed": true,
+   "aliases": [],
+   "description": "Sixth brother, 'quite a youth', roasted and pierced with spits.",
+   "refs": [
+    "11:13",
+    "11:14",
+    "11:17",
+    "11:18",
+    "11:20",
+    "12:1"
+   ],
+   "parents": [
+    {
+     "ref_name": "Mother of the seven brothers",
+     "verse": "8:2"
+    },
+    {
+     "ref_name": "Father of the seven brothers",
+     "verse": "10:2"
+    }
+   ],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Same individual across 2MA (ch. 7) and 4MA (chs. 8-18); same new_id used in both files. The brothers are unnamed but each is individually distinguishable by his order of martyrdom."
+  },
+  {
+   "name": "Seventh (youngest) of the seven brothers",
+   "existing_id": null,
+   "new_id": "seven-brothers-son-7",
+   "gender": "male",
+   "unnamed": true,
+   "aliases": [],
+   "description": "Seventh and youngest brother, who threw himself into the pans.",
+   "refs": [
+    "12:1",
+    "12:2",
+    "12:3",
+    "12:6",
+    "12:7",
+    "12:8",
+    "12:9",
+    "12:10",
+    "12:20"
+   ],
+   "parents": [
+    {
+     "ref_name": "Mother of the seven brothers",
+     "verse": "8:2"
+    },
+    {
+     "ref_name": "Father of the seven brothers",
+     "verse": "10:2"
+    }
+   ],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Same individual across 2MA (ch. 7) and 4MA (chs. 8-18); same new_id used in both files. The brothers are unnamed but each is individually distinguishable by his order of martyrdom."
+  },
+  {
+   "name": "Joseph",
+   "existing_id": "joseph",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Patriarch praised for self-control; his imprisonment was taught to the brothers.",
+   "refs": [
+    "2:2",
+    "18:11"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Moses",
+   "existing_id": "moses",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Lawgiver who restrained his anger against Dathan and Abiram.",
+   "refs": [
+    "2:17",
+    "17:19",
+    "18:18"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Dathan",
+   "existing_id": "dathan-numbers",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Rebel against Moses.",
+   "refs": [
+    "2:17"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Abiram",
+   "existing_id": "abiram-numbers",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Rebel against Moses.",
+   "refs": [
+    "2:17"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Jacob",
+   "existing_id": "jacob",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Patriarch who cursed the anger of Simeon and Levi.",
+   "refs": [
+    "2:19",
+    "7:19",
+    "13:17",
+    "16:25"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Simeon",
+   "existing_id": "simeon",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Son of Jacob who slew the Shechemites.",
+   "refs": [
+    "2:19"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Levi",
+   "existing_id": "levi",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Son of Jacob who slew the Shechemites.",
+   "refs": [
+    "2:19"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "David",
+   "existing_id": "david",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "King who poured out the water his soldiers fetched from the enemy camp.",
+   "refs": [
+    "3:6",
+    "3:7",
+    "3:8",
+    "3:10",
+    "3:15",
+    "3:16",
+    "18:15"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Seleucus",
+   "existing_id": null,
+   "new_id": "seleucus-iv-philopator",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [
+    "Seleucus Nicanor",
+    "King Seleucus"
+   ],
+   "description": "King of Asia who funded the temple service; father of Antiochus Epiphanes according to 4MA.",
+   "refs": [
+    "3:20",
+    "4:3",
+    "4:4",
+    "4:13",
+    "4:15"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "3:20 'Seleucus Nicanor' (i.e. Nicator, the dynasty's founder's epithet) is applied by the author to the king of Onias' time, Seleucus IV; mapped to seleucus-iv-philopator (same id as 2MA)."
+  },
+  {
+   "name": "Simon",
+   "existing_id": null,
+   "new_id": "simon-temple-guardian",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Opponent of Onias who informed Apollonius of the temple treasure.",
+   "refs": [
+    "4:1",
+    "4:4",
+    "4:5"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Same person as Simon the temple guardian of 2MA 3-4; same new_id."
+  },
+  {
+   "name": "Onias",
+   "existing_id": null,
+   "new_id": "onias-iii",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "High priest for life, who prayed for Apollonius and was deposed by Antiochus.",
+   "refs": [
+    "4:1",
+    "4:13",
+    "4:16"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Same as Onias of 2MA 3-4; same new_id."
+  },
+  {
+   "name": "Apollonius",
+   "existing_id": null,
+   "new_id": "apollonius-of-tarsus",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [
+    "Appolonius"
+   ],
+   "description": "Military governor of Syria, Phoenicia and Cilicia who tried to seize the temple treasure and was struck down by angels.",
+   "refs": [
+    "4:2",
+    "4:4",
+    "4:5",
+    "4:8",
+    "4:10",
+    "4:11",
+    "4:13",
+    "4:14"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "4MA's retelling of 2MA 3 gives Apollonius the role played by Heliodorus in 2MA; mapped to the governor of 2MA 3:5 (apollonius-of-tarsus)."
+  },
+  {
+   "name": "Antiochus Epiphanes",
+   "existing_id": null,
+   "new_id": "antiochus-iv-epiphanes",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [
+    "Antiochus",
+    "the tyrant"
+   ],
+   "description": "Seleucid tyrant who tortured Eleazar and the seven brothers.",
+   "refs": [
+    "4:15",
+    "4:21",
+    "4:22",
+    "4:26",
+    "5:1",
+    "5:5",
+    "5:6",
+    "5:16",
+    "6:1",
+    "8:2",
+    "8:3",
+    "9:1",
+    "9:10",
+    "10:17",
+    "12:2",
+    "12:3",
+    "17:2",
+    "17:14",
+    "17:17",
+    "17:21",
+    "17:23",
+    "18:5",
+    "18:20"
+   ],
+   "parents": [
+    {
+     "ref_name": "Seleucus",
+     "verse": "4:15"
+    }
+   ],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "4MA 4:15 calls him the son of Seleucus (IV); historically he was Seleucus IV's brother. Recorded as stated. Same new_id as 2MA."
+  },
+  {
+   "name": "Jason",
+   "existing_id": null,
+   "new_id": "jason-high-priest",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Brother of Onias made high priest, who hellenized the nation.",
+   "refs": [
+    "4:16",
+    "4:17",
+    "4:18",
+    "4:19",
+    "4:20"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Same as 2MA's Jason; same new_id."
+  },
+  {
+   "name": "Ptolemy",
+   "existing_id": null,
+   "new_id": "ptolemy-vi-philometor",
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Egyptian king with whom Antiochus IV was at war.",
+   "refs": [
+    "4:22"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Unnamed epithet here; mapped to Ptolemy VI Philometor (same id as 2MA) by historical context."
+  },
+  {
+   "name": "Abraham",
+   "existing_id": "abram",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Patriarch held up as the model of fortitude.",
+   "refs": [
+    "6:17",
+    "6:22",
+    "7:19",
+    "9:21",
+    "13:17",
+    "14:20",
+    "15:28",
+    "16:20",
+    "16:25",
+    "17:6",
+    "18:1",
+    "18:20",
+    "18:23"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Aaron",
+   "existing_id": "aaron",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Priest who stopped the plague with a censer; ancestor of Eleazar.",
+   "refs": [
+    "7:11",
+    "7:12"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Isaac",
+   "existing_id": "isaac",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Patriarch offered up by Abraham.",
+   "refs": [
+    "7:14",
+    "7:19",
+    "13:12",
+    "13:17",
+    "16:20",
+    "16:25",
+    "18:11"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Noah",
+   "existing_id": "noah",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Builder of the ark, used as a simile for the mother.",
+   "refs": [
+    "15:31"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Daniel",
+   "existing_id": "daniel-ezk14",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Delivered from the lions' den.",
+   "refs": [
+    "16:3",
+    "16:21",
+    "18:13"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Misael",
+   "existing_id": "mishael-dan1",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "One of the three young men in the furnace.",
+   "refs": [
+    "13:9",
+    "16:3",
+    "16:21",
+    "18:12"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "13:9 'the three young men in Assyria' refers to the trio unnamed."
+  },
+  {
+   "name": "Ananias",
+   "existing_id": "hananiah-dan1",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "One of the three young men in the furnace.",
+   "refs": [
+    "13:9",
+    "16:21",
+    "18:12"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Greek form of Hananiah."
+  },
+  {
+   "name": "Azarias",
+   "existing_id": "azariah-dan1",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "One of the three young men in the furnace.",
+   "refs": [
+    "13:9",
+    "16:21",
+    "18:12"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": "Greek form of Azariah."
+  },
+  {
+   "name": "Abel",
+   "existing_id": "abel",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Slain by Cain.",
+   "refs": [
+    "18:11"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Cain",
+   "existing_id": "cain",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Slayer of Abel.",
+   "refs": [
+    "18:11"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Phinehas",
+   "existing_id": "phinehas",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "The zealous priest.",
+   "refs": [
+    "18:12"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Esaias",
+   "existing_id": "isaiah-2ki19",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Prophet Isaiah, quoted on passing through fire.",
+   "refs": [
+    "18:14"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Solomon",
+   "existing_id": "solomon",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Author of proverbs.",
+   "refs": [
+    "18:16"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  },
+  {
+   "name": "Ezekiel",
+   "existing_id": "ezekiel-ezk1",
+   "new_id": null,
+   "gender": "male",
+   "unnamed": false,
+   "aliases": [],
+   "description": "Prophet of the dry bones.",
+   "refs": [
+    "18:17"
+   ],
+   "parents": [],
+   "spouses": [],
+   "descent_note": null,
+   "explicit_ages": [],
+   "identity_note": null
+  }
+ ],
+ "excluded_names": {
+  "Shechemites": "people",
+  "Philistines": "people",
+  "Nicanor": "epithet in 'Seleucus Nicanor' (3:20), not a separate person",
+  "Asia": "place",
+  "Syria": "place",
+  "Phoenicia": "place",
+  "Cilicia": "place",
+  "Jerusalem": "place",
+  "Divine": "divine title",
+  "Epiphanes": "epithet of Antiochus IV",
+  "Egypt": "place",
+  "Jewish": "adjective",
+  "Reason": "personified abstraction",
+  "Godward": "not a name",
+  "Put": "not a name (verb)",
+  "Justice": "personified abstraction",
+  "Abrahamic": "adjective",
+  "Providence": "divine title",
+  "Founder": "divine title",
+  "Assyria": "place",
+  "God-fearing": "adjective",
+  "Israel": "nation",
+  "Persians": "people",
+  "Appolonius": "variant spelling of Apollonius (see apollonius-of-tarsus)",
+  "Misael": "see mishael-dan1"
+ },
+ "notes": "4 Maccabees is a philosophical discourse retelling 2MA 3-7. Shared ids with 2MA: eleazar-martyr, mother-of-seven-brothers, seven-brothers-son-1..7, antiochus-iv-epiphanes, onias-iii, jason-high-priest, seleucus-iv-philopator, simon-temple-guardian, apollonius-of-tarsus, ptolemy-vi-philometor. The unnamed father of the seven (18:7-19) appears only here. The mother's speech (18:9) says the sons' father died when they reached maturity; 16:9 implies some sons were married. Sons' parent links cite 8:2 (seven brothers with their mother) and 10:2 (the third brother: 'the father of those who are dead is my father also'). No explicit ages stated (Eleazar is 'advanced in years'; the 90 years is from 2MA 6:24). 'The tyrant' throughout = Antiochus IV; refs list a representative set. The two young soldiers who fetched water for David (3:12) are an unnamed pair and are not recorded."
+}

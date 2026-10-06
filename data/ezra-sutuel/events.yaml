@@ -1,0 +1,4 @@
+schema_version: 1
+record_type: events
+records:
+  - {id: ezra-sutuel-narrative, event_type: book_narrative, name: "4 Ezra (Ezra Sutuel)", participants: [{entity_id: adam, role: named participant}, {entity_id: ezra-ezr7, role: named participant}, {entity_id: moses, role: named participant}, {entity_id: abram, role: named participant}, {entity_id: esau, role: named participant}, {entity_id: jacob, role: named participant}, {entity_id: asiel-scribe-4es, role: named participant}, {entity_id: dabria-scribe-4es, role: named participant}], date_claim_ids: [], citations: [{source_id: world-english-bible, locator: "4 Ezra (Ezra Sutuel)", witness_id: web-ezra-sutuel}]}

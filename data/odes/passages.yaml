@@ -1,0 +1,4 @@
+schema_version: 1
+record_type: passages
+records:
+  - {id: odes-book-review, work_id: odes, witness_id: book-review-odes, locator: "Odes", citations: [{source_id: rahlfs-hanhart-2006, locator: "Odes", witness_id: book-review-odes}]}

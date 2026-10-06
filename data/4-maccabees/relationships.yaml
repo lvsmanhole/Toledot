@@ -1,0 +1,11 @@
+schema_version: 1
+record_type: relationships
+records:
+  - {id: father-of-seven-brothers-spouse-mother-of-seven-brothers, relationship_type: spouse, subject_id: father-of-seven-brothers, object_id: mother-of-seven-brothers, claim_ids: [], citations: [{source_id: world-english-bible, locator: "4 Maccabees 18:8", witness_id: web-4-maccabees}]}
+  - {id: father-of-seven-brothers-parent-seven-brothers-son-1, relationship_type: parent, subject_id: father-of-seven-brothers, object_id: seven-brothers-son-1, claim_ids: [], citations: [{source_id: world-english-bible, locator: "4 Maccabees 10:2", witness_id: web-4-maccabees}]}
+  - {id: father-of-seven-brothers-parent-seven-brothers-son-2, relationship_type: parent, subject_id: father-of-seven-brothers, object_id: seven-brothers-son-2, claim_ids: [], citations: [{source_id: world-english-bible, locator: "4 Maccabees 10:2", witness_id: web-4-maccabees}]}
+  - {id: father-of-seven-brothers-parent-seven-brothers-son-3, relationship_type: parent, subject_id: father-of-seven-brothers, object_id: seven-brothers-son-3, claim_ids: [], citations: [{source_id: world-english-bible, locator: "4 Maccabees 10:2", witness_id: web-4-maccabees}]}
+  - {id: father-of-seven-brothers-parent-seven-brothers-son-4, relationship_type: parent, subject_id: father-of-seven-brothers, object_id: seven-brothers-son-4, claim_ids: [], citations: [{source_id: world-english-bible, locator: "4 Maccabees 10:2", witness_id: web-4-maccabees}]}
+  - {id: father-of-seven-brothers-parent-seven-brothers-son-5, relationship_type: parent, subject_id: father-of-seven-brothers, object_id: seven-brothers-son-5, claim_ids: [], citations: [{source_id: world-english-bible, locator: "4 Maccabees 10:2", witness_id: web-4-maccabees}]}
+  - {id: father-of-seven-brothers-parent-seven-brothers-son-6, relationship_type: parent, subject_id: father-of-seven-brothers, object_id: seven-brothers-son-6, claim_ids: [], citations: [{source_id: world-english-bible, locator: "4 Maccabees 10:2", witness_id: web-4-maccabees}]}
+  - {id: father-of-seven-brothers-parent-seven-brothers-son-7, relationship_type: parent, subject_id: father-of-seven-brothers, object_id: seven-brothers-son-7, claim_ids: [], citations: [{source_id: world-english-bible, locator: "4 Maccabees 10:2", witness_id: web-4-maccabees}]}

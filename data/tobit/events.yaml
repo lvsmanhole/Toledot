@@ -1,0 +1,4 @@
+schema_version: 1
+record_type: events
+records:
+  - {id: tobit-narrative, event_type: book_narrative, name: "Tobit", participants: [{entity_id: tobias-son-of-tobit, role: named participant}, {entity_id: tobit-person, role: named participant}, {entity_id: sarah-daughter-of-raguel, role: named participant}, {entity_id: raguel-tobit, role: named participant}, {entity_id: anna-tobit, role: named participant}, {entity_id: edna-tobit, role: named participant}, {entity_id: gabael-of-rages, role: named participant}, {entity_id: achiacharus, role: named participant}], date_claim_ids: [], citations: [{source_id: world-english-bible, locator: "Tobit", witness_id: web-tobit}]}

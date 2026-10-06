@@ -1,0 +1,4 @@
+schema_version: 1
+record_type: events
+records:
+  - {id: additions-to-esther-narrative, event_type: book_narrative, name: "Additions to Esther", participants: [{entity_id: haman, role: named participant}, {entity_id: ahasuerus, role: named participant}, {entity_id: esther-est2, role: named participant}, {entity_id: mordecai-est2, role: named participant}, {entity_id: abram, role: named participant}, {entity_id: hammedatha, role: named participant}, {entity_id: cleopatra-queen-esg-colophon, role: named participant}, {entity_id: dositheus-priest-esg, role: named participant}], date_claim_ids: [], citations: [{source_id: world-english-bible, locator: "Additions to Esther", witness_id: web-additions-to-esther}]}

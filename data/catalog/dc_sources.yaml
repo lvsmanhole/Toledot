@@ -1,0 +1,9 @@
+schema_version: 1
+record_type: sources
+records:
+  - {id: world-english-bible, source_type: translation, title: "World English Bible (with deuterocanon)", bibliographic_locator: "eBible.org, eng-web verse-per-line edition", url: https://ebible.org/find/details.php?id=eng-web, license_status: public_domain, usage_note: "English translation of the Greek deuterocanon used to locate names and verses; chapter and verse numbering follows this edition."}
+  - {id: charles-enoch-1917, source_type: translation, title: "The Book of Enoch, translated by R. H. Charles", bibliographic_locator: "R. H. Charles, The Book of Enoch (London: SPCK, 1917), sacred-texts.com transcription", url: https://sacred-texts.com/bib/boe/index.htm, license_status: public_domain}
+  - {id: charles-jubilees-1917, source_type: translation, title: "The Book of Jubilees, translated by R. H. Charles", bibliographic_locator: "R. H. Charles, The Book of Jubilees (London: SPCK, 1917), sacred-texts.com transcription", url: https://sacred-texts.com/bib/jub/index.htm, license_status: public_domain}
+  - {id: charles-ethiopic-enoch-1906, source_type: critical_edition, title: "The Ethiopic Version of the Book of Enoch", bibliographic_locator: "R. H. Charles, Anecdota Oxoniensia, Oxford 1906", license_status: public_domain}
+  - {id: charles-ethiopic-jubilees-1895, source_type: critical_edition, title: "The Ethiopic Version of the Hebrew Book of Jubilees", bibliographic_locator: "R. H. Charles, Anecdota Oxoniensia, Oxford 1895", license_status: public_domain}
+  - {id: ethiopic-edition-pending, source_type: placeholder, title: "Ethiopic edition not yet selected", bibliographic_locator: "No citable critical edition or public-domain translation has been selected for this work in the project.", license_status: not_applicable}

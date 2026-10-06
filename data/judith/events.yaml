@@ -1,0 +1,4 @@
+schema_version: 1
+record_type: events
+records:
+  - {id: judith-narrative, event_type: book_narrative, name: "Judith", participants: [{entity_id: holofernes, role: named participant}, {entity_id: judith-person, role: named participant}, {entity_id: nebuchadnezzar-judith, role: named participant}, {entity_id: ozias-of-bethulia, role: named participant}, {entity_id: achior, role: named participant}, {entity_id: judith-maid, role: named participant}, {entity_id: bagoas-jdt, role: named participant}, {entity_id: manasses-husband-of-judith, role: named participant}], date_claim_ids: [], citations: [{source_id: world-english-bible, locator: "Judith", witness_id: web-judith}]}

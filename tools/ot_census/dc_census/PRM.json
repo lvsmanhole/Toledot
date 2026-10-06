@@ -1,0 +1,85 @@
+{
+  "book": "PRM",
+  "people": [
+    {
+      "name": "Manasseh",
+      "existing_id": "manasseh-2ki20",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "Penitent king of Judah, traditional speaker of the prayer.",
+      "refs": [
+        "1:8",
+        "1:9",
+        "1:10",
+        "1:11",
+        "1:12",
+        "1:13",
+        "1:14",
+        "1:15"
+      ],
+      "parents": [],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": "The WEB text never names the speaker; the identification rests on the book's title and 2 Chr 33:12-13,18-19. Refs are the first-person penitent verses (1:8 'me, a sinner' onward). Reviewer may prefer empty refs."
+    },
+    {
+      "name": "Abraham",
+      "existing_id": "abram",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "Patriarch named in the invocation 'God of our fathers'.",
+      "refs": [
+        "1:1",
+        "1:8"
+      ],
+      "parents": [],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": null
+    },
+    {
+      "name": "Isaac",
+      "existing_id": "isaac",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "Patriarch named in the invocation.",
+      "refs": [
+        "1:1",
+        "1:8"
+      ],
+      "parents": [],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": null
+    },
+    {
+      "name": "Jacob",
+      "existing_id": "jacob",
+      "new_id": null,
+      "gender": "male",
+      "unnamed": false,
+      "aliases": [],
+      "description": "Patriarch named in the invocation.",
+      "refs": [
+        "1:1",
+        "1:8"
+      ],
+      "parents": [],
+      "spouses": [],
+      "descent_note": null,
+      "explicit_ages": [],
+      "identity_note": null
+    }
+  ],
+  "excluded_names": {},
+  "notes": "15 verses, one chapter. Only Abraham, Isaac and Jacob are named; the speaker Manasseh is identified only by the title and tradition."
+}
