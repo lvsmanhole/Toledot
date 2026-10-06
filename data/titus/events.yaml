@@ -1,0 +1,4 @@
+schema_version: 1
+record_type: events
+records:
+  - {id: titus-letter, event_type: letter, name: "Letter: Titus", participants: [{entity_id: jesus, role: named participant}, {entity_id: apollos, role: named participant}, {entity_id: artemas, role: named participant}, {entity_id: paul, role: named participant}, {entity_id: titus-2co2, role: named participant}, {entity_id: tychicus, role: named participant}, {entity_id: zenas, role: named participant}], date_claim_ids: [], citations: [{source_id: na28, locator: "Titus", witness_id: greek-titus-na28}]}

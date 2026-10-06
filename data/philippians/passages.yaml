@@ -1,0 +1,7 @@
+schema_version: 1
+record_type: passages
+records:
+  - {id: philippians-1-na28, work_id: philippians, witness_id: greek-philippians-na28, locator: "Philippians 1", citations: [{source_id: na28, locator: "Philippians 1", witness_id: greek-philippians-na28}]}
+  - {id: philippians-2-na28, work_id: philippians, witness_id: greek-philippians-na28, locator: "Philippians 2", citations: [{source_id: na28, locator: "Philippians 2", witness_id: greek-philippians-na28}]}
+  - {id: philippians-3-na28, work_id: philippians, witness_id: greek-philippians-na28, locator: "Philippians 3", citations: [{source_id: na28, locator: "Philippians 3", witness_id: greek-philippians-na28}]}
+  - {id: philippians-4-na28, work_id: philippians, witness_id: greek-philippians-na28, locator: "Philippians 4", citations: [{source_id: na28, locator: "Philippians 4", witness_id: greek-philippians-na28}]}

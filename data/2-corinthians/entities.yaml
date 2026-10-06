@@ -1,0 +1,5 @@
+schema_version: 1
+record_type: entities
+records:
+  - {id: titus-2co2, entity_type: human, primary_name: "Titus", classification: named_person, identity_status: named, aliases: [], gender: male, description: "Gentile convert and companion of Paul", tipnr_id: "Titus@2Co.2.13-Tit", citations: [{source_id: na28, locator: "2 Corinthians 2:13", witness_id: greek-2-corinthians-na28}, {source_id: tipnr-stepbible, locator: "Titus@2Co.2.13-Tit"}]}
+  - {id: aretas, entity_type: human, primary_name: "Aretas", classification: named_person, identity_status: named, aliases: [], gender: male, description: "King of the Nabataeans in Damascus", tipnr_id: "Aretas@2Co.11.32", citations: [{source_id: na28, locator: "2 Corinthians 11:32", witness_id: greek-2-corinthians-na28}, {source_id: tipnr-stepbible, locator: "Aretas@2Co.11.32"}]}

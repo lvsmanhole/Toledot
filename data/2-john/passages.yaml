@@ -1,0 +1,4 @@
+schema_version: 1
+record_type: passages
+records:
+  - {id: 2-john-1-na28, work_id: 2-john, witness_id: greek-2-john-na28, locator: "2 John 1", citations: [{source_id: na28, locator: "2 John 1", witness_id: greek-2-john-na28}]}

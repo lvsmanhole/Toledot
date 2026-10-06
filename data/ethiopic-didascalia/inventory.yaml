@@ -1,0 +1,4 @@
+schema_version: 1
+record_type: inventory_units
+records:
+  - {id: inv-ethiopic-didascalia-book, work_id: ethiopic-didascalia, locator: "Ethiopic Didascalia", reviewed: false, passage_ids: [ethiopic-didascalia-book-review], identified_entity_ids: [], event_ids: [], no_individuals: false, review_basis: "Book-level canon entry only (Ethiopian broader New Testament); no people are asserted pending a citable edition.", citations: [{source_id: ethiopic-edition-pending, locator: "Ethiopic Didascalia"}]}

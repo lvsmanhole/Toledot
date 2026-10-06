@@ -1,0 +1,19 @@
+schema_version: 1
+record_type: passages
+records:
+  - {id: mark-1-na28, work_id: mark, witness_id: greek-mark-na28, locator: "Mark 1", citations: [{source_id: na28, locator: "Mark 1", witness_id: greek-mark-na28}]}
+  - {id: mark-2-na28, work_id: mark, witness_id: greek-mark-na28, locator: "Mark 2", citations: [{source_id: na28, locator: "Mark 2", witness_id: greek-mark-na28}]}
+  - {id: mark-3-na28, work_id: mark, witness_id: greek-mark-na28, locator: "Mark 3", citations: [{source_id: na28, locator: "Mark 3", witness_id: greek-mark-na28}]}
+  - {id: mark-4-na28, work_id: mark, witness_id: greek-mark-na28, locator: "Mark 4", citations: [{source_id: na28, locator: "Mark 4", witness_id: greek-mark-na28}]}
+  - {id: mark-5-na28, work_id: mark, witness_id: greek-mark-na28, locator: "Mark 5", citations: [{source_id: na28, locator: "Mark 5", witness_id: greek-mark-na28}]}
+  - {id: mark-6-na28, work_id: mark, witness_id: greek-mark-na28, locator: "Mark 6", citations: [{source_id: na28, locator: "Mark 6", witness_id: greek-mark-na28}]}
+  - {id: mark-7-na28, work_id: mark, witness_id: greek-mark-na28, locator: "Mark 7", citations: [{source_id: na28, locator: "Mark 7", witness_id: greek-mark-na28}]}
+  - {id: mark-8-na28, work_id: mark, witness_id: greek-mark-na28, locator: "Mark 8", citations: [{source_id: na28, locator: "Mark 8", witness_id: greek-mark-na28}]}
+  - {id: mark-9-na28, work_id: mark, witness_id: greek-mark-na28, locator: "Mark 9", citations: [{source_id: na28, locator: "Mark 9", witness_id: greek-mark-na28}]}
+  - {id: mark-10-na28, work_id: mark, witness_id: greek-mark-na28, locator: "Mark 10", citations: [{source_id: na28, locator: "Mark 10", witness_id: greek-mark-na28}]}
+  - {id: mark-11-na28, work_id: mark, witness_id: greek-mark-na28, locator: "Mark 11", citations: [{source_id: na28, locator: "Mark 11", witness_id: greek-mark-na28}]}
+  - {id: mark-12-na28, work_id: mark, witness_id: greek-mark-na28, locator: "Mark 12", citations: [{source_id: na28, locator: "Mark 12", witness_id: greek-mark-na28}]}
+  - {id: mark-13-na28, work_id: mark, witness_id: greek-mark-na28, locator: "Mark 13", citations: [{source_id: na28, locator: "Mark 13", witness_id: greek-mark-na28}]}
+  - {id: mark-14-na28, work_id: mark, witness_id: greek-mark-na28, locator: "Mark 14", citations: [{source_id: na28, locator: "Mark 14", witness_id: greek-mark-na28}]}
+  - {id: mark-15-na28, work_id: mark, witness_id: greek-mark-na28, locator: "Mark 15", citations: [{source_id: na28, locator: "Mark 15", witness_id: greek-mark-na28}]}
+  - {id: mark-16-na28, work_id: mark, witness_id: greek-mark-na28, locator: "Mark 16", citations: [{source_id: na28, locator: "Mark 16", witness_id: greek-mark-na28}]}

@@ -85,13 +85,14 @@
   - [x] 1 Enoch and Jubilees: person census from R. H. Charles's public-domain translations, including Jubilees' named wives and 126 jubilee/week/year dates (kept as alternative chronology claims, not display drivers).
   - [ ] Meqabyan 1–3, Tegsats, Josippon, 4 Baruch, Ascension of Isaiah (plus Odes and Psalms of Solomon): book-level entries only; person extraction awaits a citable edition or public-domain translation.
 
-### Phase D — New Testament and Revelation
+### Phase D — New Testament and Revelation (complete; open items noted)
 
-- [ ] Gospels: parallel-event and identity reconciliation for Jesus, disciples, family, officials, crowds, named and uniquely identifiable unnamed people; preserve chronology differences.
-- [ ] Acts: church/community census, named/unnamed participants, travel and reign synchronisms.
-- [ ] Epistles: people mentioned by name, uncertain identities, and lifespan evidence only when supported.
-- [ ] Revelation: historical/visionary/symbolic classifications remain separate; include human people and explicit appearance windows without manufacturing mortal lifespans.
-- [ ] Ethiopian New Testament broader-canon books and relevant witnesses.
+- [x] Gospels: parallel-event and identity reconciliation for Jesus, disciples, family, officials, crowds, named and uniquely identifiable unnamed people; preserve chronology differences.
+- [x] Acts: church/community census, named/unnamed participants, travel and reign synchronisms.
+- [x] Epistles: people mentioned by name, uncertain identities, and lifespan evidence only when supported.
+- [x] Revelation: historical/visionary/symbolic classifications remain separate; include human people and explicit appearance windows without manufacturing mortal lifespans.
+- [x] Ethiopian New Testament broader-canon books and relevant witnesses (book-level entries; person extraction awaits a citable edition).
+- New Testament census (2026-10-06): all 260 chapters against NA28, about 420 people (266 new from the TIPNR index plus 49 curated unnamed individuals), 28 Gospel-parallel events, Herodian/Roman anchors, and explicit ages. Policies are in `tools/ot_census/README.md`. Open: Greek name forms and NA28-specific readings beyond the subscription and omitted-verse filters; no Geʽez New Testament edition selected.
 
 ### Phase E — Immersive website
 

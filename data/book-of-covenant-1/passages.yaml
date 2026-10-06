@@ -1,0 +1,4 @@
+schema_version: 1
+record_type: passages
+records:
+  - {id: book-of-covenant-1-book-review, work_id: book-of-covenant-1, witness_id: book-review-book-of-covenant-1, locator: "Book of the Covenant 1", citations: [{source_id: ethiopic-edition-pending, locator: "Book of the Covenant 1", witness_id: book-review-book-of-covenant-1}]}

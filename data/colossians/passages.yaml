@@ -1,0 +1,7 @@
+schema_version: 1
+record_type: passages
+records:
+  - {id: colossians-1-na28, work_id: colossians, witness_id: greek-colossians-na28, locator: "Colossians 1", citations: [{source_id: na28, locator: "Colossians 1", witness_id: greek-colossians-na28}]}
+  - {id: colossians-2-na28, work_id: colossians, witness_id: greek-colossians-na28, locator: "Colossians 2", citations: [{source_id: na28, locator: "Colossians 2", witness_id: greek-colossians-na28}]}
+  - {id: colossians-3-na28, work_id: colossians, witness_id: greek-colossians-na28, locator: "Colossians 3", citations: [{source_id: na28, locator: "Colossians 3", witness_id: greek-colossians-na28}]}
+  - {id: colossians-4-na28, work_id: colossians, witness_id: greek-colossians-na28, locator: "Colossians 4", citations: [{source_id: na28, locator: "Colossians 4", witness_id: greek-colossians-na28}]}

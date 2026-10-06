@@ -1,0 +1,4 @@
+schema_version: 1
+record_type: passages
+records:
+  - {id: jude-1-na28, work_id: jude, witness_id: greek-jude-na28, locator: "Jude 1", citations: [{source_id: na28, locator: "Jude 1", witness_id: greek-jude-na28}]}

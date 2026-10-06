@@ -1,0 +1,4 @@
+schema_version: 1
+record_type: inventory_units
+records:
+  - {id: inv-philemon-1, work_id: philemon, locator: "Philemon 1", reviewed: true, passage_ids: [philemon-1-na28], identified_entity_ids: [apphia, archippus, aristarchus, demas, epaphras, jesus, luke-col4, mark-act12, onesimus, paul, philemon-phm1, timothy], event_ids: [philemon-letter], no_individuals: false, review_basis: "Person census cross-checked against the TIPNR proper-name index; unnamed individuals curated by hand.", citations: [{source_id: na28, locator: "Philemon 1", witness_id: greek-philemon-na28}]}

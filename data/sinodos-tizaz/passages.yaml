@@ -1,0 +1,4 @@
+schema_version: 1
+record_type: passages
+records:
+  - {id: sinodos-tizaz-book-review, work_id: sinodos-tizaz, witness_id: book-review-sinodos-tizaz, locator: "Sinodos: Tizaz", citations: [{source_id: ethiopic-edition-pending, locator: "Sinodos: Tizaz", witness_id: book-review-sinodos-tizaz}]}

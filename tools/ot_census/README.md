@@ -52,3 +52,26 @@ py -3.11 tools/ot_census/check_parent_child.py .
    - writes Seleucid-era dates as text claims, with converted display years at grade C.
 4. Claims cite the translation witness at confidence B, because the original-language reading hasn't been checked. A Septuagint (or, for Enoch and Jubilees, Geʽez) passage is recorded per chapter, with the chapter correspondence assumed.
 5. Meqabyan 1–3, Tegsats, Josippon, 4 Baruch, the Ascension of Isaiah, Odes and the Psalms of Solomon are book-level entries only, with `reviewed: false`. No people are asserted for them until a citable edition or public-domain translation is selected.
+
+## New Testament
+
+`ntgen.py` (with `nt_curated.py`) runs the same TIPNR-based census for Matthew–Revelation against the NA28 witness. New Testament-specific policies:
+
+- **Identities:**
+  - The Isaiah 7:14 Immanuel reference is not merged with Jesus.
+  - John of Patmos is separate from the apostle John.
+  - "Jezebel" of Thyatira is separate from Ahab's queen.
+  - The mother of Zebedee's sons is separate from Salome.
+  - Herodias' daughter is unnamed in the text.
+- **Index entries dropped:**
+  - Lazarus of Luke 16, a character in a parable.
+  - TIPNR inferences without a textual person: Heli's wife, Elizabeth's father, Barnabas' father, and similar.
+- **References dropped:** index references from KJV epistle subscriptions (final two verses where the name is absent), and from verses absent from NA28 (Acts 8:37, 15:34, 24:7-8).
+- **Eponyms:** "Israel" and "Jacob" meaning the nation are not counted as Jacob.
+- **Genealogies:** Matthew 1 and Luke 3 links that conflict with existing parentage become `parent_reference` claims. Luke 3:36's Cainan maps to the Septuagint's post-flood Cainan.
+- **Chronology:**
+  - Grade C: the Herods, Roman emperors and governors, with external dates.
+  - Grade E: Jesus (born before Herod's death in 4 BCE; crucified 30 CE, with 33 CE as the main alternative).
+  - Explicit claims (grade A): Jesus about thirty (Luke 3:23), Anna 84, Jairus' daughter 12, the lame man over 40, Luke 3:1's fifteenth year of Tiberius.
+- **Gospel parallels:** 28 linked events with per-Gospel ranges and notes on real differences (temple-cleansing timing, the Passover chronology, one versus two demoniacs).
+- **Ethiopian broader New Testament** (Sinodos, Book of the Covenant, Clement, Didascalia): book-level entries only.

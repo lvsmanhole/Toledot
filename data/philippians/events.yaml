@@ -1,0 +1,4 @@
+schema_version: 1
+record_type: events
+records:
+  - {id: philippians-letter, event_type: letter, name: "Letter: Philippians", participants: [{entity_id: jesus, role: named participant}, {entity_id: epaphroditus, role: named participant}, {entity_id: timothy, role: named participant}, {entity_id: clement, role: named participant}, {entity_id: euodia, role: named participant}, {entity_id: nero, role: named participant}, {entity_id: paul, role: named participant}, {entity_id: syntyche, role: named participant}], date_claim_ids: [], citations: [{source_id: na28, locator: "Philippians", witness_id: greek-philippians-na28}]}

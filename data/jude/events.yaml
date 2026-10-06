@@ -1,0 +1,4 @@
+schema_version: 1
+record_type: events
+records:
+  - {id: jude-letter, event_type: letter, name: "Letter: Jude", participants: [{entity_id: jesus, role: named participant}, {entity_id: adam, role: named participant}, {entity_id: balaam-numbers, role: named participant}, {entity_id: cain, role: named participant}, {entity_id: enoch-seth, role: named participant}, {entity_id: james-mat13, role: named participant}, {entity_id: jude-mat13, role: named participant}, {entity_id: michael-dan10, role: named participant}], date_claim_ids: [], citations: [{source_id: na28, locator: "Jude", witness_id: greek-jude-na28}]}

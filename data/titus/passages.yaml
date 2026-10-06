@@ -1,0 +1,6 @@
+schema_version: 1
+record_type: passages
+records:
+  - {id: titus-1-na28, work_id: titus, witness_id: greek-titus-na28, locator: "Titus 1", citations: [{source_id: na28, locator: "Titus 1", witness_id: greek-titus-na28}]}
+  - {id: titus-2-na28, work_id: titus, witness_id: greek-titus-na28, locator: "Titus 2", citations: [{source_id: na28, locator: "Titus 2", witness_id: greek-titus-na28}]}
+  - {id: titus-3-na28, work_id: titus, witness_id: greek-titus-na28, locator: "Titus 3", citations: [{source_id: na28, locator: "Titus 3", witness_id: greek-titus-na28}]}

@@ -1,0 +1,4 @@
+schema_version: 1
+record_type: events
+records:
+  - {id: romans-letter, event_type: letter, name: "Letter: Romans", participants: [{entity_id: jesus, role: named participant}, {entity_id: abram, role: named participant}, {entity_id: javan, role: named participant}, {entity_id: isaiah-2ki19, role: named participant}, {entity_id: jacob, role: named participant}, {entity_id: moses, role: named participant}, {entity_id: david, role: named participant}, {entity_id: isaac, role: named participant}], date_claim_ids: [], citations: [{source_id: na28, locator: "Romans", witness_id: greek-romans-na28}]}

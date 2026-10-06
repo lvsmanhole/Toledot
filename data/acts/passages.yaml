@@ -1,0 +1,31 @@
+schema_version: 1
+record_type: passages
+records:
+  - {id: acts-1-na28, work_id: acts, witness_id: greek-acts-na28, locator: "Acts 1", citations: [{source_id: na28, locator: "Acts 1", witness_id: greek-acts-na28}]}
+  - {id: acts-2-na28, work_id: acts, witness_id: greek-acts-na28, locator: "Acts 2", citations: [{source_id: na28, locator: "Acts 2", witness_id: greek-acts-na28}]}
+  - {id: acts-3-na28, work_id: acts, witness_id: greek-acts-na28, locator: "Acts 3", citations: [{source_id: na28, locator: "Acts 3", witness_id: greek-acts-na28}]}
+  - {id: acts-4-na28, work_id: acts, witness_id: greek-acts-na28, locator: "Acts 4", citations: [{source_id: na28, locator: "Acts 4", witness_id: greek-acts-na28}]}
+  - {id: acts-5-na28, work_id: acts, witness_id: greek-acts-na28, locator: "Acts 5", citations: [{source_id: na28, locator: "Acts 5", witness_id: greek-acts-na28}]}
+  - {id: acts-6-na28, work_id: acts, witness_id: greek-acts-na28, locator: "Acts 6", citations: [{source_id: na28, locator: "Acts 6", witness_id: greek-acts-na28}]}
+  - {id: acts-7-na28, work_id: acts, witness_id: greek-acts-na28, locator: "Acts 7", citations: [{source_id: na28, locator: "Acts 7", witness_id: greek-acts-na28}]}
+  - {id: acts-8-na28, work_id: acts, witness_id: greek-acts-na28, locator: "Acts 8", citations: [{source_id: na28, locator: "Acts 8", witness_id: greek-acts-na28}]}
+  - {id: acts-9-na28, work_id: acts, witness_id: greek-acts-na28, locator: "Acts 9", citations: [{source_id: na28, locator: "Acts 9", witness_id: greek-acts-na28}]}
+  - {id: acts-10-na28, work_id: acts, witness_id: greek-acts-na28, locator: "Acts 10", citations: [{source_id: na28, locator: "Acts 10", witness_id: greek-acts-na28}]}
+  - {id: acts-11-na28, work_id: acts, witness_id: greek-acts-na28, locator: "Acts 11", citations: [{source_id: na28, locator: "Acts 11", witness_id: greek-acts-na28}]}
+  - {id: acts-12-na28, work_id: acts, witness_id: greek-acts-na28, locator: "Acts 12", citations: [{source_id: na28, locator: "Acts 12", witness_id: greek-acts-na28}]}
+  - {id: acts-13-na28, work_id: acts, witness_id: greek-acts-na28, locator: "Acts 13", citations: [{source_id: na28, locator: "Acts 13", witness_id: greek-acts-na28}]}
+  - {id: acts-14-na28, work_id: acts, witness_id: greek-acts-na28, locator: "Acts 14", citations: [{source_id: na28, locator: "Acts 14", witness_id: greek-acts-na28}]}
+  - {id: acts-15-na28, work_id: acts, witness_id: greek-acts-na28, locator: "Acts 15", citations: [{source_id: na28, locator: "Acts 15", witness_id: greek-acts-na28}]}
+  - {id: acts-16-na28, work_id: acts, witness_id: greek-acts-na28, locator: "Acts 16", citations: [{source_id: na28, locator: "Acts 16", witness_id: greek-acts-na28}]}
+  - {id: acts-17-na28, work_id: acts, witness_id: greek-acts-na28, locator: "Acts 17", citations: [{source_id: na28, locator: "Acts 17", witness_id: greek-acts-na28}]}
+  - {id: acts-18-na28, work_id: acts, witness_id: greek-acts-na28, locator: "Acts 18", citations: [{source_id: na28, locator: "Acts 18", witness_id: greek-acts-na28}]}
+  - {id: acts-19-na28, work_id: acts, witness_id: greek-acts-na28, locator: "Acts 19", citations: [{source_id: na28, locator: "Acts 19", witness_id: greek-acts-na28}]}
+  - {id: acts-20-na28, work_id: acts, witness_id: greek-acts-na28, locator: "Acts 20", citations: [{source_id: na28, locator: "Acts 20", witness_id: greek-acts-na28}]}
+  - {id: acts-21-na28, work_id: acts, witness_id: greek-acts-na28, locator: "Acts 21", citations: [{source_id: na28, locator: "Acts 21", witness_id: greek-acts-na28}]}
+  - {id: acts-22-na28, work_id: acts, witness_id: greek-acts-na28, locator: "Acts 22", citations: [{source_id: na28, locator: "Acts 22", witness_id: greek-acts-na28}]}
+  - {id: acts-23-na28, work_id: acts, witness_id: greek-acts-na28, locator: "Acts 23", citations: [{source_id: na28, locator: "Acts 23", witness_id: greek-acts-na28}]}
+  - {id: acts-24-na28, work_id: acts, witness_id: greek-acts-na28, locator: "Acts 24", citations: [{source_id: na28, locator: "Acts 24", witness_id: greek-acts-na28}]}
+  - {id: acts-25-na28, work_id: acts, witness_id: greek-acts-na28, locator: "Acts 25", citations: [{source_id: na28, locator: "Acts 25", witness_id: greek-acts-na28}]}
+  - {id: acts-26-na28, work_id: acts, witness_id: greek-acts-na28, locator: "Acts 26", citations: [{source_id: na28, locator: "Acts 26", witness_id: greek-acts-na28}]}
+  - {id: acts-27-na28, work_id: acts, witness_id: greek-acts-na28, locator: "Acts 27", citations: [{source_id: na28, locator: "Acts 27", witness_id: greek-acts-na28}]}
+  - {id: acts-28-na28, work_id: acts, witness_id: greek-acts-na28, locator: "Acts 28", citations: [{source_id: na28, locator: "Acts 28", witness_id: greek-acts-na28}]}

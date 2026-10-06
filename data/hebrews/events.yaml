@@ -1,0 +1,4 @@
+schema_version: 1
+record_type: events
+records:
+  - {id: hebrews-letter, event_type: letter, name: "Letter: Hebrews", participants: [{entity_id: jesus, role: named participant}, {entity_id: moses, role: named participant}, {entity_id: abram, role: named participant}, {entity_id: melchizedek, role: named participant}, {entity_id: isaac, role: named participant}, {entity_id: jacob, role: named participant}, {entity_id: aaron, role: named participant}, {entity_id: abel, role: named participant}], date_claim_ids: [], citations: [{source_id: na28, locator: "Hebrews", witness_id: greek-hebrews-na28}]}

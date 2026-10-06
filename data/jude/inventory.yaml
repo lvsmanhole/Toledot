@@ -1,0 +1,4 @@
+schema_version: 1
+record_type: inventory_units
+records:
+  - {id: inv-jude-1, work_id: jude, locator: "Jude 1", reviewed: true, passage_ids: [jude-1-na28], identified_entity_ids: [adam, balaam-numbers, cain, enoch-seth, james-mat13, jesus, jude-mat13, michael-dan10, moses], event_ids: [jude-letter], no_individuals: false, review_basis: "Person census cross-checked against the TIPNR proper-name index; unnamed individuals curated by hand.", citations: [{source_id: na28, locator: "Jude 1", witness_id: greek-jude-na28}]}

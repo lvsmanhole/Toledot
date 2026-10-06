@@ -1,0 +1,36 @@
+schema_version: 1
+record_type: relationships
+records:
+  - {id: zerubbabel-1ch3-parent-abiud, relationship_type: parent, subject_id: zerubbabel-1ch3, object_id: abiud, claim_ids: [], citations: [{source_id: na28, locator: "Matthew 1:13", witness_id: greek-matthew-na28}]}
+  - {id: zadok-mat1-parent-achim, relationship_type: parent, subject_id: zadok-mat1, object_id: achim, claim_ids: [], citations: [{source_id: na28, locator: "Matthew 1:14", witness_id: greek-matthew-na28}]}
+  - {id: herod-mat2-parent-archelaus, relationship_type: parent, subject_id: herod-mat2, object_id: archelaus, claim_ids: [], citations: [{source_id: na28, locator: "Matthew 2:22", witness_id: greek-matthew-na28}]}
+  - {id: eliakim-mat1-parent-azor, relationship_type: parent, subject_id: eliakim-mat1, object_id: azor, claim_ids: [], citations: [{source_id: na28, locator: "Matthew 1:13", witness_id: greek-matthew-na28}]}
+  - {id: eliud-parent-eleazar-mat1, relationship_type: parent, subject_id: eliud, object_id: eleazar-mat1, claim_ids: [], citations: [{source_id: na28, locator: "Matthew 1:15", witness_id: greek-matthew-na28}]}
+  - {id: abiud-parent-eliakim-mat1, relationship_type: parent, subject_id: abiud, object_id: eliakim-mat1, claim_ids: [], citations: [{source_id: na28, locator: "Matthew 1:13", witness_id: greek-matthew-na28}]}
+  - {id: achim-parent-eliud, relationship_type: parent, subject_id: achim, object_id: eliud, claim_ids: [], citations: [{source_id: na28, locator: "Matthew 1:14", witness_id: greek-matthew-na28}]}
+  - {id: herod-mat14-spouse-herodias, relationship_type: spouse, subject_id: herod-mat14, object_id: herodias, claim_ids: [], citations: [{source_id: na28, locator: "Matthew 14:6", witness_id: greek-matthew-na28}]}
+  - {id: herodias-spouse-philip-mat14, relationship_type: spouse, subject_id: herodias, object_id: philip-mat14, claim_ids: [], citations: [{source_id: na28, locator: "Matthew 14:3", witness_id: greek-matthew-na28}]}
+  - {id: alphaeus-parent-james-mat10, relationship_type: parent, subject_id: alphaeus, object_id: james-mat10, claim_ids: [], citations: [{source_id: na28, locator: "Matthew 10:3", witness_id: greek-matthew-na28}]}
+  - {id: mary-mat1-parent-james-mat13, relationship_type: parent, subject_id: mary-mat1, object_id: james-mat13, claim_ids: [], citations: [{source_id: na28, locator: "Matthew 13:55", witness_id: greek-matthew-na28}]}
+  - {id: zebedee-parent-james-mat4, relationship_type: parent, subject_id: zebedee, object_id: james-mat4, claim_ids: [], citations: [{source_id: na28, locator: "Matthew 4:21", witness_id: greek-matthew-na28}]}
+  - {id: joseph-mat1-parent-jesus, relationship_type: parent, subject_id: joseph-mat1, object_id: jesus, claim_ids: [], citations: [{source_id: na28, locator: "Matthew 1:24", witness_id: greek-matthew-na28}]}
+  - {id: mary-mat1-parent-jesus, relationship_type: parent, subject_id: mary-mat1, object_id: jesus, claim_ids: [], citations: [{source_id: na28, locator: "Matthew 1:20", witness_id: greek-matthew-na28}]}
+  - {id: zebedee-parent-john-mat4, relationship_type: parent, subject_id: zebedee, object_id: john-mat4, claim_ids: [], citations: [{source_id: na28, locator: "Matthew 4:21", witness_id: greek-matthew-na28}]}
+  - {id: jacob-mat1-parent-joseph-mat1, relationship_type: parent, subject_id: jacob-mat1, object_id: joseph-mat1, claim_ids: [], citations: [{source_id: na28, locator: "Matthew 1:16", witness_id: greek-matthew-na28}]}
+  - {id: joseph-mat1-spouse-mary-mat1, relationship_type: spouse, subject_id: joseph-mat1, object_id: mary-mat1, claim_ids: [], citations: [{source_id: na28, locator: "Matthew 1:20", witness_id: greek-matthew-na28}]}
+  - {id: mary-mat1-parent-joses-mat13, relationship_type: parent, subject_id: mary-mat1, object_id: joses-mat13, claim_ids: [], citations: [{source_id: na28, locator: "Matthew 13:55", witness_id: greek-matthew-na28}]}
+  - {id: mary-mat27-parent-joses-mat27, relationship_type: parent, subject_id: mary-mat27, object_id: joses-mat27, claim_ids: [], citations: [{source_id: na28, locator: "Matthew 27:61", witness_id: greek-matthew-na28}]}
+  - {id: mary-mat1-parent-jude-mat13, relationship_type: parent, subject_id: mary-mat1, object_id: jude-mat13, claim_ids: [], citations: [{source_id: na28, locator: "Matthew 13:55", witness_id: greek-matthew-na28}]}
+  - {id: eleazar-mat1-parent-matthan, relationship_type: parent, subject_id: eleazar-mat1, object_id: matthan, claim_ids: [], citations: [{source_id: na28, locator: "Matthew 1:15", witness_id: greek-matthew-na28}]}
+  - {id: alphaeus-parent-matthew-mat9, relationship_type: parent, subject_id: alphaeus, object_id: matthew-mat9, claim_ids: [], citations: [{source_id: na28, locator: "Matthew 10:3", witness_id: greek-matthew-na28}]}
+  - {id: john-mat16-parent-peter, relationship_type: parent, subject_id: john-mat16, object_id: peter, claim_ids: [], citations: [{source_id: na28, locator: "Matthew 16:17", witness_id: greek-matthew-na28}]}
+  - {id: peter-spouse-wife-of-peter, relationship_type: spouse, subject_id: peter, object_id: wife-of-peter, claim_ids: [], citations: [{source_id: na28, locator: "Matthew 8:14", witness_id: greek-matthew-na28}]}
+  - {id: rahab-spouse-salmon, relationship_type: spouse, subject_id: rahab, object_id: salmon, claim_ids: [], citations: [{source_id: na28, locator: "Matthew 1:5", witness_id: greek-matthew-na28}]}
+  - {id: philip-mat14-parent-salome-mat14, relationship_type: parent, subject_id: philip-mat14, object_id: salome-mat14, claim_ids: [], citations: [{source_id: na28, locator: "Matthew 14:3", witness_id: greek-matthew-na28}]}
+  - {id: herodias-parent-salome-mat14, relationship_type: parent, subject_id: herodias, object_id: salome-mat14, claim_ids: [], citations: [{source_id: na28, locator: "Matthew 14:6", witness_id: greek-matthew-na28}]}
+  - {id: mary-mat1-parent-simon-mat13, relationship_type: parent, subject_id: mary-mat1, object_id: simon-mat13, claim_ids: [], citations: [{source_id: na28, locator: "Matthew 13:55", witness_id: greek-matthew-na28}]}
+  - {id: azor-parent-zadok-mat1, relationship_type: parent, subject_id: azor, object_id: zadok-mat1, claim_ids: [], citations: [{source_id: na28, locator: "Matthew 1:14", witness_id: greek-matthew-na28}]}
+  - {id: mother-in-law-of-peter-parent-wife-of-peter, relationship_type: parent, subject_id: mother-in-law-of-peter, object_id: wife-of-peter, claim_ids: [], citations: [{source_id: na28, locator: "Matthew 8:14", witness_id: greek-matthew-na28}]}
+  - {id: syrophoenician-woman-parent-daughter-of-syrophoenician-woman, relationship_type: parent, subject_id: syrophoenician-woman, object_id: daughter-of-syrophoenician-woman, claim_ids: [], citations: [{source_id: na28, locator: "Matthew 15:22", witness_id: greek-matthew-na28}]}
+  - {id: mother-of-zebedees-sons-spouse-zebedee, relationship_type: spouse, subject_id: mother-of-zebedees-sons, object_id: zebedee, claim_ids: [], citations: [{source_id: na28, locator: "Matthew 20:20", witness_id: greek-matthew-na28}]}
+  - {id: pilate-spouse-wife-of-pilate, relationship_type: spouse, subject_id: pilate, object_id: wife-of-pilate, claim_ids: [], citations: [{source_id: na28, locator: "Matthew 27:19", witness_id: greek-matthew-na28}]}

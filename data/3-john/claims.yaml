@@ -1,0 +1,6 @@
+schema_version: 1
+record_type: claims
+records:
+  - {id: demetrius-3-john-na28-attested, subject_id: demetrius, predicate: attested_in_passage, value: {kind: attestation, status: "named in 3 John"}, evidence_type: explicit_text, witness_id: greek-3-john-na28, confidence: A, citations: [{source_id: na28, locator: "3 John 1:12", witness_id: greek-3-john-na28}]}
+  - {id: diotrephes-3-john-na28-attested, subject_id: diotrephes, predicate: attested_in_passage, value: {kind: attestation, status: "named in 3 John"}, evidence_type: explicit_text, witness_id: greek-3-john-na28, confidence: A, citations: [{source_id: na28, locator: "3 John 1:9", witness_id: greek-3-john-na28}]}
+  - {id: gaius-3jn1-3-john-na28-attested, subject_id: gaius-3jn1, predicate: attested_in_passage, value: {kind: attestation, status: "named in 3 John"}, evidence_type: explicit_text, witness_id: greek-3-john-na28, confidence: A, citations: [{source_id: na28, locator: "3 John 1:1", witness_id: greek-3-john-na28}]}

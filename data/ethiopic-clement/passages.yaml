@@ -1,0 +1,4 @@
+schema_version: 1
+record_type: passages
+records:
+  - {id: ethiopic-clement-book-review, work_id: ethiopic-clement, witness_id: book-review-ethiopic-clement, locator: "Ethiopic Clement", citations: [{source_id: ethiopic-edition-pending, locator: "Ethiopic Clement", witness_id: book-review-ethiopic-clement}]}

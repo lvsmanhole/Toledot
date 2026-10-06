@@ -1,0 +1,4 @@
+schema_version: 1
+record_type: passages
+records:
+  - {id: ethiopic-didascalia-book-review, work_id: ethiopic-didascalia, witness_id: book-review-ethiopic-didascalia, locator: "Ethiopic Didascalia", citations: [{source_id: ethiopic-edition-pending, locator: "Ethiopic Didascalia", witness_id: book-review-ethiopic-didascalia}]}

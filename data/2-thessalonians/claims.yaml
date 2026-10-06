@@ -1,0 +1,7 @@
+schema_version: 1
+record_type: claims
+records:
+  - {id: jesus-2-thessalonians-na28-attested, subject_id: jesus, predicate: attested_in_passage, value: {kind: attestation, status: "named in 2 Thessalonians"}, evidence_type: explicit_text, witness_id: greek-2-thessalonians-na28, confidence: A, citations: [{source_id: na28, locator: "2 Thessalonians 1:1, 2, 7, 8, 12; 2:1, 14, 16; 3:5, 6, 12, 18", witness_id: greek-2-thessalonians-na28}]}
+  - {id: paul-2-thessalonians-na28-attested, subject_id: paul, predicate: attested_in_passage, value: {kind: attestation, status: "named in 2 Thessalonians"}, evidence_type: explicit_text, witness_id: greek-2-thessalonians-na28, confidence: A, citations: [{source_id: na28, locator: "2 Thessalonians 1:1; 3:17", witness_id: greek-2-thessalonians-na28}]}
+  - {id: silas-2-thessalonians-na28-attested, subject_id: silas, predicate: attested_in_passage, value: {kind: attestation, status: "named in 2 Thessalonians"}, evidence_type: explicit_text, witness_id: greek-2-thessalonians-na28, confidence: A, citations: [{source_id: na28, locator: "2 Thessalonians 1:1", witness_id: greek-2-thessalonians-na28}]}
+  - {id: timothy-2-thessalonians-na28-attested, subject_id: timothy, predicate: attested_in_passage, value: {kind: attestation, status: "named in 2 Thessalonians"}, evidence_type: explicit_text, witness_id: greek-2-thessalonians-na28, confidence: A, citations: [{source_id: na28, locator: "2 Thessalonians 1:1", witness_id: greek-2-thessalonians-na28}]}

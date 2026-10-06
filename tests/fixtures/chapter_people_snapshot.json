@@ -1684,6 +1684,83 @@
 "zimri-1ch8",
 "zur-1ch8"
 ],
+"1 Corinthians 1": [
+"apollos",
+"chloe",
+"crispus",
+"gaius-rom16",
+"javan",
+"jesus",
+"paul",
+"peter",
+"sosthenes",
+"stephanas"
+],
+"1 Corinthians 10": [
+"javan",
+"jesus",
+"moses"
+],
+"1 Corinthians 11": [
+"jesus"
+],
+"1 Corinthians 12": [
+"javan",
+"jesus"
+],
+"1 Corinthians 13": [],
+"1 Corinthians 14": [],
+"1 Corinthians 15": [
+"adam",
+"james-mat13",
+"jesus",
+"peter"
+],
+"1 Corinthians 16": [
+"achaicus",
+"apollos",
+"aquila",
+"fortunatus",
+"jesus",
+"paul",
+"priscilla",
+"stephanas",
+"timothy"
+],
+"1 Corinthians 2": [
+"jesus"
+],
+"1 Corinthians 3": [
+"apollos",
+"jesus",
+"paul",
+"peter"
+],
+"1 Corinthians 4": [
+"apollos",
+"jesus",
+"timothy"
+],
+"1 Corinthians 5": [
+"jesus",
+"man-with-fathers-wife-corinth"
+],
+"1 Corinthians 6": [
+"jesus"
+],
+"1 Corinthians 7": [
+"jesus"
+],
+"1 Corinthians 8": [
+"jesus"
+],
+"1 Corinthians 9": [
+"barnabas",
+"jesus",
+"moses",
+"peter",
+"wife-of-peter"
+],
 "1 Enoch 1": [
 "enoch-seth"
 ],
@@ -2361,6 +2438,22 @@
 "zechariah-ezr10",
 "zechariah-neh8"
 ],
+"1 John 1": [
+"jesus"
+],
+"1 John 2": [
+"jesus"
+],
+"1 John 3": [
+"cain",
+"jesus"
+],
+"1 John 4": [
+"jesus"
+],
+"1 John 5": [
+"jesus"
+],
 "1 Kings 1": [
 "abiathar",
 "abishag",
@@ -2864,6 +2957,27 @@
 "simon-thassi"
 ],
 "1 Meqabyan": [],
+"1 Peter 1": [
+"jesus",
+"peter"
+],
+"1 Peter 2": [
+"jesus"
+],
+"1 Peter 3": [
+"abram",
+"jesus",
+"noah",
+"sarai"
+],
+"1 Peter 4": [
+"jesus"
+],
+"1 Peter 5": [
+"jesus",
+"mark-act12",
+"silas"
+],
 "1 Samuel 1": [
 "eli",
 "elihu-1sa1",
@@ -3107,6 +3221,52 @@
 "saul",
 "saul-servant-donkeys",
 "zeror"
+],
+"1 Thessalonians 1": [
+"jesus",
+"paul",
+"silas",
+"timothy"
+],
+"1 Thessalonians 2": [
+"jesus",
+"paul"
+],
+"1 Thessalonians 3": [
+"jesus",
+"timothy"
+],
+"1 Thessalonians 4": [
+"jesus"
+],
+"1 Thessalonians 5": [
+"jesus"
+],
+"1 Timothy 1": [
+"alexander-1ti1",
+"hymenaeus",
+"jesus",
+"paul",
+"timothy"
+],
+"1 Timothy 2": [
+"adam",
+"eve",
+"jesus"
+],
+"1 Timothy 3": [
+"jesus"
+],
+"1 Timothy 4": [
+"jesus"
+],
+"1 Timothy 5": [
+"jesus"
+],
+"1 Timothy 6": [
+"jesus",
+"pilate",
+"timothy"
 ],
 "2 Chronicles 1": [
 "bezalel",
@@ -3558,6 +3718,59 @@
 "queen-of-sheba",
 "rehoboam",
 "solomon"
+],
+"2 Corinthians 1": [
+"jesus",
+"paul",
+"silas",
+"timothy"
+],
+"2 Corinthians 10": [
+"jesus",
+"paul"
+],
+"2 Corinthians 11": [
+"abram",
+"aretas",
+"eve",
+"jesus"
+],
+"2 Corinthians 12": [
+"jesus",
+"titus-2co2"
+],
+"2 Corinthians 13": [
+"jesus"
+],
+"2 Corinthians 2": [
+"jesus",
+"titus-2co2"
+],
+"2 Corinthians 3": [
+"jesus",
+"moses"
+],
+"2 Corinthians 4": [
+"jesus"
+],
+"2 Corinthians 5": [
+"jesus"
+],
+"2 Corinthians 6": [
+"jesus"
+],
+"2 Corinthians 7": [
+"titus-2co2"
+],
+"2 Corinthians 8": [
+"jesus",
+"titus-2co2"
+],
+"2 Corinthians 9": [
+"jesus"
+],
+"2 John 1": [
+"jesus"
 ],
 "2 Kings 1": [
 "ahab-1ki16",
@@ -4088,6 +4301,21 @@
 "timotheus-2ma-a"
 ],
 "2 Meqabyan": [],
+"2 Peter 1": [
+"jesus",
+"peter"
+],
+"2 Peter 2": [
+"balaam-numbers",
+"beor-balaam",
+"jesus",
+"lot",
+"noah"
+],
+"2 Peter 3": [
+"jesus",
+"paul"
+],
 "2 Samuel 1": [
 "amalekite-who-reported-saul",
 "david",
@@ -4441,6 +4669,66 @@
 "saul",
 "ziba"
 ],
+"2 Thessalonians 1": [
+"jesus",
+"paul",
+"silas",
+"timothy"
+],
+"2 Thessalonians 2": [
+"jesus"
+],
+"2 Thessalonians 3": [
+"jesus",
+"paul"
+],
+"2 Timothy 1": [
+"eunice",
+"hermogenes",
+"jesus",
+"lois",
+"onesiphorus",
+"paul",
+"phygelus",
+"timothy"
+],
+"2 Timothy 2": [
+"david",
+"hymenaeus",
+"jesus",
+"philetus"
+],
+"2 Timothy 3": [
+"jambres",
+"jannes",
+"jesus",
+"moses"
+],
+"2 Timothy 4": [
+"alexander-1ti1",
+"aquila",
+"carpus",
+"claudia",
+"crescens",
+"demas",
+"erastus",
+"eubulus",
+"jesus",
+"linus",
+"luke-col4",
+"mark-act12",
+"onesiphorus",
+"priscilla",
+"pudens",
+"titus-2co2",
+"trophimus",
+"tychicus"
+],
+"3 John 1": [
+"demetrius",
+"diotrephes",
+"gaius-3jn1"
+],
 "3 Maccabees 1": [
 "antiochus-iii-the-great",
 "arsinoe-iii",
@@ -4674,6 +4962,329 @@
 "seven-brothers-son-1",
 "seven-brothers-son-2"
 ],
+"Acts 1": [
+"alphaeus",
+"andrew",
+"bartholomew",
+"david",
+"james-luk6",
+"james-mat10",
+"james-mat4",
+"jesus",
+"john-mat3",
+"john-mat4",
+"joseph-act1",
+"judas-mat10",
+"judas-mat10-4",
+"mary-mat1",
+"matthew-mat9",
+"matthias",
+"peter",
+"philip-mat10",
+"simon-mat10",
+"theophilus",
+"thomas"
+],
+"Acts 10": [
+"cornelius",
+"jesus",
+"john-mat3",
+"peter",
+"simon-act9"
+],
+"Acts 11": [
+"agabus",
+"barnabas",
+"claudius",
+"jesus",
+"john-mat3",
+"paul",
+"peter",
+"stephen"
+],
+"Acts 12": [
+"barnabas",
+"blastus",
+"herod-act12",
+"james-mat13",
+"james-mat4",
+"john-mat4",
+"mark-act12",
+"mary-act12",
+"paul",
+"peter",
+"rhoda"
+],
+"Acts 13": [
+"abram",
+"bar-jesus",
+"barnabas",
+"david",
+"herod-mat14",
+"jesse",
+"jesus",
+"john-mat3",
+"kish-1sa9",
+"lucius",
+"manaen",
+"mark-act12",
+"moses",
+"paul",
+"pilate",
+"samuel",
+"saul",
+"sergius-paulus",
+"simeon-act13"
+],
+"Acts 14": [
+"barnabas",
+"javan",
+"lame-man-of-lystra",
+"paul"
+],
+"Acts 15": [
+"barnabas",
+"david",
+"james-mat13",
+"jesus",
+"judas-act15",
+"mark-act12",
+"moses",
+"paul",
+"peter",
+"silas"
+],
+"Acts 16": [
+"father-of-timothy",
+"javan",
+"jesus",
+"lydia",
+"paul",
+"philippian-jailer",
+"silas",
+"slave-girl-of-philippi",
+"timothy"
+],
+"Acts 17": [
+"claudius",
+"damaris",
+"dionysius",
+"jason",
+"javan",
+"jesus",
+"paul",
+"silas",
+"timothy"
+],
+"Acts 18": [
+"apollos",
+"aquila",
+"claudius",
+"crispus",
+"gallio",
+"javan",
+"jesus",
+"john-mat3",
+"justus-act18",
+"paul",
+"priscilla",
+"silas",
+"sosthenes",
+"timothy"
+],
+"Acts 19": [
+"alexander-act19",
+"apollos",
+"aristarchus",
+"demetrius",
+"erastus",
+"gaius-act19",
+"javan",
+"jesus",
+"john-mat3",
+"paul",
+"sceva",
+"timothy",
+"town-clerk-of-ephesus",
+"tyrannus"
+],
+"Acts 2": [
+"david",
+"jesus",
+"joel-jol1",
+"peter"
+],
+"Acts 20": [
+"aristarchus",
+"eutychus",
+"gaius-act20",
+"javan",
+"jesus",
+"paul",
+"pyrrhus",
+"secundus",
+"sopater",
+"timothy",
+"trophimus",
+"tychicus"
+],
+"Acts 21": [
+"agabus",
+"james-mat13",
+"javan",
+"jesus",
+"mnason",
+"moses",
+"paul",
+"philip-act6",
+"the-egyptian-rebel",
+"trophimus"
+],
+"Acts 22": [
+"ananias-act9",
+"gamaliel-act5",
+"jesus",
+"paul",
+"stephen"
+],
+"Acts 23": [
+"ananias-act23",
+"felix",
+"herod-mat2",
+"lysias-act23",
+"nephew-of-paul",
+"paul",
+"sister-of-paul"
+],
+"Acts 24": [
+"ananias-act23",
+"drusilla",
+"felix",
+"festus",
+"jesus",
+"lysias-act23",
+"paul",
+"tertullus"
+],
+"Acts 25": [
+"agrippa",
+"augustus",
+"bernice",
+"claudius",
+"felix",
+"festus",
+"jesus",
+"paul"
+],
+"Acts 26": [
+"agrippa",
+"bernice",
+"claudius",
+"festus",
+"jesus",
+"moses",
+"paul"
+],
+"Acts 27": [
+"aristarchus",
+"augustus",
+"claudius",
+"julius",
+"paul"
+],
+"Acts 28": [
+"claudius",
+"isaiah-2ki19",
+"jesus",
+"moses",
+"paul",
+"publius"
+],
+"Acts 3": [
+"abram",
+"isaac",
+"jacob",
+"jesus",
+"john-mat4",
+"lame-man-beautiful-gate",
+"moses",
+"peter",
+"pilate",
+"samuel"
+],
+"Acts 4": [
+"alexander-act4",
+"annas",
+"barnabas",
+"caiaphas",
+"david",
+"herod-mat14",
+"jesus",
+"john-act4",
+"john-mat4",
+"lame-man-beautiful-gate",
+"peter",
+"pilate"
+],
+"Acts 5": [
+"ananias-act5",
+"gamaliel-act5",
+"jesus",
+"judas-act5",
+"peter",
+"sapphira",
+"theudas"
+],
+"Acts 6": [
+"jesus",
+"moses",
+"nicanor",
+"nicolaus",
+"parmenas",
+"philip-act6",
+"prochorus",
+"stephen",
+"timon"
+],
+"Acts 7": [
+"aaron",
+"abram",
+"david",
+"hamor",
+"isaac",
+"jacob",
+"jesus",
+"joseph",
+"joshua-exodus",
+"moses",
+"paul",
+"pharaoh-exodus",
+"pharaoh-gen41",
+"solomon",
+"stephen"
+],
+"Acts 8": [
+"ethiopian-eunuch",
+"isaiah-2ki19",
+"jesus",
+"john-mat4",
+"paul",
+"peter",
+"philip-act6",
+"simon-act8",
+"stephen"
+],
+"Acts 9": [
+"aeneas",
+"ananias-act9",
+"barnabas",
+"jesus",
+"judas-act9",
+"paul",
+"peter",
+"simon-act9",
+"tabitha"
+],
 "Additions to Esther 1": [
 "ahasuerus",
 "gabatha-chamberlain-esg",
@@ -4780,6 +5391,36 @@
 "cyrus",
 "daniel-ezk14",
 "habakkuk-hab1"
+],
+"Book of the Covenant 1": [],
+"Book of the Covenant 2": [],
+"Colossians 1": [
+"epaphras",
+"jesus",
+"paul",
+"timothy"
+],
+"Colossians 2": [
+"jesus"
+],
+"Colossians 3": [
+"javan",
+"jesus"
+],
+"Colossians 4": [
+"archippus",
+"aristarchus",
+"barnabas",
+"demas",
+"epaphras",
+"jesus",
+"justus-col4",
+"luke-col4",
+"mark-act12",
+"nympha",
+"onesimus",
+"paul",
+"tychicus"
 ],
 "Daniel 1": [
 "ashpenaz",
@@ -5050,6 +5691,27 @@
 "Ecclesiastes 7": [],
 "Ecclesiastes 8": [],
 "Ecclesiastes 9": [],
+"Ephesians 1": [
+"jesus",
+"paul"
+],
+"Ephesians 2": [
+"jesus"
+],
+"Ephesians 3": [
+"jesus",
+"paul"
+],
+"Ephesians 4": [
+"jesus"
+],
+"Ephesians 5": [
+"jesus"
+],
+"Ephesians 6": [
+"jesus",
+"tychicus"
+],
 "Esther 1": [
 "abagtha",
 "admatha",
@@ -5150,6 +5812,8 @@
 "poratha",
 "vaizatha"
 ],
+"Ethiopic Clement": [],
+"Ethiopic Didascalia": [],
 "Exodus 1": [
 "asher",
 "benjamin",
@@ -6022,6 +6686,39 @@
 "zerahiah-ezr8"
 ],
 "Ezra 9": [],
+"Galatians 1": [
+"james-mat13",
+"jesus",
+"paul",
+"peter"
+],
+"Galatians 2": [
+"barnabas",
+"james-mat13",
+"javan",
+"jesus",
+"john-mat4",
+"peter",
+"titus-2co2"
+],
+"Galatians 3": [
+"abram",
+"javan",
+"jesus"
+],
+"Galatians 4": [
+"abram",
+"hagar",
+"isaac",
+"jesus"
+],
+"Galatians 5": [
+"jesus",
+"paul"
+],
+"Galatians 6": [
+"jesus"
+],
 "Genesis 10:1-32": [
 "abimael",
 "almodad",
@@ -6829,6 +7526,81 @@
 "shealtiel-1ch3",
 "zerubbabel-1ch3"
 ],
+"Hebrews 1": [],
+"Hebrews 10": [
+"jesus",
+"moses"
+],
+"Hebrews 11": [
+"abel",
+"abram",
+"barak",
+"cain",
+"david",
+"enoch-seth",
+"esau",
+"gideon",
+"isaac",
+"jacob",
+"jephthah",
+"jesus",
+"joseph",
+"moses",
+"noah",
+"pharaoh-exodus",
+"rahab",
+"samson",
+"samuel",
+"sarai"
+],
+"Hebrews 12": [
+"abel",
+"esau",
+"jesus",
+"moses"
+],
+"Hebrews 13": [
+"jesus",
+"timothy"
+],
+"Hebrews 2": [
+"abram",
+"jesus"
+],
+"Hebrews 3": [
+"jesus",
+"moses"
+],
+"Hebrews 4": [
+"david",
+"jesus",
+"joshua-exodus"
+],
+"Hebrews 5": [
+"aaron",
+"jesus",
+"melchizedek"
+],
+"Hebrews 6": [
+"abram",
+"jesus",
+"melchizedek"
+],
+"Hebrews 7": [
+"aaron",
+"abram",
+"jesus",
+"melchizedek",
+"moses"
+],
+"Hebrews 8": [
+"moses"
+],
+"Hebrews 9": [
+"aaron",
+"jesus",
+"moses"
+],
 "Hosea 1": [
 "ahaz-2ki15",
 "beeri-hos1",
@@ -7051,6 +7823,22 @@
 "Isaiah 9": [
 "david",
 "rezin-2ki15"
+],
+"James 1": [
+"james-mat13",
+"jesus"
+],
+"James 2": [
+"abram",
+"isaac",
+"jesus",
+"rahab"
+],
+"James 3": [],
+"James 4": [],
+"James 5": [
+"elijah-1ki17",
+"job-job1"
 ],
 "Jeremiah 1": [
 "amon-2ki21",
@@ -7546,6 +8334,156 @@
 ],
 "Joel 2": [],
 "Joel 3": [],
+"John 1": [
+"andrew",
+"elijah-1ki17",
+"isaiah-2ki19",
+"jesus",
+"john-mat16",
+"john-mat3",
+"joseph-mat1",
+"moses",
+"nathanael",
+"peter",
+"philip-mat10"
+],
+"John 10": [
+"jesus",
+"john-mat3",
+"solomon"
+],
+"John 11": [
+"caiaphas",
+"jesus",
+"lazarus-jhn11",
+"martha",
+"mary-luk10",
+"thomas"
+],
+"John 12": [
+"andrew",
+"isaiah-2ki19",
+"javan",
+"jesus",
+"judas-mat10-4",
+"lazarus-jhn11",
+"martha",
+"mary-luk10",
+"philip-mat10",
+"simon-jhn6"
+],
+"John 13": [
+"jesus",
+"judas-mat10-4",
+"peter",
+"simon-jhn6"
+],
+"John 14": [
+"jesus",
+"judas-mat10",
+"judas-mat10-4",
+"philip-mat10",
+"thomas"
+],
+"John 15": [],
+"John 16": [
+"jesus"
+],
+"John 17": [
+"jesus"
+],
+"John 18": [
+"annas",
+"barabbas",
+"caiaphas",
+"daughter-of-annas",
+"jesus",
+"judas-mat10-4",
+"malchus",
+"peter",
+"pilate",
+"servant-girl-who-questioned-peter"
+],
+"John 19": [
+"alphaeus",
+"jesus",
+"joseph-mat27",
+"mary-magdalene",
+"mary-mat27",
+"nicodemus",
+"pilate",
+"tiberius"
+],
+"John 2": [
+"bridegroom-at-cana",
+"jesus",
+"master-of-the-feast-cana"
+],
+"John 20": [
+"jesus",
+"mary-magdalene",
+"peter",
+"thomas"
+],
+"John 21": [
+"jesus",
+"john-mat16",
+"nathanael",
+"peter",
+"thomas",
+"zebedee"
+],
+"John 3": [
+"jesus",
+"john-mat3",
+"moses",
+"nicodemus"
+],
+"John 4": [
+"jacob",
+"jesus",
+"john-mat3",
+"joseph",
+"royal-official-capernaum",
+"samaritan-woman-at-the-well",
+"son-of-royal-official"
+],
+"John 5": [
+"jesus",
+"john-mat3",
+"man-at-bethesda",
+"moses"
+],
+"John 6": [
+"andrew",
+"boy-with-loaves-and-fish",
+"jesus",
+"joseph-mat1",
+"judas-mat10-4",
+"moses",
+"peter",
+"philip-mat10",
+"simon-jhn6"
+],
+"John 7": [
+"david",
+"javan",
+"jesus",
+"moses",
+"nicodemus"
+],
+"John 8": [
+"abram",
+"jesus",
+"moses",
+"woman-caught-in-adultery"
+],
+"John 9": [
+"jesus",
+"man-born-blind",
+"moses",
+"parents-of-man-born-blind-father"
+],
 "Jonah 1": [
 "amittai",
 "jonah-2ki14",
@@ -8406,6 +9344,17 @@
 "tiras",
 "tubal"
 ],
+"Jude 1": [
+"adam",
+"balaam-numbers",
+"cain",
+"enoch-seth",
+"james-mat13",
+"jesus",
+"jude-mat13",
+"michael-dan10",
+"moses"
+],
 "Judges 1": [
 "achsah-jos15",
 "adoni-bezek",
@@ -8866,6 +9815,297 @@
 "moses",
 "nadab"
 ],
+"Luke 1": [
+"aaron",
+"abijah-1ch24",
+"abram",
+"david",
+"elijah-1ki17",
+"elizabeth",
+"herod-mat2",
+"jesus",
+"john-mat3",
+"joseph-mat1",
+"mary-mat1",
+"theophilus",
+"zechariah-luk1"
+],
+"Luke 10": [
+"jesus",
+"martha",
+"mary-luk10"
+],
+"Luke 11": [
+"abel",
+"john-mat3",
+"jonah-2ki14",
+"queen-of-sheba",
+"solomon",
+"zechariah-2ch24"
+],
+"Luke 12": [
+"peter",
+"solomon"
+],
+"Luke 13": [
+"abram",
+"bent-woman",
+"herod-mat14",
+"isaac",
+"jacob",
+"jesus",
+"pilate"
+],
+"Luke 14": [
+"jesus",
+"man-with-dropsy"
+],
+"Luke 15": [],
+"Luke 16": [
+"abram",
+"john-mat3",
+"moses"
+],
+"Luke 17": [
+"jesus",
+"lot",
+"noah",
+"samaritan-leper-who-returned"
+],
+"Luke 18": [
+"david",
+"jesus",
+"peter",
+"rich-young-man"
+],
+"Luke 19": [
+"abram",
+"jesus",
+"zacchaeus"
+],
+"Luke 2": [
+"anna",
+"augustus",
+"david",
+"jesus",
+"joseph-mat1",
+"mary-mat1",
+"moses",
+"phanuel",
+"quirinius",
+"simeon-luk2"
+],
+"Luke 20": [
+"abram",
+"david",
+"isaac",
+"jacob",
+"jesus",
+"john-mat3",
+"moses",
+"tiberius"
+],
+"Luke 21": [
+"poor-widow-at-the-treasury"
+],
+"Luke 22": [
+"jesus",
+"john-mat4",
+"judas-mat10-4",
+"peter",
+"servant-girl-who-questioned-peter"
+],
+"Luke 23": [
+"barabbas",
+"centurion-at-the-cross",
+"herod-mat14",
+"impenitent-criminal",
+"jesus",
+"joseph-mat27",
+"penitent-criminal",
+"pilate",
+"simon-mat27",
+"tiberius"
+],
+"Luke 24": [
+"alphaeus",
+"james-mat10",
+"jesus",
+"joanna",
+"mary-magdalene",
+"mary-mat27",
+"moses",
+"peter"
+],
+"Luke 3": [
+"abram",
+"adam",
+"addi",
+"amminadab",
+"amos-luk3",
+"annas",
+"arphaxad",
+"augustus",
+"boaz",
+"caiaphas",
+"cainan-postflood",
+"cosam",
+"david",
+"eber",
+"eliakim-luk3",
+"eliezer-luk3",
+"elmadam",
+"enoch-seth",
+"enosh",
+"er-luk3",
+"esli",
+"heli",
+"herod-mat14",
+"herodias",
+"hezron-perez",
+"isaac",
+"isaiah-2ki19",
+"jacob",
+"jannai",
+"jared",
+"jesse",
+"jesus",
+"joanan",
+"joda",
+"john-mat3",
+"jonam",
+"jorim",
+"josech",
+"joseph-luk3",
+"joseph-luk3-30",
+"joseph-mat1",
+"joshua-luk3",
+"judah",
+"judah-luk3",
+"kenan",
+"lamech-seth",
+"levi-luk3",
+"levi-luk3-29",
+"lysanias",
+"maath",
+"mahalalel",
+"mattatha",
+"mattathias-luk3",
+"mattathias-luk3-26",
+"matthat-luk3",
+"matthat-luk3-29",
+"melchi-luk3",
+"melchi-luk3-28",
+"melea",
+"menna",
+"methuselah",
+"naggai",
+"nahor-father-terah",
+"nahshon",
+"nahum-luk3",
+"nathan-2sa5",
+"neri",
+"noah",
+"obed-rut4",
+"peleg",
+"perez",
+"philip-luk3",
+"philip-mat14",
+"pilate",
+"ram-rut4",
+"reu",
+"rhesa",
+"salmon",
+"semein",
+"serug",
+"seth",
+"shealtiel-luk3",
+"shelah",
+"shem",
+"simeon-luk3",
+"terah",
+"tiberius",
+"zechariah-luk1",
+"zerubbabel-luk3"
+],
+"Luke 4": [
+"elijah-1ki17",
+"elisha",
+"isaiah-2ki19",
+"jesus",
+"joseph-mat1",
+"mother-in-law-of-peter",
+"naaman-2ki5",
+"peter"
+],
+"Luke 5": [
+"james-mat4",
+"jesus",
+"john-mat3",
+"john-mat4",
+"leper-cleansed-in-galilee",
+"matthew-mat9",
+"moses",
+"paralytic-lowered-through-roof",
+"peter",
+"zebedee"
+],
+"Luke 6": [
+"alphaeus",
+"andrew",
+"bartholomew",
+"david",
+"james-luk6",
+"james-mat10",
+"james-mat4",
+"jesus",
+"john-mat4",
+"judas-mat10",
+"judas-mat10-4",
+"man-with-withered-hand",
+"matthew-mat9",
+"peter",
+"philip-mat10",
+"simon-mat10",
+"thomas"
+],
+"Luke 7": [
+"centurion-of-capernaum",
+"jesus",
+"john-mat3",
+"servant-of-centurion",
+"simon-mat26",
+"sinful-woman-who-anointed-jesus",
+"son-of-widow-of-nain",
+"widow-of-nain"
+],
+"Luke 8": [
+"chuza",
+"gerasene-demoniac",
+"herod-mat14",
+"jairus",
+"jairus-daughter",
+"james-mat4",
+"jesus",
+"joanna",
+"john-mat4",
+"mary-magdalene",
+"peter",
+"susanna-luk8",
+"woman-with-hemorrhage"
+],
+"Luke 9": [
+"boy-with-unclean-spirit",
+"elijah-1ki17",
+"father-of-boy-with-unclean-spirit",
+"herod-mat14",
+"james-mat4",
+"jesus",
+"john-mat3",
+"john-mat4",
+"moses",
+"peter"
+],
 "Malachi 1": [
 "malachi-mal1"
 ],
@@ -8874,6 +10114,423 @@
 "Malachi 4": [
 "elijah-1ki17",
 "moses"
+],
+"Mark 1": [
+"andrew",
+"isaiah-2ki19",
+"james-mat4",
+"jesus",
+"john-mat3",
+"john-mat4",
+"leper-cleansed-in-galilee",
+"moses",
+"mother-in-law-of-peter",
+"peter",
+"zebedee"
+],
+"Mark 10": [
+"bartimaeus",
+"david",
+"james-mat4",
+"jesus",
+"john-mat4",
+"moses",
+"peter",
+"rich-young-man",
+"timaeus",
+"zebedee"
+],
+"Mark 11": [
+"david",
+"jesus",
+"john-mat3",
+"peter"
+],
+"Mark 12": [
+"abram",
+"david",
+"isaac",
+"jacob",
+"jesus",
+"moses",
+"poor-widow-at-the-treasury",
+"tiberius"
+],
+"Mark 13": [
+"andrew",
+"daniel-ezk14",
+"james-mat4",
+"jesus",
+"john-mat4",
+"peter"
+],
+"Mark 14": [
+"james-mat4",
+"jesus",
+"john-mat4",
+"judas-mat10-4",
+"peter",
+"servant-girl-who-questioned-peter",
+"simon-mat26",
+"woman-who-anointed-jesus-at-bethany",
+"young-man-who-fled-naked"
+],
+"Mark 15": [
+"alexander-mrk15",
+"barabbas",
+"centurion-at-the-cross",
+"elijah-1ki17",
+"james-mat10",
+"jesus",
+"joseph-mat27",
+"joses-mat27",
+"mary-magdalene",
+"mary-mat1",
+"mary-mat27",
+"pilate",
+"rufus-mrk15",
+"salome-mrk15",
+"simon-mat27"
+],
+"Mark 16": [
+"james-mat10",
+"jesus",
+"mary-magdalene",
+"mary-mat27",
+"peter",
+"salome-mrk15"
+],
+"Mark 2": [
+"abiathar",
+"alphaeus",
+"david",
+"jesus",
+"john-mat3",
+"matthew-mat9",
+"paralytic-lowered-through-roof"
+],
+"Mark 3": [
+"alphaeus",
+"andrew",
+"bartholomew",
+"james-mat10",
+"james-mat4",
+"jesus",
+"john-mat4",
+"judas-mat10",
+"judas-mat10-4",
+"man-with-withered-hand",
+"matthew-mat9",
+"peter",
+"philip-mat10",
+"simon-mat10",
+"thomas",
+"zebedee"
+],
+"Mark 4": [],
+"Mark 5": [
+"gerasene-demoniac",
+"jairus",
+"jairus-daughter",
+"james-mat4",
+"jesus",
+"john-mat4",
+"peter",
+"woman-with-hemorrhage"
+],
+"Mark 6": [
+"elijah-1ki17",
+"herod-mat14",
+"herodias",
+"james-mat13",
+"jesus",
+"john-mat3",
+"joses-mat13",
+"jude-mat13",
+"mary-mat1",
+"philip-mat14",
+"simon-mat13"
+],
+"Mark 7": [
+"daughter-of-syrophoenician-woman",
+"isaiah-2ki19",
+"jesus",
+"moses",
+"syrophoenician-woman"
+],
+"Mark 8": [
+"elijah-1ki17",
+"herod-mat14",
+"jesus",
+"john-mat3",
+"peter"
+],
+"Mark 9": [
+"boy-with-unclean-spirit",
+"elijah-1ki17",
+"father-of-boy-with-unclean-spirit",
+"james-mat4",
+"jesus",
+"john-mat4",
+"moses",
+"peter"
+],
+"Matthew 1": [
+"abijah-1ki14-31",
+"abiud",
+"abram",
+"achim",
+"ahaz-2ki15",
+"amminadab",
+"amon-2ki21",
+"asa-1ki15",
+"azor",
+"boaz",
+"david",
+"eleazar-mat1",
+"eliakim-mat1",
+"eliud",
+"hezekiah-2ki16",
+"hezron-perez",
+"isaac",
+"jacob",
+"jacob-mat1",
+"jehoiachin",
+"jehoram-1ki22",
+"jehoshaphat-1ki15",
+"jesse",
+"jesus",
+"joseph-mat1",
+"josiah-1ki13",
+"jotham-2ki15",
+"judah",
+"manasseh-2ki20",
+"mary-mat1",
+"matthan",
+"nahshon",
+"obed-rut4",
+"perez",
+"rahab",
+"ram-rut4",
+"rehoboam",
+"ruth-rut1",
+"salmon",
+"shealtiel-1ch3",
+"solomon",
+"tamar",
+"uriah-2sa11",
+"uzziah-2ki14",
+"zadok-mat1",
+"zerah-judah",
+"zerubbabel-1ch3"
+],
+"Matthew 10": [
+"alphaeus",
+"andrew",
+"bartholomew",
+"james-mat10",
+"james-mat4",
+"jesus",
+"john-mat4",
+"judas-mat10",
+"judas-mat10-4",
+"matthew-mat9",
+"peter",
+"philip-mat10",
+"simon-mat10",
+"thomas",
+"zebedee"
+],
+"Matthew 11": [
+"elijah-1ki17",
+"jesus",
+"john-mat3"
+],
+"Matthew 12": [
+"david",
+"isaiah-2ki19",
+"jesus",
+"jonah-2ki14",
+"man-with-withered-hand",
+"queen-of-sheba",
+"solomon"
+],
+"Matthew 13": [
+"isaiah-2ki19",
+"james-mat13",
+"jesus",
+"joses-mat13",
+"jude-mat13",
+"mary-mat1",
+"simon-mat13"
+],
+"Matthew 14": [
+"herod-mat14",
+"herodias",
+"jesus",
+"john-mat3",
+"peter",
+"philip-mat14",
+"salome-mat14"
+],
+"Matthew 15": [
+"daughter-of-syrophoenician-woman",
+"david",
+"isaiah-2ki19",
+"jesus",
+"peter",
+"syrophoenician-woman"
+],
+"Matthew 16": [
+"elijah-1ki17",
+"jeremiah-2ch35",
+"jesus",
+"john-mat16",
+"john-mat3",
+"jonah-2ki14",
+"peter"
+],
+"Matthew 17": [
+"boy-with-unclean-spirit",
+"elijah-1ki17",
+"father-of-boy-with-unclean-spirit",
+"james-mat4",
+"jesus",
+"john-mat3",
+"john-mat4",
+"moses",
+"peter"
+],
+"Matthew 18": [
+"jesus",
+"peter"
+],
+"Matthew 19": [
+"jesus",
+"moses",
+"peter",
+"rich-young-man"
+],
+"Matthew 2": [
+"archelaus",
+"herod-mat2",
+"jeremiah-2ch35",
+"jesus",
+"joseph-mat1",
+"mary-mat1",
+"rachel"
+],
+"Matthew 20": [
+"david",
+"jesus",
+"mother-of-zebedees-sons",
+"zebedee"
+],
+"Matthew 21": [
+"david",
+"jesus",
+"john-mat3"
+],
+"Matthew 22": [
+"abram",
+"david",
+"isaac",
+"jacob",
+"jesus",
+"moses",
+"tiberius"
+],
+"Matthew 23": [
+"abel",
+"jehoiada-2ki11",
+"jesus",
+"moses",
+"zechariah-2ch24"
+],
+"Matthew 24": [
+"daniel-ezk14",
+"jesus",
+"noah"
+],
+"Matthew 25": [],
+"Matthew 26": [
+"caiaphas",
+"jesus",
+"judas-mat10-4",
+"peter",
+"servant-girl-who-questioned-peter",
+"simon-mat26",
+"woman-who-anointed-jesus-at-bethany",
+"zebedee"
+],
+"Matthew 27": [
+"barabbas",
+"centurion-at-the-cross",
+"elijah-1ki17",
+"james-mat10",
+"jeremiah-2ch35",
+"jesus",
+"joseph-mat27",
+"joses-mat27",
+"judas-mat10-4",
+"mary-magdalene",
+"mary-mat27",
+"mother-of-zebedees-sons",
+"pilate",
+"simon-mat27",
+"wife-of-pilate",
+"zebedee"
+],
+"Matthew 28": [
+"jesus",
+"mary-magdalene",
+"mary-mat27"
+],
+"Matthew 3": [
+"abram",
+"isaiah-2ki19",
+"jesus",
+"john-mat3"
+],
+"Matthew 4": [
+"andrew",
+"isaiah-2ki19",
+"james-mat4",
+"jesus",
+"john-mat3",
+"john-mat4",
+"peter",
+"zebedee"
+],
+"Matthew 5": [],
+"Matthew 6": [
+"solomon"
+],
+"Matthew 7": [
+"jesus"
+],
+"Matthew 8": [
+"abram",
+"centurion-of-capernaum",
+"isaac",
+"isaiah-2ki19",
+"jacob",
+"jesus",
+"leper-cleansed-in-galilee",
+"moses",
+"mother-in-law-of-peter",
+"peter",
+"servant-of-centurion",
+"wife-of-peter"
+],
+"Matthew 9": [
+"david",
+"jairus-daughter",
+"jesus",
+"john-mat3",
+"matthew-mat9",
+"paralytic-lowered-through-roof",
+"woman-with-hemorrhage"
 ],
 "Micah 1": [
 "ahaz-2ki15",
@@ -10032,6 +11689,41 @@
 "obadiah-oba1"
 ],
 "Odes": [],
+"Philemon 1": [
+"apphia",
+"archippus",
+"aristarchus",
+"demas",
+"epaphras",
+"jesus",
+"luke-col4",
+"mark-act12",
+"onesimus",
+"paul",
+"philemon-phm1",
+"timothy"
+],
+"Philippians 1": [
+"jesus",
+"paul",
+"timothy"
+],
+"Philippians 2": [
+"epaphroditus",
+"jesus",
+"timothy"
+],
+"Philippians 3": [
+"jesus"
+],
+"Philippians 4": [
+"clement",
+"epaphroditus",
+"euodia",
+"jesus",
+"nero",
+"syntyche"
+],
 "Prayer of Azariah 3": [
 "abram",
 "azariah-dan1",
@@ -10493,6 +12185,171 @@
 ],
 "Psalms of Solomon": [],
 "Rest of the Words of Baruch": [],
+"Revelation 1": [
+"jesus",
+"john-of-patmos"
+],
+"Revelation 10": [],
+"Revelation 11": [
+"jesus"
+],
+"Revelation 12": [
+"jesus",
+"michael-dan10"
+],
+"Revelation 13": [],
+"Revelation 14": [
+"jesus"
+],
+"Revelation 15": [
+"moses"
+],
+"Revelation 16": [],
+"Revelation 17": [
+"jesus"
+],
+"Revelation 18": [],
+"Revelation 19": [
+"jesus"
+],
+"Revelation 2": [
+"antipas",
+"balaam-numbers",
+"balak-numbers",
+"jezebel-of-thyatira"
+],
+"Revelation 20": [
+"jesus"
+],
+"Revelation 21": [
+"john-of-patmos"
+],
+"Revelation 22": [
+"david",
+"jesus",
+"john-of-patmos"
+],
+"Revelation 3": [
+"david"
+],
+"Revelation 4": [],
+"Revelation 5": [
+"david"
+],
+"Revelation 6": [],
+"Revelation 7": [],
+"Revelation 8": [],
+"Revelation 9": [],
+"Romans 1": [
+"david",
+"javan",
+"jesus",
+"paul"
+],
+"Romans 10": [
+"isaiah-2ki19",
+"javan",
+"jesus",
+"moses"
+],
+"Romans 11": [
+"abram",
+"david",
+"elijah-1ki17"
+],
+"Romans 12": [
+"jesus"
+],
+"Romans 13": [
+"jesus"
+],
+"Romans 14": [
+"jesus"
+],
+"Romans 15": [
+"isaiah-2ki19",
+"jesse",
+"jesus"
+],
+"Romans 16": [
+"ampliatus",
+"andronicus",
+"apelles",
+"aquila",
+"aristobulus",
+"asyncritus",
+"epaenetus",
+"erastus",
+"gaius-rom16",
+"hermas",
+"hermes",
+"herodion",
+"jason",
+"jesus",
+"julia",
+"junia",
+"lucius",
+"mary-rom16",
+"narcissus",
+"nereus",
+"olympas",
+"patrobas",
+"persis",
+"philologus",
+"phlegon",
+"phoebe",
+"priscilla",
+"quartus",
+"rufus-rom16",
+"sopater",
+"stachys",
+"tertius",
+"timothy",
+"tryphaena",
+"tryphosa",
+"urbanus"
+],
+"Romans 2": [
+"javan",
+"jesus"
+],
+"Romans 3": [
+"javan",
+"jesus"
+],
+"Romans 4": [
+"abram",
+"david",
+"jesus",
+"sarai"
+],
+"Romans 5": [
+"adam",
+"jesus",
+"moses"
+],
+"Romans 6": [
+"jesus"
+],
+"Romans 7": [
+"jesus"
+],
+"Romans 8": [
+"jesus"
+],
+"Romans 9": [
+"abram",
+"esau",
+"hosea-hos1",
+"isaac",
+"isaiah-2ki19",
+"jacob",
+"jesus",
+"moses",
+"pharaoh-exodus-second",
+"rebekah",
+"sarai"
+],
 "Ruth 1": [
 "chilion",
 "elimelech",
@@ -10536,6 +12393,10 @@
 "salmon",
 "tamar"
 ],
+"Sinodos: Abtilis": [],
+"Sinodos: Gitsew": [],
+"Sinodos: Sirate Tsion": [],
+"Sinodos: Tizaz": [],
 "Sirach 1": [],
 "Sirach 10": [],
 "Sirach 11": [],
@@ -10689,6 +12550,21 @@
 "susanna-person"
 ],
 "Tegsats": [],
+"Titus 1": [
+"jesus",
+"paul",
+"titus-2co2"
+],
+"Titus 2": [
+"jesus"
+],
+"Titus 3": [
+"apollos",
+"artemas",
+"jesus",
+"tychicus",
+"zenas"
+],
 "Tobit 1": [
 "achiacharus",
 "aduel-tobit",

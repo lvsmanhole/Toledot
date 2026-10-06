@@ -5813,6 +5813,636 @@ records:
       - {id: gen-uthai-ezr8-death, operation: offset_years, input_id: gen-uthai-ezr8-birth, offset_years: 65}
       - {id: gen-joakim-high-priest-bar-birth, operation: offset_years, input_id: gen-hilkiah-father-of-joakim-bar-birth, offset_years: 30}
       - {id: gen-joakim-high-priest-bar-death, operation: offset_years, input_id: gen-joakim-high-priest-bar-birth, offset_years: 65}
+      - {id: nt-abiud-birth, operation: literal, year: {era: BCE, year: 543}}
+      - {id: nt-abiud-death, operation: literal, year: {era: BCE, year: 478}}
+      - {id: nt-achaicus-birth, operation: literal, year: {era: CE, year: 24}}
+      - {id: nt-achaicus-death, operation: literal, year: {era: CE, year: 89}}
+      - {id: nt-achim-birth, operation: literal, year: {era: BCE, year: 423}}
+      - {id: nt-achim-death, operation: literal, year: {era: BCE, year: 358}}
+      - {id: nt-addi-birth, operation: literal, year: {era: BCE, year: 493}}
+      - {id: nt-addi-death, operation: literal, year: {era: BCE, year: 428}}
+      - {id: nt-aeneas-birth, operation: literal, year: {era: CE, year: 6}}
+      - {id: nt-aeneas-death, operation: literal, year: {era: CE, year: 71}}
+      - {id: nt-agabus-birth, operation: literal, year: {era: CE, year: 12}}
+      - {id: nt-agabus-death, operation: literal, year: {era: CE, year: 77}}
+      - {id: nt-agrippa-birth, operation: literal, year: {era: CE, year: 27}}
+      - {id: nt-agrippa-death, operation: literal, year: {era: CE, year: 93}}
+      - {id: nt-alexander-1ti1-birth, operation: literal, year: {era: CE, year: 33}}
+      - {id: nt-alexander-1ti1-death, operation: literal, year: {era: CE, year: 98}}
+      - {id: nt-alexander-act19-birth, operation: literal, year: {era: CE, year: 22}}
+      - {id: nt-alexander-act19-death, operation: literal, year: {era: CE, year: 87}}
+      - {id: nt-alexander-act4-birth, operation: literal, year: {era: CE, year: 2}}
+      - {id: nt-alexander-act4-death, operation: literal, year: {era: CE, year: 67}}
+      - {id: nt-alexander-mrk15-birth, operation: literal, year: {era: BCE, year: 1}}
+      - {id: nt-alexander-mrk15-death, operation: literal, year: {era: CE, year: 65}}
+      - {id: nt-alphaeus-birth, operation: literal, year: {era: BCE, year: 27}}
+      - {id: nt-alphaeus-death, operation: literal, year: {era: CE, year: 38}}
+      - {id: nt-amos-luk3-birth, operation: literal, year: {era: BCE, year: 43}}
+      - {id: nt-amos-luk3-death, operation: literal, year: {era: CE, year: 22}}
+      - {id: nt-ampliatus-birth, operation: literal, year: {era: CE, year: 27}}
+      - {id: nt-ampliatus-death, operation: literal, year: {era: CE, year: 92}}
+      - {id: nt-ananias-act23-birth, operation: literal, year: {era: CE, year: 28}}
+      - {id: nt-ananias-act23-death, operation: literal, year: {era: CE, year: 93}}
+      - {id: nt-ananias-act5-birth, operation: literal, year: {era: CE, year: 3}}
+      - {id: nt-ananias-act5-death, operation: literal, year: {era: CE, year: 68}}
+      - {id: nt-ananias-act9-birth, operation: literal, year: {era: CE, year: 6}}
+      - {id: nt-ananias-act9-death, operation: literal, year: {era: CE, year: 71}}
+      - {id: nt-andrew-birth, operation: literal, year: {era: BCE, year: 2}}
+      - {id: nt-andrew-death, operation: literal, year: {era: CE, year: 63}}
+      - {id: nt-andronicus-birth, operation: literal, year: {era: CE, year: 27}}
+      - {id: nt-andronicus-death, operation: literal, year: {era: CE, year: 92}}
+      - {id: nt-anna-birth, operation: literal, year: {era: BCE, year: 89}}
+      - {id: nt-anna-death, operation: literal, year: {era: BCE, year: 1}}
+      - {id: nt-annas-birth, operation: literal, year: {era: BCE, year: 23}}
+      - {id: nt-annas-death, operation: literal, year: {era: CE, year: 40}}
+      - {id: nt-antipas-birth, operation: literal, year: {era: CE, year: 65}}
+      - {id: nt-antipas-death, operation: literal, year: {era: CE, year: 130}}
+      - {id: nt-apelles-birth, operation: literal, year: {era: CE, year: 27}}
+      - {id: nt-apelles-death, operation: literal, year: {era: CE, year: 92}}
+      - {id: nt-apollos-birth, operation: literal, year: {era: CE, year: 22}}
+      - {id: nt-apollos-death, operation: literal, year: {era: CE, year: 87}}
+      - {id: nt-apphia-birth, operation: literal, year: {era: CE, year: 31}}
+      - {id: nt-apphia-death, operation: literal, year: {era: CE, year: 96}}
+      - {id: nt-aquila-birth, operation: literal, year: {era: CE, year: 22}}
+      - {id: nt-aquila-death, operation: literal, year: {era: CE, year: 87}}
+      - {id: nt-archelaus-birth, operation: literal, year: {era: BCE, year: 23}}
+      - {id: nt-archelaus-death, operation: literal, year: {era: CE, year: 18}}
+      - {id: nt-archippus-birth, operation: literal, year: {era: CE, year: 31}}
+      - {id: nt-archippus-death, operation: literal, year: {era: CE, year: 96}}
+      - {id: nt-aretas-birth, operation: literal, year: {era: BCE, year: 40}}
+      - {id: nt-aretas-death, operation: literal, year: {era: CE, year: 40}}
+      - {id: nt-aristarchus-birth, operation: literal, year: {era: CE, year: 22}}
+      - {id: nt-aristarchus-death, operation: literal, year: {era: CE, year: 87}}
+      - {id: nt-aristobulus-birth, operation: literal, year: {era: CE, year: 27}}
+      - {id: nt-aristobulus-death, operation: literal, year: {era: CE, year: 92}}
+      - {id: nt-artemas-birth, operation: literal, year: {era: CE, year: 33}}
+      - {id: nt-artemas-death, operation: literal, year: {era: CE, year: 98}}
+      - {id: nt-asyncritus-birth, operation: literal, year: {era: CE, year: 27}}
+      - {id: nt-asyncritus-death, operation: literal, year: {era: CE, year: 92}}
+      - {id: nt-augustus-birth, operation: literal, year: {era: BCE, year: 63}}
+      - {id: nt-augustus-death, operation: literal, year: {era: CE, year: 14}}
+      - {id: nt-azor-birth, operation: literal, year: {era: BCE, year: 483}}
+      - {id: nt-azor-death, operation: literal, year: {era: BCE, year: 418}}
+      - {id: nt-bar-jesus-birth, operation: literal, year: {era: CE, year: 16}}
+      - {id: nt-bar-jesus-death, operation: literal, year: {era: CE, year: 81}}
+      - {id: nt-barabbas-birth, operation: literal, year: {era: BCE, year: 1}}
+      - {id: nt-barabbas-death, operation: literal, year: {era: CE, year: 65}}
+      - {id: nt-barnabas-birth, operation: literal, year: {era: CE, year: 2}}
+      - {id: nt-barnabas-death, operation: literal, year: {era: CE, year: 67}}
+      - {id: nt-bartholomew-birth, operation: literal, year: {era: BCE, year: 2}}
+      - {id: nt-bartholomew-death, operation: literal, year: {era: CE, year: 63}}
+      - {id: nt-bartimaeus-birth, operation: literal, year: {era: BCE, year: 1}}
+      - {id: nt-bartimaeus-death, operation: literal, year: {era: CE, year: 64}}
+      - {id: nt-bent-woman-birth, operation: literal, year: {era: BCE, year: 1}}
+      - {id: nt-bent-woman-death, operation: literal, year: {era: CE, year: 64}}
+      - {id: nt-bernice-birth, operation: literal, year: {era: CE, year: 28}}
+      - {id: nt-bernice-death, operation: literal, year: {era: CE, year: 81}}
+      - {id: nt-blastus-birth, operation: literal, year: {era: CE, year: 14}}
+      - {id: nt-blastus-death, operation: literal, year: {era: CE, year: 79}}
+      - {id: nt-boy-with-loaves-and-fish-birth, operation: literal, year: {era: BCE, year: 2}}
+      - {id: nt-boy-with-loaves-and-fish-death, operation: literal, year: {era: CE, year: 63}}
+      - {id: nt-boy-with-unclean-spirit-birth, operation: literal, year: {era: BCE, year: 1}}
+      - {id: nt-boy-with-unclean-spirit-death, operation: literal, year: {era: CE, year: 64}}
+      - {id: nt-bridegroom-at-cana-birth, operation: literal, year: {era: BCE, year: 2}}
+      - {id: nt-bridegroom-at-cana-death, operation: literal, year: {era: CE, year: 63}}
+      - {id: nt-caiaphas-birth, operation: literal, year: {era: BCE, year: 14}}
+      - {id: nt-caiaphas-death, operation: literal, year: {era: CE, year: 46}}
+      - {id: nt-carpus-birth, operation: literal, year: {era: CE, year: 35}}
+      - {id: nt-carpus-death, operation: literal, year: {era: CE, year: 100}}
+      - {id: nt-centurion-at-the-cross-birth, operation: literal, year: {era: BCE, year: 1}}
+      - {id: nt-centurion-at-the-cross-death, operation: literal, year: {era: CE, year: 65}}
+      - {id: nt-centurion-of-capernaum-birth, operation: literal, year: {era: BCE, year: 2}}
+      - {id: nt-centurion-of-capernaum-death, operation: literal, year: {era: CE, year: 63}}
+      - {id: nt-chloe-birth, operation: literal, year: {era: CE, year: 24}}
+      - {id: nt-chloe-death, operation: literal, year: {era: CE, year: 89}}
+      - {id: nt-chuza-birth, operation: literal, year: {era: BCE, year: 1}}
+      - {id: nt-chuza-death, operation: literal, year: {era: CE, year: 64}}
+      - {id: nt-claudia-birth, operation: literal, year: {era: CE, year: 35}}
+      - {id: nt-claudia-death, operation: literal, year: {era: CE, year: 100}}
+      - {id: nt-claudius-birth, operation: literal, year: {era: BCE, year: 10}}
+      - {id: nt-claudius-death, operation: literal, year: {era: CE, year: 54}}
+      - {id: nt-clement-birth, operation: literal, year: {era: CE, year: 31}}
+      - {id: nt-clement-death, operation: literal, year: {era: CE, year: 96}}
+      - {id: nt-cornelius-birth, operation: literal, year: {era: CE, year: 9}}
+      - {id: nt-cornelius-death, operation: literal, year: {era: CE, year: 74}}
+      - {id: nt-cosam-birth, operation: literal, year: {era: BCE, year: 523}}
+      - {id: nt-cosam-death, operation: literal, year: {era: BCE, year: 458}}
+      - {id: nt-crescens-birth, operation: literal, year: {era: CE, year: 35}}
+      - {id: nt-crescens-death, operation: literal, year: {era: CE, year: 100}}
+      - {id: nt-crispus-birth, operation: literal, year: {era: CE, year: 22}}
+      - {id: nt-crispus-death, operation: literal, year: {era: CE, year: 87}}
+      - {id: nt-damaris-birth, operation: literal, year: {era: CE, year: 20}}
+      - {id: nt-damaris-death, operation: literal, year: {era: CE, year: 85}}
+      - {id: nt-daughter-of-annas-birth, operation: literal, year: {era: BCE, year: 1}}
+      - {id: nt-daughter-of-annas-death, operation: literal, year: {era: CE, year: 65}}
+      - {id: nt-daughter-of-syrophoenician-woman-birth, operation: literal, year: {era: BCE, year: 1}}
+      - {id: nt-daughter-of-syrophoenician-woman-death, operation: literal, year: {era: CE, year: 64}}
+      - {id: nt-demas-birth, operation: literal, year: {era: CE, year: 31}}
+      - {id: nt-demas-death, operation: literal, year: {era: CE, year: 96}}
+      - {id: nt-demetrius-birth, operation: literal, year: {era: CE, year: 22}}
+      - {id: nt-demetrius-death, operation: literal, year: {era: CE, year: 95}}
+      - {id: nt-dionysius-birth, operation: literal, year: {era: CE, year: 20}}
+      - {id: nt-dionysius-death, operation: literal, year: {era: CE, year: 85}}
+      - {id: nt-diotrephes-birth, operation: literal, year: {era: CE, year: 60}}
+      - {id: nt-diotrephes-death, operation: literal, year: {era: CE, year: 125}}
+      - {id: nt-drusilla-birth, operation: literal, year: {era: CE, year: 38}}
+      - {id: nt-drusilla-death, operation: literal, year: {era: CE, year: 79}}
+      - {id: nt-eleazar-mat1-birth, operation: literal, year: {era: BCE, year: 363}}
+      - {id: nt-eleazar-mat1-death, operation: literal, year: {era: BCE, year: 298}}
+      - {id: nt-eliakim-luk3-birth, operation: literal, year: {era: BCE, year: 883}}
+      - {id: nt-eliakim-luk3-death, operation: literal, year: {era: BCE, year: 818}}
+      - {id: nt-eliakim-mat1-birth, operation: literal, year: {era: BCE, year: 513}}
+      - {id: nt-eliakim-mat1-death, operation: literal, year: {era: BCE, year: 448}}
+      - {id: nt-eliezer-luk3-birth, operation: literal, year: {era: BCE, year: 643}}
+      - {id: nt-eliezer-luk3-death, operation: literal, year: {era: BCE, year: 578}}
+      - {id: nt-eliud-birth, operation: literal, year: {era: BCE, year: 393}}
+      - {id: nt-eliud-death, operation: literal, year: {era: BCE, year: 328}}
+      - {id: nt-elizabeth-birth, operation: literal, year: {era: BCE, year: 60}}
+      - {id: nt-elizabeth-death, operation: literal, year: {era: CE, year: 5}}
+      - {id: nt-elmadam-birth, operation: literal, year: {era: BCE, year: 553}}
+      - {id: nt-elmadam-death, operation: literal, year: {era: BCE, year: 488}}
+      - {id: nt-epaenetus-birth, operation: literal, year: {era: CE, year: 27}}
+      - {id: nt-epaenetus-death, operation: literal, year: {era: CE, year: 92}}
+      - {id: nt-epaphras-birth, operation: literal, year: {era: CE, year: 31}}
+      - {id: nt-epaphras-death, operation: literal, year: {era: CE, year: 96}}
+      - {id: nt-epaphroditus-birth, operation: literal, year: {era: CE, year: 31}}
+      - {id: nt-epaphroditus-death, operation: literal, year: {era: CE, year: 96}}
+      - {id: nt-er-luk3-birth, operation: literal, year: {era: BCE, year: 583}}
+      - {id: nt-er-luk3-death, operation: literal, year: {era: BCE, year: 518}}
+      - {id: nt-erastus-birth, operation: literal, year: {era: CE, year: 22}}
+      - {id: nt-erastus-death, operation: literal, year: {era: CE, year: 87}}
+      - {id: nt-esli-birth, operation: literal, year: {era: BCE, year: 103}}
+      - {id: nt-esli-death, operation: literal, year: {era: BCE, year: 38}}
+      - {id: nt-ethiopian-eunuch-birth, operation: literal, year: {era: CE, year: 4}}
+      - {id: nt-ethiopian-eunuch-death, operation: literal, year: {era: CE, year: 69}}
+      - {id: nt-eubulus-birth, operation: literal, year: {era: CE, year: 35}}
+      - {id: nt-eubulus-death, operation: literal, year: {era: CE, year: 100}}
+      - {id: nt-eunice-birth, operation: literal, year: {era: BCE, year: 6}}
+      - {id: nt-eunice-death, operation: literal, year: {era: CE, year: 59}}
+      - {id: nt-euodia-birth, operation: literal, year: {era: CE, year: 31}}
+      - {id: nt-euodia-death, operation: literal, year: {era: CE, year: 96}}
+      - {id: nt-eutychus-birth, operation: literal, year: {era: CE, year: 24}}
+      - {id: nt-eutychus-death, operation: literal, year: {era: CE, year: 89}}
+      - {id: nt-father-of-boy-with-unclean-spirit-birth, operation: literal, year: {era: BCE, year: 26}}
+      - {id: nt-father-of-boy-with-unclean-spirit-death, operation: literal, year: {era: CE, year: 39}}
+      - {id: nt-father-of-timothy-birth, operation: literal, year: {era: BCE, year: 6}}
+      - {id: nt-father-of-timothy-death, operation: literal, year: {era: CE, year: 59}}
+      - {id: nt-felix-birth, operation: literal, year: {era: CE, year: 5}}
+      - {id: nt-felix-death, operation: literal, year: {era: CE, year: 70}}
+      - {id: nt-festus-birth, operation: literal, year: {era: CE, year: 10}}
+      - {id: nt-festus-death, operation: literal, year: {era: CE, year: 62}}
+      - {id: nt-fortunatus-birth, operation: literal, year: {era: CE, year: 24}}
+      - {id: nt-fortunatus-death, operation: literal, year: {era: CE, year: 89}}
+      - {id: nt-gaius-3jn1-birth, operation: literal, year: {era: CE, year: 60}}
+      - {id: nt-gaius-3jn1-death, operation: literal, year: {era: CE, year: 125}}
+      - {id: nt-gaius-act19-birth, operation: literal, year: {era: CE, year: 22}}
+      - {id: nt-gaius-act19-death, operation: literal, year: {era: CE, year: 87}}
+      - {id: nt-gaius-act20-birth, operation: literal, year: {era: CE, year: 24}}
+      - {id: nt-gaius-act20-death, operation: literal, year: {era: CE, year: 89}}
+      - {id: nt-gaius-rom16-birth, operation: literal, year: {era: CE, year: 24}}
+      - {id: nt-gaius-rom16-death, operation: literal, year: {era: CE, year: 89}}
+      - {id: nt-gallio-birth, operation: literal, year: {era: BCE, year: 5}}
+      - {id: nt-gallio-death, operation: literal, year: {era: CE, year: 65}}
+      - {id: nt-gamaliel-act5-birth, operation: literal, year: {era: CE, year: 3}}
+      - {id: nt-gamaliel-act5-death, operation: literal, year: {era: CE, year: 68}}
+      - {id: nt-gerasene-demoniac-birth, operation: literal, year: {era: BCE, year: 2}}
+      - {id: nt-gerasene-demoniac-death, operation: literal, year: {era: CE, year: 63}}
+      - {id: nt-heli-birth, operation: literal, year: {era: CE, year: 167}}
+      - {id: nt-heli-death, operation: literal, year: {era: CE, year: 232}}
+      - {id: nt-hermas-birth, operation: literal, year: {era: CE, year: 27}}
+      - {id: nt-hermas-death, operation: literal, year: {era: CE, year: 92}}
+      - {id: nt-hermes-birth, operation: literal, year: {era: CE, year: 27}}
+      - {id: nt-hermes-death, operation: literal, year: {era: CE, year: 92}}
+      - {id: nt-hermogenes-birth, operation: literal, year: {era: CE, year: 35}}
+      - {id: nt-hermogenes-death, operation: literal, year: {era: CE, year: 100}}
+      - {id: nt-herod-act12-birth, operation: literal, year: {era: BCE, year: 11}}
+      - {id: nt-herod-act12-death, operation: literal, year: {era: CE, year: 44}}
+      - {id: nt-herod-mat14-birth, operation: literal, year: {era: BCE, year: 20}}
+      - {id: nt-herod-mat14-death, operation: literal, year: {era: CE, year: 39}}
+      - {id: nt-herod-mat2-birth, operation: literal, year: {era: BCE, year: 73}}
+      - {id: nt-herod-mat2-death, operation: literal, year: {era: BCE, year: 4}}
+      - {id: nt-herodias-birth, operation: literal, year: {era: BCE, year: 26}}
+      - {id: nt-herodias-death, operation: literal, year: {era: CE, year: 39}}
+      - {id: nt-herodion-birth, operation: literal, year: {era: CE, year: 27}}
+      - {id: nt-herodion-death, operation: literal, year: {era: CE, year: 92}}
+      - {id: nt-hymenaeus-birth, operation: literal, year: {era: CE, year: 33}}
+      - {id: nt-hymenaeus-death, operation: literal, year: {era: CE, year: 98}}
+      - {id: nt-impenitent-criminal-birth, operation: literal, year: {era: BCE, year: 1}}
+      - {id: nt-impenitent-criminal-death, operation: literal, year: {era: CE, year: 65}}
+      - {id: nt-jacob-mat1-birth, operation: literal, year: {era: BCE, year: 67}}
+      - {id: nt-jacob-mat1-death, operation: literal, year: {era: BCE, year: 2}}
+      - {id: nt-jairus-birth, operation: literal, year: {era: BCE, year: 27}}
+      - {id: nt-jairus-death, operation: literal, year: {era: CE, year: 38}}
+      - {id: nt-jairus-daughter-birth, operation: literal, year: {era: BCE, year: 2}}
+      - {id: nt-jairus-daughter-death, operation: literal, year: {era: CE, year: 63}}
+      - {id: nt-jambres-birth, operation: literal, year: {era: CE, year: 35}}
+      - {id: nt-jambres-death, operation: literal, year: {era: CE, year: 100}}
+      - {id: nt-james-luk6-birth, operation: literal, year: {era: BCE, year: 27}}
+      - {id: nt-james-luk6-death, operation: literal, year: {era: CE, year: 38}}
+      - {id: nt-james-mat10-birth, operation: literal, year: {era: BCE, year: 2}}
+      - {id: nt-james-mat10-death, operation: literal, year: {era: CE, year: 63}}
+      - {id: nt-james-mat13-birth, operation: literal, year: {era: BCE, year: 1}}
+      - {id: nt-james-mat13-death, operation: literal, year: {era: CE, year: 64}}
+      - {id: nt-james-mat4-birth, operation: literal, year: {era: BCE, year: 3}}
+      - {id: nt-james-mat4-death, operation: literal, year: {era: CE, year: 44}}
+      - {id: nt-jannai-birth, operation: literal, year: {era: CE, year: 47}}
+      - {id: nt-jannai-death, operation: literal, year: {era: CE, year: 112}}
+      - {id: nt-jannes-birth, operation: literal, year: {era: CE, year: 35}}
+      - {id: nt-jannes-death, operation: literal, year: {era: CE, year: 100}}
+      - {id: nt-jason-birth, operation: literal, year: {era: CE, year: 20}}
+      - {id: nt-jason-death, operation: literal, year: {era: CE, year: 85}}
+      - {id: nt-jesus-birth, operation: literal, year: {era: BCE, year: 5}}
+      - {id: nt-jesus-death, operation: literal, year: {era: CE, year: 30}}
+      - {id: nt-jezebel-of-thyatira-birth, operation: literal, year: {era: CE, year: 65}}
+      - {id: nt-jezebel-of-thyatira-death, operation: literal, year: {era: CE, year: 130}}
+      - {id: nt-joanan-birth, operation: literal, year: {era: BCE, year: 313}}
+      - {id: nt-joanan-death, operation: literal, year: {era: BCE, year: 248}}
+      - {id: nt-joanna-birth, operation: literal, year: {era: BCE, year: 1}}
+      - {id: nt-joanna-death, operation: literal, year: {era: CE, year: 64}}
+      - {id: nt-joda-birth, operation: literal, year: {era: BCE, year: 283}}
+      - {id: nt-joda-death, operation: literal, year: {era: BCE, year: 218}}
+      - {id: nt-john-act4-birth, operation: literal, year: {era: CE, year: 2}}
+      - {id: nt-john-act4-death, operation: literal, year: {era: CE, year: 67}}
+      - {id: nt-john-mat16-birth, operation: literal, year: {era: BCE, year: 27}}
+      - {id: nt-john-mat16-death, operation: literal, year: {era: CE, year: 38}}
+      - {id: nt-john-mat3-birth, operation: literal, year: {era: BCE, year: 6}}
+      - {id: nt-john-mat3-death, operation: literal, year: {era: CE, year: 29}}
+      - {id: nt-john-mat4-birth, operation: literal, year: {era: BCE, year: 2}}
+      - {id: nt-john-mat4-death, operation: literal, year: {era: CE, year: 63}}
+      - {id: nt-john-of-patmos-birth, operation: literal, year: {era: CE, year: 65}}
+      - {id: nt-john-of-patmos-death, operation: literal, year: {era: CE, year: 130}}
+      - {id: nt-jonam-birth, operation: literal, year: {era: BCE, year: 853}}
+      - {id: nt-jonam-death, operation: literal, year: {era: BCE, year: 788}}
+      - {id: nt-jorim-birth, operation: literal, year: {era: BCE, year: 673}}
+      - {id: nt-jorim-death, operation: literal, year: {era: BCE, year: 608}}
+      - {id: nt-josech-birth, operation: literal, year: {era: BCE, year: 253}}
+      - {id: nt-josech-death, operation: literal, year: {era: BCE, year: 188}}
+      - {id: nt-joseph-act1-birth, operation: literal, year: {era: BCE, year: 1}}
+      - {id: nt-joseph-act1-death, operation: literal, year: {era: CE, year: 65}}
+      - {id: nt-joseph-luk3-birth, operation: literal, year: {era: CE, year: 17}}
+      - {id: nt-joseph-luk3-death, operation: literal, year: {era: CE, year: 82}}
+      - {id: nt-joseph-luk3-30-birth, operation: literal, year: {era: BCE, year: 823}}
+      - {id: nt-joseph-luk3-30-death, operation: literal, year: {era: BCE, year: 758}}
+      - {id: nt-joseph-mat1-birth, operation: literal, year: {era: BCE, year: 37}}
+      - {id: nt-joseph-mat1-death, operation: literal, year: {era: CE, year: 33}}
+      - {id: nt-joseph-mat27-birth, operation: literal, year: {era: BCE, year: 1}}
+      - {id: nt-joseph-mat27-death, operation: literal, year: {era: CE, year: 65}}
+      - {id: nt-joses-mat13-birth, operation: literal, year: {era: BCE, year: 1}}
+      - {id: nt-joses-mat13-death, operation: literal, year: {era: CE, year: 64}}
+      - {id: nt-joses-mat27-birth, operation: literal, year: {era: BCE, year: 1}}
+      - {id: nt-joses-mat27-death, operation: literal, year: {era: CE, year: 65}}
+      - {id: nt-joshua-luk3-birth, operation: literal, year: {era: BCE, year: 613}}
+      - {id: nt-joshua-luk3-death, operation: literal, year: {era: BCE, year: 548}}
+      - {id: nt-judah-luk3-birth, operation: literal, year: {era: BCE, year: 793}}
+      - {id: nt-judah-luk3-death, operation: literal, year: {era: BCE, year: 728}}
+      - {id: nt-judas-act15-birth, operation: literal, year: {era: CE, year: 19}}
+      - {id: nt-judas-act15-death, operation: literal, year: {era: CE, year: 84}}
+      - {id: nt-judas-act5-birth, operation: literal, year: {era: CE, year: 3}}
+      - {id: nt-judas-act5-death, operation: literal, year: {era: CE, year: 68}}
+      - {id: nt-judas-act9-birth, operation: literal, year: {era: CE, year: 6}}
+      - {id: nt-judas-act9-death, operation: literal, year: {era: CE, year: 71}}
+      - {id: nt-judas-mat10-birth, operation: literal, year: {era: BCE, year: 2}}
+      - {id: nt-judas-mat10-death, operation: literal, year: {era: CE, year: 63}}
+      - {id: nt-judas-mat10-4-birth, operation: literal, year: {era: BCE, year: 2}}
+      - {id: nt-judas-mat10-4-death, operation: literal, year: {era: CE, year: 63}}
+      - {id: nt-jude-mat13-birth, operation: literal, year: {era: BCE, year: 1}}
+      - {id: nt-jude-mat13-death, operation: literal, year: {era: CE, year: 64}}
+      - {id: nt-julia-birth, operation: literal, year: {era: CE, year: 27}}
+      - {id: nt-julia-death, operation: literal, year: {era: CE, year: 92}}
+      - {id: nt-julius-birth, operation: literal, year: {era: CE, year: 29}}
+      - {id: nt-julius-death, operation: literal, year: {era: CE, year: 94}}
+      - {id: nt-junia-birth, operation: literal, year: {era: CE, year: 27}}
+      - {id: nt-junia-death, operation: literal, year: {era: CE, year: 92}}
+      - {id: nt-justus-act18-birth, operation: literal, year: {era: CE, year: 22}}
+      - {id: nt-justus-act18-death, operation: literal, year: {era: CE, year: 87}}
+      - {id: nt-justus-col4-birth, operation: literal, year: {era: CE, year: 31}}
+      - {id: nt-justus-col4-death, operation: literal, year: {era: CE, year: 96}}
+      - {id: nt-lame-man-beautiful-gate-birth, operation: literal, year: {era: CE, year: 1}}
+      - {id: nt-lame-man-beautiful-gate-death, operation: literal, year: {era: CE, year: 66}}
+      - {id: nt-lame-man-of-lystra-birth, operation: literal, year: {era: CE, year: 18}}
+      - {id: nt-lame-man-of-lystra-death, operation: literal, year: {era: CE, year: 83}}
+      - {id: nt-lazarus-jhn11-birth, operation: literal, year: {era: BCE, year: 1}}
+      - {id: nt-lazarus-jhn11-death, operation: literal, year: {era: CE, year: 65}}
+      - {id: nt-leper-cleansed-in-galilee-birth, operation: literal, year: {era: BCE, year: 2}}
+      - {id: nt-leper-cleansed-in-galilee-death, operation: literal, year: {era: CE, year: 63}}
+      - {id: nt-levi-luk3-birth, operation: literal, year: {era: CE, year: 107}}
+      - {id: nt-levi-luk3-death, operation: literal, year: {era: CE, year: 172}}
+      - {id: nt-levi-luk3-29-birth, operation: literal, year: {era: BCE, year: 733}}
+      - {id: nt-levi-luk3-29-death, operation: literal, year: {era: BCE, year: 668}}
+      - {id: nt-linus-birth, operation: literal, year: {era: CE, year: 35}}
+      - {id: nt-linus-death, operation: literal, year: {era: CE, year: 100}}
+      - {id: nt-lois-birth, operation: literal, year: {era: BCE, year: 31}}
+      - {id: nt-lois-death, operation: literal, year: {era: CE, year: 34}}
+      - {id: nt-lucius-birth, operation: literal, year: {era: CE, year: 16}}
+      - {id: nt-lucius-death, operation: literal, year: {era: CE, year: 81}}
+      - {id: nt-luke-col4-birth, operation: literal, year: {era: CE, year: 31}}
+      - {id: nt-luke-col4-death, operation: literal, year: {era: CE, year: 96}}
+      - {id: nt-lydia-birth, operation: literal, year: {era: CE, year: 19}}
+      - {id: nt-lydia-death, operation: literal, year: {era: CE, year: 84}}
+      - {id: nt-lysanias-birth, operation: literal, year: {era: BCE, year: 20}}
+      - {id: nt-lysanias-death, operation: literal, year: {era: CE, year: 40}}
+      - {id: nt-lysias-act23-birth, operation: literal, year: {era: CE, year: 28}}
+      - {id: nt-lysias-act23-death, operation: literal, year: {era: CE, year: 93}}
+      - {id: nt-maath-birth, operation: literal, year: {era: BCE, year: 163}}
+      - {id: nt-maath-death, operation: literal, year: {era: BCE, year: 98}}
+      - {id: nt-malchus-birth, operation: literal, year: {era: BCE, year: 1}}
+      - {id: nt-malchus-death, operation: literal, year: {era: CE, year: 65}}
+      - {id: nt-man-at-bethesda-birth, operation: literal, year: {era: BCE, year: 2}}
+      - {id: nt-man-at-bethesda-death, operation: literal, year: {era: CE, year: 63}}
+      - {id: nt-man-born-blind-birth, operation: literal, year: {era: BCE, year: 1}}
+      - {id: nt-man-born-blind-death, operation: literal, year: {era: CE, year: 64}}
+      - {id: nt-man-with-dropsy-birth, operation: literal, year: {era: BCE, year: 1}}
+      - {id: nt-man-with-dropsy-death, operation: literal, year: {era: CE, year: 64}}
+      - {id: nt-man-with-fathers-wife-corinth-birth, operation: literal, year: {era: CE, year: 24}}
+      - {id: nt-man-with-fathers-wife-corinth-death, operation: literal, year: {era: CE, year: 89}}
+      - {id: nt-man-with-withered-hand-birth, operation: literal, year: {era: BCE, year: 2}}
+      - {id: nt-man-with-withered-hand-death, operation: literal, year: {era: CE, year: 63}}
+      - {id: nt-manaen-birth, operation: literal, year: {era: CE, year: 16}}
+      - {id: nt-manaen-death, operation: literal, year: {era: CE, year: 81}}
+      - {id: nt-mark-act12-birth, operation: literal, year: {era: CE, year: 14}}
+      - {id: nt-mark-act12-death, operation: literal, year: {era: CE, year: 79}}
+      - {id: nt-martha-birth, operation: literal, year: {era: BCE, year: 1}}
+      - {id: nt-martha-death, operation: literal, year: {era: CE, year: 64}}
+      - {id: nt-mary-act12-birth, operation: literal, year: {era: BCE, year: 11}}
+      - {id: nt-mary-act12-death, operation: literal, year: {era: CE, year: 54}}
+      - {id: nt-mary-luk10-birth, operation: literal, year: {era: BCE, year: 1}}
+      - {id: nt-mary-luk10-death, operation: literal, year: {era: CE, year: 64}}
+      - {id: nt-mary-magdalene-birth, operation: literal, year: {era: BCE, year: 1}}
+      - {id: nt-mary-magdalene-death, operation: literal, year: {era: CE, year: 64}}
+      - {id: nt-mary-mat1-birth, operation: literal, year: {era: BCE, year: 37}}
+      - {id: nt-mary-mat1-death, operation: literal, year: {era: CE, year: 35}}
+      - {id: nt-mary-mat27-birth, operation: literal, year: {era: BCE, year: 25}}
+      - {id: nt-mary-mat27-death, operation: literal, year: {era: CE, year: 40}}
+      - {id: nt-mary-rom16-birth, operation: literal, year: {era: CE, year: 27}}
+      - {id: nt-mary-rom16-death, operation: literal, year: {era: CE, year: 92}}
+      - {id: nt-master-of-the-feast-cana-birth, operation: literal, year: {era: BCE, year: 2}}
+      - {id: nt-master-of-the-feast-cana-death, operation: literal, year: {era: CE, year: 63}}
+      - {id: nt-mattatha-birth, operation: literal, year: {era: BCE, year: 973}}
+      - {id: nt-mattatha-death, operation: literal, year: {era: BCE, year: 908}}
+      - {id: nt-mattathias-luk3-birth, operation: literal, year: {era: BCE, year: 13}}
+      - {id: nt-mattathias-luk3-death, operation: literal, year: {era: CE, year: 52}}
+      - {id: nt-mattathias-luk3-26-birth, operation: literal, year: {era: BCE, year: 193}}
+      - {id: nt-mattathias-luk3-26-death, operation: literal, year: {era: BCE, year: 128}}
+      - {id: nt-matthan-birth, operation: literal, year: {era: BCE, year: 333}}
+      - {id: nt-matthan-death, operation: literal, year: {era: BCE, year: 268}}
+      - {id: nt-matthat-luk3-birth, operation: literal, year: {era: CE, year: 137}}
+      - {id: nt-matthat-luk3-death, operation: literal, year: {era: CE, year: 202}}
+      - {id: nt-matthat-luk3-29-birth, operation: literal, year: {era: BCE, year: 703}}
+      - {id: nt-matthat-luk3-29-death, operation: literal, year: {era: BCE, year: 638}}
+      - {id: nt-matthew-mat9-birth, operation: literal, year: {era: BCE, year: 2}}
+      - {id: nt-matthew-mat9-death, operation: literal, year: {era: CE, year: 63}}
+      - {id: nt-matthias-birth, operation: literal, year: {era: BCE, year: 1}}
+      - {id: nt-matthias-death, operation: literal, year: {era: CE, year: 65}}
+      - {id: nt-melchi-luk3-birth, operation: literal, year: {era: CE, year: 77}}
+      - {id: nt-melchi-luk3-death, operation: literal, year: {era: CE, year: 142}}
+      - {id: nt-melchi-luk3-28-birth, operation: literal, year: {era: BCE, year: 463}}
+      - {id: nt-melchi-luk3-28-death, operation: literal, year: {era: BCE, year: 398}}
+      - {id: nt-melea-birth, operation: literal, year: {era: BCE, year: 913}}
+      - {id: nt-melea-death, operation: literal, year: {era: BCE, year: 848}}
+      - {id: nt-menna-birth, operation: literal, year: {era: BCE, year: 943}}
+      - {id: nt-menna-death, operation: literal, year: {era: BCE, year: 878}}
+      - {id: nt-mnason-birth, operation: literal, year: {era: CE, year: 27}}
+      - {id: nt-mnason-death, operation: literal, year: {era: CE, year: 92}}
+      - {id: nt-mother-in-law-of-peter-birth, operation: literal, year: {era: BCE, year: 27}}
+      - {id: nt-mother-in-law-of-peter-death, operation: literal, year: {era: CE, year: 38}}
+      - {id: nt-mother-of-zebedees-sons-birth, operation: literal, year: {era: BCE, year: 1}}
+      - {id: nt-mother-of-zebedees-sons-death, operation: literal, year: {era: CE, year: 64}}
+      - {id: nt-naggai-birth, operation: literal, year: {era: BCE, year: 133}}
+      - {id: nt-naggai-death, operation: literal, year: {era: BCE, year: 68}}
+      - {id: nt-nahum-luk3-birth, operation: literal, year: {era: BCE, year: 73}}
+      - {id: nt-nahum-luk3-death, operation: literal, year: {era: BCE, year: 8}}
+      - {id: nt-narcissus-birth, operation: literal, year: {era: CE, year: 27}}
+      - {id: nt-narcissus-death, operation: literal, year: {era: CE, year: 92}}
+      - {id: nt-nathanael-birth, operation: literal, year: {era: BCE, year: 2}}
+      - {id: nt-nathanael-death, operation: literal, year: {era: CE, year: 63}}
+      - {id: nt-nephew-of-paul-birth, operation: literal, year: {era: CE, year: 28}}
+      - {id: nt-nephew-of-paul-death, operation: literal, year: {era: CE, year: 93}}
+      - {id: nt-nereus-birth, operation: literal, year: {era: CE, year: 27}}
+      - {id: nt-nereus-death, operation: literal, year: {era: CE, year: 92}}
+      - {id: nt-neri-birth, operation: literal, year: {era: BCE, year: 433}}
+      - {id: nt-neri-death, operation: literal, year: {era: BCE, year: 368}}
+      - {id: nt-nero-birth, operation: literal, year: {era: CE, year: 31}}
+      - {id: nt-nero-death, operation: literal, year: {era: CE, year: 96}}
+      - {id: nt-nicanor-birth, operation: literal, year: {era: CE, year: 3}}
+      - {id: nt-nicanor-death, operation: literal, year: {era: CE, year: 68}}
+      - {id: nt-nicodemus-birth, operation: literal, year: {era: BCE, year: 2}}
+      - {id: nt-nicodemus-death, operation: literal, year: {era: CE, year: 63}}
+      - {id: nt-nicolaus-birth, operation: literal, year: {era: CE, year: 3}}
+      - {id: nt-nicolaus-death, operation: literal, year: {era: CE, year: 68}}
+      - {id: nt-nympha-birth, operation: literal, year: {era: CE, year: 31}}
+      - {id: nt-nympha-death, operation: literal, year: {era: CE, year: 96}}
+      - {id: nt-olympas-birth, operation: literal, year: {era: CE, year: 27}}
+      - {id: nt-olympas-death, operation: literal, year: {era: CE, year: 92}}
+      - {id: nt-onesimus-birth, operation: literal, year: {era: CE, year: 31}}
+      - {id: nt-onesimus-death, operation: literal, year: {era: CE, year: 96}}
+      - {id: nt-onesiphorus-birth, operation: literal, year: {era: CE, year: 35}}
+      - {id: nt-onesiphorus-death, operation: literal, year: {era: CE, year: 100}}
+      - {id: nt-paralytic-lowered-through-roof-birth, operation: literal, year: {era: BCE, year: 2}}
+      - {id: nt-paralytic-lowered-through-roof-death, operation: literal, year: {era: CE, year: 63}}
+      - {id: nt-parents-of-man-born-blind-father-birth, operation: literal, year: {era: BCE, year: 26}}
+      - {id: nt-parents-of-man-born-blind-father-death, operation: literal, year: {era: CE, year: 39}}
+      - {id: nt-parmenas-birth, operation: literal, year: {era: CE, year: 3}}
+      - {id: nt-parmenas-death, operation: literal, year: {era: CE, year: 68}}
+      - {id: nt-patrobas-birth, operation: literal, year: {era: CE, year: 27}}
+      - {id: nt-patrobas-death, operation: literal, year: {era: CE, year: 92}}
+      - {id: nt-paul-birth, operation: literal, year: {era: CE, year: 4}}
+      - {id: nt-paul-death, operation: literal, year: {era: CE, year: 70}}
+      - {id: nt-penitent-criminal-birth, operation: literal, year: {era: BCE, year: 1}}
+      - {id: nt-penitent-criminal-death, operation: literal, year: {era: CE, year: 65}}
+      - {id: nt-persis-birth, operation: literal, year: {era: CE, year: 27}}
+      - {id: nt-persis-death, operation: literal, year: {era: CE, year: 92}}
+      - {id: nt-peter-birth, operation: literal, year: {era: BCE, year: 2}}
+      - {id: nt-peter-death, operation: literal, year: {era: CE, year: 70}}
+      - {id: nt-phanuel-birth, operation: literal, year: {era: BCE, year: 104}}
+      - {id: nt-phanuel-death, operation: literal, year: {era: BCE, year: 39}}
+      - {id: nt-philemon-phm1-birth, operation: literal, year: {era: CE, year: 31}}
+      - {id: nt-philemon-phm1-death, operation: literal, year: {era: CE, year: 96}}
+      - {id: nt-philetus-birth, operation: literal, year: {era: CE, year: 35}}
+      - {id: nt-philetus-death, operation: literal, year: {era: CE, year: 100}}
+      - {id: nt-philip-act6-birth, operation: literal, year: {era: CE, year: 3}}
+      - {id: nt-philip-act6-death, operation: literal, year: {era: CE, year: 68}}
+      - {id: nt-philip-luk3-birth, operation: literal, year: {era: BCE, year: 20}}
+      - {id: nt-philip-luk3-death, operation: literal, year: {era: CE, year: 34}}
+      - {id: nt-philip-mat10-birth, operation: literal, year: {era: BCE, year: 2}}
+      - {id: nt-philip-mat10-death, operation: literal, year: {era: CE, year: 63}}
+      - {id: nt-philip-mat14-birth, operation: literal, year: {era: BCE, year: 26}}
+      - {id: nt-philip-mat14-death, operation: literal, year: {era: CE, year: 39}}
+      - {id: nt-philippian-jailer-birth, operation: literal, year: {era: CE, year: 19}}
+      - {id: nt-philippian-jailer-death, operation: literal, year: {era: CE, year: 84}}
+      - {id: nt-philologus-birth, operation: literal, year: {era: CE, year: 27}}
+      - {id: nt-philologus-death, operation: literal, year: {era: CE, year: 92}}
+      - {id: nt-phlegon-birth, operation: literal, year: {era: CE, year: 27}}
+      - {id: nt-phlegon-death, operation: literal, year: {era: CE, year: 92}}
+      - {id: nt-phoebe-birth, operation: literal, year: {era: CE, year: 27}}
+      - {id: nt-phoebe-death, operation: literal, year: {era: CE, year: 92}}
+      - {id: nt-phygelus-birth, operation: literal, year: {era: CE, year: 35}}
+      - {id: nt-phygelus-death, operation: literal, year: {era: CE, year: 100}}
+      - {id: nt-pilate-birth, operation: literal, year: {era: BCE, year: 12}}
+      - {id: nt-pilate-death, operation: literal, year: {era: CE, year: 39}}
+      - {id: nt-poor-widow-at-the-treasury-birth, operation: literal, year: {era: BCE, year: 1}}
+      - {id: nt-poor-widow-at-the-treasury-death, operation: literal, year: {era: CE, year: 65}}
+      - {id: nt-priscilla-birth, operation: literal, year: {era: CE, year: 22}}
+      - {id: nt-priscilla-death, operation: literal, year: {era: CE, year: 87}}
+      - {id: nt-prochorus-birth, operation: literal, year: {era: CE, year: 3}}
+      - {id: nt-prochorus-death, operation: literal, year: {era: CE, year: 68}}
+      - {id: nt-publius-birth, operation: literal, year: {era: CE, year: 32}}
+      - {id: nt-publius-death, operation: literal, year: {era: CE, year: 97}}
+      - {id: nt-pudens-birth, operation: literal, year: {era: CE, year: 35}}
+      - {id: nt-pudens-death, operation: literal, year: {era: CE, year: 100}}
+      - {id: nt-pyrrhus-birth, operation: literal, year: {era: BCE, year: 1}}
+      - {id: nt-pyrrhus-death, operation: literal, year: {era: CE, year: 64}}
+      - {id: nt-quartus-birth, operation: literal, year: {era: CE, year: 27}}
+      - {id: nt-quartus-death, operation: literal, year: {era: CE, year: 92}}
+      - {id: nt-quirinius-birth, operation: literal, year: {era: BCE, year: 51}}
+      - {id: nt-quirinius-death, operation: literal, year: {era: CE, year: 21}}
+      - {id: nt-rhesa-birth, operation: literal, year: {era: BCE, year: 343}}
+      - {id: nt-rhesa-death, operation: literal, year: {era: BCE, year: 278}}
+      - {id: nt-rhoda-birth, operation: literal, year: {era: CE, year: 14}}
+      - {id: nt-rhoda-death, operation: literal, year: {era: CE, year: 79}}
+      - {id: nt-rich-young-man-birth, operation: literal, year: {era: BCE, year: 1}}
+      - {id: nt-rich-young-man-death, operation: literal, year: {era: CE, year: 64}}
+      - {id: nt-royal-official-capernaum-birth, operation: literal, year: {era: BCE, year: 27}}
+      - {id: nt-royal-official-capernaum-death, operation: literal, year: {era: CE, year: 38}}
+      - {id: nt-rufus-mrk15-birth, operation: literal, year: {era: BCE, year: 1}}
+      - {id: nt-rufus-mrk15-death, operation: literal, year: {era: CE, year: 65}}
+      - {id: nt-rufus-rom16-birth, operation: literal, year: {era: CE, year: 27}}
+      - {id: nt-rufus-rom16-death, operation: literal, year: {era: CE, year: 92}}
+      - {id: nt-salome-mat14-birth, operation: literal, year: {era: BCE, year: 1}}
+      - {id: nt-salome-mat14-death, operation: literal, year: {era: CE, year: 64}}
+      - {id: nt-salome-mrk15-birth, operation: literal, year: {era: BCE, year: 1}}
+      - {id: nt-salome-mrk15-death, operation: literal, year: {era: CE, year: 65}}
+      - {id: nt-samaritan-leper-who-returned-birth, operation: literal, year: {era: BCE, year: 1}}
+      - {id: nt-samaritan-leper-who-returned-death, operation: literal, year: {era: CE, year: 65}}
+      - {id: nt-samaritan-woman-at-the-well-birth, operation: literal, year: {era: BCE, year: 2}}
+      - {id: nt-samaritan-woman-at-the-well-death, operation: literal, year: {era: CE, year: 63}}
+      - {id: nt-sapphira-birth, operation: literal, year: {era: CE, year: 3}}
+      - {id: nt-sapphira-death, operation: literal, year: {era: CE, year: 68}}
+      - {id: nt-sceva-birth, operation: literal, year: {era: CE, year: 22}}
+      - {id: nt-sceva-death, operation: literal, year: {era: CE, year: 87}}
+      - {id: nt-secundus-birth, operation: literal, year: {era: CE, year: 24}}
+      - {id: nt-secundus-death, operation: literal, year: {era: CE, year: 89}}
+      - {id: nt-semein-birth, operation: literal, year: {era: BCE, year: 223}}
+      - {id: nt-semein-death, operation: literal, year: {era: BCE, year: 158}}
+      - {id: nt-sergius-paulus-birth, operation: literal, year: {era: CE, year: 16}}
+      - {id: nt-sergius-paulus-death, operation: literal, year: {era: CE, year: 81}}
+      - {id: nt-servant-girl-who-questioned-peter-birth, operation: literal, year: {era: BCE, year: 1}}
+      - {id: nt-servant-girl-who-questioned-peter-death, operation: literal, year: {era: CE, year: 65}}
+      - {id: nt-servant-of-centurion-birth, operation: literal, year: {era: BCE, year: 2}}
+      - {id: nt-servant-of-centurion-death, operation: literal, year: {era: CE, year: 63}}
+      - {id: nt-shealtiel-luk3-birth, operation: literal, year: {era: BCE, year: 403}}
+      - {id: nt-shealtiel-luk3-death, operation: literal, year: {era: BCE, year: 338}}
+      - {id: nt-silas-birth, operation: literal, year: {era: CE, year: 19}}
+      - {id: nt-silas-death, operation: literal, year: {era: CE, year: 84}}
+      - {id: nt-simeon-act13-birth, operation: literal, year: {era: CE, year: 16}}
+      - {id: nt-simeon-act13-death, operation: literal, year: {era: CE, year: 81}}
+      - {id: nt-simeon-luk2-birth, operation: literal, year: {era: BCE, year: 35}}
+      - {id: nt-simeon-luk2-death, operation: literal, year: {era: CE, year: 30}}
+      - {id: nt-simeon-luk3-birth, operation: literal, year: {era: BCE, year: 763}}
+      - {id: nt-simeon-luk3-death, operation: literal, year: {era: BCE, year: 698}}
+      - {id: nt-simon-act8-birth, operation: literal, year: {era: CE, year: 4}}
+      - {id: nt-simon-act8-death, operation: literal, year: {era: CE, year: 69}}
+      - {id: nt-simon-act9-birth, operation: literal, year: {era: CE, year: 6}}
+      - {id: nt-simon-act9-death, operation: literal, year: {era: CE, year: 71}}
+      - {id: nt-simon-jhn6-birth, operation: literal, year: {era: BCE, year: 27}}
+      - {id: nt-simon-jhn6-death, operation: literal, year: {era: CE, year: 38}}
+      - {id: nt-simon-mat10-birth, operation: literal, year: {era: BCE, year: 2}}
+      - {id: nt-simon-mat10-death, operation: literal, year: {era: CE, year: 63}}
+      - {id: nt-simon-mat13-birth, operation: literal, year: {era: BCE, year: 1}}
+      - {id: nt-simon-mat13-death, operation: literal, year: {era: CE, year: 64}}
+      - {id: nt-simon-mat26-birth, operation: literal, year: {era: BCE, year: 2}}
+      - {id: nt-simon-mat26-death, operation: literal, year: {era: CE, year: 63}}
+      - {id: nt-simon-mat27-birth, operation: literal, year: {era: BCE, year: 25}}
+      - {id: nt-simon-mat27-death, operation: literal, year: {era: CE, year: 40}}
+      - {id: nt-sinful-woman-who-anointed-jesus-birth, operation: literal, year: {era: BCE, year: 2}}
+      - {id: nt-sinful-woman-who-anointed-jesus-death, operation: literal, year: {era: CE, year: 63}}
+      - {id: nt-sister-of-paul-birth, operation: literal, year: {era: CE, year: 3}}
+      - {id: nt-sister-of-paul-death, operation: literal, year: {era: CE, year: 68}}
+      - {id: nt-slave-girl-of-philippi-birth, operation: literal, year: {era: CE, year: 19}}
+      - {id: nt-slave-girl-of-philippi-death, operation: literal, year: {era: CE, year: 84}}
+      - {id: nt-son-of-royal-official-birth, operation: literal, year: {era: BCE, year: 2}}
+      - {id: nt-son-of-royal-official-death, operation: literal, year: {era: CE, year: 63}}
+      - {id: nt-son-of-widow-of-nain-birth, operation: literal, year: {era: BCE, year: 2}}
+      - {id: nt-son-of-widow-of-nain-death, operation: literal, year: {era: CE, year: 63}}
+      - {id: nt-sopater-birth, operation: literal, year: {era: CE, year: 24}}
+      - {id: nt-sopater-death, operation: literal, year: {era: CE, year: 89}}
+      - {id: nt-sosthenes-birth, operation: literal, year: {era: CE, year: 22}}
+      - {id: nt-sosthenes-death, operation: literal, year: {era: CE, year: 87}}
+      - {id: nt-stachys-birth, operation: literal, year: {era: CE, year: 27}}
+      - {id: nt-stachys-death, operation: literal, year: {era: CE, year: 92}}
+      - {id: nt-stephanas-birth, operation: literal, year: {era: CE, year: 24}}
+      - {id: nt-stephanas-death, operation: literal, year: {era: CE, year: 89}}
+      - {id: nt-stephen-birth, operation: literal, year: {era: BCE, year: 1}}
+      - {id: nt-stephen-death, operation: literal, year: {era: CE, year: 34}}
+      - {id: nt-susanna-luk8-birth, operation: literal, year: {era: BCE, year: 1}}
+      - {id: nt-susanna-luk8-death, operation: literal, year: {era: CE, year: 64}}
+      - {id: nt-syntyche-birth, operation: literal, year: {era: CE, year: 31}}
+      - {id: nt-syntyche-death, operation: literal, year: {era: CE, year: 96}}
+      - {id: nt-syrophoenician-woman-birth, operation: literal, year: {era: BCE, year: 26}}
+      - {id: nt-syrophoenician-woman-death, operation: literal, year: {era: CE, year: 39}}
+      - {id: nt-tabitha-birth, operation: literal, year: {era: CE, year: 6}}
+      - {id: nt-tabitha-death, operation: literal, year: {era: CE, year: 71}}
+      - {id: nt-tertius-birth, operation: literal, year: {era: CE, year: 27}}
+      - {id: nt-tertius-death, operation: literal, year: {era: CE, year: 92}}
+      - {id: nt-tertullus-birth, operation: literal, year: {era: CE, year: 28}}
+      - {id: nt-tertullus-death, operation: literal, year: {era: CE, year: 93}}
+      - {id: nt-the-egyptian-rebel-birth, operation: literal, year: {era: CE, year: 27}}
+      - {id: nt-the-egyptian-rebel-death, operation: literal, year: {era: CE, year: 92}}
+      - {id: nt-theophilus-birth, operation: literal, year: {era: BCE, year: 37}}
+      - {id: nt-theophilus-death, operation: literal, year: {era: CE, year: 35}}
+      - {id: nt-theudas-birth, operation: literal, year: {era: CE, year: 3}}
+      - {id: nt-theudas-death, operation: literal, year: {era: CE, year: 68}}
+      - {id: nt-thomas-birth, operation: literal, year: {era: BCE, year: 2}}
+      - {id: nt-thomas-death, operation: literal, year: {era: CE, year: 63}}
+      - {id: nt-tiberius-birth, operation: literal, year: {era: BCE, year: 42}}
+      - {id: nt-tiberius-death, operation: literal, year: {era: CE, year: 37}}
+      - {id: nt-timaeus-birth, operation: literal, year: {era: BCE, year: 26}}
+      - {id: nt-timaeus-death, operation: literal, year: {era: CE, year: 39}}
+      - {id: nt-timon-birth, operation: literal, year: {era: CE, year: 3}}
+      - {id: nt-timon-death, operation: literal, year: {era: CE, year: 68}}
+      - {id: nt-timothy-birth, operation: literal, year: {era: CE, year: 19}}
+      - {id: nt-timothy-death, operation: literal, year: {era: CE, year: 84}}
+      - {id: nt-titus-2co2-birth, operation: literal, year: {era: CE, year: 20}}
+      - {id: nt-titus-2co2-death, operation: literal, year: {era: CE, year: 85}}
+      - {id: nt-town-clerk-of-ephesus-birth, operation: literal, year: {era: CE, year: 22}}
+      - {id: nt-town-clerk-of-ephesus-death, operation: literal, year: {era: CE, year: 87}}
+      - {id: nt-trophimus-birth, operation: literal, year: {era: CE, year: 24}}
+      - {id: nt-trophimus-death, operation: literal, year: {era: CE, year: 89}}
+      - {id: nt-tryphaena-birth, operation: literal, year: {era: CE, year: 27}}
+      - {id: nt-tryphaena-death, operation: literal, year: {era: CE, year: 92}}
+      - {id: nt-tryphosa-birth, operation: literal, year: {era: CE, year: 27}}
+      - {id: nt-tryphosa-death, operation: literal, year: {era: CE, year: 92}}
+      - {id: nt-tychicus-birth, operation: literal, year: {era: CE, year: 24}}
+      - {id: nt-tychicus-death, operation: literal, year: {era: CE, year: 89}}
+      - {id: nt-tyrannus-birth, operation: literal, year: {era: CE, year: 22}}
+      - {id: nt-tyrannus-death, operation: literal, year: {era: CE, year: 87}}
+      - {id: nt-urbanus-birth, operation: literal, year: {era: CE, year: 27}}
+      - {id: nt-urbanus-death, operation: literal, year: {era: CE, year: 92}}
+      - {id: nt-widow-of-nain-birth, operation: literal, year: {era: BCE, year: 27}}
+      - {id: nt-widow-of-nain-death, operation: literal, year: {era: CE, year: 38}}
+      - {id: nt-wife-of-peter-birth, operation: literal, year: {era: BCE, year: 2}}
+      - {id: nt-wife-of-peter-death, operation: literal, year: {era: CE, year: 63}}
+      - {id: nt-wife-of-pilate-birth, operation: literal, year: {era: BCE, year: 1}}
+      - {id: nt-wife-of-pilate-death, operation: literal, year: {era: CE, year: 65}}
+      - {id: nt-woman-caught-in-adultery-birth, operation: literal, year: {era: BCE, year: 1}}
+      - {id: nt-woman-caught-in-adultery-death, operation: literal, year: {era: CE, year: 64}}
+      - {id: nt-woman-who-anointed-jesus-at-bethany-birth, operation: literal, year: {era: BCE, year: 1}}
+      - {id: nt-woman-who-anointed-jesus-at-bethany-death, operation: literal, year: {era: CE, year: 65}}
+      - {id: nt-woman-with-hemorrhage-birth, operation: literal, year: {era: BCE, year: 2}}
+      - {id: nt-woman-with-hemorrhage-death, operation: literal, year: {era: CE, year: 63}}
+      - {id: nt-young-man-who-fled-naked-birth, operation: literal, year: {era: BCE, year: 1}}
+      - {id: nt-young-man-who-fled-naked-death, operation: literal, year: {era: CE, year: 65}}
+      - {id: nt-zacchaeus-birth, operation: literal, year: {era: BCE, year: 1}}
+      - {id: nt-zacchaeus-death, operation: literal, year: {era: CE, year: 65}}
+      - {id: nt-zadok-mat1-birth, operation: literal, year: {era: BCE, year: 453}}
+      - {id: nt-zadok-mat1-death, operation: literal, year: {era: BCE, year: 388}}
+      - {id: nt-zebedee-birth, operation: literal, year: {era: BCE, year: 18}}
+      - {id: nt-zebedee-death, operation: literal, year: {era: CE, year: 47}}
+      - {id: nt-zechariah-luk1-birth, operation: literal, year: {era: BCE, year: 65}}
+      - {id: nt-zechariah-luk1-death, operation: literal, year: {era: BCE, year: 1}}
+      - {id: nt-zenas-birth, operation: literal, year: {era: CE, year: 33}}
+      - {id: nt-zenas-death, operation: literal, year: {era: CE, year: 98}}
+      - {id: nt-zerubbabel-luk3-birth, operation: literal, year: {era: BCE, year: 373}}
+      - {id: nt-zerubbabel-luk3-death, operation: literal, year: {era: BCE, year: 308}}
     resolutions:
       - &core {entity_id: adam, birth_derivation_id: adam-birth, death_derivation_id: adam-death, life_basis: synchronized, confidence_grade: D, evidence_claim_ids: [lxx-early-adam-anchor, adam-lifespan-lxx], alternative_claim_ids: [mt-early-adam-anchor, sp-early-adam-anchor], explanation: "Civil years use the declared LXX display anchor; lifespan is explicit in Genesis 5."}
       - <<: *core
@@ -9833,3 +10463,318 @@ records:
       - {entity_id: zambri-1es, birth_derivation_id: dc-zambri-1es-birth, death_derivation_id: dc-zambri-1es-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [zambri-1es-1-esdras-attested], alternative_claim_ids: [], explanation: "Grade-E display window from the narrative setting of 1 Esdras (about 457 BCE); the text states no lifespan."}
       - {entity_id: zechrias-1es, birth_derivation_id: dc-zechrias-1es-birth, death_derivation_id: dc-zechrias-1es-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [zechrias-1es-1-esdras-attested], alternative_claim_ids: [], explanation: "Grade-E display window from the narrative setting of 1 Esdras (about 458 BCE); named only in a genealogy or list, with no age stated."}
       - {entity_id: zedekiah-son-of-hasadiah-bar, birth_derivation_id: dc-zedekiah-son-of-hasadiah-bar-birth, death_derivation_id: dc-zedekiah-son-of-hasadiah-bar-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [zedekiah-son-of-hasadiah-bar-baruch-attested], alternative_claim_ids: [], explanation: "Grade-E display window placed one editorial generation before a child; the text states no age."}
+      - {entity_id: abiud, birth_derivation_id: nt-abiud-birth, death_derivation_id: nt-abiud-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [abiud-matthew-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window from the genealogy (1 editorial generation(s) after zerubbabel-1ch3); no age is stated."}
+      - {entity_id: achaicus, birth_derivation_id: nt-achaicus-birth, death_derivation_id: nt-achaicus-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [achaicus-1-corinthians-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 54 CE; the text states no age or lifespan."}
+      - {entity_id: achim, birth_derivation_id: nt-achim-birth, death_derivation_id: nt-achim-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [achim-matthew-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window from the genealogy (4 editorial generation(s) after abiud); no age is stated."}
+      - {entity_id: addi, birth_derivation_id: nt-addi-birth, death_derivation_id: nt-addi-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [addi-luke-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window from the genealogy (17 editorial generation(s) after nathan-2sa5); no age is stated."}
+      - {entity_id: aeneas, birth_derivation_id: nt-aeneas-birth, death_derivation_id: nt-aeneas-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [aeneas-acts-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 36 CE; the text states no age or lifespan."}
+      - {entity_id: agabus, birth_derivation_id: nt-agabus-birth, death_derivation_id: nt-agabus-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [agabus-acts-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 42 CE; the text states no age or lifespan."}
+      - {entity_id: agrippa, birth_derivation_id: nt-agrippa-birth, death_derivation_id: nt-agrippa-death, life_basis: synchronized, confidence_grade: C, evidence_claim_ids: [agrippa-acts-na28-attested], alternative_claim_ids: [], explanation: "Herod Agrippa II (Acts 25-26); death year approximate."}
+      - {entity_id: alexander-1ti1, birth_derivation_id: nt-alexander-1ti1-birth, death_derivation_id: nt-alexander-1ti1-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [alexander-1ti1-1-timothy-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 63 CE; the text states no age or lifespan."}
+      - {entity_id: alexander-act19, birth_derivation_id: nt-alexander-act19-birth, death_derivation_id: nt-alexander-act19-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [alexander-act19-acts-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 52 CE; the text states no age or lifespan."}
+      - {entity_id: alexander-act4, birth_derivation_id: nt-alexander-act4-birth, death_derivation_id: nt-alexander-act4-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [alexander-act4-acts-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 32 CE; the text states no age or lifespan."}
+      - {entity_id: alexander-mrk15, birth_derivation_id: nt-alexander-mrk15-birth, death_derivation_id: nt-alexander-mrk15-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [alexander-mrk15-mark-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 30 CE; the text states no age or lifespan."}
+      - {entity_id: alphaeus, birth_derivation_id: nt-alphaeus-birth, death_derivation_id: nt-alphaeus-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [alphaeus-matthew-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 28 CE; the text states no age or lifespan."}
+      - {entity_id: amos-luk3, birth_derivation_id: nt-amos-luk3-birth, death_derivation_id: nt-amos-luk3-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [amos-luk3-luke-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window from the genealogy (15 editorial generation(s) after addi); no age is stated."}
+      - {entity_id: ampliatus, birth_derivation_id: nt-ampliatus-birth, death_derivation_id: nt-ampliatus-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [ampliatus-romans-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 57 CE; the text states no age or lifespan."}
+      - {entity_id: ananias-act23, birth_derivation_id: nt-ananias-act23-birth, death_derivation_id: nt-ananias-act23-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [ananias-act23-acts-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 58 CE; the text states no age or lifespan."}
+      - {entity_id: ananias-act5, birth_derivation_id: nt-ananias-act5-birth, death_derivation_id: nt-ananias-act5-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [ananias-act5-acts-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 33 CE; the text states no age or lifespan."}
+      - {entity_id: ananias-act9, birth_derivation_id: nt-ananias-act9-birth, death_derivation_id: nt-ananias-act9-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [ananias-act9-acts-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 36 CE; the text states no age or lifespan."}
+      - {entity_id: andrew, birth_derivation_id: nt-andrew-birth, death_derivation_id: nt-andrew-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [andrew-matthew-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 28 CE; the text states no age or lifespan."}
+      - {entity_id: andronicus, birth_derivation_id: nt-andronicus-birth, death_derivation_id: nt-andronicus-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [andronicus-romans-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 57 CE; the text states no age or lifespan."}
+      - {entity_id: anna, birth_derivation_id: nt-anna-birth, death_derivation_id: nt-anna-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [anna-age-at-event-84-luke], alternative_claim_ids: [], explanation: "Reads Luke 2:37 as 'she was eighty-four' at Jesus' presentation; if it means a widow for 84 years she was over 100. Years editorial."}
+      - {entity_id: annas, birth_derivation_id: nt-annas-birth, death_derivation_id: nt-annas-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [annas-luke-na28-attested], alternative_claim_ids: [], explanation: "High priest 6-15 CE; birth and death editorial."}
+      - {entity_id: antipas, birth_derivation_id: nt-antipas-birth, death_derivation_id: nt-antipas-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [antipas-revelation-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 95 CE; the text states no age or lifespan."}
+      - {entity_id: apelles, birth_derivation_id: nt-apelles-birth, death_derivation_id: nt-apelles-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [apelles-romans-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 57 CE; the text states no age or lifespan."}
+      - {entity_id: apollos, birth_derivation_id: nt-apollos-birth, death_derivation_id: nt-apollos-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [apollos-acts-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 52 CE; the text states no age or lifespan."}
+      - {entity_id: apphia, birth_derivation_id: nt-apphia-birth, death_derivation_id: nt-apphia-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [apphia-philemon-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 61 CE; the text states no age or lifespan."}
+      - {entity_id: aquila, birth_derivation_id: nt-aquila-birth, death_derivation_id: nt-aquila-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [aquila-acts-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 52 CE; the text states no age or lifespan."}
+      - {entity_id: archelaus, birth_derivation_id: nt-archelaus-birth, death_derivation_id: nt-archelaus-death, life_basis: synchronized, confidence_grade: C, evidence_claim_ids: [archelaus-matthew-na28-attested], alternative_claim_ids: [], explanation: "Ethnarch of Judea 4 BCE-6 CE (Matthew 2:22)."}
+      - {entity_id: archippus, birth_derivation_id: nt-archippus-birth, death_derivation_id: nt-archippus-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [archippus-colossians-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 61 CE; the text states no age or lifespan."}
+      - {entity_id: aretas, birth_derivation_id: nt-aretas-birth, death_derivation_id: nt-aretas-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [aretas-2-corinthians-na28-attested], alternative_claim_ids: [], explanation: "Aretas IV of Nabataea, r. 9 BCE-40 CE (2 Corinthians 11:32)."}
+      - {entity_id: aristarchus, birth_derivation_id: nt-aristarchus-birth, death_derivation_id: nt-aristarchus-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [aristarchus-acts-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 52 CE; the text states no age or lifespan."}
+      - {entity_id: aristobulus, birth_derivation_id: nt-aristobulus-birth, death_derivation_id: nt-aristobulus-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [aristobulus-romans-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 57 CE; the text states no age or lifespan."}
+      - {entity_id: artemas, birth_derivation_id: nt-artemas-birth, death_derivation_id: nt-artemas-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [artemas-titus-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 63 CE; the text states no age or lifespan."}
+      - {entity_id: asyncritus, birth_derivation_id: nt-asyncritus-birth, death_derivation_id: nt-asyncritus-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [asyncritus-romans-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 57 CE; the text states no age or lifespan."}
+      - {entity_id: augustus, birth_derivation_id: nt-augustus-birth, death_derivation_id: nt-augustus-death, life_basis: synchronized, confidence_grade: C, evidence_claim_ids: [augustus-luke-na28-attested], alternative_claim_ids: [], explanation: "Roman emperor 27 BCE-14 CE (Luke 2:1)."}
+      - {entity_id: azor, birth_derivation_id: nt-azor-birth, death_derivation_id: nt-azor-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [azor-matthew-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window from the genealogy (interpolated between abiud and achim in the genealogy); no age is stated."}
+      - {entity_id: bar-jesus, birth_derivation_id: nt-bar-jesus-birth, death_derivation_id: nt-bar-jesus-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [bar-jesus-acts-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 46 CE; the text states no age or lifespan."}
+      - {entity_id: barabbas, birth_derivation_id: nt-barabbas-birth, death_derivation_id: nt-barabbas-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [barabbas-matthew-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 30 CE; the text states no age or lifespan."}
+      - {entity_id: barnabas, birth_derivation_id: nt-barnabas-birth, death_derivation_id: nt-barnabas-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [barnabas-acts-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 32 CE; the text states no age or lifespan."}
+      - {entity_id: bartholomew, birth_derivation_id: nt-bartholomew-birth, death_derivation_id: nt-bartholomew-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [bartholomew-matthew-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 28 CE; the text states no age or lifespan."}
+      - {entity_id: bartimaeus, birth_derivation_id: nt-bartimaeus-birth, death_derivation_id: nt-bartimaeus-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [bartimaeus-mark-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 29 CE; the text states no age or lifespan."}
+      - {entity_id: bent-woman, birth_derivation_id: nt-bent-woman-birth, death_derivation_id: nt-bent-woman-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [bent-woman-luke-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 29 CE; the text states no age or lifespan."}
+      - {entity_id: bernice, birth_derivation_id: nt-bernice-birth, death_derivation_id: nt-bernice-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [bernice-acts-na28-attested], alternative_claim_ids: [], explanation: "Daughter of Agrippa I (Acts 25:13); death year unknown."}
+      - {entity_id: blastus, birth_derivation_id: nt-blastus-birth, death_derivation_id: nt-blastus-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [blastus-acts-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 44 CE; the text states no age or lifespan."}
+      - {entity_id: boy-with-loaves-and-fish, birth_derivation_id: nt-boy-with-loaves-and-fish-birth, death_derivation_id: nt-boy-with-loaves-and-fish-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [boy-with-loaves-and-fish-john-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 28 CE; the text states no age or lifespan."}
+      - {entity_id: boy-with-unclean-spirit, birth_derivation_id: nt-boy-with-unclean-spirit-birth, death_derivation_id: nt-boy-with-unclean-spirit-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [boy-with-unclean-spirit-mark-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 29 CE; the text states no age or lifespan."}
+      - {entity_id: bridegroom-at-cana, birth_derivation_id: nt-bridegroom-at-cana-birth, death_derivation_id: nt-bridegroom-at-cana-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [bridegroom-at-cana-john-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 28 CE; the text states no age or lifespan."}
+      - {entity_id: caiaphas, birth_derivation_id: nt-caiaphas-birth, death_derivation_id: nt-caiaphas-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [caiaphas-matthew-na28-attested], alternative_claim_ids: [], explanation: "High priest about 18-36 CE; birth and death editorial."}
+      - {entity_id: carpus, birth_derivation_id: nt-carpus-birth, death_derivation_id: nt-carpus-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [carpus-2-timothy-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 65 CE; the text states no age or lifespan."}
+      - {entity_id: centurion-at-the-cross, birth_derivation_id: nt-centurion-at-the-cross-birth, death_derivation_id: nt-centurion-at-the-cross-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [centurion-at-the-cross-matthew-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 30 CE; the text states no age or lifespan."}
+      - {entity_id: centurion-of-capernaum, birth_derivation_id: nt-centurion-of-capernaum-birth, death_derivation_id: nt-centurion-of-capernaum-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [centurion-of-capernaum-matthew-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 28 CE; the text states no age or lifespan."}
+      - {entity_id: chloe, birth_derivation_id: nt-chloe-birth, death_derivation_id: nt-chloe-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [chloe-1-corinthians-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 54 CE; the text states no age or lifespan."}
+      - {entity_id: chuza, birth_derivation_id: nt-chuza-birth, death_derivation_id: nt-chuza-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [chuza-luke-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 29 CE; the text states no age or lifespan."}
+      - {entity_id: claudia, birth_derivation_id: nt-claudia-birth, death_derivation_id: nt-claudia-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [claudia-2-timothy-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 65 CE; the text states no age or lifespan."}
+      - {entity_id: claudius, birth_derivation_id: nt-claudius-birth, death_derivation_id: nt-claudius-death, life_basis: synchronized, confidence_grade: C, evidence_claim_ids: [claudius-acts-na28-attested], alternative_claim_ids: [], explanation: "Roman emperor 41-54 CE (Acts 11:28; 18:2)."}
+      - {entity_id: clement, birth_derivation_id: nt-clement-birth, death_derivation_id: nt-clement-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [clement-philippians-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 61 CE; the text states no age or lifespan."}
+      - {entity_id: cornelius, birth_derivation_id: nt-cornelius-birth, death_derivation_id: nt-cornelius-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [cornelius-acts-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 39 CE; the text states no age or lifespan."}
+      - {entity_id: cosam, birth_derivation_id: nt-cosam-birth, death_derivation_id: nt-cosam-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [cosam-luke-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window from the genealogy (interpolated between nathan-2sa5 and addi in the genealogy); no age is stated."}
+      - {entity_id: crescens, birth_derivation_id: nt-crescens-birth, death_derivation_id: nt-crescens-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [crescens-2-timothy-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 65 CE; the text states no age or lifespan."}
+      - {entity_id: crispus, birth_derivation_id: nt-crispus-birth, death_derivation_id: nt-crispus-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [crispus-acts-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 52 CE; the text states no age or lifespan."}
+      - {entity_id: damaris, birth_derivation_id: nt-damaris-birth, death_derivation_id: nt-damaris-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [damaris-acts-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 50 CE; the text states no age or lifespan."}
+      - {entity_id: daughter-of-annas, birth_derivation_id: nt-daughter-of-annas-birth, death_derivation_id: nt-daughter-of-annas-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [daughter-of-annas-john-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 30 CE; the text states no age or lifespan."}
+      - {entity_id: daughter-of-syrophoenician-woman, birth_derivation_id: nt-daughter-of-syrophoenician-woman-birth, death_derivation_id: nt-daughter-of-syrophoenician-woman-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [daughter-of-syrophoenician-woman-mark-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 29 CE; the text states no age or lifespan."}
+      - {entity_id: demas, birth_derivation_id: nt-demas-birth, death_derivation_id: nt-demas-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [demas-colossians-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 61 CE; the text states no age or lifespan."}
+      - {entity_id: demetrius, birth_derivation_id: nt-demetrius-birth, death_derivation_id: nt-demetrius-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [demetrius-acts-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 52 CE; the text states no age or lifespan."}
+      - {entity_id: dionysius, birth_derivation_id: nt-dionysius-birth, death_derivation_id: nt-dionysius-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [dionysius-acts-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 50 CE; the text states no age or lifespan."}
+      - {entity_id: diotrephes, birth_derivation_id: nt-diotrephes-birth, death_derivation_id: nt-diotrephes-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [diotrephes-3-john-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 90 CE; the text states no age or lifespan."}
+      - {entity_id: drusilla, birth_derivation_id: nt-drusilla-birth, death_derivation_id: nt-drusilla-death, life_basis: synchronized, confidence_grade: C, evidence_claim_ids: [drusilla-acts-na28-attested], alternative_claim_ids: [], explanation: "Daughter of Agrippa I, wife of Felix (Acts 24:24); died in the eruption of Vesuvius."}
+      - {entity_id: eleazar-mat1, birth_derivation_id: nt-eleazar-mat1-birth, death_derivation_id: nt-eleazar-mat1-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [eleazar-mat1-matthew-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window from the genealogy (2 editorial generation(s) after achim); no age is stated."}
+      - {entity_id: eliakim-luk3, birth_derivation_id: nt-eliakim-luk3-birth, death_derivation_id: nt-eliakim-luk3-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [eliakim-luk3-luke-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window from the genealogy (interpolated between nathan-2sa5 and cosam in the genealogy); no age is stated."}
+      - {entity_id: eliakim-mat1, birth_derivation_id: nt-eliakim-mat1-birth, death_derivation_id: nt-eliakim-mat1-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [eliakim-mat1-matthew-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window from the genealogy (interpolated between abiud and azor in the genealogy); no age is stated."}
+      - {entity_id: eliezer-luk3, birth_derivation_id: nt-eliezer-luk3-birth, death_derivation_id: nt-eliezer-luk3-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [eliezer-luk3-luke-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window from the genealogy (interpolated between eliakim-luk3 and cosam in the genealogy); no age is stated."}
+      - {entity_id: eliud, birth_derivation_id: nt-eliud-birth, death_derivation_id: nt-eliud-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [eliud-matthew-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window from the genealogy (interpolated between achim and eleazar-mat1 in the genealogy); no age is stated."}
+      - {entity_id: elizabeth, birth_derivation_id: nt-elizabeth-birth, death_derivation_id: nt-elizabeth-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [elizabeth-luke-na28-attested], alternative_claim_ids: [], explanation: "Advanced in years and previously barren when John was born (Luke 1:7,36); years editorial."}
+      - {entity_id: elmadam, birth_derivation_id: nt-elmadam-birth, death_derivation_id: nt-elmadam-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [elmadam-luke-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window from the genealogy (interpolated between eliezer-luk3 and cosam in the genealogy); no age is stated."}
+      - {entity_id: epaenetus, birth_derivation_id: nt-epaenetus-birth, death_derivation_id: nt-epaenetus-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [epaenetus-romans-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 57 CE; the text states no age or lifespan."}
+      - {entity_id: epaphras, birth_derivation_id: nt-epaphras-birth, death_derivation_id: nt-epaphras-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [epaphras-colossians-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 61 CE; the text states no age or lifespan."}
+      - {entity_id: epaphroditus, birth_derivation_id: nt-epaphroditus-birth, death_derivation_id: nt-epaphroditus-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [epaphroditus-philippians-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 61 CE; the text states no age or lifespan."}
+      - {entity_id: er-luk3, birth_derivation_id: nt-er-luk3-birth, death_derivation_id: nt-er-luk3-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [er-luk3-luke-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window from the genealogy (interpolated between eliezer-luk3 and elmadam in the genealogy); no age is stated."}
+      - {entity_id: erastus, birth_derivation_id: nt-erastus-birth, death_derivation_id: nt-erastus-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [erastus-acts-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 52 CE; the text states no age or lifespan."}
+      - {entity_id: esli, birth_derivation_id: nt-esli-birth, death_derivation_id: nt-esli-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [esli-luke-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window from the genealogy (interpolated between addi and amos-luk3 in the genealogy); no age is stated."}
+      - {entity_id: ethiopian-eunuch, birth_derivation_id: nt-ethiopian-eunuch-birth, death_derivation_id: nt-ethiopian-eunuch-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [ethiopian-eunuch-acts-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 34 CE; the text states no age or lifespan."}
+      - {entity_id: eubulus, birth_derivation_id: nt-eubulus-birth, death_derivation_id: nt-eubulus-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [eubulus-2-timothy-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 65 CE; the text states no age or lifespan."}
+      - {entity_id: eunice, birth_derivation_id: nt-eunice-birth, death_derivation_id: nt-eunice-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [eunice-2-timothy-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 65 CE; the text states no age or lifespan."}
+      - {entity_id: euodia, birth_derivation_id: nt-euodia-birth, death_derivation_id: nt-euodia-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [euodia-philippians-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 61 CE; the text states no age or lifespan."}
+      - {entity_id: eutychus, birth_derivation_id: nt-eutychus-birth, death_derivation_id: nt-eutychus-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [eutychus-acts-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 54 CE; the text states no age or lifespan."}
+      - {entity_id: father-of-boy-with-unclean-spirit, birth_derivation_id: nt-father-of-boy-with-unclean-spirit-birth, death_derivation_id: nt-father-of-boy-with-unclean-spirit-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [father-of-boy-with-unclean-spirit-mark-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 29 CE; the text states no age or lifespan."}
+      - {entity_id: father-of-timothy, birth_derivation_id: nt-father-of-timothy-birth, death_derivation_id: nt-father-of-timothy-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [father-of-timothy-acts-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 49 CE; the text states no age or lifespan."}
+      - {entity_id: felix, birth_derivation_id: nt-felix-birth, death_derivation_id: nt-felix-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [felix-acts-na28-attested], alternative_claim_ids: [], explanation: "Procurator of Judea about 52-60 CE; birth and death editorial."}
+      - {entity_id: festus, birth_derivation_id: nt-festus-birth, death_derivation_id: nt-festus-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [festus-acts-na28-attested], alternative_claim_ids: [], explanation: "Procurator about 60-62 CE; died in office."}
+      - {entity_id: fortunatus, birth_derivation_id: nt-fortunatus-birth, death_derivation_id: nt-fortunatus-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [fortunatus-1-corinthians-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 54 CE; the text states no age or lifespan."}
+      - {entity_id: gaius-3jn1, birth_derivation_id: nt-gaius-3jn1-birth, death_derivation_id: nt-gaius-3jn1-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [gaius-3jn1-3-john-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 90 CE; the text states no age or lifespan."}
+      - {entity_id: gaius-act19, birth_derivation_id: nt-gaius-act19-birth, death_derivation_id: nt-gaius-act19-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [gaius-act19-acts-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 52 CE; the text states no age or lifespan."}
+      - {entity_id: gaius-act20, birth_derivation_id: nt-gaius-act20-birth, death_derivation_id: nt-gaius-act20-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [gaius-act20-acts-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 54 CE; the text states no age or lifespan."}
+      - {entity_id: gaius-rom16, birth_derivation_id: nt-gaius-rom16-birth, death_derivation_id: nt-gaius-rom16-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [gaius-rom16-romans-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 54 CE; the text states no age or lifespan."}
+      - {entity_id: gallio, birth_derivation_id: nt-gallio-birth, death_derivation_id: nt-gallio-death, life_basis: synchronized, confidence_grade: C, evidence_claim_ids: [gallio-acts-na28-attested], alternative_claim_ids: [], explanation: "Proconsul of Achaia 51-52 CE (Acts 18:12); died 65 CE."}
+      - {entity_id: gamaliel-act5, birth_derivation_id: nt-gamaliel-act5-birth, death_derivation_id: nt-gamaliel-act5-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [gamaliel-act5-acts-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 33 CE; the text states no age or lifespan."}
+      - {entity_id: gerasene-demoniac, birth_derivation_id: nt-gerasene-demoniac-birth, death_derivation_id: nt-gerasene-demoniac-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [gerasene-demoniac-mark-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 28 CE; the text states no age or lifespan."}
+      - {entity_id: heli, birth_derivation_id: nt-heli-birth, death_derivation_id: nt-heli-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [heli-luke-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window from the genealogy (7 editorial generation(s) after amos-luk3); no age is stated."}
+      - {entity_id: hermas, birth_derivation_id: nt-hermas-birth, death_derivation_id: nt-hermas-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [hermas-romans-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 57 CE; the text states no age or lifespan."}
+      - {entity_id: hermes, birth_derivation_id: nt-hermes-birth, death_derivation_id: nt-hermes-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [hermes-romans-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 57 CE; the text states no age or lifespan."}
+      - {entity_id: hermogenes, birth_derivation_id: nt-hermogenes-birth, death_derivation_id: nt-hermogenes-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [hermogenes-2-timothy-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 65 CE; the text states no age or lifespan."}
+      - {entity_id: herod-act12, birth_derivation_id: nt-herod-act12-birth, death_derivation_id: nt-herod-act12-death, life_basis: synchronized, confidence_grade: C, evidence_claim_ids: [herod-act12-acts-na28-attested], alternative_claim_ids: [], explanation: "King 41-44 CE; his death is narrated in Acts 12:20-23."}
+      - {entity_id: herod-mat14, birth_derivation_id: nt-herod-mat14-birth, death_derivation_id: nt-herod-mat14-death, life_basis: synchronized, confidence_grade: C, evidence_claim_ids: [herod-mat14-matthew-na28-attested], alternative_claim_ids: [], explanation: "Tetrarch of Galilee and Perea 4 BCE-39 CE."}
+      - {entity_id: herod-mat2, birth_derivation_id: nt-herod-mat2-birth, death_derivation_id: nt-herod-mat2-death, life_basis: synchronized, confidence_grade: C, evidence_claim_ids: [herod-mat2-matthew-na28-attested], alternative_claim_ids: [], explanation: "King of Judea 37-4 BCE (external chronology); Jesus was born before his death (Matthew 2)."}
+      - {entity_id: herodias, birth_derivation_id: nt-herodias-birth, death_derivation_id: nt-herodias-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [herodias-matthew-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 29 CE; the text states no age or lifespan."}
+      - {entity_id: herodion, birth_derivation_id: nt-herodion-birth, death_derivation_id: nt-herodion-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [herodion-romans-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 57 CE; the text states no age or lifespan."}
+      - {entity_id: hymenaeus, birth_derivation_id: nt-hymenaeus-birth, death_derivation_id: nt-hymenaeus-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [hymenaeus-1-timothy-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 63 CE; the text states no age or lifespan."}
+      - {entity_id: impenitent-criminal, birth_derivation_id: nt-impenitent-criminal-birth, death_derivation_id: nt-impenitent-criminal-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [impenitent-criminal-luke-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 30 CE; the text states no age or lifespan."}
+      - {entity_id: jacob-mat1, birth_derivation_id: nt-jacob-mat1-birth, death_derivation_id: nt-jacob-mat1-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [jacob-mat1-matthew-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window from the genealogy (1 editorial generation(s) before joseph-mat1); no age is stated."}
+      - {entity_id: jairus, birth_derivation_id: nt-jairus-birth, death_derivation_id: nt-jairus-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [jairus-mark-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 28 CE; the text states no age or lifespan."}
+      - {entity_id: jairus-daughter, birth_derivation_id: nt-jairus-daughter-birth, death_derivation_id: nt-jairus-daughter-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [jairus-daughter-age-at-event-12-mark], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 28 CE; the text states no age or lifespan."}
+      - {entity_id: jambres, birth_derivation_id: nt-jambres-birth, death_derivation_id: nt-jambres-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [jambres-2-timothy-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 65 CE; the text states no age or lifespan."}
+      - {entity_id: james-luk6, birth_derivation_id: nt-james-luk6-birth, death_derivation_id: nt-james-luk6-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [james-luk6-luke-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 28 CE; the text states no age or lifespan."}
+      - {entity_id: james-mat10, birth_derivation_id: nt-james-mat10-birth, death_derivation_id: nt-james-mat10-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [james-mat10-matthew-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 28 CE; the text states no age or lifespan."}
+      - {entity_id: james-mat13, birth_derivation_id: nt-james-mat13-birth, death_derivation_id: nt-james-mat13-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [james-mat13-matthew-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 29 CE; the text states no age or lifespan."}
+      - {entity_id: james-mat4, birth_derivation_id: nt-james-mat4-birth, death_derivation_id: nt-james-mat4-death, life_basis: synchronized, confidence_grade: C, evidence_claim_ids: [james-mat4-matthew-na28-attested], alternative_claim_ids: [], explanation: "Killed by Herod Agrippa I (Acts 12:1-2), who died in 44 CE; birth editorial."}
+      - {entity_id: jannai, birth_derivation_id: nt-jannai-birth, death_derivation_id: nt-jannai-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [jannai-luke-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window from the genealogy (interpolated between amos-luk3 and heli in the genealogy); no age is stated."}
+      - {entity_id: jannes, birth_derivation_id: nt-jannes-birth, death_derivation_id: nt-jannes-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [jannes-2-timothy-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 65 CE; the text states no age or lifespan."}
+      - {entity_id: jason, birth_derivation_id: nt-jason-birth, death_derivation_id: nt-jason-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [jason-acts-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 50 CE; the text states no age or lifespan."}
+      - {entity_id: jesus, birth_derivation_id: nt-jesus-birth, death_derivation_id: nt-jesus-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [jesus-age-at-event-30-luke, jesus-age-at-event-12-luke], alternative_claim_ids: [], explanation: "Born before Herod's death (Matthew 2; Luke 1:5); about thirty when he began (Luke 3:23); crucified under Pontius Pilate. 30 CE is an editorial choice; 33 CE is the main alternative."}
+      - {entity_id: jezebel-of-thyatira, birth_derivation_id: nt-jezebel-of-thyatira-birth, death_derivation_id: nt-jezebel-of-thyatira-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [jezebel-of-thyatira-revelation-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 95 CE; the text states no age or lifespan."}
+      - {entity_id: joanan, birth_derivation_id: nt-joanan-birth, death_derivation_id: nt-joanan-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [joanan-luke-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window from the genealogy (interpolated between addi and esli in the genealogy); no age is stated."}
+      - {entity_id: joanna, birth_derivation_id: nt-joanna-birth, death_derivation_id: nt-joanna-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [joanna-luke-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 29 CE; the text states no age or lifespan."}
+      - {entity_id: joda, birth_derivation_id: nt-joda-birth, death_derivation_id: nt-joda-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [joda-luke-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window from the genealogy (interpolated between joanan and esli in the genealogy); no age is stated."}
+      - {entity_id: john-act4, birth_derivation_id: nt-john-act4-birth, death_derivation_id: nt-john-act4-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [john-act4-acts-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 32 CE; the text states no age or lifespan."}
+      - {entity_id: john-mat16, birth_derivation_id: nt-john-mat16-birth, death_derivation_id: nt-john-mat16-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [john-mat16-matthew-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 28 CE; the text states no age or lifespan."}
+      - {entity_id: john-mat3, birth_derivation_id: nt-john-mat3-birth, death_derivation_id: nt-john-mat3-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [john-mat3-matthew-na28-attested], alternative_claim_ids: [], explanation: "About six months older than Jesus (Luke 1:26,36); executed by Herod Antipas. Years editorial."}
+      - {entity_id: john-mat4, birth_derivation_id: nt-john-mat4-birth, death_derivation_id: nt-john-mat4-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [john-mat4-matthew-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 28 CE; the text states no age or lifespan."}
+      - {entity_id: john-of-patmos, birth_derivation_id: nt-john-of-patmos-birth, death_derivation_id: nt-john-of-patmos-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [john-of-patmos-revelation-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 95 CE; the text states no age or lifespan."}
+      - {entity_id: jonam, birth_derivation_id: nt-jonam-birth, death_derivation_id: nt-jonam-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [jonam-luke-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window from the genealogy (interpolated between eliakim-luk3 and eliezer-luk3 in the genealogy); no age is stated."}
+      - {entity_id: jorim, birth_derivation_id: nt-jorim-birth, death_derivation_id: nt-jorim-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [jorim-luke-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window from the genealogy (interpolated between jonam and eliezer-luk3 in the genealogy); no age is stated."}
+      - {entity_id: josech, birth_derivation_id: nt-josech-birth, death_derivation_id: nt-josech-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [josech-luke-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window from the genealogy (interpolated between joda and esli in the genealogy); no age is stated."}
+      - {entity_id: joseph-act1, birth_derivation_id: nt-joseph-act1-birth, death_derivation_id: nt-joseph-act1-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [joseph-act1-acts-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 30 CE; the text states no age or lifespan."}
+      - {entity_id: joseph-luk3, birth_derivation_id: nt-joseph-luk3-birth, death_derivation_id: nt-joseph-luk3-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [joseph-luk3-luke-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window from the genealogy (interpolated between amos-luk3 and jannai in the genealogy); no age is stated."}
+      - {entity_id: joseph-luk3-30, birth_derivation_id: nt-joseph-luk3-30-birth, death_derivation_id: nt-joseph-luk3-30-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [joseph-luk3-30-luke-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window from the genealogy (interpolated between jonam and jorim in the genealogy); no age is stated."}
+      - {entity_id: joseph-mat1, birth_derivation_id: nt-joseph-mat1-birth, death_derivation_id: nt-joseph-mat1-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [joseph-mat1-matthew-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 7 BCE; the text states no age or lifespan."}
+      - {entity_id: joseph-mat27, birth_derivation_id: nt-joseph-mat27-birth, death_derivation_id: nt-joseph-mat27-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [joseph-mat27-matthew-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 30 CE; the text states no age or lifespan."}
+      - {entity_id: joses-mat13, birth_derivation_id: nt-joses-mat13-birth, death_derivation_id: nt-joses-mat13-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [joses-mat13-matthew-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 29 CE; the text states no age or lifespan."}
+      - {entity_id: joses-mat27, birth_derivation_id: nt-joses-mat27-birth, death_derivation_id: nt-joses-mat27-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [joses-mat27-matthew-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 30 CE; the text states no age or lifespan."}
+      - {entity_id: joshua-luk3, birth_derivation_id: nt-joshua-luk3-birth, death_derivation_id: nt-joshua-luk3-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [joshua-luk3-luke-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window from the genealogy (interpolated between eliezer-luk3 and er-luk3 in the genealogy); no age is stated."}
+      - {entity_id: judah-luk3, birth_derivation_id: nt-judah-luk3-birth, death_derivation_id: nt-judah-luk3-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [judah-luk3-luke-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window from the genealogy (interpolated between joseph-luk3-30 and jorim in the genealogy); no age is stated."}
+      - {entity_id: judas-act15, birth_derivation_id: nt-judas-act15-birth, death_derivation_id: nt-judas-act15-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [judas-act15-acts-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 49 CE; the text states no age or lifespan."}
+      - {entity_id: judas-act5, birth_derivation_id: nt-judas-act5-birth, death_derivation_id: nt-judas-act5-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [judas-act5-acts-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 33 CE; the text states no age or lifespan."}
+      - {entity_id: judas-act9, birth_derivation_id: nt-judas-act9-birth, death_derivation_id: nt-judas-act9-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [judas-act9-acts-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 36 CE; the text states no age or lifespan."}
+      - {entity_id: judas-mat10, birth_derivation_id: nt-judas-mat10-birth, death_derivation_id: nt-judas-mat10-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [judas-mat10-matthew-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 28 CE; the text states no age or lifespan."}
+      - {entity_id: judas-mat10-4, birth_derivation_id: nt-judas-mat10-4-birth, death_derivation_id: nt-judas-mat10-4-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [judas-mat10-4-matthew-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 28 CE; the text states no age or lifespan."}
+      - {entity_id: jude-mat13, birth_derivation_id: nt-jude-mat13-birth, death_derivation_id: nt-jude-mat13-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [jude-mat13-matthew-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 29 CE; the text states no age or lifespan."}
+      - {entity_id: julia, birth_derivation_id: nt-julia-birth, death_derivation_id: nt-julia-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [julia-romans-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 57 CE; the text states no age or lifespan."}
+      - {entity_id: julius, birth_derivation_id: nt-julius-birth, death_derivation_id: nt-julius-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [julius-acts-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 59 CE; the text states no age or lifespan."}
+      - {entity_id: junia, birth_derivation_id: nt-junia-birth, death_derivation_id: nt-junia-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [junia-romans-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 57 CE; the text states no age or lifespan."}
+      - {entity_id: justus-act18, birth_derivation_id: nt-justus-act18-birth, death_derivation_id: nt-justus-act18-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [justus-act18-acts-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 52 CE; the text states no age or lifespan."}
+      - {entity_id: justus-col4, birth_derivation_id: nt-justus-col4-birth, death_derivation_id: nt-justus-col4-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [justus-col4-colossians-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 61 CE; the text states no age or lifespan."}
+      - {entity_id: lame-man-beautiful-gate, birth_derivation_id: nt-lame-man-beautiful-gate-birth, death_derivation_id: nt-lame-man-beautiful-gate-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [lame-man-beautiful-gate-age-at-event-40-acts], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 31 CE; the text states no age or lifespan."}
+      - {entity_id: lame-man-of-lystra, birth_derivation_id: nt-lame-man-of-lystra-birth, death_derivation_id: nt-lame-man-of-lystra-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [lame-man-of-lystra-acts-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 48 CE; the text states no age or lifespan."}
+      - {entity_id: lazarus-jhn11, birth_derivation_id: nt-lazarus-jhn11-birth, death_derivation_id: nt-lazarus-jhn11-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [lazarus-jhn11-john-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 30 CE; the text states no age or lifespan."}
+      - {entity_id: leper-cleansed-in-galilee, birth_derivation_id: nt-leper-cleansed-in-galilee-birth, death_derivation_id: nt-leper-cleansed-in-galilee-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [leper-cleansed-in-galilee-mark-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 28 CE; the text states no age or lifespan."}
+      - {entity_id: levi-luk3, birth_derivation_id: nt-levi-luk3-birth, death_derivation_id: nt-levi-luk3-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [levi-luk3-luke-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window from the genealogy (interpolated between jannai and heli in the genealogy); no age is stated."}
+      - {entity_id: levi-luk3-29, birth_derivation_id: nt-levi-luk3-29-birth, death_derivation_id: nt-levi-luk3-29-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [levi-luk3-29-luke-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window from the genealogy (interpolated between judah-luk3 and jorim in the genealogy); no age is stated."}
+      - {entity_id: linus, birth_derivation_id: nt-linus-birth, death_derivation_id: nt-linus-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [linus-2-timothy-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 65 CE; the text states no age or lifespan."}
+      - {entity_id: lois, birth_derivation_id: nt-lois-birth, death_derivation_id: nt-lois-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [lois-2-timothy-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 65 CE; the text states no age or lifespan."}
+      - {entity_id: lucius, birth_derivation_id: nt-lucius-birth, death_derivation_id: nt-lucius-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [lucius-acts-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 46 CE; the text states no age or lifespan."}
+      - {entity_id: luke-col4, birth_derivation_id: nt-luke-col4-birth, death_derivation_id: nt-luke-col4-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [luke-col4-colossians-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 61 CE; the text states no age or lifespan."}
+      - {entity_id: lydia, birth_derivation_id: nt-lydia-birth, death_derivation_id: nt-lydia-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [lydia-acts-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 49 CE; the text states no age or lifespan."}
+      - {entity_id: lysanias, birth_derivation_id: nt-lysanias-birth, death_derivation_id: nt-lysanias-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [lysanias-luke-na28-attested], alternative_claim_ids: [], explanation: "Tetrarch of Abilene in the fifteenth year of Tiberius (Luke 3:1); years editorial."}
+      - {entity_id: lysias-act23, birth_derivation_id: nt-lysias-act23-birth, death_derivation_id: nt-lysias-act23-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [lysias-act23-acts-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 58 CE; the text states no age or lifespan."}
+      - {entity_id: maath, birth_derivation_id: nt-maath-birth, death_derivation_id: nt-maath-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [maath-luke-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window from the genealogy (interpolated between josech and esli in the genealogy); no age is stated."}
+      - {entity_id: malchus, birth_derivation_id: nt-malchus-birth, death_derivation_id: nt-malchus-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [malchus-john-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 30 CE; the text states no age or lifespan."}
+      - {entity_id: man-at-bethesda, birth_derivation_id: nt-man-at-bethesda-birth, death_derivation_id: nt-man-at-bethesda-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [man-at-bethesda-john-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 28 CE; the text states no age or lifespan."}
+      - {entity_id: man-born-blind, birth_derivation_id: nt-man-born-blind-birth, death_derivation_id: nt-man-born-blind-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [man-born-blind-john-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 29 CE; the text states no age or lifespan."}
+      - {entity_id: man-with-dropsy, birth_derivation_id: nt-man-with-dropsy-birth, death_derivation_id: nt-man-with-dropsy-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [man-with-dropsy-luke-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 29 CE; the text states no age or lifespan."}
+      - {entity_id: man-with-fathers-wife-corinth, birth_derivation_id: nt-man-with-fathers-wife-corinth-birth, death_derivation_id: nt-man-with-fathers-wife-corinth-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [man-with-fathers-wife-corinth-1-corinthians-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 54 CE; the text states no age or lifespan."}
+      - {entity_id: man-with-withered-hand, birth_derivation_id: nt-man-with-withered-hand-birth, death_derivation_id: nt-man-with-withered-hand-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [man-with-withered-hand-mark-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 28 CE; the text states no age or lifespan."}
+      - {entity_id: manaen, birth_derivation_id: nt-manaen-birth, death_derivation_id: nt-manaen-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [manaen-acts-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 46 CE; the text states no age or lifespan."}
+      - {entity_id: mark-act12, birth_derivation_id: nt-mark-act12-birth, death_derivation_id: nt-mark-act12-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [mark-act12-acts-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 44 CE; the text states no age or lifespan."}
+      - {entity_id: martha, birth_derivation_id: nt-martha-birth, death_derivation_id: nt-martha-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [martha-luke-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 29 CE; the text states no age or lifespan."}
+      - {entity_id: mary-act12, birth_derivation_id: nt-mary-act12-birth, death_derivation_id: nt-mary-act12-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [mary-act12-acts-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 44 CE; the text states no age or lifespan."}
+      - {entity_id: mary-luk10, birth_derivation_id: nt-mary-luk10-birth, death_derivation_id: nt-mary-luk10-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [mary-luk10-luke-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 29 CE; the text states no age or lifespan."}
+      - {entity_id: mary-magdalene, birth_derivation_id: nt-mary-magdalene-birth, death_derivation_id: nt-mary-magdalene-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [mary-magdalene-matthew-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 29 CE; the text states no age or lifespan."}
+      - {entity_id: mary-mat1, birth_derivation_id: nt-mary-mat1-birth, death_derivation_id: nt-mary-mat1-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [mary-mat1-matthew-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 7 BCE; the text states no age or lifespan."}
+      - {entity_id: mary-mat27, birth_derivation_id: nt-mary-mat27-birth, death_derivation_id: nt-mary-mat27-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [mary-mat27-matthew-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 30 CE; the text states no age or lifespan."}
+      - {entity_id: mary-rom16, birth_derivation_id: nt-mary-rom16-birth, death_derivation_id: nt-mary-rom16-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [mary-rom16-romans-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 57 CE; the text states no age or lifespan."}
+      - {entity_id: master-of-the-feast-cana, birth_derivation_id: nt-master-of-the-feast-cana-birth, death_derivation_id: nt-master-of-the-feast-cana-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [master-of-the-feast-cana-john-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 28 CE; the text states no age or lifespan."}
+      - {entity_id: mattatha, birth_derivation_id: nt-mattatha-birth, death_derivation_id: nt-mattatha-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [mattatha-luke-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window from the genealogy (interpolated between nathan-2sa5 and eliakim-luk3 in the genealogy); no age is stated."}
+      - {entity_id: mattathias-luk3, birth_derivation_id: nt-mattathias-luk3-birth, death_derivation_id: nt-mattathias-luk3-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [mattathias-luk3-luke-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window from the genealogy (interpolated between amos-luk3 and joseph-luk3 in the genealogy); no age is stated."}
+      - {entity_id: mattathias-luk3-26, birth_derivation_id: nt-mattathias-luk3-26-birth, death_derivation_id: nt-mattathias-luk3-26-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [mattathias-luk3-26-luke-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window from the genealogy (interpolated between josech and maath in the genealogy); no age is stated."}
+      - {entity_id: matthan, birth_derivation_id: nt-matthan-birth, death_derivation_id: nt-matthan-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [matthan-matthew-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window from the genealogy (1 editorial generation(s) after eleazar-mat1); no age is stated."}
+      - {entity_id: matthat-luk3, birth_derivation_id: nt-matthat-luk3-birth, death_derivation_id: nt-matthat-luk3-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [matthat-luk3-luke-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window from the genealogy (interpolated between levi-luk3 and heli in the genealogy); no age is stated."}
+      - {entity_id: matthat-luk3-29, birth_derivation_id: nt-matthat-luk3-29-birth, death_derivation_id: nt-matthat-luk3-29-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [matthat-luk3-29-luke-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window from the genealogy (interpolated between levi-luk3-29 and jorim in the genealogy); no age is stated."}
+      - {entity_id: matthew-mat9, birth_derivation_id: nt-matthew-mat9-birth, death_derivation_id: nt-matthew-mat9-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [matthew-mat9-matthew-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 28 CE; the text states no age or lifespan."}
+      - {entity_id: matthias, birth_derivation_id: nt-matthias-birth, death_derivation_id: nt-matthias-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [matthias-acts-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 30 CE; the text states no age or lifespan."}
+      - {entity_id: melchi-luk3, birth_derivation_id: nt-melchi-luk3-birth, death_derivation_id: nt-melchi-luk3-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [melchi-luk3-luke-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window from the genealogy (interpolated between jannai and levi-luk3 in the genealogy); no age is stated."}
+      - {entity_id: melchi-luk3-28, birth_derivation_id: nt-melchi-luk3-28-birth, death_derivation_id: nt-melchi-luk3-28-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [melchi-luk3-28-luke-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window from the genealogy (interpolated between addi and joanan in the genealogy); no age is stated."}
+      - {entity_id: melea, birth_derivation_id: nt-melea-birth, death_derivation_id: nt-melea-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [melea-luke-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window from the genealogy (interpolated between mattatha and eliakim-luk3 in the genealogy); no age is stated."}
+      - {entity_id: menna, birth_derivation_id: nt-menna-birth, death_derivation_id: nt-menna-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [menna-luke-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window from the genealogy (interpolated between mattatha and melea in the genealogy); no age is stated."}
+      - {entity_id: mnason, birth_derivation_id: nt-mnason-birth, death_derivation_id: nt-mnason-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [mnason-acts-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 57 CE; the text states no age or lifespan."}
+      - {entity_id: mother-in-law-of-peter, birth_derivation_id: nt-mother-in-law-of-peter-birth, death_derivation_id: nt-mother-in-law-of-peter-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [mother-in-law-of-peter-matthew-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 28 CE; the text states no age or lifespan."}
+      - {entity_id: mother-of-zebedees-sons, birth_derivation_id: nt-mother-of-zebedees-sons-birth, death_derivation_id: nt-mother-of-zebedees-sons-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [mother-of-zebedees-sons-matthew-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 29 CE; the text states no age or lifespan."}
+      - {entity_id: naggai, birth_derivation_id: nt-naggai-birth, death_derivation_id: nt-naggai-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [naggai-luke-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window from the genealogy (interpolated between maath and esli in the genealogy); no age is stated."}
+      - {entity_id: nahum-luk3, birth_derivation_id: nt-nahum-luk3-birth, death_derivation_id: nt-nahum-luk3-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [nahum-luk3-luke-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window from the genealogy (interpolated between esli and amos-luk3 in the genealogy); no age is stated."}
+      - {entity_id: narcissus, birth_derivation_id: nt-narcissus-birth, death_derivation_id: nt-narcissus-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [narcissus-romans-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 57 CE; the text states no age or lifespan."}
+      - {entity_id: nathanael, birth_derivation_id: nt-nathanael-birth, death_derivation_id: nt-nathanael-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [nathanael-john-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 28 CE; the text states no age or lifespan."}
+      - {entity_id: nephew-of-paul, birth_derivation_id: nt-nephew-of-paul-birth, death_derivation_id: nt-nephew-of-paul-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [nephew-of-paul-acts-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 58 CE; the text states no age or lifespan."}
+      - {entity_id: nereus, birth_derivation_id: nt-nereus-birth, death_derivation_id: nt-nereus-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [nereus-romans-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 57 CE; the text states no age or lifespan."}
+      - {entity_id: neri, birth_derivation_id: nt-neri-birth, death_derivation_id: nt-neri-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [neri-luke-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window from the genealogy (interpolated between melchi-luk3-28 and joanan in the genealogy); no age is stated."}
+      - {entity_id: nero, birth_derivation_id: nt-nero-birth, death_derivation_id: nt-nero-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [nero-philippians-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 61 CE; the text states no age or lifespan."}
+      - {entity_id: nicanor, birth_derivation_id: nt-nicanor-birth, death_derivation_id: nt-nicanor-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [nicanor-acts-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 33 CE; the text states no age or lifespan."}
+      - {entity_id: nicodemus, birth_derivation_id: nt-nicodemus-birth, death_derivation_id: nt-nicodemus-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [nicodemus-john-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 28 CE; the text states no age or lifespan."}
+      - {entity_id: nicolaus, birth_derivation_id: nt-nicolaus-birth, death_derivation_id: nt-nicolaus-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [nicolaus-acts-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 33 CE; the text states no age or lifespan."}
+      - {entity_id: nympha, birth_derivation_id: nt-nympha-birth, death_derivation_id: nt-nympha-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [nympha-colossians-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 61 CE; the text states no age or lifespan."}
+      - {entity_id: olympas, birth_derivation_id: nt-olympas-birth, death_derivation_id: nt-olympas-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [olympas-romans-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 57 CE; the text states no age or lifespan."}
+      - {entity_id: onesimus, birth_derivation_id: nt-onesimus-birth, death_derivation_id: nt-onesimus-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [onesimus-colossians-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 61 CE; the text states no age or lifespan."}
+      - {entity_id: onesiphorus, birth_derivation_id: nt-onesiphorus-birth, death_derivation_id: nt-onesiphorus-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [onesiphorus-2-timothy-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 65 CE; the text states no age or lifespan."}
+      - {entity_id: paralytic-lowered-through-roof, birth_derivation_id: nt-paralytic-lowered-through-roof-birth, death_derivation_id: nt-paralytic-lowered-through-roof-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [paralytic-lowered-through-roof-mark-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 28 CE; the text states no age or lifespan."}
+      - {entity_id: parents-of-man-born-blind-father, birth_derivation_id: nt-parents-of-man-born-blind-father-birth, death_derivation_id: nt-parents-of-man-born-blind-father-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [parents-of-man-born-blind-father-john-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 29 CE; the text states no age or lifespan."}
+      - {entity_id: parmenas, birth_derivation_id: nt-parmenas-birth, death_derivation_id: nt-parmenas-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [parmenas-acts-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 33 CE; the text states no age or lifespan."}
+      - {entity_id: patrobas, birth_derivation_id: nt-patrobas-birth, death_derivation_id: nt-patrobas-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [patrobas-romans-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 57 CE; the text states no age or lifespan."}
+      - {entity_id: paul, birth_derivation_id: nt-paul-birth, death_derivation_id: nt-paul-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [paul-acts-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 34 CE; the text states no age or lifespan."}
+      - {entity_id: penitent-criminal, birth_derivation_id: nt-penitent-criminal-birth, death_derivation_id: nt-penitent-criminal-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [penitent-criminal-luke-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 30 CE; the text states no age or lifespan."}
+      - {entity_id: persis, birth_derivation_id: nt-persis-birth, death_derivation_id: nt-persis-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [persis-romans-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 57 CE; the text states no age or lifespan."}
+      - {entity_id: peter, birth_derivation_id: nt-peter-birth, death_derivation_id: nt-peter-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [peter-matthew-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 28 CE; the text states no age or lifespan."}
+      - {entity_id: phanuel, birth_derivation_id: nt-phanuel-birth, death_derivation_id: nt-phanuel-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [phanuel-luke-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 5 BCE; the text states no age or lifespan."}
+      - {entity_id: philemon-phm1, birth_derivation_id: nt-philemon-phm1-birth, death_derivation_id: nt-philemon-phm1-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [philemon-phm1-philemon-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 61 CE; the text states no age or lifespan."}
+      - {entity_id: philetus, birth_derivation_id: nt-philetus-birth, death_derivation_id: nt-philetus-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [philetus-2-timothy-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 65 CE; the text states no age or lifespan."}
+      - {entity_id: philip-act6, birth_derivation_id: nt-philip-act6-birth, death_derivation_id: nt-philip-act6-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [philip-act6-acts-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 33 CE; the text states no age or lifespan."}
+      - {entity_id: philip-luk3, birth_derivation_id: nt-philip-luk3-birth, death_derivation_id: nt-philip-luk3-death, life_basis: synchronized, confidence_grade: C, evidence_claim_ids: [philip-luk3-luke-na28-attested], alternative_claim_ids: [], explanation: "Tetrarch 4 BCE-34 CE (Luke 3:1)."}
+      - {entity_id: philip-mat10, birth_derivation_id: nt-philip-mat10-birth, death_derivation_id: nt-philip-mat10-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [philip-mat10-matthew-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 28 CE; the text states no age or lifespan."}
+      - {entity_id: philip-mat14, birth_derivation_id: nt-philip-mat14-birth, death_derivation_id: nt-philip-mat14-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [philip-mat14-matthew-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 29 CE; the text states no age or lifespan."}
+      - {entity_id: philippian-jailer, birth_derivation_id: nt-philippian-jailer-birth, death_derivation_id: nt-philippian-jailer-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [philippian-jailer-acts-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 49 CE; the text states no age or lifespan."}
+      - {entity_id: philologus, birth_derivation_id: nt-philologus-birth, death_derivation_id: nt-philologus-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [philologus-romans-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 57 CE; the text states no age or lifespan."}
+      - {entity_id: phlegon, birth_derivation_id: nt-phlegon-birth, death_derivation_id: nt-phlegon-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [phlegon-romans-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 57 CE; the text states no age or lifespan."}
+      - {entity_id: phoebe, birth_derivation_id: nt-phoebe-birth, death_derivation_id: nt-phoebe-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [phoebe-romans-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 57 CE; the text states no age or lifespan."}
+      - {entity_id: phygelus, birth_derivation_id: nt-phygelus-birth, death_derivation_id: nt-phygelus-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [phygelus-2-timothy-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 65 CE; the text states no age or lifespan."}
+      - {entity_id: pilate, birth_derivation_id: nt-pilate-birth, death_derivation_id: nt-pilate-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [pilate-matthew-na28-attested], alternative_claim_ids: [], explanation: "Prefect of Judea 26-36 CE; birth and death editorial."}
+      - {entity_id: poor-widow-at-the-treasury, birth_derivation_id: nt-poor-widow-at-the-treasury-birth, death_derivation_id: nt-poor-widow-at-the-treasury-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [poor-widow-at-the-treasury-mark-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 30 CE; the text states no age or lifespan."}
+      - {entity_id: priscilla, birth_derivation_id: nt-priscilla-birth, death_derivation_id: nt-priscilla-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [priscilla-acts-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 52 CE; the text states no age or lifespan."}
+      - {entity_id: prochorus, birth_derivation_id: nt-prochorus-birth, death_derivation_id: nt-prochorus-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [prochorus-acts-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 33 CE; the text states no age or lifespan."}
+      - {entity_id: publius, birth_derivation_id: nt-publius-birth, death_derivation_id: nt-publius-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [publius-acts-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 62 CE; the text states no age or lifespan."}
+      - {entity_id: pudens, birth_derivation_id: nt-pudens-birth, death_derivation_id: nt-pudens-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [pudens-2-timothy-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 65 CE; the text states no age or lifespan."}
+      - {entity_id: pyrrhus, birth_derivation_id: nt-pyrrhus-birth, death_derivation_id: nt-pyrrhus-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [pyrrhus-acts-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 54 CE; the text states no age or lifespan."}
+      - {entity_id: quartus, birth_derivation_id: nt-quartus-birth, death_derivation_id: nt-quartus-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [quartus-romans-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 57 CE; the text states no age or lifespan."}
+      - {entity_id: quirinius, birth_derivation_id: nt-quirinius-birth, death_derivation_id: nt-quirinius-death, life_basis: synchronized, confidence_grade: C, evidence_claim_ids: [quirinius-luke-na28-attested], alternative_claim_ids: [], explanation: "Governor of Syria from 6 CE (Luke 2:2)."}
+      - {entity_id: rhesa, birth_derivation_id: nt-rhesa-birth, death_derivation_id: nt-rhesa-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [rhesa-luke-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window from the genealogy (interpolated between neri and joanan in the genealogy); no age is stated."}
+      - {entity_id: rhoda, birth_derivation_id: nt-rhoda-birth, death_derivation_id: nt-rhoda-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [rhoda-acts-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 44 CE; the text states no age or lifespan."}
+      - {entity_id: rich-young-man, birth_derivation_id: nt-rich-young-man-birth, death_derivation_id: nt-rich-young-man-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [rich-young-man-matthew-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 29 CE; the text states no age or lifespan."}
+      - {entity_id: royal-official-capernaum, birth_derivation_id: nt-royal-official-capernaum-birth, death_derivation_id: nt-royal-official-capernaum-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [royal-official-capernaum-john-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 28 CE; the text states no age or lifespan."}
+      - {entity_id: rufus-mrk15, birth_derivation_id: nt-rufus-mrk15-birth, death_derivation_id: nt-rufus-mrk15-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [rufus-mrk15-mark-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 30 CE; the text states no age or lifespan."}
+      - {entity_id: rufus-rom16, birth_derivation_id: nt-rufus-rom16-birth, death_derivation_id: nt-rufus-rom16-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [rufus-rom16-romans-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 57 CE; the text states no age or lifespan."}
+      - {entity_id: salome-mat14, birth_derivation_id: nt-salome-mat14-birth, death_derivation_id: nt-salome-mat14-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [salome-mat14-matthew-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 29 CE; the text states no age or lifespan."}
+      - {entity_id: salome-mrk15, birth_derivation_id: nt-salome-mrk15-birth, death_derivation_id: nt-salome-mrk15-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [salome-mrk15-mark-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 30 CE; the text states no age or lifespan."}
+      - {entity_id: samaritan-leper-who-returned, birth_derivation_id: nt-samaritan-leper-who-returned-birth, death_derivation_id: nt-samaritan-leper-who-returned-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [samaritan-leper-who-returned-luke-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 30 CE; the text states no age or lifespan."}
+      - {entity_id: samaritan-woman-at-the-well, birth_derivation_id: nt-samaritan-woman-at-the-well-birth, death_derivation_id: nt-samaritan-woman-at-the-well-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [samaritan-woman-at-the-well-john-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 28 CE; the text states no age or lifespan."}
+      - {entity_id: sapphira, birth_derivation_id: nt-sapphira-birth, death_derivation_id: nt-sapphira-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [sapphira-acts-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 33 CE; the text states no age or lifespan."}
+      - {entity_id: sceva, birth_derivation_id: nt-sceva-birth, death_derivation_id: nt-sceva-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [sceva-acts-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 52 CE; the text states no age or lifespan."}
+      - {entity_id: secundus, birth_derivation_id: nt-secundus-birth, death_derivation_id: nt-secundus-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [secundus-acts-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 54 CE; the text states no age or lifespan."}
+      - {entity_id: semein, birth_derivation_id: nt-semein-birth, death_derivation_id: nt-semein-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [semein-luke-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window from the genealogy (interpolated between josech and mattathias-luk3-26 in the genealogy); no age is stated."}
+      - {entity_id: sergius-paulus, birth_derivation_id: nt-sergius-paulus-birth, death_derivation_id: nt-sergius-paulus-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [sergius-paulus-acts-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 46 CE; the text states no age or lifespan."}
+      - {entity_id: servant-girl-who-questioned-peter, birth_derivation_id: nt-servant-girl-who-questioned-peter-birth, death_derivation_id: nt-servant-girl-who-questioned-peter-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [servant-girl-who-questioned-peter-mark-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 30 CE; the text states no age or lifespan."}
+      - {entity_id: servant-of-centurion, birth_derivation_id: nt-servant-of-centurion-birth, death_derivation_id: nt-servant-of-centurion-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [servant-of-centurion-matthew-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 28 CE; the text states no age or lifespan."}
+      - {entity_id: shealtiel-luk3, birth_derivation_id: nt-shealtiel-luk3-birth, death_derivation_id: nt-shealtiel-luk3-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [shealtiel-luk3-luke-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window from the genealogy (interpolated between neri and rhesa in the genealogy); no age is stated."}
+      - {entity_id: silas, birth_derivation_id: nt-silas-birth, death_derivation_id: nt-silas-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [silas-acts-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 49 CE; the text states no age or lifespan."}
+      - {entity_id: simeon-act13, birth_derivation_id: nt-simeon-act13-birth, death_derivation_id: nt-simeon-act13-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [simeon-act13-acts-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 46 CE; the text states no age or lifespan."}
+      - {entity_id: simeon-luk2, birth_derivation_id: nt-simeon-luk2-birth, death_derivation_id: nt-simeon-luk2-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [simeon-luk2-luke-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 5 BCE; the text states no age or lifespan."}
+      - {entity_id: simeon-luk3, birth_derivation_id: nt-simeon-luk3-birth, death_derivation_id: nt-simeon-luk3-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [simeon-luk3-luke-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window from the genealogy (interpolated between judah-luk3 and levi-luk3-29 in the genealogy); no age is stated."}
+      - {entity_id: simon-act8, birth_derivation_id: nt-simon-act8-birth, death_derivation_id: nt-simon-act8-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [simon-act8-acts-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 34 CE; the text states no age or lifespan."}
+      - {entity_id: simon-act9, birth_derivation_id: nt-simon-act9-birth, death_derivation_id: nt-simon-act9-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [simon-act9-acts-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 36 CE; the text states no age or lifespan."}
+      - {entity_id: simon-jhn6, birth_derivation_id: nt-simon-jhn6-birth, death_derivation_id: nt-simon-jhn6-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [simon-jhn6-john-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 28 CE; the text states no age or lifespan."}
+      - {entity_id: simon-mat10, birth_derivation_id: nt-simon-mat10-birth, death_derivation_id: nt-simon-mat10-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [simon-mat10-matthew-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 28 CE; the text states no age or lifespan."}
+      - {entity_id: simon-mat13, birth_derivation_id: nt-simon-mat13-birth, death_derivation_id: nt-simon-mat13-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [simon-mat13-matthew-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 29 CE; the text states no age or lifespan."}
+      - {entity_id: simon-mat26, birth_derivation_id: nt-simon-mat26-birth, death_derivation_id: nt-simon-mat26-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [simon-mat26-matthew-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 28 CE; the text states no age or lifespan."}
+      - {entity_id: simon-mat27, birth_derivation_id: nt-simon-mat27-birth, death_derivation_id: nt-simon-mat27-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [simon-mat27-matthew-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 30 CE; the text states no age or lifespan."}
+      - {entity_id: sinful-woman-who-anointed-jesus, birth_derivation_id: nt-sinful-woman-who-anointed-jesus-birth, death_derivation_id: nt-sinful-woman-who-anointed-jesus-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [sinful-woman-who-anointed-jesus-luke-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 28 CE; the text states no age or lifespan."}
+      - {entity_id: sister-of-paul, birth_derivation_id: nt-sister-of-paul-birth, death_derivation_id: nt-sister-of-paul-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [sister-of-paul-acts-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 58 CE; the text states no age or lifespan."}
+      - {entity_id: slave-girl-of-philippi, birth_derivation_id: nt-slave-girl-of-philippi-birth, death_derivation_id: nt-slave-girl-of-philippi-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [slave-girl-of-philippi-acts-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 49 CE; the text states no age or lifespan."}
+      - {entity_id: son-of-royal-official, birth_derivation_id: nt-son-of-royal-official-birth, death_derivation_id: nt-son-of-royal-official-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [son-of-royal-official-john-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 28 CE; the text states no age or lifespan."}
+      - {entity_id: son-of-widow-of-nain, birth_derivation_id: nt-son-of-widow-of-nain-birth, death_derivation_id: nt-son-of-widow-of-nain-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [son-of-widow-of-nain-luke-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 28 CE; the text states no age or lifespan."}
+      - {entity_id: sopater, birth_derivation_id: nt-sopater-birth, death_derivation_id: nt-sopater-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [sopater-acts-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 54 CE; the text states no age or lifespan."}
+      - {entity_id: sosthenes, birth_derivation_id: nt-sosthenes-birth, death_derivation_id: nt-sosthenes-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [sosthenes-acts-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 52 CE; the text states no age or lifespan."}
+      - {entity_id: stachys, birth_derivation_id: nt-stachys-birth, death_derivation_id: nt-stachys-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [stachys-romans-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 57 CE; the text states no age or lifespan."}
+      - {entity_id: stephanas, birth_derivation_id: nt-stephanas-birth, death_derivation_id: nt-stephanas-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [stephanas-1-corinthians-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 54 CE; the text states no age or lifespan."}
+      - {entity_id: stephen, birth_derivation_id: nt-stephen-birth, death_derivation_id: nt-stephen-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [stephen-acts-na28-attested], alternative_claim_ids: [], explanation: "Martyred in Jerusalem (Acts 7); year editorial."}
+      - {entity_id: susanna-luk8, birth_derivation_id: nt-susanna-luk8-birth, death_derivation_id: nt-susanna-luk8-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [susanna-luk8-luke-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 29 CE; the text states no age or lifespan."}
+      - {entity_id: syntyche, birth_derivation_id: nt-syntyche-birth, death_derivation_id: nt-syntyche-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [syntyche-philippians-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 61 CE; the text states no age or lifespan."}
+      - {entity_id: syrophoenician-woman, birth_derivation_id: nt-syrophoenician-woman-birth, death_derivation_id: nt-syrophoenician-woman-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [syrophoenician-woman-mark-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 29 CE; the text states no age or lifespan."}
+      - {entity_id: tabitha, birth_derivation_id: nt-tabitha-birth, death_derivation_id: nt-tabitha-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [tabitha-acts-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 36 CE; the text states no age or lifespan."}
+      - {entity_id: tertius, birth_derivation_id: nt-tertius-birth, death_derivation_id: nt-tertius-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [tertius-romans-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 57 CE; the text states no age or lifespan."}
+      - {entity_id: tertullus, birth_derivation_id: nt-tertullus-birth, death_derivation_id: nt-tertullus-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [tertullus-acts-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 58 CE; the text states no age or lifespan."}
+      - {entity_id: the-egyptian-rebel, birth_derivation_id: nt-the-egyptian-rebel-birth, death_derivation_id: nt-the-egyptian-rebel-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [the-egyptian-rebel-acts-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 57 CE; the text states no age or lifespan."}
+      - {entity_id: theophilus, birth_derivation_id: nt-theophilus-birth, death_derivation_id: nt-theophilus-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [theophilus-luke-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 7 BCE; the text states no age or lifespan."}
+      - {entity_id: theudas, birth_derivation_id: nt-theudas-birth, death_derivation_id: nt-theudas-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [theudas-acts-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 33 CE; the text states no age or lifespan."}
+      - {entity_id: thomas, birth_derivation_id: nt-thomas-birth, death_derivation_id: nt-thomas-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [thomas-matthew-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 28 CE; the text states no age or lifespan."}
+      - {entity_id: tiberius, birth_derivation_id: nt-tiberius-birth, death_derivation_id: nt-tiberius-death, life_basis: synchronized, confidence_grade: C, evidence_claim_ids: [tiberius-matthew-na28-attested], alternative_claim_ids: [], explanation: "Roman emperor 14-37 CE (Luke 3:1)."}
+      - {entity_id: timaeus, birth_derivation_id: nt-timaeus-birth, death_derivation_id: nt-timaeus-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [timaeus-mark-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 29 CE; the text states no age or lifespan."}
+      - {entity_id: timon, birth_derivation_id: nt-timon-birth, death_derivation_id: nt-timon-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [timon-acts-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 33 CE; the text states no age or lifespan."}
+      - {entity_id: timothy, birth_derivation_id: nt-timothy-birth, death_derivation_id: nt-timothy-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [timothy-acts-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 49 CE; the text states no age or lifespan."}
+      - {entity_id: titus-2co2, birth_derivation_id: nt-titus-2co2-birth, death_derivation_id: nt-titus-2co2-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [titus-2co2-2-corinthians-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 50 CE; the text states no age or lifespan."}
+      - {entity_id: town-clerk-of-ephesus, birth_derivation_id: nt-town-clerk-of-ephesus-birth, death_derivation_id: nt-town-clerk-of-ephesus-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [town-clerk-of-ephesus-acts-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 52 CE; the text states no age or lifespan."}
+      - {entity_id: trophimus, birth_derivation_id: nt-trophimus-birth, death_derivation_id: nt-trophimus-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [trophimus-acts-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 54 CE; the text states no age or lifespan."}
+      - {entity_id: tryphaena, birth_derivation_id: nt-tryphaena-birth, death_derivation_id: nt-tryphaena-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [tryphaena-romans-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 57 CE; the text states no age or lifespan."}
+      - {entity_id: tryphosa, birth_derivation_id: nt-tryphosa-birth, death_derivation_id: nt-tryphosa-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [tryphosa-romans-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 57 CE; the text states no age or lifespan."}
+      - {entity_id: tychicus, birth_derivation_id: nt-tychicus-birth, death_derivation_id: nt-tychicus-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [tychicus-acts-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 54 CE; the text states no age or lifespan."}
+      - {entity_id: tyrannus, birth_derivation_id: nt-tyrannus-birth, death_derivation_id: nt-tyrannus-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [tyrannus-acts-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 52 CE; the text states no age or lifespan."}
+      - {entity_id: urbanus, birth_derivation_id: nt-urbanus-birth, death_derivation_id: nt-urbanus-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [urbanus-romans-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 57 CE; the text states no age or lifespan."}
+      - {entity_id: widow-of-nain, birth_derivation_id: nt-widow-of-nain-birth, death_derivation_id: nt-widow-of-nain-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [widow-of-nain-luke-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 28 CE; the text states no age or lifespan."}
+      - {entity_id: wife-of-peter, birth_derivation_id: nt-wife-of-peter-birth, death_derivation_id: nt-wife-of-peter-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [wife-of-peter-matthew-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 28 CE; the text states no age or lifespan."}
+      - {entity_id: wife-of-pilate, birth_derivation_id: nt-wife-of-pilate-birth, death_derivation_id: nt-wife-of-pilate-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [wife-of-pilate-matthew-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 30 CE; the text states no age or lifespan."}
+      - {entity_id: woman-caught-in-adultery, birth_derivation_id: nt-woman-caught-in-adultery-birth, death_derivation_id: nt-woman-caught-in-adultery-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [woman-caught-in-adultery-john-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 29 CE; the text states no age or lifespan."}
+      - {entity_id: woman-who-anointed-jesus-at-bethany, birth_derivation_id: nt-woman-who-anointed-jesus-at-bethany-birth, death_derivation_id: nt-woman-who-anointed-jesus-at-bethany-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [woman-who-anointed-jesus-at-bethany-matthew-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 30 CE; the text states no age or lifespan."}
+      - {entity_id: woman-with-hemorrhage, birth_derivation_id: nt-woman-with-hemorrhage-birth, death_derivation_id: nt-woman-with-hemorrhage-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [woman-with-hemorrhage-mark-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 28 CE; the text states no age or lifespan."}
+      - {entity_id: young-man-who-fled-naked, birth_derivation_id: nt-young-man-who-fled-naked-birth, death_derivation_id: nt-young-man-who-fled-naked-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [young-man-who-fled-naked-mark-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 30 CE; the text states no age or lifespan."}
+      - {entity_id: zacchaeus, birth_derivation_id: nt-zacchaeus-birth, death_derivation_id: nt-zacchaeus-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [zacchaeus-luke-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 30 CE; the text states no age or lifespan."}
+      - {entity_id: zadok-mat1, birth_derivation_id: nt-zadok-mat1-birth, death_derivation_id: nt-zadok-mat1-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [zadok-mat1-matthew-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window from the genealogy (interpolated between azor and achim in the genealogy); no age is stated."}
+      - {entity_id: zebedee, birth_derivation_id: nt-zebedee-birth, death_derivation_id: nt-zebedee-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [zebedee-matthew-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 28 CE; the text states no age or lifespan."}
+      - {entity_id: zechariah-luk1, birth_derivation_id: nt-zechariah-luk1-birth, death_derivation_id: nt-zechariah-luk1-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [zechariah-luk1-luke-na28-attested], alternative_claim_ids: [], explanation: "Advanced in years when John was born (Luke 1:7,18); years editorial."}
+      - {entity_id: zenas, birth_derivation_id: nt-zenas-birth, death_derivation_id: nt-zenas-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [zenas-titus-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window: first named in a passage set about 63 CE; the text states no age or lifespan."}
+      - {entity_id: zerubbabel-luk3, birth_derivation_id: nt-zerubbabel-luk3-birth, death_derivation_id: nt-zerubbabel-luk3-death, life_basis: editorial_estimate, confidence_grade: E, evidence_claim_ids: [zerubbabel-luk3-luke-na28-attested], alternative_claim_ids: [], explanation: "Grade-E display window from the genealogy (interpolated between shealtiel-luk3 and rhesa in the genealogy); no age is stated."}

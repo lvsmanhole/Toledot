@@ -67,7 +67,7 @@ def _conflicts(dataset: Dataset) -> dict[str, Any]:
         grouped.setdefault((claim.subject_id, claim.predicate, claim.object_id), []).append(claim)
 
     conflicts = []
-    for (subject_id, predicate, object_id), claims in sorted(grouped.items()):
+    for (subject_id, predicate, object_id), claims in sorted(grouped.items(), key=lambda item: (item[0][0], item[0][1], item[0][2] or "")):
         values = {
             json.dumps(dict(claim.value), ensure_ascii=False, sort_keys=True, separators=(",", ":"))
             for claim in claims

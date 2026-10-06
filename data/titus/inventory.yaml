@@ -1,0 +1,6 @@
+schema_version: 1
+record_type: inventory_units
+records:
+  - {id: inv-titus-1, work_id: titus, locator: "Titus 1", reviewed: true, passage_ids: [titus-1-na28], identified_entity_ids: [jesus, paul, titus-2co2], event_ids: [titus-letter], no_individuals: false, review_basis: "Person census cross-checked against the TIPNR proper-name index; unnamed individuals curated by hand.", citations: [{source_id: na28, locator: "Titus 1", witness_id: greek-titus-na28}]}
+  - {id: inv-titus-2, work_id: titus, locator: "Titus 2", reviewed: true, passage_ids: [titus-2-na28], identified_entity_ids: [jesus], event_ids: [titus-letter], no_individuals: false, review_basis: "Person census cross-checked against the TIPNR proper-name index; unnamed individuals curated by hand.", citations: [{source_id: na28, locator: "Titus 2", witness_id: greek-titus-na28}]}
+  - {id: inv-titus-3, work_id: titus, locator: "Titus 3", reviewed: true, passage_ids: [titus-3-na28], identified_entity_ids: [apollos, artemas, jesus, tychicus, zenas], event_ids: [titus-letter], no_individuals: false, review_basis: "Person census cross-checked against the TIPNR proper-name index; unnamed individuals curated by hand.", citations: [{source_id: na28, locator: "Titus 3", witness_id: greek-titus-na28}]}

@@ -1,0 +1,5 @@
+schema_version: 1
+record_type: entities
+records:
+  - {id: alexander-1ti1, entity_type: human, primary_name: "Alexander", classification: named_person, identity_status: named, aliases: [], gender: male, description: "Opponent of Paul, along with Hymenaeus", tipnr_id: "Alexander@1Ti.1.20-2Ti", citations: [{source_id: na28, locator: "1 Timothy 1:20", witness_id: greek-1-timothy-na28}, {source_id: tipnr-stepbible, locator: "Alexander@1Ti.1.20-2Ti"}]}
+  - {id: hymenaeus, entity_type: human, primary_name: "Hymenaeus", classification: named_person, identity_status: named, aliases: ["Hymeneus"], gender: male, description: "A man who rejected faith and good conscience.", tipnr_id: "Hymenaeus@1Ti.1.20-2Ti", citations: [{source_id: na28, locator: "1 Timothy 1:20", witness_id: greek-1-timothy-na28}, {source_id: tipnr-stepbible, locator: "Hymenaeus@1Ti.1.20-2Ti"}]}

@@ -1,0 +1,5 @@
+schema_version: 1
+record_type: claims
+records:
+  - {id: cain-1-john-na28-attested, subject_id: cain, predicate: attested_in_passage, value: {kind: attestation, status: "named in 1 John"}, evidence_type: explicit_text, witness_id: greek-1-john-na28, confidence: A, citations: [{source_id: na28, locator: "1 John 3:12", witness_id: greek-1-john-na28}]}
+  - {id: jesus-1-john-na28-attested, subject_id: jesus, predicate: attested_in_passage, value: {kind: attestation, status: "named in 1 John"}, evidence_type: explicit_text, witness_id: greek-1-john-na28, confidence: A, citations: [{source_id: na28, locator: "1 John 1:3, 7; 2:1, 22; 3:23; 4:2, 3, 15; 5:1, 5, 6, 20", witness_id: greek-1-john-na28}]}

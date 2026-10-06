@@ -1,0 +1,27 @@
+schema_version: 1
+record_type: passages
+records:
+  - {id: luke-1-na28, work_id: luke, witness_id: greek-luke-na28, locator: "Luke 1", citations: [{source_id: na28, locator: "Luke 1", witness_id: greek-luke-na28}]}
+  - {id: luke-2-na28, work_id: luke, witness_id: greek-luke-na28, locator: "Luke 2", citations: [{source_id: na28, locator: "Luke 2", witness_id: greek-luke-na28}]}
+  - {id: luke-3-na28, work_id: luke, witness_id: greek-luke-na28, locator: "Luke 3", citations: [{source_id: na28, locator: "Luke 3", witness_id: greek-luke-na28}]}
+  - {id: luke-4-na28, work_id: luke, witness_id: greek-luke-na28, locator: "Luke 4", citations: [{source_id: na28, locator: "Luke 4", witness_id: greek-luke-na28}]}
+  - {id: luke-5-na28, work_id: luke, witness_id: greek-luke-na28, locator: "Luke 5", citations: [{source_id: na28, locator: "Luke 5", witness_id: greek-luke-na28}]}
+  - {id: luke-6-na28, work_id: luke, witness_id: greek-luke-na28, locator: "Luke 6", citations: [{source_id: na28, locator: "Luke 6", witness_id: greek-luke-na28}]}
+  - {id: luke-7-na28, work_id: luke, witness_id: greek-luke-na28, locator: "Luke 7", citations: [{source_id: na28, locator: "Luke 7", witness_id: greek-luke-na28}]}
+  - {id: luke-8-na28, work_id: luke, witness_id: greek-luke-na28, locator: "Luke 8", citations: [{source_id: na28, locator: "Luke 8", witness_id: greek-luke-na28}]}
+  - {id: luke-9-na28, work_id: luke, witness_id: greek-luke-na28, locator: "Luke 9", citations: [{source_id: na28, locator: "Luke 9", witness_id: greek-luke-na28}]}
+  - {id: luke-10-na28, work_id: luke, witness_id: greek-luke-na28, locator: "Luke 10", citations: [{source_id: na28, locator: "Luke 10", witness_id: greek-luke-na28}]}
+  - {id: luke-11-na28, work_id: luke, witness_id: greek-luke-na28, locator: "Luke 11", citations: [{source_id: na28, locator: "Luke 11", witness_id: greek-luke-na28}]}
+  - {id: luke-12-na28, work_id: luke, witness_id: greek-luke-na28, locator: "Luke 12", citations: [{source_id: na28, locator: "Luke 12", witness_id: greek-luke-na28}]}
+  - {id: luke-13-na28, work_id: luke, witness_id: greek-luke-na28, locator: "Luke 13", citations: [{source_id: na28, locator: "Luke 13", witness_id: greek-luke-na28}]}
+  - {id: luke-14-na28, work_id: luke, witness_id: greek-luke-na28, locator: "Luke 14", citations: [{source_id: na28, locator: "Luke 14", witness_id: greek-luke-na28}]}
+  - {id: luke-15-na28, work_id: luke, witness_id: greek-luke-na28, locator: "Luke 15", citations: [{source_id: na28, locator: "Luke 15", witness_id: greek-luke-na28}]}
+  - {id: luke-16-na28, work_id: luke, witness_id: greek-luke-na28, locator: "Luke 16", citations: [{source_id: na28, locator: "Luke 16", witness_id: greek-luke-na28}]}
+  - {id: luke-17-na28, work_id: luke, witness_id: greek-luke-na28, locator: "Luke 17", citations: [{source_id: na28, locator: "Luke 17", witness_id: greek-luke-na28}]}
+  - {id: luke-18-na28, work_id: luke, witness_id: greek-luke-na28, locator: "Luke 18", citations: [{source_id: na28, locator: "Luke 18", witness_id: greek-luke-na28}]}
+  - {id: luke-19-na28, work_id: luke, witness_id: greek-luke-na28, locator: "Luke 19", citations: [{source_id: na28, locator: "Luke 19", witness_id: greek-luke-na28}]}
+  - {id: luke-20-na28, work_id: luke, witness_id: greek-luke-na28, locator: "Luke 20", citations: [{source_id: na28, locator: "Luke 20", witness_id: greek-luke-na28}]}
+  - {id: luke-21-na28, work_id: luke, witness_id: greek-luke-na28, locator: "Luke 21", citations: [{source_id: na28, locator: "Luke 21", witness_id: greek-luke-na28}]}
+  - {id: luke-22-na28, work_id: luke, witness_id: greek-luke-na28, locator: "Luke 22", citations: [{source_id: na28, locator: "Luke 22", witness_id: greek-luke-na28}]}
+  - {id: luke-23-na28, work_id: luke, witness_id: greek-luke-na28, locator: "Luke 23", citations: [{source_id: na28, locator: "Luke 23", witness_id: greek-luke-na28}]}
+  - {id: luke-24-na28, work_id: luke, witness_id: greek-luke-na28, locator: "Luke 24", citations: [{source_id: na28, locator: "Luke 24", witness_id: greek-luke-na28}]}

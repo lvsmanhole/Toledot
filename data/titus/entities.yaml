@@ -1,0 +1,5 @@
+schema_version: 1
+record_type: entities
+records:
+  - {id: artemas, entity_type: human, primary_name: "Artemas", classification: named_person, identity_status: named, aliases: [], gender: male, description: "Companion of Paul, potential replacement for Titus", tipnr_id: "Artemas@Tit.3.12", citations: [{source_id: na28, locator: "Titus 3:12", witness_id: greek-titus-na28}, {source_id: tipnr-stepbible, locator: "Artemas@Tit.3.12"}]}
+  - {id: zenas, entity_type: human, primary_name: "Zenas", classification: named_person, identity_status: named, aliases: [], gender: male, description: "Christian lawyer whom Paul commended", tipnr_id: "Zenas@Tit.3.13", citations: [{source_id: na28, locator: "Titus 3:13", witness_id: greek-titus-na28}, {source_id: tipnr-stepbible, locator: "Zenas@Tit.3.13"}]}

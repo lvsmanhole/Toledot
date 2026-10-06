@@ -1,0 +1,8 @@
+schema_version: 1
+record_type: passages
+records:
+  - {id: james-1-na28, work_id: james, witness_id: greek-james-na28, locator: "James 1", citations: [{source_id: na28, locator: "James 1", witness_id: greek-james-na28}]}
+  - {id: james-2-na28, work_id: james, witness_id: greek-james-na28, locator: "James 2", citations: [{source_id: na28, locator: "James 2", witness_id: greek-james-na28}]}
+  - {id: james-3-na28, work_id: james, witness_id: greek-james-na28, locator: "James 3", citations: [{source_id: na28, locator: "James 3", witness_id: greek-james-na28}]}
+  - {id: james-4-na28, work_id: james, witness_id: greek-james-na28, locator: "James 4", citations: [{source_id: na28, locator: "James 4", witness_id: greek-james-na28}]}
+  - {id: james-5-na28, work_id: james, witness_id: greek-james-na28, locator: "James 5", citations: [{source_id: na28, locator: "James 5", witness_id: greek-james-na28}]}

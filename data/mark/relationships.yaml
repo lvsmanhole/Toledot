@@ -1,0 +1,6 @@
+schema_version: 1
+record_type: relationships
+records:
+  - {id: simon-mat27-parent-alexander-mrk15, relationship_type: parent, subject_id: simon-mat27, object_id: alexander-mrk15, claim_ids: [], citations: [{source_id: na28, locator: "Mark 15:21", witness_id: greek-mark-na28}]}
+  - {id: timaeus-parent-bartimaeus, relationship_type: parent, subject_id: timaeus, object_id: bartimaeus, claim_ids: [], citations: [{source_id: na28, locator: "Mark 10:46", witness_id: greek-mark-na28}]}
+  - {id: simon-mat27-parent-rufus-mrk15, relationship_type: parent, subject_id: simon-mat27, object_id: rufus-mrk15, claim_ids: [], citations: [{source_id: na28, locator: "Mark 15:21", witness_id: greek-mark-na28}]}

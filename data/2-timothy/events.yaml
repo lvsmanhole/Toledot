@@ -1,0 +1,4 @@
+schema_version: 1
+record_type: events
+records:
+  - {id: 2-timothy-letter, event_type: letter, name: "Letter: 2 Timothy", participants: [{entity_id: jesus, role: named participant}, {entity_id: onesiphorus, role: named participant}, {entity_id: alexander-1ti1, role: named participant}, {entity_id: aquila, role: named participant}, {entity_id: carpus, role: named participant}, {entity_id: claudia, role: named participant}, {entity_id: crescens, role: named participant}, {entity_id: david, role: named participant}], date_claim_ids: [], citations: [{source_id: na28, locator: "2 Timothy", witness_id: greek-2-timothy-na28}]}

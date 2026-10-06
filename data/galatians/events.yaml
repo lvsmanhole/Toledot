@@ -1,0 +1,4 @@
+schema_version: 1
+record_type: events
+records:
+  - {id: galatians-letter, event_type: letter, name: "Letter: Galatians", participants: [{entity_id: jesus, role: named participant}, {entity_id: abram, role: named participant}, {entity_id: peter, role: named participant}, {entity_id: barnabas, role: named participant}, {entity_id: james-mat13, role: named participant}, {entity_id: hagar, role: named participant}, {entity_id: javan, role: named participant}, {entity_id: paul, role: named participant}], date_claim_ids: [], citations: [{source_id: na28, locator: "Galatians", witness_id: greek-galatians-na28}]}

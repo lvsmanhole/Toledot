@@ -69,11 +69,28 @@ git diff --check
   - Jochebed "daughter of Levi".
 - **Agag in Balaam's oracle (Num 24:7):** now a TIPNR person. Check whether a dynastic-title reading is preferable.
 
+## New Testament (added 2026-10-06)
+
+- **Coverage:** all 27 books, against the NA28 witness. That is about 420 people: 266 new from TIPNR and 49 curated unnamed individuals, plus Old Testament people mentioned retrospectively.
+- **Events:** 28 Gospel-parallel events, plus dated events (census of Quirinius, Luke 3:1, crucifixion, Agrippa I's death, Claudius' edict, Gallio).
+- **Identity decisions:** listed in `tools/ot_census/README.md`. Isaiah's Immanuel was split from Jesus in commit `b9e098b`.
+- **Open:**
+  - NA28 versus English (World English Bible / Majority text) differences are only partly handled: the KJV-subscription and omitted-verse filters are in place, but places such as Mark 1:2 "Isaiah" and Luke 3:19 "Philip" are not.
+  - No Geʽez New Testament edition is selected.
+  - The traditional identifications of epistle authors (James, Jude, Peter) follow TIPNR.
+
 ## Immediate next work
 
-1. **New Testament.** Start with the Gospels. TIPNR covers New Testament people too: reuse `tools/ot_census` (bridge, generator) with New Testament books and a curated chronology (Herods, procurators, high priests, Roman emperors). Preserve the Synoptic parallels and chronology differences.
-2. **Revelation.** Keep the historical, visionary and symbolic layers separate.
-3. **The website.** Build it as a consumer of `generated/` (Phase E of the roadmap).
+1. **The website (Phase E).** Build it as a consumer of `generated/`:
+   - a horizontal pan/zoom timeline with book navigation and search;
+   - detail panels for people and events;
+   - provenance by witness, with a visible distinction between grade-E windows and text-anchored dates;
+   - Gospel-parallel views;
+   - accessibility (keyboard, reduced motion, mobile).
+2. **Data hardening as the site exposes needs:**
+   - Greek and Geʽez name forms;
+   - LXX verse-level presence;
+   - checking the deuterocanon against Rahlfs–Hanhart.
 
 ## Evidence model rules to preserve
 

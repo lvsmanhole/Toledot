@@ -1,0 +1,6 @@
+schema_version: 1
+record_type: inventory_units
+records:
+  - {id: inv-2-peter-1, work_id: 2-peter, locator: "2 Peter 1", reviewed: true, passage_ids: [2-peter-1-na28], identified_entity_ids: [jesus, peter], event_ids: [2-peter-letter], no_individuals: false, review_basis: "Person census cross-checked against the TIPNR proper-name index; unnamed individuals curated by hand.", citations: [{source_id: na28, locator: "2 Peter 1", witness_id: greek-2-peter-na28}]}
+  - {id: inv-2-peter-2, work_id: 2-peter, locator: "2 Peter 2", reviewed: true, passage_ids: [2-peter-2-na28], identified_entity_ids: [balaam-numbers, beor-balaam, jesus, lot, noah], event_ids: [2-peter-letter], no_individuals: false, review_basis: "Person census cross-checked against the TIPNR proper-name index; unnamed individuals curated by hand.", citations: [{source_id: na28, locator: "2 Peter 2", witness_id: greek-2-peter-na28}]}
+  - {id: inv-2-peter-3, work_id: 2-peter, locator: "2 Peter 3", reviewed: true, passage_ids: [2-peter-3-na28], identified_entity_ids: [jesus, paul], event_ids: [2-peter-letter], no_individuals: false, review_basis: "Person census cross-checked against the TIPNR proper-name index; unnamed individuals curated by hand.", citations: [{source_id: na28, locator: "2 Peter 3", witness_id: greek-2-peter-na28}]}

@@ -1,0 +1,4 @@
+schema_version: 1
+record_type: inventory_units
+records:
+  - {id: inv-2-john-1, work_id: 2-john, locator: "2 John 1", reviewed: true, passage_ids: [2-john-1-na28], identified_entity_ids: [jesus], event_ids: [2-john-letter], no_individuals: false, review_basis: "Person census cross-checked against the TIPNR proper-name index; unnamed individuals curated by hand.", citations: [{source_id: na28, locator: "2 John 1", witness_id: greek-2-john-na28}]}

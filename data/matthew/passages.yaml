@@ -1,0 +1,31 @@
+schema_version: 1
+record_type: passages
+records:
+  - {id: matthew-1-na28, work_id: matthew, witness_id: greek-matthew-na28, locator: "Matthew 1", citations: [{source_id: na28, locator: "Matthew 1", witness_id: greek-matthew-na28}]}
+  - {id: matthew-2-na28, work_id: matthew, witness_id: greek-matthew-na28, locator: "Matthew 2", citations: [{source_id: na28, locator: "Matthew 2", witness_id: greek-matthew-na28}]}
+  - {id: matthew-3-na28, work_id: matthew, witness_id: greek-matthew-na28, locator: "Matthew 3", citations: [{source_id: na28, locator: "Matthew 3", witness_id: greek-matthew-na28}]}
+  - {id: matthew-4-na28, work_id: matthew, witness_id: greek-matthew-na28, locator: "Matthew 4", citations: [{source_id: na28, locator: "Matthew 4", witness_id: greek-matthew-na28}]}
+  - {id: matthew-5-na28, work_id: matthew, witness_id: greek-matthew-na28, locator: "Matthew 5", citations: [{source_id: na28, locator: "Matthew 5", witness_id: greek-matthew-na28}]}
+  - {id: matthew-6-na28, work_id: matthew, witness_id: greek-matthew-na28, locator: "Matthew 6", citations: [{source_id: na28, locator: "Matthew 6", witness_id: greek-matthew-na28}]}
+  - {id: matthew-7-na28, work_id: matthew, witness_id: greek-matthew-na28, locator: "Matthew 7", citations: [{source_id: na28, locator: "Matthew 7", witness_id: greek-matthew-na28}]}
+  - {id: matthew-8-na28, work_id: matthew, witness_id: greek-matthew-na28, locator: "Matthew 8", citations: [{source_id: na28, locator: "Matthew 8", witness_id: greek-matthew-na28}]}
+  - {id: matthew-9-na28, work_id: matthew, witness_id: greek-matthew-na28, locator: "Matthew 9", citations: [{source_id: na28, locator: "Matthew 9", witness_id: greek-matthew-na28}]}
+  - {id: matthew-10-na28, work_id: matthew, witness_id: greek-matthew-na28, locator: "Matthew 10", citations: [{source_id: na28, locator: "Matthew 10", witness_id: greek-matthew-na28}]}
+  - {id: matthew-11-na28, work_id: matthew, witness_id: greek-matthew-na28, locator: "Matthew 11", citations: [{source_id: na28, locator: "Matthew 11", witness_id: greek-matthew-na28}]}
+  - {id: matthew-12-na28, work_id: matthew, witness_id: greek-matthew-na28, locator: "Matthew 12", citations: [{source_id: na28, locator: "Matthew 12", witness_id: greek-matthew-na28}]}
+  - {id: matthew-13-na28, work_id: matthew, witness_id: greek-matthew-na28, locator: "Matthew 13", citations: [{source_id: na28, locator: "Matthew 13", witness_id: greek-matthew-na28}]}
+  - {id: matthew-14-na28, work_id: matthew, witness_id: greek-matthew-na28, locator: "Matthew 14", citations: [{source_id: na28, locator: "Matthew 14", witness_id: greek-matthew-na28}]}
+  - {id: matthew-15-na28, work_id: matthew, witness_id: greek-matthew-na28, locator: "Matthew 15", citations: [{source_id: na28, locator: "Matthew 15", witness_id: greek-matthew-na28}]}
+  - {id: matthew-16-na28, work_id: matthew, witness_id: greek-matthew-na28, locator: "Matthew 16", citations: [{source_id: na28, locator: "Matthew 16", witness_id: greek-matthew-na28}]}
+  - {id: matthew-17-na28, work_id: matthew, witness_id: greek-matthew-na28, locator: "Matthew 17", citations: [{source_id: na28, locator: "Matthew 17", witness_id: greek-matthew-na28}]}
+  - {id: matthew-18-na28, work_id: matthew, witness_id: greek-matthew-na28, locator: "Matthew 18", citations: [{source_id: na28, locator: "Matthew 18", witness_id: greek-matthew-na28}]}
+  - {id: matthew-19-na28, work_id: matthew, witness_id: greek-matthew-na28, locator: "Matthew 19", citations: [{source_id: na28, locator: "Matthew 19", witness_id: greek-matthew-na28}]}
+  - {id: matthew-20-na28, work_id: matthew, witness_id: greek-matthew-na28, locator: "Matthew 20", citations: [{source_id: na28, locator: "Matthew 20", witness_id: greek-matthew-na28}]}
+  - {id: matthew-21-na28, work_id: matthew, witness_id: greek-matthew-na28, locator: "Matthew 21", citations: [{source_id: na28, locator: "Matthew 21", witness_id: greek-matthew-na28}]}
+  - {id: matthew-22-na28, work_id: matthew, witness_id: greek-matthew-na28, locator: "Matthew 22", citations: [{source_id: na28, locator: "Matthew 22", witness_id: greek-matthew-na28}]}
+  - {id: matthew-23-na28, work_id: matthew, witness_id: greek-matthew-na28, locator: "Matthew 23", citations: [{source_id: na28, locator: "Matthew 23", witness_id: greek-matthew-na28}]}
+  - {id: matthew-24-na28, work_id: matthew, witness_id: greek-matthew-na28, locator: "Matthew 24", citations: [{source_id: na28, locator: "Matthew 24", witness_id: greek-matthew-na28}]}
+  - {id: matthew-25-na28, work_id: matthew, witness_id: greek-matthew-na28, locator: "Matthew 25", citations: [{source_id: na28, locator: "Matthew 25", witness_id: greek-matthew-na28}]}
+  - {id: matthew-26-na28, work_id: matthew, witness_id: greek-matthew-na28, locator: "Matthew 26", citations: [{source_id: na28, locator: "Matthew 26", witness_id: greek-matthew-na28}]}
+  - {id: matthew-27-na28, work_id: matthew, witness_id: greek-matthew-na28, locator: "Matthew 27", citations: [{source_id: na28, locator: "Matthew 27", witness_id: greek-matthew-na28}]}
+  - {id: matthew-28-na28, work_id: matthew, witness_id: greek-matthew-na28, locator: "Matthew 28", citations: [{source_id: na28, locator: "Matthew 28", witness_id: greek-matthew-na28}]}

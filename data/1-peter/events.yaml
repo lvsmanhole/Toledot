@@ -1,0 +1,4 @@
+schema_version: 1
+record_type: events
+records:
+  - {id: 1-peter-letter, event_type: letter, name: "Letter: 1 Peter", participants: [{entity_id: jesus, role: named participant}, {entity_id: abram, role: named participant}, {entity_id: mark-act12, role: named participant}, {entity_id: noah, role: named participant}, {entity_id: peter, role: named participant}, {entity_id: sarai, role: named participant}, {entity_id: silas, role: named participant}], date_claim_ids: [], citations: [{source_id: na28, locator: "1 Peter", witness_id: greek-1-peter-na28}]}

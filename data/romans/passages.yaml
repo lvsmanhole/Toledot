@@ -1,0 +1,19 @@
+schema_version: 1
+record_type: passages
+records:
+  - {id: romans-1-na28, work_id: romans, witness_id: greek-romans-na28, locator: "Romans 1", citations: [{source_id: na28, locator: "Romans 1", witness_id: greek-romans-na28}]}
+  - {id: romans-2-na28, work_id: romans, witness_id: greek-romans-na28, locator: "Romans 2", citations: [{source_id: na28, locator: "Romans 2", witness_id: greek-romans-na28}]}
+  - {id: romans-3-na28, work_id: romans, witness_id: greek-romans-na28, locator: "Romans 3", citations: [{source_id: na28, locator: "Romans 3", witness_id: greek-romans-na28}]}
+  - {id: romans-4-na28, work_id: romans, witness_id: greek-romans-na28, locator: "Romans 4", citations: [{source_id: na28, locator: "Romans 4", witness_id: greek-romans-na28}]}
+  - {id: romans-5-na28, work_id: romans, witness_id: greek-romans-na28, locator: "Romans 5", citations: [{source_id: na28, locator: "Romans 5", witness_id: greek-romans-na28}]}
+  - {id: romans-6-na28, work_id: romans, witness_id: greek-romans-na28, locator: "Romans 6", citations: [{source_id: na28, locator: "Romans 6", witness_id: greek-romans-na28}]}
+  - {id: romans-7-na28, work_id: romans, witness_id: greek-romans-na28, locator: "Romans 7", citations: [{source_id: na28, locator: "Romans 7", witness_id: greek-romans-na28}]}
+  - {id: romans-8-na28, work_id: romans, witness_id: greek-romans-na28, locator: "Romans 8", citations: [{source_id: na28, locator: "Romans 8", witness_id: greek-romans-na28}]}
+  - {id: romans-9-na28, work_id: romans, witness_id: greek-romans-na28, locator: "Romans 9", citations: [{source_id: na28, locator: "Romans 9", witness_id: greek-romans-na28}]}
+  - {id: romans-10-na28, work_id: romans, witness_id: greek-romans-na28, locator: "Romans 10", citations: [{source_id: na28, locator: "Romans 10", witness_id: greek-romans-na28}]}
+  - {id: romans-11-na28, work_id: romans, witness_id: greek-romans-na28, locator: "Romans 11", citations: [{source_id: na28, locator: "Romans 11", witness_id: greek-romans-na28}]}
+  - {id: romans-12-na28, work_id: romans, witness_id: greek-romans-na28, locator: "Romans 12", citations: [{source_id: na28, locator: "Romans 12", witness_id: greek-romans-na28}]}
+  - {id: romans-13-na28, work_id: romans, witness_id: greek-romans-na28, locator: "Romans 13", citations: [{source_id: na28, locator: "Romans 13", witness_id: greek-romans-na28}]}
+  - {id: romans-14-na28, work_id: romans, witness_id: greek-romans-na28, locator: "Romans 14", citations: [{source_id: na28, locator: "Romans 14", witness_id: greek-romans-na28}]}
+  - {id: romans-15-na28, work_id: romans, witness_id: greek-romans-na28, locator: "Romans 15", citations: [{source_id: na28, locator: "Romans 15", witness_id: greek-romans-na28}]}
+  - {id: romans-16-na28, work_id: romans, witness_id: greek-romans-na28, locator: "Romans 16", citations: [{source_id: na28, locator: "Romans 16", witness_id: greek-romans-na28}]}

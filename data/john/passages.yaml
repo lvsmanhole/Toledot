@@ -1,0 +1,24 @@
+schema_version: 1
+record_type: passages
+records:
+  - {id: john-1-na28, work_id: john, witness_id: greek-john-na28, locator: "John 1", citations: [{source_id: na28, locator: "John 1", witness_id: greek-john-na28}]}
+  - {id: john-2-na28, work_id: john, witness_id: greek-john-na28, locator: "John 2", citations: [{source_id: na28, locator: "John 2", witness_id: greek-john-na28}]}
+  - {id: john-3-na28, work_id: john, witness_id: greek-john-na28, locator: "John 3", citations: [{source_id: na28, locator: "John 3", witness_id: greek-john-na28}]}
+  - {id: john-4-na28, work_id: john, witness_id: greek-john-na28, locator: "John 4", citations: [{source_id: na28, locator: "John 4", witness_id: greek-john-na28}]}
+  - {id: john-5-na28, work_id: john, witness_id: greek-john-na28, locator: "John 5", citations: [{source_id: na28, locator: "John 5", witness_id: greek-john-na28}]}
+  - {id: john-6-na28, work_id: john, witness_id: greek-john-na28, locator: "John 6", citations: [{source_id: na28, locator: "John 6", witness_id: greek-john-na28}]}
+  - {id: john-7-na28, work_id: john, witness_id: greek-john-na28, locator: "John 7", citations: [{source_id: na28, locator: "John 7", witness_id: greek-john-na28}]}
+  - {id: john-8-na28, work_id: john, witness_id: greek-john-na28, locator: "John 8", citations: [{source_id: na28, locator: "John 8", witness_id: greek-john-na28}]}
+  - {id: john-9-na28, work_id: john, witness_id: greek-john-na28, locator: "John 9", citations: [{source_id: na28, locator: "John 9", witness_id: greek-john-na28}]}
+  - {id: john-10-na28, work_id: john, witness_id: greek-john-na28, locator: "John 10", citations: [{source_id: na28, locator: "John 10", witness_id: greek-john-na28}]}
+  - {id: john-11-na28, work_id: john, witness_id: greek-john-na28, locator: "John 11", citations: [{source_id: na28, locator: "John 11", witness_id: greek-john-na28}]}
+  - {id: john-12-na28, work_id: john, witness_id: greek-john-na28, locator: "John 12", citations: [{source_id: na28, locator: "John 12", witness_id: greek-john-na28}]}
+  - {id: john-13-na28, work_id: john, witness_id: greek-john-na28, locator: "John 13", citations: [{source_id: na28, locator: "John 13", witness_id: greek-john-na28}]}
+  - {id: john-14-na28, work_id: john, witness_id: greek-john-na28, locator: "John 14", citations: [{source_id: na28, locator: "John 14", witness_id: greek-john-na28}]}
+  - {id: john-15-na28, work_id: john, witness_id: greek-john-na28, locator: "John 15", citations: [{source_id: na28, locator: "John 15", witness_id: greek-john-na28}]}
+  - {id: john-16-na28, work_id: john, witness_id: greek-john-na28, locator: "John 16", citations: [{source_id: na28, locator: "John 16", witness_id: greek-john-na28}]}
+  - {id: john-17-na28, work_id: john, witness_id: greek-john-na28, locator: "John 17", citations: [{source_id: na28, locator: "John 17", witness_id: greek-john-na28}]}
+  - {id: john-18-na28, work_id: john, witness_id: greek-john-na28, locator: "John 18", citations: [{source_id: na28, locator: "John 18", witness_id: greek-john-na28}]}
+  - {id: john-19-na28, work_id: john, witness_id: greek-john-na28, locator: "John 19", citations: [{source_id: na28, locator: "John 19", witness_id: greek-john-na28}]}
+  - {id: john-20-na28, work_id: john, witness_id: greek-john-na28, locator: "John 20", citations: [{source_id: na28, locator: "John 20", witness_id: greek-john-na28}]}
+  - {id: john-21-na28, work_id: john, witness_id: greek-john-na28, locator: "John 21", citations: [{source_id: na28, locator: "John 21", witness_id: greek-john-na28}]}

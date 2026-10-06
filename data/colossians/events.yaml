@@ -1,0 +1,4 @@
+schema_version: 1
+record_type: events
+records:
+  - {id: colossians-letter, event_type: letter, name: "Letter: Colossians", participants: [{entity_id: jesus, role: named participant}, {entity_id: paul, role: named participant}, {entity_id: epaphras, role: named participant}, {entity_id: archippus, role: named participant}, {entity_id: aristarchus, role: named participant}, {entity_id: barnabas, role: named participant}, {entity_id: demas, role: named participant}, {entity_id: javan, role: named participant}], date_claim_ids: [], citations: [{source_id: na28, locator: "Colossians", witness_id: greek-colossians-na28}]}

@@ -1,0 +1,5 @@
+schema_version: 1
+record_type: entities
+records:
+  - {id: diotrephes, entity_type: human, primary_name: "Diotrephes", classification: named_person, identity_status: named, aliases: [], gender: male, description: "Church leader who opposed John", tipnr_id: "Diotrephes@3Jn.1.9", citations: [{source_id: na28, locator: "3 John 1:9", witness_id: greek-3-john-na28}, {source_id: tipnr-stepbible, locator: "Diotrephes@3Jn.1.9"}]}
+  - {id: gaius-3jn1, entity_type: human, primary_name: "Gaius", classification: named_person, identity_status: named, aliases: [], gender: male, description: "Recipient of John's third epistle; commended for his faithfulness.", tipnr_id: "Gaius@3Jn.1.1", citations: [{source_id: na28, locator: "3 John 1:1", witness_id: greek-3-john-na28}, {source_id: tipnr-stepbible, locator: "Gaius@3Jn.1.1"}]}

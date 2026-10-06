@@ -1,0 +1,4 @@
+schema_version: 1
+record_type: inventory_units
+records:
+  - {id: inv-3-john-1, work_id: 3-john, locator: "3 John 1", reviewed: true, passage_ids: [3-john-1-na28], identified_entity_ids: [demetrius, diotrephes, gaius-3jn1], event_ids: [3-john-letter], no_individuals: false, review_basis: "Person census cross-checked against the TIPNR proper-name index; unnamed individuals curated by hand.", citations: [{source_id: na28, locator: "3 John 1", witness_id: greek-3-john-na28}]}

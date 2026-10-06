@@ -1,0 +1,4 @@
+schema_version: 1
+record_type: passages
+records:
+  - {id: philemon-1-na28, work_id: philemon, witness_id: greek-philemon-na28, locator: "Philemon 1", citations: [{source_id: na28, locator: "Philemon 1", witness_id: greek-philemon-na28}]}

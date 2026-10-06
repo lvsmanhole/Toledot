@@ -1,0 +1,4 @@
+schema_version: 1
+record_type: inventory_units
+records:
+  - {id: inv-sinodos-sirate-tsion-book, work_id: sinodos-sirate-tsion, locator: "Sinodos: Sirate Tsion", reviewed: false, passage_ids: [sinodos-sirate-tsion-book-review], identified_entity_ids: [], event_ids: [], no_individuals: false, review_basis: "Book-level canon entry only (Ethiopian broader New Testament); no people are asserted pending a citable edition.", citations: [{source_id: ethiopic-edition-pending, locator: "Sinodos: Sirate Tsion"}]}

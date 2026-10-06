@@ -1,0 +1,25 @@
+schema_version: 1
+record_type: passages
+records:
+  - {id: revelation-1-na28, work_id: revelation, witness_id: greek-revelation-na28, locator: "Revelation 1", citations: [{source_id: na28, locator: "Revelation 1", witness_id: greek-revelation-na28}]}
+  - {id: revelation-2-na28, work_id: revelation, witness_id: greek-revelation-na28, locator: "Revelation 2", citations: [{source_id: na28, locator: "Revelation 2", witness_id: greek-revelation-na28}]}
+  - {id: revelation-3-na28, work_id: revelation, witness_id: greek-revelation-na28, locator: "Revelation 3", citations: [{source_id: na28, locator: "Revelation 3", witness_id: greek-revelation-na28}]}
+  - {id: revelation-4-na28, work_id: revelation, witness_id: greek-revelation-na28, locator: "Revelation 4", citations: [{source_id: na28, locator: "Revelation 4", witness_id: greek-revelation-na28}]}
+  - {id: revelation-5-na28, work_id: revelation, witness_id: greek-revelation-na28, locator: "Revelation 5", citations: [{source_id: na28, locator: "Revelation 5", witness_id: greek-revelation-na28}]}
+  - {id: revelation-6-na28, work_id: revelation, witness_id: greek-revelation-na28, locator: "Revelation 6", citations: [{source_id: na28, locator: "Revelation 6", witness_id: greek-revelation-na28}]}
+  - {id: revelation-7-na28, work_id: revelation, witness_id: greek-revelation-na28, locator: "Revelation 7", citations: [{source_id: na28, locator: "Revelation 7", witness_id: greek-revelation-na28}]}
+  - {id: revelation-8-na28, work_id: revelation, witness_id: greek-revelation-na28, locator: "Revelation 8", citations: [{source_id: na28, locator: "Revelation 8", witness_id: greek-revelation-na28}]}
+  - {id: revelation-9-na28, work_id: revelation, witness_id: greek-revelation-na28, locator: "Revelation 9", citations: [{source_id: na28, locator: "Revelation 9", witness_id: greek-revelation-na28}]}
+  - {id: revelation-10-na28, work_id: revelation, witness_id: greek-revelation-na28, locator: "Revelation 10", citations: [{source_id: na28, locator: "Revelation 10", witness_id: greek-revelation-na28}]}
+  - {id: revelation-11-na28, work_id: revelation, witness_id: greek-revelation-na28, locator: "Revelation 11", citations: [{source_id: na28, locator: "Revelation 11", witness_id: greek-revelation-na28}]}
+  - {id: revelation-12-na28, work_id: revelation, witness_id: greek-revelation-na28, locator: "Revelation 12", citations: [{source_id: na28, locator: "Revelation 12", witness_id: greek-revelation-na28}]}
+  - {id: revelation-13-na28, work_id: revelation, witness_id: greek-revelation-na28, locator: "Revelation 13", citations: [{source_id: na28, locator: "Revelation 13", witness_id: greek-revelation-na28}]}
+  - {id: revelation-14-na28, work_id: revelation, witness_id: greek-revelation-na28, locator: "Revelation 14", citations: [{source_id: na28, locator: "Revelation 14", witness_id: greek-revelation-na28}]}
+  - {id: revelation-15-na28, work_id: revelation, witness_id: greek-revelation-na28, locator: "Revelation 15", citations: [{source_id: na28, locator: "Revelation 15", witness_id: greek-revelation-na28}]}
+  - {id: revelation-16-na28, work_id: revelation, witness_id: greek-revelation-na28, locator: "Revelation 16", citations: [{source_id: na28, locator: "Revelation 16", witness_id: greek-revelation-na28}]}
+  - {id: revelation-17-na28, work_id: revelation, witness_id: greek-revelation-na28, locator: "Revelation 17", citations: [{source_id: na28, locator: "Revelation 17", witness_id: greek-revelation-na28}]}
+  - {id: revelation-18-na28, work_id: revelation, witness_id: greek-revelation-na28, locator: "Revelation 18", citations: [{source_id: na28, locator: "Revelation 18", witness_id: greek-revelation-na28}]}
+  - {id: revelation-19-na28, work_id: revelation, witness_id: greek-revelation-na28, locator: "Revelation 19", citations: [{source_id: na28, locator: "Revelation 19", witness_id: greek-revelation-na28}]}
+  - {id: revelation-20-na28, work_id: revelation, witness_id: greek-revelation-na28, locator: "Revelation 20", citations: [{source_id: na28, locator: "Revelation 20", witness_id: greek-revelation-na28}]}
+  - {id: revelation-21-na28, work_id: revelation, witness_id: greek-revelation-na28, locator: "Revelation 21", citations: [{source_id: na28, locator: "Revelation 21", witness_id: greek-revelation-na28}]}
+  - {id: revelation-22-na28, work_id: revelation, witness_id: greek-revelation-na28, locator: "Revelation 22", citations: [{source_id: na28, locator: "Revelation 22", witness_id: greek-revelation-na28}]}

@@ -1,0 +1,4 @@
+schema_version: 1
+record_type: events
+records:
+  - {id: 1-timothy-letter, event_type: letter, name: "Letter: 1 Timothy", participants: [{entity_id: jesus, role: named participant}, {entity_id: timothy, role: named participant}, {entity_id: adam, role: named participant}, {entity_id: alexander-1ti1, role: named participant}, {entity_id: eve, role: named participant}, {entity_id: hymenaeus, role: named participant}, {entity_id: paul, role: named participant}, {entity_id: pilate, role: named participant}], date_claim_ids: [], citations: [{source_id: na28, locator: "1 Timothy", witness_id: greek-1-timothy-na28}]}

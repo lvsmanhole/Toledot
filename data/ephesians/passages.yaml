@@ -1,0 +1,9 @@
+schema_version: 1
+record_type: passages
+records:
+  - {id: ephesians-1-na28, work_id: ephesians, witness_id: greek-ephesians-na28, locator: "Ephesians 1", citations: [{source_id: na28, locator: "Ephesians 1", witness_id: greek-ephesians-na28}]}
+  - {id: ephesians-2-na28, work_id: ephesians, witness_id: greek-ephesians-na28, locator: "Ephesians 2", citations: [{source_id: na28, locator: "Ephesians 2", witness_id: greek-ephesians-na28}]}
+  - {id: ephesians-3-na28, work_id: ephesians, witness_id: greek-ephesians-na28, locator: "Ephesians 3", citations: [{source_id: na28, locator: "Ephesians 3", witness_id: greek-ephesians-na28}]}
+  - {id: ephesians-4-na28, work_id: ephesians, witness_id: greek-ephesians-na28, locator: "Ephesians 4", citations: [{source_id: na28, locator: "Ephesians 4", witness_id: greek-ephesians-na28}]}
+  - {id: ephesians-5-na28, work_id: ephesians, witness_id: greek-ephesians-na28, locator: "Ephesians 5", citations: [{source_id: na28, locator: "Ephesians 5", witness_id: greek-ephesians-na28}]}
+  - {id: ephesians-6-na28, work_id: ephesians, witness_id: greek-ephesians-na28, locator: "Ephesians 6", citations: [{source_id: na28, locator: "Ephesians 6", witness_id: greek-ephesians-na28}]}

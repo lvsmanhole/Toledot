@@ -1,0 +1,8 @@
+schema_version: 1
+record_type: passages
+records:
+  - {id: 1-john-1-na28, work_id: 1-john, witness_id: greek-1-john-na28, locator: "1 John 1", citations: [{source_id: na28, locator: "1 John 1", witness_id: greek-1-john-na28}]}
+  - {id: 1-john-2-na28, work_id: 1-john, witness_id: greek-1-john-na28, locator: "1 John 2", citations: [{source_id: na28, locator: "1 John 2", witness_id: greek-1-john-na28}]}
+  - {id: 1-john-3-na28, work_id: 1-john, witness_id: greek-1-john-na28, locator: "1 John 3", citations: [{source_id: na28, locator: "1 John 3", witness_id: greek-1-john-na28}]}
+  - {id: 1-john-4-na28, work_id: 1-john, witness_id: greek-1-john-na28, locator: "1 John 4", citations: [{source_id: na28, locator: "1 John 4", witness_id: greek-1-john-na28}]}
+  - {id: 1-john-5-na28, work_id: 1-john, witness_id: greek-1-john-na28, locator: "1 John 5", citations: [{source_id: na28, locator: "1 John 5", witness_id: greek-1-john-na28}]}

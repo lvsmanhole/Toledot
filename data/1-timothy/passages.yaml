@@ -1,0 +1,9 @@
+schema_version: 1
+record_type: passages
+records:
+  - {id: 1-timothy-1-na28, work_id: 1-timothy, witness_id: greek-1-timothy-na28, locator: "1 Timothy 1", citations: [{source_id: na28, locator: "1 Timothy 1", witness_id: greek-1-timothy-na28}]}
+  - {id: 1-timothy-2-na28, work_id: 1-timothy, witness_id: greek-1-timothy-na28, locator: "1 Timothy 2", citations: [{source_id: na28, locator: "1 Timothy 2", witness_id: greek-1-timothy-na28}]}
+  - {id: 1-timothy-3-na28, work_id: 1-timothy, witness_id: greek-1-timothy-na28, locator: "1 Timothy 3", citations: [{source_id: na28, locator: "1 Timothy 3", witness_id: greek-1-timothy-na28}]}
+  - {id: 1-timothy-4-na28, work_id: 1-timothy, witness_id: greek-1-timothy-na28, locator: "1 Timothy 4", citations: [{source_id: na28, locator: "1 Timothy 4", witness_id: greek-1-timothy-na28}]}
+  - {id: 1-timothy-5-na28, work_id: 1-timothy, witness_id: greek-1-timothy-na28, locator: "1 Timothy 5", citations: [{source_id: na28, locator: "1 Timothy 5", witness_id: greek-1-timothy-na28}]}
+  - {id: 1-timothy-6-na28, work_id: 1-timothy, witness_id: greek-1-timothy-na28, locator: "1 Timothy 6", citations: [{source_id: na28, locator: "1 Timothy 6", witness_id: greek-1-timothy-na28}]}

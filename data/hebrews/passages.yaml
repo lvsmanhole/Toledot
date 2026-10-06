@@ -1,0 +1,16 @@
+schema_version: 1
+record_type: passages
+records:
+  - {id: hebrews-1-na28, work_id: hebrews, witness_id: greek-hebrews-na28, locator: "Hebrews 1", citations: [{source_id: na28, locator: "Hebrews 1", witness_id: greek-hebrews-na28}]}
+  - {id: hebrews-2-na28, work_id: hebrews, witness_id: greek-hebrews-na28, locator: "Hebrews 2", citations: [{source_id: na28, locator: "Hebrews 2", witness_id: greek-hebrews-na28}]}
+  - {id: hebrews-3-na28, work_id: hebrews, witness_id: greek-hebrews-na28, locator: "Hebrews 3", citations: [{source_id: na28, locator: "Hebrews 3", witness_id: greek-hebrews-na28}]}
+  - {id: hebrews-4-na28, work_id: hebrews, witness_id: greek-hebrews-na28, locator: "Hebrews 4", citations: [{source_id: na28, locator: "Hebrews 4", witness_id: greek-hebrews-na28}]}
+  - {id: hebrews-5-na28, work_id: hebrews, witness_id: greek-hebrews-na28, locator: "Hebrews 5", citations: [{source_id: na28, locator: "Hebrews 5", witness_id: greek-hebrews-na28}]}
+  - {id: hebrews-6-na28, work_id: hebrews, witness_id: greek-hebrews-na28, locator: "Hebrews 6", citations: [{source_id: na28, locator: "Hebrews 6", witness_id: greek-hebrews-na28}]}
+  - {id: hebrews-7-na28, work_id: hebrews, witness_id: greek-hebrews-na28, locator: "Hebrews 7", citations: [{source_id: na28, locator: "Hebrews 7", witness_id: greek-hebrews-na28}]}
+  - {id: hebrews-8-na28, work_id: hebrews, witness_id: greek-hebrews-na28, locator: "Hebrews 8", citations: [{source_id: na28, locator: "Hebrews 8", witness_id: greek-hebrews-na28}]}
+  - {id: hebrews-9-na28, work_id: hebrews, witness_id: greek-hebrews-na28, locator: "Hebrews 9", citations: [{source_id: na28, locator: "Hebrews 9", witness_id: greek-hebrews-na28}]}
+  - {id: hebrews-10-na28, work_id: hebrews, witness_id: greek-hebrews-na28, locator: "Hebrews 10", citations: [{source_id: na28, locator: "Hebrews 10", witness_id: greek-hebrews-na28}]}
+  - {id: hebrews-11-na28, work_id: hebrews, witness_id: greek-hebrews-na28, locator: "Hebrews 11", citations: [{source_id: na28, locator: "Hebrews 11", witness_id: greek-hebrews-na28}]}
+  - {id: hebrews-12-na28, work_id: hebrews, witness_id: greek-hebrews-na28, locator: "Hebrews 12", citations: [{source_id: na28, locator: "Hebrews 12", witness_id: greek-hebrews-na28}]}
+  - {id: hebrews-13-na28, work_id: hebrews, witness_id: greek-hebrews-na28, locator: "Hebrews 13", citations: [{source_id: na28, locator: "Hebrews 13", witness_id: greek-hebrews-na28}]}

@@ -1,0 +1,9 @@
+schema_version: 1
+record_type: relationships
+records:
+  - {id: john-mat16-parent-andrew, relationship_type: parent, subject_id: john-mat16, object_id: andrew, claim_ids: [], citations: [{source_id: na28, locator: "John 1:42", witness_id: greek-john-na28}]}
+  - {id: caiaphas-spouse-daughter-of-annas, relationship_type: spouse, subject_id: caiaphas, object_id: daughter-of-annas, claim_ids: [], citations: [{source_id: na28, locator: "John 18:13", witness_id: greek-john-na28}]}
+  - {id: simon-jhn6-parent-judas-mat10-4, relationship_type: parent, subject_id: simon-jhn6, object_id: judas-mat10-4, claim_ids: [], citations: [{source_id: na28, locator: "John 6:71", witness_id: greek-john-na28}]}
+  - {id: annas-parent-daughter-of-annas, relationship_type: parent, subject_id: annas, object_id: daughter-of-annas, claim_ids: [], citations: [{source_id: na28, locator: "John 18:24", witness_id: greek-john-na28}]}
+  - {id: royal-official-capernaum-parent-son-of-royal-official, relationship_type: parent, subject_id: royal-official-capernaum, object_id: son-of-royal-official, claim_ids: [], citations: [{source_id: na28, locator: "John 4:47", witness_id: greek-john-na28}]}
+  - {id: parents-of-man-born-blind-father-parent-man-born-blind, relationship_type: parent, subject_id: parents-of-man-born-blind-father, object_id: man-born-blind, claim_ids: [], citations: [{source_id: na28, locator: "John 9:1", witness_id: greek-john-na28}]}

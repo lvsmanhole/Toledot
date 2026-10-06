@@ -1,0 +1,6 @@
+schema_version: 1
+record_type: entities
+records:
+  - {id: antipas, entity_type: human, primary_name: "Antipas", classification: named_person, identity_status: named, aliases: [], gender: male, description: "Faithful martyr in Pergamum", tipnr_id: "Antipas@Rev.2.13", citations: [{source_id: na28, locator: "Revelation 2:13", witness_id: greek-revelation-na28}, {source_id: tipnr-stepbible, locator: "Antipas@Rev.2.13"}]}
+  - {id: john-of-patmos, entity_type: human, primary_name: "John (the seer of Revelation)", classification: named_person, identity_status: named, aliases: [], gender: male, description: "Recipient of the revelation on Patmos. Tradition identifies him with the apostle John; the text does not.", citations: [{source_id: na28, locator: "Revelation 1:1", witness_id: greek-revelation-na28}]}
+  - {id: jezebel-of-thyatira, entity_type: human, primary_name: "Jezebel of Thyatira", classification: named_person, identity_status: named, aliases: [], gender: female, description: "Self-styled prophetess at Thyatira whom the letter calls 'Jezebel'; the name is applied symbolically and is not Ahab's queen.", citations: [{source_id: na28, locator: "Revelation 2:20", witness_id: greek-revelation-na28}]}

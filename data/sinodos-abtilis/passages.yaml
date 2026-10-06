@@ -1,0 +1,4 @@
+schema_version: 1
+record_type: passages
+records:
+  - {id: sinodos-abtilis-book-review, work_id: sinodos-abtilis, witness_id: book-review-sinodos-abtilis, locator: "Sinodos: Abtilis", citations: [{source_id: ethiopic-edition-pending, locator: "Sinodos: Abtilis", witness_id: book-review-sinodos-abtilis}]}

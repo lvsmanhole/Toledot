@@ -1,0 +1,6 @@
+schema_version: 1
+record_type: passages
+records:
+  - {id: 2-peter-1-na28, work_id: 2-peter, witness_id: greek-2-peter-na28, locator: "2 Peter 1", citations: [{source_id: na28, locator: "2 Peter 1", witness_id: greek-2-peter-na28}]}
+  - {id: 2-peter-2-na28, work_id: 2-peter, witness_id: greek-2-peter-na28, locator: "2 Peter 2", citations: [{source_id: na28, locator: "2 Peter 2", witness_id: greek-2-peter-na28}]}
+  - {id: 2-peter-3-na28, work_id: 2-peter, witness_id: greek-2-peter-na28, locator: "2 Peter 3", citations: [{source_id: na28, locator: "2 Peter 3", witness_id: greek-2-peter-na28}]}

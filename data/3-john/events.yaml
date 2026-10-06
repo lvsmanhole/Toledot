@@ -1,0 +1,4 @@
+schema_version: 1
+record_type: events
+records:
+  - {id: 3-john-letter, event_type: letter, name: "Letter: 3 John", participants: [{entity_id: demetrius, role: named participant}, {entity_id: diotrephes, role: named participant}, {entity_id: gaius-3jn1, role: named participant}], date_claim_ids: [], citations: [{source_id: na28, locator: "3 John", witness_id: greek-3-john-na28}]}

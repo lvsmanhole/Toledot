@@ -1,0 +1,10 @@
+schema_version: 1
+record_type: relationships
+records:
+  - {id: ananias-act5-spouse-sapphira, relationship_type: spouse, subject_id: ananias-act5, object_id: sapphira, claim_ids: [], citations: [{source_id: na28, locator: "Acts 5:1", witness_id: greek-acts-na28}]}
+  - {id: aquila-spouse-priscilla, relationship_type: spouse, subject_id: aquila, object_id: priscilla, claim_ids: [], citations: [{source_id: na28, locator: "Acts 18:26", witness_id: greek-acts-na28}]}
+  - {id: drusilla-spouse-felix, relationship_type: spouse, subject_id: drusilla, object_id: felix, claim_ids: [], citations: [{source_id: na28, locator: "Acts 24:27", witness_id: greek-acts-na28}]}
+  - {id: mary-act12-parent-mark-act12, relationship_type: parent, subject_id: mary-act12, object_id: mark-act12, claim_ids: [], citations: [{source_id: na28, locator: "Acts 12:12", witness_id: greek-acts-na28}]}
+  - {id: pyrrhus-parent-sopater, relationship_type: parent, subject_id: pyrrhus, object_id: sopater, claim_ids: [], citations: [{source_id: na28, locator: "Acts 20:4", witness_id: greek-acts-na28}]}
+  - {id: father-of-timothy-parent-timothy, relationship_type: parent, subject_id: father-of-timothy, object_id: timothy, claim_ids: [], citations: [{source_id: na28, locator: "Acts 16:1", witness_id: greek-acts-na28}]}
+  - {id: sister-of-paul-parent-nephew-of-paul, relationship_type: parent, subject_id: sister-of-paul, object_id: nephew-of-paul, claim_ids: [], citations: [{source_id: na28, locator: "Acts 23:16", witness_id: greek-acts-na28}]}

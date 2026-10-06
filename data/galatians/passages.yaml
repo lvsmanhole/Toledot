@@ -1,0 +1,9 @@
+schema_version: 1
+record_type: passages
+records:
+  - {id: galatians-1-na28, work_id: galatians, witness_id: greek-galatians-na28, locator: "Galatians 1", citations: [{source_id: na28, locator: "Galatians 1", witness_id: greek-galatians-na28}]}
+  - {id: galatians-2-na28, work_id: galatians, witness_id: greek-galatians-na28, locator: "Galatians 2", citations: [{source_id: na28, locator: "Galatians 2", witness_id: greek-galatians-na28}]}
+  - {id: galatians-3-na28, work_id: galatians, witness_id: greek-galatians-na28, locator: "Galatians 3", citations: [{source_id: na28, locator: "Galatians 3", witness_id: greek-galatians-na28}]}
+  - {id: galatians-4-na28, work_id: galatians, witness_id: greek-galatians-na28, locator: "Galatians 4", citations: [{source_id: na28, locator: "Galatians 4", witness_id: greek-galatians-na28}]}
+  - {id: galatians-5-na28, work_id: galatians, witness_id: greek-galatians-na28, locator: "Galatians 5", citations: [{source_id: na28, locator: "Galatians 5", witness_id: greek-galatians-na28}]}
+  - {id: galatians-6-na28, work_id: galatians, witness_id: greek-galatians-na28, locator: "Galatians 6", citations: [{source_id: na28, locator: "Galatians 6", witness_id: greek-galatians-na28}]}

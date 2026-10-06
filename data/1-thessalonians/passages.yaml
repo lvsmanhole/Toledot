@@ -1,0 +1,8 @@
+schema_version: 1
+record_type: passages
+records:
+  - {id: 1-thessalonians-1-na28, work_id: 1-thessalonians, witness_id: greek-1-thessalonians-na28, locator: "1 Thessalonians 1", citations: [{source_id: na28, locator: "1 Thessalonians 1", witness_id: greek-1-thessalonians-na28}]}
+  - {id: 1-thessalonians-2-na28, work_id: 1-thessalonians, witness_id: greek-1-thessalonians-na28, locator: "1 Thessalonians 2", citations: [{source_id: na28, locator: "1 Thessalonians 2", witness_id: greek-1-thessalonians-na28}]}
+  - {id: 1-thessalonians-3-na28, work_id: 1-thessalonians, witness_id: greek-1-thessalonians-na28, locator: "1 Thessalonians 3", citations: [{source_id: na28, locator: "1 Thessalonians 3", witness_id: greek-1-thessalonians-na28}]}
+  - {id: 1-thessalonians-4-na28, work_id: 1-thessalonians, witness_id: greek-1-thessalonians-na28, locator: "1 Thessalonians 4", citations: [{source_id: na28, locator: "1 Thessalonians 4", witness_id: greek-1-thessalonians-na28}]}
+  - {id: 1-thessalonians-5-na28, work_id: 1-thessalonians, witness_id: greek-1-thessalonians-na28, locator: "1 Thessalonians 5", citations: [{source_id: na28, locator: "1 Thessalonians 5", witness_id: greek-1-thessalonians-na28}]}

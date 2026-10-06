@@ -1,0 +1,4 @@
+schema_version: 1
+record_type: passages
+records:
+  - {id: sinodos-sirate-tsion-book-review, work_id: sinodos-sirate-tsion, witness_id: book-review-sinodos-sirate-tsion, locator: "Sinodos: Sirate Tsion", citations: [{source_id: ethiopic-edition-pending, locator: "Sinodos: Sirate Tsion", witness_id: book-review-sinodos-sirate-tsion}]}

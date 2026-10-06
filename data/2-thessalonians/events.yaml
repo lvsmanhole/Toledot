@@ -1,0 +1,4 @@
+schema_version: 1
+record_type: events
+records:
+  - {id: 2-thessalonians-letter, event_type: letter, name: "Letter: 2 Thessalonians", participants: [{entity_id: jesus, role: named participant}, {entity_id: paul, role: named participant}, {entity_id: silas, role: named participant}, {entity_id: timothy, role: named participant}], date_claim_ids: [], citations: [{source_id: na28, locator: "2 Thessalonians", witness_id: greek-2-thessalonians-na28}]}
