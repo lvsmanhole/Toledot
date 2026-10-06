@@ -28,10 +28,11 @@ git diff --check
 
 ## State at handoff (updated 2026-10-06)
 
-- Genesis 1–50, Exodus 1–40, Leviticus 1–27, and Numbers 1–36 have chapter-level evidence across Septuagint, Geʽez, and Masoretic witness IDs.
+- Genesis 1–50, Exodus 1–40, Leviticus 1–27, Numbers 1–36, and Deuteronomy 1–34 have chapter-level evidence across Septuagint, Geʽez, and Masoretic witness IDs.
 - Numbers has had a person-level completeness review: the twelve spies and fathers, the full Numbers 26 clan list, the Numbers 34 representatives and fathers, Beor, Salu, Peleth, Nun, and uniquely identifiable unnamed people (Num 11:27, 12:1, 15:32-36, 20:14, 21:1, 21:26). New review records live in `data/numbers/review/`, and the Genesis 46 parent links for Gad, Asher, and Benjamin in `data/genesis/37_50/gen46_*.yaml`.
 - `tests/test_numbers_census_regressions.py` asserts the reviewed people per chapter, per-witness attestation, and two dataset-wide guards: no alias leaks, and no parent who is under 12 or already dead at a child's display birth.
 - Fixed inherited bugs: Reuben's alias "Roubin" had leaked to all of Jacob's children through a YAML anchor; Dishon son of Seir and Dishon son of Anah had been merged; 62 parent/child pairs shared a grade-E bucket year (re-chained with disclosed 30-year editorial generations); Manasseh/Ephraim/Asenath now follow Genesis 41:46-52; Zimri/Cozbi die in the fortieth year, before the Midian campaign; Aaron was removed from Numbers 11 and 28–29.
+- Deuteronomy 1–34 is in `data/deuteronomy/` with `tests/test_deuteronomy_data.py`: dated address (1:3), Moses at 120, Moserah vs Hor, Hoshea at 32:44, Anak's family.
 - Verification at handoff: full suite green, strict validation 0/0, build and reports regenerated.
 
 ## Known open items
@@ -44,7 +45,7 @@ git diff --check
 
 ## Immediate next work
 
-1. Deuteronomy 1–34 (Moses' age 120 and death are explicit at Deut 34:7), then continue in canon order through the historical books, wisdom/prophets, deuterocanonical and Ethiopic broader-canon books, New Testament, and Revelation. For each book, add a chapter-person regression test like the Numbers one.
+1. Joshua (Joshua dies at 110, Josh 24:29; Caleb is 40 at the spy mission and 85 at Hebron, Josh 14:7,10), then continue in canon order through the historical books, wisdom/prophets, deuterocanonical and Ethiopic broader-canon books, New Testament, and Revelation. For each book, add a chapter-person regression test like the Numbers one.
 2. Give extra care to synchronized kings and Chronicles: separate rulers/namesakes unless evidence supports a merge; retain regnal/accession conventions and textual variants; surface uncertainty and overlap.
 3. Once coverage is broad and coherent, build the horizontal timeline UI as a consumer of the generated artifacts.
 

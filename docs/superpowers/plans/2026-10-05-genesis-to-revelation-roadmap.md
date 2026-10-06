@@ -28,7 +28,7 @@
 
 ## Phased work
 
-### Phase A — Pentateuch (active)
+### Phase A — Pentateuch (complete; Geʽez spelling verification open)
 
 - [x] Genesis 1–50 data foundation and expanded Genesis 36 / unnamed-person census.
 - [x] Exodus 1–7: reviewed chapter inventories, LXX/Geʽez/MT witnesses, person/group census, sourced relations and events, Moses/Aaron explicit ages, disclosed display lifespans.
@@ -52,7 +52,12 @@
   - [x] Completeness review (2026-10-06): the twelve spies and their fathers (Num 13); Peleth and Eliab of Reuben (Num 16); the king of Arad and the former king of Moab (Num 21); Beor (Num 22, 24, 31); Salu and Zur as Cozbi's father (Num 25); the full second-census clan list with Gilead's and Ephraim's clans (Num 26); Nun; the Numbers 34 fathers' lifespans; unnamed but unique individuals (Num 11:27, 12:1, 15:32-36, 20:14). Aaron was removed from Numbers 11 and 28–29, where the text does not name him.
   - [x] Numbers 26 vs Genesis 46 spelling variants (Nemuel/Jemuel, Zerah/Zohar, Zephon/Ziphion, Ozni/Ezbon, Arod/Arodi, Puvah/Puah, Shuham/Hushim, Ahiram/Ehi, Shephupham/Muppim, Hupham/Huppim) kept as aliases with grade-C editorial identity claims; conflicting genealogies (Ard/Naaman under Bela vs Benjamin; Jochebed "daughter of Levi") are recorded as claims, not merged parent links.
   - [ ] Open: Septuagint/Geʽez locators for the Numbers 26 clan list are chapter-level because the Greek order and verse numbers differ; the Septuagint omission of Becher (Num 26:35) and the LXX addition of Eleazar in Num 36:1 need checking against the printed editions; Agag in Balaam's oracle (Num 24:7) is not yet modeled.
-- [ ] Deuteronomy 1–34: speeches, named/unnamed people, Moses' age and death, variant witnesses.
+- [x] Deuteronomy 1–34: speeches, named/unnamed people, Moses' age and death, variant witnesses.
+  - [x] All 34 chapters inventoried in Septuagint, Geʽez, and Masoretic witnesses, with a per-chapter person regression test (`tests/test_deuteronomy_data.py`); retold events link back to their Exodus/Numbers event IDs instead of duplicating them.
+  - [x] Explicit chronology: the address is dated year 40, month 11, day 1 after the Exodus (1:3); Moses is 120 (31:2; 34:7) and is mourned for thirty days (34:8).
+  - [x] Variant traditions kept: Aaron's death at Moserah (10:6) beside Mount Hor (Num 20; 33); Masoretic "Hoshea son of Nun" (32:44); the "wandering Aramean" (26:5) is identified with Jacob only as a grade-C editorial claim.
+  - [x] Anak and his descendants Ahiman, Sheshai, and Talmai (Num 13:22; Deut 9:2) added to the Numbers 13 inventory.
+  - [ ] Open: the Greek forms at 10:6 (Moserah) and 32:44 (Iesous vs Hoshea) still need checking against Rahlfs–Hanhart; chapter 29 Greek/Geʽez locators are chapter-level because of the 28:69 versification shift.
 
 - [ ] Corpus-wide: Geʽez claims cite Dillmann locators but spellings have not been checked reading by reading; add verified Geʽez name forms before presenting them in the UI.
 - [x] Corpus-wide integrity guards (2026-10-06): no alias may leak between differently named people (fixed "Roubin" on all of Jacob's sons); every parent must be at least 12 and alive at a child's display birth (62 Genesis/Exodus/Numbers placements re-chained by disclosed 30-year editorial generations); the two Horite Dishons (Gen 36:21, 36:25) are now distinct.

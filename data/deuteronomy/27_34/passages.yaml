@@ -1,0 +1,27 @@
+schema_version: 1
+record_type: passages
+records:
+  - {id: deut-27-lxx, work_id: deuteronomy, witness_id: lxx-deuteronomy-rahlfs-hanhart, locator: "Deuteronomy 27", citations: [{source_id: rahlfs-hanhart-2006, locator: "Deuteronomy 27", witness_id: lxx-deuteronomy-rahlfs-hanhart}]}
+  - {id: deut-27-geez, work_id: deuteronomy, witness_id: geez-deuteronomy-dillmann, locator: "Deuteronomy 27", citations: [{source_id: dillmann-octateuch-1853, locator: "Deuteronomy 27", witness_id: geez-deuteronomy-dillmann}]}
+  - {id: deut-27-mt, work_id: deuteronomy, witness_id: mt-deuteronomy-bhs, locator: "Deuteronomy 27", citations: [{source_id: bhs-deuteronomy, locator: "Deuteronomy 27", witness_id: mt-deuteronomy-bhs}]}
+  - {id: deut-28-lxx, work_id: deuteronomy, witness_id: lxx-deuteronomy-rahlfs-hanhart, locator: "Deuteronomy 28", citations: [{source_id: rahlfs-hanhart-2006, locator: "Deuteronomy 28", witness_id: lxx-deuteronomy-rahlfs-hanhart}]}
+  - {id: deut-28-geez, work_id: deuteronomy, witness_id: geez-deuteronomy-dillmann, locator: "Deuteronomy 28", citations: [{source_id: dillmann-octateuch-1853, locator: "Deuteronomy 28", witness_id: geez-deuteronomy-dillmann}]}
+  - {id: deut-28-mt, work_id: deuteronomy, witness_id: mt-deuteronomy-bhs, locator: "Deuteronomy 28", citations: [{source_id: bhs-deuteronomy, locator: "Deuteronomy 28", witness_id: mt-deuteronomy-bhs}]}
+  - {id: deut-29-lxx, work_id: deuteronomy, witness_id: lxx-deuteronomy-rahlfs-hanhart, locator: "Deuteronomy 29", citations: [{source_id: rahlfs-hanhart-2006, locator: "Deuteronomy 29", witness_id: lxx-deuteronomy-rahlfs-hanhart}]}
+  - {id: deut-29-geez, work_id: deuteronomy, witness_id: geez-deuteronomy-dillmann, locator: "Deuteronomy 29", citations: [{source_id: dillmann-octateuch-1853, locator: "Deuteronomy 29", witness_id: geez-deuteronomy-dillmann}]}
+  - {id: deut-29-mt, work_id: deuteronomy, witness_id: mt-deuteronomy-bhs, locator: "Deuteronomy 29", citations: [{source_id: bhs-deuteronomy, locator: "Deuteronomy 29", witness_id: mt-deuteronomy-bhs}]}
+  - {id: deut-30-lxx, work_id: deuteronomy, witness_id: lxx-deuteronomy-rahlfs-hanhart, locator: "Deuteronomy 30", citations: [{source_id: rahlfs-hanhart-2006, locator: "Deuteronomy 30", witness_id: lxx-deuteronomy-rahlfs-hanhart}]}
+  - {id: deut-30-geez, work_id: deuteronomy, witness_id: geez-deuteronomy-dillmann, locator: "Deuteronomy 30", citations: [{source_id: dillmann-octateuch-1853, locator: "Deuteronomy 30", witness_id: geez-deuteronomy-dillmann}]}
+  - {id: deut-30-mt, work_id: deuteronomy, witness_id: mt-deuteronomy-bhs, locator: "Deuteronomy 30", citations: [{source_id: bhs-deuteronomy, locator: "Deuteronomy 30", witness_id: mt-deuteronomy-bhs}]}
+  - {id: deut-31-lxx, work_id: deuteronomy, witness_id: lxx-deuteronomy-rahlfs-hanhart, locator: "Deuteronomy 31", citations: [{source_id: rahlfs-hanhart-2006, locator: "Deuteronomy 31", witness_id: lxx-deuteronomy-rahlfs-hanhart}]}
+  - {id: deut-31-geez, work_id: deuteronomy, witness_id: geez-deuteronomy-dillmann, locator: "Deuteronomy 31", citations: [{source_id: dillmann-octateuch-1853, locator: "Deuteronomy 31", witness_id: geez-deuteronomy-dillmann}]}
+  - {id: deut-31-mt, work_id: deuteronomy, witness_id: mt-deuteronomy-bhs, locator: "Deuteronomy 31", citations: [{source_id: bhs-deuteronomy, locator: "Deuteronomy 31", witness_id: mt-deuteronomy-bhs}]}
+  - {id: deut-32-lxx, work_id: deuteronomy, witness_id: lxx-deuteronomy-rahlfs-hanhart, locator: "Deuteronomy 32", citations: [{source_id: rahlfs-hanhart-2006, locator: "Deuteronomy 32", witness_id: lxx-deuteronomy-rahlfs-hanhart}]}
+  - {id: deut-32-geez, work_id: deuteronomy, witness_id: geez-deuteronomy-dillmann, locator: "Deuteronomy 32", citations: [{source_id: dillmann-octateuch-1853, locator: "Deuteronomy 32", witness_id: geez-deuteronomy-dillmann}]}
+  - {id: deut-32-mt, work_id: deuteronomy, witness_id: mt-deuteronomy-bhs, locator: "Deuteronomy 32", citations: [{source_id: bhs-deuteronomy, locator: "Deuteronomy 32", witness_id: mt-deuteronomy-bhs}]}
+  - {id: deut-33-lxx, work_id: deuteronomy, witness_id: lxx-deuteronomy-rahlfs-hanhart, locator: "Deuteronomy 33", citations: [{source_id: rahlfs-hanhart-2006, locator: "Deuteronomy 33", witness_id: lxx-deuteronomy-rahlfs-hanhart}]}
+  - {id: deut-33-geez, work_id: deuteronomy, witness_id: geez-deuteronomy-dillmann, locator: "Deuteronomy 33", citations: [{source_id: dillmann-octateuch-1853, locator: "Deuteronomy 33", witness_id: geez-deuteronomy-dillmann}]}
+  - {id: deut-33-mt, work_id: deuteronomy, witness_id: mt-deuteronomy-bhs, locator: "Deuteronomy 33", citations: [{source_id: bhs-deuteronomy, locator: "Deuteronomy 33", witness_id: mt-deuteronomy-bhs}]}
+  - {id: deut-34-lxx, work_id: deuteronomy, witness_id: lxx-deuteronomy-rahlfs-hanhart, locator: "Deuteronomy 34", citations: [{source_id: rahlfs-hanhart-2006, locator: "Deuteronomy 34", witness_id: lxx-deuteronomy-rahlfs-hanhart}]}
+  - {id: deut-34-geez, work_id: deuteronomy, witness_id: geez-deuteronomy-dillmann, locator: "Deuteronomy 34", citations: [{source_id: dillmann-octateuch-1853, locator: "Deuteronomy 34", witness_id: geez-deuteronomy-dillmann}]}
+  - {id: deut-34-mt, work_id: deuteronomy, witness_id: mt-deuteronomy-bhs, locator: "Deuteronomy 34", citations: [{source_id: bhs-deuteronomy, locator: "Deuteronomy 34", witness_id: mt-deuteronomy-bhs}]}

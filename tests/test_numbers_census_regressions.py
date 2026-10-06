@@ -24,7 +24,7 @@ NUMBERS_CHAPTER_PEOPLE = {
         "shammua-spy", "zaccur-reuben", "shaphat-spy", "hori-simeon", "igal-spy", "joseph-issachar",
         "palti-spy", "raphu-benjamin", "gaddiel-spy", "sodi-zebulun", "gaddi-spy", "susi-manasseh",
         "ammiel-spy", "gemalli-dan", "sethur-spy", "michael-asher", "nahbi-spy", "vophsi-naphtali",
-        "geuel-spy", "machi-gad",
+        "geuel-spy", "machi-gad", "anak", "ahiman-anak", "sheshai-anak", "talmai-anak",
     },
     16: {"korah-levite", "dathan-numbers", "abiram-numbers", "eliab-reuben", "on-numbers", "peleth-reuben"},
     21: {"moses", "sihon-numbers", "og-numbers", "king-of-arad", "former-king-of-moab"},
@@ -145,7 +145,7 @@ def test_new_numbers_people_are_human_attested_per_witness_and_dated_grade_e() -
         witnesses = {
             claim.witness_id for claim in dataset.claims.values()
             if claim.subject_id == person_id and claim.predicate == "attested_in_passage"
-            and claim.evidence_type == "explicit_text"
+            and claim.evidence_type == "explicit_text" and claim.witness_id in NUMBERS_WITNESSES
         }
         expected = {"mt-numbers-bhs"} if person_id in MASORETIC_ONLY else NUMBERS_WITNESSES
         assert witnesses == expected, person_id
