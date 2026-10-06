@@ -177,3 +177,77 @@ button { font: inherit; color: inherit; }
   .cue i, .sound[aria-pressed="true"] .sound-bars i { animation: none; }
   .gate, .end, .rail .label { transition-duration: 1ms; }
 }
+
+/* ---------------------------------------------------------------- the ninth plague dims the interface itself */
+.bar, .rail, .chronicle { opacity: var(--ui-dim, 1); transition: opacity 300ms var(--ease); }
+.bar-toggle {
+  background: none; border: 0; padding: 6px 0; cursor: pointer;
+  font-size: 11px; letter-spacing: 0.28em; text-transform: uppercase; color: var(--ivory-faint);
+}
+.bar-toggle[aria-pressed="true"] { color: var(--ivory-soft); }
+.bar-toggle:hover { color: var(--ivory); }
+
+/* ---------------------------------------------------------------- loading veil */
+.veil { position: fixed; inset: 0; z-index: 5; pointer-events: none; display: grid; place-items: center; opacity: 0; transition: opacity 400ms var(--ease); }
+.veil span { width: 38px; height: 1px; background: var(--ivory-faint); animation: veil 1.4s ease-in-out infinite; }
+.veil.is-loading { opacity: 1; }
+@keyframes veil { 50% { transform: scaleX(2.4); opacity: 0.4; } }
+
+/* ---------------------------------------------------------------- the Chronicle */
+.chronicle {
+  position: fixed; left: 0; right: 0; bottom: 0; z-index: 16; height: 104px;
+  display: grid; grid-template-columns: minmax(150px, 210px) 1fr; grid-template-rows: 82px; align-items: end;
+  padding: 10px clamp(16px, 3vw, 40px) 12px;
+  background: linear-gradient(to top, rgba(0,0,0,0.72), rgba(0,0,0,0.35) 70%, transparent);
+  pointer-events: none;
+}
+body.chronicle-off .chronicle { display: none; }
+.chronicle.is-unavailable .chr-canvas { display: none; }
+.chr-head { display: grid; align-content: end; gap: 2px; padding-bottom: 14px; pointer-events: none; }
+.chr-year { font: 500 clamp(19px, 1.8vw, 26px)/1 var(--font-display); letter-spacing: 0.04em; color: var(--ivory); }
+.chr-era { font-size: 10px; letter-spacing: 0.24em; text-transform: uppercase; color: var(--ivory-faint); }
+.chr-canvas { width: 100%; height: 82px; align-self: end; display: block; opacity: 0; transition: opacity 600ms var(--ease); pointer-events: auto; }
+.chronicle.has-ribbon .chr-canvas { opacity: 1; }
+.chr-tip {
+  position: absolute; bottom: 104px; padding: 6px 10px; max-width: 260px; pointer-events: none;
+  background: rgba(10,9,7,0.92); border: 1px solid var(--ivory-faint); font-size: 12px; color: var(--ivory);
+}
+.chr-card {
+  position: absolute; right: clamp(16px, 3vw, 40px); bottom: 112px; width: min(340px, 86vw); padding: 16px 18px 14px;
+  background: rgba(12,10,8,0.94); border: 1px solid var(--ivory-faint); pointer-events: auto; backdrop-filter: blur(6px);
+}
+.chr-card-close { position: absolute; top: 6px; right: 8px; background: none; border: 0; color: var(--ivory-soft); font-size: 20px; cursor: pointer; }
+.chr-card-kicker { margin: 0 0 6px; font-size: 10px; letter-spacing: 0.34em; text-transform: uppercase; color: var(--gold); }
+.chr-card-name { margin: 0; font: 500 26px/1.1 var(--font-display); }
+.chr-card-dates { margin: 6px 0 0; font-size: 12px; color: var(--ivory-soft); }
+.chr-card-desc { margin: 10px 0 0; font: italic 400 17px/1.35 var(--font-display); color: var(--ivory-soft); }
+.chr-card-link { display: inline-block; margin-top: 12px; font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--gold); text-decoration: none; }
+.chr-card-link:hover { color: var(--ivory); }
+.cue { bottom: 120px; }
+
+/* ---------------------------------------------------------------- map labels */
+.map-labels { position: fixed; inset: 0; z-index: 8; pointer-events: none; }
+.map-label { position: absolute; left: 0; top: 0; white-space: nowrap; will-change: transform, opacity; }
+.map-label.region { font: italic 500 calc(15px * var(--size, 1)) var(--font-display); letter-spacing: 0.2em; color: rgba(214,173,92,0.42); text-transform: uppercase; }
+.map-label.place {
+  font: 500 calc(11px * var(--size, 1)) var(--font-ui); letter-spacing: 0.22em; text-transform: uppercase; color: var(--ivory);
+  text-shadow: 0 0 8px #000, 0 0 2px #000; padding-left: 14px;
+}
+.map-label.area { font: italic 500 18px var(--font-display); color: var(--ivory); text-shadow: 0 0 10px #000; }
+.map-label.note { font: italic 400 calc(17px * var(--size, 1)) var(--font-display); color: var(--ivory-soft); text-shadow: 0 0 10px #000; }
+
+/* ---------------------------------------------------------------- Babel: the words fracture into tongues */
+.caption.fracture .text { transition: filter 200ms; filter: blur(calc(var(--split, 0) * 2px)); opacity: calc(1 - var(--split, 0) * 0.85); }
+.caption.fracture .shards { position: absolute; inset: 0; display: grid; place-items: center; pointer-events: none; }
+.caption.fracture .shards span {
+  grid-area: 1 / 1; font: italic 400 clamp(20px, 2.4vw, 34px) var(--font-display); color: var(--ivory-soft); white-space: nowrap;
+  opacity: calc(var(--split, 0) * 0.9);
+  transform: translate(calc(cos(var(--i) * 72deg) * var(--split, 0) * 26vw), calc(sin(var(--i) * 72deg) * var(--split, 0) * 22vh));
+}
+.caption { position: relative; }
+
+@media (max-width: 760px) {
+  .chronicle { grid-template-columns: 1fr; grid-template-rows: auto 82px; height: 128px; padding: 8px 14px 10px; }
+  .chr-head { padding-bottom: 2px; grid-auto-flow: column; justify-content: start; gap: 10px; align-items: baseline; }
+  .bar-toggle { display: none; }
+}

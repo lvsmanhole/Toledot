@@ -1,0 +1,148 @@
+// Atmosphere for landscape scenes: physical sky, stars, an optional storm dome, fog, and sun/ambient
+// light — all driven from named presets that can be blended over story time.
+
+import * as THREE from "three";
+import { Sky } from "three/examples/jsm/objects/Sky.js";
+
+import { NOISE } from "../engine/noise.js";
+import { createStars } from "../engine/stars.js";
+import { lerp } from "./common.js";
+
+// elevation/azimuth in degrees; fog colour; light colour/intensity; stars 0..1; storm 0..1
+export const PRESETS = {
+  dawn: { elevation: 3, azimuth: 95, turbidity: 6, rayleigh: 2.4, mie: 0.004, fog: 0x8a7f78, fogDensity: 0.0035, sun: 0xffc9a0, sunI: 1.2, hemi: 0.55, stars: 0.25, storm: 0, exposure: 0.95 },
+  morning: { elevation: 22, azimuth: 120, turbidity: 3.5, rayleigh: 1.2, mie: 0.0025, fog: 0xa8a28e, fogDensity: 0.0015, sun: 0xffe6c4, sunI: 2.4, hemi: 0.95, stars: 0, storm: 0, exposure: 1 },
+  noon: { elevation: 60, azimuth: 160, turbidity: 4, rayleigh: 0.9, mie: 0.003, fog: 0xb3ab94, fogDensity: 0.0012, sun: 0xfff3dc, sunI: 3, hemi: 1.1, stars: 0, storm: 0, exposure: 0.95 },
+  desert: { elevation: 38, azimuth: 200, turbidity: 9, rayleigh: 0.7, mie: 0.006, fog: 0xb49e78, fogDensity: 0.0011, sun: 0xffe2b0, sunI: 3.0, hemi: 0.9, stars: 0, storm: 0, exposure: 0.85 },
+  golden: { elevation: 8, azimuth: 250, turbidity: 5, rayleigh: 1.6, mie: 0.004, fog: 0xa38c68, fogDensity: 0.0016, sun: 0xffc27a, sunI: 2.2, hemi: 0.7, stars: 0, storm: 0, exposure: 1 },
+  dusk: { elevation: 0.8, azimuth: 265, turbidity: 9, rayleigh: 3, mie: 0.005, fog: 0x3a3840, fogDensity: 0.0035, sun: 0xff9a60, sunI: 0.6, hemi: 0.35, stars: 0.4, storm: 0, exposure: 0.9 },
+  night: { elevation: -8, azimuth: 265, turbidity: 2, rayleigh: 0.5, mie: 0.002, fog: 0x0d1118, fogDensity: 0.003, sun: 0x8fa6d6, sunI: 0.25, hemi: 0.18, stars: 1, storm: 0, exposure: 1.05 },
+  storm: { elevation: 12, azimuth: 220, turbidity: 12, rayleigh: 2, mie: 0.006, fog: 0x30343a, fogDensity: 0.0055, sun: 0x9aa4b0, sunI: 0.5, hemi: 0.45, stars: 0, storm: 1, exposure: 0.75 },
+  ash: { elevation: 10, azimuth: 230, turbidity: 14, rayleigh: 3.5, mie: 0.008, fog: 0x4a3c34, fogDensity: 0.006, sun: 0xff8a50, sunI: 0.7, hemi: 0.35, stars: 0, storm: 0.6, exposure: 0.85 },
+  sacred: { elevation: 30, azimuth: 180, turbidity: 2, rayleigh: 0.6, mie: 0.002, fog: 0xe6dcc6, fogDensity: 0.0018, sun: 0xfff4e0, sunI: 2.8, hemi: 1.3, stars: 0, storm: 0, exposure: 1.05 },
+};
+
+const KEYS = Object.keys(PRESETS.dawn);
+
+/** Blend presets: list of [weight, presetName] or a single name. */
+export function blendPresets(spec) {
+  if (typeof spec === "string") return { ...PRESETS[spec] };
+  const out = {};
+  const total = spec.reduce((s, [w]) => s + w, 0) || 1;
+  for (const key of KEYS) {
+    if (["fog", "sun"].includes(key)) {
+      const c = new THREE.Color(0, 0, 0);
+      for (const [w, name] of spec) c.add(new THREE.Color(PRESETS[name][key]).multiplyScalar(w / total));
+      out[key] = c;
+    } else {
+      out[key] = spec.reduce((s, [w, name]) => s + PRESETS[name][key] * w, 0) / total;
+    }
+  }
+  return out;
+}
+
+/** Mix two preset names by k in 0..1. */
+export const mixPresets = (a, b, k) => blendPresets([[1 - k, a], [k, b]]);
+
+function createStormDome() {
+  const material = new THREE.ShaderMaterial({
+    uniforms: { uTime: { value: 0 }, uAmount: { value: 0 }, uFlash: { value: 0 }, uTint: { value: new THREE.Color(0.14, 0.15, 0.17) } },
+    vertexShader: /* glsl */ `varying vec3 vDir; void main() { vDir = normalize(position); gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0); }`,
+    fragmentShader: /* glsl */ `
+      uniform float uTime, uAmount, uFlash;
+      uniform vec3 uTint;
+      varying vec3 vDir;
+      ${NOISE}
+      void main() {
+        if (vDir.y < -0.05) discard;
+        vec2 p = vDir.xz / (vDir.y + 0.25) * 1.4;
+        float n = fbm(vec3(p * 0.9 + vec2(uTime * 0.02, uTime * 0.01), uTime * 0.03));
+        float m = fbm(vec3(p * 2.3 - uTime * 0.03, 2.0));
+        float cover = smoothstep(-0.35, 0.25, n + (uAmount - 0.5) * 1.6);
+        vec3 col = uTint * mix(0.35, 0.55 + 0.6 * m, cover) + uFlash * vec3(0.7, 0.75, 0.9) * (0.4 + 0.6 * m);
+        // an overcast layer under the cloud masses, so no clear sky shows through a full storm
+        float a = mix(smoothstep(0.4, 1.0, uAmount) * 0.92, 1.0, cover) * uAmount * smoothstep(-0.05, 0.12, vDir.y);
+        gl_FragColor = vec4(col, a);
+      }
+    `,
+    transparent: true, depthWrite: false, side: THREE.BackSide,
+  });
+  const mesh = new THREE.Mesh(new THREE.SphereGeometry(1800, 48, 24), material);
+  mesh.renderOrder = -1;
+  return mesh;
+}
+
+export function createAtmosphere(scene, { stars = true, storm = true, starCount = 9000 } = {}) {
+  const sky = new Sky();
+  sky.scale.setScalar(2500);
+  // compress the sky's HDR highlights (the sun disc is ~760x) so bloom gives a glow, not a white-out
+  sky.material.uniforms.uSkyGain = { value: 0.9 };
+  sky.material.fragmentShader = sky.material.fragmentShader
+    .replace("void main() {", "uniform float uSkyGain;\nvoid main() {")
+    .replace("gl_FragColor = vec4( texColor, 1.0 );", "float peak = max(max(texColor.r, texColor.g), texColor.b);\n\t\t\tgl_FragColor = vec4( texColor * uSkyGain / (1.0 + max(peak - 0.6, 0.0) * 0.9), 1.0 );");
+  sky.material.needsUpdate = true;
+  const fog = new THREE.FogExp2(0x999999, 0.003);
+  scene.fog = fog;
+  const sun = new THREE.DirectionalLight(0xffffff, 2);
+  const hemi = new THREE.HemisphereLight(0xbfd1e6, 0x3a3020, 1);
+  scene.add(sky, sun, sun.target, hemi);
+  const starField = stars ? createStars({ count: starCount, radius: 1600, seed: 77, size: 1.7 }) : null;
+  if (starField) scene.add(starField);
+  const dome = storm ? createStormDome() : null;
+  if (dome) scene.add(dome);
+  const sunDir = new THREE.Vector3();
+  let flash = 0;
+  let nextFlash = 0;
+  const state = { exposure: 1 };
+
+  return {
+    sky, fog, sun, hemi, sunDir, state,
+    /** Apply a preset (object from blendPresets) plus extra storm/lightning control. */
+    set(p, { time = 0, pixelRatio = 1, lightning = 0, camera = null } = {}) {
+      const u = sky.material.uniforms;
+      sunDir.setFromSphericalCoords(1, THREE.MathUtils.degToRad(90 - p.elevation), THREE.MathUtils.degToRad(p.azimuth));
+      u.sunPosition.value.copy(sunDir);
+      u.turbidity.value = p.turbidity;
+      u.rayleigh.value = p.rayleigh;
+      u.mieCoefficient.value = p.mie;
+      u.mieDirectionalG.value = 0.8;
+      fog.color.copy(p.fog instanceof THREE.Color ? p.fog : new THREE.Color(p.fog));
+      fog.density = p.fogDensity;
+      sun.color.copy(p.sun instanceof THREE.Color ? p.sun : new THREE.Color(p.sun));
+      sun.intensity = p.sunI;
+      sun.position.copy(sunDir).multiplyScalar(300);
+      if (camera) {
+        sun.position.add(camera.position);
+        sun.target.position.copy(camera.position);
+      }
+      hemi.intensity = p.hemi;
+      // lightning: random flashes while `lightning` > 0
+      if (lightning > 0 && time > nextFlash) {
+        flash = 1;
+        nextFlash = time + 1.2 + Math.random() * (6 / lightning);
+      }
+      flash = Math.max(0, flash - 0.08);
+      const f = flash * (0.6 + 0.4 * Math.sin(time * 60)) * lightning;
+      if (starField) {
+        starField.material.uniforms.uOpacity.value = p.stars;
+        starField.material.uniforms.uTime.value = time;
+        starField.material.uniforms.uPixelRatio.value = pixelRatio;
+        starField.visible = p.stars > 0.01;
+        if (camera) starField.position.copy(camera.position);
+      }
+      if (dome) {
+        dome.material.uniforms.uAmount.value = p.storm;
+        dome.material.uniforms.uTime.value = time;
+        dome.material.uniforms.uFlash.value = f;
+        dome.visible = p.storm > 0.01;
+        if (camera) dome.position.copy(camera.position);
+      }
+      hemi.intensity += f * 2.5;
+      state.exposure = p.exposure;
+      state.flash = f;
+      return f;
+    },
+  };
+}
+
+export { lerp };

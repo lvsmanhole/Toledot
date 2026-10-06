@@ -1,0 +1,147 @@
+// The Passion (Matthew 21–27 and parallels). The road into Jerusalem lined with a crowd and branches.
+// An upper room at night: a table, thirteen at it, a lamp. The olive grove: one kneeling. The hill
+// outside the city: three crosses under a sky gone dark at noon; the earth shakes. In the temple, the
+// veil is torn from the top to the bottom.
+
+import * as THREE from "three";
+
+import { glowSprite, lerp, pulse, sramp } from "../kit/common.js";
+import { weather } from "../kit/effects.js";
+import { ANIMALS, crowd, figure } from "../kit/figures.js";
+import { createLandscape } from "../kit/landscape.js";
+import { city, crosses, wall } from "../kit/structures.js";
+import { createTrees, placers } from "../kit/vegetation.js";
+import { jerusalemHeight } from "./david.js";
+
+const ROOM = new THREE.Vector3(-500, 0, 500);
+const GROVE = new THREE.Vector3(220, 0, 40);
+const GOLGOTHA = new THREE.Vector3(-150, 0, -160);
+const VEIL = new THREE.Vector3(600, 0, -600);
+
+export function create(ctx) {
+  const height = jerusalemHeight(351);
+  const L = createLandscape(ctx, {
+    terrain: { height, palette: "judea", size: 1700 },
+    sky: (rel) => {
+      if (rel < 5.6) return "morning";
+      if (rel < 14.6) return [[1, "night"]];
+      if (rel < 26.3) return [[1 - pulse(rel, 18.5, 19.8, 25, 26), "noon"], [pulse(rel, 18.5, 19.8, 25, 26), "storm"]];
+      return [[1, "dusk"]];
+    },
+    lightning: (rel) => 0.6 * pulse(rel, 22, 23, 25, 26),
+    camera: [
+      [0, [180, 14, 30], [100, 10, 0], 44],
+      [5.5, [60, 8, 12], [30, 6, 0], 44],
+      [5.7, [ROOM.x + 6, 2.4, ROOM.z + 4], [ROOM.x, 1.2, ROOM.z], 46],
+      [9.7, [ROOM.x + 4, 2, ROOM.z + 2.8], [ROOM.x, 1.2, ROOM.z], 42],
+      [9.9, [GROVE.x + 14, 4, GROVE.z + 12], [GROVE.x, 1.5, GROVE.z], 44],
+      [14.5, [GROVE.x + 7, 2.2, GROVE.z + 6], [GROVE.x, 1, GROVE.z], 40],
+      [14.7, [GOLGOTHA.x + 60, 14, GOLGOTHA.z + 70], [GOLGOTHA.x, 8, GOLGOTHA.z], 44],
+      [22.5, [GOLGOTHA.x + 24, 6, GOLGOTHA.z + 30], [GOLGOTHA.x, 10, GOLGOTHA.z], 42],
+      [26.3, [GOLGOTHA.x + 16, 5, GOLGOTHA.z + 22], [GOLGOTHA.x, 12, GOLGOTHA.z], 40],
+      [26.5, [VEIL.x + 14, 7, VEIL.z], [VEIL.x, 7, VEIL.z], 46],
+      [31, [VEIL.x + 9, 7, VEIL.z], [VEIL.x - 10, 7, VEIL.z], 50],
+      [34, [VEIL.x + 6, 7, VEIL.z], [VEIL.x - 30, 7, VEIL.z], 54],
+    ],
+    grade: (rel) => ({ saturation: 1 - 0.45 * sramp(rel, 14.6, 20), exposure: 1 - 0.35 * pulse(rel, 19, 20, 25, 26), bloom: 0.4, threshold: 0.7 }),
+    audio: (rel) => ({ drone: 0.3 + 0.3 * sramp(rel, 14.6, 20), wind: 0.2 + 0.5 * pulse(rel, 19, 20, 26, 27), shimmer: 0.4 * sramp(rel, 29, 33) }),
+  });
+  const h = L.height;
+  L.add(city({ count: 400, radius: 110, inner: 40, height: h, style: "stone", seed: 151 }));
+  L.add(wall({ points: Array.from({ length: 24 }, (_, i) => [Math.cos(i / 24 * 6.283) * 128, Math.sin(i / 24 * 6.283) * 118]), height: h, h: 9, thickness: 3, towerEvery: 3, material: "limestone" }));
+  // the road in: a crowd lining both sides; branches (small palms) laid down
+  const lineA = crowd({ count: 220, place: placers.box(20, 5, 190, 9), height: h, seed: 153, face: [100, 0] });
+  const lineB = crowd({ count: 220, place: placers.box(20, -9, 190, -5), height: h, seed: 155, face: [100, 0] });
+  L.add(lineA.group);
+  L.add(lineB.group);
+  L.add(createTrees({ count: 60, place: placers.box(30, -16, 190, 16, (x, z) => Math.abs(z) > 11), height: h, kind: "palm", size: [3, 4.5] }).group);
+  const donkey = new THREE.Mesh(ANIMALS.donkey(), new THREE.MeshStandardMaterial({ color: 0x0b0908, roughness: 1 }));
+  const rider = figure(1.6);
+  L.add(donkey);
+  L.add(rider);
+  // the upper room
+  const room = new THREE.Group();
+  room.position.copy(ROOM);
+  const walls = new THREE.Mesh(new THREE.BoxGeometry(14, 5, 10), new THREE.MeshStandardMaterial({ color: 0x5a4a38, roughness: 1, side: THREE.BackSide }));
+  walls.position.y = 2.5;
+  room.add(walls);
+  const table = new THREE.Mesh(new THREE.BoxGeometry(7, 0.5, 1.6), new THREE.MeshStandardMaterial({ color: 0x3a2a1c, roughness: 0.9 }));
+  table.position.y = 0.5;
+  room.add(table);
+  for (let i = 0; i < 13; i++) {
+    const f = figure(1.2);
+    const side = i < 6 ? -1 : i < 12 ? 1 : 0;
+    f.position.set(side === 0 ? -4.2 : -3 + (i % 6) * 1.2, 0, side * 1.4);
+    room.add(f);
+  }
+  const lamp = glowSprite(0xffb060, 1.6, 0.9);
+  lamp.position.set(0, 1.1, 0);
+  room.add(lamp);
+  const lampLight = new THREE.PointLight(0xffa050, 25, 14, 1.6);
+  lampLight.position.set(0, 2, 0);
+  room.add(lampLight);
+  L.add(room);
+  // Gethsemane
+  const grove = createTrees({ count: 40, place: placers.disc(GROVE.x, GROVE.z, 26), height: h, kind: "olive", size: [3, 5] });
+  L.add(grove.group);
+  const kneeling = figure(1.8);
+  kneeling.position.set(GROVE.x, h(GROVE.x, GROVE.z) - 0.6, GROVE.z);
+  kneeling.rotation.x = 0.5;
+  L.add(kneeling);
+  const moon = glowSprite(0xcfd8ff, 30, 0.8);
+  moon.position.set(GROVE.x - 200, 160, GROVE.z - 300);
+  L.add(moon);
+  // Golgotha
+  const hill = crosses({ spacing: 6 });
+  hill.position.set(GOLGOTHA.x, h(GOLGOTHA.x, GOLGOTHA.z), GOLGOTHA.z);
+  L.add(hill);
+  const watchers = crowd({ count: 120, place: placers.disc(GOLGOTHA.x - 26, GOLGOTHA.z + 14, 10), height: h, seed: 157, face: [GOLGOTHA.x, GOLGOTHA.z] });
+  L.add(watchers.group);
+  const dust = weather("dust", { count: 3000, box: [80, 40, 80] });
+  L.add(dust.points);
+  // the veil of the temple, torn from the top to the bottom (Matthew 27:51)
+  const veilGroup = new THREE.Group();
+  veilGroup.position.copy(VEIL).setY(h(VEIL.x, VEIL.z));
+  const halves = [-1, 1].map((s) => {
+    const geo = new THREE.PlaneGeometry(6, 14, 8, 20);
+    geo.translate(s * 3, 7, 0);
+    const mat = new THREE.MeshStandardMaterial({ color: 0x4a1220, roughness: 0.9, side: THREE.DoubleSide, emissive: 0x12030a, emissiveIntensity: 0.6 });
+    const m = new THREE.Mesh(geo, mat);
+    m.rotation.y = Math.PI / 2;
+    veilGroup.add(m);
+    return { m, s };
+  });
+  const beyond = glowSprite(0xfff6e0, 26, 0);
+  beyond.position.set(-12, 7, 0);
+  veilGroup.add(beyond);
+  const sanctuary = new THREE.Mesh(new THREE.BoxGeometry(30, 16, 14), new THREE.MeshStandardMaterial({ color: 0x8a7a60, roughness: 1, side: THREE.BackSide }));
+  sanctuary.position.set(0, 8, 0);
+  veilGroup.add(sanctuary);
+  const sanctLight = new THREE.PointLight(0xffd8a0, 60, 40, 1.4);
+  sanctLight.position.set(8, 10, 0);
+  veilGroup.add(sanctLight);
+  L.add(veilGroup);
+  L.onUpdate(({ rel, time, pixelRatio, camera, reducedMotion }) => {
+    const ride = sramp(rel, 0, 5.5);
+    const dx = lerp(190, 40, ride);
+    donkey.position.set(dx, h(dx, 0), 0);
+    donkey.rotation.y = Math.PI;
+    rider.position.set(dx, h(dx, 0) + 0.9, 0);
+    const quake = pulse(rel, 25.5, 26, 26.3, 26.5) + pulse(rel, 26.6, 27, 28, 29);
+    if (!reducedMotion && quake > 0) {
+      camera.position.x += Math.sin(time * 43) * 0.3 * quake;
+      camera.position.y += Math.sin(time * 37) * 0.3 * quake;
+    }
+    dust.update({ time, pixelRatio, amount: pulse(rel, 19, 21, 25, 27) * 0.4, center: camera.position });
+    // the tear runs from the top down, and the halves fall apart
+    const tear = sramp(rel, 27, 30.5);
+    for (const { m, s } of halves) {
+      m.rotation.z = 0;
+      m.position.z = s * tear * 4;
+      m.rotation.x = s * tear * 0.25;
+    }
+    beyond.material.opacity = tear * 0.9;
+    beyond.scale.setScalar(16 + tear * 30);
+  });
+  return L;
+}

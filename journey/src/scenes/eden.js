@@ -409,34 +409,195 @@ function createTrees(uniforms) {
   knowledge.position.copy(KNOWLEDGE).setY(height(KNOWLEDGE.x, KNOWLEDGE.z) - 0.2);
   knowledge.scale.setScalar(1.5);
 
-  // the serpent: a dark sheen coiling the trunk, seen only as a travelling glint
-  const coil = [];
-  for (let i = 0; i <= 80; i++) {
-    const k = i / 80;
-    coil.push(new THREE.Vector3(Math.cos(k * 18) * (0.75 - k * 0.25), 0.6 + k * 7.2, Math.sin(k * 18) * (0.75 - k * 0.25)));
+  const serpent = createSerpent(uniforms);
+  knowledge.add(serpent.group);
+
+  return { life, lifeLeaves, lifeGlow, lifeLight, knowledge, fruitMat, serpent, kLeaves };
+}
+
+// The serpent (Genesis 3:1): coiled up the trunk of the tree of knowledge, its forepart reaching out of
+// the branches toward where the woman stands. Built in the tree's local frame (the tree is scaled 1.5).
+const EVE_SPOT = new THREE.Vector3(5.2, 0, -10.2);
+const ADAM_SPOT = new THREE.Vector3(3.9, 0, -9.3);
+
+function createSerpent(uniforms) {
+  const pts = [];
+  for (let i = 0; i <= 60; i++) {
+    const k = i / 60;
+    const a = k * 14 + 0.6;
+    const r = 0.78 - k * 0.16;
+    pts.push(new THREE.Vector3(Math.cos(a) * r, 0.25 + k * 2.6, Math.sin(a) * r));
   }
-  const serpentMat = new THREE.ShaderMaterial({
-    uniforms: { uTime: { value: 0 }, uShow: { value: 0 } },
+  // leave the trunk along a low bough and lean out toward the woman (local coordinates)
+  const toEve = EVE_SPOT.clone().sub(KNOWLEDGE).divideScalar(1.5);
+  const out = new THREE.Vector3(toEve.x, 0, toEve.z).normalize();
+  const last = pts[pts.length - 1];
+  for (let i = 1; i <= 6; i++) {
+    const k = i / 6;
+    const reach = 0.7 + k * 2.2;
+    pts.push(new THREE.Vector3(
+      out.x * reach + Math.sin(k * 5) * 0.18 * (1 - k),
+      last.y + 0.3 * Math.sin(k * 3.1) - k * 1.15,
+      out.z * reach + Math.cos(k * 5) * 0.18 * (1 - k),
+    ));
+  }
+  const curve = new THREE.CatmullRomCurve3(pts, false, "centripetal");
+  const tube = new THREE.TubeGeometry(curve, 420, 0.16, 12, false);
+  // taper: thin tail, full body, narrowing neck; bake a diamond scale pattern into vertex colours
+  const pos = tube.attributes.position;
+  const uv = tube.attributes.uv;
+  const colors = new Float32Array(pos.count * 3);
+  const c = new THREE.Vector3();
+  const v = new THREE.Vector3();
+  for (let i = 0; i < pos.count; i++) {
+    const s = uv.getX(i);
+    const around = uv.getY(i);
+    curve.getPointAt(Math.min(1, s), c);
+    v.fromBufferAttribute(pos, i).sub(c);
+    const taper = Math.min(1, s * 6) * (1 - 0.45 * Math.max(0, (s - 0.9) / 0.1)) * 0.95 + 0.05;
+    v.multiplyScalar(taper);
+    pos.setXYZ(i, c.x + v.x, c.y + v.y, c.z + v.z);
+    const diamond = Math.abs(((s * 160) % 1) - 0.5) + Math.abs(((around * 6) % 1) - 0.5) < 0.42 ? 1 : 0;
+    const belly = Math.abs(around - 0.5) < 0.12 ? 1 : 0;
+    const base = belly ? [0.55, 0.48, 0.28] : diamond ? [0.42, 0.36, 0.12] : [0.1, 0.13, 0.05];
+    colors.set(base, i * 3);
+  }
+  tube.setAttribute("color", new THREE.BufferAttribute(colors, 3));
+  tube.computeVertexNormals();
+  const material = new THREE.MeshStandardMaterial({ vertexColors: true, roughness: 0.28, metalness: 0.35, emissive: 0x2a2208, emissiveIntensity: 0.9, transparent: true, opacity: 0 });
+  material.onBeforeCompile = (shader) => {
+    shader.uniforms.uTime = uniforms.uTime;
+    shader.vertexShader = shader.vertexShader
+      .replace("#include <common>", "#include <common>\nuniform float uTime;")
+      .replace("#include <begin_vertex>", `#include <begin_vertex>
+        float s = uv.x;
+        float lift = smoothstep(0.8, 1.0, s);
+        transformed.y += sin(uTime * 1.3 + s * 18.0) * 0.06 * lift;
+        transformed.x += sin(uTime * 0.9 + s * 9.0) * 0.08 * lift;`);
+  };
+  const body = new THREE.Mesh(tube, material);
+  // head: flattened wedge at the end of the curve, with two faint amber eyes
+  const headGeo = new THREE.SphereGeometry(0.22, 16, 12);
+  headGeo.scale(1.0, 0.62, 1.55);
+  const head = new THREE.Mesh(headGeo, material);
+  const eyeMat = new THREE.MeshBasicMaterial({ color: new THREE.Color(2.2, 1.4, 0.3), transparent: true, opacity: 0 });
+  const eyeL = new THREE.Mesh(new THREE.SphereGeometry(0.028, 8, 6), eyeMat);
+  const eyeR = eyeL.clone();
+  eyeL.position.set(0.09, 0.06, 0.12);
+  eyeR.position.set(-0.09, 0.06, 0.12);
+  head.add(eyeL, eyeR);
+  const end = curve.getPointAt(1);
+  const tangent = curve.getTangentAt(1);
+  head.position.copy(end).addScaledVector(tangent, 0.12);
+  head.lookAt(end.clone().addScaledVector(tangent, 2));
+  const group = new THREE.Group();
+  group.add(body, head);
+  return {
+    group,
+    set(show, time) {
+      material.opacity = show;
+      eyeMat.opacity = show;
+      group.visible = show > 0.01;
+      head.rotation.z = Math.sin(time * 1.1) * 0.15;
+      head.position.copy(end).addScaledVector(tangent, 0.12);
+      head.position.y += Math.sin(time * 1.3 + 18.0) * 0.06;
+    },
+  };
+}
+
+// The cherubim at the east of the garden (Genesis 3:24): suggested through light — a column of fire
+// for the form, four wings of light that breathe slowly, never a literal creature.
+function createCherub() {
+  const group = new THREE.Group();
+  const wingMat = new THREE.ShaderMaterial({
+    uniforms: { uShow: { value: 0 }, uTime: { value: 0 } },
     vertexShader: /* glsl */ `varying vec2 vUv; void main() { vUv = uv; gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0); }`,
     fragmentShader: /* glsl */ `
-      uniform float uTime, uShow;
+      uniform float uShow, uTime;
       varying vec2 vUv;
       void main() {
-        float head = fract(uTime * 0.05);
-        float body = smoothstep(head - 0.35, head, vUv.x) * (1.0 - smoothstep(head, head + 0.01, vUv.x));
-        float sheen = pow(abs(sin(vUv.y * 3.14159)), 6.0);
-        vec3 col = mix(vec3(0.02, 0.03, 0.02), vec3(0.35, 0.42, 0.25), sheen);
-        float a = body * uShow;
-        if (a < 0.01) discard;
-        gl_FragColor = vec4(col, a);
+        // vUv.x along the wing from shoulder to tip, vUv.y across it
+        float shape = smoothstep(0.0, 0.05, vUv.y) * smoothstep(1.0, 0.55 - 0.45 * vUv.x, vUv.y);
+        float feathers = 0.55 + 0.45 * pow(abs(sin(vUv.y * 22.0 + vUv.x * 3.0)), 3.0);
+        float tipFade = 1.0 - smoothstep(0.75, 1.0, vUv.x);
+        float shimmer = 0.85 + 0.15 * sin(uTime * 2.0 + vUv.x * 9.0);
+        float a = shape * feathers * tipFade * uShow * shimmer * 0.55;
+        if (a < 0.004) discard;
+        gl_FragColor = vec4(mix(vec3(1.0, 0.78, 0.42), vec3(1.0, 0.95, 0.85), vUv.x) * a * 1.6, a);
       }
     `,
-    transparent: true,
+    transparent: true, depthWrite: false, blending: THREE.AdditiveBlending, side: THREE.DoubleSide,
   });
-  const serpent = new THREE.Mesh(new THREE.TubeGeometry(new THREE.CatmullRomCurve3(coil), 300, 0.11, 8, false), serpentMat);
-  knowledge.add(serpent);
+  const wings = [];
+  // two wings raised (Ezekiel 1:11 imagery), two lowered, from a shoulder at 9 units
+  for (const [side, up] of [[1, 1], [-1, 1], [1, -1], [-1, -1]]) {
+    const geo = new THREE.PlaneGeometry(1, 1, 24, 4);
+    geo.translate(0.5, 0.5, 0);
+    const p = geo.attributes.position;
+    for (let i = 0; i < p.count; i++) {
+      const x = p.getX(i);
+      const y = p.getY(i);
+      // long sweeping wing: length 8, width 2.6 near the shoulder, curving forward at the tip
+      p.setXYZ(i, x * 8, (y - 0.5) * 2.6 * (1 - 0.55 * x), -Math.pow(x, 2) * 2.2);
+    }
+    const wing = new THREE.Mesh(geo, wingMat);
+    const pivot = new THREE.Group();
+    pivot.position.y = up > 0 ? 9.5 : 7.5;
+    pivot.add(wing);
+    pivot.userData = { side, up };
+    group.add(pivot);
+    wings.push(pivot);
+  }
+  const core = new THREE.Mesh(new THREE.CylinderGeometry(0.5, 0.9, 12, 16, 1, true), new THREE.ShaderMaterial({
+    uniforms: { uShow: { value: 0 } },
+    vertexShader: /* glsl */ `varying vec2 vUv; void main() { vUv = uv; gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0); }`,
+    fragmentShader: /* glsl */ `
+      uniform float uShow;
+      varying vec2 vUv;
+      void main() {
+        float a = smoothstep(0.0, 0.25, vUv.y) * smoothstep(1.0, 0.7, vUv.y) * uShow * 0.35;
+        gl_FragColor = vec4(vec3(1.0, 0.85, 0.55) * a * 2.0, a);
+      }
+    `,
+    transparent: true, depthWrite: false, blending: THREE.AdditiveBlending, side: THREE.DoubleSide,
+  }));
+  core.position.y = 6;
+  const crown = glowSpriteSimple(0xffe2a8, 7);
+  crown.position.y = 11;
+  group.add(core, crown);
+  return {
+    group,
+    set(show, time, reduced) {
+      wingMat.uniforms.uShow.value = show;
+      wingMat.uniforms.uTime.value = time;
+      core.material.uniforms.uShow.value = show;
+      crown.material.opacity = show * 0.8;
+      group.visible = show > 0.005;
+      const breathe = reduced ? 0 : Math.sin(time * 0.6) * 0.08;
+      for (const w of wings) {
+        const { side, up } = w.userData;
+        // raised wings lift to meet overhead; lowered wings fold down to cover
+        w.rotation.set(0, side > 0 ? 0 : Math.PI, up > 0 ? 0.95 + breathe : -1.15 - breathe);
+      }
+    },
+  };
+}
 
-  return { life, lifeLeaves, lifeGlow, lifeLight, knowledge, fruitMat, serpentMat, kLeaves };
+function glowSpriteSimple(color, scale) {
+  const canvas = document.createElement("canvas");
+  canvas.width = canvas.height = 128;
+  const g = canvas.getContext("2d");
+  const grad = g.createRadialGradient(64, 64, 0, 64, 64, 64);
+  grad.addColorStop(0, "rgba(255,255,255,1)");
+  grad.addColorStop(0.3, "rgba(255,240,210,0.35)");
+  grad.addColorStop(1, "rgba(255,230,190,0)");
+  g.fillStyle = grad;
+  g.fillRect(0, 0, 128, 128);
+  const tex = new THREE.CanvasTexture(canvas);
+  tex.colorSpace = THREE.SRGBColorSpace;
+  const s = new THREE.Sprite(new THREE.SpriteMaterial({ map: tex, color, transparent: true, depthWrite: false, blending: THREE.AdditiveBlending, opacity: 0 }));
+  s.scale.setScalar(scale);
+  return s;
 }
 
 // two silhouettes: figures are never detailed, only shapes in the light
@@ -707,11 +868,12 @@ const KEYS = [
   [57, [-24, 58, 170], [0, 10, 30]],
   [62, [18, 24, 95], [0, 7, -10]],
   [67, [12, 9.5, 42], [0, 8, -13]],
-  [72, [-24, 9, 36], [0, 11, -13]],
-  [78, [-4, 6, 22], [12, 10, -15]],
-  [84, [-8, 3.6, 15], [-14, 2.2, -4]],
+  [72, [-20, 8, 30], [2, 9, -12]],
+  [76.5, [-5, 4.6, 5], [8, 4.6, -13]],
+  [80.5, [-1.5, 3.1, 1.5], [6.5, 3.2, -11.5]],
+  [84, [-4, 3.6, 5], [5, 2.2, -10]],
   [89, [26, 6, 12], [0, 5, -10]],
-  [94, [82, 11, 8], [0, 7, -9]],
+  [94, [86, 12, 2], [0, 8, 0]],
   [97, [74, 16, 18], [110, 9, -6]],
   [100, [64, 26, 22], [200, 34, -14]],
 ];
@@ -790,13 +952,19 @@ export function createEden(ctx) {
   swordPivot.add(sword);
   const fireLight = new THREE.PointLight(0xff8a3a, 0, 80, 1.4);
   fireLight.position.set(GATE_X, height(GATE_X, 0) + 5, 0);
+  const cherubim = [createCherub(), createCherub()];
+  cherubim.forEach((c, i) => {
+    const z = i === 0 ? -12 : 15;
+    c.group.position.set(GATE_X + 1.5, height(GATE_X, z) - 0.2, z);
+    c.group.rotation.y = Math.PI / 2; // facing east, toward the way out
+  });
   const birds = createBirds(low ? 20 : 45, random);
   const thread = createThread();
   const stars = createStars({ count: low ? 5000 : 12000, radius: 1600, seed: 41, size: 1.6 });
 
   const sunLight = new THREE.DirectionalLight(0xffe2b8, 2.6);
   const hemi = new THREE.HemisphereLight(0xbfd1e6, 0x3a3020, 1.0);
-  scene.add(sky, terrain, water, grass, forest, trees.life, trees.knowledge, adam, eve, mist, motes, fire, swordPivot, fireLight, gate, birds, thread, stars, sunLight, hemi);
+  scene.add(sky, terrain, water, grass, forest, trees.life, trees.knowledge, adam, eve, mist, motes, fire, swordPivot, fireLight, gate, ...cherubim.map((c) => c.group), birds, thread, stars, sunLight, hemi);
 
   const sun = new THREE.Vector3();
   const warmFog = new THREE.Color(0xa9a487);
@@ -862,9 +1030,8 @@ export function createEden(ctx) {
       trees.lifeGlow.material.uniforms.uWind.value = wind * 0.2;
       trees.lifeLight.intensity = THREE.MathUtils.lerp(40, 10, fall);
       trees.lifeLeaves.material.emissiveIntensity = THREE.MathUtils.lerp(1.1, 0.12, fall);
-      // the serpent shows only around the third chapter's opening
-      trees.serpentMat.uniforms.uTime.value = time;
-      trees.serpentMat.uniforms.uShow.value = smooth(ramp(t, at(74.5), at(76.5))) * (1 - smooth(ramp(t, at(80), at(83))));
+      // the serpent: first glimpsed in the boughs as the garden scene closes, present through the temptation
+      trees.serpent.set(smooth(ramp(t, at(72.5), at(75))) * (1 - smooth(ramp(t, at(83.5), at(85.5)))), time);
       const fruitGlow = smooth(ramp(t, at(78.5), at(80.5))) * (1 - smooth(ramp(t, at(83), at(86))));
       trees.fruitMat.emissiveIntensity = 0.25 + 2.2 * fruitGlow;
       birds.material.uniforms.uTime.value = time;
@@ -872,12 +1039,17 @@ export function createEden(ctx) {
       birds.visible = t < at(86);
 
       // the figures stand near the tree of life; after the fall they walk out eastward
+      // ...walk to the tree of knowledge for the temptation, then out eastward
+      const approach = smooth(ramp(t, at(73.5), at(76.5)));
       const walk = smooth(ramp(t, at(85.5), at(92.5)));
-      adam.position.set(THREE.MathUtils.lerp(-14, 66, walk), 0, THREE.MathUtils.lerp(-3, -1, walk));
-      eve.position.set(adam.position.x - 0.9 + walk * 0.3, 0, adam.position.z + 1.1);
+      const eveAt = new THREE.Vector3(-14.9, 0, -1.9).lerp(EVE_SPOT, approach);
+      const adamAt = new THREE.Vector3(-14, 0, -3).lerp(ADAM_SPOT, approach);
+      adam.position.set(THREE.MathUtils.lerp(adamAt.x, 66, walk), 0, THREE.MathUtils.lerp(adamAt.z, -1, walk));
+      eve.position.set(THREE.MathUtils.lerp(eveAt.x, 65.4, walk), 0, THREE.MathUtils.lerp(eveAt.z, 0.1, walk));
       for (const f of [adam, eve]) f.position.y = Math.max(0, height(f.position.x, f.position.z)) - 0.05;
       adam.rotation.y = eve.rotation.y = walk > 0 ? -Math.PI / 2 : 0.3;
-      const bob = walk > 0 && walk < 1 ? Math.abs(Math.sin(time * 4)) * 0.06 : 0;
+      const walking = (approach > 0 && approach < 1) || (walk > 0 && walk < 1);
+      const bob = walking ? Math.abs(Math.sin(time * 4)) * 0.06 : 0;
       adam.position.y += bob;
       eve.position.y += bob;
 
@@ -894,6 +1066,8 @@ export function createEden(ctx) {
       swordPivot.rotation.y = time * (reducedMotion ? 0.4 : 1.6);
       swordPivot.rotation.z = Math.sin(time * 0.7) * 0.25;
       sword.scale.setScalar(Math.max(0.001, flame));
+      const guard = smooth(ramp(t, at(89.6), at(92.5)));
+      for (const c of cherubim) c.set(guard, time, reducedMotion);
 
       // the lineage of promise begins
       thread.material.uniforms.uDraw.value = smooth(ramp(t, at(94), at(99.5)));

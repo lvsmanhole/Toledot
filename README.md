@@ -25,10 +25,12 @@ The installed `bible-timeline` command accepts the same subcommands. `validate -
 
 `site/` holds two parts:
 
-- **The Journey** (landing page, source in `journey/`) is a cinematic, scroll-driven WebGL telling of the story. It's built with Three.js and Vite. The built slice covers the Prologue, Creation, Eden and the Fall.
-  - Every environment is procedural (shaders, particles, simple geometry), and figures appear only as silhouettes.
+- **The Journey** (landing page, source in `journey/`) is a cinematic, scroll-driven WebGL telling of the whole story, from before the world to the new creation. It's built with Three.js and Vite and has 52 scenes across 26 acts.
+  - Every environment is procedural (shaders, particles, simple geometry). Figures appear only as silhouettes.
   - Ambient sound is synthesized in the browser and is off until the visitor turns it on.
-  - Scripture is quoted from the World English Bible (public domain).
+  - Scripture is quoted from the King James Version, Apocrypha included for 1 Maccabees. `journey/tests/story.test.mjs` checks every caption against the KJV text in `journey/tests/fixtures/kjv.json`.
+  - **The Chronicle**, a ribbon along the bottom of every scene, is the Toledot timeline inside the journey. It shows the people of the current chapters alive around the story's year, with dashed lines for editorial estimates, solid lines for anchored dates, and gold for the line of promise. It also shows the chapters' events and a playhead at the current year. Clicking a name or event opens it in Toledot.
+  - Scenes load on demand, so only the current scene and its neighbours stay in memory. `?nogate#u=<unit>` deep-links to any point on the 0–1146 story axis, and `?q=low` forces low quality.
 - **Toledot** (`site/timeline/`) is the research timeline of every person. It's dependency-free (ES modules, canvas) and reads the generated bundle in `site/data/`.
 
 Build and serve:
@@ -37,14 +39,16 @@ Build and serve:
 py -3.11 -m bible_timeline site            # writes site/data/core.json and details.json
 cd journey; npm install; npm run build; cd ..   # writes site/index.html and site/assets/
 py -3.11 -m http.server 8765 -d site       # open http://127.0.0.1:8765/
-node --test site/timeline/tests/layout.test.mjs journey/tests/script.test.mjs
+node --test site/timeline/tests/layout.test.mjs journey/tests/story.test.mjs
 ```
 
-`npm run dev` inside `journey/` serves the journey alone with hot reload; the timeline links need the built `site/`. The journey's story lives in `journey/src/script.js`:
+`npm run dev` inside `journey/` serves the journey alone with hot reload; the Chronicle and the timeline links need `site/data/` and the built `site/`. The journey's story lives in `journey/src/story.js`:
 
-- scene ranges and transitions on a 0–100 story axis;
+- scenes in order with their lengths, transitions, years (following the Toledot chronology) and Chronicle chapters;
 - captions and their references;
-- the act list, where acts not yet built are shown as "in production".
+- the act list shown on the rail.
+
+Shared building blocks (terrain, sky, water, vegetation, architecture, figures, effects, the ancient map) are in `journey/src/kit/`. To refresh the KJV fixture after adding captions, run `node journey/scripts/kjv-fixture.mjs <eng-kjv_vpl.txt>` with eBible.org's `eng-kjv` verse-per-line file.
 
 Each scene in `journey/src/scenes/` returns grade and audio levels per frame, and `journey/src/main.js` directs them.
 
