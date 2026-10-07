@@ -31,7 +31,7 @@ The installed `bible-timeline` command accepts the same subcommands. `validate -
   - Scripture is quoted from the King James Version, Apocrypha included for 1 Maccabees. `journey/tests/story.test.mjs` checks every caption against the KJV text in `journey/tests/fixtures/kjv.json`.
   - **The Chronicle**, a ribbon along the bottom of every scene, is the Toledot timeline inside the journey. It shows the people of the current chapters alive around the story's year, with dashed lines for editorial estimates, solid lines for anchored dates, and gold for the line of promise. It also shows the chapters' events and a playhead at the current year. Clicking a name or event opens it in Toledot.
   - Scenes load on demand, so only the current scene and its neighbours stay in memory. `?nogate#u=<unit>` deep-links to any point on the 0–1146 story axis, and `?q=low` forces low quality.
-- **Toledot** (`site/timeline/`) is the research timeline of every person. It's dependency-free (ES modules, canvas) and reads the generated bundle in `site/data/`.
+- **Toledot: The Generations** (`site/timeline/`) is the research timeline of every person. *Toledot* (תּוֹלְדוֹת) is the Hebrew word Genesis uses for “generations” (Genesis 2:4; 5:1). It's dependency-free (ES modules, canvas) and reads the generated bundle in `site/data/`.
 
 Build and serve:
 

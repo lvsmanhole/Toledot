@@ -180,7 +180,7 @@ function applyRoute(next) {
   if (route.view === "list") renderList();
   if (route.view === "parallels") renderParallels();
   if (route.view === "about") renderAbout();
-  document.title = person ? `${person.name} — Toledot` : event ? `${event.name} — Toledot` : "Toledot — People of the Bible in Time";
+  document.title = person ? `${person.name} — Toledot: The Generations` : event ? `${event.name} — Toledot: The Generations` : "Toledot: The Generations — People of the Bible in Time";
 }
 
 // ---------------------------------------------------------------- links
@@ -419,7 +419,8 @@ function renderAbout() {
   const sources = model.details ? Object.entries(model.details.sources) : [];
   body.replaceChildren(
     h("h2", {}, "How to read this timeline"),
-    h("p", {}, `Toledot places ${model.people.length.toLocaleString()} people and ${model.events.length} events from ${model.books.length} books: the Protestant canon, the Septuagint additions, and the wider Ethiopian Orthodox canon. Each person appears in every chapter that names them in the base text of the book (Leningrad Codex for the Hebrew Bible, NA28 for the New Testament).`),
+    h("p", {}, "Toledot (תּוֹלְדוֹת) is the Hebrew word Genesis uses to mark its sections: “These are the generations of the heavens and of the earth” (Genesis 2:4), “the book of the generations of Adam” (Genesis 5:1), and so on through Noah, Shem, Terah, Isaac and Jacob. Matthew opens the same way: “The book of the generation of Jesus Christ” (Matthew 1:1)."),
+    h("p", {}, `Toledot: The Generations places ${model.people.length.toLocaleString()} people and ${model.events.length} events from ${model.books.length} books: the Protestant canon, the Septuagint additions, and the wider Ethiopian Orthodox canon. Each person appears in every chapter that names them in the base text of the book (Leningrad Codex for the Hebrew Bible, NA28 for the New Testament).`),
     h("h3", {}, "Two kinds of dates"),
     h("p", {}, `The Bible rarely gives calendar years. Only ${anchored} lifespans are tied to dated text (regnal synchronisms, explicit ages, or securely dated rulers); they are drawn as solid bars. Every other life, ${(model.people.length - anchored).toLocaleString()} in all, is an editorial window, drawn dashed and marked grade E. Those windows keep the text's relative order (parents before children, contemporaries together) but their calendar years are a display convention, not a claim.`),
     h("dl", {},
