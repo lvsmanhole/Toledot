@@ -6,7 +6,7 @@ import * as THREE from "three";
 
 import { pulse, sramp } from "../kit/common.js";
 import { pillar } from "../kit/effects.js";
-import { figure } from "../kit/figures.js";
+import { figure, robedGeometry } from "../kit/figures.js";
 import { createLandscape } from "../kit/landscape.js";
 import { altar } from "../kit/structures.js";
 import { composeHeight, heights } from "../kit/terrain.js";
@@ -51,6 +51,53 @@ function angels(count, radius, height) {
   return points;
 }
 
+// "a ladder set up on the earth, and the top of it reached to heaven": a stair of light turning up into the
+// sky, and on it the angels as shining figures, some going up and some coming down (Genesis 28:12)
+const STEP_RISE = 0.45;
+const STEP_TURN = 0.11;
+const STAIR_R = 3.4;
+const stairAt = (s, out = new THREE.Vector3()) => out.set(Math.cos(s * STEP_TURN) * STAIR_R, s * STEP_RISE, Math.sin(s * STEP_TURN) * STAIR_R);
+
+function stairway(steps) {
+  const geo = new THREE.BoxGeometry(2.4, 0.1, 0.8);
+  const mat = new THREE.MeshBasicMaterial({ color: new THREE.Color(1.4, 1.15, 0.75), transparent: true, opacity: 0, depthWrite: false, blending: THREE.AdditiveBlending });
+  const mesh = new THREE.InstancedMesh(geo, mat, steps);
+  const m = new THREE.Matrix4();
+  const q = new THREE.Quaternion();
+  const v = new THREE.Vector3();
+  for (let s = 0; s < steps; s++) {
+    q.setFromAxisAngle(new THREE.Vector3(0, 1, 0), -s * STEP_TURN);
+    const k = 1 - s / steps;
+    mesh.setMatrixAt(s, m.compose(stairAt(s, v), q, new THREE.Vector3(1, 1, 1).multiplyScalar(0.6 + 0.4 * k)));
+  }
+  mesh.frustumCulled = false;
+  return mesh;
+}
+
+function host(count, steps) {
+  const mat = new THREE.MeshBasicMaterial({ color: new THREE.Color(1.6, 1.4, 1.05), transparent: true, opacity: 0, depthWrite: false, blending: THREE.AdditiveBlending });
+  const mesh = new THREE.InstancedMesh(robedGeometry(1.9, { detail: "low" }), mat, count);
+  mesh.frustumCulled = false;
+  const walkers = Array.from({ length: count }, (_, i) => ({ s: (i / count) * steps, dir: i % 2 ? 1 : -1, pace: 1.6 + (i % 5) * 0.25 }));
+  const m = new THREE.Matrix4();
+  const q = new THREE.Quaternion();
+  const v = new THREE.Vector3();
+  const one = new THREE.Vector3(1, 1, 1);
+  return {
+    mesh,
+    update(time) {
+      walkers.forEach((w, i) => {
+        const s = (((w.s + time * w.pace * w.dir) % steps) + steps) % steps;
+        stairAt(s, v);
+        v.y += 0.05;
+        q.setFromAxisAngle(new THREE.Vector3(0, 1, 0), -s * STEP_TURN + (w.dir > 0 ? Math.PI : 0));
+        mesh.setMatrixAt(i, m.compose(v, q, one));
+      });
+      mesh.instanceMatrix.needsUpdate = true;
+    },
+  };
+}
+
 export function create(ctx) {
   const height = composeHeight([heights.rolling(14, 0.008, 101), heights.flatten(0, 0, 10, 30, 6)], 2);
   const L = createLandscape(ctx, {
@@ -67,7 +114,7 @@ export function create(ctx) {
       [20, [14, 9, 14], [0, 6.5, 0], 46],
     ],
     keepAboveGround: true,
-    grade: (rel) => ({ bloom: 0.6 + 0.4 * pulse(rel, 6, 9, 12, 15), threshold: 0.6 }),
+    grade: (rel) => ({ bloom: 0.35 + 0.2 * pulse(rel, 6, 9, 12, 15), threshold: 0.8 }),
     audio: (rel) => ({ drone: 0.3, shimmer: 0.2 + 0.6 * pulse(rel, 3, 7, 13, 15.5), wind: 0.1 }),
   });
   const h = L.height;
@@ -85,20 +132,32 @@ export function create(ctx) {
     stars.material.uniforms.uTime.value = time;
     stars.material.uniforms.uPixelRatio.value = pixelRatio;
   });
-  const ladder = pillar({ radius: 5, height: 1400, color: [1, 0.88, 0.62], gain: 1.4 });
+  const ladder = pillar({ radius: 5, height: 1400, color: [1, 0.88, 0.62], gain: 0.45 });
   ladder.position.set(2.5, ground, -2);
   L.add(ladder);
-  const host = angels(ctx.quality === "low" ? 400 : 900, 5, 1400);
-  host.position.set(2.5, ground, -2);
-  L.add(host);
+  const motes = angels(ctx.quality === "low" ? 200 : 400, 5, 1400);
+  motes.position.set(2.5, ground, -2);
+  L.add(motes);
+  const STEPS = 2600;
+  const stair = stairway(STEPS);
+  stair.position.set(2.5, ground, -2);
+  L.add(stair);
+  const angelsOnStair = host(ctx.quality === "low" ? 90 : 220, STEPS);
+  angelsOnStair.mesh.position.set(2.5, ground, -2);
+  L.add(angelsOnStair.mesh);
   L.onUpdate(({ rel, time, pixelRatio }) => {
     const on = pulse(rel, 2, 5, 14, 16);
     ladder.material.uniforms.uAmount.value = on;
     ladder.material.uniforms.uTime.value = time;
     ladder.visible = on > 0.01;
-    host.material.uniforms.uAmount.value = on;
-    host.material.uniforms.uTime.value = time;
-    host.material.uniforms.uPixelRatio.value = pixelRatio;
+    motes.material.uniforms.uAmount.value = on * 0.5;
+    motes.material.uniforms.uTime.value = time;
+    motes.material.uniforms.uPixelRatio.value = pixelRatio;
+    stair.material.opacity = on * 0.85;
+    stair.visible = on > 0.01;
+    angelsOnStair.mesh.material.opacity = on * 0.9;
+    angelsOnStair.mesh.visible = on > 0.01;
+    if (on > 0.01) angelsOnStair.update(time);
     // Jacob wakes and stands at dawn
     const up = sramp(rel, 15.5, 17);
     jacob.rotation.z = (Math.PI / 2) * (1 - up);

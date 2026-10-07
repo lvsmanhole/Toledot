@@ -4,6 +4,8 @@ import * as THREE from "three";
 import { mergeGeometries, mergeVertices } from "three/examples/jsm/utils/BufferGeometryUtils.js";
 
 import { fbm2, rng } from "../engine/noise.js";
+import { modelParts } from "./library.js";
+import { SURFACES } from "./surface.js";
 
 /**
  * Blades placed by `place(random) -> [x, z] | null` on `height(x, z)`.
@@ -11,7 +13,7 @@ import { fbm2, rng } from "../engine/noise.js";
  */
 export function createBlades({ count, place, height, kind = "grass", random = rng(5), minH = 0.4, maxH = 40 }) {
   const shapes = {
-    grass: { w: 0.055, h: [0.35, 1.0], base: [[0.02, 0.045, 0.012], [0.04, 0.07, 0.016]], tip: [[0.17, 0.27, 0.06], [0.3, 0.33, 0.1]], head: 0 },
+    grass: { w: 0.04, h: [0.25, 0.7], base: [[0.05, 0.06, 0.025], [0.08, 0.08, 0.035]], tip: [[0.26, 0.27, 0.12], [0.36, 0.33, 0.17]], head: 0 },
     wheat: { w: 0.04, h: [0.9, 1.4], base: [[0.25, 0.2, 0.06], [0.3, 0.24, 0.08]], tip: [[0.85, 0.66, 0.3], [0.95, 0.78, 0.4]], head: 1 },
     reeds: { w: 0.05, h: [1.6, 2.8], base: [[0.08, 0.1, 0.04], [0.12, 0.13, 0.05]], tip: [[0.42, 0.42, 0.22], [0.55, 0.5, 0.28]], head: 0 },
   };
@@ -131,21 +133,56 @@ function lumpCluster(seed, radius, lumps = 6, squash = 0.82) {
   return g;
 }
 
+let frondTex = null;
+/** A date-palm frond drawn once: a midrib with ranks of narrow leaflets, transparent between them. */
+function palmFrondTexture() {
+  if (frondTex) return frondTex;
+  const c = document.createElement("canvas");
+  c.width = 512;
+  c.height = 128;
+  const g = c.getContext("2d");
+  g.clearRect(0, 0, 512, 128);
+  g.strokeStyle = "#6b6a3a";
+  g.lineWidth = 3;
+  g.beginPath();
+  g.moveTo(0, 64);
+  g.lineTo(512, 64);
+  g.stroke();
+  for (let i = 0; i < 70; i++) {
+    const x = 14 + i * 7;
+    const len = 52 * Math.sin(Math.min(1, (x / 512) * 1.15) * Math.PI) + 6;
+    for (const s of [-1, 1]) {
+      const shade = 70 + Math.floor(Math.random() * 40);
+      g.strokeStyle = `rgb(${shade + 10},${shade + 30},${Math.floor(shade * 0.55)})`;
+      g.lineWidth = 3.2 * (1 - x / 700);
+      g.beginPath();
+      g.moveTo(x, 64);
+      g.quadraticCurveTo(x + 10, 64 + s * len * 0.5, x + 22, 64 + s * len);
+      g.stroke();
+    }
+  }
+  frondTex = new THREE.CanvasTexture(c);
+  frondTex.colorSpace = THREE.SRGBColorSpace;
+  frondTex.anisotropy = 4;
+  return frondTex;
+}
+
 function palmCrown() {
-  // drooping fronds: thin tapered strips radiating from the top
+  // arching fronds radiating from the crown, the lower ones drooping
   const fronds = [];
-  for (let i = 0; i < 11; i++) {
-    const g = new THREE.PlaneGeometry(1, 1, 8, 1);
+  for (let i = 0; i < 16; i++) {
+    const g = new THREE.PlaneGeometry(1, 1, 10, 1);
     g.translate(0.5, 0, 0);
     const p = g.attributes.position;
+    const droop = 0.9 + (i % 3) * 0.5;
     for (let k = 0; k < p.count; k++) {
       const x = p.getX(k);
       const y = p.getY(k);
-      p.setXYZ(k, x * 3.2, -x * x * 1.6 + x * 0.6, y * 0.55 * (1 - x * 0.85));
+      p.setXYZ(k, x * 3.4, -x * x * droop + x * 0.9, y * 1.1 * (1 - x * 0.35));
     }
-    g.rotateX(0.35 * ((i % 2) * 2 - 1));
-    g.rotateY((i / 11) * Math.PI * 2 + (i % 3) * 0.2);
-    g.deleteAttribute("uv");
+    g.rotateX(((i % 2) * 2 - 1) * 0.25);
+    g.rotateZ(i < 6 ? 0.35 : i < 11 ? 0 : -0.3);
+    g.rotateY((i / 16) * Math.PI * 2 + (i % 3) * 0.3);
     fronds.push(g);
   }
   return mergeGeometries(fronds);
@@ -180,11 +217,166 @@ function swayPatch(material, uniforms) {
  * Instanced trees. kind: broadleaf | olive | palm | cypress | willow.
  * place(random) -> [x, z] | null; height(x, z) for ground; size range.
  */
+let TREE_BUDGET = 60;
+/** Cap scanned trees per stand (set lower on low quality). */
+export function setTreeBudget(n) { TREE_BUDGET = n; }
+
+const SCANNED = { broadleaf: { keys: ["tree1", "tree2"], tint: [1, 1, 1] }, olive: { keys: ["tree2", "tree1"], tint: [0.78, 0.88, 0.72], squat: 0.7 }, willow: { keys: ["tree1"], tint: [0.9, 1.0, 0.8] } };
+
+// ---------------------------------------------------------------- foliage cards from the scans' leaf atlases
+// leaf rectangles in the 1024px atlas (five on the top row, three below)
+const LEAF_RECTS = [[10, 15, 150, 510], [165, 20, 185, 390], [365, 30, 135, 345], [525, 45, 145, 330], [705, 15, 135, 410], [10, 640, 185, 385], [215, 590, 155, 434], [425, 615, 155, 409]];
+const foliageCache = new Map();
+
+/** A transparent card covered with a cluster of real leaves cut from the atlas. Resolves to a texture. */
+function foliageTexture(key) {
+  if (foliageCache.has(key)) return foliageCache.get(key);
+  const p = new Promise((resolve) => {
+    const img = new Image();
+    img.crossOrigin = "anonymous";
+    img.onload = () => {
+      // cut the leaves out: the atlas background is black
+      const src = document.createElement("canvas");
+      src.width = img.width;
+      src.height = img.height;
+      const sg = src.getContext("2d");
+      sg.drawImage(img, 0, 0);
+      const data = sg.getImageData(0, 0, src.width, src.height);
+      for (let i = 0; i < data.data.length; i += 4) {
+        const l = data.data[i] + data.data[i + 1] + data.data[i + 2];
+        data.data[i + 3] = l < 40 ? 0 : l < 90 ? ((l - 40) / 50) * 255 : 255;
+      }
+      sg.putImageData(data, 0, 0);
+      const s = img.width / 1024;
+      const c = document.createElement("canvas");
+      c.width = c.height = 512;
+      const g = c.getContext("2d");
+      const r = rng(key.length * 31);
+      // a dense spray of leaves from twigs radiating out of the card's lower centre
+      for (let i = 0; i < 70; i++) {
+        const [x, y, w, h] = LEAF_RECTS[Math.floor(r() * LEAF_RECTS.length)];
+        const ang = (r() - 0.5) * Math.PI * 1.6;
+        const dist = 40 + r() * 190;
+        const cx = 256 + Math.sin(ang) * dist;
+        const cy = 470 - Math.cos(ang) * dist * 0.95;
+        const k = (0.16 + r() * 0.1) * (1 - dist / 700);
+        g.save();
+        g.translate(cx, cy);
+        g.rotate(ang + (r() - 0.5) * 1.2);
+        g.globalAlpha = 1;
+        g.filter = `brightness(${0.75 + r() * 0.45})`;
+        g.drawImage(src, x * s, y * s, w * s, h * s, (-w * k) / 2, -h * k, w * k, h * k);
+        g.restore();
+      }
+      const tex = new THREE.CanvasTexture(c);
+      tex.colorSpace = THREE.SRGBColorSpace;
+      tex.anisotropy = 4;
+      resolve(tex);
+    };
+    img.onerror = () => resolve(null);
+    img.src = new URL(`lib/tex/${key}_leaves.jpg`, document.baseURI).href;
+  });
+  foliageCache.set(key, p);
+  return p;
+}
+
+/** Crossed foliage cards set at the branch tips of a scanned tree, in the model's space. */
+function foliageCards(branchParts, random, cards = 150) {
+  const tips = [];
+  const v = new THREE.Vector3();
+  let top = 0;
+  for (const part of branchParts) {
+    const pos = part.geometry.attributes.position;
+    for (let i = 0; i < pos.count; i += 3) {
+      v.fromBufferAttribute(pos, i).applyMatrix4(part.matrix);
+      top = Math.max(top, v.y);
+      tips.push(v.clone());
+    }
+  }
+  const high = tips.filter((p) => p.y > top * 0.38);
+  const center = high.reduce((s, p) => s.add(p), new THREE.Vector3()).multiplyScalar(1 / Math.max(1, high.length));
+  const geos = [];
+  for (let i = 0; i < cards && high.length; i++) {
+    const at = high[Math.floor(random() * high.length)];
+    const size = 1.1 + random() * 0.9;
+    for (const yaw of [0, Math.PI / 2]) {
+      const g = new THREE.PlaneGeometry(size, size);
+      g.translate(0, size * 0.42, 0);
+      g.rotateX((random() - 0.5) * 0.9);
+      g.rotateY(yaw + random() * Math.PI);
+      g.translate(at.x, at.y - size * 0.25, at.z);
+      // normals point out of the crown so the canopy shades as a mass, lit on top and dark inside
+      const n = g.attributes.normal;
+      const pp = g.attributes.position;
+      for (let k = 0; k < n.count; k++) {
+        const d = new THREE.Vector3(pp.getX(k), pp.getY(k), pp.getZ(k)).sub(center).normalize();
+        n.setXYZ(k, d.x, d.y + 0.3, d.z);
+      }
+      geos.push(g);
+    }
+  }
+  return geos.length ? mergeGeometries(geos) : null;
+}
+
+/** Instanced scanned trees (CC0 Poly Haven scans), filled in when the models arrive. */
+function scannedTrees({ count, place, height, kind, random, size, tint, uniforms }) {
+  const spec = SCANNED[kind];
+  const group = new THREE.Group();
+  const placements = spec.keys.map(() => []);
+  const m = new THREE.Matrix4();
+  const q = new THREE.Quaternion();
+  const up = new THREE.Vector3(0, 1, 0);
+  let n = 0;
+  for (let tries = 0; n < count && tries < count * 20; tries++) {
+    const at = place(random);
+    if (!at) continue;
+    const [x, z] = at;
+    const sz = size[0] + random() * (size[1] - size[0]);
+    // the scans stand about 5 m (tree1) and 3.4 m (tree2) tall
+    const v = Math.floor(random() * spec.keys.length);
+    const k = (sz / (spec.keys[v] === "tree1" ? 3.2 : 2.6)) * (0.85 + random() * 0.3);
+    q.setFromAxisAngle(up, random() * 6.28);
+    m.compose(new THREE.Vector3(x, height(x, z) - 0.15, z), q, new THREE.Vector3(k, k * (spec.squat ?? 1), k));
+    placements[v].push(m.clone());
+    n++;
+  }
+  const leafTint = new THREE.Color(...(tint ?? spec.tint));
+  spec.keys.forEach((key, v) => {
+    if (!placements[v].length) return;
+    Promise.all([modelParts(key), foliageTexture(key)]).then(([parts, leafTex]) => {
+      const wood = parts.filter((part) => !/leaves/i.test(part.material.name));
+      const cards = leafTex ? foliageCards(wood.filter((part) => /branch/i.test(part.material.name)).concat(wood).slice(0, 2), rng(7 + v)) : null;
+      if (cards) {
+        const leafMat = new THREE.MeshStandardMaterial({ map: leafTex, alphaTest: 0.45, side: THREE.DoubleSide, roughness: 0.75, color: leafTint });
+        swayPatch(leafMat, uniforms);
+        wood.push({ geometry: cards, material: leafMat, matrix: new THREE.Matrix4() });
+      }
+      for (const part of wood) {
+        const mat = part.material;
+        const mesh = new THREE.InstancedMesh(part.geometry, mat, placements[v].length);
+        placements[v].forEach((mm, i) => mesh.setMatrixAt(i, mm.clone().multiply(part.matrix)));
+        mesh.instanceMatrix.needsUpdate = true;
+        mesh.castShadow = true;
+        mesh.receiveShadow = true;
+        mesh.frustumCulled = false;
+        group.add(mesh);
+      }
+    }).catch((err) => console.warn("vegetation:", err));
+  });
+  return group;
+}
+
 export function createTrees({ count, place, height, kind = "broadleaf", random = rng(9), size = [3, 7], tint = null }) {
   const uniforms = { uTime: { value: 0 }, uWind: { value: 0.3 } };
+  if (SCANNED[kind]) {
+    const group = scannedTrees({ count: Math.min(count, TREE_BUDGET), place, height, kind, random, size, tint, uniforms });
+    return { group, update({ time, wind }) { uniforms.uTime.value = time; uniforms.uWind.value = wind; } };
+  }
   const group = new THREE.Group();
-  const trunkMat = new THREE.MeshStandardMaterial({ color: kind === "olive" ? 0x4a4036 : kind === "palm" ? 0x5a4632 : 0x2a1f16, roughness: 1 });
-  const leafMat = new THREE.MeshStandardMaterial({ color: 0xffffff, roughness: 0.9, vertexColors: kind !== "palm", side: kind === "palm" ? THREE.DoubleSide : THREE.FrontSide });
+  const trunkMat = SURFACES.bark();
+  const leafMat = kind === "palm"
+    ? new THREE.MeshStandardMaterial({ map: palmFrondTexture(), alphaTest: 0.4, roughness: 0.85, side: THREE.DoubleSide })
+    : new THREE.MeshStandardMaterial({ color: 0xffffff, roughness: 0.9, vertexColors: true });
   swayPatch(leafMat, uniforms);
   let trunkGeo;
   let crowns;
@@ -226,7 +418,7 @@ export function createTrees({ count, place, height, kind = "broadleaf", random =
       const top = new THREE.Vector3(Math.sin(0.25 * 8) * 0.35, 1, 0).applyQuaternion(q).multiplyScalar(trunkH);
       m.compose(p.set(x + top.x, h - 0.2 + top.y, z + top.z), q, s.set(sz * 0.55, sz * 0.55, sz * 0.55));
       crownMeshes[0].setMatrixAt(counts[0], m);
-      col.setHSL(0.2 + random() * 0.05, 0.4, 0.16 + random() * 0.06);
+      col.setHSL(0.16 + random() * 0.06, 0.25, 0.62 + random() * 0.2);
       crownMeshes[0].setColorAt(counts[0], col);
       counts[0]++;
     } else {
@@ -248,6 +440,7 @@ export function createTrees({ count, place, height, kind = "broadleaf", random =
     n++;
   }
   trunks.count = n;
+  trunks.castShadow = true;
   trunks.instanceMatrix.needsUpdate = true;
   crownMeshes.forEach((c, i) => {
     c.count = counts[i];
@@ -279,3 +472,47 @@ export const placers = {
     return filter && !filter(x, z) ? null : [x, z];
   },
 };
+
+
+const ROCK_KEYS = ["boulder1", "boulder2", "boulder3", "rocks"];
+
+/**
+ * Scanned boulders scattered by place(random) -> [x, z] | null. size: [min, max] metres across.
+ * Filled in when the models arrive.
+ */
+export function scatterRocks({ count, place, height, random = rng(17), size = [0.6, 3.5], keys = ROCK_KEYS, sink = 0.25 }) {
+  const group = new THREE.Group();
+  const placements = keys.map(() => []);
+  const m = new THREE.Matrix4();
+  const q = new THREE.Quaternion();
+  const e = new THREE.Euler();
+  for (let n = 0, tries = 0; n < count && tries < count * 20; tries++) {
+    const at = place(random);
+    if (!at) continue;
+    const [x, z] = at;
+    const v = Math.floor(random() * keys.length);
+    // boulder scans are 1–1.5 m across; the small-rocks scan is 15 cm
+    const base = keys[v] === "rocks" ? 0.15 : 1.2;
+    const k = (size[0] + random() ** 2 * (size[1] - size[0])) / base;
+    e.set((random() - 0.5) * 0.4, random() * 6.28, (random() - 0.5) * 0.4);
+    q.setFromEuler(e);
+    m.compose(new THREE.Vector3(x, height(x, z) - sink * k * base, z), q, new THREE.Vector3(k, k * (0.7 + random() * 0.5), k));
+    placements[v].push(m.clone());
+    n++;
+  }
+  keys.forEach((key, v) => {
+    if (!placements[v].length) return;
+    modelParts(key).then((parts) => {
+      for (const part of parts) {
+        const mesh = new THREE.InstancedMesh(part.geometry, part.material, placements[v].length);
+        placements[v].forEach((mm, i) => mesh.setMatrixAt(i, mm.clone().multiply(part.matrix)));
+        mesh.instanceMatrix.needsUpdate = true;
+        mesh.castShadow = true;
+        mesh.receiveShadow = true;
+        mesh.frustumCulled = false;
+        group.add(mesh);
+      }
+    }).catch((err) => console.warn("vegetation:", err));
+  });
+  return group;
+}

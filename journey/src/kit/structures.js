@@ -5,20 +5,21 @@ import * as THREE from "three";
 import { mergeGeometries } from "three/examples/jsm/utils/BufferGeometryUtils.js";
 
 import { rng } from "../engine/noise.js";
+import { SURFACES, surfaceMaterial } from "./surface.js";
 
 export const MATERIALS = {
-  mud: () => new THREE.MeshStandardMaterial({ color: 0x9a7a55, roughness: 1 }),
-  mudDark: () => new THREE.MeshStandardMaterial({ color: 0x6e5438, roughness: 1 }),
-  limestone: () => new THREE.MeshStandardMaterial({ color: 0xcbbd9e, roughness: 0.95 }),
-  sandstone: () => new THREE.MeshStandardMaterial({ color: 0xc89a66, roughness: 0.95 }),
-  basalt: () => new THREE.MeshStandardMaterial({ color: 0x2a2826, roughness: 1 }),
-  wood: () => new THREE.MeshStandardMaterial({ color: 0x5a4028, roughness: 0.9 }),
-  darkWood: () => new THREE.MeshStandardMaterial({ color: 0x2e2216, roughness: 0.95 }),
-  gold: () => new THREE.MeshStandardMaterial({ color: 0xd8a640, roughness: 0.28, metalness: 0.95, emissive: 0x2a1a04, emissiveIntensity: 0.4 }),
-  bronze: () => new THREE.MeshStandardMaterial({ color: 0x8a5a2c, roughness: 0.35, metalness: 0.85 }),
-  cloth: (c = 0xd8d0bc) => new THREE.MeshStandardMaterial({ color: c, roughness: 1, side: THREE.DoubleSide }),
-  glazedBlue: () => new THREE.MeshStandardMaterial({ color: 0x1d4f8c, roughness: 0.4, metalness: 0.1 }),
-  silhouette: () => new THREE.MeshStandardMaterial({ color: 0x0c0a08, roughness: 1 }),
+  mud: () => SURFACES.mud(),
+  mudDark: () => SURFACES.mudDark(),
+  limestone: () => SURFACES.limestone(),
+  sandstone: () => SURFACES.sandstone(),
+  basalt: () => SURFACES.basalt(),
+  wood: () => SURFACES.wood(),
+  darkWood: () => SURFACES.darkWood(),
+  gold: () => new THREE.MeshStandardMaterial({ color: 0xd8a640, roughness: 0.32, metalness: 1, emissive: 0x2a1a04, emissiveIntensity: 0.15 }),
+  bronze: () => new THREE.MeshStandardMaterial({ color: 0x9a6a36, roughness: 0.4, metalness: 1 }),
+  cloth: (c = 0xd8d0bc) => { const col = new THREE.Color(c); return SURFACES.linen([col.r * 1.4, col.g * 1.4, col.b * 1.4]); },
+  glazedBlue: () => new THREE.MeshStandardMaterial({ color: 0x1d4f8c, roughness: 0.25, metalness: 0.05 }),
+  silhouette: () => SURFACES.darkWood(),
 };
 
 const box = (w, h, d, x = 0, y = 0, z = 0) => {
@@ -27,35 +28,60 @@ const box = (w, h, d, x = 0, y = 0, z = 0) => {
   return g;
 };
 
-/** A low city of flat-roofed houses packed inside radius around the origin. */
+/**
+ * A town of flat-roofed courtyard houses: plastered walls on a stone footing, a parapet round the roof,
+ * dark doorways and small high windows, roof beams showing through the wall, and here and there an
+ * upper room or a roof shelter. Houses face random directions inside the radius.
+ */
 export function city({ count = 120, radius = 30, inner = 0, height = (x, z) => 0, style = "mud", seed = 3, hill = 0 }) {
   const random = rng(seed);
-  const geos = [];
-  const darkGeos = [];
+  const walls = [];
+  const plinths = [];
+  const openings = [];
+  const beams = [];
+  const awnings = [];
+  const put = (list, g, x, y, z, yaw) => { g.rotateY(yaw); g.translate(x, y, z); list.push(g); };
   for (let i = 0; i < count; i++) {
     const a = random() * Math.PI * 2;
     const r = inner + Math.sqrt(random()) * (radius - inner);
     const x = Math.cos(a) * r;
     const z = Math.sin(a) * r;
-    const w = 1.6 + random() * 2.6;
-    const d = 1.6 + random() * 2.6;
-    const h = 1.4 + random() * (style === "stone" ? 3.2 : 2.0) + hill * (1 - r / radius) * 2;
-    const y = height(x, z) - 0.3;
-    const g = box(w, h, d, x, y, z);
-    g.rotateY(0);
-    (random() < 0.25 ? darkGeos : geos).push(g);
-    if (random() < 0.3) geos.push(box(w * 0.4, 0.5, d * 0.4, x + w * 0.2, y + h, z)); // roof room
+    const yaw = Math.floor(random() * 4) * (Math.PI / 2) + (random() - 0.5) * 0.25;
+    const w = 3.2 + random() * 3.6;
+    const d = 3.2 + random() * 3.6;
+    const h = 2.6 + random() * (style === "stone" ? 2.6 : 1.4) + hill * (1 - r / Math.max(1, radius)) * 2;
+    const y = height(x, z) - 0.25;
+    put(walls, box(w, h, d), x, y, z, yaw);
+    // parapet round the roof (Deuteronomy 22:8)
+    for (const [pw, pd, px, pz] of [[w, 0.22, 0, d / 2 - 0.11], [w, 0.22, 0, -d / 2 + 0.11], [0.22, d, w / 2 - 0.11, 0], [0.22, d, -w / 2 + 0.11, 0]]) {
+      put(walls, box(pw, 0.55, pd, px, h, pz), x, y, z, yaw);
+    }
+    put(plinths, box(w + 0.2, 0.6, d + 0.2), x, y - 0.1, z, yaw);
+    // a doorway and a couple of small windows on the front, recessed and dark
+    put(openings, box(0.9, 1.75, 0.12, (random() - 0.5) * (w - 1.6), 0.3, d / 2 + 0.01), x, y, z, yaw);
+    for (let k = 0; k < 2; k++) if (random() < 0.7) put(openings, box(0.45, 0.4, 0.1, (random() - 0.5) * (w - 1), h - 0.9, d / 2 + 0.01), x, y, z, yaw);
+    // roof beams through the wall below the parapet
+    const nb = Math.floor(w / 0.7);
+    for (let k = 0; k < nb; k++) put(beams, box(0.14, 0.14, 0.45, -w / 2 + 0.4 + k * 0.7, h - 0.25, d / 2 + 0.15), x, y, z, yaw);
+    // an upper room, or a booth of branches on the roof
+    const roll = random();
+    if (roll < 0.22) put(walls, box(w * 0.45, 2.2, d * 0.45, w * 0.22, h, -d * 0.2), x, y, z, yaw);
+    else if (roll < 0.35) put(awnings, box(w * 0.5, 0.08, d * 0.4, -w * 0.2, h + 1.6, 0), x, y, z, yaw);
   }
   const group = new THREE.Group();
-  const mat = style === "stone" ? MATERIALS.limestone() : style === "white" ? new THREE.MeshStandardMaterial({ color: 0xe0d6c2, roughness: 0.95 }) : MATERIALS.mud();
-  group.add(new THREE.Mesh(mergeGeometries(geos), mat));
-  if (darkGeos.length) group.add(new THREE.Mesh(mergeGeometries(darkGeos), style === "mud" ? MATERIALS.mudDark() : MATERIALS.sandstone()));
+  const wallMat = style === "stone" ? MATERIALS.limestone() : style === "white" ? surfaceMaterial("plaster", { tile: 3, tint: [0.9, 0.86, 0.78] }) : surfaceMaterial("plaster", { tile: 3, tint: [0.86, 0.76, 0.64] });
+  group.add(new THREE.Mesh(mergeGeometries(walls), wallMat));
+  group.add(new THREE.Mesh(mergeGeometries(plinths), MATERIALS.basalt()));
+  group.add(new THREE.Mesh(mergeGeometries(openings), new THREE.MeshStandardMaterial({ color: 0x0d0a08, roughness: 1 })));
+  group.add(new THREE.Mesh(mergeGeometries(beams), MATERIALS.darkWood()));
+  if (awnings.length) group.add(new THREE.Mesh(mergeGeometries(awnings), MATERIALS.cloth(0x6a5638)));
   return group;
 }
 
 /** A wall along a closed or open polyline of [x, z] points with towers at the corners. */
-export function wall({ points, height = (x, z) => 0, h = 6, thickness = 2, towerEvery = 1, closed = true, material = "mud" }) {
+export function wall({ points, height = (x, z) => 0, h = 6, thickness = 2, towerEvery = 1, closed = true, material = "mud", footing = "limestone" }) {
   const geos = [];
+  const stones = [];
   const n = closed ? points.length : points.length - 1;
   for (let i = 0; i < n; i++) {
     const [x0, z0] = points[i];
@@ -72,6 +98,18 @@ export function wall({ points, height = (x, z) => 0, h = 6, thickness = 2, tower
       g.rotateY(-Math.atan2(z1 - z0, x1 - x0));
       g.translate(cx, height(cx, cz) - 1, cz);
       geos.push(g);
+      if (footing) {
+        // a battered stone revetment at the foot of the brick, sloping out (the glacis)
+        const fh = h * 0.42;
+        const f = new THREE.BoxGeometry(len / segs + 0.25, fh, thickness * 2.4, 1, 1, 1);
+        const fp = f.attributes.position;
+        for (let k = 0; k < fp.count; k++) if (fp.getY(k) > 0) fp.setZ(k, fp.getZ(k) * 0.45);
+        f.computeVertexNormals();
+        f.translate(0, fh / 2 - 1.2, 0);
+        f.rotateY(-Math.atan2(z1 - z0, x1 - x0));
+        f.translate(cx, height(cx, cz), cz);
+        stones.push(f);
+      }
       // crenellations
       for (let c = 0; c < 3; c++) {
         const k = t0 + (t1 - t0) * (c + 0.5) / 3;
@@ -84,12 +122,36 @@ export function wall({ points, height = (x, z) => 0, h = 6, thickness = 2, tower
       }
     }
     if (i % towerEvery === 0) {
-      const t = new THREE.BoxGeometry(thickness * 2.2, h * 1.35, thickness * 2.2);
-      t.translate(x0, height(x0, z0) - 1 + h * 0.675, z0);
+      const tw = thickness * 2.2;
+      const base = height(x0, z0) - 1;
+      const t = new THREE.BoxGeometry(tw, h * 1.35, tw);
+      t.translate(x0, base + h * 0.675, z0);
       geos.push(t);
+      // the tower's parapet: merlons round the top, a dark window slit on each face
+      for (let c = 0; c < 4; c++) {
+        for (const s of [-1, 1]) {
+          const m = new THREE.BoxGeometry(tw * 0.22, 0.9, tw * 0.22);
+          const along = (c - 1.5) * tw * 0.27;
+          m.translate(...(s > 0 ? [along, 0, tw * 0.39] : [tw * 0.39, 0, along]));
+          m.translate(x0, base + h * 1.35 + 0.45, z0);
+          geos.push(m);
+          const m2 = new THREE.BoxGeometry(tw * 0.22, 0.9, tw * 0.22);
+          m2.translate(...(s > 0 ? [along, 0, -tw * 0.39] : [-tw * 0.39, 0, along]));
+          m2.translate(x0, base + h * 1.35 + 0.45, z0);
+          geos.push(m2);
+        }
+      }
+      if (footing) {
+        const f = new THREE.CylinderGeometry(tw * 0.62, tw * 0.95, h * 0.42, 4, 1);
+        f.rotateY(Math.PI / 4);
+        f.translate(x0, height(x0, z0) - 1.2 + h * 0.21, z0);
+        stones.push(f);
+      }
     }
   }
-  return new THREE.Group().add(new THREE.Mesh(mergeGeometries(geos), typeof material === "string" ? MATERIALS[material]() : material));
+  const group = new THREE.Group().add(new THREE.Mesh(mergeGeometries(geos), typeof material === "string" ? MATERIALS[material]() : material));
+  if (stones.length) group.add(new THREE.Mesh(mergeGeometries(stones.map((g) => (g.index ? g.toNonIndexed() : g)).map((g) => { g.deleteAttribute("uv"); return g; })), MATERIALS[footing]()));
+  return group;
 }
 
 /** Stepped temple-tower (ziggurat) with a stair on the front face. */
@@ -107,51 +169,77 @@ export function ziggurat({ base = 40, tiers = 5, tierH = 5, material = "mud" }) 
 
 /** The tower of Babel: a vast round tower of stacked, receding rings; the top unfinished. */
 export function babelTower({ radius = 40, levels = 9, levelH = 9, unfinished = 2, seed = 4 }) {
+  // burnt brick laid in slime (Genesis 11:3): each storey a battered drum of brick with buttresses and
+  // dark niches, a course of bitumen at its foot, a terrace walk with a parapet, and at the top the walls
+  // still rising, ragged, in scaffolding
   const random = rng(seed);
   const brick = MATERIALS.mud();
   const dark = MATERIALS.mudDark();
+  const pitch = new THREE.MeshStandardMaterial({ color: 0x17120e, roughness: 0.6, side: THREE.DoubleSide });
+  brick.side = THREE.DoubleSide; // the broken walls at the top are open shells
   const group = new THREE.Group();
   const solid = [];
   const shadow = [];
+  const bitumen = [];
+  const timber = [];
+  const step = 0.085;
+  const around = (geo, a, r) => geo.applyMatrix4(new THREE.Matrix4().makeRotationY(-a + Math.PI / 2).setPosition(Math.cos(a) * r, 0, Math.sin(a) * r));
   for (let i = 0; i < levels; i++) {
-    const r0 = radius * (1 - i * 0.085);
-    const r1 = radius * (1 - (i + 1) * 0.085);
-    const g = new THREE.CylinderGeometry(r1 * 0.97, r0, levelH, 48, 1, false);
-    g.translate(0, i * levelH + levelH / 2, 0);
-    if (i >= levels - unfinished) {
-      // ragged, open top
-      const ring = new THREE.CylinderGeometry(r1, r0, levelH * (0.4 + random() * 0.5), 48, 1, true, random() * 2, Math.PI * (1.1 + random() * 0.7));
-      ring.translate(0, i * levelH + levelH / 2, 0);
-      solid.push(ring);
-    } else {
-      solid.push(g);
-      // arcade: a ring of dark recesses
-      for (let k = 0; k < 28; k++) {
-        const a = (k / 28) * Math.PI * 2 + i * 0.3;
-        const arch = new THREE.BoxGeometry(2.2, levelH * 0.45, 1.2);
-        arch.translate(0, i * levelH + levelH * 0.4, 0);
-        arch.translate(0, 0, 0);
+    const r0 = radius * (1 - i * step);
+    const r1 = radius * (1 - (i + 1) * step) + 3.2; // wall top, inside the terrace walk of the storey above
+    const y0 = i * levelH;
+    const open = i >= levels - unfinished;
+    const segs = Math.max(48, Math.round(r0 * 2.2));
+    if (!open) {
+      solid.push(new THREE.CylinderGeometry(r1, r0, levelH, segs, 1, false).translate(0, y0 + levelH / 2, 0));
+      // buttresses and recessed niches, the Mesopotamian wall face
+      const n = Math.round(r0 * 0.9);
+      for (let k = 0; k < n; k++) {
+        const a = (k / n) * Math.PI * 2 + i * 0.13;
         const rr = (r0 + r1) / 2;
-        const m = new THREE.Matrix4().makeRotationY(-a).setPosition(Math.cos(a) * rr * 0.995, 0, Math.sin(a) * rr * 0.995);
-        arch.applyMatrix4(m);
-        shadow.push(arch);
+        solid.push(around(new THREE.BoxGeometry(1.6, levelH * 0.92, 1.4).translate(0, y0 + levelH * 0.46, 0).rotateX(0), a, rr + 0.25));
+        shadow.push(around(new THREE.BoxGeometry(0.9, levelH * 0.55, 0.5).translate(0, y0 + levelH * 0.38, 0), a + Math.PI / n, rr + 0.05));
       }
+      // terrace walk on top with a parapet at its edge
+      const walk = new THREE.LatheGeometry([new THREE.Vector2(r1 - 3.6, y0 + levelH), new THREE.Vector2(r1 + 0.2, y0 + levelH), new THREE.Vector2(r1 + 0.2, y0 + levelH + 1.1), new THREE.Vector2(r1 - 0.4, y0 + levelH + 1.1), new THREE.Vector2(r1 - 0.4, y0 + levelH + 0.1), new THREE.Vector2(r1 - 3.6, y0 + levelH + 0.1)].reverse(), segs);
+      solid.push(walk);
+    } else {
+      // walls still going up: a thick broken ring, higher in some bays than others
+      const bays = 18;
+      for (let k = 0; k < bays; k++) {
+        if (random() < 0.18) continue;
+        const a0 = (k / bays) * Math.PI * 2;
+        const hh = levelH * (0.25 + random() * 0.75) * (i === levels - 1 ? 0.7 : 1);
+        const outer = new THREE.CylinderGeometry(r0 - 0.4, r0, hh, 6, 1, false, a0, (Math.PI * 2) / bays + 0.01).translate(0, y0 + hh / 2, 0);
+        solid.push(outer);
+        // courses of brick stepped back where the work stops
+        const top = new THREE.CylinderGeometry(r0 - 0.9, r0 - 0.5, levelH * 0.12, 6, 1, false, a0 + 0.02, (Math.PI * 2) / bays * 0.7).translate(0, y0 + hh + levelH * 0.06, 0);
+        solid.push(top);
+      }
+      // rough fill of the core, lower than the walls
+      solid.push(new THREE.CylinderGeometry(r0 - 2.5, r0 - 2, levelH * 0.3, 32).translate(0, y0 + levelH * 0.15, 0));
     }
-    // the spiral ramp ledge
-    const ledge = new THREE.TorusGeometry((r0 + 1.5), 0.9, 4, 64);
-    ledge.rotateX(Math.PI / 2);
-    ledge.translate(0, i * levelH + 0.4, 0);
-    solid.push(ledge);
+    // the bitumen course at the foot of the storey
+    bitumen.push(new THREE.CylinderGeometry(r0 + 0.06, r0 + 0.1, 0.35, segs, 1, true).translate(0, y0 + 0.4, 0));
   }
-  // scaffolding at the top
-  for (let k = 0; k < 40; k++) {
-    const a = random() * Math.PI * 2;
-    const r = radius * (1 - levels * 0.085) * (0.8 + random() * 0.3);
-    const pole = new THREE.BoxGeometry(0.3, 6 + random() * 8, 0.3);
-    pole.translate(Math.cos(a) * r, (levels - 0.5) * levelH + 3, Math.sin(a) * r);
-    shadow.push(pole);
+  // scaffolding about the unfinished storeys: standards, ledgers and braces lashed together
+  const topR = radius * (1 - (levels - unfinished) * step);
+  const yTop = (levels - unfinished) * levelH;
+  for (let k = 0; k < 26; k++) {
+    const a = (k / 26) * Math.PI * 2 + random() * 0.05;
+    const r = topR + 1.6;
+    const hh = unfinished * levelH * (0.6 + random() * 0.5);
+    timber.push(around(new THREE.CylinderGeometry(0.09, 0.11, hh, 5).translate(0, yTop + hh / 2, 0), a, r));
+    timber.push(around(new THREE.CylinderGeometry(0.09, 0.11, hh * 0.9, 5).translate(0, yTop + hh * 0.45, 0), a, r + 1.4));
+    for (let y = 2.5; y < hh; y += 2.5) {
+      const ledger = new THREE.CylinderGeometry(0.07, 0.07, 1.6, 4).rotateX(Math.PI / 2).translate(0, yTop + y, 0.7);
+      timber.push(around(ledger, a, r));
+      const plank = new THREE.BoxGeometry(2.2, 0.08, 1.5).translate(0, yTop + y + 0.1, 0.7);
+      if (random() < 0.5) timber.push(around(plank, a, r));
+    }
   }
-  group.add(new THREE.Mesh(mergeGeometries(solid), brick), new THREE.Mesh(mergeGeometries(shadow), dark));
+  const merge = (list) => mergeGeometries(list.map((g) => (g.index ? g.toNonIndexed() : g)).map((g) => { for (const k of Object.keys(g.attributes)) if (k !== "position" && k !== "normal" && k !== "uv") g.deleteAttribute(k); return g; }));
+  group.add(new THREE.Mesh(merge(solid), brick), new THREE.Mesh(merge(shadow), dark), new THREE.Mesh(merge(bitumen), pitch), new THREE.Mesh(merge(timber), MATERIALS.wood()));
   return group;
 }
 
@@ -217,7 +305,9 @@ export function granaries({ rows = 4, cols = 8, spacing = 6, radius = 2.3 }) {
 }
 
 /** Tents of an encampment, scattered inside radius (or rings around a centre). */
-export function tents({ count = 60, radius = 40, inner = 0, height = (x, z) => 0, seed = 6, colors = [0x3a2f26, 0x4a3b2e, 0x2b241e] }) {
+export function tents({ count = 60, radius = 40, inner = 0, height = (x, z) => 0, seed = 6, colors = [0x2a231d, 0x3a2f26, 0x1f1a16] }) {
+  // tents of black goats' hair: a long low roof stretched over a row of poles, sagging between them,
+  // the back and sides pegged down to the ground and the front left open in the shade
   const random = rng(seed);
   const byColor = colors.map(() => []);
   for (let i = 0; i < count; i++) {
@@ -225,15 +315,43 @@ export function tents({ count = 60, radius = 40, inner = 0, height = (x, z) => 0
     const r = inner + Math.sqrt(random()) * (radius - inner);
     const x = Math.cos(a) * r;
     const z = Math.sin(a) * r;
-    const s = 1.2 + random() * 1.2;
-    const g = new THREE.CylinderGeometry(0.15, 1.6 * s, 1.6 * s, random() < 0.5 ? 4 : 6, 1);
-    g.scale(1.4, 1, 1);
-    g.rotateY(random() * Math.PI);
-    g.translate(x, height(x, z) + 0.8 * s - 0.1, z);
+    const s = 0.9 + random() * 0.6;
+    const W = (5 + random() * 4) * s; // along the ridge
+    const D = 3.6 * s;
+    const poles = 3;
+    const roof = new THREE.PlaneGeometry(W, D, 18, 8);
+    const p = roof.attributes.position;
+    for (let k = 0; k < p.count; k++) {
+      const u = p.getX(k) / W + 0.5;
+      const v = p.getY(k) / D + 0.5; // 0 at the back, 1 at the open front
+      const ridge = 1.9 * s;
+      const prof = v < 0.55 ? THREE.MathUtils.lerp(0.15, ridge, Math.pow(v / 0.55, 0.7)) : THREE.MathUtils.lerp(ridge, 1.5 * s, (v - 0.55) / 0.45);
+      const sag = Math.abs(Math.sin(u * Math.PI * (poles - 1))) * 0.28 * s * Math.sin(v * Math.PI);
+      p.setXYZ(k, p.getX(k), prof - sag, (v - 0.5) * D);
+    }
+    roof.computeVertexNormals();
+    const parts = [roof];
+    // the end walls, pegged at the foot
+    for (const e of [-1, 1]) {
+      const end = new THREE.PlaneGeometry(D * 0.9, 1.7 * s, 4, 2);
+      end.rotateY(Math.PI / 2);
+      end.translate(e * W / 2, 0.85 * s, -D * 0.05);
+      parts.push(end);
+    }
+    const g = mergeGeometries(parts.map((q) => (q.index ? q.toNonIndexed() : q)));
+    g.rotateY(random() * Math.PI * 2);
+    g.translate(x, height(x, z) - 0.05, z);
     byColor[Math.floor(random() * colors.length)].push(g);
   }
   const group = new THREE.Group();
-  byColor.forEach((geos, i) => { if (geos.length) group.add(new THREE.Mesh(mergeGeometries(geos), MATERIALS.cloth(colors[i]))); });
+  byColor.forEach((geos, i) => {
+    if (!geos.length) return;
+    const mat = MATERIALS.cloth(colors[i]);
+    mat.side = THREE.DoubleSide;
+    const mesh = new THREE.Mesh(mergeGeometries(geos), mat);
+    mesh.castShadow = true;
+    group.add(mesh);
+  });
   return group;
 }
 
@@ -270,10 +388,20 @@ export function ark({ framesOnly = 0 } = {}) {
   const roof = new THREE.CylinderGeometry(0.1, W * 0.62, 1.4, 4, 1);
   roof.rotateY(Math.PI / 4);
   roof.scale(L / (W * 0.88), 1, 1);
-  roof.translate(0, H + 0.7, 0);
+  roof.translate(0, H + 0.32 + 0.7, 0);
   const group = new THREE.Group();
+  // the hull carries its detail: wales along the planking, three decks marked on the sides, the door "in
+  // the side thereof", and the window finished a cubit below the roof (Genesis 6:14-16)
+  const wales = [];
+  for (const y of [0.35, 1.05, 1.95, 2.85]) for (const s of [-1, 1]) wales.push(box(L - (y < 0.5 ? 4 : 0.2), 0.1, 0.08, 0, y, s * (W / 2 + 0.03)));
+  for (let i = 0; i <= 14; i++) for (const s of [-1, 1]) wales.push(box(0.12, H - 0.5, 0.06, -L / 2 + 1 + (i / 14) * (L - 2), 0.5, s * (W / 2 + 0.05)));
+  const door = box(1.5, 1.6, 0.06, -1, 0.8, W / 2 + 0.06);
+  const eave = box(L - 0.3, 0.32, W - 0.3, 0, H, 0); // the shadowed window course
   const hullMesh = new THREE.Mesh(hull, MATERIALS.darkWood());
   const roofMesh = new THREE.Mesh(roof, MATERIALS.wood());
+  const trim = new THREE.Mesh(mergeGeometries([...wales, door]), MATERIALS.darkWood());
+  const gap = new THREE.Mesh(eave, new THREE.MeshStandardMaterial({ color: 0x0b0806, roughness: 1 }));
+  hullMesh.add(trim, gap);
   group.add(hullMesh, roofMesh);
   // ribs for the "being built" look
   const ribs = [];
@@ -367,7 +495,7 @@ export function solomonTemple() {
   }
   interior.add(new THREE.Mesh(mergeGeometries(lampGeos), gold));
   interior.add(new THREE.Mesh(box(2, 1, 1, 6, 0, 0), gold)); // table / incense altar region
-  const veil = new THREE.Mesh(new THREE.PlaneGeometry(11.5, 14), new THREE.MeshStandardMaterial({ color: 0x4a1220, roughness: 0.9, side: THREE.DoubleSide, emissive: 0x12030a, emissiveIntensity: 0.5 }));
+  const veil = new THREE.Mesh(new THREE.PlaneGeometry(11.5, 14, 24, 28), SURFACES.linen([0.55, 0.1, 0.16]));
   veil.rotation.y = Math.PI / 2;
   veil.position.set(-4.4, 7, 0);
   interior.add(veil);
@@ -406,12 +534,12 @@ export function crosses({ spacing = 6 } = {}) {
 /** A rock-cut tomb with a rolling stone; userData.stone rolls along +x. */
 export function tomb() {
   const group = new THREE.Group();
-  const rock = new THREE.Mesh(new THREE.DodecahedronGeometry(9, 1), new THREE.MeshStandardMaterial({ color: 0x8c8172, roughness: 1, flatShading: true }));
+  const rock = new THREE.Mesh(new THREE.DodecahedronGeometry(9, 3), SURFACES.rock());
   rock.scale.set(1.4, 0.9, 1);
   rock.position.set(0, 3, -6);
   const opening = new THREE.Mesh(new THREE.CircleGeometry(1.7, 24), new THREE.MeshBasicMaterial({ color: 0x050403 }));
   opening.position.set(0, 1.8, 1.9);
-  const stone = new THREE.Mesh(new THREE.CylinderGeometry(2.1, 2.1, 0.7, 32), new THREE.MeshStandardMaterial({ color: 0x9a8e7c, roughness: 1 }));
+  const stone = new THREE.Mesh(new THREE.CylinderGeometry(2.1, 2.1, 0.7, 32), SURFACES.limestone());
   stone.rotation.x = Math.PI / 2;
   stone.position.set(0, 2.1, 2.3);
   group.add(rock, opening, stone);

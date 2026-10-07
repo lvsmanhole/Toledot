@@ -8,6 +8,9 @@ import { Ambience } from "./audio.js";
 import { Chronicle } from "./chronicle.js";
 import { createPost } from "./engine/post.js";
 import { disposeScene } from "./kit/common.js";
+import { initLibrary, settled } from "./kit/library.js";
+import { peopleClock } from "./kit/figures.js";
+import { setTreeBudget } from "./kit/vegetation.js";
 import { MODULES } from "./scenes/index.js";
 import { ACTS, CAPTIONS, LENGTH, SCENES, UNIT_VH, envelope, locate, yearAt } from "./story.js";
 import "./style.css";
@@ -112,6 +115,7 @@ const story = { u: 0, time: 0 };
 
 // ---------------------------------------------------------------- scene manager
 const ctx = { quality };
+setTreeBudget(quality === "low" ? 25 : 60);
 const loaded = new Map(); // index -> { status, instance, promise }
 let aspect = window.innerWidth / window.innerHeight;
 let renderer;
@@ -125,6 +129,8 @@ function ensure(index) {
   loaded.set(index, entry);
   entry.promise = MODULES[spec.module]()
     .then((factory) => new Promise((resolve) => requestAnimationFrame(() => resolve(factory(ctx, spec)))))
+    // hold the scene back until its photographs and models have arrived, so nothing pops in
+    .then((instance) => settled(20000).then(() => instance))
     .then((instance) => {
       instance.resize(aspect);
       if (renderer) renderer.compile(instance.scene, instance.camera);
@@ -159,7 +165,10 @@ async function start() {
   if (!skipGate) document.body.classList.add("is-gated");
   const canvas = $("stage");
   renderer = new THREE.WebGLRenderer({ canvas, antialias: false, powerPreference: "high-performance" });
-  renderer.toneMapping = THREE.ACESFilmicToneMapping;
+  renderer.toneMapping = THREE.AgXToneMapping;
+  renderer.shadowMap.enabled = quality !== "low";
+  renderer.shadowMap.type = THREE.PCFShadowMap;
+  initLibrary(renderer);
   renderer.outputColorSpace = THREE.SRGBColorSpace;
   let pixelRatio = Math.min(window.devicePixelRatio || 1, quality === "low" ? 1.25 : 1.75);
   renderer.setPixelRatio(pixelRatio);
@@ -215,6 +224,7 @@ async function start() {
     const dt = Math.min(0.1, (now - last) / 1000);
     last = now;
     story.time += dt;
+    peopleClock.value = story.time;
     const target = scrollUnits();
     const k = 1 - Math.exp(-dt * (reducedMotion.matches ? 9 : 3.2));
     story.u += (target - story.u) * k;

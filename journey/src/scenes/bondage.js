@@ -55,11 +55,41 @@ export function create(ctx) {
   const dust = weather("dust", { count: 4000, box: [140, 50, 140] });
   L.add(dust.points);
   // the basket in the reeds
-  const basket = new THREE.Mesh(new THREE.CapsuleGeometry(0.35, 0.6, 4, 12), new THREE.MeshStandardMaterial({ color: 0x8a6a3a, roughness: 0.9 }));
-  basket.rotation.z = Math.PI / 2;
+  // "an ark of bulrushes, and daubed it with slime and with pitch" (Exodus 2:3): a woven papyrus basket,
+  // oval, with a lid, the pitch dark along its lower courses, laid among the flags at the brink
+  const basket = new THREE.Group();
+  const weave = (geo) => {
+    const p = geo.attributes.position;
+    const colors = new Float32Array(p.count * 3);
+    for (let i = 0; i < p.count; i++) {
+      const a = Math.atan2(p.getZ(i), p.getX(i));
+      const y = p.getY(i);
+      const k = 1 + 0.03 * Math.sign(Math.sin(y * 70)) * Math.sign(Math.sin(a * 22)); // over and under
+      p.setX(i, p.getX(i) * k);
+      p.setZ(i, p.getZ(i) * k);
+      const pitch = THREE.MathUtils.smoothstep(0.12, 0.02, y);
+      const reed = 0.85 + 0.15 * Math.sin(y * 140);
+      colors.set([THREE.MathUtils.lerp(0.62 * reed, 0.08, pitch), THREE.MathUtils.lerp(0.5 * reed, 0.06, pitch), THREE.MathUtils.lerp(0.3 * reed, 0.05, pitch)], i * 3);
+    }
+    geo.setAttribute("color", new THREE.BufferAttribute(colors, 3));
+    geo.computeVertexNormals();
+    return geo;
+  };
+  const vessel = weave(new THREE.LatheGeometry([[0.001, 0], [0.3, 0.01], [0.4, 0.08], [0.42, 0.2], [0.4, 0.26]].map(([r, y]) => new THREE.Vector2(r, y)), 40));
+  const lid = weave(new THREE.LatheGeometry([[0.43, 0.25], [0.4, 0.33], [0.25, 0.38], [0.001, 0.4]].map(([r, y]) => new THREE.Vector2(r, y)), 40));
+  const reedMat = new THREE.MeshStandardMaterial({ vertexColors: true, roughness: 0.9, side: THREE.DoubleSide });
+  for (const g of [vessel, lid]) {
+    g.scale(1.6, 1, 1);
+    const m = new THREE.Mesh(g, reedMat);
+    m.castShadow = true;
+    basket.add(m);
+  }
   const bx = nile(38) - 21.5;
   basket.position.set(bx, 0.05, 38);
   L.add(basket);
+  // the flags: papyrus and reed beds along the brink, open on the side the camera comes from
+  const flags = createBlades({ kind: "reeds", count: ctx.quality === "low" ? 2500 : 6000, place: placers.box(bx - 30, 10, bx + 14, 70, (x, z) => Math.hypot(x - bx, z - 38) > 2.4 && !(x < bx + 1 && z > 35.5 && z < 52)), height: h, minH: -1.4, maxH: 0.9 });
+  L.add(flags.mesh, (s) => flags.update({ time: s.time, wind: s.wind, fog: s.fog, light: 0.9 }));
   const glow = glowSprite(0xffe2b0, 2.2, 0);
   glow.position.set(bx, 0.6, 38);
   L.add(glow);

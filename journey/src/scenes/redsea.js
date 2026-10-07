@@ -3,6 +3,7 @@
 // shapes of fish inside them) and travels the sea floor; at dawn the walls fall back.
 
 import * as THREE from "three";
+import { mergeGeometries } from "three/examples/jsm/utils/BufferGeometryUtils.js";
 
 import { glowSprite, lerp, pulse, ramp, sramp } from "../kit/common.js";
 import { pillar, weather } from "../kit/effects.js";
@@ -16,16 +17,23 @@ const HALF = 14; // half-width of the dry corridor
 const LEN = 700;
 
 function waterWall(side) {
-  const geometry = new THREE.BoxGeometry(60, 1, LEN, 1, 1, 1);
+  // a standing face of sea: the face undulates and sheets slowly downward, light falls through it from
+  // above, the near surface catches the sky at a glancing angle, and the crest breaks white
+  const geometry = new THREE.BoxGeometry(60, 1, LEN, 1, 30, 220);
   geometry.translate(side * (HALF + 30), 0.5, -LEN / 2 + 40);
   const material = new THREE.ShaderMaterial({
-    uniforms: { uTime: { value: 0 }, uLight: { value: 0.4 }, fogColor: { value: new THREE.Color() }, fogDensity: { value: 0 } },
+    uniforms: { uTime: { value: 0 }, uLight: { value: 0.4 }, uSide: { value: side }, fogColor: { value: new THREE.Color() }, fogDensity: { value: 0 } },
     vertexShader: /* glsl */ `
+      uniform float uTime, uSide;
       varying vec3 vWorld;
       varying vec3 vNormalW;
       #include <fog_pars_vertex>
+      ${NOISE}
       void main() {
         vec4 w = modelMatrix * vec4(position, 1.0);
+        float face = step(abs(w.x), ${(HALF + 0.5).toFixed(1)});
+        float wob = snoise(vec3(w.y * 0.05, w.z * 0.04, uTime * 0.12)) * 1.4 + snoise(vec3(w.y * 0.2 + uTime * 0.3, w.z * 0.15, 3.0)) * 0.35;
+        w.x -= uSide * wob * face;
         vWorld = w.xyz;
         vNormalW = normalize(mat3(modelMatrix) * normal);
         vec4 mvPosition = viewMatrix * w;
@@ -34,23 +42,44 @@ function waterWall(side) {
       }
     `,
     fragmentShader: /* glsl */ `
-      uniform float uTime, uLight;
+      uniform float uTime, uLight, uSide;
       varying vec3 vWorld;
       varying vec3 vNormalW;
       #include <fog_pars_fragment>
       ${NOISE}
       void main() {
         vec3 p = vWorld * 0.06;
+        // ripples on the face, from the noise gradient, sheeting downward
+        float e = 0.35;
+        vec3 q = vec3(vWorld.y * 0.5 + uTime * 0.8, vWorld.z * 0.35, uTime * 0.2);
+        float n0 = snoise(q);
+        float ny = snoise(q + vec3(e, 0.0, 0.0)) - n0;
+        float nz = snoise(q + vec3(0.0, e, 0.0)) - n0;
+        vec3 nrm = normalize(vNormalW + vec3(0.0, ny, nz) * 0.9);
+        vec3 view = normalize(cameraPosition - vWorld);
+        float fres = pow(1.0 - max(dot(nrm, view), 0.0), 4.0);
+        float depth = clamp((vWorld.y + 26.0) / 50.0, 0.0, 1.0);
         float caust = pow(abs(snoise(vec3(p.y * 2.0, p.z * 2.0 + uTime * 0.2, uTime * 0.15))), 0.6);
-        float depth = clamp(vWorld.y / 40.0, 0.0, 1.0);
-        vec3 col = mix(vec3(0.01, 0.04, 0.05), vec3(0.06, 0.22, 0.24), depth) * (0.6 + 0.8 * caust) * uLight;
-        float foam = smoothstep(0.92, 1.0, depth) * (0.5 + 0.5 * snoise(vec3(p.z * 4.0, uTime, 1.0)));
-        col += vec3(0.6, 0.7, 0.72) * foam * uLight;
-        gl_FragColor = vec4(col, 0.92);
+        // light falling in from the surface, green-blue near the top, ink at the bed
+        vec3 deep = mix(vec3(0.006, 0.025, 0.035), vec3(0.05, 0.2, 0.22), depth * depth);
+        vec3 col = deep * (0.7 + 0.6 * caust);
+        // shafts of light slanting down inside the water
+        float shafts = smoothstep(0.3, 0.9, snoise(vec3(vWorld.z * 0.03 + vWorld.y * 0.012, uTime * 0.05, 7.0))) * depth;
+        col += vec3(0.05, 0.16, 0.16) * shafts;
+        // suspended specks
+        float speck = step(0.985, fract(sin(dot(floor(vWorld * 3.0), vec3(12.9898, 78.233, 37.719))) * 43758.5453));
+        col += vec3(0.08, 0.12, 0.12) * speck * depth;
+        col += vec3(0.32, 0.4, 0.42) * fres;
+        float spec = pow(max(dot(reflect(-view, nrm), normalize(vec3(-uSide * 0.3, 1.0, 0.2))), 0.0), 60.0);
+        col += vec3(0.7, 0.75, 0.75) * spec * 0.6;
+        float foam = smoothstep(0.93, 1.0, depth) * (0.5 + 0.5 * snoise(vec3(p.z * 4.0, uTime, 1.0)));
+        col += vec3(0.6, 0.7, 0.72) * foam;
+        gl_FragColor = vec4(col * uLight, 0.94);
         #include <fog_fragment>
       }
     `,
     transparent: true,
+    depthWrite: false, // the fish inside it are drawn after, faintly, as if seen through the water
     fog: true,
   });
   return new THREE.Mesh(geometry, material);
@@ -98,12 +127,16 @@ export function create(ctx) {
   // the walls of water and the two halves of the sea outside the corridor
   const walls = [waterWall(-1), waterWall(1)];
   walls.forEach((w) => L.add(w));
-  const fish = new THREE.InstancedMesh(new THREE.SphereGeometry(0.6, 8, 6).scale(2.2, 0.6, 0.6), new THREE.MeshBasicMaterial({ color: 0x0a1416 }), 160);
+  // fish seen dimly inside the water: a body and a forked tail, faint and blue with depth
+  const fishBody = new THREE.SphereGeometry(0.6, 10, 6).scale(0.6, 0.55, 2.0);
+  const fishTail = new THREE.ConeGeometry(0.45, 0.7, 4).rotateX(-Math.PI / 2).scale(0.15, 1, 1).translate(0, 0, -1.45);
+  const fish = new THREE.InstancedMesh(mergeGeometries([fishBody.toNonIndexed(), fishTail.toNonIndexed()]), new THREE.MeshBasicMaterial({ color: 0x0c2a2f, transparent: true, opacity: 0.45, depthWrite: false }), 160);
+  fish.renderOrder = 2;
   const fm = new THREE.Matrix4();
   const rf = rng(12);
   for (let i = 0; i < 160; i++) {
     const side = rf() < 0.5 ? -1 : 1;
-    fm.makeTranslation(side * (HALF + 0.5 + rf() * 1.5), -22 + rf() * 30, -rf() * 600 + 30);
+    fm.makeRotationY((rf() - 0.5) * 0.6 + (rf() < 0.5 ? Math.PI : 0)).setPosition(side * (HALF + 2.5 + rf() * 3), -22 + rf() * 30, -rf() * 600 + 30);
     fish.setMatrixAt(i, fm);
   }
   L.add(fish);

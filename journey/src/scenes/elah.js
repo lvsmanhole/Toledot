@@ -5,7 +5,7 @@
 import * as THREE from "three";
 
 import { lerp, pulse, sramp } from "../kit/common.js";
-import { crowd, figure } from "../kit/figures.js";
+import { armour, crowd, figure, shield } from "../kit/figures.js";
 import { createLandscape } from "../kit/landscape.js";
 import { composeHeight, heights } from "../kit/terrain.js";
 import { createBlades, createTrees, placers } from "../kit/vegetation.js";
@@ -39,7 +39,12 @@ export function create(ctx) {
   L.add(philistines.group);
   const goliath = figure(1.75);
   goliath.scale.setScalar(1.75); // six cubits and a span (1 Samuel 17:4)
+  goliath.add(armour(1.75)); // helmet of brass, coat of mail, the spear like a weaver's beam (17:5-7)
   L.add(goliath);
+  // "and one bearing a shield went before him" (17:7)
+  const bearer = figure(1.7);
+  bearer.add(shield(1.7));
+  L.add(bearer);
   const david = figure(1.55, { staff: true });
   L.add(david);
   const stone = new THREE.Mesh(new THREE.SphereGeometry(0.06, 6, 4), new THREE.MeshBasicMaterial({ color: 0xffffff }));
@@ -50,6 +55,10 @@ export function create(ctx) {
     goliath.position.set(gx, h(gx, -6), -6);
     goliath.rotation.set(0, -Math.PI / 2, 0);
     goliath.rotateX(-fall * Math.PI / 2 * 0.98);
+    const back = sramp(rel, 15, 17);
+    bearer.position.set(gx - 3 + back * 6, 0, -4.4);
+    bearer.position.y = h(bearer.position.x, bearer.position.z);
+    bearer.rotation.y = -Math.PI / 2 + back * Math.PI;
     const dx = lerp(-40, -2, sramp(rel, 6, 12));
     david.position.set(dx, h(dx, -6), -6);
     david.rotation.y = Math.PI / 2;

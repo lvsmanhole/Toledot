@@ -7,6 +7,8 @@ import { cameraRig, collectShaderMaterials, disposeScene } from "./common.js";
 import { blendPresets, createAtmosphere } from "./sky.js";
 import { createTerrain } from "./terrain.js";
 import { createWater } from "./water.js";
+import { scatterRocks } from "./vegetation.js";
+import { rng } from "../engine/noise.js";
 
 /**
  * options:
@@ -20,11 +22,26 @@ import { createWater } from "./water.js";
 export function createLandscape(ctx, options) {
   const scene = new THREE.Scene();
   const camera = new THREE.PerspectiveCamera(50, 1, 0.1, 4000);
-  const atmosphere = createAtmosphere(scene, { stars: options.stars !== false, storm: options.storm !== false });
-  const terrain = options.terrain ? createTerrain({ segments: ctx.quality === "low" ? 140 : 220, ...options.terrain }) : null;
+  const atmosphere = createAtmosphere(scene, { stars: options.stars !== false, storm: options.storm !== false, shadows: ctx.quality !== "low" });
+  const terrain = options.terrain ? createTerrain({ segments: ctx.quality === "low" ? 140 : 220, quality: ctx.quality, ...options.terrain }) : null;
   if (terrain) scene.add(terrain.mesh);
   const water = options.water ? createWater({ segments: options.water.wave ? (ctx.quality === "low" ? 120 : 220) : 1, ...options.water }) : null;
   if (water) scene.add(water.mesh);
+  if (terrain && options.rocks !== false) {
+    const hgt = terrain.height;
+    const keep = options.keepClear ?? [[0, 0, 30]];
+    const span = (options.terrain.size ?? 700) * 0.45;
+    const c = options.terrain.center ?? [0, 0];
+    const place = (r) => {
+      const x = c[0] + (r() - 0.5) * 2 * span;
+      const z = c[1] + (r() - 0.5) * 2 * span;
+      if (keep.some(([kx, kz, kr]) => Math.hypot(x - kx, z - kz) < kr)) return null;
+      const h0 = hgt(x, z);
+      const slope = Math.hypot(hgt(x + 1, z) - h0, hgt(x, z + 1) - h0);
+      return slope > 0.12 || r() < 0.15 ? [x, z] : null;
+    };
+    scene.add(scatterRocks({ count: ctx.quality === "low" ? 50 : options.rocks ?? 110, place, height: hgt, random: rng(options.terrain.size ?? 7) }));
+  }
   const rig = cameraRig(options.camera);
   const updaters = [];
   const height = terrain ? terrain.height : () => 0;
@@ -60,7 +77,17 @@ export function createLandscape(ctx, options) {
       const flash = atmosphere.set(preset, { time, pixelRatio, lightning, camera });
       const wind = options.wind ? options.wind(rel) : 0.3;
       if (water) water.update({ time, fog: atmosphere.fog, sunDir: atmosphere.sunDir });
-      if (!shaderMats) shaderMats = collectShaderMaterials(scene);
+      if (!shaderMats) {
+        shaderMats = collectShaderMaterials(scene);
+        // solid, lit things cast shadows; skies, water, particles and custom-shaded effects do not
+        scene.traverse((o) => {
+          if (!o.isMesh) return;
+          const m = Array.isArray(o.material) ? o.material[0] : o.material;
+          const solid = m && !m.isShaderMaterial && !m.transparent && m.side !== THREE.BackSide && m.blending === THREE.NormalBlending;
+          o.castShadow = solid && o !== terrain?.mesh;
+          o.receiveShadow = solid || o === terrain?.mesh;
+        });
+      }
       for (const m of shaderMats) {
         if (m.uniforms.fogColor && m.fog) {
           m.uniforms.fogColor.value.copy(atmosphere.fog.color);

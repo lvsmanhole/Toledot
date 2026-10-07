@@ -27,8 +27,20 @@ export function create(ctx) {
   L.add(reeds.mesh, (s) => reeds.update({ time: s.time, wind: s.wind, fog: s.fog, light: 0.9 }));
   // the ark on its staves, borne by four priests
   const ark = new THREE.Group();
-  const box = new THREE.Mesh(new THREE.BoxGeometry(1.25, 0.75, 0.75), MATERIALS.gold());
+  // on the march the ark goes covered: the veil, badgers' skins, and over all "a cloth wholly of blue"
+  // (Numbers 4:5-6). The cloth hangs a little over the sides.
+  const cloth = new THREE.BoxGeometry(1.4, 0.82, 0.86, 8, 4, 6);
+  const cp = cloth.attributes.position;
+  for (let i = 0; i < cp.count; i++) {
+    const y = cp.getY(i);
+    const sag = y < 0.3 ? Math.sin(cp.getX(i) * 9 + cp.getZ(i) * 7) * 0.02 : 0;
+    cp.setX(i, cp.getX(i) * (y < -0.3 ? 1.03 : 1) + sag);
+    cp.setZ(i, cp.getZ(i) * (y < -0.3 ? 1.04 : 1) + sag);
+  }
+  cloth.computeVertexNormals();
+  const box = new THREE.Mesh(cloth, new THREE.MeshStandardMaterial({ color: 0x23386e, roughness: 0.9 }));
   box.position.y = 1.5;
+  box.castShadow = true;
   ark.add(box);
   for (const s of [-1, 1]) {
     const pole = new THREE.Mesh(new THREE.CylinderGeometry(0.04, 0.04, 3.6), MATERIALS.gold());
@@ -43,14 +55,30 @@ export function create(ctx) {
   }
   L.add(ark);
   // the heap of waters upstream
-  const heap = new THREE.Mesh(new THREE.BoxGeometry(60, 14, 8), new THREE.MeshStandardMaterial({ color: 0x2a4a48, roughness: 0.2, metalness: 0.1, transparent: true, opacity: 0.85 }));
-  heap.position.set(river(-120), 4, -120);
+  // a standing face of water, rippled, falling away at its foot, white where it breaks at the crest
+  const wall = new THREE.PlaneGeometry(64, 16, 96, 32);
+  const wp = wall.attributes.position;
+  const foam = new Float32Array(wp.count * 3);
+  for (let i = 0; i < wp.count; i++) {
+    const x = wp.getX(i);
+    const y = wp.getY(i) + 8; // 0 at the foot, 16 at the crest
+    const curl = Math.pow(Math.max(0, y - 12) / 4, 2) * 2.2; // crest leaning downstream
+    const ripple = Math.sin(x * 0.7 + y * 0.9) * 0.18 + Math.sin(x * 1.9 - y * 1.7) * 0.07 + Math.sin(y * 3.1 + x * 0.3) * 0.05;
+    wp.setXYZ(i, x * (1 - 0.06 * (x / 32) ** 2), y, ripple + curl - Math.max(0, 3 - y) * 0.9);
+    const f = Math.min(1, Math.max(0, (y - 14.2) / 1.2)) + Math.max(0, (1.5 - y) / 1.5) * 0.7;
+    foam.set([0.12 + f * 0.8, 0.2 + f * 0.75, 0.2 + f * 0.72], i * 3);
+  }
+  wall.setAttribute("color", new THREE.BufferAttribute(foam, 3));
+  wall.computeVertexNormals();
+  const heap = new THREE.Mesh(wall, new THREE.MeshStandardMaterial({ vertexColors: true, roughness: 0.08, metalness: 0.25, side: THREE.DoubleSide, envMapIntensity: 1.4 }));
+  heap.position.set(river(-120), -3, -120);
   L.add(heap);
   const people = crowd({ count: 600, place: placers.box(-60, -20, 60, 20), height: (x, z) => Math.max(h(x, z), -2.8), seed: 41, face: [80, 0] });
   L.add(people.group);
   L.onUpdate(({ rel }) => {
     const dry = sramp(rel, 2.5, 6.5);
-    L.water.mesh.position.y = lerp(0.2, -4, dry);
+    L.water.mesh.position.y = lerp(0.2, -9, dry);
+    L.water.mesh.visible = dry < 0.9; // the bed lies dry: "all the Israelites passed over on dry ground"
     heap.scale.y = Math.max(0.01, dry);
     heap.visible = dry > 0.02;
     const bed = h(river(0), 0);

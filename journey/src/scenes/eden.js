@@ -8,6 +8,9 @@ import { mergeGeometries, mergeVertices } from "three/examples/jsm/utils/BufferG
 
 import { NOISE, fbm2, rng } from "../engine/noise.js";
 import { createStars } from "../engine/stars.js";
+import { TERRAIN_LAYERS, splatMaterial } from "../kit/surface.js";
+import { createTrees as kitTrees, scatterRocks } from "../kit/vegetation.js";
+import { personMaterial, robedGeometry } from "../kit/figures.js";
 import { livingCreature } from "../kit/cherub.js";
 
 const ramp = (t, a, b) => Math.min(1, Math.max(0, (t - a) / (b - a)));
@@ -38,18 +41,12 @@ export function height(x, z) {
   return h * (1 - channel) + -1.8 * channel;
 }
 
-function createTerrain(segments) {
+function createTerrain(segments, quality) {
   const size = 760;
   const geometry = new THREE.PlaneGeometry(size, size, segments, segments);
   geometry.rotateX(-Math.PI / 2);
   const pos = geometry.attributes.position;
-  const colors = new Float32Array(pos.count * 3);
-  const grass = new THREE.Color(0.16, 0.26, 0.08);
-  const dry = new THREE.Color(0.25, 0.26, 0.15);
-  const rock = new THREE.Color(0.2, 0.19, 0.18);
-  const snow = new THREE.Color(0.86, 0.87, 0.9);
-  const mud = new THREE.Color(0.17, 0.14, 0.1);
-  const c = new THREE.Color();
+  const splat = new Float32Array(pos.count * 4);
   for (let i = 0; i < pos.count; i++) {
     const x = pos.getX(i);
     const z = pos.getZ(i);
@@ -57,16 +54,18 @@ function createTerrain(segments) {
     pos.setY(i, h);
     const e = 0.6;
     const slope = Math.hypot(height(x + e, z) - h, height(x, z + e) - h) / e;
-    c.copy(grass).lerp(dry, Math.min(1, Math.max(0, (h - 18) / 30)));
-    c.lerp(rock, Math.min(1, Math.max(0, (slope - 0.35) * 2.2 + fbm2(x * 0.05, z * 0.05, 3, 23) * 0.6)));
-    c.lerp(snow, Math.min(1, Math.max(0, (h - 150) / 40)));
-    c.lerp(mud, Math.min(1, Math.max(0, (0.6 - h) / 1.6)));
-    const v = 0.85 + 0.3 * fbm2(x * 0.08, z * 0.08, 2, 5);
-    colors.set([c.r * v, c.g * v, c.b * v], i * 3);
+    const dry = Math.min(1, Math.max(0, (h - 18) / 30 + fbm2(x * 0.02, z * 0.02, 3, 41) * 0.3));
+    const rock = Math.min(1, Math.max(0, (slope - 0.35) * 2.2 + fbm2(x * 0.05, z * 0.05, 3, 23) * 0.6)) + Math.min(1, Math.max(0, (h - 150) / 40));
+    const wet = Math.min(1, Math.max(0, (0.6 - h) / 1.6));
+    const rest = Math.max(0, 1 - rock - wet);
+    splat.set([rest * (1 - dry), rest * dry, wet, rock], i * 4);
   }
-  geometry.setAttribute("color", new THREE.BufferAttribute(colors, 3));
+  geometry.setAttribute("splat", new THREE.BufferAttribute(splat, 4));
   geometry.computeVertexNormals();
-  return new THREE.Mesh(geometry, new THREE.MeshStandardMaterial({ vertexColors: true, roughness: 0.95, metalness: 0 }));
+  const set = TERRAIN_LAYERS.garden;
+  const mesh = new THREE.Mesh(geometry, splatMaterial({ layers: set.layers, tints: set.tints, quality }));
+  mesh.receiveShadow = true;
+  return mesh;
 }
 
 function createWater() {
@@ -403,7 +402,8 @@ function createTrees(uniforms) {
       vi = Math.floor(random() * surface.count);
       if (surface.getY(vi) > -1.5) break;
     }
-    m.makeTranslation(surface.getX(vi) * 1.02, 8 + surface.getY(vi) * 1.02, surface.getZ(vi) * 1.02);
+    // hung inside the scanned crown that replaces the old canopy (about 10 m tall)
+    m.makeTranslation(surface.getX(vi) * 0.6, 4.4 + surface.getY(vi) * 0.5, surface.getZ(vi) * 0.6);
     fruit.setMatrixAt(i, m);
   }
   knowledge.add(kTrunk, kLeaves, fruit);
@@ -509,17 +509,57 @@ function createSerpent(uniforms) {
 // two silhouettes: figures are never detailed, only shapes in the light
 function createFigures() {
   const mat = new THREE.MeshStandardMaterial({ color: 0x0d0b09, roughness: 1 });
-  const make = (h) => {
+  const skins = personMaterial({ robe: 0x6a4a30, walk: 1 });
+  // a human outline (legs, hips, chest, arms, neck, head), seen only as a shape against the light
+  const limb = (r0, r1, len, x, y, z, rz = 0, rx = 0) => {
+    const g = new THREE.CylinderGeometry(r1, r0, len, 10, 1);
+    g.translate(0, len / 2, 0);
+    g.rotateX(rx);
+    g.rotateZ(rz);
+    g.translate(x, y, z);
+    return g;
+  };
+  const make = (h, woman) => {
     const g = new THREE.Group();
-    const body = new THREE.Mesh(new THREE.CapsuleGeometry(0.2 * h, 0.95 * h, 4, 10), mat);
-    body.position.y = 0.75 * h;
-    const head = new THREE.Mesh(new THREE.SphereGeometry(0.15 * h, 12, 10), mat);
-    head.position.y = 1.55 * h;
-    g.add(body, head);
+    const s = h * 1.7;
+    const sh = woman ? 0.17 : 0.2; // half shoulder width
+    const parts = [
+      limb(0.055, 0.075, 0.47, -0.15, 0.03, 0.04, 0.1), // shins, a stride apart
+      limb(0.055, 0.075, 0.47, 0.13, 0.03, -0.04, -0.08),
+      limb(0.075, 0.1, 0.44, -0.11, 0.48, 0.02, 0.08), // thighs
+      limb(0.075, 0.1, 0.44, 0.1, 0.48, -0.02, -0.06),
+      limb(woman ? 0.17 : 0.15, woman ? 0.13 : 0.15, 0.2, 0, 0.9, 0), // hips and waist
+      limb(woman ? 0.13 : 0.15, sh * 0.95, 0.36, 0, 1.08, 0), // chest
+      limb(0.045, 0.05, 0.1, 0, 1.43, 0), // neck
+      limb(0.055, 0.04, 0.3, -sh - 0.01, 1.41, 0, Math.PI - 0.3), // upper arms hanging from the shoulders
+      limb(0.055, 0.04, 0.3, sh + 0.01, 1.41, 0, Math.PI + 0.3),
+      limb(0.04, 0.032, 0.28, -sh - 0.1, 1.13, 0, Math.PI - 0.12), // forearms
+      limb(0.04, 0.032, 0.28, sh + 0.1, 1.13, 0, Math.PI + 0.12),
+    ];
+    const head = new THREE.SphereGeometry(0.105, 14, 12);
+    head.scale(0.9, 1.1, 1);
+    head.translate(0, 1.6, 0.01);
+    parts.push(head);
+    if (woman) {
+      // long hair down the back
+      const hair = new THREE.CylinderGeometry(0.1, 0.13, 0.5, 12, 1, true);
+      hair.translate(0, 1.38, -0.04);
+      parts.push(hair);
+    }
+    const body = new THREE.Mesh(mergeGeometries(parts.map((p) => p.index ? p.toNonIndexed() : p)), mat);
+    body.scale.setScalar(s / 1.72);
+    g.add(body);
     return g;
   };
   const adam = make(1.05);
-  const eve = make(0.98);
+  const eve = make(0.98, true);
+  // coats of skins for the walk out of the garden
+  for (const [f, veiled] of [[adam, false], [eve, true]]) {
+    const coat = new THREE.Mesh(robedGeometry(f === adam ? 1.82 : 1.7, { veiled, detail: "high" }), skins);
+    coat.visible = false;
+    f.add(coat);
+    f.userData.coat = coat;
+  }
   return { adam, eve };
 }
 
@@ -823,11 +863,23 @@ export function createEden(ctx) {
   const avoid = (x, z, h) => pathPts.some((p) => Math.hypot(p.x - x, p.z - z) < 16 && p.y - h < 22);
 
   const shared = { uTime: { value: 0 }, uWind: { value: 0.3 } };
-  const terrain = createTerrain(low ? 160 : 260);
+  const terrain = createTerrain(low ? 160 : 260, ctx.quality);
   const water = createWater();
   const grass = createGrass(low ? 30000 : 120000, random);
-  const forest = createForest(low ? 260 : 650, random, avoid, shared);
+  const forest = new THREE.Group();
+  const near = (x, z) => { const h0 = height(x, z); return h0 > 0.8 && h0 < 40 && Math.abs(x - riverX(z)) > 9 && Math.hypot(x - CLEARING.x, z - CLEARING.y) > 34 && !avoid(x, z, h0); };
+  const scanned = kitTrees({ count: low ? 30 : 70, place: (r) => { const x = (r() - 0.5) * 300; const z = (r() - 0.5) * 300; return near(x, z) ? [x, z] : null; }, height, kind: "broadleaf", random, size: [4, 8] });
+  forest.add(scanned.group, createForest(low ? 140 : 320, random, (x, z, h0) => Math.hypot(x, z) < 160 || avoid(x, z, h0), shared));
+  forest.add(scatterRocks({ count: low ? 40 : 90, place: (r) => { const x = (r() - 0.5) * 600; const z = (r() - 0.5) * 600; const h0 = height(x, z); return h0 > 3 && Math.hypot(x - CLEARING.x, z - CLEARING.y) > 40 && !avoid(x, z, h0) ? [x, z] : null; }, height, size: [0.8, 4] }));
   const trees = createTrees(shared);
+  // the two trees as real trees: scanned trunks and leaf canopies in place of the sculpted blobs
+  const lifeScan = kitTrees({ count: 1, place: () => [LIFE.x, LIFE.z], height, kind: "broadleaf", size: [11, 11], tint: [1.2, 1.12, 0.7], random: rng(3) });
+  const knowledgeScan = kitTrees({ count: 1, place: () => [KNOWLEDGE.x, KNOWLEDGE.z], height, kind: "broadleaf", size: [10, 10], tint: [0.7, 0.82, 0.62], random: rng(11) });
+  trees.lifeLeaves.visible = false;
+  trees.life.children[0].visible = false;
+  trees.kLeaves.visible = false;
+  trees.knowledge.children[0].visible = false;
+  scene.add(lifeScan.group, knowledgeScan.group);
   const { adam, eve } = createFigures();
   const mist = createMist(low ? 50 : 120, random);
   const motes = createMotes(low ? 300 : 900, random);
@@ -871,6 +923,12 @@ export function createEden(ctx) {
 
   const sunLight = new THREE.DirectionalLight(0xffe2b8, 2.6);
   const hemi = new THREE.HemisphereLight(0xbfd1e6, 0x3a3020, 1.0);
+  sunLight.castShadow = !low;
+  sunLight.shadow.mapSize.set(2048, 2048);
+  Object.assign(sunLight.shadow.camera, { left: -80, right: 80, top: 80, bottom: -80, near: 1, far: 800 });
+  sunLight.shadow.bias = -0.0004;
+  sunLight.shadow.normalBias = 0.05;
+  scene.add(sunLight.target);
   scene.add(sky, terrain, water, grass, forest, trees.life, trees.knowledge, adam, eve, mist, motes, fire, swordPivot, fireLight, gate, ...cherubim.map((c) => c.group), birds, thread, stars, sunLight, hemi);
 
   const sun = new THREE.Vector3();
@@ -896,7 +954,8 @@ export function createEden(ctx) {
       skyU.sunPosition.value.copy(sun);
       skyU.turbidity.value = THREE.MathUtils.lerp(3, 10, fall);
       skyU.rayleigh.value = THREE.MathUtils.lerp(1.1, 3.0, fall);
-      sunLight.position.copy(sun).multiplyScalar(200);
+      sunLight.target.position.copy(camera.position).add(camera.getWorldDirection(new THREE.Vector3()).setY(0).normalize().multiplyScalar(40));
+      sunLight.position.copy(sun).multiplyScalar(300).add(sunLight.target.position);
       sunLight.intensity = THREE.MathUtils.lerp(2.6, 0.35, dusk);
       sunLight.color.setHSL(0.09, 0.7, THREE.MathUtils.lerp(0.82, 0.55, dusk));
       hemi.intensity = THREE.MathUtils.lerp(1.0, 0.25, dusk) + 0.25 * smooth(ramp(t, at(95), 1));
@@ -906,6 +965,8 @@ export function createEden(ctx) {
       // wind rises with the fall
       const wind = 0.25 + 1.4 * fall;
       shared.uTime.value = time;
+      lifeScan.update({ time, wind: shared.uWind.value });
+      knowledgeScan.update({ time, wind: shared.uWind.value });
       shared.uWind.value = wind;
       const gm = grass.material.uniforms;
       gm.uTime.value = time;
@@ -955,6 +1016,11 @@ export function createEden(ctx) {
       eve.position.set(THREE.MathUtils.lerp(eveAt.x, 65.4, walk), 0, THREE.MathUtils.lerp(eveAt.z, 0.1, walk));
       for (const f of [adam, eve]) f.position.y = Math.max(0, height(f.position.x, f.position.z)) - 0.05;
       adam.rotation.y = eve.rotation.y = walk > 0 ? -Math.PI / 2 : 0.3;
+      for (const f of [adam, eve]) {
+        const clothed = t > at(85);
+        f.userData.coat.visible = clothed;
+        f.children.forEach((c) => { if (c !== f.userData.coat) c.visible = !clothed; });
+      }
       const walking = (approach > 0 && approach < 1) || (walk > 0 && walk < 1);
       const bob = walking ? Math.abs(Math.sin(time * 4)) * 0.06 : 0;
       adam.position.y += bob;

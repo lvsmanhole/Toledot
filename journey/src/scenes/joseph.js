@@ -8,6 +8,7 @@ import { figure, herd } from "../kit/figures.js";
 import { createLandscape } from "../kit/landscape.js";
 import { composeHeight, heights } from "../kit/terrain.js";
 import { createBlades, placers } from "../kit/vegetation.js";
+import { surfaceMaterial } from "../kit/surface.js";
 
 const PIT = [0, 0];
 const CARAVAN_Z = -220;
@@ -70,12 +71,24 @@ export function create(ctx) {
 
   // the pit: a stone shaft with a cap of rock around its mouth, so from inside only a disc of sky shows
   const pit = new THREE.Group();
-  const wall = new THREE.Mesh(new THREE.CylinderGeometry(1.8, 1.6, 7, 24, 1, true), new THREE.MeshStandardMaterial({ color: 0x4a3e32, roughness: 1, side: THREE.BackSide }));
+  // a cistern cut in the rock: rough, uneven walls, a floor of dry silt (Genesis 37:24)
+  const shaft = new THREE.CylinderGeometry(1.8, 1.6, 7, 40, 14, true);
+  const sp = shaft.attributes.position;
+  for (let i = 0; i < sp.count; i++) {
+    const a = Math.atan2(sp.getZ(i), sp.getX(i));
+    const y = sp.getY(i);
+    const k = 1 + Math.sin(a * 3 + y * 0.8) * 0.06 + Math.sin(a * 7 - y * 2.1) * 0.035 + Math.sin(a * 17 + y * 5) * 0.015;
+    sp.setX(i, sp.getX(i) * k);
+    sp.setZ(i, sp.getZ(i) * k);
+  }
+  shaft.computeVertexNormals();
+  const rockMat = surfaceMaterial("cliff", { tile: 1.6, tint: [0.62, 0.55, 0.48], side: THREE.BackSide });
+  const wall = new THREE.Mesh(shaft, rockMat);
   wall.position.y = -3.5;
-  const floor = new THREE.Mesh(new THREE.CircleGeometry(1.6, 24), new THREE.MeshStandardMaterial({ color: 0x2a221a, roughness: 1 }));
+  const floor = new THREE.Mesh(new THREE.CircleGeometry(1.75, 32), surfaceMaterial("cracked", { tile: 1.2, tint: [0.6, 0.52, 0.44] }));
   floor.rotation.x = -Math.PI / 2;
   floor.position.y = -7;
-  const cap = new THREE.Mesh(new THREE.RingGeometry(1.8, 60, 48), new THREE.MeshStandardMaterial({ color: 0x5a4a38, roughness: 1, side: THREE.DoubleSide }));
+  const cap = new THREE.Mesh(new THREE.RingGeometry(1.8, 60, 48), surfaceMaterial("dryGround", { tile: 2, tint: [0.75, 0.66, 0.55], side: THREE.DoubleSide }));
   cap.rotation.x = -Math.PI / 2;
   cap.position.y = -0.05;
   pit.add(wall, floor, cap);
@@ -84,8 +97,9 @@ export function create(ctx) {
   const brothers = [0, 1, 2, 3, 4].map((i) => {
     const f = figure(1.8 + (i % 2) * 0.1);
     const a = i * 1.1 + 0.3;
-    f.position.set(Math.cos(a) * 2.3, ground, Math.sin(a) * 2.3);
+    f.position.set(Math.cos(a) * 2.05, ground, Math.sin(a) * 2.05);
     f.lookAt(0, ground, 0);
+    f.rotateX(0.32); // leaning over the mouth to look down at him
     L.add(f);
     return f;
   });

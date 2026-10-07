@@ -5,6 +5,7 @@ import * as THREE from "three";
 
 import { fbm2 } from "../engine/noise.js";
 import { clamp, smooth } from "./common.js";
+import { TERRAIN_LAYERS, splatMaterial } from "./surface.js";
 
 const sat = (x) => clamp(x);
 
@@ -78,22 +79,18 @@ export const PALETTES = {
 };
 
 /**
- * Build a terrain mesh. options: { size, segments, height, palette, center:[x,z], wetLevel }
- * The returned object exposes height(x, z) for placing things on the ground.
+ * Build a terrain mesh. options: { size, segments, height, palette, center:[x,z], wetLevel, quality }
+ * The surface blends photographed ground layers (see surface.js TERRAIN_LAYERS) by height, slope and
+ * wetness. The returned object exposes height(x, z) for placing things on the ground.
  */
-export function createTerrain({ size = 700, segments = 220, height, palette = "steppe", center = [0, 0], wetLevel = 0.6, roughness = 0.96 }) {
+export function createTerrain({ size = 700, segments = 220, height, palette = "steppe", center = [0, 0], wetLevel = 0.6, quality = "high", highFrom = 12, highSpan = 40 }) {
   const pal = typeof palette === "string" ? PALETTES[palette] : palette;
+  const set = TERRAIN_LAYERS[typeof palette === "string" ? palette : "steppe"] ?? TERRAIN_LAYERS.steppe;
   const geometry = new THREE.PlaneGeometry(size, size, segments, segments);
   geometry.rotateX(-Math.PI / 2);
   geometry.translate(center[0], 0, center[1]);
   const pos = geometry.attributes.position;
-  const colors = new Float32Array(pos.count * 3);
-  const low = new THREE.Color(...pal.low);
-  const high = new THREE.Color(...pal.high);
-  const rock = new THREE.Color(...pal.rock);
-  const snow = new THREE.Color(...pal.snow);
-  const wet = new THREE.Color(...pal.wet);
-  const c = new THREE.Color();
+  const splat = new Float32Array(pos.count * 4);
   for (let i = 0; i < pos.count; i++) {
     const x = pos.getX(i);
     const z = pos.getZ(i);
@@ -101,16 +98,15 @@ export function createTerrain({ size = 700, segments = 220, height, palette = "s
     pos.setY(i, h);
     const e = 0.8;
     const slope = Math.hypot(height(x + e, z) - h, height(x, z + e) - h) / e;
-    c.copy(low).lerp(high, sat((h - 12) / 40));
-    c.lerp(rock, sat((slope - 0.38) * 2.2 + fbm2(x * 0.05, z * 0.05, 3, 23) * 0.5));
-    c.lerp(snow, sat((h - pal.snowLine) / 40));
-    c.lerp(wet, sat((wetLevel - h) / 1.6));
-    const v = 0.86 + 0.28 * fbm2(x * 0.08, z * 0.08, 2, 5);
-    colors.set([c.r * v, c.g * v, c.b * v], i * 3);
+    const hi = sat((h - highFrom) / highSpan + fbm2(x * 0.02, z * 0.02, 3, 41) * 0.35);
+    const rock = sat((slope - 0.42) * 2.4 + fbm2(x * 0.05, z * 0.05, 3, 23) * 0.5) + sat((h - pal.snowLine) / 40);
+    const wet = sat((wetLevel - h) / 1.6);
+    const rest = Math.max(0, 1 - rock - wet);
+    splat.set([rest * (1 - hi), rest * hi, wet, rock], i * 4);
   }
-  geometry.setAttribute("color", new THREE.BufferAttribute(colors, 3));
+  geometry.setAttribute("splat", new THREE.BufferAttribute(splat, 4));
   geometry.computeVertexNormals();
-  const mesh = new THREE.Mesh(geometry, new THREE.MeshStandardMaterial({ vertexColors: true, roughness, metalness: 0 }));
-  mesh.receiveShadow = false;
+  const mesh = new THREE.Mesh(geometry, splatMaterial({ layers: set.layers, tints: set.tints, quality }));
+  mesh.receiveShadow = true;
   return { mesh, height };
 }

@@ -26,7 +26,8 @@ The installed `bible-timeline` command accepts the same subcommands. `validate -
 `site/` holds two parts:
 
 - **The Journey** (landing page, source in `journey/`) is a cinematic, scroll-driven WebGL telling of the whole story, from before the world to the new creation. It's built with Three.js and Vite and has 55 scenes across 26 acts.
-  - Every environment is procedural (shaders, particles, simple geometry). Figures appear only as silhouettes.
+  - Environments are lit by photographed sky panoramas (image-based lighting with shadows). Terrain, buildings and cloth use photographed PBR textures, and rocks and trees are scanned models. All of these are CC0 from [Poly Haven](https://polyhaven.com). `npm run build` downloads them into `site/lib/` (about 90 MB, not committed) and simplifies the scans for the browser. Credits are in `site/lib/CREDITS.txt`.
+  - People are clothed figures in the dress of the period (tunic, mantle, head covering, sash) with varied natural dyes, skin tones and a walking motion. Faces are kept simple, with no portrait likenesses.
   - Ambient sound is synthesized in the browser and is off until the visitor turns it on.
   - Scripture is quoted from the King James Version, Apocrypha included for 1 Maccabees. `journey/tests/story.test.mjs` checks every caption against the KJV text in `journey/tests/fixtures/kjv.json`.
   - **The Chronicle**, a ribbon along the bottom of every scene, is the Toledot timeline inside the journey. It shows the people of the current chapters alive around the story's year, with dashed lines for editorial estimates, solid lines for anchored dates, and gold for the line of promise. It also shows the chapters' events and a playhead at the current year. Clicking a name or event opens it in Toledot.

@@ -25,11 +25,18 @@ export function create(ctx) {
       [11, [30, 18, 30], [-40, 8, -100], 44],
       [16, [10, 40, 80], [-60, 20, -200], 42],
     ],
-    grade: () => ({ saturation: 1.1, tint: [1.08, 1, 0.86], bloom: 0.3, threshold: 0.9 }),
+    grade: () => ({ saturation: 1.05, tint: [1.06, 1, 0.88], bloom: 0.16, threshold: 0.96 }),
     audio: () => ({ wind: 0.35, drone: 0.2, shimmer: 0.2 }),
   });
   const h = L.height;
-  const wheat = createBlades({ kind: "wheat", count: ctx.quality === "low" ? 40000 : 110000, place: placers.disc(0, 0, 140, (x, z) => Math.abs(x - z * 0.3) > 3), height: h });
+  // keep the standing grain a few metres off the camera's path so no stalk fills the frame
+  const path = [[40, 60], [-10, 20], [30, 30], [10, 80]];
+  const nearPath = (x, z) => path.slice(1).some(([bx, bz], i) => {
+    const [ax, az] = path[i];
+    const k = Math.max(0, Math.min(1, ((x - ax) * (bx - ax) + (z - az) * (bz - az)) / ((bx - ax) ** 2 + (bz - az) ** 2)));
+    return Math.hypot(x - ax - k * (bx - ax), z - az - k * (bz - az)) < 7;
+  });
+  const wheat = createBlades({ kind: "wheat", count: ctx.quality === "low" ? 40000 : 110000, place: placers.disc(0, 0, 140, (x, z) => Math.abs(x - z * 0.3) > 3 && !nearPath(x, z)), height: h });
   L.add(wheat.mesh, (s) => wheat.update({ time: s.time, wind: s.wind, fog: s.fog, light: 1.1 }));
   L.add(createTrees({ count: 70, place: placers.disc(0, 0, 300, (x, z) => Math.hypot(x, z) > 150), height: h, kind: "olive", size: [3, 5] }).group);
   const town = city({ count: 120, radius: 26, height: (x, z) => h(x - 60, z + 220), style: "stone", seed: 71 });

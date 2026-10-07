@@ -11,7 +11,7 @@ import { figure } from "../kit/figures.js";
 import { createLandscape } from "../kit/landscape.js";
 import { colonnade } from "../kit/structures.js";
 import { composeHeight, heights } from "../kit/terrain.js";
-import { createTrees, placers } from "../kit/vegetation.js";
+import { createBlades, createTrees, placers } from "../kit/vegetation.js";
 import { rng } from "../engine/noise.js";
 
 const CYCLE = ["Rebellion", "Oppression", "The cry", "A judge raised up", "Deliverance", "Rest"];
@@ -38,7 +38,10 @@ export function create(ctx) {
     audio: (rel) => ({ drone: 0.45, wind: 0.3, fire: 0.3 * pulse(rel, 9.5, 11, 13, 14.5) }),
   });
   const h = L.height;
-  L.add(createTrees({ count: 160, place: placers.disc(0, 0, 300), height: h, kind: "olive", size: [2.5, 5] }).group);
+  L.add(createTrees({ count: 260, place: placers.disc(0, 0, 320), height: h, kind: "olive", size: [3, 6] }).group);
+  // dry hill grass and scrub over the near slopes
+  const grass = createBlades({ count: ctx.quality === "low" ? 30000 : 80000, place: placers.disc(0, 0, 170), height: h });
+  L.add(grass.mesh, (s) => grass.update({ time: s.time, wind: s.wind, fog: s.fog, light: 0.7 }));
   // the turning cycle, hung in the sky
   const ring = new THREE.Group();
   const words = CYCLE.map((w, i) => {

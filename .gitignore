@@ -12,3 +12,4 @@ site/data/
 .gstack/
 site/index.html
 site/assets/
+site/lib/

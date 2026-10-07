@@ -1,5 +1,7 @@
-// Atmosphere for landscape scenes: physical sky, stars, an optional storm dome, fog, and sun/ambient
-// light — all driven from named presets that can be blended over story time.
+// Atmosphere for landscape scenes, driven from named presets that blend over story time. The sky is a
+// photographed panorama per preset (CC0, Poly Haven), crossfaded between the two strongest presets and
+// rotated so its sun stands where the scene wants it; the same photograph lights the scene (image-based
+// lighting) and a shadow-casting sun is aligned with it. Stars, a storm dome and fog sit on top.
 
 import * as THREE from "three";
 import { Sky } from "three/examples/jsm/objects/Sky.js";
@@ -7,6 +9,7 @@ import { Sky } from "three/examples/jsm/objects/Sky.js";
 import { NOISE } from "../engine/noise.js";
 import { createStars } from "../engine/stars.js";
 import { lerp } from "./common.js";
+import { hdri } from "./library.js";
 
 // elevation/azimuth in degrees; fog colour; light colour/intensity; stars 0..1; storm 0..1
 export const PRESETS = {
@@ -24,10 +27,10 @@ export const PRESETS = {
 
 const KEYS = Object.keys(PRESETS.dawn);
 
-/** Blend presets: list of [weight, presetName] or a single name. */
+/** Blend presets: list of [weight, presetName] or a single name. The result carries `weights`. */
 export function blendPresets(spec) {
-  if (typeof spec === "string") return { ...PRESETS[spec] };
-  const out = {};
+  if (typeof spec === "string") return { ...PRESETS[spec], weights: [[1, spec]] };
+  const out = { weights: spec.filter(([w]) => w > 0.001) };
   const total = spec.reduce((s, [w]) => s + w, 0) || 1;
   for (const key of KEYS) {
     if (["fog", "sun"].includes(key)) {
@@ -72,7 +75,52 @@ function createStormDome() {
   return mesh;
 }
 
-export function createAtmosphere(scene, { stars = true, storm = true, starCount = 9000 } = {}) {
+function createPhotoDome() {
+  const material = new THREE.ShaderMaterial({
+    uniforms: {
+      tA: { value: null }, tB: { value: null }, uMix: { value: 0 }, uYawA: { value: 0 }, uYawB: { value: 0 },
+      uHas: { value: new THREE.Vector2(0, 0) }, uGain: { value: 1 }, uFog: { value: new THREE.Color() }, uHaze: { value: 0.5 },
+    },
+    vertexShader: /* glsl */ `varying vec3 vDir; void main() { vDir = normalize(position); vec4 p = projectionMatrix * modelViewMatrix * vec4(position, 1.0); gl_Position = p.xyww; }`,
+    fragmentShader: /* glsl */ `
+      uniform sampler2D tA, tB;
+      uniform float uMix, uYawA, uYawB, uGain, uHaze;
+      uniform vec2 uHas;
+      uniform vec3 uFog;
+      varying vec3 vDir;
+      vec3 sampleSky(sampler2D t, vec3 d, float yaw) {
+        // undo the rotation that places this photograph's sun where the scene wants it
+        float c = cos(-yaw), s = sin(-yaw);
+        vec3 r = vec3(d.x * c + d.z * s, d.y, -d.x * s + d.z * c);
+        vec2 uv = vec2(atan(r.z, r.x) * 0.15915494 + 0.5, asin(clamp(r.y, -1.0, 1.0)) * 0.31830989 + 0.5);
+        return texture2D(t, uv).rgb;
+      }
+      void main() {
+        vec3 d = normalize(vDir);
+        vec3 sky = vec3(0.0);
+        float w = 0.0;
+        if (uHas.x > 0.5) { sky += sampleSky(tA, d, uYawA) * (1.0 - uMix); w += 1.0 - uMix; }
+        if (uHas.y > 0.5) { sky += sampleSky(tB, d, uYawB) * uMix; w += uMix; }
+        sky = w > 0.0 ? sky / w : uFog;
+        // the sun disc in a photograph is thousands of times brighter than the sky: compress it
+        float peak = max(max(sky.r, sky.g), sky.b);
+        sky = sky / (1.0 + max(peak - 0.9, 0.0) * 1.6);
+        // haze toward the horizon so the sky meets the fogged land
+        float h = smoothstep(-0.02, 0.22, d.y);
+        sky = mix(uFog, sky * uGain, mix(1.0 - uHaze, 1.0, h));
+        gl_FragColor = vec4(sky, 1.0);
+      }
+    `,
+    side: THREE.BackSide,
+    depthWrite: false,
+  });
+  const mesh = new THREE.Mesh(new THREE.SphereGeometry(2000, 64, 32), material);
+  mesh.renderOrder = -2;
+  mesh.frustumCulled = false;
+  return mesh;
+}
+
+export function createAtmosphere(scene, { stars = true, storm = true, starCount = 9000, shadows = true } = {}) {
   const sky = new Sky();
   sky.scale.setScalar(2500);
   // compress the sky's HDR highlights (the sun disc is ~760x) so bloom gives a glow, not a white-out
@@ -84,8 +132,32 @@ export function createAtmosphere(scene, { stars = true, storm = true, starCount 
   const fog = new THREE.FogExp2(0x999999, 0.003);
   scene.fog = fog;
   const sun = new THREE.DirectionalLight(0xffffff, 2);
+  if (shadows) {
+    sun.castShadow = true;
+    sun.shadow.mapSize.set(2048, 2048);
+    const c = sun.shadow.camera;
+    c.left = c.bottom = -70;
+    c.right = c.top = 70;
+    c.near = 1;
+    c.far = 700;
+    sun.shadow.bias = -0.0004;
+    sun.shadow.normalBias = 0.04;
+    sun.shadow.radius = 3;
+  }
   const hemi = new THREE.HemisphereLight(0xbfd1e6, 0x3a3020, 1);
-  scene.add(sky, sun, sun.target, hemi);
+  const photo = createPhotoDome();
+  scene.add(sky, photo, sun, sun.target, hemi);
+  // panoramas: loaded on first use, then held; each scene uses a few
+  const loaded = new Map();
+  const want = (key) => {
+    if (!loaded.has(key)) {
+      loaded.set(key, null);
+      hdri(key).then((h) => loaded.set(key, h)).catch(() => {});
+    }
+    return loaded.get(key);
+  };
+  const photoSun = new THREE.Vector3();
+  const yawFor = (h, azimuthDeg) => THREE.MathUtils.degToRad(azimuthDeg) - Math.atan2(h.sun.x, h.sun.z);
   const starField = stars ? createStars({ count: starCount, radius: 1600, seed: 77, size: 1.7 }) : null;
   if (starField) scene.add(starField);
   const dome = storm ? createStormDome() : null;
@@ -101,21 +173,53 @@ export function createAtmosphere(scene, { stars = true, storm = true, starCount 
     set(p, { time = 0, pixelRatio = 1, lightning = 0, camera = null } = {}) {
       const u = sky.material.uniforms;
       sunDir.setFromSphericalCoords(1, THREE.MathUtils.degToRad(90 - p.elevation), THREE.MathUtils.degToRad(p.azimuth));
+      // the photographed sky: the two strongest presets, crossfaded
+      const ranked = [...(p.weights ?? [])].sort((a, b) => b[0] - a[0]);
+      const [wa = 1, ka] = ranked[0] ?? [];
+      const [wb = 0, kb] = ranked[1] ?? [];
+      const ha = ka ? want(ka) : null;
+      const hb = kb ? want(kb) : null;
+      const pu = photo.material.uniforms;
+      if (ha) {
+        pu.tA.value = ha.texture;
+        pu.uYawA.value = yawFor(ha, PRESETS[ka].azimuth);
+        // light from the photograph itself; the sun follows the photograph's sun when it is up
+        scene.environment = ha.env;
+        scene.environmentRotation.set(0, pu.uYawA.value, 0);
+        scene.environmentIntensity = 0.55 + 0.35 * p.hemi;
+        photoSun.copy(ha.sun).applyAxisAngle(THREE.Object3D.DEFAULT_UP, pu.uYawA.value);
+        if (photoSun.y > 0.05 && PRESETS[ka].elevation > 0) sunDir.copy(photoSun);
+      }
+      if (hb) {
+        pu.tB.value = hb.texture;
+        pu.uYawB.value = yawFor(hb, PRESETS[kb].azimuth);
+      }
+      pu.uHas.value.set(ha ? 1 : 0, hb ? 1 : 0);
+      pu.uMix.value = hb ? wb / Math.max(1e-6, wa + wb) : 0;
+      pu.uGain.value = 0.85;
+      pu.uFog.value.copy(p.fog instanceof THREE.Color ? p.fog : new THREE.Color(p.fog));
+      pu.uHaze.value = THREE.MathUtils.clamp(p.fogDensity * 260, 0.25, 0.95);
+      photo.visible = Boolean(ha);
+      sky.visible = !ha;
+      if (camera) photo.position.copy(camera.position);
       u.sunPosition.value.copy(sunDir);
       u.turbidity.value = p.turbidity;
       u.rayleigh.value = p.rayleigh;
       u.mieCoefficient.value = p.mie;
       u.mieDirectionalG.value = 0.8;
       fog.color.copy(p.fog instanceof THREE.Color ? p.fog : new THREE.Color(p.fog));
-      fog.density = p.fogDensity;
+      fog.density = p.fogDensity * 0.72;
       sun.color.copy(p.sun instanceof THREE.Color ? p.sun : new THREE.Color(p.sun));
       sun.intensity = p.sunI;
       sun.position.copy(sunDir).multiplyScalar(300);
       if (camera) {
-        sun.position.add(camera.position);
-        sun.target.position.copy(camera.position);
+        // the shadow box sits a little ahead of the camera, where the viewer is looking
+        const ahead = camera.getWorldDirection(new THREE.Vector3()).setY(0).normalize().multiplyScalar(35);
+        sun.target.position.copy(camera.position).add(ahead);
+        sun.position.add(sun.target.position);
       }
-      hemi.intensity = p.hemi;
+      sun.castShadow = shadows && sunDir.y > 0.03;
+      hemi.intensity = p.hemi * (photo.visible ? 0.35 : 1);
       // lightning: random flashes while `lightning` > 0
       if (lightning > 0 && time > nextFlash) {
         flash = 1;
