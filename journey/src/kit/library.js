@@ -63,7 +63,8 @@ export function pbr(key) {
 
 /**
  * A sky panorama: { texture (equirect HDR), env (PMREM for lighting), sun (unit vector toward the
- * brightest point of the photograph, in the panorama's own frame) }. Returns a promise.
+ * brightest point of the photograph, in the panorama's own frame), peak, mean (sky luminance) }.
+ * Returns a promise.
  */
 export function hdri(key) {
   if (hdris.has(key)) return hdris.get(key);
@@ -77,12 +78,17 @@ export function hdri(key) {
       let best = -1;
       let bx = 0;
       let by = 0;
+      let sum = 0;
+      let n = 0;
       const f = THREE.DataUtils.fromHalfFloat;
       for (let y = 0; y < height / 2; y += 2) {
         for (let x = 0; x < width; x += 2) {
           const i = (y * width + x) * 4;
           const l = f(data[i]) + f(data[i + 1]) + f(data[i + 2]);
           if (l > best) { best = l; bx = x; by = y; }
+          // the sky's overall brightness (the sun clipped out), so photographs exposed differently can be
+          // brought to the brightness each time of day should have
+          if (y > height * 0.1 && y < height * 0.45) { sum += Math.min(4, (0.2126 * f(data[i]) + 0.7152 * f(data[i + 1]) + 0.0722 * f(data[i + 2]))); n++; }
         }
       }
       const phi = (bx / width) * Math.PI * 2; // around
@@ -92,7 +98,7 @@ export function hdri(key) {
       const elev = Math.PI / 2 - theta;
       const sun = new THREE.Vector3(Math.cos(azim) * Math.cos(elev), Math.sin(elev), Math.sin(azim) * Math.cos(elev)).normalize();
       const env = pmrem ? pmrem.fromEquirectangular(tex).texture : null;
-      resolve({ texture: tex, env, sun, peak: best });
+      resolve({ texture: tex, env, sun, peak: best, mean: n ? sum / n : 1 });
     }, undefined, reject);
   }));
   hdris.set(key, p);

@@ -55,23 +55,23 @@ function waterWall(side) {
         float n0 = snoise(q);
         float ny = snoise(q + vec3(e, 0.0, 0.0)) - n0;
         float nz = snoise(q + vec3(0.0, e, 0.0)) - n0;
-        vec3 nrm = normalize(vNormalW + vec3(0.0, ny, nz) * 0.9);
+        vec3 nrm = normalize(vNormalW + vec3(0.0, ny, nz) * 0.22);
         vec3 view = normalize(cameraPosition - vWorld);
         float fres = pow(1.0 - max(dot(nrm, view), 0.0), 4.0);
         float depth = clamp((vWorld.y + 26.0) / 50.0, 0.0, 1.0);
         float caust = pow(abs(snoise(vec3(p.y * 2.0, p.z * 2.0 + uTime * 0.2, uTime * 0.15))), 0.6);
         // light falling in from the surface, green-blue near the top, ink at the bed
         vec3 deep = mix(vec3(0.006, 0.025, 0.035), vec3(0.05, 0.2, 0.22), depth * depth);
-        vec3 col = deep * (0.7 + 0.6 * caust);
+        vec3 col = deep * (0.85 + 0.3 * caust);
         // shafts of light slanting down inside the water
         float shafts = smoothstep(0.3, 0.9, snoise(vec3(vWorld.z * 0.03 + vWorld.y * 0.012, uTime * 0.05, 7.0))) * depth;
         col += vec3(0.05, 0.16, 0.16) * shafts;
         // suspended specks
         float speck = step(0.985, fract(sin(dot(floor(vWorld * 3.0), vec3(12.9898, 78.233, 37.719))) * 43758.5453));
         col += vec3(0.08, 0.12, 0.12) * speck * depth;
-        col += vec3(0.32, 0.4, 0.42) * fres;
+        col += vec3(0.16, 0.2, 0.21) * fres;
         float spec = pow(max(dot(reflect(-view, nrm), normalize(vec3(-uSide * 0.3, 1.0, 0.2))), 0.0), 60.0);
-        col += vec3(0.7, 0.75, 0.75) * spec * 0.6;
+        col += vec3(0.7, 0.75, 0.75) * spec * 0.15;
         float foam = smoothstep(0.93, 1.0, depth) * (0.5 + 0.5 * snoise(vec3(p.z * 4.0, uTime, 1.0)));
         col += vec3(0.6, 0.7, 0.72) * foam;
         gl_FragColor = vec4(col * uLight, 0.94);

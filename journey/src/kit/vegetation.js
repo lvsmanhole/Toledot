@@ -55,6 +55,9 @@ export function createBlades({ count, place, height, kind = "grass", random = rn
       void main() {
         vec3 p = position;
         p.y *= shape.x;
+        // blades right at the lens fold away, so no single stalk ever fills the frame
+        float near = smoothstep(2.0, 7.0, distance((modelMatrix * vec4(offset.xyz, 1.0)).xyz, cameraPosition));
+        p *= near;
         float c = cos(offset.w), s = sin(offset.w);
         p = vec3(p.x * c, p.y, p.x * s);
         float tip = position.y;

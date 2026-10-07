@@ -84,7 +84,7 @@ export function createLandscape(ctx, options) {
           if (!o.isMesh) return;
           const m = Array.isArray(o.material) ? o.material[0] : o.material;
           const solid = m && !m.isShaderMaterial && !m.transparent && m.side !== THREE.BackSide && m.blending === THREE.NormalBlending;
-          o.castShadow = solid && o !== terrain?.mesh;
+          o.castShadow = solid && o !== terrain?.mesh && o !== water?.mesh;
           o.receiveShadow = solid || o === terrain?.mesh;
         });
       }

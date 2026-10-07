@@ -109,12 +109,9 @@
 - [x] The Journey: a cinematic scroll-through of the whole story (`journey/`), Genesis to Revelation in 55 scenes. KJV captions are checked by tests, and the Toledot timeline runs inside it as the Chronicle.
 - [ ] Journey polish on real GPUs: frame pacing, scene-by-scene art direction, mobile performance. Visual review so far was in a software-rendered headless browser.
 - [x] Realism pass, part 1 (commit 98e7708): CC0 photo skies, PBR textures, scanned trees, clothed people; scene fixes Eden through Judges (Babel, Bethel stairway, Joseph's pit, Nile basket, Red Sea walls, Jordan, Jericho, tents, Goliath's armour, Ruth).
-- [ ] Realism pass, part 2 — what is left:
-  - Verify on screen the part-1 scene changes made after the survey shots: Babel, Bethel, Joseph, bondage (basket/reeds), Red Sea, Jordan, Jericho, Sinai tents, Elah, Ruth, Judges. Only Eden's trees, fruit and Adam/Eve were checked after their changes.
-  - Survey and fix the unseen scenes, Shiloh (u 622) through New Creation (u 1226): Shiloh, David, Temple, divided kingdom, Carmel, Isaiah, Assyria, fall of Jerusalem, exile, Babylon, Chebar, bones, Daniel, return, silence, nativity, baptism, temptation, Galilee, passion, risen, Pentecost, Paul, Patmos, throne, new creation.
-  - Known weak spots seen so far: the Sinai mountain reads as a flat grey mass; desert scenes over-bright (pale crowds at Jericho); Babel's ground plain and flat; the flood plain is bare sand with a small ark.
-  - People: still procedural, not photoreal. Real faces/bodies need licensed character models (ask the user to supply them).
-  - Low-memory checking: capture with `?q=low`, a few frames per batch, and run `browse stop` after each batch (headless Chrome at high quality used too much memory).
+- [x] Realism pass, part 2: every scene surveyed. Sky photos normalised to time-of-day brightness (real night skies); reflective water lit by the scene's sky; flames feathered at every edge; near grass folds away from the lens. Scene work: Shiloh tabernacle (pillars, sockets, pleated linen, coloured gate), Temple (cherubim veil, carved gilded walls, cloud of glory), Carmel trench, Babylon furnace mouth, Ezra's foundation and the ruined city, Galilee boat (Ginosar hull), the upper room (seated at a low table, bread and cup), rock-cut tombs with rolling stones, the Pentecost house, New Jerusalem's river with real trees and fruit; fieldstone glacis at Jericho; quieter Red Sea walls and Bethel stair.
+- [ ] Still weak (part 3): Elah and other "judea" slopes read pale under the morning sky; the Bethel stair is still very bright looking up; the flood plain is bare; the Revelation vision scenes (throne, holy city) are deliberately stylised rather than realistic; people remain procedural, not photoreal (needs licensed character models).
+- Low-memory checking: `?q=low`, a few frames per batch, `browse stop` after each batch.
 
 ## Slice acceptance checklist
 

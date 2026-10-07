@@ -13,6 +13,7 @@ export const MATERIALS = {
   limestone: () => SURFACES.limestone(),
   sandstone: () => SURFACES.sandstone(),
   basalt: () => SURFACES.basalt(),
+  fieldstone: () => surfaceMaterial("cliff", { tile: 1.6, tint: [0.62, 0.56, 0.48] }),
   wood: () => SURFACES.wood(),
   darkWood: () => SURFACES.darkWood(),
   gold: () => new THREE.MeshStandardMaterial({ color: 0xd8a640, roughness: 0.32, metalness: 1, emissive: 0x2a1a04, emissiveIntensity: 0.15 }),
@@ -79,7 +80,7 @@ export function city({ count = 120, radius = 30, inner = 0, height = (x, z) => 0
 }
 
 /** A wall along a closed or open polyline of [x, z] points with towers at the corners. */
-export function wall({ points, height = (x, z) => 0, h = 6, thickness = 2, towerEvery = 1, closed = true, material = "mud", footing = "limestone" }) {
+export function wall({ points, height = (x, z) => 0, h = 6, thickness = 2, towerEvery = 1, closed = true, material = "mud", footing = "fieldstone" }) {
   const geos = [];
   const stones = [];
   const n = closed ? points.length : points.length - 1;
@@ -417,19 +418,36 @@ export function ark({ framesOnly = 0 } = {}) {
 
 /** The tabernacle: a linen court (100 × 50 cubits), the tent, the altar, the laver. */
 export function tabernacle() {
+  // the court of fine twined linen on pillars of brass with silver hooks and fillets (Exodus 27:9-19); the
+  // tent of the congregation within, under its coverings of goats' hair and skins (Exodus 26)
   const group = new THREE.Group();
   const L = 30;
   const W = 15;
   const posts = [];
+  const sockets = [];
+  const silver = [];
   const linen = [];
-  for (let i = 0; i <= 20; i++) {
-    for (const z of [-W / 2, W / 2]) posts.push(box(0.15, 2.4, 0.15, -L / 2 + (i / 20) * L, 0, z));
-  }
-  for (let i = 0; i <= 10; i++) for (const x of [-L / 2, L / 2]) posts.push(box(0.15, 2.4, 0.15, x, 0, -W / 2 + (i / 10) * W));
+  const post = (x, z) => {
+    posts.push(new THREE.CylinderGeometry(0.09, 0.11, 2.5, 10).translate(x, 1.25, z));
+    sockets.push(new THREE.CylinderGeometry(0.2, 0.24, 0.22, 10).translate(x, 0.11, z));
+    silver.push(new THREE.CylinderGeometry(0.13, 0.1, 0.14, 10).translate(x, 2.5, z));
+  };
+  for (let i = 0; i <= 20; i++) for (const z of [-W / 2, W / 2]) post(-L / 2 + (i / 20) * L, z);
+  for (let i = 1; i < 10; i++) for (const x of [-L / 2, L / 2]) post(x, -W / 2 + (i / 10) * W);
+  // fillets of silver joining the pillar heads
+  const fillet = (len, x, z, rot) => silver.push(new THREE.BoxGeometry(len, 0.05, 0.05).rotateY(rot).translate(x, 2.42, z));
+  fillet(L, 0, -W / 2, 0);
+  fillet(L, 0, W / 2, 0);
+  fillet(W, -L / 2, 0, Math.PI / 2);
+  fillet(W, L / 2, 0, Math.PI / 2);
+  // hangings: hung in soft pleats from the fillets, a hand's breadth above the ground
   const side = (w, x, z, rot) => {
-    const g = new THREE.PlaneGeometry(w, 2.2);
+    const g = new THREE.PlaneGeometry(w, 2.3, Math.max(8, Math.round(w * 6)), 3);
+    const gp = g.attributes.position;
+    for (let k = 0; k < gp.count; k++) gp.setZ(k, Math.sin(gp.getX(k) * 9) * 0.05 + Math.sin(gp.getX(k) * 2.3) * 0.03);
+    g.computeVertexNormals();
     g.rotateY(rot);
-    g.translate(x, 1.2, z);
+    g.translate(x, 1.3, z);
     linen.push(g);
   };
   side(L, 0, -W / 2, 0);
@@ -437,14 +455,131 @@ export function tabernacle() {
   side(W, -L / 2, 0, Math.PI / 2);
   side(W * 0.3, L / 2, -W * 0.35, Math.PI / 2);
   side(W * 0.3, L / 2, W * 0.35, Math.PI / 2);
-  group.add(new THREE.Mesh(mergeGeometries(posts), MATERIALS.bronze()));
+  // the gate: a hanging of blue, purple and scarlet (Exodus 27:16)
+  const gate = new THREE.PlaneGeometry(W * 0.4, 2.3, 24, 2).rotateY(Math.PI / 2).translate(L / 2 + 0.05, 1.3, 0);
+  const bronze = MATERIALS.bronze();
+  group.add(new THREE.Mesh(mergeGeometries(posts), MATERIALS.wood()));
+  group.add(new THREE.Mesh(mergeGeometries(sockets), bronze));
+  group.add(new THREE.Mesh(mergeGeometries(silver.map((g) => (g.index ? g.toNonIndexed() : g))), new THREE.MeshStandardMaterial({ color: 0xc8ccd0, roughness: 0.3, metalness: 1 })));
   group.add(new THREE.Mesh(mergeGeometries(linen), MATERIALS.cloth(0xe8e2d2)));
-  const tent = new THREE.Mesh(box(9, 3.2, 3.2, -L / 4, 0, 0), MATERIALS.cloth(0x2c1f1a));
-  const altarB = new THREE.Mesh(box(1.6, 1, 1.6, L / 6, 0, 0), MATERIALS.bronze());
-  const laver = new THREE.Mesh(new THREE.CylinderGeometry(0.6, 0.4, 0.7, 16).translate(L / 12, 0.35, 0), MATERIALS.bronze());
-  group.add(tent, altarB, laver);
+  // [2]: the tent with its coverings, sagging between the boards and draped to the ground at the sides
+  const tentG = new THREE.BoxGeometry(9.4, 3.3, 3.6, 24, 6, 8);
+  const tp = tentG.attributes.position;
+  for (let k = 0; k < tp.count; k++) {
+    const x = tp.getX(k);
+    const y = tp.getY(k);
+    const z = tp.getZ(k);
+    if (y > 1.6) tp.setY(k, y - Math.abs(Math.sin(x * 0.7)) * 0.08 - (Math.abs(z) < 1.7 ? 0.05 * Math.sin(z * 2) ** 2 : 0));
+    if (Math.abs(z) > 1.7) tp.setZ(k, z + Math.sign(z) * ((1.65 - y) / 3.3) * 0.25 + Math.sin(x * 5) * 0.03);
+  }
+  tentG.computeVertexNormals();
+  tentG.translate(-L / 4, 1.65, 0);
+  const tent = new THREE.Mesh(tentG, MATERIALS.cloth(0x2c1f1a));
+  tent.castShadow = true;
+  group.add(tent);
+  group.add(new THREE.Mesh(gate, MATERIALS.cloth(0x3a2a6a)));
+  const altarB = new THREE.Mesh(box(1.6, 1, 1.6, L / 6, 0, 0), bronze);
+  const laver = new THREE.Mesh(new THREE.CylinderGeometry(0.6, 0.4, 0.7, 16).translate(L / 12, 0.35, 0), bronze);
+  group.add(altarB, laver);
   group.userData = { tentCenter: new THREE.Vector3(-L / 4, 3, 0), altar: new THREE.Vector3(L / 6, 1, 0) };
+  // keep the tent addressable as children[2] for scenes that open it
+  group.children.splice(group.children.indexOf(tent), 1);
+  group.children.splice(2, 0, tent);
   return group;
+}
+
+/** The veil's weave: bands of blue, purple and scarlet in fine linen, with cherubim wrought in gold thread. */
+function veilTexture() {
+  const c = document.createElement("canvas");
+  c.width = 512;
+  c.height = 1024;
+  const g = c.getContext("2d");
+  const bands = ["#203a7a", "#4a2363", "#8c1a22", "#8c1a22", "#4a2363", "#203a7a"];
+  bands.forEach((col, i) => { g.fillStyle = col; g.fillRect(0, (i * c.height) / bands.length, c.width, c.height / bands.length + 1); });
+  // the threads
+  for (let y = 0; y < c.height; y += 2) { g.fillStyle = `rgba(0,0,0,${0.05 + 0.05 * Math.random()})`; g.fillRect(0, y, c.width, 1); }
+  for (let x = 0; x < c.width; x += 3) { g.fillStyle = `rgba(255,255,255,${0.02 + 0.03 * Math.random()})`; g.fillRect(x, 0, 1, c.height); }
+  // cherubim with outstretched wings, in rows
+  g.strokeStyle = "rgba(226,190,110,0.85)";
+  g.fillStyle = "rgba(226,190,110,0.35)";
+  g.lineWidth = 3;
+  for (let row = 0; row < 4; row++) {
+    for (let col = 0; col < 2; col++) {
+      const cx = 128 + col * 256;
+      const cy = 140 + row * 250;
+      g.beginPath();
+      g.arc(cx, cy - 46, 14, 0, Math.PI * 2); // head
+      g.moveTo(cx - 16, cy - 28);
+      g.lineTo(cx + 16, cy - 28);
+      g.lineTo(cx + 12, cy + 50);
+      g.lineTo(cx - 12, cy + 50);
+      g.closePath(); // body
+      for (const s of [-1, 1]) {
+        // wings rising and reaching outward
+        g.moveTo(cx + s * 14, cy - 24);
+        g.quadraticCurveTo(cx + s * 70, cy - 90, cx + s * 110, cy - 60);
+        g.quadraticCurveTo(cx + s * 70, cy - 30, cx + s * 14, cy + 6);
+      }
+      g.fill();
+      g.stroke();
+    }
+  }
+  const tex = new THREE.CanvasTexture(c);
+  tex.colorSpace = THREE.SRGBColorSpace;
+  tex.anisotropy = 8;
+  return tex;
+}
+
+/** Carved cherubim, palm trees and open flowers, for the gilded cedar walls. */
+function carvingTexture() {
+  const c = document.createElement("canvas");
+  c.width = 1024;
+  c.height = 512;
+  const g = c.getContext("2d");
+  g.fillStyle = "#b8b8b8";
+  g.fillRect(0, 0, c.width, c.height);
+  g.fillStyle = "#ffffff";
+  g.strokeStyle = "#ffffff";
+  g.lineWidth = 6;
+  const palm = (x) => {
+    g.fillRect(x - 6, 200, 12, 260);
+    for (let i = 0; i < 9; i++) {
+      const a = -Math.PI / 2 + (i - 4) * 0.36;
+      g.beginPath();
+      g.moveTo(x, 200);
+      g.quadraticCurveTo(x + Math.cos(a) * 60, 200 + Math.sin(a) * 90, x + Math.cos(a) * 110, 210 + Math.sin(a) * 60 + 50);
+      g.stroke();
+    }
+  };
+  const cherub = (x) => {
+    g.beginPath();
+    g.arc(x, 170, 22, 0, Math.PI * 2);
+    g.fill();
+    g.fillRect(x - 24, 195, 48, 230);
+    for (const s of [-1, 1]) {
+      g.beginPath();
+      g.moveTo(x + s * 20, 210);
+      g.quadraticCurveTo(x + s * 90, 120, x + s * 120, 160);
+      g.quadraticCurveTo(x + s * 90, 220, x + s * 24, 300);
+      g.fill();
+    }
+  };
+  const flower = (x, y) => {
+    for (let i = 0; i < 8; i++) {
+      g.beginPath();
+      g.ellipse(x + Math.cos((i * Math.PI) / 4) * 16, y + Math.sin((i * Math.PI) / 4) * 16, 12, 6, (i * Math.PI) / 4, 0, Math.PI * 2);
+      g.fill();
+    }
+  };
+  for (let i = 0; i < 4; i++) {
+    palm(128 + i * 256);
+    cherub(256 + i * 256 - 128 + 128);
+  }
+  for (let x = 32; x < c.width; x += 64) { flower(x, 40); flower(x, 482); }
+  const tex = new THREE.CanvasTexture(c);
+  tex.wrapS = tex.wrapT = THREE.RepeatWrapping;
+  tex.repeat.set(4, 1);
+  return tex;
 }
 
 /** Solomon's temple: porch with Jachin and Boaz, holy place, holy of holies; courts and altar. */
@@ -495,10 +630,27 @@ export function solomonTemple() {
   }
   interior.add(new THREE.Mesh(mergeGeometries(lampGeos), gold));
   interior.add(new THREE.Mesh(box(2, 1, 1, 6, 0, 0), gold)); // table / incense altar region
-  const veil = new THREE.Mesh(new THREE.PlaneGeometry(11.5, 14, 24, 28), SURFACES.linen([0.55, 0.1, 0.16]));
+  // "the vail of blue, and purple, and crimson, and fine linen, and wrought cherubims thereon"
+  // (2 Chronicles 3:14), hanging in folds
+  const veilGeo = new THREE.PlaneGeometry(11.5, 14, 96, 8);
+  const vp = veilGeo.attributes.position;
+  for (let k = 0; k < vp.count; k++) vp.setZ(k, Math.sin(vp.getX(k) * 3.1) * 0.12 + Math.sin(vp.getX(k) * 7.3) * 0.04);
+  veilGeo.computeVertexNormals();
+  const veil = new THREE.Mesh(veilGeo, new THREE.MeshStandardMaterial({ map: veilTexture(), roughness: 0.85, side: THREE.DoubleSide }));
   veil.rotation.y = Math.PI / 2;
-  veil.position.set(-4.4, 7, 0);
+  veil.position.set(-4.15, 7, 0);
   interior.add(veil);
+  // the walls of the house lined with cedar overlaid with gold, carved with cherubim, palm trees and
+  // open flowers (1 Kings 6:15-22, 29); the floor of fir overlaid with gold (6:30)
+  const relief = carvingTexture();
+  const lining = new THREE.MeshStandardMaterial({ color: 0xc89838, metalness: 1, roughness: 0.48, bumpMap: relief, bumpScale: 3, map: relief, envMapIntensity: 0.35 });
+  const liningGeos = [];
+  for (const z of [-4.98, 4.98]) liningGeos.push(new THREE.PlaneGeometry(29, 14.5).rotateY(z < 0 ? 0 : Math.PI).translate(0, 7.25, z));
+  const lin = mergeGeometries(liningGeos);
+  interior.add(new THREE.Mesh(lin, lining));
+  const floor = new THREE.Mesh(new THREE.PlaneGeometry(29, 9.9).rotateX(-Math.PI / 2).translate(0, 0.02, 0), MATERIALS.gold());
+  floor.material.roughness = 0.5;
+  interior.add(floor);
   const ark = new THREE.Group();
   ark.add(new THREE.Mesh(box(1.25, 0.75, 0.75), gold));
   for (const s of [-1, 1]) {
@@ -533,16 +685,37 @@ export function crosses({ spacing = 6 } = {}) {
 
 /** A rock-cut tomb with a rolling stone; userData.stone rolls along +x. */
 export function tomb() {
+  // a tomb "hewn out in the rock" (Mark 15:46): a limestone outcrop with a dressed face, a low square
+  // doorway, and a great round stone standing in a cut groove before it, ready to roll
   const group = new THREE.Group();
-  const rock = new THREE.Mesh(new THREE.DodecahedronGeometry(9, 3), SURFACES.rock());
-  rock.scale.set(1.4, 0.9, 1);
-  rock.position.set(0, 3, -6);
-  const opening = new THREE.Mesh(new THREE.CircleGeometry(1.7, 24), new THREE.MeshBasicMaterial({ color: 0x050403 }));
-  opening.position.set(0, 1.8, 1.9);
-  const stone = new THREE.Mesh(new THREE.CylinderGeometry(2.1, 2.1, 0.7, 32), SURFACES.limestone());
+  const outcrop = new THREE.BoxGeometry(24, 9, 14, 48, 18, 28);
+  const op = outcrop.attributes.position;
+  for (let i = 0; i < op.count; i++) {
+    const x = op.getX(i);
+    const y = op.getY(i);
+    const z = op.getZ(i);
+    const n = Math.sin(x * 0.6 + z * 0.3) * 0.5 + Math.sin(x * 1.7 - y * 1.3) * 0.22 + Math.sin(z * 2.3 + y * 0.9) * 0.15;
+    const top = (y + 4.5) / 9; // 0 at the foot, 1 at the top
+    // the top rounds over like a hill; the sides slope away into the ground
+    const round = Math.max(0, top - 0.55) * 2.6 * (Math.abs(x) / 12) ** 2;
+    const dressed = z > 6.5 && Math.abs(x) < 4.5 && y < 2; // the cut face round the door stays flat
+    op.setXYZ(i, x + (dressed ? 0 : n * 0.6), y - round + (dressed ? 0 : n * 0.3), z + (dressed ? 0 : n) - top * top * 2.5 * (z > 0 ? 1 : 0));
+  }
+  outcrop.computeVertexNormals();
+  outcrop.translate(0, 4.5 - 0.6, -5);
+  const rockMat = surfaceMaterial("cliff", { tile: 3, tint: [0.86, 0.8, 0.72] });
+  const rock = new THREE.Mesh(outcrop, rockMat);
+  rock.castShadow = rock.receiveShadow = true;
+  const opening = new THREE.Mesh(new THREE.PlaneGeometry(1.15, 1.35), new THREE.MeshBasicMaterial({ color: 0x050403 }));
+  opening.position.set(0, 0.68, 2.02);
+  // the groove the stone runs in
+  const groove = new THREE.Mesh(new THREE.BoxGeometry(7, 0.18, 0.7), new THREE.MeshStandardMaterial({ color: 0x2a241e, roughness: 1 }));
+  groove.position.set(2, 0.02, 2.4);
+  const stone = new THREE.Mesh(new THREE.CylinderGeometry(1.15, 1.15, 0.42, 40), surfaceMaterial("cliff", { tile: 1.2, tint: [0.9, 0.85, 0.78] }));
   stone.rotation.x = Math.PI / 2;
-  stone.position.set(0, 2.1, 2.3);
-  group.add(rock, opening, stone);
+  stone.position.set(0, 1.12, 2.4);
+  stone.castShadow = true;
+  group.add(rock, opening, groove, stone);
   group.userData = { stone, opening };
   return group;
 }

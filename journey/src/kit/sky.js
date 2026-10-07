@@ -13,16 +13,16 @@ import { hdri } from "./library.js";
 
 // elevation/azimuth in degrees; fog colour; light colour/intensity; stars 0..1; storm 0..1
 export const PRESETS = {
-  dawn: { elevation: 3, azimuth: 95, turbidity: 6, rayleigh: 2.4, mie: 0.004, fog: 0x8a7f78, fogDensity: 0.0035, sun: 0xffc9a0, sunI: 1.2, hemi: 0.55, stars: 0.25, storm: 0, exposure: 0.95 },
-  morning: { elevation: 22, azimuth: 120, turbidity: 3.5, rayleigh: 1.2, mie: 0.0025, fog: 0xa8a28e, fogDensity: 0.0015, sun: 0xffe6c4, sunI: 2.4, hemi: 0.95, stars: 0, storm: 0, exposure: 1 },
-  noon: { elevation: 60, azimuth: 160, turbidity: 4, rayleigh: 0.9, mie: 0.003, fog: 0xb3ab94, fogDensity: 0.0012, sun: 0xfff3dc, sunI: 3, hemi: 1.1, stars: 0, storm: 0, exposure: 0.95 },
-  desert: { elevation: 38, azimuth: 200, turbidity: 9, rayleigh: 0.7, mie: 0.006, fog: 0xb49e78, fogDensity: 0.0011, sun: 0xffe2b0, sunI: 3.0, hemi: 0.9, stars: 0, storm: 0, exposure: 0.85 },
-  golden: { elevation: 8, azimuth: 250, turbidity: 5, rayleigh: 1.6, mie: 0.004, fog: 0xa38c68, fogDensity: 0.0016, sun: 0xffc27a, sunI: 2.2, hemi: 0.7, stars: 0, storm: 0, exposure: 1 },
-  dusk: { elevation: 0.8, azimuth: 265, turbidity: 9, rayleigh: 3, mie: 0.005, fog: 0x3a3840, fogDensity: 0.0035, sun: 0xff9a60, sunI: 0.6, hemi: 0.35, stars: 0.4, storm: 0, exposure: 0.9 },
-  night: { elevation: -8, azimuth: 265, turbidity: 2, rayleigh: 0.5, mie: 0.002, fog: 0x0d1118, fogDensity: 0.003, sun: 0x8fa6d6, sunI: 0.25, hemi: 0.18, stars: 1, storm: 0, exposure: 1.05 },
-  storm: { elevation: 12, azimuth: 220, turbidity: 12, rayleigh: 2, mie: 0.006, fog: 0x30343a, fogDensity: 0.0055, sun: 0x9aa4b0, sunI: 0.5, hemi: 0.45, stars: 0, storm: 1, exposure: 0.75 },
-  ash: { elevation: 10, azimuth: 230, turbidity: 14, rayleigh: 3.5, mie: 0.008, fog: 0x4a3c34, fogDensity: 0.006, sun: 0xff8a50, sunI: 0.7, hemi: 0.35, stars: 0, storm: 0.6, exposure: 0.85 },
-  sacred: { elevation: 30, azimuth: 180, turbidity: 2, rayleigh: 0.6, mie: 0.002, fog: 0xe6dcc6, fogDensity: 0.0018, sun: 0xfff4e0, sunI: 2.8, hemi: 1.3, stars: 0, storm: 0, exposure: 1.05 },
+  dawn: { skyLum: 0.4, elevation: 3, azimuth: 95, turbidity: 6, rayleigh: 2.4, mie: 0.004, fog: 0x8a7f78, fogDensity: 0.0035, sun: 0xffc9a0, sunI: 1.2, hemi: 0.55, stars: 0.25, storm: 0, exposure: 0.95 },
+  morning: { skyLum: 0.26, elevation: 22, azimuth: 120, turbidity: 3.5, rayleigh: 1.2, mie: 0.0025, fog: 0xa8a28e, fogDensity: 0.0015, sun: 0xffe6c4, sunI: 2.4, hemi: 0.95, stars: 0, storm: 0, exposure: 1 },
+  noon: { skyLum: 0.2, elevation: 60, azimuth: 160, turbidity: 4, rayleigh: 0.9, mie: 0.003, fog: 0xb3ab94, fogDensity: 0.0012, sun: 0xfff3dc, sunI: 3, hemi: 1.1, stars: 0, storm: 0, exposure: 0.95 },
+  desert: { skyLum: 0.36, elevation: 38, azimuth: 200, turbidity: 9, rayleigh: 0.7, mie: 0.006, fog: 0xb49e78, fogDensity: 0.0011, sun: 0xffe2b0, sunI: 3.0, hemi: 0.9, stars: 0, storm: 0, exposure: 0.85 },
+  golden: { skyLum: 0.36, elevation: 8, azimuth: 250, turbidity: 5, rayleigh: 1.6, mie: 0.004, fog: 0xa38c68, fogDensity: 0.0016, sun: 0xffc27a, sunI: 2.2, hemi: 0.7, stars: 0, storm: 0, exposure: 1 },
+  dusk: { skyLum: 0.32, elevation: 0.8, azimuth: 265, turbidity: 9, rayleigh: 3, mie: 0.005, fog: 0x3a3840, fogDensity: 0.0035, sun: 0xff9a60, sunI: 0.6, hemi: 0.35, stars: 0.4, storm: 0, exposure: 0.9 },
+  night: { skyLum: 0.012, elevation: -8, azimuth: 265, turbidity: 2, rayleigh: 0.5, mie: 0.002, fog: 0x0d1118, fogDensity: 0.003, sun: 0x8fa6d6, sunI: 0.25, hemi: 0.18, stars: 1, storm: 0, exposure: 1.05 },
+  storm: { skyLum: 0.3, elevation: 12, azimuth: 220, turbidity: 12, rayleigh: 2, mie: 0.006, fog: 0x30343a, fogDensity: 0.0055, sun: 0x9aa4b0, sunI: 0.5, hemi: 0.45, stars: 0, storm: 1, exposure: 0.75 },
+  ash: { skyLum: 0.25, elevation: 10, azimuth: 230, turbidity: 14, rayleigh: 3.5, mie: 0.008, fog: 0x4a3c34, fogDensity: 0.006, sun: 0xff8a50, sunI: 0.7, hemi: 0.35, stars: 0, storm: 0.6, exposure: 0.85 },
+  sacred: { skyLum: 0.55, elevation: 30, azimuth: 180, turbidity: 2, rayleigh: 0.6, mie: 0.002, fog: 0xc9c2b2, fogDensity: 0.0012, sun: 0xfff4e0, sunI: 2.8, hemi: 1.3, stars: 0, storm: 0, exposure: 1.05 },
 };
 
 const KEYS = Object.keys(PRESETS.dawn);
@@ -79,12 +79,12 @@ function createPhotoDome() {
   const material = new THREE.ShaderMaterial({
     uniforms: {
       tA: { value: null }, tB: { value: null }, uMix: { value: 0 }, uYawA: { value: 0 }, uYawB: { value: 0 },
-      uHas: { value: new THREE.Vector2(0, 0) }, uGain: { value: 1 }, uFog: { value: new THREE.Color() }, uHaze: { value: 0.5 },
+      uHas: { value: new THREE.Vector2(0, 0) }, uGain: { value: 1 }, uGainA: { value: 1 }, uGainB: { value: 1 }, uFog: { value: new THREE.Color() }, uHaze: { value: 0.5 },
     },
     vertexShader: /* glsl */ `varying vec3 vDir; void main() { vDir = normalize(position); vec4 p = projectionMatrix * modelViewMatrix * vec4(position, 1.0); gl_Position = p.xyww; }`,
     fragmentShader: /* glsl */ `
       uniform sampler2D tA, tB;
-      uniform float uMix, uYawA, uYawB, uGain, uHaze;
+      uniform float uMix, uYawA, uYawB, uGain, uGainA, uGainB, uHaze;
       uniform vec2 uHas;
       uniform vec3 uFog;
       varying vec3 vDir;
@@ -99,8 +99,8 @@ function createPhotoDome() {
         vec3 d = normalize(vDir);
         vec3 sky = vec3(0.0);
         float w = 0.0;
-        if (uHas.x > 0.5) { sky += sampleSky(tA, d, uYawA) * (1.0 - uMix); w += 1.0 - uMix; }
-        if (uHas.y > 0.5) { sky += sampleSky(tB, d, uYawB) * uMix; w += uMix; }
+        if (uHas.x > 0.5) { sky += sampleSky(tA, d, uYawA) * uGainA * (1.0 - uMix); w += 1.0 - uMix; }
+        if (uHas.y > 0.5) { sky += sampleSky(tB, d, uYawB) * uGainB * uMix; w += uMix; }
         sky = w > 0.0 ? sky / w : uFog;
         // the sun disc in a photograph is thousands of times brighter than the sky: compress it
         float peak = max(max(sky.r, sky.g), sky.b);
@@ -186,7 +186,14 @@ export function createAtmosphere(scene, { stars = true, storm = true, starCount 
         // light from the photograph itself; the sun follows the photograph's sun when it is up
         scene.environment = ha.env;
         scene.environmentRotation.set(0, pu.uYawA.value, 0);
-        scene.environmentIntensity = 0.55 + 0.35 * p.hemi;
+        // each photograph is exposed differently (the night sky is stored brighter than noon): scale it to
+        // the brightness this time of day should have, for the visible sky and for the light it casts
+        // (a soft correction: three quarters of the way, in log terms)
+        const gain = (key, h) => THREE.MathUtils.clamp((PRESETS[key].skyLum / Math.max(1e-4, h.mean)) ** 0.75, 0.02, 1.6);
+        pu.uGainA.value = gain(ka, ha);
+        pu.uGainB.value = hb ? gain(kb, hb) : pu.uGainA.value;
+        const lit = THREE.MathUtils.lerp(pu.uGainA.value, pu.uGainB.value, hb ? wb / Math.max(1e-6, wa + wb) : 0);
+        scene.environmentIntensity = (0.55 + 0.35 * p.hemi) * Math.min(1.3, Math.max(0.16, lit)); // a floor: moonlight still shows the land
         photoSun.copy(ha.sun).applyAxisAngle(THREE.Object3D.DEFAULT_UP, pu.uYawA.value);
         if (photoSun.y > 0.05 && PRESETS[ka].elevation > 0) sunDir.copy(photoSun);
       }

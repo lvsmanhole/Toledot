@@ -5,6 +5,7 @@
 // caravan; and a crack running through it all as the kingdom divides.
 
 import * as THREE from "three";
+import { smoke } from "../kit/effects.js";
 
 import { glowSprite, lerp, pulse, ramp, sramp } from "../kit/common.js";
 import { crowd, herd } from "../kit/figures.js";
@@ -34,7 +35,7 @@ export function create(ctx) {
       [32, [70, 30, 90], [0, 30, 0], 44],
       [36, [-30, 120, 200], [0, 20, 0], 44],
     ],
-    grade: (rel) => ({ bloom: 0.35 + 0.5 * pulse(rel, 17, 19, 22, 24), threshold: 0.6, saturation: rel > 32 ? 1 - 0.3 * sramp(rel, 32, 35) : 1 }),
+    grade: (rel) => ({ bloom: 0.3 + 0.25 * pulse(rel, 17, 19, 22, 24), threshold: 0.7, saturation: rel > 32 ? 1 - 0.3 * sramp(rel, 32, 35) : 1 }),
     audio: (rel) => ({ drone: 0.3 + 0.2 * pulse(rel, 16, 18, 22, 24), shimmer: 0.2 + 0.5 * pulse(rel, 16, 18, 24, 27), wind: 0.15 }),
   });
   const h = L.height;
@@ -51,12 +52,12 @@ export function create(ctx) {
   // interior light: lamps of the holy place, then the glory filling the house
   const lamps = [];
   for (let i = 0; i < 10; i++) {
-    const g = glowSprite(0xffc070, 1.1, 0.9);
+    const g = glowSprite(0xffc070, 0.6, 0.8);
     g.position.set(12 - (i % 5) * 3.2, top + 2.6, i < 5 ? -4 : 4);
     L.add(g);
     lamps.push(g);
   }
-  const holyLight = new THREE.PointLight(0xffd090, 160, 40, 1.2);
+  const holyLight = new THREE.PointLight(0xffd090, 60, 40, 1.2);
   holyLight.position.set(8, top + 6, 0);
   L.add(holyLight);
   const shekinah = new THREE.PointLight(0xfff4e0, 0, 60, 1.2);
@@ -65,6 +66,10 @@ export function create(ctx) {
   const glory = glowSprite(0xffffff, 40, 0);
   glory.position.set(-6, top + 8, 0);
   L.add(glory);
+  // the cloud itself, rolling through the house from the oracle outward (1 Kings 8:10-11)
+  const cloudMass = smoke({ count: 700, rise: 12, spread: 9, lean: [1.2, 0], color: [0.95, 0.92, 0.86], opacity: 0.32, size: 34, seed: 17 });
+  cloudMass.position.set(-12, top + 0.5, 0);
+  L.add(cloudMass);
   // the queen of Sheba's train
   const caravan = herd({ kind: "camel", count: 30, place: (r) => [200 + r() * 160, 140 + (r() - 0.5) * 8], height: h, seed: 101 });
   L.add(caravan);
@@ -86,9 +91,12 @@ export function create(ctx) {
     lamps.forEach((l, i) => { l.material.opacity = (inside ? 0.9 : 0.3) * (0.8 + 0.2 * Math.sin(time * 5 + i)); });
     holyLight.intensity = inside ? 160 : 0;
     const cloud = pulse(rel, 17.5, 19.5, 22.5, 24);
-    shekinah.intensity = cloud * 400;
-    glory.material.opacity = cloud * 0.85;
-    glory.scale.setScalar(20 + cloud * 60);
+    shekinah.intensity = cloud * 140;
+    glory.material.opacity = cloud * 0.45;
+    glory.scale.setScalar(16 + cloud * 20);
+    cloudMass.material.uniforms.uAmount.value = cloud;
+    cloudMass.material.uniforms.uTime.value = time;
+    cloudMass.visible = cloud > 0.01;
     veil.visible = rel < 19.5;
     worshippers.group.visible = rel < 11;
     caravan.position.x = -lerp(0, 160, sramp(rel, 27.5, 32));
@@ -100,7 +108,7 @@ export function create(ctx) {
       camera.position.x += Math.sin(time * 40) * 0.5 * pulse(rel, 32.5, 33, 35, 35.8);
       camera.position.y += Math.sin(time * 47) * 0.4 * pulse(rel, 32.5, 33, 35, 35.8);
     }
-    return { grade: { exposure: 1 + 0.3 * cloud } };
+    return { grade: { exposure: 1 + 0.12 * cloud } };
   });
   return L;
 }

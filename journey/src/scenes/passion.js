@@ -9,7 +9,9 @@ import { glowSprite, lerp, pulse, sramp } from "../kit/common.js";
 import { weather } from "../kit/effects.js";
 import { ANIMALS, crowd, figure } from "../kit/figures.js";
 import { createLandscape } from "../kit/landscape.js";
-import { city, crosses, tomb, wall } from "../kit/structures.js";
+import { MATERIALS, city, crosses, tomb, wall } from "../kit/structures.js";
+import { SURFACES } from "../kit/surface.js";
+import { mergeGeometries } from "three/examples/jsm/utils/BufferGeometryUtils.js";
 import { lightShaft } from "../kit/effects.js";
 import { createTrees, placers } from "../kit/vegetation.js";
 import { jerusalemHeight } from "./david.js";
@@ -22,6 +24,7 @@ const GRAVES = new THREE.Vector3(-420, 0, 260);
 
 export function create(ctx) {
   const height = jerusalemHeight(351);
+  const RY = height(ROOM.x, ROOM.z); // the room stands on the ground there
   const L = createLandscape(ctx, {
     terrain: { height, palette: "judea", size: 1700 },
     sky: (rel) => {
@@ -35,8 +38,8 @@ export function create(ctx) {
     camera: [
       [0, [180, 14, 30], [100, 10, 0], 44],
       [5.5, [60, 8, 12], [30, 6, 0], 44],
-      [5.7, [ROOM.x + 6, 2.4, ROOM.z + 4], [ROOM.x, 1.2, ROOM.z], 46],
-      [9.7, [ROOM.x + 4, 2, ROOM.z + 2.8], [ROOM.x, 1.2, ROOM.z], 42],
+      [5.7, [ROOM.x + 5.5, RY + 2.6, ROOM.z + 3.6], [ROOM.x, RY + 0.6, ROOM.z], 50],
+      [9.7, [ROOM.x + 3.6, RY + 1.9, ROOM.z + 2.6], [ROOM.x - 0.5, RY + 0.5, ROOM.z], 44],
       [9.9, [GROVE.x + 14, 4, GROVE.z + 12], [GROVE.x, 1.5, GROVE.z], 44],
       [14.5, [GROVE.x + 7, 2.2, GROVE.z + 6], [GROVE.x, 1, GROVE.z], 40],
       [14.7, [GOLGOTHA.x + 60, 14, GOLGOTHA.z + 70], [GOLGOTHA.x, 8, GOLGOTHA.z], 44],
@@ -67,24 +70,56 @@ export function create(ctx) {
   L.add(rider);
   // the upper room
   const room = new THREE.Group();
-  room.position.copy(ROOM);
-  const walls = new THREE.Mesh(new THREE.BoxGeometry(14, 5, 10), new THREE.MeshStandardMaterial({ color: 0x5a4a38, roughness: 1, side: THREE.BackSide }));
-  walls.position.y = 2.5;
+  room.position.copy(ROOM).setY(RY);
+  // "a large upper room furnished" (Mark 14:15): plastered walls, a floor of beaten plaster, roof beams
+  const plaster = SURFACES.mudDark();
+  plaster.side = THREE.BackSide;
+  const walls = new THREE.Mesh(new THREE.BoxGeometry(14, 4.2, 10), plaster);
+  walls.position.y = 2.1;
   room.add(walls);
-  const table = new THREE.Mesh(new THREE.BoxGeometry(7, 0.5, 1.6), new THREE.MeshStandardMaterial({ color: 0x3a2a1c, roughness: 0.9 }));
-  table.position.y = 0.5;
+  const beams = [];
+  for (let i = -6; i <= 6; i += 1.5) beams.push(new THREE.BoxGeometry(0.22, 0.25, 10).translate(i, 4.05, 0));
+  room.add(new THREE.Mesh(mergeGeometries(beams), MATERIALS.darkWood()));
+  // a low table, and the thirteen reclining about it on cushions, leaning on the left arm with their heads
+  // toward the table, as at a feast (John 13:23)
+  const wood = MATERIALS.wood();
+  const table = new THREE.Mesh(new THREE.BoxGeometry(6.4, 0.42, 1.4).translate(0, 0.21, 0), wood);
   room.add(table);
+  const cushions = [];
+  const diners = [];
   for (let i = 0; i < 13; i++) {
-    const f = figure(1.2);
-    const side = i < 6 ? -1 : i < 12 ? 1 : 0;
-    f.position.set(side === 0 ? -4.2 : -3 + (i % 6) * 1.2, 0, side * 1.4);
+    const s = i < 6 ? -1 : i < 12 ? 1 : 0;
+    const f = figure(1.72);
+    if (s === 0) {
+      // at the head of the table
+      f.position.set(-4.2, -0.62, 0);
+      f.rotation.set(0, Math.PI / 2, 0.18, "YXZ");
+      cushions.push(new THREE.BoxGeometry(1.9, 0.26, 0.85).translate(-4.3, 0.13, 0));
+    } else {
+      const x = -2.6 + (i % 6) * 1.05;
+      // seated low on the cushions about the table, leaning in toward it (the legs folded beneath, below
+      // the floor line)
+      f.position.set(x, -0.62, s * 1.45);
+      f.rotation.set(-s * 0.18, s > 0 ? Math.PI : 0, 0, "YXZ");
+      cushions.push(new THREE.BoxGeometry(0.85, 0.26, 1.9).translate(x, 0.13, s * 1.75));
+    }
     room.add(f);
+    diners.push(f);
   }
-  const lamp = glowSprite(0xffb060, 1.6, 0.9);
-  lamp.position.set(0, 1.1, 0);
-  room.add(lamp);
-  const lampLight = new THREE.PointLight(0xffa050, 25, 14, 1.6);
-  lampLight.position.set(0, 2, 0);
+  room.add(new THREE.Mesh(mergeGeometries(cushions), MATERIALS.cloth(0x6a3a2a)));
+  // bread and cup on the table; oil lamps
+  const bread = new THREE.Mesh(new THREE.CylinderGeometry(0.16, 0.18, 0.05, 16), new THREE.MeshStandardMaterial({ color: 0xa8763e, roughness: 0.9 }));
+  bread.position.set(-1.8, 0.45, 0.1);
+  const cup = new THREE.Mesh(new THREE.CylinderGeometry(0.06, 0.04, 0.12, 12), new THREE.MeshStandardMaterial({ color: 0x7a5236, roughness: 0.5 }));
+  cup.position.set(-1.5, 0.48, -0.1);
+  room.add(bread, cup);
+  for (const x of [-2.2, 0, 2.2]) {
+    const lamp = glowSprite(0xffb060, 0.5, 0.9);
+    lamp.position.set(x, 0.55, 0);
+    room.add(lamp);
+  }
+  const lampLight = new THREE.PointLight(0xffa050, 14, 12, 1.6);
+  lampLight.position.set(0, 1.2, 0);
   room.add(lampLight);
   L.add(room);
   // Gethsemane

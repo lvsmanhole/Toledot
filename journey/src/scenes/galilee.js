@@ -3,6 +3,7 @@
 // one transfigured, his face as the sun.
 
 import * as THREE from "three";
+import { mergeGeometries } from "three/examples/jsm/utils/BufferGeometryUtils.js";
 
 import { glowSprite, lerp, pulse, sramp } from "../kit/common.js";
 import { lightShaft, smoke } from "../kit/effects.js";
@@ -13,20 +14,61 @@ import { composeHeight, heights } from "../kit/terrain.js";
 import { createBlades, createTrees, placers } from "../kit/vegetation.js";
 
 function boat() {
-  const shape = new THREE.Shape();
-  shape.moveTo(-4, 0.6);
-  shape.quadraticCurveTo(-3, 0, -1.5, 0);
-  shape.lineTo(1.5, 0);
-  shape.quadraticCurveTo(3, 0, 4, 0.7);
-  shape.lineTo(4, 1);
-  shape.lineTo(-4, 1);
-  const hull = new THREE.ExtrudeGeometry(shape, { depth: 2, bevelEnabled: false });
-  hull.translate(0, -0.4, -1);
+  // a lake fishing boat of the period (the hull found at Ginosar, ~8.2 m by 2.3 m): a rounded plank hull
+  // lofted from its sections, the sheer rising to bow and stern, thwarts, a little stern deck, a mast
+  // with the sail furled on its yard
+  const L = 8.2;
+  const B = 1.15;
+  const nu = 40;
+  const nv = 16;
+  const pos = [];
+  const idx = [];
+  for (let i = 0; i <= nu; i++) {
+    const u = i / nu;
+    const x = (u - 0.5) * L;
+    const beam = B * Math.pow(Math.sin(Math.PI * u), 0.55);
+    const top = 0.85 + 0.45 * (2 * u - 1) ** 2;
+    const bottom = -0.38 * Math.pow(Math.sin(Math.PI * u), 0.4) + 0.05;
+    for (let j = 0; j <= nv; j++) {
+      const th = (j / nv - 0.5) * Math.PI;
+      const sv = Math.sin(th);
+      // planking: a slight step at each strake
+      const strake = Math.floor(Math.abs(sv) * 7) * 0.012;
+      pos.push(x, bottom + (top - bottom) * Math.pow(Math.abs(sv), 1.6), (beam + strake) * sv);
+    }
+  }
+  for (let i = 0; i < nu; i++) {
+    for (let j = 0; j < nv; j++) {
+      const a = i * (nv + 1) + j;
+      const b = a + nv + 1;
+      idx.push(a, b, a + 1, b, b + 1, a + 1);
+    }
+  }
+  const hull = new THREE.BufferGeometry();
+  hull.setAttribute("position", new THREE.Float32BufferAttribute(pos, 3));
+  hull.setIndex(idx);
+  hull.computeVertexNormals();
   const g = new THREE.Group();
-  g.add(new THREE.Mesh(hull, MATERIALS.darkWood()));
-  const mast = new THREE.Mesh(new THREE.CylinderGeometry(0.06, 0.08, 6), MATERIALS.wood());
-  mast.position.y = 3;
+  const planks = MATERIALS.darkWood();
+  planks.side = THREE.DoubleSide;
+  const hullMesh = new THREE.Mesh(hull, planks);
+  hullMesh.castShadow = true;
+  g.add(hullMesh);
+  const wood = MATERIALS.wood();
+  const parts = [
+    new THREE.BoxGeometry(5.6, 0.05, 1.5).translate(0, 0.02, 0), // floorboards
+    new THREE.BoxGeometry(0.22, 0.06, 2.1).translate(-1.2, 0.6, 0), // thwarts
+    new THREE.BoxGeometry(0.22, 0.06, 2.1).translate(1.0, 0.6, 0),
+    new THREE.BoxGeometry(1.3, 0.06, 1.3).translate(-3.2, 0.85, 0), // stern deck, where one might sleep on a pillow (Mark 4:38)
+    new THREE.BoxGeometry(4.2, 0.08, 0.08).rotateY(Math.PI / 2).translate(0.4, 5.2, 0), // the yard, athwart
+  ];
+  g.add(new THREE.Mesh(mergeGeometries(parts.map((q) => q.toNonIndexed())), wood));
+  const mast = new THREE.Mesh(new THREE.CylinderGeometry(0.06, 0.09, 6), wood);
+  mast.position.set(0.4, 3, 0);
   g.add(mast);
+  const sail = new THREE.Mesh(new THREE.CylinderGeometry(0.16, 0.16, 3.9, 10).rotateX(Math.PI / 2), MATERIALS.cloth(0xb8ab92));
+  sail.position.set(0.4, 5.05, 0);
+  g.add(sail);
   return g;
 }
 
@@ -77,7 +119,7 @@ export function create(ctx) {
   const teacher = figure(1.8);
   teacher.position.set(-24, h(-24, 82), 82);
   L.add(teacher);
-  const disciples = crowd({ count: 12, place: placers.box(-2.5, -0.6, 2.5, 0.6), height: () => 0.5, seed: 141 });
+  const disciples = crowd({ count: 12, place: placers.box(-2.4, -0.55, 2.4, 0.55), height: () => 0.05, seed: 141 });
   boats[2].add(disciples.group);
   // the hillside crowd for the sermon, then the five thousand on the grass
   const hillside = crowd({ count: ctx.quality === "low" ? 500 : 1100, place: placers.box(110, -30, 170, 10), height: h, seed: 143, face: [140, 16] });

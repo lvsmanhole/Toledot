@@ -106,7 +106,8 @@ const FLAME_FRAG = /* glsl */ `
     float n = fbm(vec3(p.x + uSeed, p.y - uTime * 1.7, uTime * 0.25));
     float n2 = fbm(vec3(p.x * 2.4 - uSeed, p.y * 2.2 - uTime * 2.6, 3.0));
     float shape = (1.0 - h) * 1.5 + n * 1.1 + n2 * 0.45 - 0.75 - h * h * 0.6 - (1.0 - uAmount) * 1.8 - uNarrow * pow(abs(vUv.x - 0.5) * 2.0, 1.5) * (1.6 - h);
-    float sides = smoothstep(0.0, 0.12, vUv.x) * smoothstep(1.0, 0.88, vUv.x);
+    // fade out at every edge of the card, so no flame is ever cut off square
+    float sides = smoothstep(0.0, 0.12, vUv.x) * smoothstep(1.0, 0.88, vUv.x) * smoothstep(1.0, 0.78, h) * smoothstep(0.0, 0.08, h);
     float f = smoothstep(0.0, 0.32, shape) * sides;
     vec3 col = mix(vec3(0.55, 0.07, 0.01), vec3(1.0, 0.5, 0.1), smoothstep(0.05, 0.55, f));
     col = mix(col, vec3(1.0, 0.86, 0.55), smoothstep(0.75, 1.0, f));

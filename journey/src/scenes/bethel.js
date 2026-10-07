@@ -60,7 +60,7 @@ const stairAt = (s, out = new THREE.Vector3()) => out.set(Math.cos(s * STEP_TURN
 
 function stairway(steps) {
   const geo = new THREE.BoxGeometry(2.4, 0.1, 0.8);
-  const mat = new THREE.MeshBasicMaterial({ color: new THREE.Color(1.4, 1.15, 0.75), transparent: true, opacity: 0, depthWrite: false, blending: THREE.AdditiveBlending });
+  const mat = new THREE.MeshBasicMaterial({ color: new THREE.Color(1.05, 0.9, 0.62), transparent: true, opacity: 0, depthWrite: false });
   const mesh = new THREE.InstancedMesh(geo, mat, steps);
   const m = new THREE.Matrix4();
   const q = new THREE.Quaternion();
@@ -75,7 +75,7 @@ function stairway(steps) {
 }
 
 function host(count, steps) {
-  const mat = new THREE.MeshBasicMaterial({ color: new THREE.Color(1.6, 1.4, 1.05), transparent: true, opacity: 0, depthWrite: false, blending: THREE.AdditiveBlending });
+  const mat = new THREE.MeshBasicMaterial({ color: new THREE.Color(1.15, 1.05, 0.85), transparent: true, opacity: 0, depthWrite: false });
   const mesh = new THREE.InstancedMesh(robedGeometry(1.9, { detail: "low" }), mat, count);
   mesh.frustumCulled = false;
   const walkers = Array.from({ length: count }, (_, i) => ({ s: (i / count) * steps, dir: i % 2 ? 1 : -1, pace: 1.6 + (i % 5) * 0.25 }));
@@ -132,7 +132,7 @@ export function create(ctx) {
     stars.material.uniforms.uTime.value = time;
     stars.material.uniforms.uPixelRatio.value = pixelRatio;
   });
-  const ladder = pillar({ radius: 5, height: 1400, color: [1, 0.88, 0.62], gain: 0.45 });
+  const ladder = pillar({ radius: 5, height: 1400, color: [1, 0.88, 0.62], gain: 0.25 });
   ladder.position.set(2.5, ground, -2);
   L.add(ladder);
   const motes = angels(ctx.quality === "low" ? 200 : 400, 5, 1400);
@@ -153,7 +153,7 @@ export function create(ctx) {
     motes.material.uniforms.uAmount.value = on * 0.5;
     motes.material.uniforms.uTime.value = time;
     motes.material.uniforms.uPixelRatio.value = pixelRatio;
-    stair.material.opacity = on * 0.85;
+    stair.material.opacity = on * 0.55;
     stair.visible = on > 0.01;
     angelsOnStair.mesh.material.opacity = on * 0.9;
     angelsOnStair.mesh.visible = on > 0.01;

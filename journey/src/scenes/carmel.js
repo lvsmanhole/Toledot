@@ -38,9 +38,15 @@ export function create(ctx) {
   const elijahAltar = altar({ size: 2, seed: 12, material: "limestone" });
   elijahAltar.position.set(6, top, 0);
   L.add(elijahAltar);
-  const trench = new THREE.Mesh(new THREE.RingGeometry(2.6, 3.3, 40), new THREE.MeshStandardMaterial({ color: 0x2a5a6a, roughness: 0.1, metalness: 0.3 }));
+  // the trench dug about the altar and filled with water (1 Kings 18:32-35): dark still water sunk a little
+  // below a rim of turned earth
+  const trench = new THREE.Mesh(new THREE.RingGeometry(2.6, 3.3, 48), new THREE.MeshStandardMaterial({ color: 0x14201f, roughness: 0.06, metalness: 0, envMapIntensity: 0.6 }));
   trench.rotation.x = -Math.PI / 2;
-  trench.position.set(6, top + 0.05, 0);
+  trench.position.set(6, top - 0.04, 0);
+  const spoil = new THREE.Mesh(new THREE.TorusGeometry(3.55, 0.18, 6, 48).rotateX(Math.PI / 2).scale(1, 0.5, 1), new THREE.MeshStandardMaterial({ color: 0x4a3c2e, roughness: 1 }));
+  spoil.position.set(0, 0.04, 0);
+  trench.add(spoil);
+  spoil.rotation.x = Math.PI / 2; // undo the ring's tilt for the rim
   L.add(trench);
   const elijah = figure(1.8, { staff: true });
   elijah.position.set(9, top, 3);

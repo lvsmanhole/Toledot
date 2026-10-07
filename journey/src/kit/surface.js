@@ -150,7 +150,7 @@ export const TERRAIN_LAYERS = {
   steppe: { layers: ["dryGrass", "dryGround", "mud", "rock"], tints: [[0.95, 0.92, 0.8], [0.85, 0.78, 0.68], [1, 1, 1], [1, 1, 1]] },
   desert: { layers: ["sand", "dryGround", "mud", "cliff"], tints: [[1.08, 0.98, 0.86], [1.05, 0.95, 0.85], [1, 1, 1], [1.05, 0.95, 0.85]] },
   sinai: { layers: ["dryGround", "cliff", "mud", "cliff"], tints: [[1.05, 0.88, 0.78], [1.0, 0.85, 0.75], [1, 1, 1], [0.95, 0.8, 0.72]] },
-  judea: { layers: ["dryGround", "rock", "grass", "cliff"], tints: [[0.82, 0.74, 0.62], [0.9, 0.86, 0.8], [0.9, 1, 0.85], [0.95, 0.9, 0.84]] },
+  judea: { layers: ["dryGround", "rock", "grass", "cliff"], tints: [[0.68, 0.6, 0.48], [0.78, 0.74, 0.68], [0.9, 1, 0.85], [0.95, 0.9, 0.84]] },
   fields: { layers: ["dryGrass", "dryGround", "mud", "rock"], tints: [[1.15, 1.0, 0.7], [1, 1, 1], [1, 1, 1], [1, 1, 1]] },
   ashen: { layers: ["burned", "burned", "mud", "darkRock"], tints: [[0.7, 0.68, 0.66], [0.8, 0.78, 0.76], [0.7, 0.7, 0.7], [0.8, 0.8, 0.8]] },
   bone: { layers: ["cracked", "sand", "cracked", "cliff"], tints: [[1.1, 1.06, 0.98], [1.05, 1.0, 0.92], [1, 1, 1], [1, 1, 1]] },

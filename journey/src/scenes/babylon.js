@@ -76,8 +76,23 @@ export function create(ctx) {
   furnace.position.set(100, h(100, -60) + 10, -60);
   L.add(furnace);
   const mouth = new THREE.Group();
-  mouth.position.set(100, h(100, -60) + 4, -46);
+  mouth.position.set(100, h(100, -60) + 4, -42.5);
   L.add(mouth);
+  // the furnace mouth: an arched opening in the brick, white-hot within, throwing its light on the ground
+  // and the men about it ("the furnace exceeding hot", Daniel 3:22)
+  const arch = new THREE.Shape();
+  arch.moveTo(-5.5, -4);
+  arch.lineTo(5.5, -4);
+  arch.lineTo(5.5, 2);
+  arch.absarc(0, 2, 5.5, 0, Math.PI, false);
+  arch.lineTo(-5.5, -4);
+  const glowMat = new THREE.MeshBasicMaterial({ color: new THREE.Color(0, 0, 0) });
+  const opening = new THREE.Mesh(new THREE.ShapeGeometry(arch, 16), glowMat);
+  opening.position.set(0, 0, -0.4);
+  mouth.add(opening);
+  const heat = new THREE.PointLight(0xff8a3a, 0, 140, 1.4);
+  heat.position.set(0, 2, 8);
+  mouth.add(heat);
   const flames = [0, 1, 2, 3].map((i) => {
     const f = flame({ width: 7, height: 9, gain: 1.1, seed: i * 1.9 });
     f.position.set((i - 1.5) * 2.6, -3, 0);
@@ -96,6 +111,9 @@ export function create(ctx) {
   L.onUpdate(({ rel, time }) => {
     const fire = sramp(rel, 9.5, 11);
     flames.forEach((f) => { f.material.uniforms.uAmount.value = fire; f.material.uniforms.uTime.value = time; });
+    const flicker = 0.85 + 0.15 * Math.sin(time * 9) * Math.sin(time * 5.3);
+    glowMat.color.setRGB(1.3 * fire * flicker, 0.5 * fire * flicker, 0.12 * fire);
+    heat.intensity = fire * 1400 * flicker;
     four.forEach((f, i) => {
       f.visible = rel > 11;
       f.position.x = (i - 1.5) * 2.2 + Math.sin(time * 0.6 + i) * 0.6;

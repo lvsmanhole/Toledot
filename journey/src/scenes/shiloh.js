@@ -17,7 +17,7 @@ export function create(ctx) {
     terrain: { height, palette: "judea", size: 900 },
     sky: () => "night",
     camera: [[0, [40, 14, 50], [0, 2, 0], 42], [5, [-2, 2.6, 6], [-7.5, 2, 0], 52], [10, [-4, 2.2, 3], [-7.5, 1.5, 0], 56]],
-    grade: () => ({ bloom: 0.6, threshold: 0.5 }),
+    grade: () => ({ bloom: 0.35, threshold: 0.75 }),
     audio: (rel) => ({ drone: 0.3, shimmer: 0.4 * pulse(rel, 5, 6, 8.5, 9.5), wind: 0.12 }),
   });
   const h = L.height;

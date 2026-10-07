@@ -18,7 +18,7 @@ export function create(ctx) {
     water: { size: 3000, wave: 0.6, chop: 1.2, deep: [0.01, 0.03, 0.05], level: 0 },
     sky: () => [[1, "night"]],
     camera: [[0, [140, 30, 160], [0, 14, 0], 42], [5.5, [30, 26, 30], [0, 22, 0], 44], [9.5, [10, 24, 12], [-20, 24, -20], 50], [14, [16, 28, 18], [-20, 26, -20], 54]],
-    grade: () => ({ bloom: 0.7, threshold: 0.5 }),
+    grade: () => ({ bloom: 0.4, threshold: 0.75 }),
     audio: (rel) => ({ water: 0.55, wind: 0.3, drone: 0.3, shimmer: 0.5 * sramp(rel, 6, 9) }),
   });
   const h = L.height;

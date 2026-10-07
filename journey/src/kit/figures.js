@@ -129,7 +129,8 @@ export function robedGeometry(h = 1.75, { staff = false, veiled = false, beard =
 export const peopleClock = { value: 0 };
 
 // natural dyes and undyed cloth of the period: linen, wool, madder red, indigo, ochre, saffron, brown
-const DYES = [[0.78, 0.72, 0.6], [0.62, 0.55, 0.44], [0.48, 0.38, 0.28], [0.55, 0.22, 0.16], [0.24, 0.3, 0.45], [0.62, 0.48, 0.24], [0.36, 0.3, 0.22], [0.82, 0.78, 0.7], [0.42, 0.42, 0.36], [0.68, 0.58, 0.36]];
+// (kept a little below the brightness of bleached cloth: undyed wool and linen weather to beige and grey)
+const DYES = [[0.6, 0.54, 0.44], [0.5, 0.43, 0.34], [0.4, 0.31, 0.23], [0.46, 0.18, 0.13], [0.2, 0.25, 0.37], [0.52, 0.39, 0.2], [0.3, 0.25, 0.19], [0.66, 0.61, 0.52], [0.36, 0.35, 0.3], [0.56, 0.47, 0.29]];
 
 /**
  * The clothing material: linen weave (CC0 texture) in object space, colours chosen per part and per
@@ -187,7 +188,7 @@ export function personMaterial({ robe = null, walk = 0 } = {}) {
         vec3 col = robeC;
         if (pid == 1.0) col = mix(vec3(0.42, 0.27, 0.18), vec3(0.68, 0.48, 0.34), fract(vSeed * 3.7)); // skin
         else if (pid == 2.0) col = dye(vSeed * 3.31 + 0.5) * 0.85;   // mantle
-        else if (pid == 3.0) col = mix(vec3(0.85, 0.8, 0.7), dye(vSeed * 5.9), step(0.55, fract(vSeed * 9.1))); // head covering
+        else if (pid == 3.0) col = mix(vec3(0.68, 0.63, 0.54), dye(vSeed * 5.9), step(0.55, fract(vSeed * 9.1))); // head covering
         else if (pid == 4.0) col = dye(vSeed * 11.7 + 0.3) * 0.7;    // sash
         else if (pid == 5.0) col = vec3(0.07, 0.055, 0.045);          // hair, sandals, staff
         // linen weave on the cloth, triplanar in the figure's own space

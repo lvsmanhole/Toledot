@@ -19,7 +19,7 @@ export function create(ctx) {
     water: { size: 1000, flow: 0.8, flowDir: [0, 1], deep: [0.04, 0.08, 0.07], level: -0.1 },
     sky: (rel) => [[1 - sramp(rel, 1.5, 5), "storm"], [sramp(rel, 1.5, 5), "sacred"]],
     camera: [[0, [30, 6, 26], [river(0), 1.5, 0], 44], [6, [18, 3, 14], [river(0), 3, 0], 40], [12, [24, 10, 30], [river(0), 20, -20], 48]],
-    grade: (rel) => ({ bloom: 0.5 + 0.4 * pulse(rel, 2, 4, 10, 12), threshold: 0.6 }),
+    grade: (rel) => ({ bloom: 0.3 + 0.2 * pulse(rel, 2, 4, 10, 12), threshold: 0.8 }),
     audio: (rel) => ({ water: 0.5, wind: 0.2, shimmer: 0.6 * pulse(rel, 2, 4, 10, 12), drone: 0.2 }),
   });
   const h = L.height;

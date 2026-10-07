@@ -11,6 +11,10 @@ import { smoke } from "../kit/effects.js";
 import { city } from "../kit/structures.js";
 import { createStars } from "../engine/stars.js";
 import { NOISE, rng } from "../engine/noise.js";
+import { hdri } from "../kit/library.js";
+import { surfaceMaterial } from "../kit/surface.js";
+import { createTrees } from "../kit/vegetation.js";
+import { createWater } from "../kit/water.js";
 
 function holyCity() {
   // "the length and the breadth and the height of it are equal" (Revelation 21:16)
@@ -51,25 +55,20 @@ function holyCity() {
   return { group: g, body, gates };
 }
 
-function treeOfLife() {
-  const g = new THREE.Group();
-  const trunk = new THREE.Mesh(new THREE.CylinderGeometry(0.8, 1.6, 14, 12), new THREE.MeshStandardMaterial({ color: 0x5a4632, roughness: 0.9, emissive: 0x2a1a08, emissiveIntensity: 0.5 }));
-  trunk.position.y = 7;
-  g.add(trunk);
-  const r = rng(33);
-  const pts = new Float32Array(5000 * 3);
-  for (let i = 0; i < 5000; i++) {
+/** The fruit of the tree of life, "twelve manner of fruits" (Revelation 22:2): points of gold light in a crown. */
+function fruit(seed) {
+  const r = rng(seed);
+  const pts = new Float32Array(900 * 3);
+  for (let i = 0; i < 900; i++) {
     const u = r() * 2 - 1;
     const th = r() * 6.283;
-    const d = 9 * Math.cbrt(r());
+    const d = 5.5 * Math.cbrt(r());
     const s = Math.sqrt(1 - u * u);
-    pts.set([Math.cos(th) * s * d, 16 + u * d * 0.6, Math.sin(th) * s * d], i * 3);
+    pts.set([Math.cos(th) * s * d, 9 + u * d * 0.55, Math.sin(th) * s * d], i * 3);
   }
   const geo = new THREE.BufferGeometry();
   geo.setAttribute("position", new THREE.BufferAttribute(pts, 3));
-  const leaves = new THREE.Points(geo, new THREE.PointsMaterial({ color: 0xffe2a0, size: 0.45, transparent: true, opacity: 0.9, blending: THREE.AdditiveBlending, depthWrite: false }));
-  g.add(leaves);
-  return g;
+  return new THREE.Points(geo, new THREE.PointsMaterial({ color: 0xffd27a, size: 0.22, transparent: true, opacity: 0.95, blending: THREE.AdditiveBlending, depthWrite: false }));
 }
 
 export function create(ctx) {
@@ -97,21 +96,28 @@ export function create(ctx) {
   const holy = holyCity();
   scene.add(holy.group);
   // the river and the tree of life on either side
-  const river = new THREE.Mesh(new THREE.PlaneGeometry(14, 900, 1, 1), new THREE.MeshBasicMaterial({ color: new THREE.Color(0.8, 1.6, 1.9), transparent: true, opacity: 0 }));
-  river.rotation.x = -Math.PI / 2;
-  river.position.set(0, 0, -300);
+  // "a pure river of water of life, clear as crystal" (Revelation 22:1)
+  const water = createWater({ deep: [0.05, 0.16, 0.16], flow: 0.5, flowDir: [0, 1] });
+  water.material.transparent = true;
+  water.material.opacity = 0;
+  const river = new THREE.Mesh(new THREE.PlaneGeometry(14, 900, 1, 1).rotateX(-Math.PI / 2), water.material);
+  river.position.set(0, 0.05, -300);
   scene.add(river);
-  const trees = [-1, 1].flatMap((s) => [0, 1, 2, 3].map((k) => {
-    const t = treeOfLife();
-    t.position.set(s * 20, 0, -120 - k * 70);
-    t.visible = false;
-    scene.add(t);
-    return t;
-  }));
-  const ground = new THREE.Mesh(new THREE.PlaneGeometry(4000, 4000), new THREE.MeshStandardMaterial({ color: 0x2a3a24, roughness: 1, emissive: 0x2a2410, emissiveIntensity: 0.6 }));
+  // the tree of life on either side of the river: real trees, golden with fruit
+  const spots = [-1, 1].flatMap((s) => [0, 1, 2, 3].map((k) => [s * (18 + (k % 2) * 4), -120 - k * 70]));
+  let spot = 0;
+  const grove = createTrees({ count: spots.length, place: () => spots[spot++ % spots.length], height: () => 0, kind: "broadleaf", size: [11, 13], tint: [1.05, 1.08, 0.72], random: rng(404) });
+  const trees = new THREE.Group();
+  trees.add(grove.group);
+  spots.forEach(([x, z], i) => { const f = fruit(33 + i); f.position.set(x, 0, z); trees.add(f); });
+  trees.visible = false;
+  scene.add(trees);
+  const ground = new THREE.Mesh(new THREE.PlaneGeometry(4000, 4000), surfaceMaterial("grass", { tile: 3, tint: [0.8, 0.95, 0.7], emissive: 0x2a2410, emissiveIntensity: 0.6 }));
   ground.rotation.x = -Math.PI / 2;
   ground.position.y = -0.2;
   scene.add(ground);
+  let sky = null;
+  hdri("sacred").then((h) => { sky = h; }).catch(() => {});
   const radiance = new THREE.PointLight(0xfff4e0, 0, 3000, 0.5);
   radiance.position.set(0, 300, -500);
   scene.add(radiance);
@@ -154,14 +160,20 @@ export function create(ctx) {
       // the new earth lit with no need of the sun (Revelation 21:23)
       const day = sramp(rel, 13, 17);
       ground.visible = rel > 12;
-      ground.material.emissiveIntensity = 0.2 + 0.5 * day;
+      ground.material.emissiveIntensity = 0.15 + 0.2 * day;
       radiance.intensity = day * 160;
-      scene.background.setRGB(lerp(0.008, 0.42, day), lerp(0.008, 0.36, day), lerp(0.012, 0.26, day));
-      river.material.opacity = sramp(rel, 18.5, 20.5);
-      trees.forEach((t) => { t.visible = rel > 18.5; t.scale.setScalar(Math.max(0.001, sramp(rel, 18.5, 21))); });
+      scene.background.setRGB(lerp(0.008, 0.36, day), lerp(0.008, 0.33, day), lerp(0.012, 0.27, day));
+      water.material.opacity = 0.9 * sramp(rel, 18.5, 20.5);
+      water.update({ time, sunDir: new THREE.Vector3(0, 0.6, -1).normalize() });
+      trees.visible = rel > 18.5;
+      grove.update({ time, wind: 0.25 });
+      trees.children.forEach((c) => { if (c.isPoints) c.material.opacity = 0.95 * sramp(rel, 19, 21.5); });
+      // the light of the city is the light everything is seen by
+      scene.environment = sky && day > 0.05 ? sky.env : null;
+      scene.environmentIntensity = 0.9 * day;
       const finale = sramp(rel, 30.5, 34);
       return {
-        grade: { bloom: 0.6, threshold: 0.75, saturation: 1.05, exposure: 0.95 + 0.15 * finale, tint: [1.03, 1, 0.95] },
+        grade: { bloom: 0.4, threshold: 0.82, saturation: 1.05, exposure: 0.95 + 0.15 * finale, tint: [1.03, 1, 0.95] },
         audio: { drone: 0.4 * (1 - day), shimmer: 0.3 + 0.6 * day, wind: 0.1, water: 0.4 * sramp(rel, 18.5, 20.5) },
       };
     },
