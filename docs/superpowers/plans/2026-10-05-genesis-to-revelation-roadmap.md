@@ -108,6 +108,13 @@
 - [x] Document the build and serve workflow (README "Website"). Deployment is any static host serving `site/` after `bible_timeline site`.
 - [x] The Journey: a cinematic scroll-through of the whole story (`journey/`), Genesis to Revelation in 55 scenes. KJV captions are checked by tests, and the Toledot timeline runs inside it as the Chronicle.
 - [ ] Journey polish on real GPUs: frame pacing, scene-by-scene art direction, mobile performance. Visual review so far was in a software-rendered headless browser.
+- [x] Realism pass, part 1 (commit 98e7708): CC0 photo skies, PBR textures, scanned trees, clothed people; scene fixes Eden through Judges (Babel, Bethel stairway, Joseph's pit, Nile basket, Red Sea walls, Jordan, Jericho, tents, Goliath's armour, Ruth).
+- [ ] Realism pass, part 2 — what is left:
+  - Verify on screen the part-1 scene changes made after the survey shots: Babel, Bethel, Joseph, bondage (basket/reeds), Red Sea, Jordan, Jericho, Sinai tents, Elah, Ruth, Judges. Only Eden's trees, fruit and Adam/Eve were checked after their changes.
+  - Survey and fix the unseen scenes, Shiloh (u 622) through New Creation (u 1226): Shiloh, David, Temple, divided kingdom, Carmel, Isaiah, Assyria, fall of Jerusalem, exile, Babylon, Chebar, bones, Daniel, return, silence, nativity, baptism, temptation, Galilee, passion, risen, Pentecost, Paul, Patmos, throne, new creation.
+  - Known weak spots seen so far: the Sinai mountain reads as a flat grey mass; desert scenes over-bright (pale crowds at Jericho); Babel's ground plain and flat; the flood plain is bare sand with a small ark.
+  - People: still procedural, not photoreal. Real faces/bodies need licensed character models (ask the user to supply them).
+  - Low-memory checking: capture with `?q=low`, a few frames per batch, and run `browse stop` after each batch (headless Chrome at high quality used too much memory).
 
 ## Slice acceptance checklist
 
