@@ -153,9 +153,9 @@ export function create(ctx) {
     motes.material.uniforms.uAmount.value = on * 0.5;
     motes.material.uniforms.uTime.value = time;
     motes.material.uniforms.uPixelRatio.value = pixelRatio;
-    stair.material.opacity = on * 0.55;
+    stair.material.opacity = on * 0.32;
     stair.visible = on > 0.01;
-    angelsOnStair.mesh.material.opacity = on * 0.9;
+    angelsOnStair.mesh.material.opacity = on * 0.7;
     angelsOnStair.mesh.visible = on > 0.01;
     if (on > 0.01) angelsOnStair.update(time);
     // Jacob wakes and stands at dawn

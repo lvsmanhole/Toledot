@@ -42,12 +42,11 @@ export function create(ctx) {
   // below a rim of turned earth
   const trench = new THREE.Mesh(new THREE.RingGeometry(2.6, 3.3, 48), new THREE.MeshStandardMaterial({ color: 0x14201f, roughness: 0.06, metalness: 0, envMapIntensity: 0.6 }));
   trench.rotation.x = -Math.PI / 2;
-  trench.position.set(6, top - 0.04, 0);
-  const spoil = new THREE.Mesh(new THREE.TorusGeometry(3.55, 0.18, 6, 48).rotateX(Math.PI / 2).scale(1, 0.5, 1), new THREE.MeshStandardMaterial({ color: 0x4a3c2e, roughness: 1 }));
-  spoil.position.set(0, 0.04, 0);
-  trench.add(spoil);
-  spoil.rotation.x = Math.PI / 2; // undo the ring's tilt for the rim
+  trench.position.set(6, top + 0.03, 0);
   L.add(trench);
+  const spoil = new THREE.Mesh(new THREE.TorusGeometry(3.6, 0.22, 6, 48).rotateX(Math.PI / 2).scale(1, 0.45, 1), new THREE.MeshStandardMaterial({ color: 0x5a4a38, roughness: 1 }));
+  spoil.position.set(6, top, 0);
+  L.add(spoil);
   const elijah = figure(1.8, { staff: true });
   elijah.position.set(9, top, 3);
   elijah.lookAt(6, top, 0);
@@ -87,6 +86,7 @@ export function create(ctx) {
     blaze.forEach((f) => { f.material.uniforms.uAmount.value = burn; f.material.uniforms.uTime.value = time; f.visible = burn > 0.01; });
     burst.material.opacity = pulse(rel, 9, 9.2, 9.8, 11) * 0.5;
     trench.visible = rel < 10;
+    spoil.visible = true;
     after.material.uniforms.uAmount.value = sramp(rel, 10, 12);
     after.material.uniforms.uTime.value = time;
     sparks.update({ time, pixelRatio, amount: pulse(rel, 9.1, 9.6, 11.5, 13) * 0.8, center: camera.position });

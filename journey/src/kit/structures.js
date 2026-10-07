@@ -13,7 +13,7 @@ export const MATERIALS = {
   limestone: () => SURFACES.limestone(),
   sandstone: () => SURFACES.sandstone(),
   basalt: () => SURFACES.basalt(),
-  fieldstone: () => surfaceMaterial("cliff", { tile: 1.6, tint: [0.62, 0.56, 0.48] }),
+  fieldstone: () => surfaceMaterial("cliff", { tile: 1.6, tint: [0.22, 0.19, 0.15] }),
   wood: () => SURFACES.wood(),
   darkWood: () => SURFACES.darkWood(),
   gold: () => new THREE.MeshStandardMaterial({ color: 0xd8a640, roughness: 0.32, metalness: 1, emissive: 0x2a1a04, emissiveIntensity: 0.15 }),
@@ -405,10 +405,13 @@ export function ark({ framesOnly = 0 } = {}) {
   hullMesh.add(trim, gap);
   group.add(hullMesh, roofMesh);
   // ribs for the "being built" look
-  const ribs = [];
+  // the frames: a keel, and pairs of ribs standing up from it with a beam across the top of each
+  const ribs = [box(L, 0.3, 0.4, 0, -0.1, 0)];
   for (let i = 0; i <= 24; i++) {
     const x = -L / 2 + (i / 24) * L;
-    ribs.push(box(0.18, H + 1.2, W + 0.5, x, -0.1, 0));
+    ribs.push(box(0.18, 0.25, W, x, -0.1, 0));
+    for (const s of [-1, 1]) ribs.push(box(0.18, H + 0.6, 0.18, x, -0.1, s * (W / 2 - 0.05)));
+    ribs.push(box(0.16, 0.16, W, x, H + 0.4, 0));
   }
   const ribMesh = new THREE.Mesh(mergeGeometries(ribs), MATERIALS.wood());
   group.add(ribMesh);

@@ -23,7 +23,7 @@ export function create(ctx) {
   const REST_LEVEL = 58;
   let restZ = ARARAT[1] + 110;
   for (let z = ARARAT[1] + 140; z > ARARAT[1]; z -= 0.5) if (height(0, z) >= REST_LEVEL) { restZ = z; break; }
-  const REST = new THREE.Vector3(0, REST_LEVEL, restZ + 3);
+  const REST = new THREE.Vector3(0, REST_LEVEL, restZ + 16); // the full-length hull lies along the shoulder, not into it
 
   const level = (rel) => {
     if (rel < 19) return -3;
@@ -45,11 +45,11 @@ export function create(ctx) {
     wind: (rel) => 0.3 + 1.6 * pulse(rel, 17, 21, 31, 34) + 0.6 * pulse(rel, 34, 35, 38, 40),
     camera: [
       [0, [190, 34, 40], [130, 6, -60]],
-      [5, [46, 12, 52], [0, 4, 0]],
-      [10, [-22, 6, 28], [0, 4, 0]],
-      [14, [-46, 9, 30], [-14, 3, 10]],
-      [18.5, [-34, 16, 56], [0, 5, 0]],
-      [24, [10, 26, 95], [0, 12, 0]],
+      [5, [70, 16, 96], [0, 9, 0]],
+      [10, [-46, 9, 74], [0, 10, 0]],
+      [14, [-96, 10, 64], [-30, 5, 24]],
+      [18.5, [-70, 24, 120], [0, 10, 0]],
+      [24, [20, 34, 170], [0, 16, 0]],
       [30, [30, 70, 150], [0, 60, -40]],
       [33, [24, 112, 120], [0, 104, -80]],
       [38, [36, 114, 50], [0, 104, -140]],
@@ -63,7 +63,7 @@ export function create(ctx) {
   const h = L.height;
   const at = (x, z, dy = 0) => new THREE.Vector3(x, h(x, z) + dy, z);
 
-  L.add(createTrees({ count: 160, place: placers.disc(0, 0, 160, (x, z) => Math.hypot(x, z) > 40 && Math.hypot(x - 130, z + 60) > 45), height: h, kind: "olive", size: [3, 6] }).group);
+  L.add(createTrees({ count: 160, place: placers.disc(0, 0, 200, (x, z) => Math.hypot(x, z) > 80 && Math.hypot(x - 130, z + 60) > 45), height: h, kind: "olive", size: [3, 6] }).group);
   const grass = createBlades({ count: ctx.quality === "low" ? 20000 : 50000, place: placers.disc(-10, 10, 90), height: h });
   L.add(grass.mesh, (s) => grass.update({ time: s.time, wind: s.wind, fog: s.fog, light: 0.8 }));
 
@@ -84,19 +84,22 @@ export function create(ctx) {
   L.add(citySmoke);
 
   // Noah, the ark, and the procession of the animals
+  // at full size: three hundred cubits by fifty by thirty (Genesis 6:15), about 137 by 23 by 14 metres
+  const ARK = 4.5;
   const boat = ark();
+  boat.scale.setScalar(ARK);
   boat.position.copy(at(0, 0, -0.2));
   boat.rotation.y = 0.35;
   L.add(boat);
   const noah = figure(1.8, { staff: true });
-  noah.position.copy(at(-9, 6));
+  noah.position.copy(at(-34, 26));
   L.add(noah);
   const lamp = glowSprite(0xffd8a0, 4, 0);
-  lamp.position.copy(at(-9, 6, 1.6));
+  lamp.position.copy(at(-34, 26, 1.6));
   L.add(lamp);
-  const animals = procession({ pairs: 20, from: [-120, 70], to: [-2, 5], height: h });
+  const animals = procession({ pairs: 20, from: [-150, 110], to: [-6, 14], height: h });
   L.add(animals.group);
-  const door = glowSprite(0xffd8a0, 5, 0);
+  const door = glowSprite(0xffd8a0, 14, 0);
   L.add(door);
 
   // storm: rain, then the calm; the dove; the bow
@@ -135,7 +138,7 @@ export function create(ctx) {
     // the animals go in; "and the LORD shut him in"
     animals.set(ramp(rel, 14, 18.5), time);
     animals.group.visible = rel > 13.5 && rel < 19;
-    door.position.copy(boat.position).add(tmp.set(-1, 1.6, 2.6).applyAxisAngle(new THREE.Vector3(0, 1, 0), boat.rotation.y));
+    door.position.copy(boat.position).add(tmp.set(-1, 1.6, 2.6).multiplyScalar(ARK).applyAxisAngle(new THREE.Vector3(0, 1, 0), boat.rotation.y));
     door.material.opacity = pulse(rel, 14, 15, 17.5, 18.4) * 0.9;
 
     // afloat: the ark rides the water, drifts north, and comes to rest on Ararat
@@ -145,7 +148,7 @@ export function create(ctx) {
     const floating = wl > base.y - 0.5;
     boat.position.x = drift.x;
     boat.position.z = drift.z;
-    boat.position.y = floating ? Math.max(wl - 0.4, rel > 45 ? REST.y - 0.6 : -Infinity) + (rel < 45 && !reducedMotion ? Math.sin(time * 0.9) * 0.25 : 0) : base.y;
+    boat.position.y = floating ? Math.max(wl - 5, rel > 45 ? REST.y - 0.6 : -Infinity) + (rel < 45 && !reducedMotion ? Math.sin(time * 0.9) * 0.25 : 0) : base.y;
     boat.rotation.z = floating && rel < 44 ? Math.sin(time * 0.7) * 0.03 * (1 + 2 * pulse(rel, 22, 24, 31, 33)) : 0;
 
     rain.update({ time, pixelRatio, amount: pulse(rel, 19, 22, 32, 34.5), center: camera.position, wind: [0.6, 0.15] });
@@ -153,7 +156,7 @@ export function create(ctx) {
     // the dove returns at evening with an olive leaf
     const flight = ramp(rel, 38.5, 42);
     dove.material.opacity = pulse(rel, 38.5, 39.2, 41.5, 42.2);
-    dove.position.copy(boat.position).add(tmp.set(lerp(-160, 0, flight), lerp(40, 6, flight) + Math.sin(time * 6) * 0.3, lerp(-80, 0, flight)));
+    dove.position.copy(boat.position).add(tmp.set(lerp(-160, 0, flight), lerp(40, 16, flight) + Math.sin(time * 6) * 0.3, lerp(-80, 0, flight)));
 
     bow.material.uniforms.uAmount.value = sramp(rel, 46.5, 49.5);
     bow.visible = rel > 46;

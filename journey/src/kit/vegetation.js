@@ -483,7 +483,7 @@ const ROCK_KEYS = ["boulder1", "boulder2", "boulder3", "rocks"];
  * Scanned boulders scattered by place(random) -> [x, z] | null. size: [min, max] metres across.
  * Filled in when the models arrive.
  */
-export function scatterRocks({ count, place, height, random = rng(17), size = [0.6, 3.5], keys = ROCK_KEYS, sink = 0.25 }) {
+export function scatterRocks({ count, place, height, random = rng(17), size = [0.6, 3.5], keys = ROCK_KEYS, sink = 0.25, upright = false, bases = null }) {
   const group = new THREE.Group();
   const placements = keys.map(() => []);
   const m = new THREE.Matrix4();
@@ -495,11 +495,11 @@ export function scatterRocks({ count, place, height, random = rng(17), size = [0
     const [x, z] = at;
     const v = Math.floor(random() * keys.length);
     // boulder scans are 1–1.5 m across; the small-rocks scan is 15 cm
-    const base = keys[v] === "rocks" ? 0.15 : 1.2;
+    const base = bases?.[keys[v]] ?? (keys[v] === "rocks" ? 0.15 : 1.2);
     const k = (size[0] + random() ** 2 * (size[1] - size[0])) / base;
-    e.set((random() - 0.5) * 0.4, random() * 6.28, (random() - 0.5) * 0.4);
+    e.set(upright ? 0 : (random() - 0.5) * 0.4, random() * 6.28, upright ? 0 : (random() - 0.5) * 0.4);
     q.setFromEuler(e);
-    m.compose(new THREE.Vector3(x, height(x, z) - sink * k * base, z), q, new THREE.Vector3(k, k * (0.7 + random() * 0.5), k));
+    m.compose(new THREE.Vector3(x, height(x, z) - sink * k * base, z), q, new THREE.Vector3(k, k * (upright ? 0.85 + random() * 0.3 : 0.7 + random() * 0.5), k));
     placements[v].push(m.clone());
     n++;
   }
@@ -518,4 +518,12 @@ export function scatterRocks({ count, place, height, random = rng(17), size = [0
     }).catch((err) => console.warn("vegetation:", err));
   });
   return group;
+}
+
+/**
+ * Scanned scrub and grass tussocks (CC0 scans; each instance is a small cluster of plants), upright on the
+ * ground. size: [min, max] metres across a cluster.
+ */
+export function scatterPlants({ count, place, height, random = rng(23), size = [2, 5], keys = ["shrub", "grassClump"] }) {
+  return scatterRocks({ count, place, height, random, size, keys, sink: 0.02, upright: true, bases: { shrub: 4, grassClump: 5.6 } });
 }

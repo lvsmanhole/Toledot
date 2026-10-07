@@ -57,12 +57,16 @@ export function robedGeometry(h = 1.75, { staff = false, veiled = false, beard =
   const sph = (r, w, hh, ...rest) => new THREE.SphereGeometry(r, low ? Math.max(6, Math.round(w / 2.5)) : w, low ? Math.max(4, Math.round(hh / 2.5)) : hh, ...rest);
   const parts = [];
   // tunic: hem flaring at the ankle, drawn in at the waist, broad at the shoulders
-  parts.push(tag(lathe([[0.0, 0.04], [0.27, 0.04], [0.25, 0.25], [0.22, 0.6], [0.2, 0.98], [0.21, 1.15], [0.22, 1.32], [0.19, 1.42], [0.07, 1.47]], 26, 0, Math.PI * 2, 7), TUNIC));
+  // (a body is wider than it is deep: the lathed cloth is flattened front to back, and the shoulders are
+  // the widest point, so the figure does not read as a bottle)
+  const torso = (g, depth = 0.68) => { g.scale(1, 1, depth); g.computeVertexNormals(); return g; };
+  parts.push(tag(torso(lathe([[0.0, 0.04], [0.235, 0.04], [0.225, 0.25], [0.205, 0.6], [0.2, 0.98], [0.225, 1.15], [0.245, 1.3], [0.24, 1.38], [0.17, 1.44], [0.07, 1.48]], 26, 0, Math.PI * 2, 7)), TUNIC));
   // mantle over the shoulders and down the back, open at the front
-  parts.push(tag(lathe([[0.235, 0.5], [0.245, 0.8], [0.25, 1.1], [0.245, 1.33], [0.2, 1.44], [0.1, 1.49]], 22, Math.PI * 0.32, Math.PI * 1.36, 5), MANTLE));
+  parts.push(tag(torso(lathe([[0.22, 0.5], [0.22, 0.8], [0.235, 1.1], [0.262, 1.32], [0.25, 1.4], [0.18, 1.46], [0.1, 1.5]], 22, Math.PI * 0.32, Math.PI * 1.36, 5), 0.74), MANTLE));
   // sash at the waist
   const sash = new THREE.TorusGeometry(0.205, 0.035, low ? 3 : 6, low ? 10 : 24);
   sash.rotateX(Math.PI / 2);
+  sash.scale(1, 1, 0.7);
   sash.translate(0, 1.0, 0);
   parts.push(tag(sash, SASH));
   // arms in sleeves hanging a little forward, hands below
@@ -70,11 +74,11 @@ export function robedGeometry(h = 1.75, { staff = false, veiled = false, beard =
     const sleeve = new THREE.CylinderGeometry(0.06, 0.085, 0.58, low ? 5 : 10, 1, true);
     sleeve.rotateX(-0.12);
     sleeve.rotateZ(s * 0.1);
-    sleeve.translate(s * 0.255, 1.12, 0.03);
+    sleeve.translate(s * 0.275, 1.1, 0.03);
     parts.push(tag(sleeve, s < 0 ? TUNIC : TUNIC));
     const hand = sph(0.048, 10, 8);
     hand.scale(0.8, 1.25, 0.7);
-    hand.translate(s * 0.285, 0.8, 0.07);
+    hand.translate(s * 0.305, 0.79, 0.07);
     parts.push(tag(hand, SKIN));
   }
   // neck, head, face
@@ -96,7 +100,7 @@ export function robedGeometry(h = 1.75, { staff = false, veiled = false, beard =
     parts.push(tag(b, DARKPART));
   }
   // head covering: falls from the crown to the shoulders, open at the face
-  parts.push(tag(lathe([[0.0, 1.76], [0.06, 1.755], [0.1, 1.73], [0.122, 1.67], [0.135, 1.58], [0.16, 1.5], [0.21, 1.43]], 20, Math.PI * 0.2, Math.PI * 1.6, 3), HEADCLOTH));
+  parts.push(tag(lathe([[0.0, 1.76], [0.06, 1.755], [0.1, 1.73], [0.122, 1.67], [0.13, 1.58], [0.15, 1.5], [0.19, 1.44]], 20, Math.PI * 0.2, Math.PI * 1.6, 3), HEADCLOTH));
   const band = new THREE.TorusGeometry(0.108, 0.014, low ? 3 : 6, low ? 8 : 20);
   band.rotateX(Math.PI / 2 - 0.12);
   band.translate(0, 1.7, 0.0);

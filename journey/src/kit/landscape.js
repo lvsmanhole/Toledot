@@ -7,7 +7,7 @@ import { cameraRig, collectShaderMaterials, disposeScene } from "./common.js";
 import { blendPresets, createAtmosphere } from "./sky.js";
 import { createTerrain } from "./terrain.js";
 import { createWater } from "./water.js";
-import { scatterRocks } from "./vegetation.js";
+import { scatterPlants, scatterRocks } from "./vegetation.js";
 import { rng } from "../engine/noise.js";
 
 /**
@@ -41,6 +41,19 @@ export function createLandscape(ctx, options) {
       return slope > 0.12 || r() < 0.15 ? [x, z] : null;
     };
     scene.add(scatterRocks({ count: ctx.quality === "low" ? 50 : options.rocks ?? 110, place, height: hgt, random: rng(options.terrain.size ?? 7) }));
+    // scrub and tussocks wherever anything grows (not on sand, ash or the bare rock of Sinai)
+    const pal = options.terrain.palette;
+    if (["judea", "steppe", "garden", "fields"].includes(pal) && options.plants !== false) {
+      const near = span * 0.5; // concentrated where the camera works
+      const placeNear = (r) => {
+        const x = c[0] + (r() - 0.5) * 2 * near;
+        const z = c[1] + (r() - 0.5) * 2 * near;
+        if (keep.some(([kx, kz, kr]) => Math.hypot(x - kx, z - kz) < kr)) return null;
+        const y = hgt(x, z);
+        return y > 0.8 ? [x, z] : null;
+      };
+      scene.add(scatterPlants({ count: ctx.quality === "low" ? 90 : options.plantCount ?? 220, place: placeNear, height: hgt, random: rng((options.terrain.size ?? 7) + 3) }));
+    }
   }
   const rig = cameraRig(options.camera);
   const updaters = [];

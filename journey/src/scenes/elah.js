@@ -8,14 +8,14 @@ import { lerp, pulse, sramp } from "../kit/common.js";
 import { armour, crowd, figure, shield } from "../kit/figures.js";
 import { createLandscape } from "../kit/landscape.js";
 import { composeHeight, heights } from "../kit/terrain.js";
-import { createBlades, createTrees, placers } from "../kit/vegetation.js";
+import { createBlades, createTrees, placers, scatterPlants } from "../kit/vegetation.js";
 
 export function create(ctx) {
   // a valley running along z with ridges at x = ±80
   const valley = (x) => 34 * Math.pow(Math.min(1, Math.abs(x) / 90), 1.6);
   const height = composeHeight([valley, heights.rolling(5, 0.012, 241)], 0);
   const L = createLandscape(ctx, {
-    terrain: { height, palette: "judea", size: 1200 },
+    terrain: { height, palette: "steppe", size: 1200 },
     sky: () => "morning",
     wind: () => 0.4,
     camera: [
@@ -26,12 +26,14 @@ export function create(ctx) {
       [17, [-9, 2, 12], [12, 1, -6], 38],
       [20, [0, 40, 90], [0, 10, -20], 44],
     ],
-    grade: () => ({ saturation: 0.9 }),
+    grade: () => ({ saturation: 1.1, tint: [1.02, 1, 0.92], exposure: 0.72 }),
     audio: (rel) => ({ drone: 0.25 + 0.5 * pulse(rel, 8, 12, 15, 16), wind: 0.4 }),
   });
   const h = L.height;
   const grass = createBlades({ count: ctx.quality === "low" ? 25000 : 60000, place: placers.box(-60, -120, 60, 120), height: h });
   L.add(grass.mesh, (s) => grass.update({ time: s.time, wind: s.wind, fog: s.fog, light: 0.9 }));
+  // scrub, thistle and tussock over the valley sides (the Shephelah in spring)
+  L.add(scatterPlants({ count: ctx.quality === "low" ? 140 : 320, place: placers.box(-120, -160, 120, 160, (x) => Math.abs(x) > 6), height: h }));
   L.add(createTrees({ count: 120, place: placers.box(-150, -300, 150, 300, (x) => Math.abs(x) > 20), height: h, kind: "olive", size: [3, 5] }).group);
   const israel = crowd({ count: ctx.quality === "low" ? 600 : 1500, place: placers.box(-95, -80, -70, 80), height: h, seed: 81, face: [80, 0] });
   const philistines = crowd({ count: ctx.quality === "low" ? 600 : 1500, place: placers.box(70, -80, 95, 80), height: h, seed: 83, face: [-80, 0] });

@@ -229,7 +229,7 @@ export function tongues({ positions, height = () => 0, lift = 2.3 }) {
   const group = new THREE.Group();
   const flames = [];
   positions.forEach(([x, z], i) => {
-    const f = flame({ width: 0.35, height: 0.8, gain: 0.9, seed: i * 1.7 });
+    const f = flame({ width: 0.22, height: 0.5, gain: 0.5, seed: i * 1.7 });
     f.position.set(x, height(x, z) + lift, z);
     group.add(f);
     flames.push(f);
