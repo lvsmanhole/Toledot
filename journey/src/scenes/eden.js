@@ -8,6 +8,7 @@ import { mergeGeometries, mergeVertices } from "three/examples/jsm/utils/BufferG
 
 import { NOISE, fbm2, rng } from "../engine/noise.js";
 import { createStars } from "../engine/stars.js";
+import { livingCreature } from "../kit/cherub.js";
 
 const ramp = (t, a, b) => Math.min(1, Math.max(0, (t - a) / (b - a)));
 const smooth = (x) => x * x * (3 - 2 * x);
@@ -505,101 +506,6 @@ function createSerpent(uniforms) {
   };
 }
 
-// The cherubim at the east of the garden (Genesis 3:24): suggested through light — a column of fire
-// for the form, four wings of light that breathe slowly, never a literal creature.
-function createCherub() {
-  const group = new THREE.Group();
-  const wingMat = new THREE.ShaderMaterial({
-    uniforms: { uShow: { value: 0 }, uTime: { value: 0 } },
-    vertexShader: /* glsl */ `varying vec2 vUv; void main() { vUv = uv; gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0); }`,
-    fragmentShader: /* glsl */ `
-      uniform float uShow, uTime;
-      varying vec2 vUv;
-      void main() {
-        // vUv.x along the wing from shoulder to tip, vUv.y across it
-        float shape = smoothstep(0.0, 0.05, vUv.y) * smoothstep(1.0, 0.55 - 0.45 * vUv.x, vUv.y);
-        float feathers = 0.55 + 0.45 * pow(abs(sin(vUv.y * 22.0 + vUv.x * 3.0)), 3.0);
-        float tipFade = 1.0 - smoothstep(0.75, 1.0, vUv.x);
-        float shimmer = 0.85 + 0.15 * sin(uTime * 2.0 + vUv.x * 9.0);
-        float a = shape * feathers * tipFade * uShow * shimmer * 0.55;
-        if (a < 0.004) discard;
-        gl_FragColor = vec4(mix(vec3(1.0, 0.78, 0.42), vec3(1.0, 0.95, 0.85), vUv.x) * a * 1.6, a);
-      }
-    `,
-    transparent: true, depthWrite: false, blending: THREE.AdditiveBlending, side: THREE.DoubleSide,
-  });
-  const wings = [];
-  // two wings raised (Ezekiel 1:11 imagery), two lowered, from a shoulder at 9 units
-  for (const [side, up] of [[1, 1], [-1, 1], [1, -1], [-1, -1]]) {
-    const geo = new THREE.PlaneGeometry(1, 1, 24, 4);
-    geo.translate(0.5, 0.5, 0);
-    const p = geo.attributes.position;
-    for (let i = 0; i < p.count; i++) {
-      const x = p.getX(i);
-      const y = p.getY(i);
-      // long sweeping wing: length 8, width 2.6 near the shoulder, curving forward at the tip
-      p.setXYZ(i, x * 8, (y - 0.5) * 2.6 * (1 - 0.55 * x), -Math.pow(x, 2) * 2.2);
-    }
-    const wing = new THREE.Mesh(geo, wingMat);
-    const pivot = new THREE.Group();
-    pivot.position.y = up > 0 ? 9.5 : 7.5;
-    pivot.add(wing);
-    pivot.userData = { side, up };
-    group.add(pivot);
-    wings.push(pivot);
-  }
-  const core = new THREE.Mesh(new THREE.CylinderGeometry(0.5, 0.9, 12, 16, 1, true), new THREE.ShaderMaterial({
-    uniforms: { uShow: { value: 0 } },
-    vertexShader: /* glsl */ `varying vec2 vUv; void main() { vUv = uv; gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0); }`,
-    fragmentShader: /* glsl */ `
-      uniform float uShow;
-      varying vec2 vUv;
-      void main() {
-        float a = smoothstep(0.0, 0.25, vUv.y) * smoothstep(1.0, 0.7, vUv.y) * uShow * 0.35;
-        gl_FragColor = vec4(vec3(1.0, 0.85, 0.55) * a * 2.0, a);
-      }
-    `,
-    transparent: true, depthWrite: false, blending: THREE.AdditiveBlending, side: THREE.DoubleSide,
-  }));
-  core.position.y = 6;
-  const crown = glowSpriteSimple(0xffe2a8, 7);
-  crown.position.y = 11;
-  group.add(core, crown);
-  return {
-    group,
-    set(show, time, reduced) {
-      wingMat.uniforms.uShow.value = show;
-      wingMat.uniforms.uTime.value = time;
-      core.material.uniforms.uShow.value = show;
-      crown.material.opacity = show * 0.8;
-      group.visible = show > 0.005;
-      const breathe = reduced ? 0 : Math.sin(time * 0.6) * 0.08;
-      for (const w of wings) {
-        const { side, up } = w.userData;
-        // raised wings lift to meet overhead; lowered wings fold down to cover
-        w.rotation.set(0, side > 0 ? 0 : Math.PI, up > 0 ? 0.95 + breathe : -1.15 - breathe);
-      }
-    },
-  };
-}
-
-function glowSpriteSimple(color, scale) {
-  const canvas = document.createElement("canvas");
-  canvas.width = canvas.height = 128;
-  const g = canvas.getContext("2d");
-  const grad = g.createRadialGradient(64, 64, 0, 64, 64, 64);
-  grad.addColorStop(0, "rgba(255,255,255,1)");
-  grad.addColorStop(0.3, "rgba(255,240,210,0.35)");
-  grad.addColorStop(1, "rgba(255,230,190,0)");
-  g.fillStyle = grad;
-  g.fillRect(0, 0, 128, 128);
-  const tex = new THREE.CanvasTexture(canvas);
-  tex.colorSpace = THREE.SRGBColorSpace;
-  const s = new THREE.Sprite(new THREE.SpriteMaterial({ map: tex, color, transparent: true, depthWrite: false, blending: THREE.AdditiveBlending, opacity: 0 }));
-  s.scale.setScalar(scale);
-  return s;
-}
-
 // two silhouettes: figures are never detailed, only shapes in the light
 function createFigures() {
   const mat = new THREE.MeshStandardMaterial({ color: 0x0d0b09, roughness: 1 });
@@ -952,7 +858,8 @@ export function createEden(ctx) {
   swordPivot.add(sword);
   const fireLight = new THREE.PointLight(0xff8a3a, 0, 80, 1.4);
   fireLight.position.set(GATE_X, height(GATE_X, 0) + 5, 0);
-  const cherubim = [createCherub(), createCherub()];
+  // the cherubims at the east of the garden, as Ezekiel saw them (Ezekiel 10:20)
+  const cherubim = [livingCreature({ scale: 1.25, wheelSide: 1, seed: 3 }), livingCreature({ scale: 1.25, wheelSide: -1, seed: 7 })];
   cherubim.forEach((c, i) => {
     const z = i === 0 ? -12 : 15;
     c.group.position.set(GATE_X + 1.5, height(GATE_X, z) - 0.2, z);
@@ -1067,7 +974,7 @@ export function createEden(ctx) {
       swordPivot.rotation.z = Math.sin(time * 0.7) * 0.25;
       sword.scale.setScalar(Math.max(0.001, flame));
       const guard = smooth(ramp(t, at(89.6), at(92.5)));
-      for (const c of cherubim) c.set(guard, time, reducedMotion);
+      for (const c of cherubim) c.set(guard, time, reducedMotion, pixelRatio);
 
       // the lineage of promise begins
       thread.material.uniforms.uDraw.value = smooth(ramp(t, at(94), at(99.5)));

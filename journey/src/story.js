@@ -423,12 +423,27 @@ export const SCENES = [
     ],
   },
   {
-    id: "bones", module: "bones", length: 16, enter: t("dust", 2), years: [[0, -574], [16, -574]],
-    chronicle: { chapters: ["ezekiel:1-48"], span: 120 },
+    id: "chebar", module: "chebar", length: 22, enter: t("dust", 2), years: [[0, -592], [22, -592]],
+    meanwhile: "The fifth year of Jehoiachin's captivity (Ezekiel 1:2)",
+    chronicle: { chapters: ["ezekiel:1-3", "ezekiel:10"], span: 120 },
     captions: [
-      v(1.5, 5.5, "and set me down in the midst of the valley which was full of bones", "Ezekiel 37:1", "Ezekiel"),
-      h(6, 9.5, "Son of man, can these bones live?", "Ezekiel 37:3"),
-      v(10, 14.5, "and the breath came into them, and they lived, and stood up upon their feet, an exceeding great army.", "Ezekiel 37:10"),
+      v(1.5, 5.5, "as I was among the captives by the river of Chebar, that the heavens were opened, and I saw visions of God.", "Ezekiel 1:1", "Ezekiel"),
+      v(6, 9.5, "behold, a whirlwind came out of the north, a great cloud, and a fire infolding itself", "Ezekiel 1:4"),
+      v(10, 13.5, "And every one had four faces, and every one had four wings.", "Ezekiel 1:6"),
+      v(14, 17.5, "their appearance and their work was as it were a wheel in the middle of a wheel.", "Ezekiel 1:16"),
+      v(18, 21.5, "This is the living creature that I saw under the God of Israel by the river of Chebar; and I knew that they were the cherubims.", "Ezekiel 10:20"),
+    ],
+  },
+  {
+    id: "bones", module: "bones", length: 24, enter: t("dust", 2), years: [[0, -574], [24, -574]],
+    chronicle: { chapters: ["ezekiel:33-48"], span: 120 },
+    captions: [
+      v(1.5, 5, "and set me down in the midst of the valley which was full of bones", "Ezekiel 37:1", "The valley of dry bones"),
+      h(5.5, 8.5, "Son of man, can these bones live?", "Ezekiel 37:3"),
+      v(9, 12.5, "there was a noise, and behold a shaking, and the bones came together, bone to his bone.", "Ezekiel 37:7"),
+      v(13, 16, "lo, the sinews and the flesh came up upon them, and the skin covered them above: but there was no breath in them.", "Ezekiel 37:8"),
+      v(16.5, 19.5, "Come from the four winds, O breath, and breathe upon these slain, that they may live.", "Ezekiel 37:9"),
+      v(20, 23.5, "and the breath came into them, and they lived, and stood up upon their feet, an exceeding great army.", "Ezekiel 37:10"),
     ],
   },
   {
@@ -484,6 +499,21 @@ export const SCENES = [
     ],
   },
   {
+    id: "temptation", module: "temptation", length: 34, enter: t("dust", 2), years: [[0, 28], [34, 28]],
+    chronicle: { chapters: ["matthew:4", "mark:1", "luke:4"], span: 60 },
+    captions: [
+      v(1.5, 5, "Then was Jesus led up of the Spirit into the wilderness to be tempted of the devil.", "Matthew 4:1", "The temptation"),
+      v(5.5, 8.5, "And when he had fasted forty days and forty nights, he was afterward an hungred.", "Matthew 4:2"),
+      v(9, 12, "If thou be the Son of God, command that these stones be made bread.", "Matthew 4:3", "The tempter"),
+      v(12.5, 15.5, "Man shall not live by bread alone, but by every word that proceedeth out of the mouth of God.", "Matthew 4:4"),
+      v(16, 19, "Then the devil taketh him up into the holy city, and setteth him on a pinnacle of the temple", "Matthew 4:5"),
+      v(19.5, 22, "Thou shalt not tempt the Lord thy God.", "Matthew 4:7"),
+      v(22.6, 25.8, "the devil taketh him up into an exceeding high mountain, and sheweth him all the kingdoms of the world, and the glory of them", "Matthew 4:8"),
+      v(26.2, 29, "Get thee hence, Satan: for it is written, Thou shalt worship the Lord thy God, and him only shalt thou serve.", "Matthew 4:10"),
+      v(29.5, 33, "Then the devil leaveth him, and, behold, angels came and ministered unto him.", "Matthew 4:11"),
+    ],
+  },
+  {
     id: "galilee", module: "galilee", length: 30, enter: t("light", 2), years: [[0, 28], [30, 29]],
     chronicle: { chapters: ["matthew:4-17", "mark:1-9", "luke:4-9"], span: 60, gospels: true },
     captions: [
@@ -495,7 +525,7 @@ export const SCENES = [
     ],
   },
   {
-    id: "passion", module: "passion", length: 34, enter: t("dust", 2), years: [[0, 30], [34, 30]],
+    id: "passion", module: "passion", length: 40, enter: t("dust", 2), years: [[0, 30], [34, 30]],
     chronicle: { chapters: ["matthew:21-27", "mark:11-15", "luke:19-23", "john:12-19"], span: 60, gospels: true },
     captions: [
       v(1.5, 5, "Hosanna to the Son of David: Blessed is he that cometh in the name of the Lord", "Matthew 21:9"),
@@ -505,14 +535,16 @@ export const SCENES = [
       v(19, 22.5, "Now from the sixth hour there was darkness over all the land unto the ninth hour.", "Matthew 27:45"),
       h(23, 26, "It is finished", "John 19:30"),
       v(26.5, 31, "And, behold, the veil of the temple was rent in twain from the top to the bottom", "Matthew 27:51"),
+      v(32.5, 38.5, "And the graves were opened; and many bodies of the saints which slept arose,", "Matthew 27:52"),
     ],
   },
   {
-    id: "risen", module: "risen", length: 14, enter: t("dark", 2.4), years: [[0, 30], [14, 30]],
+    id: "risen", module: "risen", length: 24, enter: t("dark", 2.4), years: [[0, 30], [14, 30]],
     chronicle: { chapters: ["matthew:28", "mark:16", "luke:24", "john:20-21"], span: 60, gospels: true },
     captions: [
       h(3, 7.5, "He is not here: for he is risen", "Matthew 28:6", "as he said."),
       v(8, 12.5, "I am the resurrection, and the life", "John 11:25"),
+      v(14, 22.5, "And came out of the graves after his resurrection, and went into the holy city, and appeared unto many.", "Matthew 27:53"),
     ],
   },
   // ---------------------------------------------------------------- Act XXV

@@ -9,7 +9,8 @@ import { glowSprite, lerp, pulse, sramp } from "../kit/common.js";
 import { weather } from "../kit/effects.js";
 import { ANIMALS, crowd, figure } from "../kit/figures.js";
 import { createLandscape } from "../kit/landscape.js";
-import { city, crosses, wall } from "../kit/structures.js";
+import { city, crosses, tomb, wall } from "../kit/structures.js";
+import { lightShaft } from "../kit/effects.js";
 import { createTrees, placers } from "../kit/vegetation.js";
 import { jerusalemHeight } from "./david.js";
 
@@ -17,6 +18,7 @@ const ROOM = new THREE.Vector3(-500, 0, 500);
 const GROVE = new THREE.Vector3(220, 0, 40);
 const GOLGOTHA = new THREE.Vector3(-150, 0, -160);
 const VEIL = new THREE.Vector3(600, 0, -600);
+const GRAVES = new THREE.Vector3(-420, 0, 260);
 
 export function create(ctx) {
   const height = jerusalemHeight(351);
@@ -26,9 +28,10 @@ export function create(ctx) {
       if (rel < 5.6) return "morning";
       if (rel < 14.6) return [[1, "night"]];
       if (rel < 26.3) return [[1 - pulse(rel, 18.5, 19.8, 25, 26), "noon"], [pulse(rel, 18.5, 19.8, 25, 26), "storm"]];
-      return [[1, "dusk"]];
+      if (rel < 31.3) return [[1, "dusk"]];
+      return [[1, "storm"]];
     },
-    lightning: (rel) => 0.6 * pulse(rel, 22, 23, 25, 26),
+    lightning: (rel) => 0.6 * pulse(rel, 22, 23, 25, 26) + 0.7 * pulse(rel, 31.5, 32.5, 37, 39),
     camera: [
       [0, [180, 14, 30], [100, 10, 0], 44],
       [5.5, [60, 8, 12], [30, 6, 0], 44],
@@ -41,7 +44,10 @@ export function create(ctx) {
       [26.3, [GOLGOTHA.x + 16, 5, GOLGOTHA.z + 22], [GOLGOTHA.x, 12, GOLGOTHA.z], 40],
       [26.5, [VEIL.x + 14, 7, VEIL.z], [VEIL.x, 7, VEIL.z], 46],
       [31, [VEIL.x + 9, 7, VEIL.z], [VEIL.x - 10, 7, VEIL.z], 50],
-      [34, [VEIL.x + 6, 7, VEIL.z], [VEIL.x - 30, 7, VEIL.z], 54],
+      [31.2, [VEIL.x + 6, 7, VEIL.z], [VEIL.x - 30, 7, VEIL.z], 54],
+      [31.4, [GRAVES.x + 70, 18, GRAVES.z + 60], [GRAVES.x, 6, GRAVES.z], 46],
+      [36, [GRAVES.x + 10, 6, GRAVES.z + 30], [GRAVES.x - 4, 2, GRAVES.z], 44],
+      [40, [GRAVES.x + 22, 5, GRAVES.z + 18], [GRAVES.x - 6, 4, GRAVES.z - 4], 42],
     ],
     grade: (rel) => ({ saturation: 1 - 0.45 * sramp(rel, 14.6, 20), exposure: 1 - 0.35 * pulse(rel, 19, 20, 25, 26), bloom: 0.4, threshold: 0.7 }),
     audio: (rel) => ({ drone: 0.3 + 0.3 * sramp(rel, 14.6, 20), wind: 0.2 + 0.5 * pulse(rel, 19, 20, 26, 27), shimmer: 0.4 * sramp(rel, 29, 33) }),
@@ -121,13 +127,47 @@ export function create(ctx) {
   sanctLight.position.set(8, 10, 0);
   veilGroup.add(sanctLight);
   L.add(veilGroup);
+  // the graves on the hillside outside the city: rock-cut tombs with their stones
+  const graves = [];
+  for (let i = 0; i < 12; i++) {
+    const g = tomb();
+    const x = GRAVES.x + (i % 6) * 16 - 40 + (i > 5 ? 8 : 0);
+    const z = GRAVES.z - Math.floor(i / 6) * 22 - (i % 2) * 4;
+    g.scale.setScalar(0.55);
+    g.position.set(x, h(x, z) - 0.3, z);
+    g.rotation.y = 0.15 * ((i % 3) - 1);
+    L.add(g);
+    const shine = lightShaft({ length: 14, top: 0.9, bottom: 2.6, color: [1, 0.95, 0.85], gain: 0.9 });
+    const inner = glowSprite(0xfff2d8, 4, 0);
+    inner.position.set(x, h(x, z) + 1.0, z + 1.2);
+    L.add(inner);
+    const lamp = new THREE.PointLight(0xffe8c0, 0, 18, 1.4);
+    lamp.position.set(x, h(x, z) + 1.5, z + 3);
+    L.add(lamp);
+    shine.rotation.x = -Math.PI / 2;
+    shine.position.set(x, h(x, z) + 1.0, z + 1.4);
+    L.add(shine);
+    graves.push({ g, shine, inner, lamp, delay: (i * 0.37) % 1 });
+  }
   L.onUpdate(({ rel, time, pixelRatio, camera, reducedMotion }) => {
+    // "the earth did quake, and the rocks rent; and the graves were opened" (Matthew 27:51-52)
+    const open = sramp(rel, 32, 36.5);
+    for (const { g, shine, inner, lamp, delay } of graves) {
+      const k = sramp(open, delay * 0.5, delay * 0.5 + 0.5);
+      g.userData.stone.position.x = k * 4.6;
+      g.userData.stone.rotation.y = -k * 2.2;
+      shine.material.uniforms.uAmount.value = k;
+      shine.material.uniforms.uTime.value = time;
+      shine.visible = k > 0.01;
+      inner.material.opacity = k * 0.9;
+      lamp.intensity = k * 40;
+    }
     const ride = sramp(rel, 0, 5.5);
     const dx = lerp(190, 40, ride);
     donkey.position.set(dx, h(dx, 0), 0);
     donkey.rotation.y = Math.PI;
     rider.position.set(dx, h(dx, 0) + 0.9, 0);
-    const quake = pulse(rel, 25.5, 26, 26.3, 26.5) + pulse(rel, 26.6, 27, 28, 29);
+    const quake = pulse(rel, 25.5, 26, 26.3, 26.5) + pulse(rel, 26.6, 27, 28, 29) + pulse(rel, 31.6, 32.2, 35.5, 37);
     if (!reducedMotion && quake > 0) {
       camera.position.x += Math.sin(time * 43) * 0.3 * quake;
       camera.position.y += Math.sin(time * 37) * 0.3 * quake;

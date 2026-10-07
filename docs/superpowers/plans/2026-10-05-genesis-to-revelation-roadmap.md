@@ -106,7 +106,7 @@
 - [x] Accessible keyboard/touch navigation (canvas keyboard stepping with live announcements, list view as the non-visual equivalent, combobox search), reduced-motion behavior, mobile drawer and bottom-sheet layout.
 - [x] Checked in a headless browser: Genesis genealogies, Genesis 22 focus, 2 Kings (anchored), Gospel parallels, Revelation, mobile, dark theme; no console errors.
 - [x] Document the build and serve workflow (README "Website"). Deployment is any static host serving `site/` after `bible_timeline site`.
-- [x] The Journey: a cinematic scroll-through of the whole story (`journey/`), Genesis to Revelation in 52 scenes. KJV captions are checked by tests, and the Toledot timeline runs inside it as the Chronicle.
+- [x] The Journey: a cinematic scroll-through of the whole story (`journey/`), Genesis to Revelation in 55 scenes. KJV captions are checked by tests, and the Toledot timeline runs inside it as the Chronicle.
 - [ ] Journey polish on real GPUs: frame pacing, scene-by-scene art direction, mobile performance. Visual review so far was in a software-rendered headless browser.
 
 ## Slice acceptance checklist

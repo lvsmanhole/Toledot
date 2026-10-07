@@ -25,7 +25,7 @@ The installed `bible-timeline` command accepts the same subcommands. `validate -
 
 `site/` holds two parts:
 
-- **The Journey** (landing page, source in `journey/`) is a cinematic, scroll-driven WebGL telling of the whole story, from before the world to the new creation. It's built with Three.js and Vite and has 52 scenes across 26 acts.
+- **The Journey** (landing page, source in `journey/`) is a cinematic, scroll-driven WebGL telling of the whole story, from before the world to the new creation. It's built with Three.js and Vite and has 55 scenes across 26 acts.
   - Every environment is procedural (shaders, particles, simple geometry). Figures appear only as silhouettes.
   - Ambient sound is synthesized in the browser and is off until the visitor turns it on.
   - Scripture is quoted from the King James Version, Apocrypha included for 1 Maccabees. `journey/tests/story.test.mjs` checks every caption against the KJV text in `journey/tests/fixtures/kjv.json`.
