@@ -8,7 +8,7 @@ import { figure, herd } from "../kit/figures.js";
 import { createLandscape } from "../kit/landscape.js";
 import { composeHeight, heights } from "../kit/terrain.js";
 import { createBlades, placers } from "../kit/vegetation.js";
-import { surfaceMaterial } from "../kit/surface.js";
+import { facingIn, surfaceMaterial } from "../kit/surface.js";
 
 const PIT = [0, 0];
 const CARAVAN_Z = -220;
@@ -82,8 +82,8 @@ export function create(ctx) {
     sp.setZ(i, sp.getZ(i) * k);
   }
   shaft.computeVertexNormals();
-  const rockMat = surfaceMaterial("cliff", { tile: 1.6, tint: [0.62, 0.55, 0.48], side: THREE.BackSide });
-  const wall = new THREE.Mesh(shaft, rockMat);
+  const rockMat = surfaceMaterial("cliff", { tile: 1.6, tint: [0.62, 0.55, 0.48] });
+  const wall = new THREE.Mesh(facingIn(shaft), rockMat);
   wall.position.y = -3.5;
   const floor = new THREE.Mesh(new THREE.CircleGeometry(1.75, 32), surfaceMaterial("cracked", { tile: 1.2, tint: [0.6, 0.52, 0.44] }));
   floor.rotation.x = -Math.PI / 2;

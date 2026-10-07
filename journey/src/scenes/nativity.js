@@ -6,7 +6,8 @@ import * as THREE from "three";
 
 import { glowSprite, pulse, sramp } from "../kit/common.js";
 import { flame, lightShaft, weather } from "../kit/effects.js";
-import { figure, herd } from "../kit/figures.js";
+import { figure, herd, robedGeometry } from "../kit/figures.js";
+import { SURFACES, facingIn } from "../kit/surface.js";
 import { createLandscape } from "../kit/landscape.js";
 import { city } from "../kit/structures.js";
 import { composeHeight, heights } from "../kit/terrain.js";
@@ -16,40 +17,48 @@ const ROOM = new THREE.Vector3(400, 0, 400);
 
 export function create(ctx) {
   const height = composeHeight([heights.rolling(12, 0.008, 321), heights.mountain(-60, -140, 70, 26, 322), heights.flatten(0, 0, 30, 60, 6)], 2);
+  let RY = 0; // the room stands on the highest ground under it
+  for (let dx = -4; dx <= 4; dx += 1) for (let dz = -4; dz <= 4; dz += 1) RY = Math.max(RY, height(ROOM.x + dx, ROOM.z + dz) + 0.05);
   const L = createLandscape(ctx, {
     terrain: { height, palette: "judea", size: 1300 },
     sky: () => "night",
     camera: [
-      [0, [ROOM.x + 4, 6 + 1.6, ROOM.z + 5], [ROOM.x - 1, 6 + 1.1, ROOM.z], 50],
-      [5, [ROOM.x + 3, 6 + 1.5, ROOM.z + 3.5], [ROOM.x - 1, 6 + 1.6, ROOM.z], 46],
+      [0, [ROOM.x + 3.2, RY + 1.6, ROOM.z + 3.2], [ROOM.x - 1, RY + 1.1, ROOM.z], 56],
+      [5, [ROOM.x + 2.6, RY + 1.5, ROOM.z + 2.6], [ROOM.x - 1, RY + 1.4, ROOM.z], 50],
       [5.6, [30, 8, 40], [0, 4, 0], 44],
       [9.5, [18, 5, 20], [0, 4, 0], 46],
       [13.5, [14, 4, 18], [0, 40, -30], 60],
       [18.5, [10, 5, 24], [-60, 30, -140], 54],
       [20, [-40, 34, -112], [-60, 27, -140], 44],
     ],
-    grade: (rel) => ({ bloom: 0.8, threshold: 0.45, exposure: 1 + 0.2 * pulse(rel, 10, 11, 18, 19) }),
+    indoor: (rel) => 1 - sramp(rel, 5.4, 5.6),
+    grade: (rel) => ({ bloom: 0.45, threshold: 0.7, exposure: 1 + 0.15 * pulse(rel, 10, 11, 18, 19) }),
     audio: (rel) => ({ drone: 0.25, shimmer: 0.25 + 0.6 * pulse(rel, 10, 11.5, 18, 19.5), wind: 0.12, fire: 0.15 * pulse(rel, 5.5, 6, 13, 14) }),
   });
   const h = L.height;
   // the room in Nazareth (staged away from the fields)
   const roomGroup = new THREE.Group();
-  const walls = new THREE.Mesh(new THREE.BoxGeometry(8, 5, 8), new THREE.MeshStandardMaterial({ color: 0x8a7a64, roughness: 1, side: THREE.BackSide }));
+  const plaster = SURFACES.mudDark();
+  const walls = new THREE.Mesh(facingIn(new THREE.BoxGeometry(8, 5, 8)), plaster);
   walls.position.y = 2.5;
   roomGroup.add(walls);
   const mary = figure(1.55, { veiled: true });
-  mary.position.set(-1, 0, 0);
-  mary.rotation.x = 0.3;
+  // kneeling: the figure set low, bowed a little toward the light
+  mary.position.set(-1, -0.55, 0);
+  mary.rotation.set(0.12, Math.PI / 2 + 0.4, 0, "YXZ");
   roomGroup.add(mary);
-  const beam = lightShaft({ length: 12, top: 0.5, bottom: 1.8, color: [1, 0.95, 0.82], gain: 0.9 });
+  const beam = lightShaft({ length: 12, top: 0.5, bottom: 1.8, color: [1, 0.95, 0.82], gain: 0.45 });
   beam.rotation.z = Math.PI + 0.5;
   beam.position.set(-6, 9, 0);
   roomGroup.add(beam);
-  const presence = glowSprite(0xfff4e0, 3.5, 0);
+  const presence = glowSprite(0xfff4e0, 1.6, 0);
   presence.position.set(1.4, 2.2, 0);
   roomGroup.add(presence);
-  roomGroup.position.copy(ROOM).setY(6);
-  const roomLight = new THREE.PointLight(0xfff0d8, 30, 14, 1.4);
+  roomGroup.position.copy(ROOM).setY(RY);
+  const floor = new THREE.Mesh(new THREE.PlaneGeometry(8, 8).rotateX(-Math.PI / 2), SURFACES.mudDark());
+  floor.position.y = 0.02;
+  roomGroup.add(floor);
+  const roomLight = new THREE.PointLight(0xfff0d8, 70, 14, 1.4);
   roomLight.position.set(0.5, 3, 0);
   roomGroup.add(roomLight);
   L.add(roomGroup);
@@ -75,25 +84,39 @@ export function create(ctx) {
   const town = city({ count: 90, radius: 18, height: (x, z) => h(x - 60, z + 140), style: "stone", seed: 123 });
   town.position.set(-60, 0, -140);
   L.add(town);
-  const star = glowSprite(0xfff8e8, 24, 0);
+  const star = glowSprite(0xfff8e8, 9, 0);
   star.position.set(-60, 120, -160);
   L.add(star);
   const manger = glowSprite(0xffc070, 4, 0);
   manger.position.set(-58, h(-58, -132) + 2, -132);
   L.add(manger);
   // the angel and the multitude of the heavenly host
-  const angel = glowSprite(0xffffff, 30, 0);
-  angel.position.set(0, 40, -30);
+  // "the angel of the Lord came upon them, and the glory of the Lord shone round about them" (Luke 2:9):
+  // a tall figure of light standing in the air, the glory a wide soft radiance round him
+  const angel = glowSprite(0xfff2d8, 26, 0);
+  angel.position.set(0, 18, -30);
   L.add(angel);
+  const angelBody = new THREE.Mesh(robedGeometry(1.9, { detail: "high" }), new THREE.MeshBasicMaterial({ color: new THREE.Color(1.5, 1.4, 1.2), transparent: true, opacity: 0, depthWrite: false }));
+  angelBody.scale.setScalar(2.4);
+  angelBody.position.set(0, 13.5, -30);
+  angelBody.lookAt(14, 13.5, 18);
+  L.add(angelBody);
+  const gloryLight = new THREE.PointLight(0xfff0d0, 0, 90, 1.2);
+  gloryLight.position.set(0, 16, -24);
+  L.add(gloryLight);
   const host = weather("motes", { count: ctx.quality === "low" ? 3000 : 8000, box: [220, 120, 220] });
-  host.material.uniforms.uSize.value = 2.2;
+  host.material.uniforms.uSize.value = 1.3;
   L.add(host.points);
   L.onUpdate(({ rel, time, pixelRatio }) => {
     roomGroup.visible = rel < 5.6;
     beam.material.uniforms.uAmount.value = sramp(rel, 0.3, 2);
     beam.material.uniforms.uTime.value = time;
     presence.material.opacity = pulse(rel, 1, 2, 4.5, 5.5) * 0.8;
-    angel.material.opacity = pulse(rel, 10, 11, 17.5, 19) * 0.9;
+    const glory = pulse(rel, 10, 11, 17.5, 19);
+    angel.material.opacity = glory * 0.55;
+    angelBody.material.opacity = glory * 0.9;
+    angelBody.visible = glory > 0.01;
+    gloryLight.intensity = glory * 220;
     host.update({ time, pixelRatio, amount: pulse(rel, 13.5, 15, 18, 19.5), center: new THREE.Vector3(0, 40, -40) });
     star.material.opacity = sramp(rel, 17, 19) * (0.85 + 0.1 * Math.sin(time * 2));
     manger.material.opacity = sramp(rel, 18.5, 19.5) * 0.9;

@@ -57,8 +57,10 @@ export function weather(kind, { count = 6000, box = [80, 50, 80], seed = 3 } = {
         world.y = uCenter.y - uBox.y * 0.35 + p.y;
         vAlpha = step(seed, uAmount);
         vec4 mv = viewMatrix * vec4(world, 1.0);
+        // particles right at the lens fade out instead of filling the frame
+        vAlpha *= smoothstep(1.5, 6.0, -mv.z);
         gl_Position = projectionMatrix * mv;
-        gl_PointSize = uPixelRatio * uSize * 40.0 / -mv.z * vAlpha;
+        gl_PointSize = min(uPixelRatio * uSize * 40.0 / -mv.z, 24.0 * uPixelRatio) * vAlpha;
       }
     `,
     fragmentShader: /* glsl */ `

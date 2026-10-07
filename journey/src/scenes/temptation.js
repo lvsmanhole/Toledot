@@ -5,6 +5,8 @@
 // "Get thee hence, Satan": the darkness breaks apart; angels come and minister unto him.
 
 import * as THREE from "three";
+import { mergeGeometries } from "three/examples/jsm/utils/BufferGeometryUtils.js";
+import { surfaceMaterial } from "../kit/surface.js";
 
 import { glowSprite, lerp, pulse, sramp } from "../kit/common.js";
 import { smoke, weather } from "../kit/effects.js";
@@ -131,8 +133,24 @@ export function create(ctx) {
   temple.position.set(CITY[0], cityY - 0.2, CITY[1]);
   L.add(temple);
   L.add(wall({ points: Array.from({ length: 20 }, (_, i) => [CITY[0] + Math.cos(i / 20 * 6.283) * 86, CITY[1] + Math.sin(i / 20 * 6.283) * 80]), height: h, h: 8, thickness: 3, towerEvery: 4, material: "limestone" }));
-  const pinnacle = new THREE.Mesh(new THREE.BoxGeometry(5, 34, 5), new THREE.MeshStandardMaterial({ color: 0xcbbd9e, roughness: 0.9 }));
-  pinnacle.position.set(PIN.x, PIN.y - 17, PIN.z);
+  // the pinnacle: the corner where the temple court's walls meet over the drop to the valley, built of
+  // great Herodian ashlars, each course set back a little from the one below, a parapet at the top
+  const ashlar = surfaceMaterial("limestone", { tile: 2.4, tint: [0.62, 0.56, 0.47] });
+  const parts = [];
+  const H = 34;
+  const courses = 22;
+  for (let c = 0; c < courses; c++) {
+    const y = PIN.y - H + (c / courses) * H;
+    const ch = H / courses - 0.06; // a dark joint between courses
+    const inset = c * 0.035;
+    // two wall arms running back from the corner, west and north
+    parts.push(new THREE.BoxGeometry(26 - inset, ch, 5 - inset).translate(PIN.x - 13 + inset / 2, y + ch / 2, PIN.z - inset / 2));
+    parts.push(new THREE.BoxGeometry(5 - inset, ch, 26 - inset).translate(PIN.x - inset / 2, y + ch / 2, PIN.z - 13 + inset / 2));
+  }
+  // the parapet round the corner's top
+  for (const [w, d, x, z] of [[26, 0.6, PIN.x - 13, PIN.z + 2.2], [0.6, 26, PIN.x + 2.2, PIN.z - 13]]) parts.push(new THREE.BoxGeometry(w, 1.1, d).translate(x, PIN.y + 0.55, z));
+  const pinnacle = new THREE.Mesh(mergeGeometries(parts.map((g) => { g.deleteAttribute("uv"); return g.toNonIndexed(); })), ashlar);
+  pinnacle.castShadow = pinnacle.receiveShadow = true;
   L.add(pinnacle);
   const pinLight = new THREE.PointLight(0xffc890, 0, 80, 1.3);
   pinLight.position.set(PIN.x + 10, PIN.y + 8, PIN.z + 10);

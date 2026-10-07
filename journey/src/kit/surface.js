@@ -138,7 +138,7 @@ export function surfaceMaterial(key, { tile = 3, tint = [1, 1, 1], roughness = 1
         float surfRough = arm.g;`)
       .replace("#include <roughnessmap_fragment>", "float roughnessFactor = roughness * clamp(surfRough, 0.2, 1.0);")
       .replace("#include <metalnessmap_fragment>", "float metalnessFactor = metalness * max(arm.b, 0.5);")
-      .replace("#include <normal_fragment_maps>", "normal = normalize((viewMatrix * vec4(surfNormal, 0.0)).xyz);");
+      .replace("#include <normal_fragment_maps>", "normal = normalize((viewMatrix * vec4(surfNormal, 0.0)).xyz) * faceDirection; // seen from inside, a wall faces in");
   };
   material.customProgramCacheKey = () => `surface-${key}-${local}`;
   return material;
@@ -170,3 +170,24 @@ export const SURFACES = {
   rock: () => surfaceMaterial("cliff", { tile: 4 }),
   linen: (tint = [0.85, 0.8, 0.7]) => surfaceMaterial("linen", { tile: 0.8, tint, side: THREE.DoubleSide, local: true }),
 };
+
+/**
+ * Turn a closed shape inside out (winding reversed, normals pointing in), for rooms and pits seen from
+ * within. Use with an ordinary front-sided material.
+ */
+export function facingIn(geometry) {
+  const g = geometry.index ? geometry.toNonIndexed() : geometry;
+  for (const name of Object.keys(g.attributes)) {
+    const a = g.attributes[name];
+    for (let i = 0; i < a.count; i += 3) {
+      for (let k = 0; k < a.itemSize; k++) {
+        const t = a.array[(i + 1) * a.itemSize + k];
+        a.array[(i + 1) * a.itemSize + k] = a.array[(i + 2) * a.itemSize + k];
+        a.array[(i + 2) * a.itemSize + k] = t;
+      }
+    }
+  }
+  const n = g.attributes.normal;
+  for (let i = 0; i < n.array.length; i++) n.array[i] = -n.array[i];
+  return g;
+}

@@ -12,7 +12,7 @@ import { placers } from "../kit/vegetation.js";
 import { createTrees } from "../kit/vegetation.js";
 import { jerusalemHeight } from "./david.js";
 import { MATERIALS } from "../kit/structures.js";
-import { SURFACES } from "../kit/surface.js";
+import { SURFACES, facingIn } from "../kit/surface.js";
 import { mergeGeometries } from "three/examples/jsm/utils/BufferGeometryUtils.js";
 
 const HOUSE = new THREE.Vector3(-400, 0, 400);
@@ -47,8 +47,7 @@ export function create(ctx) {
   L.add(cloud);
   // the house: a room full of people (about a hundred and twenty, Acts 1:15)
   const plaster = SURFACES.mudDark();
-  plaster.side = THREE.BackSide;
-  const room = new THREE.Mesh(new THREE.BoxGeometry(22, 6, 18), plaster);
+  const room = new THREE.Mesh(facingIn(new THREE.BoxGeometry(22, 6, 18)), plaster);
   room.position.copy(HOUSE).setY(HY + 3);
   L.add(room);
   const beams = [];

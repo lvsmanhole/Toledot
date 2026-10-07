@@ -10,7 +10,7 @@ import { weather } from "../kit/effects.js";
 import { ANIMALS, crowd, figure } from "../kit/figures.js";
 import { createLandscape } from "../kit/landscape.js";
 import { MATERIALS, city, crosses, tomb, wall } from "../kit/structures.js";
-import { SURFACES } from "../kit/surface.js";
+import { SURFACES, facingIn } from "../kit/surface.js";
 import { mergeGeometries } from "three/examples/jsm/utils/BufferGeometryUtils.js";
 import { lightShaft } from "../kit/effects.js";
 import { createTrees, placers } from "../kit/vegetation.js";
@@ -74,8 +74,7 @@ export function create(ctx) {
   room.position.copy(ROOM).setY(RY);
   // "a large upper room furnished" (Mark 14:15): plastered walls, a floor of beaten plaster, roof beams
   const plaster = SURFACES.mudDark();
-  plaster.side = THREE.BackSide;
-  const walls = new THREE.Mesh(new THREE.BoxGeometry(14, 4.2, 10), plaster);
+  const walls = new THREE.Mesh(facingIn(new THREE.BoxGeometry(14, 4.2, 10)), plaster);
   walls.position.y = 2.1;
   room.add(walls);
   const beams = [];
