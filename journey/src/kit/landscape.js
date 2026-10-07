@@ -29,7 +29,19 @@ export function createLandscape(ctx, options) {
   if (water) scene.add(water.mesh);
   if (terrain && options.rocks !== false) {
     const hgt = terrain.height;
-    const keep = options.keepClear ?? [[0, 0, 30]];
+    const keep = [...(options.keepClear ?? [[0, 0, 30]])];
+    // nothing scattered where the camera flies low: sample the path between its keyframes
+    const keys = options.camera ?? [];
+    for (let k = 0; k + 1 < keys.length; k++) {
+      const [ax, ay, az] = keys[k][1];
+      const [bx, by, bz] = keys[k + 1][1];
+      const n = Math.max(1, Math.ceil(Math.hypot(bx - ax, bz - az) / 6));
+      for (let s = 0; s <= n; s++) {
+        const f = s / n;
+        const y = ay + (by - ay) * f;
+        if (y < 40) keep.push([ax + (bx - ax) * f, az + (bz - az) * f, 9]);
+      }
+    }
     const span = (options.terrain.size ?? 700) * 0.45;
     const c = options.terrain.center ?? [0, 0];
     const place = (r) => {

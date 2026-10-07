@@ -35,7 +35,7 @@ export function egyptSet(ctx, L, h) {
   const stores = granaries({ rows: 4, cols: 9 });
   stores.position.set(-60, h(-60, 60), 60);
   L.add(stores);
-  const palace = colonnade({ count: 10, spacing: 5, height: 14, radius: 1.1, rows: 2, rowGap: 14 });
+  const palace = colonnade({ count: 10, spacing: 5, height: 14, radius: 1.1, rows: 2, rowGap: 14, style: "egypt" });
   palace.position.set(-20, h(-20, 140), 140);
   L.add(palace);
   return { palace, stores, temple };

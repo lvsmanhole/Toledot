@@ -107,7 +107,7 @@ export function create(ctx) {
   });
   const h = L.height;
   // the camp on the western shore and Egypt's torches behind it
-  const camp = tents({ count: 160, radius: 70, inner: 4, height: h, seed: 23 });
+  const camp = tents({ count: 160, radius: 70, inner: 4, height: (x, z) => h(x, z + 90), seed: 23 });
   camp.position.set(0, 0, 90);
   L.add(camp);
   const people = crowd({ count: ctx.quality === "low" ? 400 : 900, place: placers.box(-60, 40, 60, 110), height: h, seed: 21, face: [0, -200] });

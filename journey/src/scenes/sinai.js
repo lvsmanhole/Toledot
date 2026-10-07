@@ -43,7 +43,7 @@ export function create(ctx) {
   });
   const h = L.height;
   // the camp below the mountain
-  const camp = tents({ count: ctx.quality === "low" ? 300 : 700, radius: 110, inner: 24, height: h, seed: 31 });
+  const camp = tents({ count: ctx.quality === "low" ? 300 : 700, radius: 110, inner: 24, height: (x, z) => h(x, z + 70), seed: 31 });
   camp.position.set(0, 0, 70);
   L.add(camp);
   const people = crowd({ count: ctx.quality === "low" ? 300 : 700, place: placers.box(-80, 20, 80, 50), height: h, seed: 33, face: [0, -240] });

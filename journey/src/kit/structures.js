@@ -252,20 +252,50 @@ export function pyramid({ base = 60, height = 40, material = "limestone" }) {
 }
 
 /** Row(s) of columns with an architrave. */
-export function colonnade({ count = 8, spacing = 4, height = 12, radius = 0.9, rows = 2, rowGap = 8, material = "sandstone", roof = true }) {
+export function colonnade({ count = 8, spacing = 4, height = 12, radius = 0.9, rows = 2, rowGap = 8, material = "sandstone", roof = true, style = "classic" }) {
+  // one column, lathed from a profile in units of the radius (y from 0 at the foot to 1 at the top), then
+  // shaped around: an Egyptian column is a bundle of papyrus stems bound under an open papyrus capital; the
+  // others stand on a moulded base, taper slightly, and carry a capital and a square abacus
+  const egypt = style === "egypt";
+  const profile = egypt
+    ? [[0, 0], [1.25, 0], [1.25, 0.03], [1.0, 0.04], [1.12, 0.09], [1.05, 0.2], [0.92, 0.72], [0.9, 0.76], [0.98, 0.765], [0.98, 0.79], [0.88, 0.8], [0.95, 0.85], [1.35, 0.95], [1.55, 0.97], [0, 0.97]]
+    : [[0, 0], [1.35, 0], [1.35, 0.025], [1.2, 0.035], [1.22, 0.05], [1.05, 0.06], [1.0, 0.08], [0.88, 0.9], [0.95, 0.91], [1.25, 0.95], [1.25, 0.97], [0, 0.97]];
+  const lobes = egypt ? 8 : 20;
+  const column = new THREE.LatheGeometry(profile.map(([r, y]) => new THREE.Vector2(r * radius, y * height)), egypt ? 48 : 40);
+  const cp = column.attributes.position;
+  for (let i = 0; i < cp.count; i++) {
+    const y = cp.getY(i) / height;
+    const a = Math.atan2(cp.getZ(i), cp.getX(i));
+    const shaft = y > 0.08 && y < 0.9;
+    // papyrus stems bulge as rounded lobes; classical shafts are cut with shallow flutes
+    const k = shaft ? (egypt ? 1 + 0.07 * Math.abs(Math.cos(a * lobes / 2)) : 1 - 0.025 * Math.pow(Math.abs(Math.sin(a * lobes / 2)), 0.5)) : 1;
+    cp.setX(i, cp.getX(i) * k);
+    cp.setZ(i, cp.getZ(i) * k);
+  }
+  column.computeVertexNormals();
+  const abacus = new THREE.BoxGeometry(radius * (egypt ? 2.4 : 2.7), height * 0.03, radius * (egypt ? 2.4 : 2.7)).translate(0, height * 0.985, 0);
+  const one = mergeGeometries([column.toNonIndexed(), abacus.toNonIndexed()].map((g) => { g.deleteAttribute("uv"); return g; }));
   const geos = [];
   for (let r = 0; r < rows; r++) {
-    for (let i = 0; i < count; i++) {
-      const c = new THREE.CylinderGeometry(radius * 0.92, radius, height, 16);
-      c.translate((i - (count - 1) / 2) * spacing, height / 2, (r - (rows - 1) / 2) * rowGap);
-      geos.push(c);
-      const cap = new THREE.CylinderGeometry(radius * 1.5, radius * 1.0, 1, 16);
-      cap.translate((i - (count - 1) / 2) * spacing, height + 0.5, (r - (rows - 1) / 2) * rowGap);
-      geos.push(cap);
+    for (let i = 0; i < count; i++) geos.push(one.clone().translate((i - (count - 1) / 2) * spacing, 0, (r - (rows - 1) / 2) * rowGap));
+    if (roof) {
+      // the architrave, and over it a cornice (Egyptian: the cavetto gorge)
+      const arch = box(count * spacing, 1.4, radius * 3, 0, height + 0.0, (r - (rows - 1) / 2) * rowGap);
+      const corn = box(count * spacing + 0.6, 0.6, radius * 3.6, 0, height + 1.4, (r - (rows - 1) / 2) * rowGap);
+      for (const g of [arch, corn]) { g.deleteAttribute("uv"); geos.push(g.toNonIndexed()); }
     }
-    if (roof) geos.push(box(count * spacing, 1.4, radius * 3, 0, height + 1, (r - (rows - 1) / 2) * rowGap));
   }
-  return new THREE.Group().add(new THREE.Mesh(mergeGeometries(geos), MATERIALS[material]()));
+  // a stepped platform under the colonnade, so no column foot is lost in the ground
+  const W = count * spacing + spacing;
+  const D = (rows - 1) * rowGap + spacing * 1.6;
+  for (let k = 0; k < 3; k++) {
+    const g = box(W + (2 - k) * 1.6, 0.5, D + (2 - k) * 1.6, 0, -1.5 + k * 0.5, 0);
+    g.deleteAttribute("uv");
+    geos.push(g.toNonIndexed());
+  }
+  const mesh = new THREE.Mesh(mergeGeometries(geos), MATERIALS[material]());
+  mesh.castShadow = mesh.receiveShadow = true;
+  return new THREE.Group().add(mesh);
 }
 
 /** Egyptian pylon gateway. */
@@ -306,7 +336,7 @@ export function granaries({ rows = 4, cols = 8, spacing = 6, radius = 2.3 }) {
 }
 
 /** Tents of an encampment, scattered inside radius (or rings around a centre). */
-export function tents({ count = 60, radius = 40, inner = 0, height = (x, z) => 0, seed = 6, colors = [0x2a231d, 0x3a2f26, 0x1f1a16] }) {
+export function tents({ count = 60, radius = 40, inner = 0, height = (x, z) => 0, seed = 6, colors = [0x3a3029, 0x4a3d32, 0x2e2722] }) {
   // tents of black goats' hair: a long low roof stretched over a row of poles, sagging between them,
   // the back and sides pegged down to the ground and the front left open in the shade
   const random = rng(seed);
@@ -323,8 +353,8 @@ export function tents({ count = 60, radius = 40, inner = 0, height = (x, z) => 0
     const roof = new THREE.PlaneGeometry(W, D, 18, 8);
     const p = roof.attributes.position;
     for (let k = 0; k < p.count; k++) {
-      const u = p.getX(k) / W + 0.5;
-      const v = p.getY(k) / D + 0.5; // 0 at the back, 1 at the open front
+      const u = THREE.MathUtils.clamp(p.getX(k) / W + 0.5, 0, 1);
+      const v = THREE.MathUtils.clamp(p.getY(k) / D + 0.5, 0, 1); // 0 at the back, 1 at the open front
       const ridge = 1.9 * s;
       const prof = v < 0.55 ? THREE.MathUtils.lerp(0.15, ridge, Math.pow(v / 0.55, 0.7)) : THREE.MathUtils.lerp(ridge, 1.5 * s, (v - 0.55) / 0.45);
       const sag = Math.abs(Math.sin(u * Math.PI * (poles - 1))) * 0.28 * s * Math.sin(v * Math.PI);
