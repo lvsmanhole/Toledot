@@ -507,8 +507,13 @@ export function tabernacle() {
   }
   tentG.computeVertexNormals();
   tentG.translate(-L / 4, 1.65, 0);
-  const tent = new THREE.Mesh(tentG, MATERIALS.cloth(0x2c1f1a));
+  // one material per face, so a scene can open the near wall and look in (face order +x -x +y -y +z -z)
+  const hair = MATERIALS.cloth(0x2c1f1a);
+  const nearWall = MATERIALS.cloth(0x2c1f1a);
+  const floorFace = new THREE.MeshBasicMaterial({ visible: false });
+  const tent = new THREE.Mesh(tentG, [hair, hair, hair, floorFace, nearWall, hair]);
   tent.castShadow = true;
+  tent.userData.nearWall = nearWall;
   group.add(tent);
   group.add(new THREE.Mesh(gate, MATERIALS.cloth(0x3a2a6a)));
   const altarB = new THREE.Mesh(box(1.6, 1, 1.6, L / 6, 0, 0), bronze);
@@ -533,9 +538,9 @@ function veilTexture() {
   for (let y = 0; y < c.height; y += 2) { g.fillStyle = `rgba(0,0,0,${0.05 + 0.05 * Math.random()})`; g.fillRect(0, y, c.width, 1); }
   for (let x = 0; x < c.width; x += 3) { g.fillStyle = `rgba(255,255,255,${0.02 + 0.03 * Math.random()})`; g.fillRect(x, 0, 1, c.height); }
   // cherubim with outstretched wings, in rows
-  g.strokeStyle = "rgba(226,190,110,0.85)";
-  g.fillStyle = "rgba(226,190,110,0.35)";
-  g.lineWidth = 3;
+  g.strokeStyle = "rgba(210,172,96,0.6)";
+  g.fillStyle = "rgba(210,172,96,0.16)";
+  g.lineWidth = 2;
   for (let row = 0; row < 4; row++) {
     for (let col = 0; col < 2; col++) {
       const cx = 128 + col * 256;
@@ -611,7 +616,8 @@ function carvingTexture() {
   for (let x = 32; x < c.width; x += 64) { flower(x, 40); flower(x, 482); }
   const tex = new THREE.CanvasTexture(c);
   tex.wrapS = tex.wrapT = THREE.RepeatWrapping;
-  tex.repeat.set(4, 1);
+  tex.repeat.set(4, 2);
+  tex.anisotropy = 8;
   return tex;
 }
 
@@ -676,7 +682,7 @@ export function solomonTemple() {
   // the walls of the house lined with cedar overlaid with gold, carved with cherubim, palm trees and
   // open flowers (1 Kings 6:15-22, 29); the floor of fir overlaid with gold (6:30)
   const relief = carvingTexture();
-  const lining = new THREE.MeshStandardMaterial({ color: 0xc89838, metalness: 1, roughness: 0.48, bumpMap: relief, bumpScale: 3, map: relief, envMapIntensity: 0.35 });
+  const lining = new THREE.MeshStandardMaterial({ color: 0xb08430, metalness: 0.7, roughness: 0.62, bumpMap: relief, bumpScale: 1.2, map: relief, envMapIntensity: 0.25 });
   const liningGeos = [];
   for (const z of [-4.98, 4.98]) liningGeos.push(new THREE.PlaneGeometry(29, 14.5).rotateY(z < 0 ? 0 : Math.PI).translate(0, 7.25, z));
   const lin = mergeGeometries(liningGeos);

@@ -21,6 +21,7 @@ export function create(ctx) {
   const L = createLandscape(ctx, {
     terrain: { height, palette: "judea", size: 1300 },
     sky: (rel) => (rel < 22 ? "golden" : rel < 27 ? [[1, "sacred"]] : rel < 32 ? "desert" : [[1 - sramp(rel, 32, 35), "golden"], [sramp(rel, 32, 35), "ash"]]),
+    indoor: (rel) => pulse(rel, 10, 12, 21.5, 22.5) * 0.85,
     camera: [
       [0, [-160, 70, 160], [0, 30, 0], 44],
       [5, [80, 40, 40], [20, 32, 0], 44],

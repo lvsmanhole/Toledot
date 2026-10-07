@@ -30,7 +30,8 @@ export function create(ctx) {
       [5.8, [HOUSE.x + 9, HY + 3.4, HOUSE.z + 7], [HOUSE.x, HY + 1.6, HOUSE.z], 52],
       [16, [HOUSE.x + 6, HY + 2.8, HOUSE.z + 4], [HOUSE.x, HY + 2, HOUSE.z], 46],
     ],
-    grade: (rel) => ({ bloom: 0.2 + 0.15 * pulse(rel, 10.5, 12, 15, 16), threshold: 0.9, exposure: rel > 5.7 ? 0.7 : 1 }),
+    indoor: (rel) => sramp(rel, 5.6, 5.8),
+    grade: (rel) => ({ bloom: 0.2 + 0.15 * pulse(rel, 10.5, 12, 15, 16), threshold: 0.9, exposure: 1 }),
     audio: (rel) => ({ wind: 0.2 + 0.8 * pulse(rel, 6, 7, 11, 13), drone: 0.25, shimmer: 0.3 + 0.4 * pulse(rel, 10.5, 12, 15, 16), fire: 0.3 * pulse(rel, 10.5, 11.5, 15, 16) }),
   });
   const h = L.height;
@@ -75,7 +76,7 @@ export function create(ctx) {
     cloud.material.uniforms.uTime.value = time;
     disciples.group.visible = rel < 5.6;
     fireTongues.set(sramp(rel, 10.5, 12), time);
-    roomLight.intensity = 1.5 + 4 * sramp(rel, 10.5, 12);
+    roomLight.intensity = 6 + 14 * sramp(rel, 10.5, 12);
     wind.update({ time, pixelRatio, amount: pulse(rel, 6, 7, 11, 13), center: HOUSE.clone().setY(HY + 1), wind: [2.5, 0.8] });
   });
   return L;

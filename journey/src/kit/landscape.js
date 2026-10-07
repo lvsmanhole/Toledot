@@ -100,6 +100,14 @@ export function createLandscape(ctx, options) {
       const preset = blendPresets(options.sky ? options.sky(rel) : "morning");
       const lightning = options.lightning ? options.lightning(rel) : 0;
       const flash = atmosphere.set(preset, { time, pixelRatio, lightning, camera });
+      // indoors (options.indoor(rel) 0..1) the sky's light comes in only by door and window: dim the
+      // photographed environment, the sun and the sky fill
+      const indoor = options.indoor ? options.indoor(rel) : 0;
+      if (indoor > 0) {
+        scene.environmentIntensity *= 1 - 0.85 * indoor;
+        atmosphere.sun.intensity *= 1 - 0.9 * indoor;
+        atmosphere.hemi.intensity *= 1 - 0.8 * indoor;
+      }
       const wind = options.wind ? options.wind(rel) : 0.3;
       if (water) water.update({ time, fog: atmosphere.fog, sunDir: atmosphere.sunDir });
       if (!shaderMats) {

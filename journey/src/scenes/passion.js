@@ -35,6 +35,7 @@ export function create(ctx) {
       return [[1, "storm"]];
     },
     lightning: (rel) => 0.6 * pulse(rel, 22, 23, 25, 26) + 0.7 * pulse(rel, 31.5, 32.5, 37, 39),
+    indoor: (rel) => pulse(rel, 5.6, 5.7, 9.7, 9.8),
     camera: [
       [0, [180, 14, 30], [100, 10, 0], 44],
       [5.5, [60, 8, 12], [30, 6, 0], 44],

@@ -46,7 +46,7 @@ export function create(ctx) {
     ],
     grade: (rel) => {
       const dark = pulse(rel, 26, 26.8, 30.4, 31);
-      return { exposure: 1 - 0.75 * dark - 0.3 * sramp(rel, 31, 34), saturation: 1 - 0.3 * pulse(rel, 17.5, 18.5, 26, 27), bloom: 0.3 + 0.6 * sramp(rel, 26, 28), threshold: 0.5 };
+      return { exposure: 1 - 0.75 * dark - 0.3 * sramp(rel, 31, 34), saturation: 1 - 0.3 * pulse(rel, 17.5, 18.5, 26, 27), bloom: 0.2 + 0.4 * sramp(rel, 26, 28), threshold: rel > 26 ? 0.6 : 0.88 };
     },
     audio: (rel) => ({
       drone: 0.35 + 0.35 * sramp(rel, 26, 28), water: 0.35 * (1 - sramp(rel, 26, 27)), wind: 0.2 + 0.6 * pulse(rel, 20, 21, 26, 27),

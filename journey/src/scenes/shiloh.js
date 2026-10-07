@@ -16,6 +16,7 @@ export function create(ctx) {
   const L = createLandscape(ctx, {
     terrain: { height, palette: "judea", size: 900 },
     sky: () => "night",
+    indoor: (rel) => sramp(rel, 3.5, 5),
     camera: [[0, [40, 14, 50], [0, 2, 0], 42], [5, [-2, 2.6, 6], [-7.5, 2, 0], 52], [10, [-4, 2.2, 3], [-7.5, 1.5, 0], 56]],
     grade: () => ({ bloom: 0.35, threshold: 0.75 }),
     audio: (rel) => ({ drone: 0.3, shimmer: 0.4 * pulse(rel, 5, 6, 8.5, 9.5), wind: 0.12 }),
@@ -30,7 +31,7 @@ export function create(ctx) {
   const lamp = flame({ width: 0.25, height: 0.5, gain: 1.4, seed: 2 });
   lamp.position.set(-6, ground + 1.3, 0.6);
   L.add(lamp);
-  const lampGlow = glowSprite(0xffc070, 3, 0.6);
+  const lampGlow = glowSprite(0xffc070, 1.1, 0.6);
   lampGlow.position.set(-6, ground + 1.5, 0.6);
   L.add(lampGlow);
   const light = new THREE.PointLight(0xffb060, 6, 14, 1.6);
@@ -49,7 +50,7 @@ export function create(ctx) {
     const rise = sramp(rel, 6, 7);
     samuel.rotation.z = (Math.PI / 2) * (1 - rise);
     samuel.position.y = ground + 0.2 * (1 - rise);
-    tent.children[2].visible = rel < 3.5; // the dark covering opens as we go in
+    tent.children[2].userData.nearWall.visible = rel < 3.5; // the near curtain opens as we go in
   });
   return L;
 }
