@@ -14,7 +14,14 @@ from .site import write_site_bundle
 from .validation import validate_dataset
 
 
-PROJECT_ROOT = Path(__file__).resolve().parents[2]
+def _project_root() -> Path:
+    """The repository root: beside the source tree when run from it, else the current directory (as when
+    the package is installed into site-packages, e.g. on a build server, and run from the repository)."""
+    source = Path(__file__).resolve().parents[2]
+    return source if (source / "schemas").is_dir() else Path.cwd()
+
+
+PROJECT_ROOT = _project_root()
 
 
 def _parser() -> argparse.ArgumentParser:
