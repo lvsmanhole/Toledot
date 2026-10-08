@@ -9,7 +9,6 @@ import json
 import os
 from pathlib import Path
 import shutil
-import sqlite3
 import tempfile
 from types import MappingProxyType
 from typing import Any
@@ -111,6 +110,10 @@ def _create_sqlite(
     families: Mapping[str, list[Any]],
     resolution: ResolutionResult,
 ) -> None:
+    # imported here, not at module load: some Python builds (Cloudflare's) lack _sqlite3, and the site
+    # bundle never needs it
+    import sqlite3
+
     with sqlite3.connect(path) as connection:
         connection.execute("PRAGMA page_size = 4096")
         connection.execute("PRAGMA journal_mode = OFF")
@@ -352,6 +355,8 @@ def publish_artifacts(
         json.loads((temporary_dir / "dataset.json").read_text(encoding="utf-8"))
         json.loads((temporary_dir / "timeline.json").read_text(encoding="utf-8"))
         json.loads((temporary_dir / "manifest.json").read_text(encoding="utf-8"))
+        import sqlite3
+
         connection = sqlite3.connect(temporary_dir / "timeline.sqlite3")
         try:
             if connection.execute("PRAGMA integrity_check").fetchone()[0] != "ok":
