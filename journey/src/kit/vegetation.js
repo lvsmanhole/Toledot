@@ -7,6 +7,13 @@ import { fbm2, rng } from "../engine/noise.js";
 import { modelParts } from "./library.js";
 import { SURFACES } from "./surface.js";
 
+/** Phones and tablets load the half-size leaf atlas. */
+let mobileLeaves = false;
+const leafSuffix = () => (mobileLeaves ? "_m" : "");
+export function useMobileLeaves(on) {
+  mobileLeaves = on;
+}
+
 /** Overall daylight 0..1 for unlit vegetation; set each frame by the landscape from the sky preset. */
 export const skyLight = { value: 1 };
 
@@ -286,7 +293,7 @@ function foliageTexture(key) {
       resolve(tex);
     };
     img.onerror = () => resolve(null);
-    img.src = new URL(`lib/tex/${key}_leaves.webp`, document.baseURI).href;
+    img.src = new URL(`lib/tex/${key}_leaves${leafSuffix()}.webp`, document.baseURI).href;
   });
   foliageCache.set(key, p);
   return p;

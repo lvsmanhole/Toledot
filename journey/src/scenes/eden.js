@@ -1190,6 +1190,7 @@ function pathParam(u) {
 
 export function createEden(ctx) {
   const low = ctx.quality === "low";
+  const phone = Boolean(ctx.mobile); // phones and tablets: lighter build, so the page doesn't stall
   const random = rng(101);
   const scene = new THREE.Scene();
   const camera = new THREE.PerspectiveCamera(50, 1, 0.1, 3000);
@@ -1214,13 +1215,13 @@ export function createEden(ctx) {
   const avoid = (x, z, h) => pathPts.some((p) => Math.hypot(p.x - x, p.z - z) < 16 && p.y - h < 22);
 
   const shared = { uTime: { value: 0 }, uWind: { value: 0.3 } };
-  const terrain = createTerrain(low ? 180 : 300, ctx.quality);
+  const terrain = createTerrain(phone ? 140 : low ? 180 : 300, ctx.quality);
   const heads = createHeads(low);
   const mistSea = createMistSea();
-  const jewels = createJewels(low, rng(55));
+  const jewels = createJewels(low || phone, rng(55));
   const stonesOfFire = createStonesOfFire();
   const water = createWater();
-  const grass = createGrass(low ? 30000 : 120000, random);
+  const grass = createGrass(phone ? 14000 : low ? 30000 : 120000, random);
   const forest = new THREE.Group();
   // "every tree that is pleasant to the sight, and good for food" (Genesis 2:9): the scanned trees in
   // several kinds and tints over the whole mountain top

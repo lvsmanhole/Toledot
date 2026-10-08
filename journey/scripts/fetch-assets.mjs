@@ -100,22 +100,30 @@ function shrink({ W, H, rgb }, f) {
 async function packSky(key) {
   const sky = join(OUT, "hdri", `${key}_sky.webp`);
   const env = join(OUT, "hdri", `${key}_env.hdr`);
-  if (existsSync(sky) && existsSync(env)) return;
+  const skyM = join(OUT, "hdri", `${key}_sky_m.webp`);
+  if (existsSync(sky) && existsSync(env) && existsSync(skyM)) return;
   mkdirSync(join(OUT, "hdri"), { recursive: true });
   const img = readHDR(join(CACHE, "hdri", `${key}.hdr`));
   const px = Buffer.alloc(img.W * img.H * 3);
   for (let i = 0; i < px.length; i++) { const l = img.rgb[i]; px[i] = Math.round(Math.sqrt(l / (1 + l)) * 255); }
   // near-lossless: an ordinary lossy encode shows its blocks once the sky is magnified on the dome
-  await sharp(px, { raw: { width: img.W, height: img.H, channels: 3 } }).webp({ nearLossless: true, quality: 60 }).toFile(sky);
+  const raw = { raw: { width: img.W, height: img.H, channels: 3 } };
+  await sharp(px, raw).webp({ nearLossless: true, quality: 60 }).toFile(sky);
+  // phones and tablets: half the width (a quarter of the memory)
+  await sharp(px, raw).resize(img.W / 2, img.H / 2).webp({ nearLossless: true, quality: 60 }).toFile(skyM);
   writeHDR(env, shrink(img, img.W / 512));
 }
 
 async function packTexture(name, map) {
   const dst = join(OUT, "tex", `${name}.webp`);
-  if (existsSync(dst)) return;
+  const dstM = join(OUT, "tex", `${name}_m.webp`);
+  if (existsSync(dst) && existsSync(dstM)) return;
   mkdirSync(join(OUT, "tex"), { recursive: true });
   // colour takes ordinary lossy compression; normal and ARM maps are data, kept at higher quality
-  await sharp(join(CACHE, "tex", `${name}.jpg`)).webp({ quality: map === "diff" ? 82 : 90 }).toFile(dst);
+  const q = { quality: map === "diff" ? 82 : 90 };
+  await sharp(join(CACHE, "tex", `${name}.jpg`)).webp(q).toFile(dst);
+  // phones and tablets: 512 px (a quarter of the graphics memory)
+  await sharp(join(CACHE, "tex", `${name}.jpg`)).resize(512, 512).webp(q).toFile(dstM);
 }
 
 let fetched = 0;
@@ -140,8 +148,9 @@ for (const [key, { id, res = "1k" }] of Object.entries(TEXTURES)) {
 }
 for (const [key, { id, res = "1k", ratio = 0.05, error = 0.01 }] of Object.entries(MODELS)) {
   const out = join(OUT, "models", `${key}.glb`);
+  const outM = join(OUT, "models-m", `${key}.glb`);
   credits.push(id);
-  if (existsSync(out)) continue;
+  if (existsSync(out) && existsSync(outM)) continue;
   const files = await json(API + id);
   const g = files.gltf[res].gltf;
   // the .gltf plus its .bin and textures, kept in the relative layout the .gltf expects
@@ -149,9 +158,13 @@ for (const [key, { id, res = "1k", ratio = 0.05, error = 0.01 }] of Object.entri
   await download(g.url, src);
   for (const [rel, inc] of Object.entries(g.include ?? {})) await download(inc.url, join(CACHE, key, rel));
   // scans are millions of triangles: simplify, quantize and compress for the browser
-  mkdirSync(dirname(out), { recursive: true });
-  execFileSync(process.execPath, [join(ROOT, "node_modules", "@gltf-transform", "cli", "bin", "cli.js"), "optimize", src, out,
-    "--simplify-ratio", String(ratio), "--simplify-error", String(error), "--compress", "meshopt", "--texture-compress", "webp", "--texture-size", "1024"], { stdio: "inherit" });
+  // (the same model with 512 px textures for phones and tablets)
+  for (const [file, size] of [[out, "1024"], [outM, "512"]]) {
+    if (existsSync(file)) continue;
+    mkdirSync(dirname(file), { recursive: true });
+    execFileSync(process.execPath, [join(ROOT, "node_modules", "@gltf-transform", "cli", "bin", "cli.js"), "optimize", src, file,
+      "--simplify-ratio", String(ratio), "--simplify-error", String(error), "--compress", "meshopt", "--texture-compress", "webp", "--texture-size", size], { stdio: "inherit" });
+  }
   fetched++;
 }
 // the trees' photographed leaf atlases, for foliage cards (the scans' own leaf geometry is too heavy)
@@ -160,6 +173,8 @@ for (const [key, { id, leaves }] of Object.entries(MODELS)) {
   const src = join(CACHE, key, "textures", `${id}_leaves_diff_1k.jpg`);
   const dst = join(OUT, "tex", `${key}_leaves.webp`);
   if (existsSync(src) && !existsSync(dst)) await sharp(src).webp({ quality: 88 }).toFile(dst);
+  const dstM = join(OUT, "tex", `${key}_leaves_m.webp`);
+  if (existsSync(src) && !existsSync(dstM)) await sharp(src).resize(512, 512).webp({ quality: 88 }).toFile(dstM);
 }
 writeFileSync(join(OUT, "CREDITS.txt"), `Assets from Poly Haven (https://polyhaven.com), CC0 1.0 Universal.\n${credits.map((c) => `- ${c}`).join("\n")}\n`);
 console.log(`assets ready in ${OUT} (${fetched} files downloaded)`);

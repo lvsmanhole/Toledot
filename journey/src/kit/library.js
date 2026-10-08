@@ -15,6 +15,50 @@ gltfLoader.setMeshoptDecoder(MeshoptDecoder);
 
 let renderer = null;
 let pmrem = null;
+let mobile = false; // phones and tablets: half-size textures, skies and model textures
+const M = () => (mobile ? "_m" : "");
+// which scenes asked for each asset, so a scene's assets can be freed when it unloads
+let owner = null;
+const owners = new Map(); // asset id -> Set of scene owners
+function own(id) {
+  if (owner === null) return;
+  if (!owners.has(id)) owners.set(id, new Set());
+  owners.get(id).add(owner);
+}
+
+/** The scene being built (assets requested now belong to it), or null. */
+export function setOwner(id) {
+  owner = id;
+}
+
+/**
+ * Free the graphics memory of assets only the given scene used (textures and models). They stay in
+ * the cache and are uploaded again if a later scene asks for them.
+ */
+export function release(id) {
+  for (const [key, set] of owners) {
+    set.delete(id);
+    if (set.size) continue;
+    owners.delete(key);
+    if (textures.has(key)) textures.get(key).dispose();
+    if (key.startsWith("model:")) {
+      const name = key.slice(6);
+      const p = models.get(name);
+      models.delete(name);
+      p?.then((root) => root.traverse((o) => {
+        if (!o.isMesh) return;
+        o.geometry.dispose();
+        for (const v of Object.values(o.material)) if (v && v.isTexture) v.dispose();
+        o.material.dispose();
+      })).catch(() => {});
+    }
+  }
+}
+
+/** Phones and tablets get the half-size variants of every image. */
+export function useMobileAssets(on) {
+  mobile = on;
+}
 const textures = new Map();
 const hdris = new Map();
 const models = new Map();
@@ -40,6 +84,7 @@ export function settled(timeout = 15000) {
 /** One map of a texture set: key from the manifest, map in diff | nor | arm. */
 export function texture(key, map) {
   const id = `${key}_${map}`;
+  own(id);
   if (textures.has(id)) return textures.get(id);
   const t = new THREE.Texture();
   t.wrapS = t.wrapT = THREE.RepeatWrapping;
@@ -47,7 +92,7 @@ export function texture(key, map) {
   t.anisotropy = renderer ? Math.min(8, renderer.capabilities.getMaxAnisotropy()) : 4;
   textures.set(id, t);
   track(new Promise((resolve) => {
-    texLoader.load(new URL(`tex/${id}.webp`, BASE).href, (img) => {
+    texLoader.load(new URL(`tex/${id}${M()}.webp`, BASE).href, (img) => {
       t.image = img.image;
       t.needsUpdate = true;
       resolve(t);
@@ -70,7 +115,7 @@ export function hdri(key) {
   if (hdris.has(key)) return hdris.get(key);
   const p = track(new Promise((resolve, reject) => {
     hdrLoader.setDataType(THREE.HalfFloatType);
-    const sky = new Promise((ok) => texLoader.load(new URL(`hdri/${key}_sky.webp`, BASE).href, (t) => { t.colorSpace = THREE.NoColorSpace; t.mapping = THREE.EquirectangularReflectionMapping; t.anisotropy = 4; ok(t); }, undefined, () => ok(null)));
+    const sky = new Promise((ok) => texLoader.load(new URL(`hdri/${key}_sky${M()}.webp`, BASE).href, (t) => { t.colorSpace = THREE.NoColorSpace; t.mapping = THREE.EquirectangularReflectionMapping; t.anisotropy = 4; ok(t); }, undefined, () => ok(null)));
     hdrLoader.load(new URL(`hdri/${key}_env.hdr`, BASE).href, (tex) => {
       tex.mapping = THREE.EquirectangularReflectionMapping;
       tex.colorSpace = THREE.LinearSRGBColorSpace;
@@ -108,9 +153,10 @@ export function hdri(key) {
 
 /** A scanned model: resolves to the loaded glTF scene (clone it, or use its geometries directly). */
 export function model(key) {
+  own(`model:${key}`);
   if (models.has(key)) return models.get(key);
   const p = track(new Promise((resolve, reject) => {
-    gltfLoader.load(new URL(`models/${key}.glb`, BASE).href, (gltf) => {
+    gltfLoader.load(new URL(`${mobile ? "models-m" : "models"}/${key}.glb`, BASE).href, (gltf) => {
       gltf.scene.traverse((o) => {
         if (!o.isMesh) return;
         const m = o.material;

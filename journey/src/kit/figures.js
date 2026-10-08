@@ -207,7 +207,7 @@ export function personMaterial({ robe = null, walk = 0 } = {}) {
         diffuseColor.rgb = col;`)
       .replace("#include <roughnessmap_fragment>", "float roughnessFactor = pid == 1.0 ? 0.6 : roughness;");
   };
-  material.customProgramCacheKey = () => `person-${robe ?? "x"}`;
+  material.customProgramCacheKey = () => "person"; // the robe colour is a uniform: one program for every crowd
   return material;
 }
 

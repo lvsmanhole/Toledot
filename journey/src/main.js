@@ -8,9 +8,9 @@ import { Ambience } from "./audio.js";
 import { Chronicle } from "./chronicle.js";
 import { createPost } from "./engine/post.js";
 import { disposeScene } from "./kit/common.js";
-import { initLibrary, settled } from "./kit/library.js";
+import { initLibrary, release, setOwner, settled, useMobileAssets } from "./kit/library.js";
 import { peopleClock } from "./kit/figures.js";
-import { setTreeBudget } from "./kit/vegetation.js";
+import { setTreeBudget, useMobileLeaves } from "./kit/vegetation.js";
 import { MODULES } from "./scenes/index.js";
 import { ACTS, CAPTIONS, LENGTH, SCENES, UNIT_VH, envelope, locate, yearAt } from "./story.js";
 import "./style.css";
@@ -20,7 +20,7 @@ const params = new URLSearchParams(location.search);
 const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
 const coarse = window.matchMedia("(pointer: coarse)").matches;
 // phones and tablets (iPadOS reports itself as a Mac, so touch points are checked too)
-const mobile = coarse || navigator.maxTouchPoints > 1;
+const mobile = params.has("m") ? params.get("m") === "1" : coarse || navigator.maxTouchPoints > 1; // ?m=1 / ?m=0 to test
 // portrait screens (phones, tablets held upright): every perspective camera widens its view so the scene is
 // not a narrow slice. Done in the projection itself, so map labels projected through the camera agree.
 {
@@ -129,11 +129,32 @@ function fallback(reason) {
 const story = { u: 0, time: 0 };
 
 // ---------------------------------------------------------------- scene manager
-const ctx = { quality };
+const ctx = { quality, mobile };
+useMobileAssets(mobile);
+useMobileLeaves(mobile);
 setTreeBudget(quality === "low" ? 25 : 60);
 const loaded = new Map(); // index -> { status, instance, promise }
 let aspect = window.innerWidth / window.innerHeight;
 let renderer;
+
+// Without the parallel-compile extension (iPhone and iPad Safari) compiling a whole scene's shaders at once
+// freezes the page for a second or more. There they are compiled a few at a time, a few milliseconds per
+// frame, while the reader is still in the scene before.
+let parallelCompile = false;
+function compileGradually({ scene, camera }) {
+  const parts = [];
+  scene.traverse((o) => { if (o.material && (o.isMesh || o.isPoints || o.isLine || o.isSprite)) parts.push(o); });
+  let i = 0;
+  return new Promise((resolve) => {
+    const step = () => {
+      const t0 = performance.now();
+      while (i < parts.length && performance.now() - t0 < 5) renderer.compile(parts[i++], camera, scene);
+      if (i < parts.length) requestAnimationFrame(step);
+      else resolve();
+    };
+    requestAnimationFrame(step);
+  });
+}
 
 function ensure(index) {
   if (index < 0 || index >= SCENES.length) return null;
@@ -143,7 +164,14 @@ function ensure(index) {
   entry = { status: "loading", instance: null };
   loaded.set(index, entry);
   entry.promise = MODULES[spec.module]()
-    .then((factory) => new Promise((resolve) => requestAnimationFrame(() => { const t0 = performance.now(); const inst = factory(ctx, spec); entry.buildMs = performance.now() - t0; resolve(inst); })))
+    .then((factory) => new Promise((resolve) => requestAnimationFrame(() => {
+      const t0 = performance.now();
+      setOwner(index);
+      let inst;
+      try { inst = factory(ctx, spec); } finally { setOwner(null); }
+      entry.buildMs = performance.now() - t0;
+      resolve(inst);
+    })))
     // hold the scene back until its photographs and models have arrived, so nothing pops in
     .then((instance) => settled(20000).then(() => instance))
     .then((instance) => {
@@ -155,7 +183,7 @@ function ensure(index) {
       const t1 = performance.now();
       const done = () => { entry.compileMs = performance.now() - t1; entry.instance = instance; entry.status = "ready"; return instance; };
       if (!renderer) return done();
-      return (renderer.compileAsync ? renderer.compileAsync(instance.scene, instance.camera) : Promise.resolve(renderer.compile(instance.scene, instance.camera))).then(done, done);
+      return (parallelCompile ? renderer.compileAsync(instance.scene, instance.camera) : compileGradually(instance)).then(done, done);
     })
     .catch((error) => {
       console.error(`scene ${spec.id} failed`, error);
@@ -174,6 +202,7 @@ function manage(current) {
       if (entry.instance.dispose) entry.instance.dispose();
       else disposeScene(entry.instance.scene);
       loaded.delete(index);
+      release(index); // its textures and models leave the graphics card unless a loaded scene shares them
     }
   }
 }
@@ -188,6 +217,7 @@ async function start() {
   renderer.shadowMap.enabled = quality !== "low";
   renderer.shadowMap.type = THREE.PCFShadowMap;
   initLibrary(renderer);
+  parallelCompile = Boolean(renderer.compileAsync && renderer.extensions.get("KHR_parallel_shader_compile"));
   renderer.outputColorSpace = THREE.SRGBColorSpace;
   let pixelRatio = Math.min(window.devicePixelRatio || 1, quality === "low" ? (window.innerWidth > 700 ? 1.1 : 1.35) : 1.75);
   renderer.setPixelRatio(pixelRatio);
