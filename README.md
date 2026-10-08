@@ -61,7 +61,7 @@ Cloudflare (Workers Builds, connected to this repository) builds and publishes t
 - deploy command: `npx wrangler deploy`
 - build variables: `PYTHON_VERSION=3.11`, `NODE_VERSION=22`
 
-Live at https://toledot.tailormade-gibson.workers.dev
+Live at https://book-of-generations.com (also https://toledot.tailormade-gibson.workers.dev).
 
 GitHub Actions (`.github/workflows/ci.yml`) runs the Python tests, builds the same site and checks the timeline and KJV captions on every push.
 
