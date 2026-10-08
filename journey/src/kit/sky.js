@@ -9,7 +9,7 @@ import { Sky } from "three/examples/jsm/objects/Sky.js";
 import { NOISE } from "../engine/noise.js";
 import { createStars } from "../engine/stars.js";
 import { lerp } from "./common.js";
-import { hdri } from "./library.js";
+import { currentOwner, hdri } from "./library.js";
 
 // elevation/azimuth in degrees; fog colour; light colour/intensity; stars 0..1; storm 0..1
 export const PRESETS = {
@@ -153,10 +153,11 @@ export function createAtmosphere(scene, { stars = true, storm = true, starCount 
   scene.add(sky, photo, sun, sun.target, hemi);
   // panoramas: loaded on first use, then held; each scene uses a few
   const loaded = new Map();
+  const sceneOwner = currentOwner(); // skies loaded later still belong to the scene that made this sky
   const want = (key) => {
     if (!loaded.has(key)) {
       loaded.set(key, null);
-      hdri(key).then((h) => loaded.set(key, h)).catch(() => {});
+      hdri(key, sceneOwner).then((h) => loaded.set(key, h)).catch(() => {});
     }
     return loaded.get(key);
   };

@@ -31,6 +31,11 @@ export function setOwner(id) {
   owner = id;
 }
 
+/** The scene currently being built, for code that loads assets later on its behalf. */
+export function currentOwner() {
+  return owner;
+}
+
 /**
  * Free the graphics memory of assets only the given scene used (textures and models). They stay in
  * the cache and are uploaded again if a later scene asks for them.
@@ -41,6 +46,12 @@ export function release(id) {
     if (set.size) continue;
     owners.delete(key);
     if (textures.has(key)) textures.get(key).dispose();
+    if (key.startsWith("hdri:")) {
+      const name = key.slice(5);
+      const p = hdris.get(name);
+      hdris.delete(name);
+      p?.then((h) => { h.texture?.dispose(); h.target?.dispose(); }).catch(() => {});
+    }
     if (key.startsWith("model:")) {
       const name = key.slice(6);
       const p = models.get(name);
@@ -111,7 +122,12 @@ export function pbr(key) {
  * the dome), env (PMREM for lighting, from a 512px HDR), sun (unit vector toward the brightest point of the
  * photograph, in the panorama's own frame), peak, mean (sky luminance) }. Returns a promise.
  */
-export function hdri(key) {
+export function hdri(key, forOwner = owner) {
+  if (forOwner !== null) {
+    const id = `hdri:${key}`;
+    if (!owners.has(id)) owners.set(id, new Set());
+    owners.get(id).add(forOwner);
+  }
   if (hdris.has(key)) return hdris.get(key);
   const p = track(new Promise((resolve, reject) => {
     hdrLoader.setDataType(THREE.HalfFloatType);
@@ -143,8 +159,10 @@ export function hdri(key) {
       const azim = phi - Math.PI;
       const elev = Math.PI / 2 - theta;
       const sun = new THREE.Vector3(Math.cos(azim) * Math.cos(elev), Math.sin(elev), Math.sin(azim) * Math.cos(elev)).normalize();
-      const env = pmrem ? pmrem.fromEquirectangular(tex).texture : null;
-      sky.then((skyTex) => resolve({ texture: skyTex, env, sun, peak: best, mean: n ? sum / n : 1 }));
+      const target = pmrem ? pmrem.fromEquirectangular(tex) : null;
+      const env = target ? target.texture : null;
+      tex.dispose(); // the lighting cube is made; the half-float source is no longer needed
+      sky.then((skyTex) => resolve({ texture: skyTex, env, target, sun, peak: best, mean: n ? sum / n : 1 }));
     }, undefined, reject);
   }));
   hdris.set(key, p);

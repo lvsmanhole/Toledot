@@ -8,6 +8,7 @@ import { mergeGeometries } from "three/examples/jsm/utils/BufferGeometryUtils.js
 
 import { pbr } from "./library.js";
 import { rng } from "../engine/noise.js";
+import { scaled } from "./budget.js";
 
 // part ids baked into the geometry, coloured in the shader
 const TUNIC = 0;
@@ -294,6 +295,7 @@ export function tickPeople(root, time) {
  * Returns { group, positions } so callers can animate a few individuals.
  */
 export function crowd({ count = 200, place, height = () => 0, seed = 3, scale = [0.9, 1.1], staffChance = 0.15, material = null, face = null, walk = 0, detail = count > 600 ? "far" : count > 40 ? "low" : "high" }) {
+  count = scaled(count);
   const random = rng(seed);
   const mat = material ?? personMaterial({ walk });
   const geos = [robedGeometry(1.75, { detail }), robedGeometry(1.7, { veiled: true, detail }), robedGeometry(1.75, { staff: true, detail })];
@@ -368,6 +370,7 @@ export const ANIMALS = {
 
 /** Instanced animals of one kind, placed like a crowd. */
 export function herd({ kind = "sheep", count = 40, place, height = () => 0, seed = 8, scale = [0.9, 1.1], material = null }) {
+  count = scaled(count, 20);
   const random = rng(seed);
   const geo = ANIMALS[kind]();
   const mesh = new THREE.InstancedMesh(geo, material ?? animalMaterial(kind), count);

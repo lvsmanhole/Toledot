@@ -2,6 +2,7 @@
 // sits on the ground; callers position it with the terrain height.
 
 import * as THREE from "three";
+import { scaled } from "./budget.js";
 import { mergeGeometries } from "three/examples/jsm/utils/BufferGeometryUtils.js";
 
 import { rng } from "../engine/noise.js";
@@ -35,6 +36,7 @@ const box = (w, h, d, x = 0, y = 0, z = 0) => {
  * upper room or a roof shelter. Houses face random directions inside the radius.
  */
 export function city({ count = 120, radius = 30, inner = 0, height = (x, z) => 0, style = "mud", seed = 3, hill = 0 }) {
+  count = scaled(count, 30);
   const random = rng(seed);
   const walls = [];
   const plinths = [];

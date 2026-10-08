@@ -11,6 +11,7 @@ import { disposeScene } from "./kit/common.js";
 import { initLibrary, release, setOwner, settled, useMobileAssets } from "./kit/library.js";
 import { peopleClock } from "./kit/figures.js";
 import { setTreeBudget, useMobileLeaves } from "./kit/vegetation.js";
+import { budget } from "./kit/budget.js";
 import { MODULES } from "./scenes/index.js";
 import { ACTS, CAPTIONS, LENGTH, SCENES, UNIT_VH, envelope, locate, yearAt } from "./story.js";
 import "./style.css";
@@ -131,6 +132,7 @@ const story = { u: 0, time: 0 };
 // ---------------------------------------------------------------- scene manager
 const ctx = { quality, mobile };
 useMobileAssets(mobile);
+if (mobile) budget.density = 0.45;
 useMobileLeaves(mobile);
 setTreeBudget(quality === "low" ? 25 : 60);
 const loaded = new Map(); // index -> { status, instance, promise }
@@ -192,12 +194,13 @@ function ensure(index) {
   return entry;
 }
 
-function manage(current) {
+function manage(current, local = 0) {
   ensure(current);
-  ensure(current + 1);
+  if (!mobile || local > 0.55) ensure(current + 1);
   if (current > 0 && !mobile) ensure(current - 1);
   for (const [index, entry] of loaded) {
-    if (Math.abs(index - current) > (mobile ? 1 : 2) && entry.status === "ready") {
+    const keep = mobile ? index === current || index === current + 1 : Math.abs(index - current) <= 2;
+    if (!keep && entry.status === "ready") {
       entry.instance.activate?.(false);
       if (entry.instance.dispose) entry.instance.dispose();
       else disposeScene(entry.instance.scene);
@@ -219,9 +222,10 @@ async function start() {
   initLibrary(renderer);
   parallelCompile = Boolean(renderer.compileAsync && renderer.extensions.get("KHR_parallel_shader_compile"));
   renderer.outputColorSpace = THREE.SRGBColorSpace;
-  let pixelRatio = Math.min(window.devicePixelRatio || 1, quality === "low" ? (window.innerWidth > 700 ? 1.1 : 1.35) : 1.75);
+  let pixelRatio = Math.min(window.devicePixelRatio || 1, quality === "low" ? (mobile ? 1.15 : 1.35) : 1.75);
   renderer.setPixelRatio(pixelRatio);
   const post = createPost(renderer, window.innerWidth, window.innerHeight, { bloomScale: quality === "low" ? 0.5 : 1 });
+  if (mobile) post.bloom.enabled = false;
 
   let sized = "";
   function resize(force = false) {
@@ -309,9 +313,10 @@ async function start() {
     if (where.index !== activeIndex) {
       loaded.get(activeIndex)?.instance?.activate?.(false);
       activeIndex = where.index;
-      manage(activeIndex);
+      manage(activeIndex, where.local);
       chronicle.select(where.scene);
     }
+    if (mobile && where.local > 0.55 && !loaded.has(activeIndex + 1)) manage(activeIndex, where.local);
     const entry = loaded.get(activeIndex);
     const active = entry?.status === "ready" ? entry.instance : null;
     if (active && active !== shown) {

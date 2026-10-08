@@ -4,6 +4,7 @@ import * as THREE from "three";
 import { mergeGeometries, mergeVertices } from "three/examples/jsm/utils/BufferGeometryUtils.js";
 
 import { fbm2, rng } from "../engine/noise.js";
+import { scaled } from "./budget.js";
 import { modelParts } from "./library.js";
 import { SURFACES } from "./surface.js";
 
@@ -22,6 +23,7 @@ export const skyLight = { value: 1 };
  * kind: grass | wheat | reeds — changes blade shape and colour.
  */
 export function createBlades({ count, place, height, kind = "grass", random = rng(5), minH = 0.4, maxH = 40 }) {
+  count = scaled(count, 2000);
   const shapes = {
     grass: { w: 0.04, h: [0.25, 0.7], base: [[0.05, 0.06, 0.025], [0.08, 0.08, 0.035]], tip: [[0.26, 0.27, 0.12], [0.36, 0.33, 0.17]], head: 0 },
     wheat: { w: 0.04, h: [0.9, 1.4], base: [[0.25, 0.2, 0.06], [0.3, 0.24, 0.08]], tip: [[0.85, 0.66, 0.3], [0.95, 0.78, 0.4]], head: 1 },
@@ -500,6 +502,7 @@ const ROCK_KEYS = ["boulder1", "boulder2", "boulder3", "rocks"];
  * Filled in when the models arrive.
  */
 export function scatterRocks({ count, place, height, random = rng(17), size = [0.6, 3.5], keys = ROCK_KEYS, sink = 0.25, upright = false, bases = null, shadows = size[1] > 1.5 }) {
+  count = scaled(count, 20);
   const group = new THREE.Group();
   const placements = keys.map(() => []);
   const m = new THREE.Matrix4();
