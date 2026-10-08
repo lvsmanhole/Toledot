@@ -368,8 +368,7 @@ function scannedTrees({ count, place, height, kind, random, size, tint, uniforms
         const mesh = new THREE.InstancedMesh(part.geometry, mat, placements[v].length);
         placements[v].forEach((mm, i) => mesh.setMatrixAt(i, mm.clone().multiply(part.matrix)));
         mesh.instanceMatrix.needsUpdate = true;
-        mesh.castShadow = shadows;
-        mesh.userData.noShadow = !shadows;
+        mesh.castShadow = true;
         mesh.receiveShadow = true;
         mesh.frustumCulled = false;
         group.add(mesh);
@@ -520,7 +519,8 @@ export function scatterRocks({ count, place, height, random = rng(17), size = [0
         const mesh = new THREE.InstancedMesh(part.geometry, part.material, placements[v].length);
         placements[v].forEach((mm, i) => mesh.setMatrixAt(i, mm.clone().multiply(part.matrix)));
         mesh.instanceMatrix.needsUpdate = true;
-        mesh.castShadow = true;
+        mesh.castShadow = shadows;
+        mesh.userData.noShadow = !shadows;
         mesh.receiveShadow = true;
         mesh.frustumCulled = false;
         group.add(mesh);
