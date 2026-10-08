@@ -1,7 +1,6 @@
-# Build Toledot (the data bundle, the timeline and the journey) and publish site/ to Cloudflare Pages.
-# Runs on every push to main, and by hand from the Actions tab.
-# Needs two repository secrets: CLOUDFLARE_API_TOKEN (Cloudflare Pages: Edit) and CLOUDFLARE_ACCOUNT_ID.
-name: Build and deploy
+# Test and build Toledot on every push (the data, the timeline and the journey). Publishing is done by
+# Cloudflare Pages, which is connected to this repository and builds site/ itself (see README "Deploy").
+name: Test and build
 
 on:
   push:
@@ -10,17 +9,13 @@ on:
 
 permissions:
   contents: read
-  deployments: write
 
 concurrency:
-  group: deploy
+  group: ci-${{ github.ref }}
   cancel-in-progress: true
 
-env:
-  PAGES_PROJECT: toledot
-
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
     timeout-minutes: 40
     steps:
@@ -57,16 +52,3 @@ jobs:
         run: npm run build
       - name: Test the timeline and the KJV captions
         run: node --test site/timeline/tests/layout.test.mjs journey/tests/story.test.mjs
-
-      - name: Create the Pages project (first run only)
-        run: npx --yes wrangler@4 pages project create "$PAGES_PROJECT" --production-branch=main || echo "project already exists"
-        env:
-          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-      - name: Deploy to Cloudflare Pages
-        uses: cloudflare/wrangler-action@v3
-        with:
-          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          wranglerVersion: "4"
-          command: pages deploy site --project-name=${{ env.PAGES_PROJECT }} --branch=main --commit-dirty=true

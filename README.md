@@ -53,6 +53,16 @@ Shared building blocks (terrain, sky, water, vegetation, architecture, figures, 
 
 Each scene in `journey/src/scenes/` returns grade and audio levels per frame, and `journey/src/main.js` directs them.
 
+### Deploy
+
+Cloudflare Pages builds and publishes the site from this repository on every push to `main`:
+
+- build command: `pip install . && python -m bible_timeline site && cd journey && npm ci && npm run build`
+- build output directory: `site`
+- environment variables: `PYTHON_VERSION=3.11`, `NODE_VERSION=22`
+
+GitHub Actions (`.github/workflows/ci.yml`) runs the Python tests, builds the same site and checks the timeline and KJV captions on every push.
+
 ### Toledot data bundle
 
 `core.json` (about 0.8 MB) holds books and chapters, people with display years and grades, events, and family links. `details.json` (about 3.5 MB) holds claims, citations, witnesses, and sources, and loads after first paint.
