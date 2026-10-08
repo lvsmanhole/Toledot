@@ -19,6 +19,21 @@ const $ = (id) => document.getElementById(id);
 const params = new URLSearchParams(location.search);
 const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
 const coarse = window.matchMedia("(pointer: coarse)").matches;
+// phones and tablets (iPadOS reports itself as a Mac, so touch points are checked too)
+const mobile = coarse || navigator.maxTouchPoints > 1;
+// portrait screens (phones, tablets held upright): every perspective camera widens its view so the scene is
+// not a narrow slice. Done in the projection itself, so map labels projected through the camera agree.
+{
+  const project = THREE.PerspectiveCamera.prototype.updateProjectionMatrix;
+  THREE.PerspectiveCamera.prototype.updateProjectionMatrix = function () {
+    if (this.aspect >= 0.95) return project.call(this);
+    const designed = this.fov;
+    const k = Math.pow(0.95 / this.aspect, 0.75);
+    this.fov = Math.min(88, THREE.MathUtils.radToDeg(2 * Math.atan(Math.tan(THREE.MathUtils.degToRad(designed) / 2) * k)));
+    project.call(this);
+    this.fov = designed;
+  };
+}
 const quality = params.get("q") ?? (coarse || window.innerWidth < 800 || (navigator.deviceMemory && navigator.deviceMemory < 4) ? "low" : "high");
 
 // ---------------------------------------------------------------- captions and rail (DOM first, so the words exist without WebGL)
@@ -55,7 +70,7 @@ const railItems = ACTS.map((act) => {
 });
 
 // ---------------------------------------------------------------- scroll <-> story units
-$("scroll").style.height = `${LENGTH * UNIT_VH + 100}vh`;
+$("scroll").style.height = `${LENGTH * UNIT_VH + 100}${CSS.supports("height", "1lvh") ? "lvh" : "vh"}`;
 const maxScroll = () => Math.max(1, document.documentElement.scrollHeight - window.innerHeight);
 const scrollUnits = () => (window.scrollY / maxScroll()) * LENGTH;
 function jumpTo(u, smooth = !reducedMotion.matches) {
@@ -152,9 +167,9 @@ function ensure(index) {
 function manage(current) {
   ensure(current);
   ensure(current + 1);
-  if (current > 0) ensure(current - 1);
+  if (current > 0 && !mobile) ensure(current - 1);
   for (const [index, entry] of loaded) {
-    if (Math.abs(index - current) > 2 && entry.status === "ready") {
+    if (Math.abs(index - current) > (mobile ? 1 : 2) && entry.status === "ready") {
       entry.instance.activate?.(false);
       if (entry.instance.dispose) entry.instance.dispose();
       else disposeScene(entry.instance.scene);
@@ -174,20 +189,40 @@ async function start() {
   renderer.shadowMap.type = THREE.PCFShadowMap;
   initLibrary(renderer);
   renderer.outputColorSpace = THREE.SRGBColorSpace;
-  let pixelRatio = Math.min(window.devicePixelRatio || 1, quality === "low" ? 1.25 : 1.75);
+  let pixelRatio = Math.min(window.devicePixelRatio || 1, quality === "low" ? (window.innerWidth > 700 ? 1.1 : 1.35) : 1.75);
   renderer.setPixelRatio(pixelRatio);
-  const post = createPost(renderer, window.innerWidth, window.innerHeight);
+  const post = createPost(renderer, window.innerWidth, window.innerHeight, { bloomScale: quality === "low" ? 0.5 : 1 });
 
-  function resize() {
-    const w = window.innerWidth;
-    const h = window.innerHeight;
+  let sized = "";
+  function resize(force = false) {
+    const w = canvas.clientWidth || window.innerWidth;
+    const h = canvas.clientHeight || window.innerHeight;
+    const key = `${w}x${h}x${pixelRatio}`;
+    if (!force && key === sized) return;
+    sized = key;
     aspect = w / h;
     renderer.setSize(w, h, false);
     post.setSize(w, h);
     for (const entry of loaded.values()) entry.instance?.resize(aspect);
   }
-  window.addEventListener("resize", resize);
-  resize();
+  let resizeTimer = 0;
+  window.addEventListener("resize", () => { clearTimeout(resizeTimer); resizeTimer = setTimeout(resize, 120); });
+  window.addEventListener("orientationchange", () => setTimeout(() => resize(true), 300));
+  resize(true);
+
+  // if the browser drops the GPU context (memory pressure on phones), say so and offer a reload
+  canvas.addEventListener("webglcontextlost", (e) => {
+    e.preventDefault();
+    const s = $("gate-status");
+    document.body.classList.add("context-lost");
+    if (s) s.textContent = "The device ran short of graphics memory.";
+    if (!document.getElementById("ctx-lost")) {
+      const box = Object.assign(document.createElement("div"), { id: "ctx-lost", className: "ctx-lost" });
+      box.innerHTML = '<p>The device ran short of graphics memory.</p><button type="button">Reload here</button>';
+      box.querySelector("button").addEventListener("click", () => { location.hash = `u=${story.u.toFixed(2)}`; location.reload(); });
+      document.body.append(box);
+    }
+  });
 
   // deep link: #u=123.4 starts there
   const deep = Number((location.hash.match(/u=([\d.]+)/) ?? [])[1]);
@@ -314,7 +349,7 @@ async function start() {
     // adaptive resolution
     if (dt < 0.1) frameEma += (dt - frameEma) * 0.08; // one-off hitches (a scene loading) are ignored
     if (frameEma > 1 / 45) { slowFrames++; fastFrames = 0; } else if (frameEma < 1 / 57) { fastFrames++; slowFrames = Math.max(0, slowFrames - 2); } else { slowFrames = Math.max(0, slowFrames - 1); fastFrames = 0; }
-    const setRatio = (r) => { pixelRatio = Math.round(r * 100) / 100; renderer.setPixelRatio(pixelRatio); resize(); };
+    const setRatio = (r) => { pixelRatio = Math.round(r * 100) / 100; renderer.setPixelRatio(pixelRatio); resize(true); };
     if (slowFrames > 40 && pixelRatio > minRatio) {
       setRatio(Math.max(minRatio, pixelRatio * 0.85));
       slowFrames = 0;

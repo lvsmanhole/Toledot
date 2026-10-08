@@ -66,7 +66,7 @@ const GradeShader = {
   `,
 };
 
-export function createPost(renderer, width, height) {
+export function createPost(renderer, width, height, { bloomScale = 1 } = {}) {
   const composer = new EffectComposer(renderer);
   const renderPass = new RenderPass(new THREE.Scene(), new THREE.PerspectiveCamera());
   const bloom = new UnrealBloomPass(new THREE.Vector2(width, height), 0.9, 0.6, 0.82);
@@ -85,6 +85,8 @@ export function createPost(renderer, width, height) {
     },
     setSize(w, h) {
       composer.setSize(w, h);
+      // the glow is soft by nature: on phones and tablets it is computed at half resolution
+      if (bloomScale !== 1) bloom.setSize(Math.max(1, Math.round(w * renderer.getPixelRatio() * bloomScale)), Math.max(1, Math.round(h * renderer.getPixelRatio() * bloomScale)));
       grade.uniforms.uAspect.value = w / h;
     },
   };
