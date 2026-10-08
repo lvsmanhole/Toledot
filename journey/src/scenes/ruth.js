@@ -10,13 +10,14 @@ import { createLandscape } from "../kit/landscape.js";
 import { city } from "../kit/structures.js";
 import { composeHeight, heights } from "../kit/terrain.js";
 import { createBlades, createTrees, placers } from "../kit/vegetation.js";
+import { rng } from "../engine/noise.js";
 
 const LINE = ["Boaz", "Ruth", "Obed", "Jesse", "David"];
 
 export function create(ctx) {
   const height = composeHeight([heights.rolling(10, 0.008, 221), heights.mountain(-60, -220, 70, 30, 222)], 2);
   const L = createLandscape(ctx, {
-    terrain: { height, palette: "fields", size: 1200 },
+    terrain: { height, palette: "fields", size: 1200, wetLevel: -30 }, // no standing water in a wheat field
     sky: () => "golden",
     wind: () => 0.45,
     camera: [
@@ -36,8 +37,11 @@ export function create(ctx) {
     const k = Math.max(0, Math.min(1, ((x - ax) * (bx - ax) + (z - az) * (bz - az)) / ((bx - ax) ** 2 + (bz - az) ** 2)));
     return Math.hypot(x - ax - k * (bx - ax), z - az - k * (bz - az)) < 7;
   });
-  const wheat = createBlades({ kind: "wheat", count: ctx.quality === "low" ? 40000 : 110000, place: placers.disc(0, 0, 140, (x, z) => Math.abs(x - z * 0.3) > 3 && !nearPath(x, z)), height: h });
+  const wheat = createBlades({ kind: "wheat", count: ctx.quality === "low" ? 40000 : 110000, place: placers.disc(0, 0, 140, (x, z) => Math.abs(x - z * 0.3) > 3 && !nearPath(x, z)), height: h, minH: -20 });
   L.add(wheat.mesh, (s) => wheat.update({ time: s.time, wind: s.wind, fog: s.fog, light: 1.1 }));
+  // the field the reapers are in: standing grain thick about them, a cut swathe behind
+  const near = createBlades({ kind: "wheat", count: ctx.quality === "low" ? 45000 : 110000, place: placers.disc(-10, 18, 48, (x, z) => !nearPath(x, z)), height: h, random: rng(77), minH: -20 });
+  L.add(near.mesh, (s) => near.update({ time: s.time, wind: s.wind, fog: s.fog, light: 1.0 }));
   L.add(createTrees({ count: 70, place: placers.disc(0, 0, 300, (x, z) => Math.hypot(x, z) > 150), height: h, kind: "olive", size: [3, 5] }).group);
   const town = city({ count: 120, radius: 26, height: (x, z) => h(x - 60, z + 220), style: "stone", seed: 71 });
   town.position.set(-60, 0, -220);

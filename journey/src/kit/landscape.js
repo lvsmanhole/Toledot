@@ -7,7 +7,7 @@ import { cameraRig, collectShaderMaterials, disposeScene } from "./common.js";
 import { blendPresets, createAtmosphere } from "./sky.js";
 import { createTerrain } from "./terrain.js";
 import { createWater } from "./water.js";
-import { scatterPlants, scatterRocks } from "./vegetation.js";
+import { scatterPlants, scatterRocks, skyLight } from "./vegetation.js";
 import { rng } from "../engine/noise.js";
 
 /**
@@ -100,6 +100,7 @@ export function createLandscape(ctx, options) {
       const preset = blendPresets(options.sky ? options.sky(rel) : "morning");
       const lightning = options.lightning ? options.lightning(rel) : 0;
       const flash = atmosphere.set(preset, { time, pixelRatio, lightning, camera });
+      skyLight.value = Math.min(1, 0.08 + preset.hemi * 0.55 + preset.sunI * 0.18);
       // indoors (options.indoor(rel) 0..1) the sky's light comes in only by door and window: dim the
       // photographed environment, the sun and the sky fill
       const indoor = options.indoor ? options.indoor(rel) : 0;

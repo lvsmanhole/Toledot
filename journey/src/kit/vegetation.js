@@ -7,6 +7,9 @@ import { fbm2, rng } from "../engine/noise.js";
 import { modelParts } from "./library.js";
 import { SURFACES } from "./surface.js";
 
+/** Overall daylight 0..1 for unlit vegetation; set each frame by the landscape from the sky preset. */
+export const skyLight = { value: 1 };
+
 /**
  * Blades placed by `place(random) -> [x, z] | null` on `height(x, z)`.
  * kind: grass | wheat | reeds — changes blade shape and colour.
@@ -42,7 +45,7 @@ export function createBlades({ count, place, height, kind = "grass", random = rn
   const v3 = (a) => `vec3(${a.map((x) => x.toFixed(3)).join(", ")})`;
   const material = new THREE.ShaderMaterial({
     uniforms: {
-      uTime: { value: 0 }, uWind: { value: 0.3 }, uLight: { value: new THREE.Color(1, 0.92, 0.8) },
+      uTime: { value: 0 }, uWind: { value: 0.3 }, uLight: { value: new THREE.Color(1, 0.92, 0.8) }, uSky: skyLight,
       fogColor: { value: new THREE.Color() }, fogNear: { value: 0 }, fogFar: { value: 0 }, fogDensity: { value: 0 },
     },
     vertexShader: /* glsl */ `
@@ -74,6 +77,7 @@ export function createBlades({ count, place, height, kind = "grass", random = rn
     `,
     fragmentShader: /* glsl */ `
       uniform vec3 uLight;
+      uniform float uSky;
       varying float vTip;
       varying float vShade;
       #include <fog_pars_fragment>
@@ -81,7 +85,7 @@ export function createBlades({ count, place, height, kind = "grass", random = rn
         vec3 base = mix(${v3(s.base[0])}, ${v3(s.base[1])}, vShade);
         vec3 tip = mix(${v3(s.tip[0])}, ${v3(s.tip[1])}, vShade);
         float headBand = ${s.head.toFixed(1)} * smoothstep(0.72, 0.8, vTip);
-        vec3 col = mix(base, tip, vTip) * (1.0 + headBand * 0.4) * uLight;
+        vec3 col = mix(base, tip, vTip) * (1.0 + headBand * 0.4) * uLight * uSky;
         gl_FragColor = vec4(col, 1.0);
         #include <fog_fragment>
       }
@@ -99,6 +103,7 @@ export function createBlades({ count, place, height, kind = "grass", random = rn
       u.uWind.value = wind;
       u.fogColor.value.copy(fog.color);
       u.fogDensity.value = fog.density;
+      // the blades are unlit cards: scale them by how much light the sky gives (night is dark)
       if (light !== undefined) u.uLight.value.setRGB(1, 0.92, 0.8).multiplyScalar(light);
     },
   };

@@ -17,7 +17,7 @@ export function create(ctx) {
   const height = jerusalemHeight(281);
   const L = createLandscape(ctx, {
     terrain: { height, palette: "ashen", size: 1300 },
-    sky: (rel) => [[1 - sramp(rel, 14, 20), "night"], [sramp(rel, 14, 20), "ash"]],
+    sky: (rel) => [[1 - sramp(rel, 11.5, 15), "night"], [sramp(rel, 11.5, 15), "ash"]], // the grey morning after
     camera: [
       [0, [-150, 60, 150], [0, 28, 0], 44],
       [7, [60, 31, 40], [0, 34, 0], 46],
@@ -25,7 +25,7 @@ export function create(ctx) {
       [15, [140, 20, 0], [400, 10, 0], 44],
       [22, [120, 40, 40], [500, 10, -40], 44],
     ],
-    grade: (rel) => ({ saturation: 0.55 - 0.15 * sramp(rel, 8, 14), bloom: 0.55, threshold: 0.55, tint: [1.08, 0.92, 0.82] }),
+    grade: (rel) => ({ saturation: 0.55 - 0.15 * sramp(rel, 8, 14), bloom: 0.4, threshold: 0.75, tint: [1.08, 0.92, 0.82] }),
     audio: (rel) => ({ drone: 0.25, fire: 0.5 * (1 - sramp(rel, 8, 14)), wind: 0.15 }),
   });
   const h = L.height;
@@ -68,7 +68,7 @@ export function create(ctx) {
     glow.intensity = 400 * burning;
     temple.scale.y = lerp(1, 0.25, sramp(rel, 4, 11));
     ash.update({ time, pixelRatio, amount: 0.8, center: camera.position, wind: [0.4, 0.1] });
-    captives.group.visible = rel > 13;
+    captives.group.visible = rel > 11.5;
     captives.group.position.x = sramp(rel, 14, 22) * 160;
     captives.group.position.y = Math.abs(Math.sin(time * 2)) * 0.03;
   });
