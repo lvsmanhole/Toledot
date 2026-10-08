@@ -106,7 +106,7 @@ export function splatMaterial({ layers, tiles = [5, 5, 4, 9], tints = null, qual
           + (perturb(nG, texture2D(tN3, vWPos.zy / uTiles.w).rgb, 0, 1.2) * tw.x + perturb(nG, texture2D(tN3, vWPos.xz / uTiles.w).rgb, 1, 1.2) * tw.y + perturb(nG, texture2D(tN3, vWPos.xy / uTiles.w).rgb, 2, 1.2) * tw.z) * sw.w;
         vec3 splatNormal = normalize(nP);
         float splatRough = arm.g;`)
-      .replace("#include <roughnessmap_fragment>", "float roughnessFactor = roughness * clamp(splatRough, 0.35, 1.0);")
+      .replace("#include <roughnessmap_fragment>", "float roughnessFactor = roughness * clamp(splatRough, 0.75, 1.0); // soil and grass are never glossy")
       .replace("#include <normal_fragment_maps>", "normal = normalize((viewMatrix * vec4(splatNormal, 0.0)).xyz);");
   };
   material.customProgramCacheKey = () => `splat-${layers.join("-")}-${quality}`;

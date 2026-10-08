@@ -59,8 +59,12 @@ export function createBlades({ count, place, height, kind = "grass", random = rn
         vec3 p = position;
         p.y *= shape.x;
         // blades right at the lens fold away, so no single stalk ever fills the frame
-        float near = smoothstep(2.0, 7.0, distance((modelMatrix * vec4(offset.xyz, 1.0)).xyz, cameraPosition));
-        p *= near;
+        float dist = distance((modelMatrix * vec4(offset.xyz, 1.0)).xyz, cameraPosition);
+        float near = smoothstep(2.0, 7.0, dist);
+        // thinning with distance: past ~35 m a growing share of blades (chosen by their own random seed)
+        // collapse to nothing, so the GPU rasterises far less where they are lost in the haze anyway
+        float keep = 1.0 - 0.85 * smoothstep(35.0, 140.0, dist);
+        p *= near * step(shape.z, keep) * mix(1.0, 1.6, smoothstep(35.0, 140.0, dist));
         float c = cos(offset.w), s = sin(offset.w);
         p = vec3(p.x * c, p.y, p.x * s);
         float tip = position.y;
@@ -282,7 +286,7 @@ function foliageTexture(key) {
       resolve(tex);
     };
     img.onerror = () => resolve(null);
-    img.src = new URL(`lib/tex/${key}_leaves.jpg`, document.baseURI).href;
+    img.src = new URL(`lib/tex/${key}_leaves.webp`, document.baseURI).href;
   });
   foliageCache.set(key, p);
   return p;
@@ -364,7 +368,8 @@ function scannedTrees({ count, place, height, kind, random, size, tint, uniforms
         const mesh = new THREE.InstancedMesh(part.geometry, mat, placements[v].length);
         placements[v].forEach((mm, i) => mesh.setMatrixAt(i, mm.clone().multiply(part.matrix)));
         mesh.instanceMatrix.needsUpdate = true;
-        mesh.castShadow = true;
+        mesh.castShadow = shadows;
+        mesh.userData.noShadow = !shadows;
         mesh.receiveShadow = true;
         mesh.frustumCulled = false;
         group.add(mesh);
@@ -488,7 +493,7 @@ const ROCK_KEYS = ["boulder1", "boulder2", "boulder3", "rocks"];
  * Scanned boulders scattered by place(random) -> [x, z] | null. size: [min, max] metres across.
  * Filled in when the models arrive.
  */
-export function scatterRocks({ count, place, height, random = rng(17), size = [0.6, 3.5], keys = ROCK_KEYS, sink = 0.25, upright = false, bases = null }) {
+export function scatterRocks({ count, place, height, random = rng(17), size = [0.6, 3.5], keys = ROCK_KEYS, sink = 0.25, upright = false, bases = null, shadows = size[1] > 1.5 }) {
   const group = new THREE.Group();
   const placements = keys.map(() => []);
   const m = new THREE.Matrix4();
@@ -530,5 +535,5 @@ export function scatterRocks({ count, place, height, random = rng(17), size = [0
  * ground. size: [min, max] metres across a cluster.
  */
 export function scatterPlants({ count, place, height, random = rng(23), size = [2, 5], keys = ["shrub", "grassClump"] }) {
-  return scatterRocks({ count, place, height, random, size, keys, sink: 0.02, upright: true, bases: { shrub: 4, grassClump: 5.6 } });
+  return scatterRocks({ count, place, height, random, size, keys, sink: 0.02, upright: true, bases: { shrub: 4, grassClump: 5.6 }, shadows: false });
 }

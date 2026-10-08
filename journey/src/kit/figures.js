@@ -52,8 +52,9 @@ function lathe(profile, segments = 22, phiStart = 0, phiLength = Math.PI * 2, fo
 
 /** A clothed figure about `h` tall; origin at the feet, facing +z. */
 export function robedGeometry(h = 1.75, { staff = false, veiled = false, beard = !veiled, detail = "high" } = {}) {
-  SEG = detail === "low" ? 0.4 : 1;
-  const low = detail === "low";
+  // "high" for figures seen close, "low" for crowds, "far" for armies and multitudes seen from a distance
+  SEG = detail === "far" ? 0.24 : detail === "low" ? 0.4 : 1;
+  const low = detail !== "high";
   const sph = (r, w, hh, ...rest) => new THREE.SphereGeometry(r, low ? Math.max(6, Math.round(w / 2.5)) : w, low ? Math.max(4, Math.round(hh / 2.5)) : hh, ...rest);
   const parts = [];
   // tunic: hem flaring at the ankle, drawn in at the waist, broad at the shoulders
@@ -292,7 +293,7 @@ export function tickPeople(root, time) {
  * An instanced crowd. place(random) -> [x, z] | null; height(x, z) for ground.
  * Returns { group, positions } so callers can animate a few individuals.
  */
-export function crowd({ count = 200, place, height = () => 0, seed = 3, scale = [0.9, 1.1], staffChance = 0.15, material = null, face = null, walk = 0, detail = count > 40 ? "low" : "high" }) {
+export function crowd({ count = 200, place, height = () => 0, seed = 3, scale = [0.9, 1.1], staffChance = 0.15, material = null, face = null, walk = 0, detail = count > 600 ? "far" : count > 40 ? "low" : "high" }) {
   const random = rng(seed);
   const mat = material ?? personMaterial({ walk });
   const geos = [robedGeometry(1.75, { detail }), robedGeometry(1.7, { veiled: true, detail }), robedGeometry(1.75, { staff: true, detail })];
@@ -321,7 +322,9 @@ export function crowd({ count = 200, place, height = () => 0, seed = 3, scale = 
   meshes.forEach((mesh, i) => {
     mesh.count = counts[i];
     mesh.instanceMatrix.needsUpdate = true;
-    mesh.castShadow = true;
+    // a few people cast shadows; an army's would be specks costing a second full draw of every figure
+    mesh.castShadow = count <= 300;
+    mesh.userData.noShadow = count > 300;
     mesh.receiveShadow = true;
     mesh.frustumCulled = false;
     group.add(mesh);

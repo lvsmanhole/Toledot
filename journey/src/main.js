@@ -128,15 +128,19 @@ function ensure(index) {
   entry = { status: "loading", instance: null };
   loaded.set(index, entry);
   entry.promise = MODULES[spec.module]()
-    .then((factory) => new Promise((resolve) => requestAnimationFrame(() => resolve(factory(ctx, spec)))))
+    .then((factory) => new Promise((resolve) => requestAnimationFrame(() => { const t0 = performance.now(); const inst = factory(ctx, spec); entry.buildMs = performance.now() - t0; resolve(inst); })))
     // hold the scene back until its photographs and models have arrived, so nothing pops in
     .then((instance) => settled(20000).then(() => instance))
     .then((instance) => {
       instance.resize(aspect);
-      if (renderer) renderer.compile(instance.scene, instance.camera);
-      entry.instance = instance;
-      entry.status = "ready";
       return instance;
+    })
+    // compile the scene's shaders in the background (parallel shader compile), not in one blocking pass
+    .then((instance) => {
+      const t1 = performance.now();
+      const done = () => { entry.compileMs = performance.now() - t1; entry.instance = instance; entry.status = "ready"; return instance; };
+      if (!renderer) return done();
+      return (renderer.compileAsync ? renderer.compileAsync(instance.scene, instance.camera) : Promise.resolve(renderer.compile(instance.scene, instance.camera))).then(done, done);
     })
     .catch((error) => {
       console.error(`scene ${spec.id} failed`, error);
@@ -213,7 +217,13 @@ async function start() {
   }
 
   let last = performance.now();
+  // adaptive resolution: a smoothed frame time steers the render scale down quickly when the GPU falls
+  // behind and back up slowly when it has room, between a floor and the device's own ratio
+  const maxRatio = pixelRatio;
+  const minRatio = Math.min(maxRatio, 0.6);
+  let frameEma = 1 / 60;
   let slowFrames = 0;
+  let fastFrames = 0;
   let activeIndex = -1;
   let shown = null; // last scene actually drawn, held while the next one loads
   const endCard = $("end");
@@ -302,12 +312,16 @@ async function start() {
     chronicle.draw(now);
 
     // adaptive resolution
-    if (dt > 1 / 38) slowFrames++; else slowFrames = Math.max(0, slowFrames - 1);
-    if (slowFrames > 90 && pixelRatio > 0.75) {
-      pixelRatio = Math.max(0.75, pixelRatio - 0.25);
-      renderer.setPixelRatio(pixelRatio);
-      resize();
+    if (dt < 0.1) frameEma += (dt - frameEma) * 0.08; // one-off hitches (a scene loading) are ignored
+    if (frameEma > 1 / 45) { slowFrames++; fastFrames = 0; } else if (frameEma < 1 / 57) { fastFrames++; slowFrames = Math.max(0, slowFrames - 2); } else { slowFrames = Math.max(0, slowFrames - 1); fastFrames = 0; }
+    const setRatio = (r) => { pixelRatio = Math.round(r * 100) / 100; renderer.setPixelRatio(pixelRatio); resize(); };
+    if (slowFrames > 40 && pixelRatio > minRatio) {
+      setRatio(Math.max(minRatio, pixelRatio * 0.85));
       slowFrames = 0;
+      frameEma = 1 / 50;
+    } else if (fastFrames > 300 && pixelRatio < maxRatio) {
+      setRatio(Math.min(maxRatio, pixelRatio * 1.1));
+      fastFrames = 0;
     }
     requestAnimationFrame(frame);
   }

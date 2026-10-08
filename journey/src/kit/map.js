@@ -112,7 +112,8 @@ function buildTexture() {
 
 function createRelief(quality) {
   const tex = buildTexture();
-  const seg = quality === "low" ? [360, 240] : [720, 480];
+  // (about 0.3M triangles at high: the relief is seen from far above and at a slant, finer is wasted)
+  const seg = quality === "low" ? [270, 180] : [450, 300];
   const geometry = new THREE.PlaneGeometry(WIDTH, DEPTH, seg[0], seg[1]);
   geometry.rotateX(-Math.PI / 2);
   const material = new THREE.ShaderMaterial({

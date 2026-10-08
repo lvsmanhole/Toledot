@@ -118,7 +118,9 @@ export function createLandscape(ctx, options) {
           if (!o.isMesh) return;
           const m = Array.isArray(o.material) ? o.material[0] : o.material;
           const solid = m && !m.isShaderMaterial && !m.transparent && m.side !== THREE.BackSide && m.blending === THREE.NormalBlending;
-          o.castShadow = solid && o !== terrain?.mesh && o !== water?.mesh;
+          // (small props and big crowds opt out with userData.noShadow: their shadows are too small to see
+          // but the shadow pass would draw every instance again)
+          o.castShadow = solid && !o.userData.noShadow && o !== terrain?.mesh && o !== water?.mesh;
           o.receiveShadow = solid || o === terrain?.mesh;
         });
       }

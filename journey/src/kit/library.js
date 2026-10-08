@@ -47,7 +47,7 @@ export function texture(key, map) {
   t.anisotropy = renderer ? Math.min(8, renderer.capabilities.getMaxAnisotropy()) : 4;
   textures.set(id, t);
   track(new Promise((resolve) => {
-    texLoader.load(new URL(`tex/${id}.jpg`, BASE).href, (img) => {
+    texLoader.load(new URL(`tex/${id}.webp`, BASE).href, (img) => {
       t.image = img.image;
       t.needsUpdate = true;
       resolve(t);
@@ -62,15 +62,16 @@ export function pbr(key) {
 }
 
 /**
- * A sky panorama: { texture (equirect HDR), env (PMREM for lighting), sun (unit vector toward the
- * brightest point of the photograph, in the panorama's own frame), peak, mean (sky luminance) }.
- * Returns a promise.
+ * A sky panorama: { texture (the visible sky: 2k WebP, each channel stored as sqrt(L / (1 + L)), decoded by
+ * the dome), env (PMREM for lighting, from a 512px HDR), sun (unit vector toward the brightest point of the
+ * photograph, in the panorama's own frame), peak, mean (sky luminance) }. Returns a promise.
  */
 export function hdri(key) {
   if (hdris.has(key)) return hdris.get(key);
   const p = track(new Promise((resolve, reject) => {
     hdrLoader.setDataType(THREE.HalfFloatType);
-    hdrLoader.load(new URL(`hdri/${key}.hdr`, BASE).href, (tex) => {
+    const sky = new Promise((ok) => texLoader.load(new URL(`hdri/${key}_sky.webp`, BASE).href, (t) => { t.colorSpace = THREE.NoColorSpace; t.mapping = THREE.EquirectangularReflectionMapping; t.anisotropy = 4; ok(t); }, undefined, () => ok(null)));
+    hdrLoader.load(new URL(`hdri/${key}_env.hdr`, BASE).href, (tex) => {
       tex.mapping = THREE.EquirectangularReflectionMapping;
       tex.colorSpace = THREE.LinearSRGBColorSpace;
       // locate the sun: the brightest pixel in the upper hemisphere
@@ -81,8 +82,8 @@ export function hdri(key) {
       let sum = 0;
       let n = 0;
       const f = THREE.DataUtils.fromHalfFloat;
-      for (let y = 0; y < height / 2; y += 2) {
-        for (let x = 0; x < width; x += 2) {
+      for (let y = 0; y < height / 2; y++) {
+        for (let x = 0; x < width; x++) {
           const i = (y * width + x) * 4;
           const l = f(data[i]) + f(data[i + 1]) + f(data[i + 2]);
           if (l > best) { best = l; bx = x; by = y; }
@@ -98,7 +99,7 @@ export function hdri(key) {
       const elev = Math.PI / 2 - theta;
       const sun = new THREE.Vector3(Math.cos(azim) * Math.cos(elev), Math.sin(elev), Math.sin(azim) * Math.cos(elev)).normalize();
       const env = pmrem ? pmrem.fromEquirectangular(tex).texture : null;
-      resolve({ texture: tex, env, sun, peak: best, mean: n ? sum / n : 1 });
+      sky.then((skyTex) => resolve({ texture: skyTex, env, sun, peak: best, mean: n ? sum / n : 1 }));
     }, undefined, reject);
   }));
   hdris.set(key, p);

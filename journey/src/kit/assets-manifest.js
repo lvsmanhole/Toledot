@@ -36,15 +36,18 @@ export const TEXTURES = {
 };
 
 // scanned models
+// ratio: share of the scan's triangles kept; error: how far (as a fraction of the model's size) the
+// simplifier may move the surface. Scattered props are seen small, so they are kept lean (about 1-3k
+// triangles each); the shadow pass draws every instance again.
 export const MODELS = {
-  tree1: { id: "island_tree_01", ratio: 0.012, leaves: true },
-  tree2: { id: "island_tree_02", ratio: 0.012, leaves: true },
-  boulder1: { id: "namaqualand_boulder_02" },
-  boulder2: { id: "namaqualand_boulder_04" },
-  boulder3: { id: "namaqualand_boulder_05" },
-  rocks: { id: "namaqualand_rocks_01" },
-  cliff: { id: "namaqualand_cliff_02", ratio: 0.08 },
-  grassClump: { id: "grass_medium_01" },
-  deadTrunk: { id: "dead_tree_trunk_02" },
-  shrub: { id: "othonna_cerarioides" },
+  tree1: { id: "island_tree_01", ratio: 0.006, error: 0.02, leaves: true },
+  tree2: { id: "island_tree_02", ratio: 0.006, error: 0.02, leaves: true },
+  boulder1: { id: "namaqualand_boulder_02", ratio: 0.012, error: 0.03 },
+  boulder2: { id: "namaqualand_boulder_04", ratio: 0.015, error: 0.03 },
+  boulder3: { id: "namaqualand_boulder_05", ratio: 0.012, error: 0.03 },
+  rocks: { id: "namaqualand_rocks_01", ratio: 0.015, error: 0.03 },
+  cliff: { id: "namaqualand_cliff_02", ratio: 0.03, error: 0.02 },
+  grassClump: { id: "grass_medium_01", ratio: 0.03, error: 0.03 },
+  deadTrunk: { id: "dead_tree_trunk_02", ratio: 0.015, error: 0.03 },
+  shrub: { id: "othonna_cerarioides", ratio: 0.02, error: 0.03 },
 };

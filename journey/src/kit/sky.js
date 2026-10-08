@@ -93,7 +93,11 @@ function createPhotoDome() {
         float c = cos(-yaw), s = sin(-yaw);
         vec3 r = vec3(d.x * c + d.z * s, d.y, -d.x * s + d.z * c);
         vec2 uv = vec2(atan(r.z, r.x) * 0.15915494 + 0.5, asin(clamp(r.y, -1.0, 1.0)) * 0.31830989 + 0.5);
-        return texture2D(t, uv).rgb;
+        // the sky is stored tone-encoded (v = sqrt(L / (1 + L))) to fit its range in 8 bits
+        // (dithered by half a step so the 8-bit levels can't show as bands when the sky is magnified)
+        vec3 v = texture2D(t, uv).rgb + (fract(sin(dot(gl_FragCoord.xy, vec2(12.9898, 78.233))) * 43758.5453) - 0.5) / 255.0;
+        vec3 x = min(v * v, vec3(0.9995));
+        return x / (1.0 - x);
       }
       void main() {
         vec3 d = normalize(vDir);
