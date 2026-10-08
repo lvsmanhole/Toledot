@@ -1,0 +1,11 @@
+// Cloudflare Workers deploy of the built site: a static-assets-only Worker serving site/.
+// site/ is produced by the build command (see README "Deploy"); _headers in it sets caching.
+{
+  "name": "toledot",
+  "compatibility_date": "2026-10-01",
+  "assets": {
+    "directory": "./site",
+    "html_handling": "auto-trailing-slash",
+    "not_found_handling": "404-page"
+  }
+}

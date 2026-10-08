@@ -55,11 +55,13 @@ Each scene in `journey/src/scenes/` returns grade and audio levels per frame, an
 
 ### Deploy
 
-Cloudflare Pages builds and publishes the site from this repository on every push to `main`:
+Cloudflare (Workers Builds, connected to this repository) builds and publishes the site on every push to `main`. `wrangler.jsonc` makes the Worker serve the built `site/` folder as static assets.
 
 - build command: `pip install . && python -m bible_timeline site && cd journey && npm ci && npm run build`
-- build output directory: `site`
-- environment variables: `PYTHON_VERSION=3.11`, `NODE_VERSION=22`
+- deploy command: `npx wrangler deploy`
+- build variables: `PYTHON_VERSION=3.11`, `NODE_VERSION=22`
+
+Live at https://toledot.tailormade-gibson.workers.dev
 
 GitHub Actions (`.github/workflows/ci.yml`) runs the Python tests, builds the same site and checks the timeline and KJV captions on every push.
 
