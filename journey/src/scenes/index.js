@@ -7,6 +7,7 @@ export const MODULES = {
   eden: () => import("./eden.js").then((m) => m.createEden),
   maps: () => import("./maps.js").then((m) => m.create),
   cain: () => import("./cain.js").then((m) => m.create),
+  giants: () => import("./giants.js").then((m) => m.create),
   flood: () => import("./flood.js").then((m) => m.create),
   babel: () => import("./babel.js").then((m) => m.create),
   promise: () => import("./promise.js").then((m) => m.create),

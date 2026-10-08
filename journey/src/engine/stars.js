@@ -52,25 +52,35 @@ export function createStars({ count = 20000, radius = 900, seed = 3, size = 2.2 
       uniform float uTime, uReveal, uSize, uPixelRatio;
       varying vec3 vColor;
       varying float vAlpha;
+      varying float vBright;
       void main() {
         vColor = color;
         float on = smoothstep(data.x, data.x + 0.06, uReveal);
         float tw = 0.75 + 0.25 * sin(uTime * (0.6 + data.y * 0.3) + data.y * 7.0);
         vAlpha = on * tw;
+        // brighter stars get a larger sprite, so there is room for their halo and spikes
+        vBright = clamp((length(color) - 0.6) / 1.6, 0.0, 1.0);
         vec4 mv = modelViewMatrix * vec4(position, 1.0);
         gl_Position = projectionMatrix * mv;
-        gl_PointSize = uSize * uPixelRatio * (0.6 + length(color) * 0.5) * on;
+        gl_PointSize = uSize * uPixelRatio * (2.2 + vBright * 9.0) * on;
       }
     `,
     fragmentShader: /* glsl */ `
       uniform float uOpacity;
       varying vec3 vColor;
       varying float vAlpha;
+      varying float vBright;
       void main() {
+        // a star: a tight bright core, a soft halo, and on the brighter ones faint diffraction spikes
         vec2 p = gl_PointCoord - 0.5;
-        float d = length(p);
-        float core = smoothstep(0.5, 0.0, d);
-        float a = core * core * vAlpha * uOpacity;
+        float s = 1.0 + vBright * 4.1; // the sprite is larger for bright stars; keep the core the same size
+        float d = length(p) * s;
+        float core = exp(-d * d * 26.0) * 1.6;
+        float halo = exp(-d * d * 7.0) * 0.18 * (0.3 + vBright);
+        vec2 q = abs(p) * s;
+        float spikes = (exp(-q.x * 70.0) * exp(-q.y * 5.0) + exp(-q.y * 70.0) * exp(-q.x * 5.0)) * 0.55 * vBright;
+        float edge = smoothstep(0.5, 0.42, length(p)); // nothing reaches the square's corners
+        float a = (core + halo + spikes) * edge * vAlpha * uOpacity;
         if (a < 0.003) discard;
         gl_FragColor = vec4(vColor * a, a);
       }

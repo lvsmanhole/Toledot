@@ -42,7 +42,7 @@ export const SCENES = [
     acts: [{ label: "Act I", title: "Eden", at: 2 }, { label: "Act II", title: "The Fall", at: 24 }],
     captions: [
       v(2.5, 7, "And the LORD God planted a garden eastward in Eden; and there he put the man whom he had formed.", "Genesis 2:8", "The garden"),
-      v(7.5, 12, "And a river went out of Eden to water the garden", "Genesis 2:10"),
+      v(7.5, 12, "And a river went out of Eden to water the garden; and from thence it was parted, and became into four heads.", "Genesis 2:10"),
       v(12.5, 17.5, "the tree of life also in the midst of the garden, and the tree of knowledge of good and evil.", "Genesis 2:9"),
       v(18, 22.5, "And God saw every thing that he had made, and, behold, it was very good.", "Genesis 1:31"),
       v(25, 29, "Now the serpent was more subtil than any beast of the field which the LORD God had made.", "Genesis 3:1", "The Fall"),
@@ -64,6 +64,17 @@ export const SCENES = [
       v(15, 18.5, "and he builded a city, and called the name of the city, after the name of his son, Enoch.", "Genesis 4:17"),
       v(19, 22.5, "then began men to call upon the name of the LORD.", "Genesis 4:26"),
       v(23, 27.5, "And Enoch walked with God: and he was not; for God took him.", "Genesis 5:24"),
+    ],
+  },
+  // ---------------------------------------------------------------- Genesis 6:1-4
+  {
+    id: "giants", module: "giants", length: 24, enter: t("dust", 2), years: [[0, -3800], [24, -3400]],
+    chronicle: { chapters: ["genesis:6"], span: 500 },
+    captions: [
+      v(1.5, 5.5, "And it came to pass, when men began to multiply on the face of the earth, and daughters were born unto them,", "Genesis 6:1"),
+      v(6, 10.5, "That the sons of God saw the daughters of men that they were fair; and they took them wives of all which they chose.", "Genesis 6:2"),
+      v(11.5, 16, "There were giants in the earth in those days; and also after that, when the sons of God came in unto the daughters of men, and they bare children to them,", "Genesis 6:4"),
+      v(16.5, 21.5, "the same became mighty men which were of old, men of renown.", "Genesis 6:4"),
     ],
   },
   // ---------------------------------------------------------------- Act IV

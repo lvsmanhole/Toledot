@@ -121,8 +121,9 @@ function createDust(count, seed) {
   for (let i = 0; i < count; i++) positions.set([(random() - 0.5) * 120, (random() - 0.5) * 80, -random() * 400], i * 3);
   const geometry = new THREE.BufferGeometry();
   geometry.setAttribute("position", new THREE.BufferAttribute(positions, 3));
+  // soft round motes (a plain PointsMaterial draws each point as a square)
   const material = new THREE.PointsMaterial({
-    size: 0.35, color: 0xb8a98c, transparent: true, opacity: 0.35, depthWrite: false, blending: THREE.AdditiveBlending,
+    size: 0.3, color: 0xb8a98c, map: glowTexture(), alphaTest: 0.01, transparent: true, opacity: 0.22, depthWrite: false, blending: THREE.AdditiveBlending,
   });
   return new THREE.Points(geometry, material);
 }
