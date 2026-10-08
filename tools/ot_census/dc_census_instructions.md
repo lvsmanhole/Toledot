@@ -17,8 +17,7 @@ Accuracy is the priority: every entry must be grounded in the actual verses. Nev
   Joakim may be a different person, Jesus son of Josedek = Joshua/Jeshua the high priest). Only map when the identity is clear;
   otherwise create a new person and explain in `identity_note`.
 
-All paths are relative to the scratchpad directory:
-`C:\Users\tailo\AppData\Local\Temp\claude\C--Users-tailo-Downloads-DFS-NFL-Data-NFL-2025-tools-archive-Projects-Bible-Project\772f7bae-eaee-4a04-82d3-17f09a8c1ca7\scratchpad`
+All paths are relative to the session's scratchpad directory.
 
 ## Output
 

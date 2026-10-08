@@ -10,9 +10,7 @@ The requested textual scope includes the Septuagint and Ethiopian/Geʽez traditi
 
 ## Workspace and project architecture
 
-Workspace root:
-
-`C:\Users\tailo\Downloads\DFS\NFL Data\NFL 2025\tools\archive\Projects\Bible Project`
+Workspace root: the repository root.
 
 This is a Python evidence-data pipeline plus a static website in `site/` (see README "Website"). Authored source records are YAML under `data/`; schemas are under `schemas/`; the Python package is under `src/bible_timeline`; tests are under `tests/`; generated JSON/SQLite artifacts and audits are under `generated/`. README has install/verification/build commands. The roadmap is `docs/superpowers/plans/2026-10-05-genesis-to-revelation-roadmap.md`.
 
