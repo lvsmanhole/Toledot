@@ -294,7 +294,8 @@ export function tickPeople(root, time) {
  * An instanced crowd. place(random) -> [x, z] | null; height(x, z) for ground.
  * Returns { group, positions } so callers can animate a few individuals.
  */
-export function crowd({ count = 200, place, height = () => 0, seed = 3, scale = [0.9, 1.1], staffChance = 0.15, material = null, face = null, walk = 0, detail = count > 600 ? "far" : count > 40 ? "low" : "high" }) {
+// bow: lean forward from the feet (radians), as people fall down to worship; kneel: shorten (1 = standing)
+export function crowd({ count = 200, place, height = () => 0, seed = 3, scale = [0.9, 1.1], staffChance = 0.15, material = null, face = null, walk = 0, bow = 0, kneel = 1, detail = count > 600 ? "far" : count > 40 ? "low" : "high" }) {
   count = scaled(count);
   const random = rng(seed);
   const mat = material ?? personMaterial({ walk });
@@ -306,6 +307,8 @@ export function crowd({ count = 200, place, height = () => 0, seed = 3, scale = 
   const s = new THREE.Vector3();
   const p = new THREE.Vector3();
   const up = new THREE.Vector3(0, 1, 0);
+  const side = new THREE.Vector3(1, 0, 0);
+  const lean = new THREE.Quaternion();
   const positions = [];
   for (let tries = 0; counts[0] + counts[1] + counts[2] < count && tries < count * 10; tries++) {
     const at = place(random);
@@ -314,7 +317,8 @@ export function crowd({ count = 200, place, height = () => 0, seed = 3, scale = 
     const k = scale[0] + random() * (scale[1] - scale[0]);
     const yaw = face ? Math.atan2(face[0] - x, face[1] - z) + (random() - 0.5) * 0.6 : random() * 6.28;
     q.setFromAxisAngle(up, yaw);
-    m.compose(p.set(x, height(x, z) - 0.03, z), q, s.set(k, k, k));
+    if (bow) q.multiply(lean.setFromAxisAngle(side, bow * (0.85 + random() * 0.3)));
+    m.compose(p.set(x, height(x, z) - 0.03, z), q, s.set(k, k * kneel, k));
     const r = random();
     const kind = r < staffChance ? 2 : r < staffChance + 0.4 ? 1 : 0;
     meshes[kind].setMatrixAt(counts[kind]++, m);

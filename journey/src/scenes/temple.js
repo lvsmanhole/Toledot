@@ -10,14 +10,48 @@ import { smoke } from "../kit/effects.js";
 import { glowSprite, lerp, pulse, ramp, sramp } from "../kit/common.js";
 import { crowd, herd } from "../kit/figures.js";
 import { createLandscape } from "../kit/landscape.js";
-import { city, solomonTemple, wall } from "../kit/structures.js";
+import { MATERIALS, city, solomonTemple, wall } from "../kit/structures.js";
+import { mergeGeometries } from "three/examples/jsm/utils/BufferGeometryUtils.js";
 import { createTrees, placers } from "../kit/vegetation.js";
 import { jerusalemHeight } from "./david.js";
 
 const T = new THREE.Vector3(0, 0, 0); // temple origin on the mount
+// the court levelled on the summit of Moriah and held up by retaining walls of great hewn stones
+// (1 Kings 5:17; 7:9-12): a rectangle round the court, wider than the hilltop it stands on
+const MOUNT = { cx: 16, cz: 0, hx: 48, hz: 32, depth: 24 };
+
+function templeMount(seed) {
+  const base = jerusalemHeight(seed);
+  const level = base(T.x, T.z);
+  const height = (x, z) => {
+    const d = Math.hypot(Math.max(0, Math.abs(x - MOUNT.cx) - MOUNT.hx), Math.max(0, Math.abs(z - MOUNT.cz) - MOUNT.hz));
+    if (d <= 0) return level;
+    // outside the walls the hill, banked up with fill against their foot
+    return Math.max(base(x, z), level - MOUNT.depth + 4 - d * 0.55);
+  };
+  return { height, level };
+}
+
+/** The retaining walls of the platform: ashlar faces dropping from the court to the hillside. */
+function retainingWalls(level) {
+  const stone = MATERIALS.limestone();
+  const { cx, cz, hx, hz, depth } = MOUNT;
+  const t = 3;
+  const y = level + 1.2 - (depth + 1.2) / 2;
+  const geos = [
+    new THREE.BoxGeometry(2 * hx + 2 * t, depth + 1.2, t).translate(cx, y, cz - hz - t / 2),
+    new THREE.BoxGeometry(2 * hx + 2 * t, depth + 1.2, t).translate(cx, y, cz + hz + t / 2),
+    new THREE.BoxGeometry(t, depth + 1.2, 2 * hz).translate(cx - hx - t / 2, y, cz),
+    new THREE.BoxGeometry(t, depth + 1.2, 2 * hz).translate(cx + hx + t / 2, y, cz),
+  ];
+  const mesh = new THREE.Mesh(mergeGeometries(geos), stone);
+  mesh.castShadow = mesh.receiveShadow = true;
+  return mesh;
+}
 
 export function create(ctx) {
-  const height = jerusalemHeight(261);
+  const mount = templeMount(261);
+  const height = mount.height;
   const L = createLandscape(ctx, {
     terrain: { height, palette: "judea", size: 1300 },
     sky: (rel) => (rel < 22 ? "golden" : rel < 27 ? [[1, "sacred"]] : rel < 32 ? "desert" : [[1 - sramp(rel, 32, 35), "golden"], [sramp(rel, 32, 35), "ash"]]),
@@ -40,11 +74,12 @@ export function create(ctx) {
     audio: (rel) => ({ drone: 0.3 + 0.2 * pulse(rel, 16, 18, 22, 24), shimmer: 0.2 + 0.5 * pulse(rel, 16, 18, 24, 27), wind: 0.15 }),
   });
   const h = L.height;
-  const top = h(0, 0);
+  const top = mount.level;
+  L.add(retainingWalls(top));
   const temple = solomonTemple();
   temple.position.set(T.x, top - 0.2, T.z);
   L.add(temple);
-  const town = city({ count: 420, radius: 120, inner: 60, height: h, style: "stone", seed: 97 });
+  const town = city({ count: 420, radius: 124, inner: 80, height: h, style: "stone", seed: 97 });
   L.add(town);
   L.add(wall({ points: Array.from({ length: 24 }, (_, i) => [Math.cos(i / 24 * 6.283) * 128, Math.sin(i / 24 * 6.283) * 118]), height: h, h: 9, thickness: 3, towerEvery: 3, material: "limestone" }));
   L.add(createTrees({ count: 220, place: placers.disc(0, 0, 340, (x, z) => Math.hypot(x, z) > 140), height: h, kind: "olive", size: [3, 5] }).group);

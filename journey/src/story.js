@@ -425,12 +425,16 @@ export const SCENES = [
     captions: [],
   },
   {
-    id: "babylon", module: "babylon", length: 22, enter: t("dust", 2), years: [[0, -584], [11, -580], [22, -575]],
+    id: "babylon", module: "babylon", length: 30, enter: t("dust", 2), years: [[0, -584], [10, -580], [30, -575]],
     chronicle: { chapters: ["psalms:137", "daniel:1-3"], span: 120 },
     acts: [{ label: "Act XXII", title: "Exile in Babylon", at: 0 }],
     captions: [
-      v(2, 6.5, "By the rivers of Babylon, there we sat down, yea, we wept, when we remembered Zion.", "Psalm 137:1"),
-      v(11, 16, "Lo, I see four men loose, walking in the midst of the fire, and they have no hurt", "Daniel 3:25"),
+      v(1.5, 5.5, "By the rivers of Babylon, there we sat down, yea, we wept, when we remembered Zion.", "Psalm 137:1"),
+      v(6, 9.5, "We hanged our harps upon the willows in the midst thereof.", "Psalm 137:2"),
+      v(10.5, 14.5, "Nebuchadnezzar the king made an image of gold … he set it up in the plain of Dura, in the province of Babylon.", "Daniel 3:1"),
+      v(15, 19.5, "be it known unto thee, O king, that we will not serve thy gods, nor worship the golden image which thou hast set up.", "Daniel 3:18"),
+      v(21, 26, "Lo, I see four men loose, walking in the midst of the fire, and they have no hurt; and the form of the fourth is like the Son of God.", "Daniel 3:25"),
+      v(26.4, 29.4, "Then Shadrach, Meshach, and Abed-nego, came forth of the midst of the fire.", "Daniel 3:26"),
     ],
   },
   {
