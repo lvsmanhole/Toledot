@@ -51,8 +51,8 @@ for (const angle of [0, 45, 90, 180]) {
   scene.background = new THREE.Color(0x6e6e70);
   // something for metal to reflect: without it gold and bronze render black
   scene.environment = new THREE.PMREMGenerator(renderer).fromScene(new RoomEnvironment(), 0.04).texture;
-  scene.add(new THREE.HemisphereLight(0xffffff, 0x444444, 2.2));
-  const sun = new THREE.DirectionalLight(0xffffff, 1.6);
+  scene.add(new THREE.HemisphereLight(0xffffff, 0x444444, 0.6));
+  const sun = new THREE.DirectionalLight(0xffffff, 1.0);
   sun.position.set(2, 3, 4);
   scene.add(sun, gltf.scene.clone(true));
   const camera = new THREE.PerspectiveCamera(30, 1, radius / 100, radius * 100);

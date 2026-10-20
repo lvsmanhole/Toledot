@@ -110,3 +110,15 @@ test("the record of what has been spent survives clearing the cache", async () =
   const { SPENT } = await import("../scripts/creatures.mjs");
   assert.ok(!SPENT.includes(".cache"), SPENT);
 });
+
+test("texels the 3D step failed to bake are filled from their neighbours, in every map", async () => {
+  const { fillUnbaked } = await import("../scripts/creatures.mjs");
+  // 5x5: a white colour texture with a black texel in the middle; its roughness map is black there too. The
+  // hole and its rim (3x3) are filled from the baked ring around them
+  const rgba = new Uint8Array(100).fill(250);
+  const rough = new Uint8Array(100).fill(200);
+  for (let c = 0; c < 3; c++) { rgba[48 + c] = 0; rough[48 + c] = 0; }
+  assert.equal(fillUnbaked(rgba, [rough], 5, 5), 9);
+  assert.deepEqual([...rgba.slice(48, 51)], [250, 250, 250]);
+  assert.deepEqual([...rough.slice(48, 51)], [200, 200, 200]);
+});

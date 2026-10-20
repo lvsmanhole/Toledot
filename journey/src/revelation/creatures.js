@@ -30,25 +30,26 @@ const c = (verse, features, prompt, tris, drawn = []) => ({ verse, features, dra
 
 export const CREATURES = {
   // the people of the vision are of the peoples of the text's world: mostly darker Middle Eastern and African
-  john: c("1:9", ["an old man", "dark olive-brown Middle Eastern skin", "white beard", "a plain undyed wool robe and mantle of an exile", "a wooden staff"],
+  john: { ...c("1:9", ["an old man", "dark olive-brown Middle Eastern skin", "white beard", "a plain undyed wool robe and mantle of an exile", "a wooden staff"],
     "An old Middle Eastern man in exile, deep olive-brown weathered skin, standing on rocks, holding a staff.", 30000),
-  johnHands: c("1:17", ["two old weathered forearms and hands", "dark olive-brown skin", "loose undyed wool sleeves to the wrist", "seen from the owner's own eyes"],
-    "A pair of old weathered forearms and open hands with dark olive-brown skin, palms down, as seen in first person, cut off below the elbow.", 8000),
+    status: "approved", sha256: "65d73f7b53c256fef603467d7d2350e10f2bc2fd308165b38dede33c545c3064" },
   // the burning feet, seven stars, the sword and the countenance are light the scene adds (drawn); the eyes of
   // fire are in the model, and the scene's flames brighten them
-  sonOfMan: c("1:13-16", [
+  sonOfMan: { ...c("1:13-16", [
     "clothed with a garment down to the foot (white)", "girt about the paps with a golden girdle",
     "his head and his hairs white like wool, as white as snow", "skin of dark burnished bronze",
     "his eyes as a flame of fire", "fierce", "bare feet of burnished bronze", "right hand open, palm up and empty",
   ], "A tall fierce man standing, skin of dark burnished bronze, in a white floor-length linen robe with a golden band high across the chest, hair white as wool, eyes glowing like flames of fire, a stern piercing gaze, bare feet of polished bronze, right hand held out open, nothing in his hands.", 40000,
   ["his feet like unto fine brass, as if they burned in a furnace", "in his right hand seven stars",
     "out of his mouth a sharp two-edged sword", "his countenance as the sun shineth in his strength"]),
+    status: "approved", sha256: "e4eb38f898746ff9893b84185b5440def9e653027cd9765af5806e53b3cb94e4" },
   // the elder's crown of gold is its own model ("crown"), set on his head in the scene: he casts it down (4:10).
   // Three elders of different peoples, each placed eight times round the throne.
   elder: c("4:4", ["clothed in white raiment", "seated", "bareheaded", "deep dark brown African skin"],
     "An old African man seated, deep dark brown skin, white beard, in white raiment, bareheaded, hands on his knees, nothing under him.", 9000),
-  elderB: c("4:4", ["clothed in white raiment", "seated", "bareheaded", "dark olive-brown Middle Eastern skin"],
+  elderB: { ...c("4:4", ["clothed in white raiment", "seated", "bareheaded", "dark olive-brown Middle Eastern skin"],
     "An old Middle Eastern man seated, dark olive-brown skin, grey beard, in white raiment, bareheaded, hands on his knees, nothing under him.", 9000),
+    status: "approved", sha256: "2d7852da2d8d94fb56ae4e13777289735e6d8a3de9b6cf6e429b4f05c5bc0090" },
   elderC: c("4:4", ["clothed in white raiment", "seated", "bareheaded", "warm brown North African skin"],
     "An old North African man seated, warm brown skin, white beard, in white raiment, bareheaded, hands on his knees, nothing under him.", 9000),
   elderSeat: { ...c("4:4", ["a seat (throne) for an elder", "stone and gold"],
@@ -79,9 +80,12 @@ export const CREATURES = {
   // not a gentle white angel: a fearsome divine being, brazen, as burnished bronze
   angel: c("5:2", ["a strong angel", "a brazen being: body and face as burnished bronze", "great wings", "no halo", "fearsome, not gentle"],
     "A towering, awe-inspiring heavenly messenger whose whole body and stern face gleam like burnished bronze, eyes blazing with light, vast wings of bronze and gold feathers, a plain linen robe, standing tall, one arm raised to proclaim; majestic and formidable, not gentle, not a cherub, no halo.", 25000),
-  sealedBook: c("5:1", ["a book (scroll) written within and on the backside", "sealed with seven seals"],
+  sealedBook: { ...c("5:1", ["a book (scroll) written within and on the backside", "sealed with seven seals"],
     "An ancient rolled scroll written on both sides, bound shut with seven wax seals along its edge, lying alone; nothing else in frame, no cloth, no feathers, no stones.", 3000),
-  harp: c("5:8", ["a harp (an ancient lyre)"], "An ancient wooden lyre with gold fittings and gut strings, standing alone; nothing else in frame, no cloth, no feathers, no stones.", 2000),
+    status: "approved", sha256: "f6919a860922db6ac823dc143eb3210ed354a46e70662390908edd0aafc06faa" },
+  harp: { ...c("5:8", ["a harp (an ancient lyre)"], "An ancient wooden lyre with gold fittings and gut strings, standing alone; nothing else in frame, no cloth, no feathers, no stones.", 2000),
+    status: "approved", sha256: "c09c8717f128b3552a6924958b535bcf5ab731b13ee4151fd8186bec45e569f5" },
   goldenVial: c("5:8", ["a golden vial (a wide shallow bowl) full of odours"], "A wide shallow bowl of gold heaped with incense, alone; no smoke, nothing else in frame.", 1500),
-  keys: c("1:18", ["the keys of hell and of death"], "Two large ancient iron keys on a ring, alone; nothing else in frame, no cloth, no feathers, no stones.", 1500),
+  keys: { ...c("1:18", ["the keys of hell and of death"], "Two large ancient iron keys on a ring, alone; nothing else in frame, no cloth, no feathers, no stones.", 1500),
+    status: "approved", sha256: "5bfbe63e78cc9f10b5582143208c8a6e1ae7761ce2fb973fc3bece06a2ceaa48" },
 };

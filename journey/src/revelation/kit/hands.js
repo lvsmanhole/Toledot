@@ -1,10 +1,10 @@
 // John's own forearms and hands, seen from his eyes, carried by the camera. They come into view only when
-// he acts: reaching for the book (10:9), writing (1:11), shielding his face, measuring (11:1).
+// he acts: reaching for the book (10:9), writing (1:11), shielding his face, measuring (11:1). They are built
+// here, not generated: the 3D service could not model them as seen from his own eyes.
 
 import * as THREE from "three";
 
 import { lerp, sramp } from "../../kit/common.js";
-import { creature } from "./creature.js";
 
 // where the hands sit in front of the eyes for each pose (camera space, metres; x right, y up, -z ahead)
 const POSES = {
@@ -16,10 +16,11 @@ const POSES = {
   touched: { y: -0.16, z: -0.38, tilt: 0.35 },
 };
 
-function standIn() {
+function built() {
   const g = new THREE.Group();
-  const skin = new THREE.MeshStandardMaterial({ color: 0x8a6a52, roughness: 0.8 });
-  const sleeve = new THREE.MeshStandardMaterial({ color: 0x7c7266, roughness: 1 });
+  // an old man of the east: dark olive-brown skin, sleeves of undyed wool
+  const skin = new THREE.MeshStandardMaterial({ color: 0x5e4030, roughness: 0.75 });
+  const sleeve = new THREE.MeshStandardMaterial({ color: 0x9a8f7e, roughness: 1 });
   for (const side of [-1, 1]) {
     const arm = new THREE.Mesh(new THREE.CapsuleGeometry(0.045, 0.32, 4, 10), sleeve);
     arm.rotation.x = Math.PI / 2;
@@ -33,7 +34,8 @@ function standIn() {
 
 /** hands(camera): parented to the camera (add the camera to the scene). pose(name, k) eases from rest. */
 export function hands(camera) {
-  const group = creature("johnHands", { height: 0.12, standIn });
+  const group = new THREE.Group();
+  group.add(built());
   group.visible = false;
   camera.add(group);
   return {

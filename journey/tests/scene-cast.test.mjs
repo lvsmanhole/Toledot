@@ -16,12 +16,11 @@ function castKeys(code) {
   return keys;
 }
 
-/** A scene module's keys, including the shared kits it imports (the throne room, John's hands). */
+/** A scene module's keys, including the shared kit it imports (the throne room). */
 function sceneKeys(module) {
   const code = src(`scenes/${module}.js`);
   const keys = castKeys(code);
   if (code.includes('from "../kit/heaven.js"')) for (const k of castKeys(src("kit/heaven.js"))) keys.add(k);
-  if (code.includes('from "../kit/hands.js"')) keys.add("johnHands");
   return keys;
 }
 
@@ -36,7 +35,7 @@ test("every creature a scene draws is in the manifest, has a stand-in, and is in
   for (const s of built) {
     for (const key of sceneKeys(s.module)) {
       assert.ok(CREATURES[key], `${s.id}: "${key}" is not in the manifest`);
-      assert.ok(standIns.has(key) || key === "johnHands", `${s.id}: "${key}" has no stand-in`);
+      assert.ok(standIns.has(key), `${s.id}: "${key}" has no stand-in`);
       assert.ok(s.creatures.includes(key), `${s.id}: draws "${key}" but does not list it`);
     }
   }

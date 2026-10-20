@@ -11,6 +11,7 @@ import { fileURLToPath, pathToFileURL } from "node:url";
 import { NodeIO } from "@gltf-transform/core";
 import { ALL_EXTENSIONS } from "@gltf-transform/extensions";
 import { MeshoptDecoder } from "meshoptimizer";
+import sharp from "sharp";
 
 import { CREATURES, PRICES, STYLE } from "../src/revelation/creatures.js";
 
@@ -112,6 +113,73 @@ export async function triangles(file) {
   return n;
 }
 
+/**
+ * Fill the texels the 3D step failed to bake. On draped or carved models Trellis can leave blocks of pure
+ * black in the colour texture (and its metal-roughness map, where black reads as polished metal); each hole
+ * is grown in from its edges with the average of its baked neighbours, in every texture of the material.
+ * rgba: the colour texture's pixels; others: the material's other textures, same size. Returns the holes filled.
+ */
+export function fillUnbaked(rgba, others, width, height) {
+  // near-black (darker than any skin or shadow the style paints), and one texel around it: compression leaves a
+  // dark rim at each hole's edge
+  const dark = new Uint8Array(width * height);
+  for (let i = 0; i < dark.length; i++) if (Math.max(rgba[i * 4], rgba[i * 4 + 1], rgba[i * 4 + 2]) < 24) dark[i] = 1;
+  const hole = new Uint8Array(width * height);
+  let left = 0;
+  for (let y = 0; y < height; y++) for (let x = 0; x < width; x++) {
+    let near = 0;
+    for (let dy = -1; dy <= 1; dy++) for (let dx = -1; dx <= 1; dx++) {
+      const nx = x + dx, ny = y + dy;
+      if (nx >= 0 && ny >= 0 && nx < width && ny < height) near |= dark[ny * width + nx];
+    }
+    if (near) { hole[y * width + x] = 1; left++; }
+  }
+  const filled = left;
+  const images = [rgba, ...others];
+  while (left > 0) {
+    const next = [];
+    for (let y = 0; y < height; y++) for (let x = 0; x < width; x++) {
+      const i = y * width + x;
+      if (!hole[i]) continue;
+      const near = [];
+      for (let dy = -1; dy <= 1; dy++) for (let dx = -1; dx <= 1; dx++) {
+        const nx = x + dx, ny = y + dy;
+        if (nx >= 0 && ny >= 0 && nx < width && ny < height && !hole[ny * width + nx]) near.push(ny * width + nx);
+      }
+      if (near.length) next.push([i, near]);
+    }
+    if (!next.length) break;
+    for (const [i, near] of next) {
+      for (const img of images) for (let c = 0; c < 3; c++) img[i * 4 + c] = Math.round(near.reduce((s, j) => s + img[j * 4 + c], 0) / near.length);
+      hole[i] = 0;
+      left--;
+    }
+  }
+  return filled;
+}
+
+/** Run fillUnbaked over each material of a .glb (raw -> out); prints how much it filled. */
+async function repairTextures(raw, out) {
+  const io = new NodeIO().registerExtensions(ALL_EXTENSIONS);
+  const doc = await io.read(raw);
+  for (const m of doc.getRoot().listMaterials()) {
+    const base = m.getBaseColorTexture();
+    if (!base) continue;
+    const others = [m.getMetallicRoughnessTexture()].filter(Boolean);
+    const read = async (t) => sharp(Buffer.from(t.getImage())).ensureAlpha().raw().toBuffer({ resolveWithObject: true });
+    const b = await read(base);
+    const o = await Promise.all(others.map(read));
+    if (o.some((x) => x.info.width !== b.info.width || x.info.height !== b.info.height)) continue;
+    const n = fillUnbaked(b.data, o.map((x) => x.data), b.info.width, b.info.height);
+    if (!n) continue;
+    console.log(`filled ${(100 * n / (b.info.width * b.info.height)).toFixed(1)}% unbaked texels`);
+    const write = async (t, { data, info }) => { t.setImage(new Uint8Array(await sharp(data, { raw: info }).png().toBuffer())); t.setMimeType("image/png"); };
+    await write(base, b);
+    for (const [k, t] of others.entries()) await write(t, o[k]);
+  }
+  await io.write(out, doc);
+}
+
 /** Simplify, compress and size-check the raw model into assets/creatures/<key>.glb; nothing is left on failure. */
 export async function pack(key) {
   if (!mayReplace(CREATURES[key])) fail(`${key} is approved; set its status back to "pending" before replacing its model.`);
@@ -121,7 +189,9 @@ export async function pack(key) {
   const ratio = Math.min(1, budget / (await triangles(raw)));
   mkdirSync(OUT, { recursive: true });
   const tmp = join(CACHE, key, "packed.glb");
-  execFileSync(process.execPath, [join(ROOT, "node_modules", "@gltf-transform", "cli", "bin", "cli.js"), "optimize", raw, tmp,
+  const repaired = join(CACHE, key, "repaired.glb");
+  await repairTextures(raw, repaired);
+  execFileSync(process.execPath, [join(ROOT, "node_modules", "@gltf-transform", "cli", "bin", "cli.js"), "optimize", repaired, tmp,
     "--simplify-ratio", String(Math.max(0.001, ratio * 0.97)), "--simplify-error", "1", "--compress", "meshopt", "--texture-compress", "webp", "--texture-size", "1024"], { stdio: "inherit" });
   const tris = await triangles(tmp);
   const bytes = statSync(tmp).size;
