@@ -50,5 +50,5 @@ jobs:
       - name: Build the journey (site/index.html, site/assets, site/lib)
         working-directory: journey
         run: npm run build
-      - name: Test the timeline and the KJV captions
-        run: node --test site/timeline/tests/layout.test.mjs journey/tests/story.test.mjs
+      - name: Test the timeline, the KJV captions and the Revelation (never generates creatures)
+        run: node --test site/timeline/tests/layout.test.mjs journey/tests/story.test.mjs journey/tests/revelation.test.mjs journey/tests/creatures.test.mjs journey/tests/eyes.test.mjs journey/tests/audio.test.mjs
