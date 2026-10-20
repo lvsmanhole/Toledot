@@ -59,6 +59,20 @@ export const SCENES = [
       v(15, 21.5, "What thou seest, write in a book, and send it unto the seven churches which are in Asia; unto Ephesus, and unto Smyrna, and unto Pergamos, and unto Thyatira, and unto Sardis, and unto Philadelphia, and unto Laodicea.", "Revelation 1:11"),
     ],
   },
+  {
+    id: "sonofman", module: "sonofman", length: 36, enter: t("light", 1.2), years: null, covers: ["1:12-20"], creatures: ["sonOfMan", "keys", "johnHands"],
+    captions: [
+      v(1.5, 5, "And I turned to see the voice that spake with me. And being turned, I saw seven golden candlesticks", "Revelation 1:12"),
+      v(5.5, 9.5, "one like unto the Son of man, clothed with a garment down to the foot, and girt about the paps with a golden girdle.", "Revelation 1:13"),
+      v(10, 13.5, "His head and his hairs were white like wool, as white as snow; and his eyes were as a flame of fire", "Revelation 1:14"),
+      v(14, 17, "And his feet like unto fine brass, as if they burned in a furnace; and his voice as the sound of many waters.", "Revelation 1:15"),
+      v(17.5, 21, "And he had in his right hand seven stars: and out of his mouth went a sharp twoedged sword: and his countenance was as the sun shineth in his strength.", "Revelation 1:16"),
+      v(21.5, 25, "And when I saw him, I fell at his feet as dead. And he laid his right hand upon me, saying unto me, Fear not; I am the first and the last", "Revelation 1:17"),
+      v(25.5, 29, "I am he that liveth, and was dead; and, behold, I am alive for evermore, Amen; and have the keys of hell and of death.", "Revelation 1:18"),
+      v(29.5, 32, "Write the things which thou hast seen, and the things which are, and the things which shall be hereafter", "Revelation 1:19"),
+      v(32.3, 35.5, "The seven stars are the angels of the seven churches: and the seven candlesticks which thou sawest are the seven churches.", "Revelation 1:20"),
+    ],
+  },
 ];
 
 export const { LENGTH, ACTS, CAPTIONS, TRANSITIONS, locate, yearAt } = layout(SCENES);

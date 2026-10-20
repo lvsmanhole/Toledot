@@ -17,17 +17,25 @@ export function creature(key, { height = 1.75, standIn = () => new THREE.Group()
   const group = new THREE.Group();
   group.name = key;
   if (spec.status !== "approved") {
-    group.add(standIn());
+    group.add(fitted(standIn(), height));
     return group;
   }
   model(key).then((root) => {
-    const inst = root.clone(true);
-    const box = new THREE.Box3().setFromObject(inst);
-    const { scale, offset } = fitToHeight({ min: box.min.toArray(), max: box.max.toArray() }, height);
-    inst.scale.setScalar(scale);
-    inst.position.set(...offset);
+    const inst = fitted(root.clone(true), height);
     inst.traverse((o) => { if (o.isMesh) { o.castShadow = true; o.receiveShadow = true; } });
     group.add(inst);
-  }).catch(() => group.add(standIn()));
+  }).catch(() => group.add(fitted(standIn(), height)));
   return group;
+}
+
+/** Scale and place an object so it stands on the origin, `height` tall (the same for models and stand-ins). */
+function fitted(object, height) {
+  const box = new THREE.Box3().setFromObject(object);
+  if (box.isEmpty()) return object;
+  const { scale, offset } = fitToHeight({ min: box.min.toArray(), max: box.max.toArray() }, height);
+  const holder = new THREE.Group();
+  object.scale.multiplyScalar(scale);
+  object.position.set(object.position.x * scale + offset[0], object.position.y * scale + offset[1], object.position.z * scale + offset[2]);
+  holder.add(object);
+  return holder;
 }

@@ -29,7 +29,7 @@ export function create(ctx) {
   const ground = L.height(jx, jz);
   const john = cast("john", 1.72);
   john.position.set(jx, ground, jz);
-  john.rotation.y = -Math.PI / 2; // facing east (+x), over the sea
+  john.rotation.y = Math.PI / 2; // facing east (+x), over the sea (figures face +z)
   L.add(john);
 
   // from 14 on: John's eyes, looking east; the voice is behind him
