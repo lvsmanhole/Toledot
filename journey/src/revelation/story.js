@@ -37,10 +37,15 @@ const h = (from, to, text, ref, note) => ({ from, to, style: "title", text, ref,
 export const SCENES = [
   // ---------------------------------------------------------------- Prologue (1:1–8)
   {
-    id: "prologue", module: "prologue", length: 22, enter: null, years: null, covers: [], creatures: [],
+    id: "prologue", module: "prologue", length: 28, enter: null, years: null, covers: ["1:1-8"], creatures: [],
     acts: [{ label: "Prologue", title: "The Revelation of Jesus Christ", at: 0 }],
     captions: [
-      h(3, 9, "The Revelation of Jesus Christ", "Revelation 1:1"),
+      h(2, 6, "The Revelation of Jesus Christ", "Revelation 1:1"),
+      v(6.5, 10.5, "he sent and signified it by his angel unto his servant John", "Revelation 1:1"),
+      v(11, 14.5, "Blessed is he that readeth, and they that hear the words of this prophecy", "Revelation 1:3"),
+      v(15, 19, "Grace be unto you, and peace, from him which is, and which was, and which is to come; and from the seven Spirits which are before his throne", "Revelation 1:4"),
+      v(19.5, 23, "Behold, he cometh with clouds; and every eye shall see him", "Revelation 1:7"),
+      h(23.5, 27.3, "I am Alpha and Omega, the beginning and the ending", "Revelation 1:8"),
     ],
   },
 ];
