@@ -185,6 +185,25 @@ const PROGRAMS = {
       { text: "The voyage to Rome", at: [19, 35.2], from: 20.5, to: 26 },
     ],
   },
+
+  // Revelation 2–3 (the Revelation page): the seven churches of Asia, from Patmos, in the order of the letters
+  churches: {
+    camera: [[0, [26.9, 35.6, 70], [27.2, 37.6]], [5, [27.6, 35.9, 90], [27.8, 38.2]], [12, [27.9, 36.2, 95], [28.0, 38.4]]],
+    places: [
+      { place: "patmos", from: 0, to: 12, label: "Patmos", big: true },
+      { place: "ephesus", from: 2, to: 12, label: "Ephesus" },
+      { place: "smyrna", from: 3, to: 12, label: "Smyrna" },
+      { place: "pergamum", from: 4, to: 12, label: "Pergamos" },
+      { place: "thyatira", from: 5, to: 12, label: "Thyatira" },
+      { place: "sardis", from: 6, to: 12, label: "Sardis" },
+      { place: "philadelphia", from: 7, to: 12, label: "Philadelphia" },
+      { place: "laodicea", from: 8, to: 12, label: "Laodicea" },
+    ],
+    routes: [
+      { points: ["patmos", "ephesus"], from: 1, to: 2.2, color: PALE, arc: 0.2 },
+      { points: ["ephesus", "smyrna", "pergamum", "thyatira", "sardis", "philadelphia", "laodicea"], from: 2.2, to: 8.5, color: GOLD },
+    ],
+  },
 };
 
 export function create(ctx, spec) {
