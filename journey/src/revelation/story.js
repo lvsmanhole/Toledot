@@ -48,6 +48,17 @@ export const SCENES = [
       h(23.5, 27.3, "I am Alpha and Omega, the beginning and the ending", "Revelation 1:8"),
     ],
   },
+  // ---------------------------------------------------------------- I. Patmos (1:9–11)
+  {
+    id: "patmos", module: "patmos", length: 24, enter: t("dark", 2), years: null, covers: ["1:9-11"], creatures: ["john", "johnHands"],
+    acts: [{ label: "I", title: "The Son of Man", at: 0 }],
+    captions: [
+      v(2, 6.5, "I John … was in the isle that is called Patmos, for the word of God, and for the testimony of Jesus Christ.", "Revelation 1:9"),
+      v(7, 10.5, "I was in the Spirit on the Lord’s day", "Revelation 1:10"),
+      v(11, 14.5, "and heard behind me a great voice, as of a trumpet", "Revelation 1:10"),
+      v(15, 21.5, "What thou seest, write in a book, and send it unto the seven churches which are in Asia; unto Ephesus, and unto Smyrna, and unto Pergamos, and unto Thyatira, and unto Sardis, and unto Philadelphia, and unto Laodicea.", "Revelation 1:11"),
+    ],
+  },
 ];
 
 export const { LENGTH, ACTS, CAPTIONS, TRANSITIONS, locate, yearAt } = layout(SCENES);

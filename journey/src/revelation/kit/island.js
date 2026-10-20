@@ -1,18 +1,26 @@
 // Patmos: a rocky island in a dark sea (Revelation 1:9), shared by the scenes set on it. John stands on a
-// ledge above the shore at JOHN, looking east over the water; the voice comes from behind him (the west).
+// ledge of the eastern slope at JOHN, looking east (+x) over the water; the voice comes from behind him.
 
 import { createLandscape } from "../../kit/landscape.js";
 import { composeHeight, heights } from "../../kit/terrain.js";
 
-export const JOHN = [2, 2]; // where John stands (x, z)
+const ROCK = { low: [0.3, 0.27, 0.22], high: [0.34, 0.31, 0.27], rock: [0.33, 0.3, 0.27], snow: [0.33, 0.3, 0.27], wet: [0.18, 0.16, 0.13], snowLine: 999 };
+
+export const JOHN = [70, 0]; // where John stands (x, z)
+
+/** Height of the island's ground at (x, z). */
+export const islandHeight = composeHeight([heights.mountain(0, 0, 170, 52, 23, 1.2), heights.rolling(5, 0.035, 381), (x, z) => -9], 0);
+
+/** Height of the ground where John stands. */
+export const groundAtJohn = islandHeight(JOHN[0], JOHN[1]);
 
 export function patmos(ctx, options) {
-  const island = (x, z) => 30 * Math.exp(-(x * x + z * z) / 9000) - 6;
-  const height = composeHeight([island, heights.rolling(6, 0.03, 381)], 0);
   return createLandscape(ctx, {
-    terrain: { height, palette: "judea", size: 900 },
+    // grey-brown volcanic rock with thin scrub
+    terrain: { height: islandHeight, palette: ROCK, size: 900, highFrom: 2, highSpan: 18 },
     water: { size: 3000, wave: 0.6, chop: 1.2, deep: [0.01, 0.03, 0.05], level: 0 },
-    keepClear: [[JOHN[0], JOHN[1], 12], [-14, 2, 16]],
+    keepClear: [[JOHN[0], JOHN[1], 8], [JOHN[0] - 26, JOHN[1], 14]],
+    rocks: 160,
     ...options,
   });
 }

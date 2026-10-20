@@ -2,4 +2,5 @@
 
 export const MODULES = {
   prologue: () => import("./prologue.js").then((m) => m.create),
+  patmos: () => import("./patmos.js").then((m) => m.create),
 };

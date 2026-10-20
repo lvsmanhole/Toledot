@@ -8,11 +8,12 @@ import { creature } from "./creature.js";
 
 // where the hands sit in front of the eyes for each pose (camera space, metres; x right, y up, -z ahead)
 const POSES = {
+  // (the view is about 25 degrees half-height: a hand at depth z shows when y is above -0.45 z)
   rest: { y: -0.75, z: -0.35, tilt: 0.2 },
-  reach: { y: -0.22, z: -0.55, tilt: -0.1 },
-  write: { y: -0.42, z: -0.42, tilt: 0.9 },
+  reach: { y: -0.12, z: -0.5, tilt: -0.1 },
+  write: { y: -0.17, z: -0.42, tilt: 0.55 },
   shield: { y: -0.02, z: -0.3, tilt: -1.2 },
-  touched: { y: -0.6, z: -0.32, tilt: 0.45 },
+  touched: { y: -0.16, z: -0.38, tilt: 0.35 },
 };
 
 function standIn() {
