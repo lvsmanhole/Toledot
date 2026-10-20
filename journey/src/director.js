@@ -176,13 +176,12 @@ export function runDirector(opts) {
     entry = { status: "loading", instance: null };
     loaded.set(index, entry);
     entry.promise = MODULES[spec.module]()
-      .then((factory) => new Promise((resolve) => requestAnimationFrame(() => {
+      // a scene that throws while it builds fails (below) rather than leaving the gate waiting for ever
+      .then((factory) => new Promise((resolve, reject) => requestAnimationFrame(() => {
         const t0 = performance.now();
         setOwner(index);
-        let inst;
-        try { inst = factory(ctx, spec); } finally { setOwner(null); }
+        try { resolve(factory(ctx, spec)); } catch (error) { reject(error); } finally { setOwner(null); }
         entry.buildMs = performance.now() - t0;
-        resolve(inst);
       })))
       // hold the scene back until its photographs and models have arrived, so nothing pops in
       .then((instance) => settled(20000).then(() => instance))

@@ -12,7 +12,7 @@ import { pipeline } from "node:stream/promises";
 import { fileURLToPath } from "node:url";
 
 import { HDRIS, MODELS, TEXTURES } from "../src/kit/assets-manifest.js";
-import { CREATURES } from "../src/revelation/creatures.js";
+import { CREATURES, ROOM, ROOM_LIMITS } from "../src/revelation/creatures.js";
 import { triangles } from "./creatures.mjs";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
@@ -179,9 +179,10 @@ for (const [key, { id, leaves }] of Object.entries(MODELS)) {
   if (existsSync(src) && !existsSync(dstM)) await sharp(src).resize(512, 512).webp({ quality: 88 }).toFile(dstM);
 }
 // the Revelation's generated creatures (scripts/creatures.mjs): only those the user approved ship. The
-// committed model is the desktop one; phones and tablets get a copy at 512 px textures and at most half the
-// triangles (texture seams stop the simplifier near there; see the budgets in src/revelation/creatures.js).
+// committed model is the desktop one; phones and tablets get a copy at 512 px textures and fewer triangles,
+// and the throne room, the heaviest scene, must fit a phone on those copies.
 const made = [];
+const phone = {};
 for (const [key, { status, sha256 }] of Object.entries(CREATURES)) {
   if (status !== "approved") continue;
   const src = join(ROOT, "assets", "creatures", `${key}.glb`);
@@ -194,16 +195,18 @@ for (const [key, { status, sha256 }] of Object.entries(CREATURES)) {
   if (!fresh || !existsSync(out)) { mkdirSync(dirname(out), { recursive: true }); copyFileSync(src, out); }
   if (!fresh || !existsSync(outM)) {
     mkdirSync(dirname(outM), { recursive: true });
-    // aim at a third of the budget; texture seams usually stop it short, which half the budget allows for
+    // aim at a third of the budget; texture seams usually stop it short
     const ratio = Math.min(1, (CREATURES[key].tris / 3) / (await triangles(src))) * 0.8;
     execFileSync(process.execPath, [join(ROOT, "node_modules", "@gltf-transform", "cli", "bin", "cli.js"), "optimize", src, outM,
       "--simplify-ratio", String(ratio), "--simplify-error", "1", "--compress", "meshopt", "--texture-compress", "webp", "--texture-size", "512"], { stdio: "inherit" });
   }
-  // the phone copy must keep to half the creature's budget
-  const phoneTris = await triangles(outM);
-  if (phoneTris > CREATURES[key].tris / 2) throw new Error(`${key}: the phone model has ${Math.round(phoneTris)} triangles, over half its budget (${CREATURES[key].tris})`);
+  phone[key] = await triangles(outM);
   writeFileSync(stamp, sha256 ?? "");
 }
+// a creature not yet approved shows its stand-in, counted at its full budget
+const phoneRoom = Object.entries(ROOM).reduce((n, [key, count]) => n + count * (phone[key] ?? CREATURES[key].tris), 0);
+if (phoneRoom > ROOM_LIMITS.phone) throw new Error(`the throne room has ${Math.round(phoneRoom)} triangles on a phone (limit ${ROOM_LIMITS.phone})`);
+console.log(`throne room on a phone: ${Math.round(phoneRoom)} triangles`);
 const madeCredit = made.length ? `\nGenerated models (fal.ai), made for Toledot:\n${made.map((k) => `- ${k}`).join("\n")}\n` : "";
 writeFileSync(join(OUT, "CREDITS.txt"), `Assets from Poly Haven (https://polyhaven.com), CC0 1.0 Universal.\n${credits.map((c) => `- ${c}`).join("\n")}\n${madeCredit}`);
 console.log(`assets ready in ${OUT} (${fetched} files downloaded)`);

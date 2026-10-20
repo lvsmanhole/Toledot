@@ -55,15 +55,6 @@ export function elder() {
   return g;
 }
 
-export function elderSeat() {
-  const g = new THREE.Group();
-  const stone = std(0xd9d2c4, { roughness: 0.6 });
-  g.add(mesh(new THREE.BoxGeometry(0.9, 0.5, 0.8), stone, 0, 0.25, 0));
-  g.add(mesh(new THREE.BoxGeometry(0.9, 1.5, 0.12), stone, 0, 0.75, 0.38));
-  g.add(mesh(new THREE.BoxGeometry(0.95, 0.06, 0.85), MATERIALS.gold(), 0, 0.52, 0));
-  return g;
-}
-
 export function crown() {
   const g = new THREE.Group();
   const gold = MATERIALS.gold();
@@ -217,4 +208,4 @@ export function keys() {
   return g;
 }
 
-export const STANDINS = { john, sonOfMan, elder, elderB: elder, elderC: elder, elderSeat, crown, beastLion: () => beast("lion"), beastCalf: () => beast("calf"), beastMan: () => beast("man"), beastEagle: () => beast("eagle"), wingEyes, lamb, angel, sealedBook, harp, goldenVial, keys };
+export const STANDINS = { john, sonOfMan, elder, elderB: elder, elderC: elder, crown, beastLion: () => beast("lion"), beastCalf: () => beast("calf"), beastMan: () => beast("man"), beastEagle: () => beast("eagle"), wingEyes, lamb, angel, sealedBook, harp, goldenVial, keys };

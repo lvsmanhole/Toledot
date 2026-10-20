@@ -24,7 +24,7 @@ import { spawnSync } from "node:child_process";
 import { fileURLToPath } from "node:url";
 
 import { buildPrompt, estimate } from "../scripts/creatures.mjs";
-import { PRICES, STYLE } from "../src/revelation/creatures.js";
+import { PRICES, ROOM, ROOM_LIMITS, STYLE } from "../src/revelation/creatures.js";
 import { fitToHeight } from "../src/revelation/kit/fit.js";
 
 const script = new URL("../scripts/creatures.mjs", import.meta.url);
@@ -88,15 +88,12 @@ test("every approved creature's model is the file the user approved", () => {
   assert.deepEqual(approvalProblems(CREATURES, read), []);
 });
 
-test("every creature has a triangle budget, and the throne room's copies fit a phone", () => {
+test("every creature has a triangle budget, and the throne room fits them on desktop", () => {
   for (const [key, c] of Object.entries(CREATURES)) assert.ok(Number.isFinite(c.tris) && c.tris > 0 && c.tris <= 60000, `${key} budget`);
-  const T = (key) => CREATURES[key].tris;
-  // as placed in kit/heaven.js and scenes/lamb.js: 25 seats (the throne is one), 24 elders (8 of each) and crowns, four beasts
-  // with six wings each, the Lamb, the angel, the book, and a harp or a vial in each elder's hands
-  const room = 25 * T("elderSeat") + 8 * (T("elder") + T("elderB") + T("elderC")) + 24 * T("crown") + T("beastLion") + T("beastCalf") + T("beastMan") + T("beastEagle")
-    + 24 * T("wingEyes") + T("lamb") + T("angel") + T("sealedBook") + 12 * T("harp") + 12 * T("goldenVial");
-  assert.ok(room <= 900000, `desktop throne room ${room} triangles`);
-  assert.ok(room / 2 <= 300000, `phone throne room ${Math.round(room / 2)} triangles`);
+  for (const key of Object.keys(ROOM)) assert.ok(CREATURES[key], `ROOM names no creature "${key}"`);
+  const room = Object.entries(ROOM).reduce((n, [key, count]) => n + count * CREATURES[key].tris, 0);
+  // phones are checked on the real phone copies when they are built (scripts/fetch-assets.mjs)
+  assert.ok(room <= ROOM_LIMITS.desktop, `desktop throne room ${room} triangles`);
 });
 
 test("an override can only lower the agreed ceiling, never raise or replace it", () => {
@@ -121,4 +118,10 @@ test("texels the 3D step failed to bake are filled from their neighbours, in eve
   assert.equal(fillUnbaked(rgba, [rough], 5, 5), 9);
   assert.deepEqual([...rgba.slice(48, 51)], [250, 250, 250]);
   assert.deepEqual([...rough.slice(48, 51)], [200, 200, 200]);
+});
+
+test("fitToHeight can place a model by its left edge, so a wing grows out from its root", () => {
+  const f = fitToHeight({ min: [-1, 2, -3], max: [3, 6, 1] }, 2, { root: "minX" });
+  assert.equal(f.scale, 0.5);
+  assert.deepEqual(f.offset, [0.5, -1, 0.5]);
 });

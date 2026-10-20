@@ -11,13 +11,13 @@ import { fitToHeight } from "./fit.js";
  * creature("lamb", { height: 0.9, standIn: () => group }) -> Group, standing on its origin, `height` tall.
  * The approved model fills in when it arrives (the director waits for it before showing the scene).
  */
-export function creature(key, { height = 1.75, standIn = () => new THREE.Group() } = {}) {
+export function creature(key, { height = 1.75, standIn = () => new THREE.Group(), root } = {}) {
   const spec = CREATURES[key];
   if (!spec) throw new Error(`no creature "${key}"`);
   const group = new THREE.Group();
   group.name = key;
   if (spec.status !== "approved") {
-    group.add(fitted(standIn(), height));
+    group.add(fitted(standIn(), height, root));
     return group;
   }
   model(key).then((root) => {
@@ -25,18 +25,18 @@ export function creature(key, { height = 1.75, standIn = () => new THREE.Group()
     const turned = new THREE.Group();
     turned.add(root.clone(true));
     turned.rotation.y = spec.yaw ?? 0;
-    const inst = fitted(turned, height);
+    const inst = fitted(turned, height, root);
     inst.traverse((o) => { if (o.isMesh) { o.castShadow = true; o.receiveShadow = true; } });
     group.add(inst);
-  }).catch(() => group.add(fitted(standIn(), height)));
+  }).catch(() => group.add(fitted(standIn(), height, root)));
   return group;
 }
 
 /** Scale and place an object so it stands on the origin, `height` tall (the same for models and stand-ins). */
-function fitted(object, height) {
+function fitted(object, height, root) {
   const box = new THREE.Box3().setFromObject(object);
   if (box.isEmpty()) return object;
-  const { scale, offset } = fitToHeight({ min: box.min.toArray(), max: box.max.toArray() }, height);
+  const { scale, offset } = fitToHeight({ min: box.min.toArray(), max: box.max.toArray() }, height, { root });
   const holder = new THREE.Group();
   object.scale.multiplyScalar(scale);
   object.position.set(object.position.x * scale + offset[0], object.position.y * scale + offset[1], object.position.z * scale + offset[2]);

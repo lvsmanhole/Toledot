@@ -11,6 +11,7 @@ import { flame } from "../../kit/effects.js";
 import { MATERIALS } from "../../kit/structures.js";
 import { createStars } from "../../engine/stars.js";
 import { cast } from "./cast.js";
+import { seat } from "./seat.js";
 
 export const JOHN_Z = 32; // where John stands, on the sea of glass, facing the throne (-z)
 export const DAIS = 3; // the height of the dais the throne stands on
@@ -41,7 +42,7 @@ export function heavenRoom(ctx) {
   const dais = new THREE.Mesh(new THREE.CylinderGeometry(9, 10, DAIS, 48), new THREE.MeshStandardMaterial({ color: 0xe8e2d6, roughness: 0.35, metalness: 0.1 }));
   dais.position.y = DAIS / 2;
   scene.add(dais);
-  const throne = cast("elderSeat", 5.5);
+  const throne = seat(5.5);
   throne.position.set(0, DAIS, -1);
   throne.rotation.y = Math.PI; // its seat toward John
   // the throne's stone is darker and warmer than the elders' seats, so the light on it reads as light
@@ -78,15 +79,15 @@ export function heavenRoom(ctx) {
     const g = new THREE.Group();
     g.position.set(Math.sin(a) * ELDER_R, 0, -Math.cos(a) * ELDER_R + 4);
     g.lookAt(0, 0, 0);
-    const seat = cast("elderSeat", 1.6);
-    seat.rotation.y = Math.PI;
+    const chair = seat(1.6);
+    chair.rotation.y = Math.PI;
     const body = new THREE.Group(); // the elder bows by tipping this forward about his seat
     const elder = cast(["elder", "elderB", "elderC"][i % 3], 1.55);
     elder.position.set(0, 0.45, 0.05);
     body.add(elder);
     const crown = cast("crown", 0.2);
     crown.position.set(0, 1.92, 0.05);
-    g.add(seat, body, crown);
+    g.add(chair, body, crown);
     scene.add(g);
     elders.push({ group: g, body, crown, home: crown.position.clone() });
   }
@@ -104,7 +105,7 @@ export function heavenRoom(ctx) {
       const side = w % 2 ? 1 : -1;
       const pivot = new THREE.Group();
       pivot.position.set(side * 0.3, height * 0.7, -0.2);
-      const wing = cast("wingEyes", 0.9);
+      const wing = cast("wingEyes", 0.9, { root: "minX" }); // from its root at the pivot, outward
       wing.rotation.z = -Math.PI / 2;
       wing.scale.x = side;
       pivot.add(wing);

@@ -11,6 +11,7 @@ import { glowSprite, lerp, pulse, sramp } from "../../kit/common.js";
 import { MATERIALS } from "../../kit/structures.js";
 import { figure } from "../../kit/figures.js";
 import { cast } from "../kit/cast.js";
+import { seat } from "../kit/seat.js";
 import { EYE, johnEyes } from "../kit/eyes.js";
 import { JOHN, patmos } from "../kit/island.js";
 import { LETTERS, letterStart } from "../story.js";
@@ -106,11 +107,11 @@ function promises() {
       const door = new THREE.Mesh(new THREE.BoxGeometry(0.7, 1.4, 0.08), std(0x5a3e26));
       door.name = "door";
       at(door, 0, 0.7, 0);
-      const seat = at(cast("elderSeat", 1.6), 0, 0, 0);
-      seat.name = "throne";
-      seat.scale.setScalar(1.1);
-      seat.rotation.y = Math.PI; // its seat toward John
-      g.add(gold, door, seat);
+      const throne = at(seat(1.6), 0, 0, 0);
+      throne.name = "throne";
+      throne.scale.setScalar(1.1);
+      throne.rotation.y = Math.PI; // its seat toward John
+      g.add(gold, door, throne);
       return { group: g, at: 4.3, lift: 0, size: 1.4 };
     },
   ];
