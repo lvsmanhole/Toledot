@@ -104,19 +104,6 @@ export function beast(kind) {
   return g;
 }
 
-/** One great wing full of eyes (4:8), root at the origin, spreading along +x. */
-export function wingEyes() {
-  const s = new THREE.Shape();
-  s.moveTo(0, 0);
-  s.bezierCurveTo(0.8, 0.9, 2.2, 1.1, 3.2, 0.5);
-  s.bezierCurveTo(2.4, 0.2, 1.4, -0.3, 0, -0.25);
-  const g = new THREE.Group();
-  g.add(new THREE.Mesh(new THREE.ShapeGeometry(s, 24), std(0xf6f1e6, { side: THREE.DoubleSide, emissive: 0x2a241a })));
-  const e = eyesOver({ count: 26, radii: [1.2, 0.25, 0.04], center: [1.5, 0.35, 0], size: 0.06, seed: 3 });
-  g.add(e);
-  return g;
-}
-
 export function lamb() {
   const g = new THREE.Group();
   const fleece = std(0xf2eee6, { roughness: 1 });
@@ -208,4 +195,4 @@ export function keys() {
   return g;
 }
 
-export const STANDINS = { john, sonOfMan, elder, elderB: elder, elderC: elder, crown, beastLion: () => beast("lion"), beastCalf: () => beast("calf"), beastMan: () => beast("man"), beastEagle: () => beast("eagle"), wingEyes, lamb, angel, sealedBook, harp, goldenVial, keys };
+export const STANDINS = { john, sonOfMan, elder, elderB: elder, elderC: elder, crown, beastLion: () => beast("lion"), beastCalf: () => beast("calf"), beastMan: () => beast("man"), beastEagle: () => beast("eagle"), lamb, angel, sealedBook, harp, goldenVial, keys };

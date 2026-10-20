@@ -52,7 +52,7 @@ test("John's own hands show when he is touched as he lies at his feet (1:17)", (
 });
 
 test("no scene names a variable after the function that makes it (const seat = seat(...) throws)", () => {
-  for (const file of ["kit/heaven.js", "kit/hands.js", "kit/seat.js", ...built.map((s) => `scenes/${s.module}.js`)]) {
+  for (const file of ["kit/heaven.js", "kit/hands.js", "kit/seat.js", "kit/wing.js", ...built.map((s) => `scenes/${s.module}.js`)]) {
     for (const m of src(file).matchAll(/\b(?:const|let)\s+(\w+)\s*=([^;\n]*)/g)) {
       // (a method of the same name, MATERIALS.gold(), is fine)
       assert.ok(!new RegExp(String.raw`(?<![.\w])${m[1]}\s*\(`).test(m[2]), `${file}: "${m[0].trim()}"`);

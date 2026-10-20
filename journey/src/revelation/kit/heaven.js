@@ -12,6 +12,7 @@ import { MATERIALS } from "../../kit/structures.js";
 import { createStars } from "../../engine/stars.js";
 import { cast } from "./cast.js";
 import { seat } from "./seat.js";
+import { wing } from "./wing.js";
 
 export const JOHN_Z = 32; // where John stands, on the sea of glass, facing the throne (-z)
 export const DAIS = 3; // the height of the dais the throne stands on
@@ -105,10 +106,10 @@ export function heavenRoom(ctx) {
       const side = w % 2 ? 1 : -1;
       const pivot = new THREE.Group();
       pivot.position.set(side * 0.3, height * 0.7, -0.2);
-      const wing = cast("wingEyes", 0.9, { root: "minX" }); // from its root at the pivot, outward
-      wing.rotation.z = -Math.PI / 2;
-      wing.scale.x = side;
-      pivot.add(wing);
+      const plume = wing(0.9); // from its root at the pivot, outward
+      plume.rotation.z = -Math.PI / 2;
+      plume.scale.x = side;
+      pivot.add(plume);
       pivot.userData = { side, tier: Math.floor(w / 2) };
       g.add(pivot);
       wings.push(pivot);

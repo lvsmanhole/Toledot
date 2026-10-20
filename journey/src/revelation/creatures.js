@@ -69,9 +69,6 @@ export const CREATURES = {
   beastEagle: { ...c("4:7", ["like a flying eagle", "full of eyes before and behind"],
     "A great eagle in flight, wings spread, its feathers set with many open eyes.", 29000),
     status: "approved", sha256: "33588c04c940f689e754c65a13ddfe471ace5576f404b45b5b358f132aa88cf4" },
-  wingEyes: { ...c("4:8", ["one great wing", "full of eyes within"],
-    "Side view of one bird's wing on its own, a single long feathered wing lying flat like a fan, its feathers set with many open eyes; only one wing, no body, no second wing, nothing else in frame.", 3000),
-    status: "approved", sha256: "f53eb79995df6cb37d11dac37ace434407c26b704314be731b727629a9786992" },
   // "as it had been slain" is shown by the scene's light on the neck, not a wound in the model (all ages)
   lamb: { ...c("5:6", ["a white lamb, standing", "having seven horns set in a ring around its head like a crown"],
     "A white sheep standing in profile, woolly fleece, with seven short golden horns set in a ring around its head like a crown.", 18500,
@@ -96,7 +93,7 @@ export const CREATURES = {
 /** How many of each model the throne room shows at once (kit/heaven.js, scenes/lamb.js): its heaviest scene. */
 export const ROOM = {
   elder: 8, elderB: 8, elderC: 8, crown: 24, beastLion: 1, beastCalf: 1, beastMan: 1, beastEagle: 1,
-  wingEyes: 24, lamb: 1, angel: 1, sealedBook: 1, harp: 12, goldenVial: 12,
+  lamb: 1, angel: 1, sealedBook: 1, harp: 12, goldenVial: 12,
 };
 /** Triangle limits for the throne room: desktop (by budgets) and phone (measured on the phone copies). */
 export const ROOM_LIMITS = { desktop: 900000, phone: 300000 };
