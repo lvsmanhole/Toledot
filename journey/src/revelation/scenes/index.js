@@ -6,4 +6,6 @@ export const MODULES = {
   sonofman: () => import("./sonofman.js").then((m) => m.create),
   maps: () => import("../../scenes/maps.js").then((m) => m.create),
   churches: () => import("./churches.js").then((m) => m.create),
+  door: () => import("./door.js").then((m) => m.create),
+  lamb: () => import("./lamb.js").then((m) => m.create),
 };

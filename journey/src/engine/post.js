@@ -24,6 +24,7 @@ const GradeShader = {
     uClouds: { value: 0 },
     uCloudTravel: { value: 0 },
     uAspect: { value: 1 },
+    uBlur: { value: 0 },
   },
   vertexShader: /* glsl */ `
     varying vec2 vUv;
@@ -31,13 +32,25 @@ const GradeShader = {
   `,
   fragmentShader: /* glsl */ `
     uniform sampler2D tDiffuse;
-    uniform float uTime, uSaturation, uExposure, uVignette, uGrain, uFade, uClouds, uCloudTravel, uAspect;
+    uniform float uTime, uSaturation, uExposure, uVignette, uGrain, uFade, uClouds, uCloudTravel, uAspect, uBlur;
     uniform vec3 uTint, uFadeColor;
     varying vec2 vUv;
     ${NOISE}
     float hash12(vec2 p) { vec3 p3 = fract(vec3(p.xyx) * .1031); p3 += dot(p3, p3.yzx + 33.33); return fract((p3.x + p3.y) * p3.z); }
     void main() {
-      vec3 c = texture2D(tDiffuse, vUv).rgb * uExposure;
+      vec3 c = texture2D(tDiffuse, vUv).rgb;
+      // eyes full of tears (Revelation 5:4): a soft blur, swimming a little
+      if (uBlur > 0.001) {
+        vec3 acc = c;
+        float r = uBlur * 0.012;
+        for (int i = 0; i < 8; i++) {
+          float a = float(i) * 0.785 + uTime * 0.3;
+          acc += texture2D(tDiffuse, vUv + vec2(cos(a), sin(a) * uAspect) * r).rgb;
+          acc += texture2D(tDiffuse, vUv + vec2(cos(a + 0.39), sin(a + 0.39) * uAspect) * r * 0.5).rgb;
+        }
+        c = acc / 17.0;
+      }
+      c *= uExposure;
       float l = dot(c, vec3(0.2126, 0.7152, 0.0722));
       c = mix(vec3(l), c, uSaturation) * uTint;
 

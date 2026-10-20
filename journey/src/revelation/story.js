@@ -12,7 +12,7 @@ export const UNIT_VH = 18;
 export const CHAPTER_VERSES = [20, 29, 22, 11, 14, 17, 17, 13, 21, 11, 19, 17, 18, 20, 8, 21, 18, 24, 21, 15, 27, 21];
 
 /** Chapters built so far: tests require every verse of chapters 1..BUILT to be shown by some scene. */
-export const BUILT = 0;
+export const BUILT = 5;
 
 /** "4:1-3" -> ["4:1", "4:2", "4:3"]; "1:9" -> ["1:9"]; "2-3" or "5" (whole chapters) -> every verse in them. */
 export function versesOf(range) {
@@ -128,6 +128,42 @@ export const SCENES = [
         ["I counsel thee to buy of me gold tried in the fire … and white raiment … and anoint thine eyes with eyesalve", "Revelation 3:18"],
         ["Behold, I stand at the door, and knock: if any man hear my voice, and open the door, I will come in to him", "Revelation 3:20"],
         ["To him that overcometh will I grant to sit with me in my throne", "Revelation 3:21"]),
+    ],
+  },
+  // ---------------------------------------------------------------- III. The throne and the Lamb (4–5)
+  {
+    id: "door", module: "door", length: 36, enter: t("light", 1.5), years: null, covers: ["4"],
+    creatures: ["elderSeat", "elder", "crown", "beastLion", "beastCalf", "beastMan", "beastEagle", "wingEyes"],
+    acts: [{ label: "III", title: "The Throne and the Lamb", at: 0 }],
+    captions: [
+      v(1.5, 5, "After this I looked, and, behold, a door was opened in heaven: and the first voice which I heard was as it were of a trumpet talking with me; which said, Come up hither", "Revelation 4:1"),
+      v(5.5, 9, "And immediately I was in the spirit: and, behold, a throne was set in heaven, and one sat on the throne.", "Revelation 4:2"),
+      v(9.5, 13, "And he that sat was to look upon like a jasper and a sardine stone: and there was a rainbow round about the throne, in sight like unto an emerald.", "Revelation 4:3"),
+      v(13.5, 17, "And round about the throne were four and twenty seats: and upon the seats I saw four and twenty elders sitting, clothed in white raiment; and they had on their heads crowns of gold.", "Revelation 4:4"),
+      v(17.5, 21, "And out of the throne proceeded lightnings and thunderings and voices: and there were seven lamps of fire burning before the throne, which are the seven Spirits of God.", "Revelation 4:5"),
+      v(21.5, 24.5, "And before the throne there was a sea of glass like unto crystal: and in the midst of the throne, and round about the throne, were four beasts full of eyes before and behind.", "Revelation 4:6"),
+      v(25, 28, "And the first beast was like a lion, and the second beast like a calf, and the third beast had a face as a man, and the fourth beast was like a flying eagle.", "Revelation 4:7"),
+      h(28.5, 31.5, "Holy, holy, holy, Lord God Almighty, which was, and is, and is to come.", "Revelation 4:8"),
+      v(32, 35.5, "The four and twenty elders fall down before him that sat on the throne … and cast their crowns before the throne, saying, Thou art worthy, O Lord, to receive glory and honour and power", "Revelation 4:10–11"),
+    ],
+  },
+  {
+    id: "lamb", module: "lamb", length: 48, enter: t("light", 1), years: null, covers: ["5"],
+    creatures: ["elderSeat", "elder", "crown", "beastLion", "beastCalf", "beastMan", "beastEagle", "wingEyes", "sealedBook", "angel", "lamb", "harp", "goldenVial"],
+    captions: [
+      v(1.5, 5, "And I saw in the right hand of him that sat on the throne a book written within and on the backside, sealed with seven seals.", "Revelation 5:1"),
+      v(5.5, 9, "And I saw a strong angel proclaiming with a loud voice, Who is worthy to open the book, and to loose the seals thereof?", "Revelation 5:2"),
+      v(9.5, 12.5, "And no man in heaven, nor in earth, neither under the earth, was able to open the book, neither to look thereon.", "Revelation 5:3"),
+      v(13, 16, "And I wept much, because no man was found worthy to open and to read the book, neither to look thereon.", "Revelation 5:4"),
+      v(16.5, 19.5, "And one of the elders saith unto me, Weep not: behold, the Lion of the tribe of Juda, the Root of David, hath prevailed to open the book", "Revelation 5:5"),
+      v(20, 23.5, "And I beheld, and, lo, in the midst of the throne and of the four beasts, and in the midst of the elders, stood a Lamb as it had been slain, having seven horns and seven eyes", "Revelation 5:6"),
+      v(24, 26.5, "And he came and took the book out of the right hand of him that sat upon the throne.", "Revelation 5:7"),
+      v(27, 30, "the four beasts and four and twenty elders fell down before the Lamb, having every one of them harps, and golden vials full of odours, which are the prayers of saints.", "Revelation 5:8"),
+      v(30.5, 33.5, "And they sung a new song, saying, Thou art worthy to take the book, and to open the seals thereof: for thou wast slain", "Revelation 5:9"),
+      v(34, 37, "And I beheld, and I heard the voice of many angels round about the throne … and the number of them was ten thousand times ten thousand, and thousands of thousands", "Revelation 5:11"),
+      h(37.5, 40.5, "Worthy is the Lamb that was slain", "Revelation 5:12"),
+      v(41, 44.5, "And every creature which is in heaven, and on the earth, and under the earth, and such as are in the sea … Blessing, and honour, and glory, and power, be unto him that sitteth upon the throne, and unto the Lamb for ever and ever.", "Revelation 5:13"),
+      v(45, 47.5, "And the four beasts said, Amen. And the four and twenty elders fell down and worshipped him that liveth for ever and ever.", "Revelation 5:14"),
     ],
   },
 ];

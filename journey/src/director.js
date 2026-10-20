@@ -342,6 +342,7 @@ export function runDirector(opts) {
         const out = active.update({ local: where.local, rel: where.rel, time: story.time, dt, pixelRatio, reducedMotion: reducedMotion.matches, u });
         g.uSaturation.value = out.grade.saturation ?? 1;
         g.uExposure.value = out.grade.exposure ?? 1;
+      g.uBlur.value = out.grade.blur ?? 0;
         g.uTint.value.set(...(out.grade.tint ?? [1, 1, 1]));
         post.bloom.strength = out.grade.bloom ?? 0.5;
         post.bloom.threshold = out.grade.threshold ?? 0.82;
