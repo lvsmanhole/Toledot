@@ -12,6 +12,7 @@ import { pipeline } from "node:stream/promises";
 import { fileURLToPath } from "node:url";
 
 import { HDRIS, MODELS, TEXTURES } from "../src/kit/assets-manifest.js";
+import { CREATURES } from "../src/revelation/creatures.js";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 const OUT = join(ROOT, "public", "lib");
@@ -176,5 +177,22 @@ for (const [key, { id, leaves }] of Object.entries(MODELS)) {
   const dstM = join(OUT, "tex", `${key}_leaves_m.webp`);
   if (existsSync(src) && !existsSync(dstM)) await sharp(src).resize(512, 512).webp({ quality: 88 }).toFile(dstM);
 }
-writeFileSync(join(OUT, "CREDITS.txt"), `Assets from Poly Haven (https://polyhaven.com), CC0 1.0 Universal.\n${credits.map((c) => `- ${c}`).join("\n")}\n`);
+// the Revelation's generated creatures (scripts/creatures.mjs): only those the user approved ship. The
+// committed model is the desktop one; phones and tablets get a copy at 512 px textures and a third of the triangles.
+const made = [];
+for (const [key, { status }] of Object.entries(CREATURES)) {
+  if (status !== "approved") continue;
+  const src = join(ROOT, "assets", "creatures", `${key}.glb`);
+  const out = join(OUT, "models", `${key}.glb`);
+  const outM = join(OUT, "models-m", `${key}.glb`);
+  made.push(key);
+  if (!existsSync(out)) { mkdirSync(dirname(out), { recursive: true }); copyFileSync(src, out); }
+  if (!existsSync(outM)) {
+    mkdirSync(dirname(outM), { recursive: true });
+    execFileSync(process.execPath, [join(ROOT, "node_modules", "@gltf-transform", "cli", "bin", "cli.js"), "optimize", src, outM,
+      "--simplify-ratio", "0.33", "--simplify-error", "0.02", "--compress", "meshopt", "--texture-compress", "webp", "--texture-size", "512"], { stdio: "inherit" });
+  }
+}
+const madeCredit = made.length ? `\nGenerated models (fal.ai), made for Toledot:\n${made.map((k) => `- ${k}`).join("\n")}\n` : "";
+writeFileSync(join(OUT, "CREDITS.txt"), `Assets from Poly Haven (https://polyhaven.com), CC0 1.0 Universal.\n${credits.map((c) => `- ${c}`).join("\n")}\n${madeCredit}`);
 console.log(`assets ready in ${OUT} (${fetched} files downloaded)`);
