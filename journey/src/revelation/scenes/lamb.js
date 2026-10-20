@@ -55,6 +55,18 @@ export function create(ctx) {
   const lamb = cast("lamb", 1.25);
   lamb.position.set(0, DAIS, 4.2);
   lamb.rotation.y = -Math.PI / 2; // facing John (+z); the stand-in's head is toward +x
+  // as it had been slain: a healed mark of pale light across the neck, and seven eyes as seven small flames
+  // about the head (5:6), in the Lamb's own frame (head toward +x), so they sit on the model and the stand-in
+  const mark = new THREE.Mesh(new THREE.TorusGeometry(0.13, 0.012, 6, 20, Math.PI), new THREE.MeshBasicMaterial({ color: 0xffe2c8, transparent: true, opacity: 0.55 }));
+  mark.position.set(0.42, 0.86, 0);
+  mark.rotation.y = Math.PI / 2;
+  const sevenEyes = Array.from({ length: 7 }, (_, i) => {
+    const a = -1.1 + (i / 6) * 2.2;
+    const e = glowSprite(0xfff0c8, 0.08, 0.9);
+    e.position.set(0.6 + Math.cos(a) * 0.03, 1.02 + Math.abs(a) * 0.04, Math.sin(a) * 0.13);
+    return e;
+  });
+  lamb.add(mark, ...sevenEyes);
   scene.add(lamb);
   const lambGlow = glowSprite(0xffffff, 3, 0);
   lambGlow.position.set(0, DAIS + 0.8, 4.2);
@@ -139,6 +151,7 @@ export function create(ctx) {
       // the Lamb stands in the midst
       lamb.visible = rel > 19.8;
       lambGlow.material.opacity = sramp(rel, 19.8, 21) * (0.35 + 0.1 * Math.sin(time * 2));
+      for (const [i, e] of sevenEyes.entries()) e.material.opacity = sramp(rel, 20.5, 22) * (0.75 + 0.2 * Math.sin(time * 1.3 + i));
       // the beasts and the elders fall down before the Lamb (5:8), and again at "Amen" (5:14)
       const fall = pulse(rel, 26.8, 28, 33, 34.5) + pulse(rel, 45, 46, 48, 49);
       elders.forEach(({ body }, i) => { body.rotation.x = Math.min(1, fall) * 0.9; offerings[i].visible = rel > 26.8 && rel < 34.5; });

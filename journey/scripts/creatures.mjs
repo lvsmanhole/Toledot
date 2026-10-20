@@ -1,7 +1,7 @@
 // Makes the Revelation's generated creatures with fal.ai: concept images first (the user picks one), then a
 // textured 3D model from the chosen image, packed small for the browser into assets/creatures/<key>.glb.
 // Spending is capped: nothing runs without FAL_KEY or past the ceiling the user agreed (PRICES.ceiling).
-// usage: node scripts/creatures.mjs cost <key...> | concept <key> [n=4] | model <key> --from <png> | pack <key>
+// usage: node scripts/creatures.mjs cost <key...> | concept <key> [n=4] [first=1] | model <key> --from <png> | pack <key>
 import { execFileSync } from "node:child_process";
 import { createHash } from "node:crypto";
 import { existsSync, mkdirSync, readFileSync, renameSync, rmSync, statSync, writeFileSync } from "node:fs";
@@ -10,6 +10,7 @@ import { fileURLToPath, pathToFileURL } from "node:url";
 
 import { NodeIO } from "@gltf-transform/core";
 import { ALL_EXTENSIONS } from "@gltf-transform/extensions";
+import { MeshoptDecoder } from "meshoptimizer";
 
 import { CREATURES, PRICES, STYLE } from "../src/revelation/creatures.js";
 
@@ -98,7 +99,9 @@ async function download(url, path) {
 }
 
 export async function triangles(file) {
-  const doc = await new NodeIO().registerExtensions(ALL_EXTENSIONS).read(file);
+  // packed models are meshopt-compressed, so reading them back needs the decoder
+  await MeshoptDecoder.ready;
+  const doc = await new NodeIO().registerExtensions(ALL_EXTENSIONS).registerDependencies({ "meshopt.decoder": MeshoptDecoder }).read(file);
   let n = 0;
   for (const mesh of doc.getRoot().listMeshes()) {
     for (const prim of mesh.listPrimitives()) {
@@ -119,7 +122,7 @@ export async function pack(key) {
   mkdirSync(OUT, { recursive: true });
   const tmp = join(CACHE, key, "packed.glb");
   execFileSync(process.execPath, [join(ROOT, "node_modules", "@gltf-transform", "cli", "bin", "cli.js"), "optimize", raw, tmp,
-    "--simplify-ratio", String(Math.max(0.001, ratio * 0.97)), "--simplify-error", "0.01", "--compress", "meshopt", "--texture-compress", "webp", "--texture-size", "1024"], { stdio: "inherit" });
+    "--simplify-ratio", String(Math.max(0.001, ratio * 0.97)), "--simplify-error", "1", "--compress", "meshopt", "--texture-compress", "webp", "--texture-size", "1024"], { stdio: "inherit" });
   const tris = await triangles(tmp);
   const bytes = statSync(tmp).size;
   if (tris > budget || bytes > LIMITS.bytes) {
@@ -142,9 +145,11 @@ async function main([command, ...args]) {
   const key = args[0];
   if (!CREATURES[key]) fail(`no creature "${key}"`);
   if (command === "concept") {
+    // first: the number of the first concept (and its seed), to add more without repeating earlier seeds
     const n = Number(args[1] ?? 4);
+    const first = Number(args[2] ?? 1);
     guard(n * PRICES.image.each);
-    for (let i = 1; i <= n; i++) {
+    for (let i = first; i < first + n; i++) {
       const out = await fal(PRICES.image.endpoint, { ...PRICES.image.input, prompt: buildPrompt(key), seed: 1000 + i });
       charge(PRICES.image.each);
       await download(out.images[0].url, join(CACHE, key, `concept-${i}.png`));
@@ -155,15 +160,18 @@ async function main([command, ...args]) {
     if (!from || !existsSync(join(CACHE, key, from))) fail(`--from <concept png in .cache/creatures/${key}/> is required`);
     guard(PRICES.mesh.each);
     const image = `data:image/png;base64,${readFileSync(join(CACHE, key, from)).toString("base64")}`;
-    const out = await fal(PRICES.mesh.endpoint, { ...PRICES.mesh.input, image_url: image });
+    // Trellis splits vertices along texture seams, which no seam-safe simplifier can undo afterwards: ask it for
+    // a mesh near the creature's budget instead (in vertices; it allows no fewer than 5000)
+    const decimation_target = Math.max(5000, Math.min(LIMITS.triangles, CREATURES[key].tris ?? LIMITS.triangles));
+    const out = await fal(PRICES.mesh.endpoint, { ...PRICES.mesh.input, ...CREATURES[key].mesh, image_url: image, decimation_target });
     charge(PRICES.mesh.each);
     await download(out.model_glb.url, join(CACHE, key, "raw.glb"));
     await pack(key);
   } else if (command === "pack") {
     await pack(key);
   } else {
-    fail("usage: node scripts/creatures.mjs cost <key...> | concept <key> [n] | model <key> --from <png> | pack <key>");
+    fail("usage: node scripts/creatures.mjs cost <key...> | concept <key> [n] [first] | model <key> --from <png> | pack <key>");
   }
 }
 
-if (import.meta.url === pathToFileURL(process.argv[1]).href) await main(process.argv.slice(2));
+if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) await main(process.argv.slice(2));

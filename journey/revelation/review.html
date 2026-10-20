@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Creature review</title>
+<!-- Dev only (not a build input): /revelation/review.html?key=lamb shows a packed creature from four sides
+     beside the features its verse gives, so the user can approve it (scripts/creatures.mjs). -->
+<style>
+  body { margin: 0; background: #1b1b1d; color: #e8e4da; font: 15px/1.4 Georgia, serif; }
+  header { padding: 12px 16px; }
+  h1 { font-size: 20px; margin: 0 0 4px; }
+  ul { margin: 4px 0 0; padding-left: 20px; }
+  .drawn { color: #a39d8f; }
+  #views { display: grid; grid-template-columns: repeat(4, 1fr); gap: 4px; padding: 0 4px; }
+  canvas { width: 100%; aspect-ratio: 1; display: block; background: #6e6e70; }
+</style>
+</head>
+<body>
+<header><h1 id="title"></h1><ul id="features"></ul></header>
+<div id="views"></div>
+<script type="module">
+import * as THREE from "three";
+import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader.js";
+import { MeshoptDecoder } from "three/examples/jsm/libs/meshopt_decoder.module.js";
+import { RoomEnvironment } from "three/examples/jsm/environments/RoomEnvironment.js";
+import { CREATURES } from "../src/revelation/creatures.js";
+
+const params = new URLSearchParams(location.search);
+const key = params.get("key");
+// &src=/lib/models-m/<key>.glb shows another copy of the model (the phone one)
+const spec = CREATURES[key];
+document.getElementById("title").textContent = `${key} (Revelation ${spec.verse}) · ${spec.status}`;
+const list = document.getElementById("features");
+for (const f of spec.features) list.insertAdjacentHTML("beforeend", `<li>${f}</li>`);
+for (const f of spec.drawn) list.insertAdjacentHTML("beforeend", `<li class="drawn">${f} (added by the scene)</li>`);
+
+const loader = new GLTFLoader().setMeshoptDecoder(MeshoptDecoder);
+const gltf = await loader.loadAsync(`${params.get("src") ?? `../assets/creatures/${key}.glb`}?t=${Date.now()}`);
+const box = new THREE.Box3().setFromObject(gltf.scene);
+const centre = box.getCenter(new THREE.Vector3());
+const radius = box.getSize(new THREE.Vector3()).length() / 2;
+
+// front, three-quarter, side, back
+for (const angle of [0, 45, 90, 180]) {
+  const canvas = document.createElement("canvas");
+  document.getElementById("views").append(canvas);
+  const renderer = new THREE.WebGLRenderer({ canvas, antialias: true, preserveDrawingBuffer: true });
+  renderer.setSize(512, 512, false);
+  renderer.outputColorSpace = THREE.SRGBColorSpace;
+  const scene = new THREE.Scene();
+  scene.background = new THREE.Color(0x6e6e70);
+  // something for metal to reflect: without it gold and bronze render black
+  scene.environment = new THREE.PMREMGenerator(renderer).fromScene(new RoomEnvironment(), 0.04).texture;
+  scene.add(new THREE.HemisphereLight(0xffffff, 0x444444, 2.2));
+  const sun = new THREE.DirectionalLight(0xffffff, 1.6);
+  sun.position.set(2, 3, 4);
+  scene.add(sun, gltf.scene.clone(true));
+  const camera = new THREE.PerspectiveCamera(30, 1, radius / 100, radius * 100);
+  const a = THREE.MathUtils.degToRad(angle);
+  const d = radius / Math.sin(THREE.MathUtils.degToRad(15)) * 1.05;
+  camera.position.set(centre.x + Math.sin(a) * d, centre.y + radius * 0.15, centre.z + Math.cos(a) * d);
+  camera.lookAt(centre);
+  renderer.render(scene, camera);
+}
+document.body.dataset.ready = "1";
+</script>
+</body>
+</html>

@@ -136,20 +136,12 @@ export function lamb() {
   const head = mesh(new THREE.SphereGeometry(0.15, 16, 12), fleece, 0.48, 0.78, 0);
   head.scale.set(1.3, 1, 0.9);
   g.add(head);
-  // a lamb as it had been slain: a healed mark across the neck (5:6)
-  const scar = mesh(new THREE.TorusGeometry(0.11, 0.012, 6, 20, Math.PI), std(0xb07a74), 0.38, 0.7, 0);
-  scar.rotation.y = Math.PI / 2;
-  g.add(scar);
-  // seven horns and seven eyes
+  // seven horns (the seven eyes and the healed mark are light the scene adds, over the model too)
   for (let i = 0; i < 7; i++) {
     const a = -1 + (i / 6) * 2;
     const horn = mesh(new THREE.ConeGeometry(0.018, 0.12, 6), std(0xe9dcc0), 0.48 + Math.cos(a) * 0.02, 0.92, a * 0.1);
     horn.rotation.x = a * 0.4;
     g.add(horn);
-  }
-  for (let i = 0; i < 7; i++) {
-    const a = -1.2 + (i / 6) * 2.4;
-    g.add(mesh(new THREE.SphereGeometry(0.016, 8, 6), std(0x1a120c, { roughness: 0.1 }), 0.6 + Math.cos(a) * 0.02, 0.8 + Math.abs(a) * 0.02, Math.sin(a) * 0.1));
   }
   return g;
 }
@@ -225,4 +217,4 @@ export function keys() {
   return g;
 }
 
-export const STANDINS = { john, sonOfMan, elder, elderSeat, crown, beastLion: () => beast("lion"), beastCalf: () => beast("calf"), beastMan: () => beast("man"), beastEagle: () => beast("eagle"), wingEyes, lamb, angel, sealedBook, harp, goldenVial, keys };
+export const STANDINS = { john, sonOfMan, elder, elderB: elder, elderC: elder, elderSeat, crown, beastLion: () => beast("lion"), beastCalf: () => beast("calf"), beastMan: () => beast("man"), beastEagle: () => beast("eagle"), wingEyes, lamb, angel, sealedBook, harp, goldenVial, keys };

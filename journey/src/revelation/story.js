@@ -139,7 +139,7 @@ export const SCENES = [
   // ---------------------------------------------------------------- III. The throne and the Lamb (4–5)
   {
     id: "door", module: "door", length: 36, enter: t("light", 1.5), years: null, covers: ["4"],
-    creatures: ["elderSeat", "elder", "crown", "beastLion", "beastCalf", "beastMan", "beastEagle", "wingEyes"],
+    creatures: ["elderSeat", "elder", "elderB", "elderC", "crown", "beastLion", "beastCalf", "beastMan", "beastEagle", "wingEyes"],
     acts: [{ label: "III", title: "The Throne and the Lamb", at: 0 }],
     captions: [
       v(1.5, 5, "After this I looked, and, behold, a door was opened in heaven: and the first voice which I heard was as it were of a trumpet talking with me; which said, Come up hither", "Revelation 4:1"),
@@ -155,7 +155,7 @@ export const SCENES = [
   },
   {
     id: "lamb", module: "lamb", length: 48, enter: t("light", 1), years: null, covers: ["5"],
-    creatures: ["elderSeat", "elder", "crown", "beastLion", "beastCalf", "beastMan", "beastEagle", "wingEyes", "sealedBook", "angel", "lamb", "harp", "goldenVial"],
+    creatures: ["elderSeat", "elder", "elderB", "elderC", "crown", "beastLion", "beastCalf", "beastMan", "beastEagle", "wingEyes", "sealedBook", "angel", "lamb", "harp", "goldenVial"],
     captions: [
       v(1.5, 5, "And I saw in the right hand of him that sat on the throne a book written within and on the backside, sealed with seven seals.", "Revelation 5:1"),
       v(5.5, 9, "And I saw a strong angel proclaiming with a loud voice, Who is worthy to open the book, and to loose the seals thereof?", "Revelation 5:2"),

@@ -24,7 +24,7 @@ import { spawnSync } from "node:child_process";
 import { fileURLToPath } from "node:url";
 
 import { buildPrompt, estimate } from "../scripts/creatures.mjs";
-import { STYLE } from "../src/revelation/creatures.js";
+import { PRICES, STYLE } from "../src/revelation/creatures.js";
 import { fitToHeight } from "../src/revelation/kit/fit.js";
 
 const script = new URL("../scripts/creatures.mjs", import.meta.url);
@@ -91,18 +91,19 @@ test("every approved creature's model is the file the user approved", () => {
 test("every creature has a triangle budget, and the throne room's copies fit a phone", () => {
   for (const [key, c] of Object.entries(CREATURES)) assert.ok(Number.isFinite(c.tris) && c.tris > 0 && c.tris <= 60000, `${key} budget`);
   const T = (key) => CREATURES[key].tris;
-  // as placed in kit/heaven.js and scenes/lamb.js: 25 seats (the throne is one), 24 elders and crowns, four beasts
+  // as placed in kit/heaven.js and scenes/lamb.js: 25 seats (the throne is one), 24 elders (8 of each) and crowns, four beasts
   // with six wings each, the Lamb, the angel, the book, and a harp or a vial in each elder's hands
-  const room = 25 * T("elderSeat") + 24 * T("elder") + 24 * T("crown") + T("beastLion") + T("beastCalf") + T("beastMan") + T("beastEagle")
+  const room = 25 * T("elderSeat") + 8 * (T("elder") + T("elderB") + T("elderC")) + 24 * T("crown") + T("beastLion") + T("beastCalf") + T("beastMan") + T("beastEagle")
     + 24 * T("wingEyes") + T("lamb") + T("angel") + T("sealedBook") + 12 * T("harp") + 12 * T("goldenVial");
   assert.ok(room <= 900000, `desktop throne room ${room} triangles`);
-  assert.ok(room / 3 <= 300000, `phone throne room ${Math.round(room / 3)} triangles`);
+  assert.ok(room / 2 <= 300000, `phone throne room ${Math.round(room / 2)} triangles`);
 });
 
 test("an override can only lower the agreed ceiling, never raise or replace it", () => {
-  const r = run(["concept", "lamb"], { FAL_KEY: "dummy", CREATURES_CEILING: "1000" });
+  // 1000 concepts cost $30: past the agreed ceiling, whatever the override says
+  const r = run(["concept", "lamb", "1000"], { FAL_KEY: "dummy", CREATURES_CEILING: "1000" });
   assert.equal(r.status, 1);
-  assert.match(r.stderr, /No spending ceiling has been agreed/);
+  assert.ok(r.stderr.includes(`agreed ceiling of $${PRICES.ceiling} `), r.stderr);
 });
 
 test("the record of what has been spent survives clearing the cache", async () => {

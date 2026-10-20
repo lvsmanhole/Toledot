@@ -21,7 +21,11 @@ export function creature(key, { height = 1.75, standIn = () => new THREE.Group()
     return group;
   }
   model(key).then((root) => {
-    const inst = fitted(root.clone(true), height);
+    // a generated model can face any way: `yaw` turns it to face as its stand-in does
+    const turned = new THREE.Group();
+    turned.add(root.clone(true));
+    turned.rotation.y = spec.yaw ?? 0;
+    const inst = fitted(turned, height);
     inst.traverse((o) => { if (o.isMesh) { o.castShadow = true; o.receiveShadow = true; } });
     group.add(inst);
   }).catch(() => group.add(fitted(standIn(), height)));

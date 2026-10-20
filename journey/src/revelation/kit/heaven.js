@@ -81,7 +81,7 @@ export function heavenRoom(ctx) {
     const seat = cast("elderSeat", 1.6);
     seat.rotation.y = Math.PI;
     const body = new THREE.Group(); // the elder bows by tipping this forward about his seat
-    const elder = cast("elder", 1.55);
+    const elder = cast(["elder", "elderB", "elderC"][i % 3], 1.55);
     elder.position.set(0, 0.45, 0.05);
     body.add(elder);
     const crown = cast("crown", 0.2);
