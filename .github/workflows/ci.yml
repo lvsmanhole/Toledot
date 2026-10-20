@@ -51,4 +51,7 @@ jobs:
         working-directory: journey
         run: npm run build
       - name: Test the timeline, the KJV captions and the Revelation (never generates creatures)
-        run: node --test site/timeline/tests/layout.test.mjs journey/tests/story.test.mjs journey/tests/revelation.test.mjs journey/tests/creatures.test.mjs journey/tests/eyes.test.mjs journey/tests/audio.test.mjs
+        # SHIP=1: the Revelation's ship gate is on, so main cannot go green with a creature the user has not approved
+        env:
+          SHIP: "1"
+        run: node --test site/timeline/tests/layout.test.mjs journey/tests/story.test.mjs journey/tests/revelation.test.mjs journey/tests/creatures.test.mjs journey/tests/eyes.test.mjs journey/tests/audio.test.mjs journey/tests/scene-cast.test.mjs

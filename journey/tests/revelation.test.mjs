@@ -56,3 +56,10 @@ test("scenes name only creatures in the manifest", () => {
 test("every creature a scene uses is approved", { todo: !process.env.SHIP }, () => {
   for (const s of SCENES) for (const key of s.creatures) assert.equal(CREATURES[key]?.status, "approved", `${s.id}: ${key}`);
 });
+
+test("the end card says how far the vision has been made, and gives 22:21 only when it is all made", () => {
+  const { endCard } = revelation;
+  assert.match(endCard(5).line, /chapters 1–5/i);
+  assert.doesNotMatch(endCard(5).line, /22:21/);
+  assert.match(endCard(22).line, /Revelation 22:21/);
+});

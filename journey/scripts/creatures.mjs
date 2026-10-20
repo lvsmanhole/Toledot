@@ -3,6 +3,7 @@
 // Spending is capped: nothing runs without FAL_KEY or past the ceiling the user agreed (PRICES.ceiling).
 // usage: node scripts/creatures.mjs cost <key...> | concept <key> [n=4] | model <key> --from <png> | pack <key>
 import { execFileSync } from "node:child_process";
+import { createHash } from "node:crypto";
 import { existsSync, mkdirSync, readFileSync, renameSync, rmSync, statSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
@@ -15,7 +16,8 @@ import { CREATURES, PRICES, STYLE } from "../src/revelation/creatures.js";
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 const CACHE = join(ROOT, ".cache", "creatures");
 const OUT = join(ROOT, "assets", "creatures");
-const SPENT = join(CACHE, "spent.json"); // running total of what generation has cost, kept outside git
+// the running total of what generation has cost: committed beside the models, so clearing .cache cannot reset it
+export const SPENT = join(OUT, "spent.json");
 export const LIMITS = { triangles: 60000, bytes: 4 * 1024 * 1024 };
 
 /** The full prompt for a creature: its own description, every feature the text gives, and the shared style. */
@@ -25,6 +27,22 @@ export function buildPrompt(key) {
   return `${k.prompt} ${k.features.map((f) => `${f}.`).join(" ")} (Revelation ${k.verse}) ${STYLE}`;
 }
 
+/**
+ * Approvals that no longer hold: approved creatures with no recorded sha256, or whose model file is not the
+ * one the user approved. read(key) returns the model's bytes.
+ */
+export function approvalProblems(creatures, read) {
+  return Object.entries(creatures)
+    .filter(([, c]) => c.status === "approved")
+    .filter(([key, c]) => !c.sha256 || createHash("sha256").update(read(key)).digest("hex") !== c.sha256)
+    .map(([key]) => key);
+}
+
+/** A new generation may replace a creature's model only while it is not approved. */
+export function mayReplace(spec) {
+  return spec.status !== "approved";
+}
+
 /** Estimated dollars for these creatures at the recorded prices. */
 export function estimate(keys, { concepts = 4, meshes = 2 } = {}) {
   return keys.length * (concepts * PRICES.image.each + meshes * PRICES.mesh.each);
@@ -32,7 +50,7 @@ export function estimate(keys, { concepts = 4, meshes = 2 } = {}) {
 
 const spent = () => (existsSync(SPENT) ? JSON.parse(readFileSync(SPENT, "utf8")).total : 0);
 function charge(amount) {
-  mkdirSync(CACHE, { recursive: true });
+  mkdirSync(OUT, { recursive: true });
   writeFileSync(SPENT, JSON.stringify({ total: Math.round((spent() + amount) * 1000) / 1000 }));
 }
 
@@ -44,8 +62,10 @@ function fail(message) {
 /** Stop before any request unless there is a key and the run stays inside the agreed ceiling. */
 function guard(cost) {
   if (!process.env.FAL_KEY) fail("Set FAL_KEY (fal.ai dashboard → Keys) before generating.");
-  const ceiling = process.env.CREATURES_CEILING !== undefined ? Number(process.env.CREATURES_CEILING) : PRICES.ceiling;
-  if (ceiling === null || ceiling === undefined) fail("No spending ceiling has been agreed yet (PRICES.ceiling in src/revelation/creatures.js).");
+  if (PRICES.ceiling === null || PRICES.ceiling === undefined) fail("No spending ceiling has been agreed yet (PRICES.ceiling in src/revelation/creatures.js).");
+  // CREATURES_CEILING (for tests and cautious runs) can only lower the agreed ceiling
+  const asked = Number(process.env.CREATURES_CEILING);
+  const ceiling = Number.isFinite(asked) ? Math.min(asked, PRICES.ceiling) : PRICES.ceiling;
   if (spent() + cost > ceiling) fail(`This would pass the agreed ceiling of $${ceiling} (spent $${spent().toFixed(2)}, this run $${cost.toFixed(2)}).`);
 }
 
@@ -55,13 +75,19 @@ async function fal(endpoint, input) {
   const res = await fetch(`https://queue.fal.run/${endpoint}`, { method: "POST", headers, body: JSON.stringify(input) });
   if (!res.ok) fail(`${endpoint}: ${res.status} ${await res.text()}`);
   const { status_url, response_url } = await res.json();
+  const deadline = Date.now() + 20 * 60 * 1000; // a 3D model takes minutes, not hours
   for (;;) {
     await new Promise((r) => setTimeout(r, 3000));
-    const s = await (await fetch(status_url, { headers })).json();
+    if (Date.now() > deadline) fail(`${endpoint}: no result after 20 minutes (${status_url})`);
+    const res2 = await fetch(status_url, { headers });
+    const s = res2.ok ? await res2.json() : null;
+    if (!s || !s.status) fail(`${endpoint}: status ${res2.status} ${s ? JSON.stringify(s) : await res2.text()}`);
     if (s.status === "COMPLETED") break;
     if (s.status === "FAILED" || s.error) fail(`${endpoint}: ${JSON.stringify(s)}`);
   }
-  return (await fetch(response_url, { headers })).json();
+  const done = await fetch(response_url, { headers });
+  if (!done.ok) fail(`${endpoint}: result ${done.status} ${await done.text()}`);
+  return done.json();
 }
 
 async function download(url, path) {
@@ -71,7 +97,7 @@ async function download(url, path) {
   writeFileSync(path, Buffer.from(await res.arrayBuffer()));
 }
 
-async function triangles(file) {
+export async function triangles(file) {
   const doc = await new NodeIO().registerExtensions(ALL_EXTENSIONS).read(file);
   let n = 0;
   for (const mesh of doc.getRoot().listMeshes()) {
@@ -85,21 +111,25 @@ async function triangles(file) {
 
 /** Simplify, compress and size-check the raw model into assets/creatures/<key>.glb; nothing is left on failure. */
 export async function pack(key) {
+  if (!mayReplace(CREATURES[key])) fail(`${key} is approved; set its status back to "pending" before replacing its model.`);
   const raw = join(CACHE, key, "raw.glb");
   if (!existsSync(raw)) fail(`${raw} is missing (run: model ${key} --from <png>)`);
-  const ratio = Math.min(1, LIMITS.triangles / (await triangles(raw)));
+  const budget = Math.min(LIMITS.triangles, CREATURES[key].tris ?? LIMITS.triangles);
+  const ratio = Math.min(1, budget / (await triangles(raw)));
   mkdirSync(OUT, { recursive: true });
   const tmp = join(CACHE, key, "packed.glb");
   execFileSync(process.execPath, [join(ROOT, "node_modules", "@gltf-transform", "cli", "bin", "cli.js"), "optimize", raw, tmp,
     "--simplify-ratio", String(Math.max(0.001, ratio * 0.97)), "--simplify-error", "0.01", "--compress", "meshopt", "--texture-compress", "webp", "--texture-size", "1024"], { stdio: "inherit" });
   const tris = await triangles(tmp);
   const bytes = statSync(tmp).size;
-  if (tris > LIMITS.triangles || bytes > LIMITS.bytes) {
+  if (tris > budget || bytes > LIMITS.bytes) {
     rmSync(tmp);
-    fail(`${key}: ${Math.round(tris)} triangles, ${(bytes / 1048576).toFixed(1)} MB is over the limit (${LIMITS.triangles}, 4 MB).`);
+    fail(`${key}: ${Math.round(tris)} triangles, ${(bytes / 1048576).toFixed(1)} MB is over the limit (${budget}, 4 MB).`);
   }
   renameSync(tmp, join(OUT, `${key}.glb`));
+  const hash = createHash("sha256").update(readFileSync(join(OUT, `${key}.glb`))).digest("hex");
   console.log(`${key}: ${Math.round(tris)} triangles, ${(bytes / 1048576).toFixed(2)} MB -> assets/creatures/${key}.glb`);
+  console.log(`on approval, record in src/revelation/creatures.js: status: "approved", sha256: "${hash}"`);
 }
 
 async function main([command, ...args]) {

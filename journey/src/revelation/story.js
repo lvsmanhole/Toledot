@@ -14,6 +14,12 @@ export const CHAPTER_VERSES = [20, 29, 22, 11, 14, 17, 17, 13, 21, 11, 19, 17, 1
 /** Chapters built so far: tests require every verse of chapters 1..BUILT to be shown by some scene. */
 export const BUILT = 5;
 
+/** The end card: the book's last words when all 22 chapters are made, until then how far the vision goes. */
+export function endCard(built) {
+  if (built >= 22) return { kicker: "Amen", line: "The grace of our Lord Jesus Christ be with you all. — Revelation 22:21" };
+  return { kicker: "To be continued", line: `The vision is shown here through chapters 1–${built}. The rest of the book is being made.` };
+}
+
 /** "4:1-3" -> ["4:1", "4:2", "4:3"]; "1:9" -> ["1:9"]; "2-3" or "5" (whole chapters) -> every verse in them. */
 export function versesOf(range) {
   const m = range.match(/^(\d+):(\d+)(?:-(\d+))?$/);

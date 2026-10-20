@@ -14,7 +14,6 @@ import { cast } from "../kit/cast.js";
 import { EYE, johnEyes } from "../kit/eyes.js";
 import { hands } from "../kit/hands.js";
 import { JOHN, patmos } from "../kit/island.js";
-import { keys as keysProp } from "../kit/standins.js";
 
 /** A golden candlestick (lampstand): base, shaft, cup and flame. */
 export function candlestick(seed = 0) {
@@ -89,9 +88,8 @@ export function create(ctx) {
     stars.push(s);
   }
   // the keys of hell and of death, in his hand
-  const keys = keysProp();
-  keys.position.set(0.5, 1.2, -0.42);
-  keys.scale.setScalar(1.4);
+  const keys = cast("keys", 0.45);
+  keys.position.set(0.5, 1.0, -0.42);
   keys.visible = false;
   ring.add(keys);
   const keysGlow = glowSprite(0xffe0a0, 0.6, 0);
@@ -157,7 +155,9 @@ export function create(ctx) {
     });
     keys.visible = rel > 25.5 && rel < 30;
     keysGlow.material.opacity = pulse(rel, 25.5, 26.5, 29, 30) * 0.6;
-    john.pose("write", pulse(rel, 29.5, 30.5, 32, 33));
+    // "he laid his right hand upon me" (1:17): as he lies there, his own hands come into view under the light
+    if (rel < 27) john.pose("touched", pulse(rel, 22.8, 23.6, 25, 25.8));
+    else john.pose("write", pulse(rel, 29.5, 30.5, 32, 33));
   });
   return L;
 }

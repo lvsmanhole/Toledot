@@ -13,7 +13,6 @@ import { figure } from "../../kit/figures.js";
 import { cast } from "../kit/cast.js";
 import { EYE, johnEyes } from "../kit/eyes.js";
 import { JOHN, patmos } from "../kit/island.js";
-import { crown, elderSeat, goldenVial, keys as keysProp } from "../kit/standins.js";
 import { LETTERS, letterStart } from "../story.js";
 import { candlestick } from "./sonofman.js";
 
@@ -44,11 +43,11 @@ function promises() {
       return { group: g, at: 11.6, lift: 0, size: 1.6 };
     },
     // Smyrna: the crown of life (2:10)
-    () => ({ group: crown(), at: 8.1 }),
+    () => ({ group: cast("crown", 0.2), at: 8.1 }),
     // Pergamos: the hidden manna and the white stone with a new name written (2:17)
     () => {
       const g = new THREE.Group();
-      g.add(at(goldenVial(), -0.25, 0, 0));
+      g.add(at(cast("goldenVial", 0.1), -0.25, 0, 0));
       const stone = at(new THREE.Mesh(new THREE.SphereGeometry(0.14, 20, 14), std(0xf4f2ec, { roughness: 0.3 })), 0.25, 0.1, 0);
       stone.scale.set(1, 0.55, 1);
       g.add(stone, at(unreadableName(0.18), 0.25, 0.2, 0.16));
@@ -82,7 +81,7 @@ function promises() {
     // name of God and of new Jerusalem written on it (3:12)
     () => {
       const g = new THREE.Group();
-      const key = at(keysProp(), -0.6, 0.2, 0);
+      const key = at(cast("keys", 0.32), -0.6, 0.2, 0);
       key.name = "key";
       const door = new THREE.Group();
       door.name = "door";
@@ -90,7 +89,7 @@ function promises() {
       door.add(at(new THREE.Mesh(new THREE.BoxGeometry(0.06, 1.2, 0.06), MATERIALS.gold()), 0.3, 0.6, 0));
       door.add(at(new THREE.Mesh(new THREE.BoxGeometry(0.66, 0.06, 0.06), MATERIALS.gold()), 0, 1.2, 0));
       door.add(at(new THREE.Mesh(new THREE.PlaneGeometry(0.54, 1.14), new THREE.MeshBasicMaterial({ color: new THREE.Color(2.2, 2, 1.7), transparent: true, opacity: 0.9, side: THREE.DoubleSide })), 0, 0.6, 0));
-      const c = at(crown(), 0.7, 0.4, 0);
+      const c = at(cast("crown", 0.2), 0.7, 0.4, 0);
       c.name = "crown";
       const pillar = at(new THREE.Mesh(new THREE.CylinderGeometry(0.16, 0.18, 1.4, 20), std(0xe6e0d4, { roughness: 0.5 })), 0, 0.7, 0);
       pillar.name = "pillar";
@@ -107,7 +106,7 @@ function promises() {
       const door = new THREE.Mesh(new THREE.BoxGeometry(0.7, 1.4, 0.08), std(0x5a3e26));
       door.name = "door";
       at(door, 0, 0.7, 0);
-      const seat = at(elderSeat(), 0, 0, 0);
+      const seat = at(cast("elderSeat", 1.6), 0, 0, 0);
       seat.name = "throne";
       seat.scale.setScalar(1.1);
       seat.rotation.y = Math.PI; // its seat toward John

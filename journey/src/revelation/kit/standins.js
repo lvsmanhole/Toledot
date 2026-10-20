@@ -50,13 +50,8 @@ export function sonOfMan() {
 export function elder() {
   const g = new THREE.Group();
   const body = figure(1.6, { robe: 0xf3f0e8 });
-  body.scale.y = 0.82; // seated
+  body.scale.y = 0.82; // seated (bareheaded: his crown is its own creature, which he casts down, 4:10)
   g.add(body);
-  const c = crown();
-  c.scale.setScalar(0.55);
-  c.position.y = 1.36;
-  c.name = "crown";
-  g.add(c);
   return g;
 }
 

@@ -13,6 +13,7 @@ import { fileURLToPath } from "node:url";
 
 import { HDRIS, MODELS, TEXTURES } from "../src/kit/assets-manifest.js";
 import { CREATURES } from "../src/revelation/creatures.js";
+import { triangles } from "./creatures.mjs";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 const OUT = join(ROOT, "public", "lib");
@@ -180,18 +181,25 @@ for (const [key, { id, leaves }] of Object.entries(MODELS)) {
 // the Revelation's generated creatures (scripts/creatures.mjs): only those the user approved ship. The
 // committed model is the desktop one; phones and tablets get a copy at 512 px textures and a third of the triangles.
 const made = [];
-for (const [key, { status }] of Object.entries(CREATURES)) {
+for (const [key, { status, sha256 }] of Object.entries(CREATURES)) {
   if (status !== "approved") continue;
   const src = join(ROOT, "assets", "creatures", `${key}.glb`);
   const out = join(OUT, "models", `${key}.glb`);
   const outM = join(OUT, "models-m", `${key}.glb`);
+  const stamp = join(OUT, "models", `${key}.sha256`);
   made.push(key);
-  if (!existsSync(out)) { mkdirSync(dirname(out), { recursive: true }); copyFileSync(src, out); }
-  if (!existsSync(outM)) {
+  // a replaced (re-approved) model is rebuilt: the stamp records which approved file the copies came from
+  const fresh = existsSync(stamp) && readFileSync(stamp, "utf8") === sha256;
+  if (!fresh || !existsSync(out)) { mkdirSync(dirname(out), { recursive: true }); copyFileSync(src, out); }
+  if (!fresh || !existsSync(outM)) {
     mkdirSync(dirname(outM), { recursive: true });
     execFileSync(process.execPath, [join(ROOT, "node_modules", "@gltf-transform", "cli", "bin", "cli.js"), "optimize", src, outM,
       "--simplify-ratio", "0.33", "--simplify-error", "0.02", "--compress", "meshopt", "--texture-compress", "webp", "--texture-size", "512"], { stdio: "inherit" });
   }
+  // the phone copy must keep to a third of the creature's budget
+  const phoneTris = await triangles(outM);
+  if (phoneTris > (CREATURES[key].tris / 3) * 1.1) throw new Error(`${key}: the phone model has ${Math.round(phoneTris)} triangles, over a third of its budget (${CREATURES[key].tris})`);
+  writeFileSync(stamp, sha256 ?? "");
 }
 const madeCredit = made.length ? `\nGenerated models (fal.ai), made for Toledot:\n${made.map((k) => `- ${k}`).join("\n")}\n` : "";
 writeFileSync(join(OUT, "CREDITS.txt"), `Assets from Poly Haven (https://polyhaven.com), CC0 1.0 Universal.\n${credits.map((c) => `- ${c}`).join("\n")}\n${madeCredit}`);

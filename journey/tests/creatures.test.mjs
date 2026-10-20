@@ -59,3 +59,53 @@ test("fitToHeight stands a model on the ground at the given height, centred", ()
   assert.equal(f.scale, 0.5);
   assert.deepEqual(f.offset, [-0.5, -1, 0.5]);
 });
+
+import { createHash } from "node:crypto";
+import { readFileSync } from "node:fs";
+
+import { approvalProblems, mayReplace } from "../scripts/creatures.mjs";
+
+const sha = (s) => createHash("sha256").update(s).digest("hex");
+
+test("an approval is tied to the exact file that was approved", () => {
+  const read = (key) => ({ ok: "the approved bytes", changed: "other bytes", unhashed: "x" })[key];
+  const fake = {
+    ok: { status: "approved", sha256: sha("the approved bytes") },
+    changed: { status: "approved", sha256: sha("the approved bytes") },
+    unhashed: { status: "approved" },
+    pending: { status: "pending" },
+  };
+  assert.deepEqual(approvalProblems(fake, read).sort(), ["changed", "unhashed"]);
+});
+
+test("an approved model is never overwritten by a new generation", () => {
+  assert.equal(mayReplace({ status: "approved" }), false);
+  assert.equal(mayReplace({ status: "pending" }), true);
+});
+
+test("every approved creature's model is the file the user approved", () => {
+  const read = (key) => readFileSync(new URL(`../assets/creatures/${key}.glb`, import.meta.url));
+  assert.deepEqual(approvalProblems(CREATURES, read), []);
+});
+
+test("every creature has a triangle budget, and the throne room's copies fit a phone", () => {
+  for (const [key, c] of Object.entries(CREATURES)) assert.ok(Number.isFinite(c.tris) && c.tris > 0 && c.tris <= 60000, `${key} budget`);
+  const T = (key) => CREATURES[key].tris;
+  // as placed in kit/heaven.js and scenes/lamb.js: 25 seats (the throne is one), 24 elders and crowns, four beasts
+  // with six wings each, the Lamb, the angel, the book, and a harp or a vial in each elder's hands
+  const room = 25 * T("elderSeat") + 24 * T("elder") + 24 * T("crown") + T("beastLion") + T("beastCalf") + T("beastMan") + T("beastEagle")
+    + 24 * T("wingEyes") + T("lamb") + T("angel") + T("sealedBook") + 12 * T("harp") + 12 * T("goldenVial");
+  assert.ok(room <= 900000, `desktop throne room ${room} triangles`);
+  assert.ok(room / 3 <= 300000, `phone throne room ${Math.round(room / 3)} triangles`);
+});
+
+test("an override can only lower the agreed ceiling, never raise or replace it", () => {
+  const r = run(["concept", "lamb"], { FAL_KEY: "dummy", CREATURES_CEILING: "1000" });
+  assert.equal(r.status, 1);
+  assert.match(r.stderr, /No spending ceiling has been agreed/);
+});
+
+test("the record of what has been spent survives clearing the cache", async () => {
+  const { SPENT } = await import("../scripts/creatures.mjs");
+  assert.ok(!SPENT.includes(".cache"), SPENT);
+});
