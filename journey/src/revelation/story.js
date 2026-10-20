@@ -8,6 +8,25 @@ import { envelope, layout } from "../storyline.js";
 
 export const UNIT_VH = 18;
 
+/** Verses in each chapter of Revelation (KJV), chapter 1 first: 404 in all. */
+export const CHAPTER_VERSES = [20, 29, 22, 11, 14, 17, 17, 13, 21, 11, 19, 17, 18, 20, 8, 21, 18, 24, 21, 15, 27, 21];
+
+/** Chapters built so far: tests require every verse of chapters 1..BUILT to be shown by some scene. */
+export const BUILT = 0;
+
+/** "4:1-3" -> ["4:1", "4:2", "4:3"]; "1:9" -> ["1:9"]; "2-3" or "5" (whole chapters) -> every verse in them. */
+export function versesOf(range) {
+  const m = range.match(/^(\d+):(\d+)(?:-(\d+))?$/);
+  if (m) {
+    const [c, a, b = a] = m.slice(1).filter(Boolean).map(Number);
+    return Array.from({ length: b - a + 1 }, (_, i) => `${c}:${a + i}`);
+  }
+  const [a, b = a] = range.split("-").map(Number);
+  const out = [];
+  for (let c = a; c <= b; c++) for (let n = 1; n <= CHAPTER_VERSES[c - 1]; n++) out.push(`${c}:${n}`);
+  return out;
+}
+
 const L = { light: [1, 0.97, 0.9], dark: [0, 0, 0], night: [0.02, 0.03, 0.05], gold: [0.95, 0.78, 0.45] };
 const t = (kind, width = 2) => ({ kind: kind === "cloud" ? "cloud" : "fade", color: L[kind] ?? L.dark, width });
 
