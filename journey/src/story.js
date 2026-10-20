@@ -4,6 +4,8 @@
 // caption against the KJV text. Years are astronomical (1 BCE = 0) and follow the Toledot chronology
 // (site/data), so the in-scene timeline and the Toledot timeline agree.
 
+import { envelope, layout } from "./storyline.js";
+
 export const UNIT_VH = 18;
 
 const L = { light: [1, 0.97, 0.9], white: [0.95, 0.95, 0.95], dark: [0, 0, 0], dust: [0.72, 0.6, 0.45], ash: [0.18, 0.16, 0.15], water: [0.05, 0.12, 0.16], fire: [0.9, 0.45, 0.12], night: [0.02, 0.03, 0.05], gold: [0.95, 0.78, 0.45] };
@@ -620,58 +622,5 @@ export const SCENES = [
 ];
 
 // ---------------------------------------------------------------- derived layout
-let offset = 0;
-for (const s of SCENES) {
-  s.from = offset;
-  s.to = offset + s.length;
-  offset = s.to;
-}
-export const LENGTH = offset;
-
-export const ACTS = SCENES.flatMap((s) => (s.acts ?? []).map((a) => ({ ...a, scene: s.id, at: s.from + a.at, built: true })));
-
-export const CAPTIONS = SCENES.flatMap((s) => (s.captions ?? []).map((c) => ({ ...c, scene: s.id, from: s.from + c.from, to: s.from + c.to })));
-
-export const TRANSITIONS = SCENES.filter((s) => s.enter).map((s) => ({ at: s.from, ...s.enter }));
-
-/** Smooth 0..1 envelope: rises over `fade` units after `from`, falls over `fade` units before `to`. */
-export function envelope(u, from, to, fade = 1.2) {
-  if (u <= from || u >= to) return 0;
-  const a = Math.min(1, (u - from) / fade);
-  const b = Math.min(1, (to - u) / fade);
-  const x = Math.min(a, b);
-  return x * x * (3 - 2 * x);
-}
-
-/** Active scene index, its local units, and the transition overlay at story unit `u`. */
-export function locate(u) {
-  let i = SCENES.findIndex((s) => u >= s.from && u < s.to);
-  if (i < 0) i = u < 0 ? 0 : SCENES.length - 1;
-  const scene = SCENES[i];
-  const rel = Math.min(scene.length, Math.max(0, u - scene.from));
-  let fade = 0;
-  let transition = null;
-  for (const tr of TRANSITIONS) {
-    const d = Math.abs(u - tr.at);
-    if (d < tr.width) {
-      const x = 1 - d / tr.width;
-      const val = x * x * (3 - 2 * x);
-      if (val > fade) { fade = val; transition = tr; }
-    }
-  }
-  return { index: i, scene, rel, local: rel / scene.length, fade, transition };
-}
-
-/** Story year (astronomical) at unit u, or null before time began / beyond it. */
-export function yearAt(u) {
-  const { scene, rel } = locate(u);
-  if (!scene.years) return null;
-  const ys = scene.years;
-  if (rel <= ys[0][0]) return ys[0][1];
-  for (let i = 0; i < ys.length - 1; i++) {
-    const [a, ya] = ys[i];
-    const [b, yb] = ys[i + 1];
-    if (rel <= b) return ya + ((yb - ya) * (rel - a)) / (b - a);
-  }
-  return ys[ys.length - 1][1];
-}
+export const { LENGTH, ACTS, CAPTIONS, TRANSITIONS, locate, yearAt } = layout(SCENES);
+export { envelope };
