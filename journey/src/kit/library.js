@@ -7,7 +7,7 @@ import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader.js";
 import { HDRLoader } from "three/examples/jsm/loaders/HDRLoader.js";
 import { MeshoptDecoder } from "three/examples/jsm/libs/meshopt_decoder.module.js";
 
-const BASE = new URL("lib/", document.baseURI);
+let BASE = new URL("lib/", document.baseURI);
 const texLoader = new THREE.TextureLoader();
 const hdrLoader = new HDRLoader();
 const gltfLoader = new GLTFLoader();
@@ -64,6 +64,11 @@ export function release(id) {
       })).catch(() => {});
     }
   }
+}
+
+/** Where lib/ lives, relative to the page (a page in a subfolder points back to the site root's lib/). */
+export function setLibraryBase(href) {
+  BASE = new URL(href, document.baseURI);
 }
 
 /** Phones and tablets get the half-size variants of every image. */
