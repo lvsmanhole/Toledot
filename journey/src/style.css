@@ -63,6 +63,7 @@ body { overscroll-behavior-y: none; -webkit-tap-highlight-color: transparent; }
   font-size: 11px; letter-spacing: 0.28em; text-transform: uppercase; text-decoration: none; color: var(--ivory-soft);
 }
 .bar-link:hover { color: var(--ivory); }
+.bar-place { font-size: 11px; letter-spacing: 0.28em; text-transform: uppercase; color: var(--ivory-faint); }
 .sound {
   display: inline-flex; align-items: center; gap: 10px; padding: 6px 0; background: none; border: 0; cursor: pointer;
   font-size: 11px; letter-spacing: 0.28em; text-transform: uppercase; color: var(--ivory-soft);

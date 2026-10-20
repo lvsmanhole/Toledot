@@ -21,5 +21,7 @@ export default defineConfig({
     emptyOutDir: false,
     assetsDir: "assets",
     chunkSizeWarningLimit: 900,
+    // two pages on one engine: the Journey (site/index.html) and the Revelation (site/revelation/)
+    rollupOptions: { input: { journey: "index.html", revelation: "revelation/index.html" } },
   },
 });
