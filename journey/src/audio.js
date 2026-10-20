@@ -1,7 +1,13 @@
 // Ambient sound, synthesized in the browser (no recordings): a low drone, a high shimmer for light,
-// wind, running water, birdsong, and fire. Scenes set target levels 0..1 each frame; the mixer glides.
+// wind, running water, birdsong, and fire; for the Revelation, a voice as of a trumpet, the sound of many
+// waters, and thunder. Scenes set target levels 0..1 each frame; the mixer glides.
 
-const LAYERS = ["drone", "shimmer", "wind", "water", "birds", "fire"];
+export const LAYERS = ["drone", "shimmer", "wind", "water", "birds", "fire", "trumpet", "waters", "thunder"];
+
+/** Thunder is struck, not held: each rise of its level above one half is one clap (seven rises, seven thunders). */
+export function thunderClaps(prev, next) {
+  return prev <= 0.5 && next > 0.5 ? 1 : 0;
+}
 
 function noiseBuffer(ctx, seconds = 4) {
   const buffer = ctx.createBuffer(1, ctx.sampleRate * seconds, ctx.sampleRate);
@@ -161,6 +167,59 @@ export class Ambience {
       loopNoise().connect(roar).connect(rg).connect(out);
       this.crackle = crackle;
     }
+    // trumpet: a brass voice, stacked harmonics of a low B flat through a swelling lowpass, with slow vibrato
+    {
+      const out = layer("trumpet");
+      const lp = ctx.createBiquadFilter();
+      lp.type = "lowpass";
+      lp.frequency.value = 1400;
+      lp.Q.value = 2;
+      lp.connect(out);
+      const vib = ctx.createOscillator();
+      vib.frequency.value = 4.8;
+      const vg = ctx.createGain();
+      vg.gain.value = 1.6;
+      vib.connect(vg);
+      vib.start();
+      for (const [f, gain] of [[116.5, 0.16], [233, 0.12], [349.5, 0.07], [466, 0.05], [582.5, 0.03]]) {
+        const o = ctx.createOscillator();
+        o.type = "sawtooth";
+        o.frequency.value = f;
+        vg.connect(o.frequency);
+        const g = ctx.createGain();
+        g.gain.value = gain;
+        o.connect(g).connect(lp);
+        o.start();
+      }
+      const swell = ctx.createOscillator();
+      swell.frequency.value = 0.18;
+      const sg = ctx.createGain();
+      sg.gain.value = 500;
+      swell.connect(sg).connect(lp.frequency);
+      swell.start();
+    }
+    // many waters: a deep, heavy roar (low-passed noise with a slow surge), not the brook of "water"
+    {
+      const out = layer("waters");
+      const lp = ctx.createBiquadFilter();
+      lp.type = "lowpass";
+      lp.frequency.value = 420;
+      const g = ctx.createGain();
+      g.gain.value = 0.9;
+      loopNoise().connect(lp).connect(g).connect(out);
+      const surge = ctx.createOscillator();
+      surge.frequency.value = 0.09;
+      const sg = ctx.createGain();
+      sg.gain.value = 0.35;
+      surge.connect(sg).connect(g.gain);
+      surge.start();
+    }
+    // thunder: claps are scheduled one at a time (see update); the layer gain stays open
+    {
+      this.thunderOut = layer("thunder");
+      this.thunderOut.gain.value = 1;
+      this.thunderNoise = noise;
+    }
     this.birdsOut = layer("birds");
     this.nextChirp = 0;
     this.nextCrackle = 0;
@@ -188,11 +247,32 @@ export class Ambience {
     o.stop(t + notes * 0.11 + 0.1);
   }
 
+  clap(t, strength) {
+    const { ctx } = this;
+    const src = ctx.createBufferSource();
+    src.buffer = this.thunderNoise;
+    const lp = ctx.createBiquadFilter();
+    lp.type = "lowpass";
+    lp.frequency.setValueAtTime(2400, t);
+    lp.frequency.exponentialRampToValueAtTime(90, t + 3.5);
+    const g = ctx.createGain();
+    g.gain.setValueAtTime(0, t);
+    g.gain.linearRampToValueAtTime(1.1 * strength, t + 0.03);
+    g.gain.setTargetAtTime(0, t + 0.25, 1.4);
+    src.connect(lp).connect(g).connect(this.thunderOut);
+    src.start(t, Math.random() * 2);
+    src.stop(t + 7);
+  }
+
   /** Called every frame with target levels from the active scene (missing layers fall to zero). */
   update(levels) {
     if (!this.ctx || !this.enabled) return;
     const now = this.ctx.currentTime;
+    const thunder = Math.max(0, Math.min(1, levels.thunder ?? 0));
+    if (thunderClaps(this.levels.thunder, thunder)) this.clap(now + 0.02, thunder);
+    this.levels.thunder = thunder;
     for (const name of LAYERS) {
+      if (name === "thunder") continue;
       const v = Math.max(0, Math.min(1, levels[name] ?? 0));
       if (Math.abs(v - this.levels[name]) > 0.01) {
         this.levels[name] = v;
