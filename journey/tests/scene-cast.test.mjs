@@ -9,10 +9,14 @@ import { SCENES } from "../src/revelation/story.js";
 
 const src = (path) => readFileSync(new URL(`../src/revelation/${path}`, import.meta.url), "utf8");
 
-/** Creature keys a source file casts: every string literal in the first argument of cast()/creature(). */
+/**
+ * Creature keys a source file casts: every string literal in the first argument of cast()/creature(), and any
+ * string literal naming a manifest creature (a key cast through a variable, as horsemen.js does).
+ */
 function castKeys(code) {
   const keys = new Set();
   for (const m of code.matchAll(/\b(?:cast|creature)\(([^,)]+)[,)]/g)) for (const s of m[1].matchAll(/"([A-Za-z]+)"/g)) keys.add(s[1]);
+  for (const s of code.matchAll(/"([A-Za-z]+)"/g)) if (Object.hasOwn(CREATURES, s[1])) keys.add(s[1]);
   return keys;
 }
 

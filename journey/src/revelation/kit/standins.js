@@ -195,4 +195,125 @@ export function keys() {
   return g;
 }
 
-export const STANDINS = { john, sonOfMan, elder, elderB: elder, elderC: elder, crown, beastLion: () => beast("lion"), beastCalf: () => beast("calf"), beastMan: () => beast("man"), beastEagle: () => beast("eagle"), lamb, angel, sealedBook, harp, goldenVial, keys };
+/** A horse (head toward +x), about 1.7 at the withers, in one coat. */
+function horse(coat, { lionHead = false } = {}) {
+  const g = new THREE.Group();
+  const mat = std(coat, { roughness: 0.8 });
+  const body = mesh(new THREE.CapsuleGeometry(0.42, 1.1, 6, 16), mat, 0, 1.35, 0);
+  body.rotation.z = Math.PI / 2;
+  g.add(body);
+  for (const [x, z] of [[-0.55, -0.2], [-0.55, 0.2], [0.55, -0.2], [0.55, 0.2]]) g.add(mesh(new THREE.CylinderGeometry(0.08, 0.06, 1.15, 8), mat, x, 0.58, z));
+  const neck = mesh(new THREE.CylinderGeometry(0.2, 0.3, 0.9, 10), mat, 0.85, 1.85, 0);
+  neck.rotation.z = -0.6;
+  g.add(neck);
+  if (lionHead) {
+    g.add(mesh(new THREE.SphereGeometry(0.34, 16, 12), std(0xb88a4c), 1.25, 2.2, 0));
+    const mane = mesh(new THREE.TorusGeometry(0.34, 0.16, 8, 20), std(0x7a5528, { roughness: 1 }), 1.15, 2.2, 0);
+    mane.rotation.y = Math.PI / 2;
+    g.add(mane);
+  } else {
+    const head = mesh(new THREE.CapsuleGeometry(0.13, 0.45, 4, 10), mat, 1.3, 2.05, 0);
+    head.rotation.z = -1.1;
+    g.add(head);
+  }
+  return g;
+}
+
+/** A rider seated on a horse, with what the text puts in his hand. */
+function horseman(coat, robe, hand) {
+  const g = horse(coat);
+  const rider = figure(1.5, { robe });
+  rider.position.set(-0.05, 1.45, 0);
+  g.add(rider);
+  if (hand) { hand.position.add(new THREE.Vector3(0.25, 2.4, 0.3)); g.add(hand); }
+  return g;
+}
+
+export const horseWhite = () => {
+  const bow = mesh(new THREE.TorusGeometry(0.45, 0.025, 6, 24, Math.PI), std(0x5a3a22));
+  bow.rotation.z = Math.PI / 2;
+  const g = horseman(0xf0ece2, 0x9a2a22, bow);
+  const c = crown();
+  c.position.set(-0.05, 2.9, 0);
+  c.scale.setScalar(0.6);
+  g.add(c);
+  return g;
+};
+export const horseRed = () => {
+  const sword = mesh(new THREE.BoxGeometry(0.06, 1.2, 0.02), std(0xc8c8cc, { metalness: 0.9, roughness: 0.3 }));
+  sword.position.y = 0.4;
+  return horseman(0x8a1e14, 0x5a4636, sword);
+};
+export const horseBlack = () => {
+  const balances = new THREE.Group();
+  const bronze = std(0x9a7a3a, { metalness: 0.8, roughness: 0.4 });
+  balances.add(mesh(new THREE.BoxGeometry(0.5, 0.02, 0.02), bronze));
+  for (const x of [-0.24, 0.24]) balances.add(mesh(new THREE.CylinderGeometry(0.08, 0.06, 0.03, 12), bronze, x, -0.25, 0));
+  return horseman(0x16130f, 0x2a241e, balances);
+};
+export const horsePale = () => {
+  const g = horse(0xa8b0a0);
+  const rider = figure(1.5, { robe: 0x6e6c66, veiled: true });
+  rider.position.set(-0.05, 1.45, 0);
+  g.add(rider);
+  return g;
+};
+
+/** A locust of the pit (9:7–10): a horse's shape for battle, a crown of gold, an iron breastplate, wings and a scorpion's tail. */
+export function locust() {
+  const g = horse(0x4a4030);
+  const iron = std(0x3a3a3c, { metalness: 0.8, roughness: 0.45 });
+  const plate = mesh(new THREE.SphereGeometry(0.46, 16, 12), iron, 0.4, 1.4, 0);
+  plate.scale.set(0.8, 1, 1.05);
+  g.add(plate);
+  const c = crown();
+  c.position.set(1.3, 2.25, 0);
+  c.scale.setScalar(0.8);
+  g.add(c);
+  for (const side of [-1, 1]) {
+    const w = mesh(new THREE.PlaneGeometry(1.6, 0.5), std(0xc8c0a0, { transparent: true, opacity: 0.5, side: THREE.DoubleSide }), -0.1, 1.9, side * 0.5);
+    w.rotation.set(Math.PI / 2, side * 0.3, 0);
+    g.add(w);
+  }
+  for (let i = 0; i < 6; i++) g.add(mesh(new THREE.SphereGeometry(0.12 - i * 0.012, 8, 6), std(0x4a4030), -0.85 - i * 0.14, 1.4 + i * i * 0.04, 0));
+  g.add(mesh(new THREE.ConeGeometry(0.05, 0.25, 6), std(0x1a1610), -1.6, 2.6, 0));
+  return g;
+}
+
+/** A horse of the army of 9:17–19: a lion's head, a serpent for a tail, its rider's breastplate of fire, jacinth and brimstone. */
+export function lionHorse() {
+  const g = horse(0x5a4a3a, { lionHead: true });
+  const rider = figure(1.5, { robe: 0x2a2440 });
+  rider.position.set(-0.05, 1.45, 0);
+  g.add(rider);
+  ["#d8401a", "#3a3a9a", "#d8c030"].forEach((c, i) => g.add(mesh(new THREE.BoxGeometry(0.3, 0.12, 0.34), std(c, { emissive: c, emissiveIntensity: 0.4 }), -0.05, 2.4 - i * 0.12, 0)));
+  const tail = mesh(new THREE.TorusGeometry(0.35, 0.05, 6, 16, Math.PI * 1.3), std(0x3a4a2a), -0.95, 1.15, 0);
+  g.add(tail, mesh(new THREE.SphereGeometry(0.09, 8, 6), std(0x3a4a2a), -1.3, 0.85, 0));
+  return g;
+}
+
+/** The angel of the bottomless pit (9:11): the angel's shape, blackened bronze, crowned. */
+export function abaddon() {
+  const g = angel();
+  g.traverse((m) => { if (m.isMesh) m.material = std(0x2a221c, { metalness: 0.6, roughness: 0.5, side: THREE.DoubleSide }); });
+  const c = crown();
+  c.position.y = 2.25;
+  g.add(c);
+  return g;
+}
+
+/** One of the two witnesses (11:3): a prophet clothed in sackcloth. */
+export const witness = () => figure(1.75, { robe: 0x3e3226, staff: false });
+
+/** An idol (9:20): a stiff seated image on a block (the scene gives it in gold, silver, brass, stone and wood). */
+export function idol() {
+  const g = new THREE.Group();
+  const stone = std(0x8a8478);
+  g.add(mesh(new THREE.BoxGeometry(0.5, 0.35, 0.45), stone, 0, 0.175, 0));
+  g.add(mesh(new THREE.BoxGeometry(0.3, 0.45, 0.25), stone, 0, 0.58, 0));
+  g.add(mesh(new THREE.BoxGeometry(0.18, 0.2, 0.18), stone, 0, 0.91, 0));
+  return g;
+}
+
+export const STANDINS = { john, sonOfMan, elder, elderB: elder, elderC: elder, crown, beastLion: () => beast("lion"), beastCalf: () => beast("calf"), beastMan: () => beast("man"), beastEagle: () => beast("eagle"), lamb, angel, sealedBook, harp, goldenVial, keys,
+  horseWhite, horseRed, horseBlack, horsePale, locust, lionHorse, abaddon, witness, witnessB: witness, idol };

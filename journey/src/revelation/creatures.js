@@ -88,6 +88,49 @@ export const CREATURES = {
     status: "approved", sha256: "c30598a16458291eaacb18c7849eee63bdd2c2f0b73da2a6b1f0b653dc0a457b" },
   keys: { ...c("1:18", ["the keys of hell and of death"], "Two large ancient iron keys on a ring, alone; nothing else in frame, no cloth, no feathers, no stones.", 1500),
     status: "approved", sha256: "5bfbe63e78cc9f10b5582143208c8a6e1ae7761ce2fb973fc3bece06a2ceaa48" },
+
+  // ---- chapters 6–11. The many angels of the seals and trumpets are the approved bronze angel; these are new.
+  // the four horsemen (6:1–8): each horse and its rider is one model
+  horseWhite: { ...c("6:2", ["a white horse", "he that sat on him had a bow", "a crown was given unto him", "going forth conquering"],
+    "A warrior riding a white war horse striding forward, the rider a dark-skinned Middle Eastern man holding a bow, a plain gold crown on his head, a short crimson cloak; horse and rider together, side view.", 30000),
+    status: "approved", sha256: "8ddb9519c275adaebde94a33df0aca765f01c87147acd30c3624366bf804a7cf", yaw: Math.PI / 2 },
+  horseRed: { ...c("6:4", ["a horse that was red", "he that sat thereon", "a great sword"],
+    "A warrior riding a deep red war horse at a gallop, the rider a dark-skinned African man in bronze scale armour holding up a great broad sword; horse and rider together, side view.", 30000),
+    status: "approved", sha256: "38bec392197038d67bdff4d02ec40bd5f97c09b75269d4fac9a85c83ad00bbec", yaw: Math.PI / 2 },
+  horseBlack: { ...c("6:5", ["a black horse", "he that sat on him had a pair of balances in his hand"],
+    "A rider on a black horse walking, the rider a gaunt dark-skinned man in a dark wool mantle holding up a pair of bronze balance scales in one hand; horse and rider together, side view.", 30000),
+    status: "approved", sha256: "032c4a182b70ad47fdc8c967d618eb9e3e7a1ba4b17ce7709dc0f92ba1ec3ce7", yaw: Math.PI / 2 },
+  horsePale: { ...c("6:8", ["a pale horse, ashen grey-green", "the rider named Death: gaunt, hooded, his face in shadow"],
+    "A gaunt hooded rider in a tattered ash-grey shroud, his face hidden in shadow, on a thin pale ashen grey-green horse, walking; horse and rider together, side view; solemn, not gory.", 30000,
+    ["Hell followed with him"]),
+    status: "approved", sha256: "cbe28179cd2e84987f3f51022522db52eb48e3c30e8d62d6234d7e66f8baabed", yaw: Math.PI / 2 },
+  // the locusts out of the smoke of the pit (9:7–10): one model, many in the swarm
+  locust: { ...c("9:7-10", ["shaped like a horse prepared unto battle", "on its head as it were a crown like gold", "a face as the face of a man",
+    "hair as the hair of women", "teeth as the teeth of lions", "a breastplate as it were of iron", "wings", "a tail like unto a scorpion, with a sting"],
+  "A winged war beast with the body of an armoured horse but the head of a bearded human man: a human face with human eyes, human nose and human mouth showing lion's fangs, long flowing dark hair like a woman's, a gold crown, veined locust wings, an iron breastplate, a scorpion's tail curling up with a sting; side view.", 9000),
+    status: "approved", sha256: "652c2ec0856ca47c9c62c1b4f306537a13063679e35927a480725081fd2db241", yaw: Math.PI / 2 },
+  // the horses of the army of two hundred thousand thousand (9:16–19), with their riders: one model, many
+  lionHorse: { ...c("9:17-19", ["the heads of the horses as the heads of lions", "tails like unto serpents, having heads",
+    "riders having breastplates of fire, and of jacinth, and brimstone"],
+  "A war horse with the head of a roaring lion with a full mane, its tail a long serpent ending in a snake's head, ridden by an armoured rider whose breastplate is fiery red, deep blue and sulphur yellow; horse and rider together, side view.", 9000,
+  ["out of their mouths issued fire and smoke and brimstone"]),
+    status: "approved", sha256: "14d3efd587dfd263a30514e8c3becb9aa9d1359566906d52797b44b2de4ea50f", yaw: Math.PI / 2 },
+  // the king of the locusts, the angel of the bottomless pit (9:11): a brazen being, darkened
+  abaddon: { ...c("9:11", ["the angel of the bottomless pit", "a king over the locusts", "fearsome: a being of blackened bronze, darkened as by smoke", "great wings"],
+    "A towering dark angelic king of blackened bronze and soot-dark iron, great ragged wings of smoke-dark bronze feathers, a jagged iron crown, eyes like embers, a stern face, standing; dread and majestic, not a cartoon demon, no horns.", 15000),
+    status: "approved", sha256: "4ce1d06fbbc762d1a49ddfd16b430d2104b5c0f2aee871bd4a3813666f323ab3" },
+  // the two witnesses (11:3–12), of different peoples
+  witness: { ...c("11:3", ["a prophet clothed in sackcloth", "deep dark brown African skin"],
+    "An old African prophet standing, deep dark brown skin, grey beard, in a rough coarse dark goat-hair sackcloth robe tied with a cord, barefoot, hands open at his sides.", 12000),
+    status: "approved", sha256: "73af9828336c45569b8b73cf934db788aa7e09bdcbda231a64988a3554af668b" },
+  witnessB: { ...c("11:3", ["a prophet clothed in sackcloth", "dark olive-brown Middle Eastern skin"],
+    "A Middle Eastern prophet standing, dark olive-brown skin, black beard streaked grey, in a rough coarse dark goat-hair sackcloth robe tied with a cord, barefoot, hands open at his sides.", 12000),
+    status: "approved", sha256: "8314936c4d1ec7e288d7fa97ad457584accbee0bfb116d57d7da7253b41f8c3b" },
+  // the idols of 9:20: one carved image, which the scene gives in each of the five materials
+  idol: { ...c("9:20", ["an idol: a carved image of a god, which neither can see, nor hear, nor walk"],
+    "A small ancient Near Eastern idol statue of a stiff seated god on a square block, blank carved eyes, carved in plain grey stone, alone; nothing else in frame.", 4000,
+    ["of gold, and silver, and brass, and stone, and of wood"]),
+    status: "approved", sha256: "48b2a8867a8bbf6916d544c68182e0b7521c852f554837cb2420a262d77f79b0" },
 };
 
 /** How many of each model the throne room shows at once (kit/heaven.js, scenes/lamb.js): its heaviest scene. */
